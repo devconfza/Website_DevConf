@@ -9,3 +9,8 @@ gulp.task('style', function() {
         }))
         .pipe(gulp.dest('./public/css'));
 });
+
+gulp.task('scripts', function() {
+	return gulp.src('./node_modules/jquery/dist/jquery.min.js')
+		.pipe(gulp.dest('./public/scripts'));
+});

@@ -1064,7 +1064,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #eeeeee;
-  background-color: #343d47;
+  background-color: #000B26;
 }
 input,
 button,
@@ -1109,7 +1109,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #343d47;
+  background-color: #000B26;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2256,7 +2256,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #343d47;
+  background-color: #000B26;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3897,7 +3897,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #343d47;
+  background-color: #000B26;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3943,7 +3943,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #343d47;
+    border-bottom-color: #000B26;
   }
 }
 .nav-pills > li {
@@ -4011,7 +4011,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #343d47;
+    border-bottom-color: #000B26;
   }
 }
 .tab-content > .tab-pane {
@@ -4857,7 +4857,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #343d47;
+  background-color: #000B26;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6529,6 +6529,32 @@ button.close {
     display: none !important;
   }
 }
+.navbar-default {
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar-fixed-top {
+  background-color: rgba(0, 10, 38, 0.9);
+  position: fixed;
+}
+.navbar-brand {
+  padding: 8px 15px;
+}
+.navbar-brand img {
+  width: 160px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: inherit;
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 16px;
+}
 #sponsors {
   background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
   background-color: #eeeeee;
@@ -6537,6 +6563,28 @@ button.close {
   background-size: cover;
   color: #333333;
   text-align: center;
+}
+#about {
+  background-image: url("/public/images/home-banner-bg.jpg");
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+#about h2 {
+  text-transform: uppercase;
+}
+#about .countdown-section {
+  display: inline-block;
+  padding: 0px 10px;
+}
+#about .countdown-amount {
+  font-size: 35px;
+}
+#about .countdown-period {
+  font-size: 15px;
 }
 footer {
   text-align: center;
