@@ -1060,7 +1060,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #eeeeee;
@@ -5792,7 +5792,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: 'Roboto';
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5899,7 +5899,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Roboto';
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6528,6 +6528,15 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+#sponsors {
+  background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-align: center;
 }
 footer {
   text-align: center;
