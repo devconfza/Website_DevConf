@@ -6575,6 +6575,7 @@ button.close {
 }
 #about h2 {
   text-transform: uppercase;
+  text-align: center;
 }
 #about .countdown-section {
   display: inline-block;
