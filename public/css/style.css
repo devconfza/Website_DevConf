@@ -6545,7 +6545,7 @@ button.close {
   padding: 8px 15px;
 }
 .navbar-brand img {
-  width: 82px;
+  width: 160px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -6565,7 +6565,7 @@ button.close {
   text-align: center;
 }
 #about {
-  background-image: url("/public/images/home-banner-bg.jpg");
+  /* background-image: url("/public/images/home-banner-bg.jpg"); */
   background-color: #eeeeee;
   background-position: center;
   background-repeat: no-repeat;
