@@ -6630,3 +6630,11 @@ footer ul li {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+#purpose {
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
