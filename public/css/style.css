@@ -6620,3 +6620,12 @@ footer ul {
 footer ul li {
   padding: 10px;
 }
+#bannerSeparator {
+  background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-align: center;
+}
