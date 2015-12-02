@@ -6637,6 +6637,7 @@ footer ul li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 90px;
 }
