@@ -1,22 +1,75 @@
+
+.testing {
+	#purpose {
+		.section-image-left {
+			img { display: inline-block; }
+		}
+		
+	}
+}
+
 #purpose { 
+	.section-image-left {
+		text-align: center;
+		padding-top: 70px;
+		img { display: none; }
+	}
+
 	background-color: @purpose-background;
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	color: @purpose-text-color;
 
-	h1 { color: @brand-primary; font-size: 19px; }
-	h2 { color: @brand-2; font-size: 17px; }
-	h3 { color: @brand-3; font-size: 15px; }
+	font-size: 11px;
+	h1 { color: @brand-primary; font-size: 15px; }
+	h2 { color: @brand-2; font-size: 13px; }
+	h3 { color: @brand-3; font-size: 11px; }
 
 	input {
-		width: 200px;
+		width: 150px;
 	}
 	.input-group-btn {
 		width: 96px;
 	}
 
 	form {
-		padding-top: 140px;
+		padding-top: 90px;
 	}
 
+}
+
+//768px;
+@media (min-width:@screen-sm-min) {	
+	#purpose {
+		padding-top: 120px;
+		padding-bottom: 120px;
+
+		font-size: 14px;
+		h1 { font-size: 19px; }
+		h2 { font-size: 17px; }
+		h3 { font-size: 15px; }
+
+		input {
+			width: 200px;
+		}
+		.input-group-btn {
+			width: 96px;
+		}
+		form {
+			padding-top: 140px;
+		}
+	}
+}
+
+//992px;
+@media (min-width:@screen-md-min) { 
+	#purpose {
+		
+	}	
+}
+// 1200px;
+@media (min-width:@screen-lg-min) {
+	#purpose {
+		
+	}	
 }

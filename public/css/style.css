@@ -6699,30 +6699,66 @@ footer ul li {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.testing #purpose .section-image-left img {
+  display: inline-block;
+}
 #purpose {
   background-color: #FFFFFF;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #000A26;
+  font-size: 11px;
+}
+#purpose .section-image-left {
+  text-align: center;
+  padding-top: 70px;
+}
+#purpose .section-image-left img {
+  display: none;
 }
 #purpose h1 {
   color: #000B26;
-  font-size: 19px;
+  font-size: 15px;
 }
 #purpose h2 {
   color: #00A4FE;
-  font-size: 17px;
+  font-size: 13px;
 }
 #purpose h3 {
   color: #FF0036;
-  font-size: 15px;
+  font-size: 11px;
 }
 #purpose input {
-  width: 200px;
+  width: 150px;
 }
 #purpose .input-group-btn {
   width: 96px;
 }
 #purpose form {
-  padding-top: 140px;
+  padding-top: 90px;
+}
+@media (min-width: 768px) {
+  #purpose {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-size: 14px;
+  }
+  #purpose h1 {
+    font-size: 19px;
+  }
+  #purpose h2 {
+    font-size: 17px;
+  }
+  #purpose h3 {
+    font-size: 15px;
+  }
+  #purpose input {
+    width: 200px;
+  }
+  #purpose .input-group-btn {
+    width: 96px;
+  }
+  #purpose form {
+    padding-top: 140px;
+  }
 }
