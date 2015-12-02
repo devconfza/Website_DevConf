@@ -6681,7 +6681,7 @@ footer ul li {
 }
 #bannerSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
-  background-color: #ffffff;
+  background-color: #111111;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6691,11 +6691,14 @@ footer ul li {
 }
 #tracksSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
-  background-color: #ffffff;
+  background-color: #eeeeee;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.9;
+  color: #FFFFFF;
   text-align: center;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 90px;
 }
