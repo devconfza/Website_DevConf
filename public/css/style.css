@@ -6642,8 +6642,8 @@ button.close {
 }
 @media (min-width: 1200px) {
   #about {
-    padding-top: 250px;
-    padding-bottom: 170px;
+    padding-top: 230px;
+    padding-bottom: 190px;
   }
   #about img {
     width: 400px;
