@@ -1,15 +1,19 @@
 <div id="about">
     <div class="container">
         <div class="row">
-		<div>
-		    <img class= "img-responsive center-block" src="/public/images/bannerTitle.png" alt='DevConf;'/>
-		</div>
+            <div class="col-md-12">
+                <div>
+                    <img class= "img-responsive center-block" src="/public/images/bannerTitle.png" alt='DevConf;'/>
+                </div>
+            </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
                 <h2 class="countdown-timer-subtitle">10 March, 2016, Johannesburg</h2>
+            </div>
         </div>
         <div class="row">
-            <div id="event-countdown" class="col-md-8 col-md-offset-4 ">
+            <div class="col-md-12">
                 <div id="countdown-timer">
                     <div class="countdown-section">
                         <div id="countdown-days" class="countdown-amount first-item countdown-days">946</div>
@@ -23,17 +27,17 @@
                         <div id="countdown-mins" class="countdown-amount countdown-minutes">39</div>
                         <div class="countdown-period">MINUTES</div>
                     </div>
-		    <div class="countdown-section">
+                    <div class="countdown-section">
                         <div id="countdown-secs" class="countdown-amount countdown-seconds">39</div>
                         <div class="countdown-period">SECONDS</div>
                     </div>
                 </div>
-	    </div>
-	</div>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
-	var updateCountdown = function()
+    var updateCountdown = function()
         {
             var now = moment(new Date());
             var confDays = moment(new Date(2016, 2, 10, 8, 0,0));
@@ -50,7 +54,7 @@
 
     $(function()
     {
-		updateCountdown();
+        updateCountdown();
         setInterval(updateCountdown, 1000);
     });
 </script>

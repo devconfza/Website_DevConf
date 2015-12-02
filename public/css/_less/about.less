@@ -1,28 +1,95 @@
-#about { 
+#about {
+
 	/* background-image: url("/public/images/home-banner-bg.jpg"); */
 	background-color: @header-bg;
-	background-position: center; 
-	background-repeat: no-repeat; 
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 100px;
 
-	padding-top: 80px;
-	padding-bottom: 60px;
+	img {
+		width: 270px;
+	}
 
 	h2 {
 		text-transform: uppercase;
 		text-align: center;
+		font-size: 27px;
 	}
-
+	.countdown-amount {
+		font-size: 20px;
+	}
+	.countdown-period {
+		font-size: 10px;
+	}
 	.countdown-section {
 		display: inline-block;
 		padding: 0px 10px;
 	}
+}
 
-	.countdown-amount {
-		font-size: 35px;
-	}
+//768px;
+@media (min-width:@screen-sm-min) {	
+	#about {
+		padding-top: 110px;
+		padding-bottom: 100px;
 
-	.countdown-period {
-		font-size: 15px;
+		img {
+			width: 270px;
+		}
+		h2 {
+			font-size: 27px;
+		}
+		.countdown-amount {
+			font-size: 20px;
+		}
+		.countdown-period {
+			font-size: 10px;
+		}
 	}
+}
+
+//992px;
+@media (min-width:@screen-md-min) { 
+	#about {
+		padding-top: 160px;
+		padding-bottom: 130px;
+	
+		img {
+			width: 350px;
+		}
+		h2 {
+			font-size: 28px;
+		}
+		.countdown-amount {
+			font-size: 25px;
+		}
+		.countdown-period {
+			font-size: 12px;
+		}
+	}
+	
+}
+// 1200px;
+@media (min-width:@screen-lg-min) {
+	#about {
+		padding-top: 250px;
+		padding-bottom: 170px;
+	
+		img {
+			width: 400px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.countdown-amount {
+			font-size: 35px;
+		}
+		.countdown-period {
+			font-size: 15px;
+		}
+	}
+	
 }

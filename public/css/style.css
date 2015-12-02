@@ -6582,22 +6582,81 @@ button.close {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+#about img {
+  width: 270px;
 }
 #about h2 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 27px;
+}
+#about .countdown-amount {
+  font-size: 20px;
+}
+#about .countdown-period {
+  font-size: 10px;
 }
 #about .countdown-section {
   display: inline-block;
   padding: 0px 10px;
 }
-#about .countdown-amount {
-  font-size: 35px;
+@media (min-width: 768px) {
+  #about {
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  #about img {
+    width: 270px;
+  }
+  #about h2 {
+    font-size: 27px;
+  }
+  #about .countdown-amount {
+    font-size: 20px;
+  }
+  #about .countdown-period {
+    font-size: 10px;
+  }
 }
-#about .countdown-period {
-  font-size: 15px;
+@media (min-width: 992px) {
+  #about {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+  #about img {
+    width: 350px;
+  }
+  #about h2 {
+    font-size: 28px;
+  }
+  #about .countdown-amount {
+    font-size: 25px;
+  }
+  #about .countdown-period {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  #about {
+    padding-top: 250px;
+    padding-bottom: 170px;
+  }
+  #about img {
+    width: 400px;
+  }
+  #about h2 {
+    font-size: 30px;
+  }
+  #about .countdown-amount {
+    font-size: 35px;
+  }
+  #about .countdown-period {
+    font-size: 15px;
+  }
 }
 footer {
   text-align: center;
@@ -6642,8 +6701,8 @@ footer ul li {
 }
 #purpose {
   background-color: #FFFFFF;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   color: #000A26;
 }
 #purpose h1 {
@@ -6665,5 +6724,5 @@ footer ul li {
   width: 96px;
 }
 #purpose form {
-  padding-top: 90px;
+  padding-top: 140px;
 }
