@@ -6636,6 +6636,7 @@ footer ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.9;
   color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
