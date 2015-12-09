@@ -6686,6 +6686,14 @@ footer ul {
 footer ul li {
   padding: 10px;
 }
+.seperator {
+  background-color: #111111;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.seperator h1 {
+  font-size: 25px;
+}
 #bannerSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
   background-color: #111111;
@@ -6693,8 +6701,6 @@ footer ul li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 #tracksSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
@@ -6709,9 +6715,6 @@ footer ul li {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.testing #purpose .section-image-left img {
-  display: block;
-}
 #purpose {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -6719,17 +6722,20 @@ footer ul li {
   font-size: 11px;
 }
 #purpose .section-image-left img {
-  display: none;
+  display: block;
 }
 #purpose h1 {
   color: #000B26;
   font-size: 15px;
   font-weight: 600;
   margin-top: 0px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 #purpose h2 {
   color: #00A4FE;
   font-size: 13px;
+  margin-top: 0px;
 }
 #purpose h3 {
   color: #FF0036;
@@ -6754,13 +6760,13 @@ footer ul li {
     font-size: 14px;
   }
   #purpose h1 {
-    font-size: 19px;
+    font-size: 18px;
   }
   #purpose h2 {
-    font-size: 17px;
+    font-size: 16px;
   }
   #purpose h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
   #purpose input {
     width: 200px;
@@ -6772,6 +6778,18 @@ footer ul li {
     padding-top: 140px;
   }
 }
+#tracks {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
 #tracks h1 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#tracks table th.track {
+  width: 200px;
+}
+#tracks table th.keywords {
+  width: 200px;
 }
