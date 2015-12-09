@@ -1,31 +1,33 @@
-<form accept-charset="UTF-8" action="https://madmimi.com/signups/subscribe/176015" id="mad_mimi_signup_form" method="post" target="_blank">
-  <div style="margin:0;padding:0;display:inline">
-    <input name="utf8" type="hidden" value="✓"/>
+<div id="pre-register">
+  <form accept-charset="UTF-8" action="https://madmimi.com/signups/subscribe/176015" id="mad_mimi_signup_form" method="post" target="_blank">
+    <div style="margin:0;padding:0;display:inline">
+      <input name="utf8" type="hidden" value="✓"/>
+    </div>
+    <p>
+      If you would like to be kept informed please sign up here ...
+    </p>
+    <div class="input-group">
+      <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required" placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
+      <span class="">
+        <input id="signup_email" name="signup[email]" type="text" class="form-control mimi_field required" placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email" required></span>
+      <span class="input-group-btn mimi_field">
+      <input type="submit" class="submit btn btn-primary" value="Keep me informed" id="webform_submit_button" data-default-text="Keep me informed" data-submitting-text="Signing Up..." data-invalid-text="Try Again" data-choose-list="↑ Choose a list" data-thanks="Thank you!" data-class="btn btn-primary" />
+  </span>
   </div>
-  <p>
-    If you would like to be kept informed please sign up here ...
-  </p>
-  <div class="input-group">
-    <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required" placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
-    <span class="">
-      <input id="signup_email" name="signup[email]" type="text" class="form-control mimi_field required" placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email" required></span>
-    <span class="input-group-btn mimi_field">
-    <input type="submit" class="submit btn btn-primary" value="Keep me informed" id="webform_submit_button" data-default-text="Keep me informed" data-submitting-text="Signing Up..." data-invalid-text="Try Again" data-choose-list="↑ Choose a list" data-thanks="Thank you!" data-class="btn btn-primary" />
-</span>
+  <div class="mimi_field checkgroup" id="signup_audience_lists">
+  <div  style="display: none">
+    <input class="checkbox" id="list_2073517" name="lists[]" value="2073517" type="checkbox" checked="checked"/>
+    <label for="list_2073517">DevConf2016PreRegister</label>
+  </div>
+  <div class="checkbox">
+    <label for="list_1138553">
+      <input id="list_1138553" name="lists[]" value="1138553" type="checkbox" checked="checked"/>
+      I would like to receive the DeveloperUG newsletter as well.
+    </label>
+  </div>
+  </div>
+  </form>
 </div>
-<div class="mimi_field checkgroup" id="signup_audience_lists">
-<div  style="display: none">
-  <input class="checkbox" id="list_2073517" name="lists[]" value="2073517" type="checkbox" checked="checked"/>
-  <label for="list_2073517">DevConf2016PreRegister</label>
-</div>
-<div class="checkbox">
-  <label for="list_1138553">
-    <input id="list_1138553" name="lists[]" value="1138553" type="checkbox" checked="checked"/>
-    I would like to receive the DeveloperUG newsletter as well.
-  </label>
-</div>
-</div>
-</form>
 
 <script type="text/javascript">
 (function(global) {

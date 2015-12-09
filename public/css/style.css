@@ -6723,6 +6723,8 @@ footer ul li {
 }
 #purpose .section-image-left img {
   display: block;
+  padding-bottom: 20px;
+  width: 390px;
 }
 #purpose h1 {
   color: #000B26;
@@ -6737,21 +6739,8 @@ footer ul li {
   font-size: 13px;
   margin-top: 0px;
 }
-#purpose h3 {
-  color: #FF0036;
-  font-size: 11px;
-}
 #purpose em {
   font-weight: 600;
-}
-#purpose input {
-  width: 135px;
-}
-#purpose .input-group-btn {
-  width: 96px;
-}
-#purpose form {
-  padding-top: 90px;
 }
 @media (min-width: 768px) {
   #purpose {
@@ -6768,14 +6757,10 @@ footer ul li {
   #purpose h3 {
     font-size: 14px;
   }
-  #purpose input {
-    width: 200px;
-  }
-  #purpose .input-group-btn {
-    width: 96px;
-  }
-  #purpose form {
-    padding-top: 140px;
+}
+@media (min-width: 1200px) {
+  #purpose .section-image-left img {
+    width: 470px;
   }
 }
 #tracks {
@@ -6788,8 +6773,55 @@ footer ul li {
   padding-bottom: 40px;
 }
 #tracks table th.track {
-  width: 200px;
+  width: 100px;
 }
 #tracks table th.keywords {
-  width: 200px;
+  width: 150px;
+}
+@media (min-width: 768px) {
+  #tracks table th.track {
+    width: 200px;
+  }
+  #tracks table th.keywords {
+    width: 200px;
+  }
+}
+#pre-register input {
+  font-size: 12px;
+  width: 125px;
+}
+#pre-register .input-group-btn {
+  width: 96px;
+}
+#pre-register form {
+  padding-top: 90px;
+}
+@media (min-width: 768px) {
+  #pre-register input {
+    font-size: 12px;
+    width: 130px;
+  }
+}
+@media (min-width: 992px) {
+  #pre-register input {
+    font-size: 14px;
+    width: 170px;
+  }
+  #pre-register .input-group-btn {
+    width: 96px;
+  }
+  #pre-register form {
+    padding-top: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  #pre-register input {
+    width: 200px;
+  }
+  #pre-register .input-group-btn {
+    width: 96px;
+  }
+  #pre-register form {
+    padding-top: 140px;
+  }
 }
