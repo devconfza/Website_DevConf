@@ -1,6 +1,6 @@
 <header>
-    <nav class="navbar navbar-default">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,39 +18,28 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="#">About</a>
+                        <a href="#purpose">About</a>
                     </li>
                     <li class="active">
+                        <a href="#pre-register">Register</a>
+                    </li>
+                    <!-- <li class="active">
                         <a href="#">Speakers</a>
-                    </li>
+                    </li> -->
                     <li class="active">
+                        <a href="#tracks">Tracks</a>
+                    </li>
+                    <!-- <li class="active">
                         <a href="#">Agenda</a>
+                    </li> -->
+                    <li class="active">
+                        <a href="#sponsors">Sponsors</a>
                     </li>
                     <li class="active">
-                        <a href="#">Register</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Sponsors</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<script>
-    $(function()
-    {
-        //var bodyOffset = $('window').offset();
-        $(window).scroll(function(ev)
-        {
-            var fromTop = $(window).scrollTop();
-            if (fromTop > 60) 
-				$('nav').addClass('navbar-fixed-top');
-			else
-				$('nav').removeClass('navbar-fixed-top');
-        });
-    });
-</script>
