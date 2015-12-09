@@ -6796,6 +6796,10 @@ footer ul li {
 #pre-register form {
   padding-top: 90px;
 }
+#pre-register input[type=checkbox] {
+  margin-left: 0px;
+  width: 20px;
+}
 @media (min-width: 768px) {
   #pre-register input {
     font-size: 12px;
