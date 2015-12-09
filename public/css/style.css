@@ -6581,7 +6581,7 @@ button.close {
   text-align: center;
 }
 #about {
-  background-image: url("/public/images/Background_Web.gif");
+  background-image: url("/public/images/Background_Web.jpg");
   background-color: #000B26;
   background-position: center;
   background-repeat: no-repeat;
@@ -6597,6 +6597,9 @@ button.close {
   text-transform: uppercase;
   text-align: center;
   font-size: 27px;
+}
+#about h3 {
+  font-size: 13px;
 }
 #about .countdown-amount {
   font-size: 20px;
@@ -6616,9 +6619,6 @@ button.close {
   #about img {
     width: 270px;
   }
-  #about h2 {
-    font-size: 27px;
-  }
   #about .countdown-amount {
     font-size: 20px;
   }
@@ -6636,6 +6636,9 @@ button.close {
   }
   #about h2 {
     font-size: 28px;
+  }
+  #about h3 {
+    font-size: 13px;
   }
   #about .countdown-amount {
     font-size: 25px;
