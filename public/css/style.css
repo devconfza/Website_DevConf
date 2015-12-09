@@ -1063,7 +1063,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #eeeeee;
+  color: #f6f6f6;
   background-color: #000B26;
 }
 input,
@@ -1126,7 +1126,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #f6f6f6;
 }
 .sr-only {
   position: absolute;
@@ -1376,7 +1376,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #f6f6f6;
 }
 ul,
 ol {
@@ -1444,7 +1444,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #f6f6f6;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1468,7 +1468,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #f6f6f6;
   border-left: 0;
   text-align: right;
 }
@@ -2549,7 +2549,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   opacity: 1;
 }
 textarea.form-control {
@@ -3765,7 +3765,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -3850,7 +3850,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -3865,7 +3865,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   border-color: #000B26;
 }
 .nav .nav-divider {
@@ -3891,7 +3891,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #ddd;
+  border-color: #f6f6f6 #f6f6f6 #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4607,7 +4607,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #000000;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   border-color: #ddd;
 }
 .pagination > .active > a,
@@ -4683,7 +4683,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
 }
 .pager .next > a,
 .pager .next > span {
@@ -4817,7 +4817,7 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4829,7 +4829,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: #dddddd;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -4876,7 +4876,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #eeeeee;
+  color: #f6f6f6;
 }
 .alert {
   padding: 15px;
@@ -5119,7 +5119,7 @@ a.list-group-item:focus {
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   color: #777777;
   cursor: not-allowed;
 }
@@ -6529,6 +6529,10 @@ button.close {
     display: none !important;
   }
 }
+.section-light {
+  background-color: #f6f6f6;
+  color: #000B26;
+}
 .top-buffer {
   margin-top: 20px;
 }
@@ -6563,13 +6567,13 @@ button.close {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: inherit;
-  color: #eeeeee;
+  color: #f6f6f6;
   font-weight: bold;
   font-size: 16px;
 }
 #sponsors {
   background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6577,7 +6581,7 @@ button.close {
   text-align: center;
 }
 #about {
-  /* background-image: url("/public/images/home-banner-bg.jpg"); */
+  background-image: url("/public/images/Background_Web.jpg");
   background-color: #000B26;
   background-position: center;
   background-repeat: no-repeat;
@@ -6593,6 +6597,9 @@ button.close {
   text-transform: uppercase;
   text-align: center;
   font-size: 27px;
+}
+#about h3 {
+  font-size: 13px;
 }
 #about .countdown-amount {
   font-size: 20px;
@@ -6612,9 +6619,6 @@ button.close {
   #about img {
     width: 270px;
   }
-  #about h2 {
-    font-size: 27px;
-  }
   #about .countdown-amount {
     font-size: 20px;
   }
@@ -6633,6 +6637,9 @@ button.close {
   #about h2 {
     font-size: 28px;
   }
+  #about h3 {
+    font-size: 13px;
+  }
   #about .countdown-amount {
     font-size: 25px;
   }
@@ -6650,6 +6657,9 @@ button.close {
   }
   #about h2 {
     font-size: 30px;
+  }
+  #about h3 {
+    font-size: 15px;
   }
   #about .countdown-amount {
     font-size: 35px;
@@ -6679,6 +6689,14 @@ footer ul {
 footer ul li {
   padding: 10px;
 }
+.seperator {
+  background-color: #111111;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.seperator h1 {
+  font-size: 25px;
+}
 #bannerSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
   background-color: #111111;
@@ -6686,12 +6704,10 @@ footer ul li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 #tracksSeparator {
   background-image: url(http://www.devconf.co.za/public/images/RandomSeparator1Edited.png);
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6702,43 +6718,32 @@ footer ul li {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.testing #purpose .section-image-left img {
-  display: inline-block;
-}
 #purpose {
-  background-color: #FFFFFF;
   padding-top: 50px;
   padding-bottom: 50px;
   color: #000A26;
   font-size: 11px;
 }
-#purpose .section-image-left {
-  text-align: center;
-  padding-top: 70px;
-}
 #purpose .section-image-left img {
-  display: none;
+  display: block;
+  padding-bottom: 20px;
+  width: 390px;
 }
 #purpose h1 {
   color: #000B26;
   font-size: 15px;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 #purpose h2 {
   color: #00A4FE;
   font-size: 13px;
+  margin-top: 0px;
 }
-#purpose h3 {
-  color: #FF0036;
-  font-size: 11px;
-}
-#purpose input {
-  width: 150px;
-}
-#purpose .input-group-btn {
-  width: 96px;
-}
-#purpose form {
-  padding-top: 90px;
+#purpose em {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #purpose {
@@ -6747,21 +6752,83 @@ footer ul li {
     font-size: 14px;
   }
   #purpose h1 {
-    font-size: 19px;
+    font-size: 18px;
   }
   #purpose h2 {
-    font-size: 17px;
+    font-size: 16px;
   }
   #purpose h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
-  #purpose input {
+}
+@media (min-width: 1200px) {
+  #purpose .section-image-left img {
+    width: 470px;
+  }
+}
+#tracks {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+#tracks h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#tracks table th.track {
+  width: 100px;
+}
+#tracks table th.keywords {
+  width: 150px;
+}
+@media (min-width: 768px) {
+  #tracks table th.track {
     width: 200px;
   }
-  #purpose .input-group-btn {
+  #tracks table th.keywords {
+    width: 200px;
+  }
+}
+#pre-register input {
+  font-size: 12px;
+  width: 125px;
+}
+#pre-register .input-group-btn {
+  width: 96px;
+}
+#pre-register form {
+  padding-top: 90px;
+}
+#pre-register input[type=checkbox] {
+  margin-left: 0px;
+  width: 20px;
+}
+@media (min-width: 768px) {
+  #pre-register input {
+    font-size: 12px;
+    width: 130px;
+  }
+}
+@media (min-width: 992px) {
+  #pre-register input {
+    font-size: 14px;
+    width: 170px;
+  }
+  #pre-register .input-group-btn {
     width: 96px;
   }
-  #purpose form {
+  #pre-register form {
+    padding-top: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  #pre-register input {
+    width: 200px;
+  }
+  #pre-register .input-group-btn {
+    width: 96px;
+  }
+  #pre-register form {
     padding-top: 140px;
   }
 }
