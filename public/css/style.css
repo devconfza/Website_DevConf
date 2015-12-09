@@ -6789,6 +6789,15 @@ footer ul li {
     width: 200px;
   }
 }
+#contactus {
+  background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
+  background-color: #f6f6f6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-align: center;
+}
 #pre-register input {
   font-size: 12px;
   width: 125px;
