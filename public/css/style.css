@@ -6532,6 +6532,17 @@ button.close {
 .section-light {
   background-color: #f6f6f6;
   color: #000B26;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.section-dark {
+  background-color: #000B26;
+  color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.section-dark a {
+  color: #f6f6f6;
 }
 .top-buffer {
   margin-top: 20px;
@@ -6672,7 +6683,6 @@ footer {
   text-align: center;
   font-style: normal;
   text-transform: uppercase;
-  font-weight: 600;
   padding-bottom: 15px;
 }
 footer h1 {
