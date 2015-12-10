@@ -6532,6 +6532,17 @@ button.close {
 .section-light {
   background-color: #f6f6f6;
   color: #000B26;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.section-dark {
+  background-color: #000B26;
+  color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.section-dark a {
+  color: #f6f6f6;
 }
 .top-buffer {
   margin-top: 20px;
@@ -6672,7 +6683,6 @@ footer {
   text-align: center;
   font-style: normal;
   text-transform: uppercase;
-  font-weight: 600;
   padding-bottom: 15px;
 }
 footer h1 {
@@ -6727,7 +6737,7 @@ footer ul li {
 #purpose .section-image-left img {
   display: block;
   padding-bottom: 20px;
-  width: 390px;
+  width: 300px;
 }
 #purpose h1 {
   color: #000B26;
@@ -6750,6 +6760,11 @@ footer ul li {
     padding-top: 120px;
     padding-bottom: 120px;
     font-size: 14px;
+  }
+  #purpose .section-image-left img {
+    display: block;
+    padding-bottom: 20px;
+    width: 390px;
   }
   #purpose h1 {
     font-size: 18px;
@@ -6799,11 +6814,15 @@ footer ul li {
   text-align: center;
 }
 #pre-register input {
-  font-size: 12px;
-  width: 125px;
+  font-size: 10px;
+  width: 90px;
 }
 #pre-register .input-group-btn {
   width: 96px;
+}
+#pre-register .input-group-btn input {
+  width: 100px;
+  height: 34px;
 }
 #pre-register form {
   padding-top: 90px;
@@ -6817,6 +6836,9 @@ footer ul li {
     font-size: 12px;
     width: 130px;
   }
+  #pre-register .input-group-btn input {
+    width: 125px;
+  }
 }
 @media (min-width: 992px) {
   #pre-register input {
@@ -6825,6 +6847,9 @@ footer ul li {
   }
   #pre-register .input-group-btn {
     width: 96px;
+  }
+  #pre-register .input-group-btn input {
+    width: 145px;
   }
   #pre-register form {
     padding-top: 140px;
