@@ -1,0 +1,167 @@
+DEVCONF 16 SUBMISSION FORM 
+
+
+------------------------------------------------------------------------------------------------
+
+NB: Should you have any queries about the document or are unsure of how to fill it in please 
+don't hesistate to email us with your questions: info@devconf.co.za
+
+Once you are happy with your submission save the file using the following naming format: 
+
+DC16-LASTNAME-FIRSTNAME.txt 
+
+(e.g. if your name was Mark Pearl you would name the file as follows: DC16-PEARL-MARK.txt) 
+ 
+Email the file to talksubmission@devconf.co.za - you should receive an email within 48 hours 
+notifying you that we have received your submission, if you do not receive this notification 
+please follow up with us. 
+
+
+------------------------------------------------------------------------------------------------
+
+## Compensation Assistance  ## 
+
+Ideally we would love to be able to assist all accepted submissions.
+
+Unfortuantley we have a limited fund available for assisting speakers.
+
+Please answer the following:
+
+I require travel assistance: Yes / No (If yes please indicate the amount in ZAR)
+I will be travelling from:
+
+I require accomodation assistance: Yes / No
+I need the following number of nights of accomodation: 
+
+------------------------------------------------------------------------------------------------
+
+## Presenter Information ## 
+
+*The following fields are being used to collect pertinent information about the presenter.*
+
+### Speaker Bio ### 
+
+A brief description of who you are and any talks you have given previously (max: 300 words).
+
+### Website / Blog (optional) ###
+
+The URL to your website or blog - or that of your organisation 
+
+### Videos of previous talks (optional) ###
+
+The URL to recordings of previous talks
+
+### Contact Number ###
+
+Contact number where we can reach you (preferably mobile) 
+ 
+------------------------------------------------------------------------------------------------
+
+Please include all proposed sessions in a single submission document. We encourage you to submit 
+at least 3 proposed sessions as this will increase the chances of one of the sessions being accepted.
+
+The following fields are being used to collect pertinent information about session proposals: 
+
+------------------------------------------------------------------------------------------------
+
+## Proposed Session 1 Information ## 
+ 
+### Title ###
+
+The name of the proposed session; 
+
+Keep titles interesting, but avoid being too generic or abstract 
+We want attendees to be able to identify what the session is about by the title. 
+Remember, in many cases, the title is the "hook" that will attract attendees to the session.
+
+### Overview (max: 200 words) ###
+
+A brief overview of your proposed session 
+
+### Process Mechanics (max: 300 words) ###
+
+How your session is structured to deliver its message; tell us about the format of the session, 
+any interaction planned, and the experience your audience will have. 
+
+### Learning Outcomes (max: 100 words) ###
+
+What will attendees discover by attending your session? 3-5 points 
+
+### Talk level ###
+
+Choose a primary target audience - Introduction, Deep Dive, Generalist
+
+### Session Requirements ###
+
+Room setup requests for scheduling the sessions. DevConf will provide a projector, flip chart and markers; 
+Please advise if anything additional is required for your session. 
+
+------------------------------------------------------------------------------------------------
+
+## Proposed Session 2 Information ## 
+ 
+### Title ###
+
+The name of the proposed session; 
+
+Keep titles interesting, but avoid being too generic or abstract 
+We want attendees to be able to identify what the session is about by the title. 
+Remember, in many cases, the title is the "hook" that will attract attendees to the session.
+
+### Overview (max: 200 words) ###
+
+A brief overview of your proposed session 
+
+### Process Mechanics (max: 300 words) ###
+
+How your session is structured to deliver its message; tell us about the format of the session, 
+any interaction planned, and the experience your audience will have. 
+
+### Learning Outcomes (max: 100 words) ###
+
+What will attendees discover by attending your session? 3-5 points 
+
+### Talk level ###
+
+Choose a primary target audience - Introduction, Deep Dive, Generalist
+
+### Session Requirements ###
+
+Room setup requests for scheduling the sessions. DevConf will provide a projector, flip chart and markers; 
+Please advise if anything additional is required for your session. 
+
+------------------------------------------------------------------------------------------------
+
+## Proposed Session 3 Information ## 
+ 
+### Title ###
+
+The name of the proposed session; 
+
+Keep titles interesting, but avoid being too generic or abstract 
+We want attendees to be able to identify what the session is about by the title. 
+Remember, in many cases, the title is the "hook" that will attract attendees to the session.
+
+### Overview (max: 200 words) ###
+
+A brief overview of your proposed session 
+
+### Process Mechanics (max: 300 words) ###
+
+How your session is structured to deliver its message; tell us about the format of the session, 
+any interaction planned, and the experience your audience will have. 
+
+### Learning Outcomes (max: 100 words) ###
+
+What will attendees discover by attending your session? 3-5 points 
+
+### Talk level ###
+
+Choose a primary target audience - Introduction, Deep Dive, Generalist
+
+### Session Requirements ###
+
+Room setup requests for scheduling the sessions. DevConf will provide a projector, flip chart and markers; 
+Please advise if anything additional is required for your session. 
+
+------------------------------------------------------------------------------------------------
