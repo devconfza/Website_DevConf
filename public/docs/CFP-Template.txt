@@ -1,10 +1,11 @@
 DEVCONF 16 SUBMISSION FORM 
 
-DevConf '16 will be held on the 8 March 2016 at 12-8 Incubation Drive, Riverside View Ext 15, Fourways, Midrand, Gauteng, South Africa
-
 ------------------------------------------------------------------------------------------------
 
-NB: Should you have any queries about the document or are unsure of how to fill it in please 
+DevConf '16 will be held on the 8 March 2016 at 12-8 Incubation Drive, Riverside View Ext 15, 
+Fourways, Midrand, Gauteng, South Africa
+
+Should you have any queries about the document or are unsure of how to fill it in please 
 don't hesistate to email us with your questions: info@devconf.co.za
 
 Once you are happy with your submission save the file using the following naming format: 
