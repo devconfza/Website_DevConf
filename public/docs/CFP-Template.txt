@@ -12,7 +12,7 @@ DC16-LASTNAME-FIRSTNAME.txt
 
 (e.g. if your name was Mark Pearl you would name the file as follows: DC16-PEARL-MARK.txt) 
  
-Email the file to talksubmission@devconf.co.za - you should receive an email within 48 hours 
+Email the file to submission@devconf.co.za - you should receive an email within 48 hours 
 notifying you that we have received your submission, if you do not receive this notification 
 please follow up with us. 
 
@@ -24,6 +24,8 @@ please follow up with us.
 Ideally we would love to be able to assist all accepted submissions.
 
 Unfortuantley we have a limited fund available for assisting speakers.
+
+DevConf will be held at 12-8 Incubation Drive, Riverside View Ext 15, Fourways, Midrand, Gauteng, South Africa
 
 Please answer the following:
 
@@ -42,6 +44,10 @@ I need the following number of nights of accomodation:
 ### Speaker Bio ### 
 
 A brief description of who you are and any talks you have given previously (max: 300 words).
+
+### Twitter Handle ### 
+
+The twitter handle we should use for you when advertising your sessions.
 
 ### Website / Blog (optional) ###
 
