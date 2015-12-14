@@ -6535,6 +6535,9 @@ button.close {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+.section-light a {
+  color: #00A4FE;
+}
 .section-dark {
   background-color: #000B26;
   color: #f6f6f6;
@@ -6871,4 +6874,16 @@ footer ul li {
   #pre-register form {
     padding-top: 140px;
   }
+}
+#speakers {
+  color: #333333;
+  text-align: center;
+  padding-bottom: 100px;
+}
+#speakers h2 {
+  padding-top: 40px;
+  font-size: 20px;
+}
+#speakers ul {
+  list-style: none;
 }
