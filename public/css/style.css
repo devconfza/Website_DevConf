@@ -6593,12 +6593,33 @@ button.close {
 }
 #sponsors {
   background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
-  background-color: #f6f6f6;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #333333;
   text-align: center;
+}
+#sponsors h2 {
+  padding: 15px 0px;
+}
+#sponsors .sponsor-type {
+  padding-bottom: 15px;
+}
+#sponsors .platinum img {
+  max-width: 250px;
+  max-height: 100px;
+}
+#sponsors .gold img {
+  max-width: 200px;
+  max-height: 90px;
+}
+#sponsors .silver img {
+  max-width: 175px;
+  max-height: 80px;
+}
+#sponsors .bronze img {
+  max-width: 150px;
+  max-height: 70px;
 }
 #about {
   background-image: url("/public/images/Background_Web.jpg");
@@ -6814,13 +6835,14 @@ footer ul li {
   }
 }
 #contactus {
-  background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
-  background-color: #f6f6f6;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #333333;
   text-align: center;
+}
+#contactus a {
+  color: #000B26;
 }
 #pre-register input {
   font-size: 10px;
