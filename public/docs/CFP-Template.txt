@@ -1,8 +1,9 @@
 DEVCONF 16 SUBMISSION FORM 
+version 20160106
 
 ------------------------------------------------------------------------------------------------
 
-DevConf '16 will be held on the 8 March 2016 at 12-8 Incubation Drive, Riverside View Ext 15, 
+DevConf 2016 will be held on the 8 March 2016 at 12-8 Incubation Drive, Riverside View Ext 15, 
 Fourways, Midrand, Gauteng, South Africa
 
 Should you have any queries about the document or are unsure of how to fill it in please 
@@ -17,7 +18,6 @@ DC16-LASTNAME-FIRSTNAME.txt
 Email the file to submission@devconf.co.za - you should receive an email within 48 hours 
 notifying you that we have received your submission, if you do not receive this notification 
 please follow up with us. 
-
 
 ------------------------------------------------------------------------------------------------
 
@@ -60,13 +60,18 @@ The URL to recordings of previous talks
 ### Contact Number ###
 
 Contact number where we can reach you (preferably mobile) 
+
+### Contact Email ###
+
+Preferred email to contact you on about your submission.
  
 ------------------------------------------------------------------------------------------------
 
 Please include all proposed sessions in a single submission document. We encourage you to submit 
 more than one proposed sessions as this will increase the chances of one of the sessions being accepted.
 Don't however feel pressure to submit multiple sessions if you only are comfortable doing one. Submit 
-as many as you are comfortable talking about.
+as many as you are comfortable talking about. This document has three placeholders, please add/remove 
+them as needed.
 
 The following fields are being used to collect pertinent information about session proposals: 
 
