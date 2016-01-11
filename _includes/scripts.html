@@ -7,7 +7,7 @@
     var updateCountdown = function()
         {
             var now = moment(new Date());
-            var confDays = moment(new Date(2016, 2, 8, 8, 0,0));
+            var confDays = moment(new Date(2016, 2, 8, 9, 0,0));
             var days = confDays.diff(now, 'days');
             var hours = confDays.diff(now.add(days, 'd'), 'hours');
             var mins = confDays.diff(now.add(hours, 'h'), 'minutes');
