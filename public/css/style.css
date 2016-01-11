@@ -6771,10 +6771,17 @@ footer ul li {
   color: #000A26;
   font-size: 11px;
 }
-#purpose .section-image-left img {
+#purpose .section-image img {
   display: block;
   padding-bottom: 20px;
   width: 300px;
+  margin: 0 auto;
+}
+#purpose .row {
+  padding-top: 35px;
+}
+#purpose .row .row {
+  padding-top: 0px;
 }
 #purpose h1 {
   color: #000B26;
@@ -6788,6 +6795,7 @@ footer ul li {
   color: #00A4FE;
   font-size: 13px;
   margin-top: 0px;
+  text-align: center;
 }
 #purpose em {
   font-weight: 600;
@@ -6798,7 +6806,7 @@ footer ul li {
     padding-bottom: 120px;
     font-size: 14px;
   }
-  #purpose .section-image-left img {
+  #purpose .section-image img {
     display: block;
     padding-bottom: 20px;
     width: 390px;
@@ -6814,7 +6822,7 @@ footer ul li {
   }
 }
 @media (min-width: 1200px) {
-  #purpose .section-image-left img {
+  #purpose .section-image img {
     width: 470px;
   }
 }
@@ -6863,7 +6871,7 @@ footer ul li {
   height: 34px;
 }
 #pre-register form {
-  padding-top: 90px;
+  padding-top: 5px;
 }
 #pre-register input[type=checkbox] {
   margin-left: 0px;
@@ -6890,7 +6898,7 @@ footer ul li {
     width: 145px;
   }
   #pre-register form {
-    padding-top: 140px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -6901,7 +6909,7 @@ footer ul li {
     width: 96px;
   }
   #pre-register form {
-    padding-top: 140px;
+    padding-top: 20px;
   }
 }
 #speakers {
