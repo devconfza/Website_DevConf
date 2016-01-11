@@ -1,11 +1,17 @@
 
 #purpose { 
-	.section-image-left {
+	.section-image {
 		img { 
 			display: block;
 			padding-bottom: 20px;
 			width: 300px;
+			margin: 0 auto;
 		}
+	}
+
+	#zadevchat img {
+		border: 1px solid darken(@gray-lighter, 10%); 
+		padding: 0px;
 	}
 
 	padding-top: 50px;
@@ -13,6 +19,13 @@
 	color: @purpose-text-color;
 
 	font-size: 11px;
+	.row {
+		padding-top: 35px;
+		.row {
+			padding-top: 0px;
+		}
+	}
+
 	h1 { 
 		color: @brand-primary; 
 		font-size: 15px; 
@@ -25,6 +38,7 @@
 		color: @brand-2; 
 		font-size: 13px;
 		margin-top: 0px;
+		text-align: center;
 	}
 
 	em {
@@ -35,7 +49,7 @@
 //768px;
 @media (min-width:@screen-sm-min) {	
 	#purpose {
-		.section-image-left {
+		.section-image {
 			img { 
 				display: block;
 				padding-bottom: 20px;
@@ -62,7 +76,7 @@
 // 1200px;
 @media (min-width:@screen-lg-min) {
 	#purpose {
-		.section-image-left {
+		.section-image {
 			img { 
 				width: 470px;
 			}

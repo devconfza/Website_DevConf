@@ -37,25 +37,3 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    var updateCountdown = function()
-        {
-            var now = moment(new Date());
-            var confDays = moment(new Date(2016, 2, 8, 9, 0,0));
-            var days = confDays.diff(now, 'days');
-            var hours = confDays.diff(now.add(days, 'd'), 'hours');
-            var mins = confDays.diff(now.add(hours, 'h'), 'minutes');
-            var secs = confDays.diff(now.add(mins, 'm'), 'seconds');
-
-            $('#countdown-days').html(days);
-            $('#countdown-hours').html(hours);
-            $('#countdown-mins').html(mins);
-            $('#countdown-secs').html(secs);
-        };
-
-    $(function()
-    {
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    });
-</script>
