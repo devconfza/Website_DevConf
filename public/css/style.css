@@ -6780,6 +6780,10 @@ footer ul li {
   width: 300px;
   margin: 0 auto;
 }
+#purpose #zadevchat img {
+  border: 1px solid #dddddd;
+  padding: 0px;
+}
 #purpose .row {
   padding-top: 35px;
 }
