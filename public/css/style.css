@@ -6931,3 +6931,19 @@ footer ul li {
 #speakers ul {
   list-style: none;
 }
+#community {
+  text-align: center;
+}
+#community h2 {
+  padding: 40px 0px 60px 0px;
+}
+#community .sponsor-type {
+  padding-bottom: 15px;
+}
+#community .sponsor-type a {
+  background-color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border: 3px solid white;
+}
