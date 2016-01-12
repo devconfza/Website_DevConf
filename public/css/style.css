@@ -6628,6 +6628,9 @@ button.close {
   max-width: 150px;
   max-height: 70px;
 }
+body {
+  padding-top: 70px;
+}
 #about {
   background-image: url("/public/images/Background_Web.jpg");
   background-color: #000B26;
@@ -6635,7 +6638,7 @@ button.close {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 110px;
+  padding-top: 40px;
   padding-bottom: 100px;
 }
 #about img {
@@ -6664,7 +6667,7 @@ button.close {
 }
 @media (min-width: 768px) {
   #about {
-    padding-top: 110px;
+    padding-top: 40px;
     padding-bottom: 100px;
   }
   #about img {
@@ -6679,7 +6682,7 @@ button.close {
 }
 @media (min-width: 992px) {
   #about {
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 130px;
   }
   #about img {
@@ -6700,7 +6703,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   #about {
-    padding-top: 230px;
+    padding-top: 190px;
     padding-bottom: 190px;
   }
   #about img {
@@ -6810,7 +6813,7 @@ footer ul li {
 @media (min-width: 768px) {
   #purpose {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 20px;
     font-size: 14px;
   }
   #purpose .section-image img {
@@ -6918,6 +6921,13 @@ footer ul li {
   #pre-register form {
     padding-top: 20px;
   }
+}
+#purpose #register {
+  padding-top: 90px;
+}
+#purpose #register #ticketframe {
+  width: 100%;
+  height: 330px;
 }
 #speakers {
   color: #333333;
