@@ -27,13 +27,11 @@
 </script>
 
 <script type="text/javascript">
-    $.ajax('http://api.quicket.co.za:80/api/events/13813/guests?api_key=2ea25cb97633529dfb89f35275de24c4', {
-        headers: {
-            usertoken: 'mFzvna8DTLJzfVRBDVFHpglHVCpkpYSv'
-        },
+    $.ajax('http://helperservices.tjkruger.com:3030/DevConf/ticketssoldcount', {
         dataType: 'json',
         success: function(data) {
-            $('#ticketsremainingcount').html(350 - data.records);
+            console.log('Resp', data);
+            $('#ticketsremainingcount').html(350 - data);
             $('#ticketsremaining').show();
         }
     })
