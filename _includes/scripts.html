@@ -31,7 +31,7 @@
 </script>
 
 <script type="text/javascript">
-    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount'
+    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
         dataType: 'json',
         success: function(data) {
             console.log('Resp', data);
