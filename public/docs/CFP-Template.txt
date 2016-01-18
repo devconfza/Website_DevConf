@@ -1,5 +1,5 @@
 DEVCONF 16 SUBMISSION FORM 
-version 20160106
+version 20160113
 
 ------------------------------------------------------------------------------------------------
 
@@ -15,10 +15,17 @@ DC16-LASTNAME-FIRSTNAME.txt
 
 (e.g. if your name was Mark Pearl you would name the file as follows: DC16-PEARL-MARK.txt) 
  
+In the case of a talk with multiple speakers, please pick one speaker for the file name.
+ 
 Email the file to submission@devconf.co.za - you should receive an email within 48 hours 
 notifying you that we have received your submission, if you do not receive this notification 
 please follow up with us. 
 
+You may also update your talk submission ANYTIME before the closing by emailing an updated document.
+
+We are planning on one talk per presenter, but if you would like to do multiple talks on the day 
+please make a note in your submission file so we can take that into account. 
+ 
 ------------------------------------------------------------------------------------------------
 
 ## Compensation Assistance  ## 
@@ -39,7 +46,8 @@ I need the following number of nights of accomodation:
 
 ## Presenter Information ## 
 
-*The following fields are being used to collect pertinent information about the presenter.*
+The following fields are being used to collect pertinent information about the presenter. 
+If you have multiple speakers, please be sure to list all their details here. 
 
 ### Speaker Bio ### 
 
