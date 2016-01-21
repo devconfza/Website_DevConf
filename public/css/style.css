@@ -6565,6 +6565,43 @@ button.close {
 .medium {
   font-size: 26px;
 }
+.image-responsive-center img {
+  display: block;
+  padding-bottom: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+.image-responsive-center .img-large {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .image-responsive-center img {
+    display: block;
+    padding-bottom: 20px;
+    width: 390px;
+  }
+  .image-responsive-center .img-large {
+    width: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .image-responsive-center img {
+    display: block;
+    padding-bottom: 20px;
+    width: 390px;
+  }
+  .image-responsive-center .img-large {
+    width: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  .image-responsive-center img {
+    width: 470px;
+  }
+  .image-responsive-center .img-large {
+    width: 750px;
+  }
+}
 .navbar-default {
   background-color: inherit;
   border: none;
