@@ -1,17 +1,24 @@
 <section id="speakers" class="section-light">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">				
-				<p>We are currently contacting speakers to inform them of the status of their submission.</p> 				
-                <p>Speakers and the agenda will start to be be announced from the 25th January 2016 onwards.</p>
-                <h2>What type of content can you expect?</h2>
-                <p>We looked at those submissions and pulled out some trends of what our speakers think is exciting. This doesn't mean we will have exactly this content.</p>              
+		{% assign sorted_speakers = (site.data.speakers | sort: 'firstname') %}
+		{% for speaker in sorted_speakers %}
+		{% assign loopindex = forloop.index | modulo: 4 %}
+		  {% if loopindex == 1 %}
+		  <div clas="row">
+		  {% endif %}
+			<div class="col-md-3">
+				<div class="pic-box">
+					<img src="public\images\speakers\{{ speaker.pic }}" />
+					<span class="name">{{ speaker.firstname }} {{ speaker.lastname }}</span>
+					<a href="http://www.twitter.com/{{ speaker.twitter }}" target="_blank">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<div class="track">{{ speaker.track }} @ {{ speaker.time }}</div>
+				</div>
 			</div>
-		</div>
-        <div class="row">
-        	<div class="col-md-12 image-responsive-center" style="text-align: center;">
-				<img class="img-large" src='/public/images/wordcloud.jpg' alt='Word cloud'><br/>
-			</div>
-        </div>
+		  {% if loopindex == 0 or forloop.last %}
+		  </div>
+		  {% endif %}
+		{% endfor %}
 	</div>
 </section>

@@ -1,0 +1,398 @@
+##############################  Crafting Code #########################
+
+- firstname: Chris
+  lastname: Tite
+  twitter: tite_chris
+  pic: chris-(500x500).jpg
+  track: "Crafting Code"
+  time: "10:30"
+  title: Scalable Distributed Design - Let me show you my architectures
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Crafting Code"
+#   time: "11:10"
+#   title: 
+
+- firstname: Ben
+  lastname: Janecke
+  twitter: BenJanecke
+  pic: Ben Janecke.jpeg
+  track: "Crafting Code"
+  time: "11:50"
+  title: Composition over inheritance in Javascript
+
+- firstname: Joshua
+  lastname: Lewis
+  twitter: joshilewis
+  pic: ph.jpg
+  track: "Crafting Code"
+  time: "13:10"
+  title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Crafting Code"
+#   time: "13:50"
+#   title: 
+
+- firstname: Guillaume
+  lastname: Belrose
+  twitter: gbelrose
+  pic: Guillaume Belrose.jpg
+  track: "Crafting Code"
+  time: "14:50"
+  title: "Testing with types, how to test more by typing less"
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Crafting Code"
+#   time: "15:30"
+#   title: 
+
+- firstname: Janco
+  lastname: Wolmarans
+  twitter: jancowol
+  pic: Janco Wolmarans .jpg
+  track: "Crafting Code"
+  time: "16:10"
+  title: Safety First! How to drop the compiler crutch for faster refactoring
+
+##############################  Persistence #########################
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Persistence"
+#   time: "10:30"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Persistence"
+#   time: "11:10"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Persistence"
+#   time: "11:50"
+#   title: 
+
+- firstname: Sifiso
+  lastname: Ndlovu
+  twitter: mafiswana
+  pic: ph.jpg
+  track: "Persistence"
+  time: "13:10"
+  title: Multiple Options to Transposing SQL Server Data from Rows to Columns
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Persistence"
+#   time: "13:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Persistence"
+#   time: "14:50"
+#   title: 
+
+- firstname: Garren
+  lastname: Smith
+  twitter: garrensmith
+  pic: ph.jpg
+  track: "Persistence"
+  time: "15:30"
+  title: Building responsive off-line web applications with CouchDB and PouchDB
+
+- firstname: Badi
+  lastname: Sudhakaran
+  twitter: badikumar
+  pic: ph.jpg
+  track: "Persistence"
+  time: "16:10"
+  title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
+
+##############################  DevOps & Automation #########################
+
+- firstname: Niel
+  lastname: Zeeman
+  twitter: teamfoundation
+  pic: Niel_Zeeman.JPG
+  track: "DevOps & Automation"
+  time: "10:30"
+  title: DevOps demystified
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "DevOps & Automation"
+#   time: "11:10"
+#   title: 
+
+- firstname: Andreas
+  lastname: Grabner
+  twitter: grabnerandi
+  pic: ph.jpg
+  track: "DevOps & Automation"
+  time: "11:50"
+  title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "DevOps & Automation"
+#   time: "13:10"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "DevOps & Automatione"
+#   time: "13:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "DevOps & Automation"
+#   time: "14:50"
+#   title: 
+
+- firstname: Duane
+  lastname: McKibbin
+  twitter: duanemck
+  pic: ph.jpg
+  track: "DevOps & Automation"
+  time: "15:30"
+  title: Git vs. Continuous Integration 
+
+- firstname: Kenneth
+  lastname: Kalmer
+  twitter: kenneth
+  pic: Kenneth Kalmer.jpg
+  track: "DevOps & Automation"
+  time: "16:10"
+  title: Make your CI server a productive team member
+
+##############################  Tools & Frameworks #########################
+
+- firstname: Simon
+  lastname: Stewart
+  twitter: SimonStewart
+  pic: "Stewart, simon.JPG"
+  track: "Tools & Frameworks"
+  time: "10:30"
+  title: iOS development in Swift 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Tools & Frameworks"
+#   time: "11:10"
+#   title: 
+
+- firstname: Corneil 
+  lastname: Du Plessis
+  twitter: corneil
+  pic: ph.jpg
+  track: "Tools & Frameworks"
+  time: "11:50"
+  title: "Gradle: The Build System you have been waiting for"
+
+- firstname: Rebecca
+  lastname: Franks
+  twitter: riggaroo
+  pic: ph.jpg
+  track: "Tools & Frameworks"
+  time: "13:10"
+  title: Performance Testing Tools in Android
+
+- firstname: William
+  lastname: Brander
+  twitter: "@WilliamBZA"
+  pic: ph.jpg
+  track: "Tools & Frameworks"
+  time: "13:50"
+  title: What is The Actor Model? A glance using Akka.NET
+
+- firstname: Mike
+  lastname: Geyser
+  twitter: mikegeyser
+  pic: ph.jpg
+  track: "Tools & Frameworks"
+  time: "14:50"
+  title: Patiently waiting for Angular 2
+
+- firstname: Andrew
+  lastname: Bestbier
+  twitter: andrewbestbier
+  pic: Andrew Bestbier.jpg
+  track: "Tools & Frameworks"
+  time: "15:30"
+  title: An introduction to React.Js
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Tools & Frameworks"
+#   time: "16:10"
+#   title: 
+
+##############################  Teams & People #########################
+
+- firstname: Griffiths
+  lastname: Sibeko
+  twitter: macgriffiths
+  pic: Griffiths Sibeko.jpg
+  track: "Teams & People"
+  time: "10:30"
+  title: The simplest way I built an award winning App
+
+- firstname: Rishal
+  lastname: Hurbans
+  twitter: RishalHurbans
+  pic: Rishal Hurbans.png
+  track: "Teams & People"
+  time: "11:10"
+  title: Developer Design Thinking
+
+- firstname: Danny
+  lastname: Kopping
+  twitter: Test
+  pic: Danny Kopping.jpg
+  track: Teams and People
+  time: "11:50"
+  title: Code Reviews - a team tool
+
+- firstname: Oz
+  lastname: Chihwayi
+  twitter: ozchihwayi
+  pic: ph.jpg
+  track: "Teams & People"
+  time: "13:10"
+  title: Who still needs a Tester? 
+
+- firstname: Louise
+  lastname: Perold
+  twitter: lperold
+  pic: ph.jpg
+  track: "Teams & People"
+  time: "13:50"
+  title: What is testing anyway? 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Teams & People"
+#   time: "14:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Teams & People"
+#   time: "15:30"
+#   title: 
+
+- firstname: Martin
+  lastname: Cronje
+  twitter: martincronje
+  pic: Martin Cronje .jpg
+  track: "Teams & People"
+  time: "16:10"
+  title: "Scaling development: Simulating the flow of software delivery"
+
+##############################  Sponsor #########################
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Sponsor"
+#   time: "10:30"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Sponsor"
+#   time: "11:10"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Sponsor"
+#   time: "11:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Sponsor"
+#   time: "13:10"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Sponsor"
+#   time: "13:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Sponsor"
+#   time: "14:50"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: ph.jpg
+#   track: "Sponsor"
+#   time: "15:30"
+#   title: 
+
+# - firstname: 
+#   lastname: 
+#   twitter: 
+#   pic: 
+#   track: "Sponsor"
+#   time: "16:10"
+#   title: 
+
+
+
