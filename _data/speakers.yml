@@ -82,13 +82,13 @@
 #   time: "11:10"
 #   title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Persistence"
-#   time: "11:50"
-#   title: 
+- firstname: Andrew
+  lastname: Russell
+  twitter: 
+  pic: ph.jpg
+  track: "Persistence"
+  time: "11:50"
+  title: Getting started with Database Unit testing with tSQLt
 
 - firstname: Sifiso
   lastname: Ndlovu
@@ -98,21 +98,21 @@
   time: "13:10"
   title: Multiple Options to Transposing SQL Server Data from Rows to Columns
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Persistence"
-#   time: "13:50"
-#   title: 
+- firstname: Tobias
+  lastname: Coetzee
+  twitter: tobiascode
+  pic: ph.jpg
+  track: "Persistence"
+  time: "13:50"
+  title: How to prepare your Enterprise for NoSQL
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Persistence"
-#   time: "14:50"
-#   title: 
+- firstname: Peter
+  lastname: Wiles
+  twitter: pwiles
+  pic: peter-wiles.jpg
+  track: "Persistence"
+  time: "14:50"
+  title: Combining Neo4j and Elasticsearch - search and explore your data
 
 - firstname: Garren
   lastname: Smith
@@ -125,7 +125,7 @@
 - firstname: Badi
   lastname: Sudhakaran
   twitter: badikumar
-  pic: ph.jpg
+  pic: Badi Sudhakaran.jpg
   track: "Persistence"
   time: "16:10"
   title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
@@ -140,13 +140,13 @@
   time: "10:30"
   title: DevOps demystified
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "DevOps & Automation"
-#   time: "11:10"
-#   title: 
+- firstname: Colin
+  lastname: Dembovsky
+  twitter: @colindembovsky
+  pic: ph.jpg
+  track: "DevOps & Automation"
+  time: "11:10"
+  title: Deploying at the Speed of Thought - Developing a DevOps Mindset
 
 - firstname: Andreas
   lastname: Grabner
@@ -164,13 +164,13 @@
 #   time: "13:10"
 #   title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "DevOps & Automatione"
-#   time: "13:50"
-#   title: 
+- firstname: Rouan
+  lastname: Wilsennach
+  twitter: rouanw
+  pic: Rouan Wilsenach.jpg
+  track: "DevOps & Automatione"
+  time: "13:50"
+  title: Surround yourself with data: how to create dashboards that help you uncover what's really going on
 
 # - firstname: 
 #   lastname: 
@@ -225,7 +225,7 @@
 - firstname: Rebecca
   lastname: Franks
   twitter: riggaroo
-  pic: ph.jpg
+  pic: rebeccafranks.jpg
   track: "Tools & Frameworks"
   time: "13:10"
   title: Performance Testing Tools in Android
@@ -275,7 +275,7 @@
 - firstname: Rishal
   lastname: Hurbans
   twitter: RishalHurbans
-  pic: Rishal Hurbans.png
+  pic: Rishal Hurbans.jpg
   track: "Teams & People"
   time: "11:10"
   title: Developer Design Thinking
