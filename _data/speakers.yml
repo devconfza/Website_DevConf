@@ -304,13 +304,13 @@
   time: "13:50"
   title: What is testing anyway? 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Teams & People"
-#   time: "14:50"
-#   title: 
+- firstname: Willy-Peter
+  lastname: Schaub
+  twitter: wpschaub
+  pic: Willy-Peter Schaub.jpg
+  track: "Teams & People"
+  time: "14:50"
+  title: Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services
 
 # - firstname: 
 #   lastname: 
