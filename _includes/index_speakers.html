@@ -1,6 +1,6 @@
 <section id="speakers" class="section-light">
 	<div class="container">
-		{% assign sorted_speakers = (site.data.speakers | sort: 'firstname') %}
+		{% assign sorted_speakers = (site.data.speakers | where: 'publish',true | sort: 'firstname') %}
 		{% for speaker in sorted_speakers %}
 		{% assign loopindex = forloop.index | modulo: 4 %}
 		  {% if loopindex == 1 %}
