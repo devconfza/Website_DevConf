@@ -19,7 +19,7 @@
 - firstname: Ben
   lastname: Janecke
   twitter: BenJanecke
-  pic: Ben Janecke.jpeg
+  pic: Ben Janecke.jpg
   track: "Crafting Code"
   time: "11:50"
   title: Composition over inheritance in Javascript
@@ -142,7 +142,7 @@
 
 - firstname: Colin
   lastname: Dembovsky
-  twitter: @colindembovsky
+  twitter: colindembovsky
   pic: ph.jpg
   track: "DevOps & Automation"
   time: "11:10"
@@ -168,9 +168,9 @@
   lastname: Wilsennach
   twitter: rouanw
   pic: Rouan Wilsenach.jpg
-  track: "DevOps & Automatione"
+  track: "DevOps & Automation"
   time: "13:50"
-  title: Surround yourself with data: how to create dashboards that help you uncover what's really going on
+  title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
 
 # - firstname: 
 #   lastname: 
