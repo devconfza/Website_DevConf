@@ -210,7 +210,7 @@
   lastname: Wilsennach
   twitter: rouanw
   pic: Rouan Wilsenach.jpg
-  track: "DevOps & Automatione"
+  track: "DevOps & Automation"
   time: "13:50"
   title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
 
@@ -380,13 +380,13 @@
 
 - publish: false
   track_order: 4
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
+  firstname: Willy-Peter
+  lastname: Schaub
+  twitter: wpschaub
+  pic: Willy-Peter Schaub.jpg
   track: "Teams & People"
   time: "14:50"
-  title: 
+  title: "Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services"
 
 - publish: false
   track_order: 4
