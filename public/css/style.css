@@ -6981,6 +6981,39 @@ footer ul li {
 #speakers ul {
   list-style: none;
 }
+#speakers img {
+  width: 100%;
+  border: 1px solid white;
+}
+#speakers .pic-box {
+  width: 100%;
+  border-radius: 8px;
+  border-color: #000B26;
+  background-color: #000B26;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#speakers .pic-box a {
+  color: #00A4FE;
+}
+#speakers .pic-box i {
+  font-size: 27px;
+  position: relative;
+  top: 5px;
+}
+#speakers .pic-box .name {
+  color: #FF0036;
+  padding: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+#speakers .pic-box .track {
+  color: #f6f6f6;
+  padding: 0px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 100;
+}
 #community {
   text-align: center;
 }
