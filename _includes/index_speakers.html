@@ -1,24 +1,19 @@
 <section id="speakers" class="section-light">
+
 	<div class="container">
-		{% assign sorted_speakers = (site.data.speakers | where: 'publish',true | sort: 'firstname') %}
-		{% for speaker in sorted_speakers %}
-		{% assign loopindex = forloop.index | modulo: 4 %}
-		  {% if loopindex == 1 %}
-		  <div clas="row">
-		  {% endif %}
-			<div class="col-md-3">
-				<div class="pic-box">
-					<img src="public\images\speakers\{{ speaker.pic }}" />
-					<span class="name">{{ speaker.firstname }} {{ speaker.lastname }}</span>
-					<a href="http://www.twitter.com/{{ speaker.twitter }}" target="_blank">
-						<i class="fa fa-twitter"></i>
-					</a>
-					<div class="track">{{ speaker.track }} @ {{ speaker.time }}</div>
-				</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p class="break">09h00 -> <b>Welcome & Keynote</b> <- 10h00</p>
 			</div>
-		  {% if loopindex == 0 or forloop.last %}
-		  </div>
-		  {% endif %}
-		{% endfor %}
+		</div>
 	</div>
+
+	{% for agenda in site.data.agenda %}
+        {% if agenda.type == 'break' %}
+        	{% include index_speakers_break.html agenda=agenda %}
+        {% else %}
+            {% assign speakers=agendaSpeakers[agenda.sessionIndex].items %}
+            {% include index_speakers_timeslot.html speakers=speakers agenda=agenda %}
+        {% endif %}
+    {% endfor %}
 </section>
