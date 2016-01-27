@@ -1,3 +1,4 @@
+
 #speakers { 
 	color: #333333;
 	text-align: center;
@@ -16,20 +17,31 @@
 	    width: 100%;
 	    border: 1px solid white;
 	}
+
+	.break {
+		background-color: Darken(@gray-lighter, 5%);
+		border-radius: 8px;
+		margin: 10px 0px;
+    	padding: 4px;
+    	max-width: 320px;
+    	font-size: 13px;
+	}
+
 	.pic-box {
 	    width: 100%;
+	    max-width: 320px;
 	    border-radius: 8px;
 	    border-color: @brand-primary;
 	    background-color: @brand-primary;
 	    padding: 15px;
-	    margin-bottom: 20px;
+	    margin-bottom: 2px;
 
 	    a {
 	    	color: @brand-2; //@gray-lighter;
 	    }
 
 	    i {
-	    	    font-size: 27px;
+	    	    font-size: 20px;
 			    position: relative;
 			    top: 5px;
 	    }
@@ -38,15 +50,39 @@
 	    	color: @brand-3; //@gray-lighter;
 			padding: 15px;
 			display: inline-block;
-			font-weight: bold;	
+			font-weight: bold;
+			font-size: 13px;
+			min-height: 66px;
+	    }
+
+	    .time {
+	    	color: @gray-lighter;
+			padding: 4px;
+		    font-size: 13px;
+		    font-weight: bold;
 	    }
 
 	    .track {
 	    	color: @gray-lighter;
-			padding: 0px;
-			display: inline-block;
+			padding: 4px;
 		    font-size: 12px;
-		    font-weight: 100;
+		    font-weight: bold;
 	    }
+
+	    .title {
+	    	color: @gray-lighter;
+		    font-size: 11px;
+		    text-align: justify;
+		    min-height: 75px;
+	    }
+	}
+}
+
+//992px;
+@media (min-width:@screen-md-min) {
+	#speakers { 
+		.break {
+	    	max-width: none;
+		}
 	}
 }
