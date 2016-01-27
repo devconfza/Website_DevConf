@@ -6637,7 +6637,7 @@ button.close {
   text-align: center;
 }
 #sponsors h2 {
-  padding: 40px 0px 60px 0px;
+  padding: 0px 0px 15px 0px;
 }
 #sponsors .sponsor-type {
   padding-bottom: 15px;
@@ -6648,6 +6648,7 @@ button.close {
   padding: 10px;
   border-radius: 6px;
   border: 3px solid white;
+  margin: 3px 3px;
 }
 #sponsors .platinum img {
   max-width: 250px;
