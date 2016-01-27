@@ -1,6 +1,7 @@
 <div id="agenda" class="section-light">
 	<div class="container">
         <div class="table-responsive">
+        {% assign agendaSpeakers = (site.data.speakers | sort: 'time' | group_by: 'time') %}
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
@@ -15,131 +16,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+
+                <tr> 
                     <td>09h00</td>
                     <td>10h00</td>
-                    <td class="info text-center" colspan="6">Welcome &amp; Keynote</td>
+                    <td class="text-center info" colspan="6">Welcome & Keynote</td>
                 </tr>
-                <tr>
-                    <td>10h00</td>
-                    <td>10h30</td>
-                    <td class="text-center" colspan="6">Movement, Networking, &amp; Snacks</td>
-                </tr>
-                <tr> <!-- Slot 1 -->
-                    <td>10h30</td>
-                    <td>11h00</td>
-                    <td class="info">Scalable Distributed Design - Let me show you my architectures by <a href="http://www.twitter.com/tite_chris" target="_blank">Chris Tite</a></td> 
-                    <td class="info">TBA</td> <!-- Persistence -->
-                    <td class="info">DevOps demystified by <a href="http://www.twitter.com/teamfoundation" target="_blank">Niel Zeeman</a></td>
-                    <td class="info">iOS development in Swift by <a href="http://www.twitter.com/SimonStewart" target="_blank">Simon Stewart</a></td> 
-                    <td class="info">The simplest way I built an award winning App by <a href="http://www.twitter.com/macgriffiths" target="_blank">Griffiths Sibeko</a></td> 
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-               <tr>
-                    <td>11h00</td>
-                    <td>11h10</td>
-                    <td class="text-center" colspan="6">Movement</td>
-                </tr>
-                <tr> <!-- Slot 2 -->
-                    <td>11h10</td>
-                    <td>11h40</td>
-                    <td class="info">TBA</td> <!-- Crafting Code -->
-                    <td class="info">TBA</td> <!-- Persistence -->
-                    <td class="info">Deploying at the Speed of Thought - Developing a DevOps Mindset by <a href="http://www.twitter.com/colindembovsky" target="_blank">Colin Dembovsky</a></td> 
-                    <td class="info">TBA</td> <!-- tools -->
-                    <td class="info">Developer Design Thinking by <a href="http://www.twitter.com/RishalHurbans" target="_blank">Rishal Hurbans</a></td> 
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                <tr> 
-                    <td>11h40</td>
-                    <td>11h50</td>
-                    <td class="text-center" colspan="6">Movement</td>
-                </tr>
-                <tr> <!-- Slot 3 -->
-                    <td>11h50</td>
-                    <td>12h20</td>
-                    <td class="info">Composition over inheritance in Javascript by <a href="http://www.twitter.com/BenJanecke" target="_blank">Ben Janecke</a></td>
-                    <td class="info">Getting started with Database Unit testing with tSQLt Andrew Russell</td> 
-                    <td class="info">Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co by <a href="http://www.twitter.com/grabnerandi" target="_blank">Andreas	Grabner</a></td>
-                    <td class="info">Gradle: The Build System you have been waiting for by <a href="http://www.twitter.com/corneil" target="_blank">Corneil Du Plessis</a></td>
-                    <td class="info">Code Reviews - a team tool by <a href="http://www.twitter.com/dannykopping" target="_blank">Danny Kopping</a></td> 
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                <tr>
-                    <td>12h20</td>
-                    <td>13h10</td>
-                    <td class="text-center" colspan="6">Movement &amp; Lunch</td>
-                </tr>
-                <tr> <!-- Slot 4 -->
-                    <td>13h10</td>
-                    <td>13h40</td>
-                    <td class="info">Hi, I'm Joshua, and I'm a Reformed TDDist by <a href="http://www.twitter.com/joshilewis" target="_blank">Joshua Lewis</a></td>
-                    <td class="info">Multiple Options to Transposing SQL Server Data from Rows to Columns by <a href="http://www.twitter.com/mafiswana" target="_blank">Sifiso	Ndlovu</a></td> 
-                    <td class="info">TBA</td> <!-- Devops -->
-                    <td class="info">Performance Testing Tools in Android by <a href="http://www.twitter.com/riggaroo" target="_blank">Rebecca Franks</a></td>
-                    <td class="info">Who still needs a Tester? by <a href="http://www.twitter.com/ozchihwayi" target="_blank">Oz Chihwayi</a></td>
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                <tr>
-                    <td>13h40</td>
-                    <td>13h50</td>
-                    <td class="text-center" colspan="6">Movement</td>
-                </tr>
-                <tr> <!-- Slot 5 -->
-                    <td>13h50</td>
-                    <td>14h20</td>
-                    <td class="info">TBA</td> <!-- Crafting Code -->
-                    <td class="info">How to prepare your Enterprise for NoSQL by <a href="http://www.twitter.com/tobiascode" target="_blank">Tobias Coetzee</a></td> 
-                    <td class="info">Surround yourself with data: how to create dashboards that help you uncover what's really going on. by <a href="http://www.twitter.com/rouanw" target="_blank">Rouan Wilsennach</a></td> 
-                    <td class="info">What is The Actor Model? A glance using Akka.NET by <a href="http://www.twitter.com/WilliamBZA" target="_blank">William Brander</a></td>
-                    <td class="info">What is testing anyway? by <a href="http://www.twitter.com/lperold" target="_blank">Louise Perold</a></td>
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                <tr>
-                    <td>14h20</td>
-                    <td>14h50</td>
-                    <td class="text-center" colspan="6">Movement, Networking, &amp; Snacks</td>
-                </tr>
-                <tr> <!-- Slot 6 -->
-                    <td>14h50</td>
-                    <td>15h20</td>
-                    <td class="info">Testing with types, how to test more by typing less. by <a href="http://www.twitter.com/gbelrose" target="_blank">Guillaume Belrose</a></td>
-                    <td class="info">Combining Neo4j and Elasticsearch - search and explore your data by <a href="http://www.twitter.com/pwiles" target="_blank">Peter Wiles</a></td> 
-                    <td class="info">TBA</td> <!-- Devops -->
-                    <td class="info">Patiently waiting for Angular 2 by <a href="http://www.twitter.com/mikegeyser" target="_blank">Mike Geyser</a></td>
-                    <td class="info">TBA</td> <!-- people -->
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                <tr>
-                    <td>15h20</td>
-                    <td>15h30</td>
-                    <td class="text-center" colspan="6">Movement</td>
-                </tr>
-                <tr> <!-- Slot 7 -->
-                    <td>15h30</td>
-                    <td>16h00</td>
-                    <td class="info">TBA</td> <!-- Crafting Code -->
-                    <td class="info">Building responsive off-line web applications with CouchDB and PouchDB by <a href="http://www.twitter.com/garrensmith" target="_blank">Garren Smith</a></td>
-                    <td class="info">Git vs. Continuous Integration by <a href="http://www.twitter.com/duanemck" target="_blank">Duane McKibbin</a></td> 
-                    <td class="info">An introduction to React.Js by <a href="http://www.twitter.com/andrewbestbier" target="_blank">Andrew Bestbier</a> </td>
-                    <td class="info">Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services by <a href="http://www.twitter.com/wpschaub" target="_blank">Willy-Peter Schaub</a></td>
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
-                 <tr>
-                    <td>16h00</td>
-                    <td>16h10</td>
-                    <td class="text-center" colspan="6">Movement</td>
-                </tr>
-                <tr> <!-- Slot 8 -->
-                    <td>16h10</td>
-                    <td>16h40</td>
-                    <td class="info">Safety First! How to drop the compiler crutch for faster refactoring by <a href="http://www.twitter.com/jancowol" target="_blank">Janco Wolmarans</a></td>
-                    <td class="info">Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database by <a href="http://www.twitter.com/badikumar" target="_blank">Badi Sudhakaran</a></td>
-                    <td class="info">Make your CI server a productive team member by <a href="http://www.twitter.com/kennethkalmer" target="_blank">Kenneth	Kalmer</a></td>
-                    <td class="info">TBA</td> <!-- tools -->
-                    <td class="info">Scaling development: Simulating the flow of software delivery by <a href="http://www.twitter.com/martincronje" target="_blank">Martin	Cronje</a></td>
-                    <td class="info">TBA</td> <!-- sponsor -->
-                </tr>
+
+                {% for agenda in site.data.agenda %}
+                    {% if agenda.type == 'break' %}
+                        {% include index_agenda_timeslot_break.html agenda=agenda %}
+                    {% else %}
+                        {% assign speakers=agendaSpeakers[agenda.sessionIndex].items %}
+                        {% include index_agenda_timeslot.html speakers=speakers agenda=agenda %}
+                    {% endif %}
+                {% endfor %}
+        
             </tbody>
         </table>
 	</div>

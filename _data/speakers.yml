@@ -1,6 +1,8 @@
 ##############################  Crafting Code #########################
 
-- firstname: Chris
+- publish: true
+  track_order: 0
+  firstname: Chris
   lastname: Tite
   twitter: tite_chris
   pic: chris-(500x500).jpg
@@ -8,15 +10,19 @@
   time: "10:30"
   title: Scalable Distributed Design - Let me show you my architectures
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Crafting Code"
-#   time: "11:10"
-#   title: 
+- publish: false
+  track_order: 0
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Crafting Code"
+  time: "11:10"
+  title: 
 
-- firstname: Ben
+- publish: true
+  track_order: 0
+  firstname: Ben
   lastname: Janecke
   twitter: BenJanecke
   pic: Ben Janecke.jpg
@@ -24,7 +30,9 @@
   time: "11:50"
   title: Composition over inheritance in Javascript
 
-- firstname: Joshua
+- publish: true
+  track_order: 0
+  firstname: Joshua
   lastname: Lewis
   twitter: joshilewis
   pic: ph.jpg
@@ -32,15 +40,19 @@
   time: "13:10"
   title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Crafting Code"
-#   time: "13:50"
-#   title: 
+- publish: false
+  track_order: 0
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Crafting Code"
+  time: "13:50"
+  title: 
 
-- firstname: Guillaume
+- publish: true
+  track_order: 0
+  firstname: Guillaume
   lastname: Belrose
   twitter: gbelrose
   pic: Guillaume Belrose.jpg
@@ -48,15 +60,19 @@
   time: "14:50"
   title: "Testing with types, how to test more by typing less"
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Crafting Code"
-#   time: "15:30"
-#   title: 
+- publish: false
+  track_order: 0
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Crafting Code"
+  time: "15:30"
+  title: 
 
-- firstname: Janco
+- publish: true
+  track_order: 0
+  firstname: Janco
   lastname: Wolmarans
   twitter: jancowol
   pic: Janco Wolmarans .jpg
@@ -66,23 +82,29 @@
 
 ##############################  Persistence #########################
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Persistence"
-#   time: "10:30"
-#   title: 
+- publish: false
+  track_order: 1
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Persistence"
+  time: "10:30"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Persistence"
-#   time: "11:10"
-#   title: 
+- publish: false
+  track_order: 1
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Persistence"
+  time: "11:10"
+  title: 
 
-- firstname: Andrew
+- publish: true
+  track_order: 1
+  firstname: Andrew
   lastname: Russell
   twitter: 
   pic: ph.jpg
@@ -90,7 +112,9 @@
   time: "11:50"
   title: Getting started with Database Unit testing with tSQLt
 
-- firstname: Sifiso
+- publish: true
+  track_order: 1
+  firstname: Sifiso
   lastname: Ndlovu
   twitter: mafiswana
   pic: ph.jpg
@@ -98,7 +122,9 @@
   time: "13:10"
   title: Multiple Options to Transposing SQL Server Data from Rows to Columns
 
-- firstname: Tobias
+- publish: true
+  track_order: 1
+  firstname: Tobias
   lastname: Coetzee
   twitter: tobiascode
   pic: ph.jpg
@@ -106,7 +132,9 @@
   time: "13:50"
   title: How to prepare your Enterprise for NoSQL
 
-- firstname: Peter
+- publish: true
+  track_order: 1
+  firstname: Peter
   lastname: Wiles
   twitter: pwiles
   pic: peter-wiles.jpg
@@ -114,7 +142,9 @@
   time: "14:50"
   title: Combining Neo4j and Elasticsearch - search and explore your data
 
-- firstname: Garren
+- publish: true
+  track_order: 1
+  firstname: Garren
   lastname: Smith
   twitter: garrensmith
   pic: ph.jpg
@@ -122,7 +152,9 @@
   time: "15:30"
   title: Building responsive off-line web applications with CouchDB and PouchDB
 
-- firstname: Badi
+- publish: true
+  track_order: 1
+  firstname: Badi
   lastname: Sudhakaran
   twitter: badikumar
   pic: Badi Sudhakaran.jpg
@@ -132,7 +164,9 @@
 
 ##############################  DevOps & Automation #########################
 
-- firstname: Niel
+- publish: true
+  track_order: 2
+  firstname: Niel
   lastname: Zeeman
   twitter: teamfoundation
   pic: Niel_Zeeman.JPG
@@ -140,15 +174,19 @@
   time: "10:30"
   title: DevOps demystified
 
-- firstname: Colin
+- publish: true
+  track_order: 2
+  firstname: Colin
   lastname: Dembovsky
-  twitter: colindembovsky
+  twitter: "@colindembovsky"
   pic: ph.jpg
   track: "DevOps & Automation"
   time: "11:10"
   title: Deploying at the Speed of Thought - Developing a DevOps Mindset
 
-- firstname: Andreas
+- publish: true
+  track_order: 2
+  firstname: Andreas
   lastname: Grabner
   twitter: grabnerandi
   pic: ph.jpg
@@ -156,15 +194,19 @@
   time: "11:50"
   title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "DevOps & Automation"
-#   time: "13:10"
-#   title: 
+- publish: false
+  track_order: 2
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "DevOps & Automation"
+  time: "13:10"
+  title: 
 
-- firstname: Rouan
+- publish: true
+  track_order: 2
+  firstname: Rouan
   lastname: Wilsennach
   twitter: rouanw
   pic: Rouan Wilsenach.jpg
@@ -172,15 +214,19 @@
   time: "13:50"
   title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "DevOps & Automation"
-#   time: "14:50"
-#   title: 
+- publish: false
+  track_order: 2
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "DevOps & Automation"
+  time: "14:50"
+  title: 
 
-- firstname: Duane
+- publish: true
+  track_order: 2
+  firstname: Duane
   lastname: McKibbin
   twitter: duanemck
   pic: ph.jpg
@@ -188,7 +234,9 @@
   time: "15:30"
   title: Git vs. Continuous Integration 
 
-- firstname: Kenneth
+- publish: true
+  track_order: 2
+  firstname: Kenneth
   lastname: Kalmer
   twitter: kenneth
   pic: Kenneth Kalmer.jpg
@@ -198,7 +246,9 @@
 
 ##############################  Tools & Frameworks #########################
 
-- firstname: Simon
+- publish: true
+  track_order: 3
+  firstname: Simon
   lastname: Stewart
   twitter: SimonStewart
   pic: "Stewart, simon.JPG"
@@ -206,15 +256,19 @@
   time: "10:30"
   title: iOS development in Swift 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Tools & Frameworks"
-#   time: "11:10"
-#   title: 
+- publish: false
+  track_order: 3
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Tools & Frameworks"
+  time: "11:10"
+  title: 
 
-- firstname: Corneil 
+- publish: true
+  track_order: 3
+  firstname: Corneil 
   lastname: Du Plessis
   twitter: corneil
   pic: ph.jpg
@@ -222,7 +276,9 @@
   time: "11:50"
   title: "Gradle: The Build System you have been waiting for"
 
-- firstname: Rebecca
+- publish: true
+  track_order: 3
+  firstname: Rebecca
   lastname: Franks
   twitter: riggaroo
   pic: rebeccafranks.jpg
@@ -230,7 +286,9 @@
   time: "13:10"
   title: Performance Testing Tools in Android
 
-- firstname: William
+- publish: true
+  track_order: 3
+  firstname: William
   lastname: Brander
   twitter: "@WilliamBZA"
   pic: ph.jpg
@@ -238,7 +296,9 @@
   time: "13:50"
   title: What is The Actor Model? A glance using Akka.NET
 
-- firstname: Mike
+- publish: true
+  track_order: 3
+  firstname: Mike
   lastname: Geyser
   twitter: mikegeyser
   pic: ph.jpg
@@ -246,7 +306,9 @@
   time: "14:50"
   title: Patiently waiting for Angular 2
 
-- firstname: Andrew
+- publish: true
+  track_order: 3
+  firstname: Andrew
   lastname: Bestbier
   twitter: andrewbestbier
   pic: Andrew Bestbier.jpg
@@ -254,17 +316,21 @@
   time: "15:30"
   title: An introduction to React.Js
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Tools & Frameworks"
-#   time: "16:10"
-#   title: 
+- publish: false
+  track_order: 3
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Tools & Frameworks"
+  time: "16:10"
+  title: 
 
 ##############################  Teams & People #########################
 
-- firstname: Griffiths
+- publish: true
+  track_order: 4
+  firstname: Griffiths
   lastname: Sibeko
   twitter: macgriffiths
   pic: Griffiths Sibeko.jpg
@@ -272,7 +338,9 @@
   time: "10:30"
   title: The simplest way I built an award winning App
 
-- firstname: Rishal
+- publish: true
+  track_order: 4
+  firstname: Rishal
   lastname: Hurbans
   twitter: RishalHurbans
   pic: Rishal Hurbans.jpg
@@ -280,7 +348,9 @@
   time: "11:10"
   title: Developer Design Thinking
 
-- firstname: Danny
+- publish: true
+  track_order: 4
+  firstname: Danny
   lastname: Kopping
   twitter: Test
   pic: Danny Kopping.jpg
@@ -288,7 +358,9 @@
   time: "11:50"
   title: Code Reviews - a team tool
 
-- firstname: Oz
+- publish: true
+  track_order: 4
+  firstname: Oz
   lastname: Chihwayi
   twitter: ozchihwayi
   pic: ph.jpg
@@ -296,7 +368,9 @@
   time: "13:10"
   title: Who still needs a Tester? 
 
-- firstname: Louise
+- publish: true
+  track_order: 4
+  firstname: Louise
   lastname: Perold
   twitter: lperold
   pic: ph.jpg
@@ -304,23 +378,29 @@
   time: "13:50"
   title: What is testing anyway? 
 
-- firstname: Willy-Peter
+- publish: false
+  track_order: 4
+  firstname: Willy-Peter
   lastname: Schaub
   twitter: wpschaub
   pic: Willy-Peter Schaub.jpg
   track: "Teams & People"
   time: "14:50"
-  title: Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services
+  title: "Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services"
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Teams & People"
-#   time: "15:30"
-#   title: 
+- publish: false
+  track_order: 4
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Teams & People"
+  time: "15:30"
+  title: 
 
-- firstname: Martin
+- publish: true
+  track_order: 4
+  firstname: Martin
   lastname: Cronje
   twitter: martincronje
   pic: Martin Cronje .jpg
@@ -330,69 +410,82 @@
 
 ##############################  Sponsor #########################
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Sponsor"
-#   time: "10:30"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Sponsor"
+  time: "10:30"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Sponsor"
-#   time: "11:10"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Sponsor"
+  time: "11:10"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Sponsor"
-#   time: "11:50"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Sponsor"
+  time: "11:50"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Sponsor"
-#   time: "13:10"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Sponsor"
+  time: "13:10"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Sponsor"
-#   time: "13:50"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Sponsor"
+  time: "13:50"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Sponsor"
-#   time: "14:50"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Sponsor"
+  time: "14:50"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: ph.jpg
-#   track: "Sponsor"
-#   time: "15:30"
-#   title: 
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: ph.jpg
+  track: "Sponsor"
+  time: "15:30"
+  title: 
 
-# - firstname: 
-#   lastname: 
-#   twitter: 
-#   pic: 
-#   track: "Sponsor"
-#   time: "16:10"
-#   title: 
-
-
-
+- publish: false
+  track_order: 5
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  track: "Sponsor"
+  time: "16:10"
+  title: 

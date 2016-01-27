@@ -1,0 +1,12 @@
+{% assign halfHourInSec = include.agenda.length | times: 60 %}
+{% assign startTime = include.agenda.start %}
+{% assign endTime = include.agenda.start | date: '%s' | plus: halfHourInSec %}
+<tr>
+    <td>
+        {{ startTime | date: '%H' }}h{{ startTime | date: '%M' }}
+    </td>
+    <td>
+        {{ endTime | date: '%H' }}h{{ endTime | date: '%M' }}
+    </td>
+    <td class="text-center" colspan="6">{{ include.agenda.title }}</td>
+</tr>
