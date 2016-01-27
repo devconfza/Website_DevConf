@@ -40,15 +40,15 @@
   time: "13:10"
   title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Mark
+  lastname: Whitfeld
+  twitter: MarkWhitfeld
+  pic: Mark Whitfeld.jpg
   track: "Crafting Code"
   time: "13:50"
-  title: 
+  title: Brownfield TDD: How to eat an elephant?
 
 - publish: true
   track_order: 0
@@ -107,7 +107,7 @@
   firstname: Andrew
   lastname: Russell
   twitter: 
-  pic: ph.jpg
+  pic: AndrewRussell.jpg
   track: "Persistence"
   time: "11:50"
   title: Getting started with Database Unit testing with tSQLt
@@ -214,15 +214,15 @@
   time: "13:50"
   title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
+  firstname: Charlene
+  lastname: Tshitoka
+  twitter: charlymul
+  pic: Charlene Tshitoka.jpg
   track: "DevOps & Automation"
   time: "14:50"
-  title: 
+  title: How About Treating Infrastructure-as-Code like Code?
 
 - publish: true
   track_order: 2
