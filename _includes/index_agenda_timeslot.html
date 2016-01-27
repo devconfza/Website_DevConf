@@ -11,8 +11,8 @@
     {% assign orderedSpeakers = include.speakers | sort: 'track_order' %}
     {% for speaker in orderedSpeakers %}
         {% if speaker.publish == true %}
-            <td class="info">{{ speaker.title }} by 
-                <a href="http://www.twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.firstname }} {{ speaker.lastname }}</a>
+            <td class="info"><p>{{ speaker.title }}</p>
+            <p><a href="http://www.twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.firstname }} {{ speaker.lastname }}</a></p>
             </td> 
         {% else %}
             <td class="info">TBA</td>

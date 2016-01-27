@@ -256,15 +256,15 @@
   time: "10:30"
   title: iOS development in Swift 
 
-- publish: false
+- publish: true
   track_order: 3
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Brendan
+  lastname: Fry
+  twitter: Fry_Hard
+  pic: DC16-FRY-BRENDAN.jpg
   track: "Tools & Frameworks"
   time: "11:10"
-  title: 
+  title: A year of dealing with RabbitMQ
 
 - publish: true
   track_order: 3
@@ -388,15 +388,15 @@
   time: "14:50"
   title: "Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services"
 
-- publish: false
+- publish: true
   track_order: 4
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Lisa
+  lastname: Basel
+  twitter: lisabasel
   pic: ph.jpg
   track: "Teams & People"
   time: "15:30"
-  title: 
+  title: Adjust your behaviour and be surprised how much you can influence your team
 
 - publish: true
   track_order: 4
