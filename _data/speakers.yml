@@ -194,15 +194,15 @@
   time: "11:50"
   title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: 
-  lastname: 
+  firstname: Veroon
+  lastname: Budhai
   twitter: 
-  pic: 
+  pic: ph.jpg
   track: "DevOps & Automation"
   time: "13:10"
-  title: 
+  title: Getting Started with Analytics(GTM and GA)
 
 - publish: true
   track_order: 2
