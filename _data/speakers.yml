@@ -60,15 +60,15 @@
   time: "14:50"
   title: "Testing with types, how to test more by typing less"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Riaan
+  lastname: Cornelius
+  twitter: riaancornelius
   pic: ph.jpg
   track: "Crafting Code"
   time: "15:30"
-  title: 
+  title: Using forensic techniques for targeted refactoring
 
 - publish: true
   track_order: 0
