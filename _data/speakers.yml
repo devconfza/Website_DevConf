@@ -378,7 +378,7 @@
   time: "13:50"
   title: What is testing anyway? 
 
-- publish: false
+- publish: true
   track_order: 4
   firstname: Willy-Peter
   lastname: Schaub
