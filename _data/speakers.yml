@@ -5,7 +5,7 @@
   firstname: Chris
   lastname: Tite
   twitter: tite_chris
-  pic: chris-Tite.jpg
+  pic: Chris-Tite.jpg
   track: "Crafting Code"
   time: "10:30"
   title: Scalable Distributed Design - Let me show you my architectures
@@ -137,7 +137,7 @@
   firstname: Peter
   lastname: Wiles
   twitter: pwiles
-  pic: PEter-Wiles.jpg
+  pic: Peter-Wiles.jpg
   track: "Persistence"
   time: "14:50"
   title: Combining Neo4j and Elasticsearch - search and explore your data
