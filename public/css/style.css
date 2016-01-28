@@ -7035,7 +7035,7 @@ footer ul li {
 #speakers .pic-box .title {
   color: #f6f6f6;
   font-size: 11px;
-  text-align: justify;
+  text-align: left;
   min-height: 75px;
 }
 @media (min-width: 992px) {
