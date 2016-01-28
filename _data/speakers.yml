@@ -10,15 +10,15 @@
   time: "10:30"
   title: Scalable Distributed Design - Let me show you my architectures
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Steven
+  lastname: McDonald 
+  twitter: StevenMcD
+  pic: stevenmcdonald.jpg
   track: "Crafting Code"
   time: "11:10"
-  title: 
+  title: Beautiful API's
 
 - publish: true
   track_order: 0
@@ -92,15 +92,15 @@
   time: "10:30"
   title: 
 
-- publish: false
+- publish: true
   track_order: 1
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Gail
+  lastname: Shaw
+  twitter: SQLIntheWild
   pic: ph.jpg
   track: "Persistence"
   time: "11:10"
-  title: 
+  title: Things I wish developers knew about SQL Server.
 
 - publish: true
   track_order: 1
@@ -316,15 +316,15 @@
   time: "15:30"
   title: An introduction to React.Js
 
-- publish: false
+- publish: true
   track_order: 3
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Rudi
+  lastname: Grobler
+  twitter: rudigrobler
   pic: ph.jpg
   track: "Tools & Frameworks"
   time: "16:10"
-  title: 
+  title: Building real world microservices using Node.js
 
 ##############################  Teams & People #########################
 
