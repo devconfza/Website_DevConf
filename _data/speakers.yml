@@ -35,7 +35,7 @@
   firstname: Joshua
   lastname: Lewis
   twitter: joshilewis
-  pic: ph.jpg
+  pic: Joshua-Lewis.jpg
   track: "Crafting Code"
   time: "13:10"
   title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
@@ -84,10 +84,17 @@
 
 - publish: true
   track_order: 1
+<<<<<<< HEAD
   firstname: Tugberk
   lastname: Ugurlu
   twitter: tourismgeek
   pic: ph.jpg
+=======
+  firstname: Tugberk 
+  lastname: Ugurlu 
+  twitter: tourismgeek 
+  pic: Tugberk-Ugurlu.jpg
+>>>>>>> Updated images
   track: "Persistence"
   time: "10:30"
   title: Architecting Polyglot-Persistent Solutions
@@ -172,7 +179,7 @@
   pic: Niel-Zeeman.JPG
   track: "DevOps & Automation"
   time: "10:30"
-  title: DevOps demystified
+  title: DevOps Demystified
 
 - publish: true
   track_order: 2
