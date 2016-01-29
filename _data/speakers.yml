@@ -84,17 +84,10 @@
 
 - publish: true
   track_order: 1
-<<<<<<< HEAD
-  firstname: Tugberk
-  lastname: Ugurlu
-  twitter: tourismgeek
-  pic: ph.jpg
-=======
   firstname: Tugberk 
   lastname: Ugurlu 
   twitter: tourismgeek 
   pic: Tugberk-Ugurlu.jpg
->>>>>>> Updated images
   track: "Persistence"
   time: "10:30"
   title: Architecting Polyglot-Persistent Solutions
