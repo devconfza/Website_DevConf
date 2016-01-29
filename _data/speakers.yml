@@ -82,15 +82,15 @@
 
 ##############################  Persistence #########################
 
-- publish: false
+- publish: true
   track_order: 1
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Tugberk
+  lastname: Ugurlu
+  twitter: tourismgeek
   pic: ph.jpg
   track: "Persistence"
   time: "10:30"
-  title: 
+  title: Architecting Polyglot-Persistent Solutions
 
 - publish: true
   track_order: 1
