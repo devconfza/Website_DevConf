@@ -7017,8 +7017,8 @@ footer ul li {
   padding: 15px;
   display: inline-block;
   font-weight: bold;
-  font-size: 13px;
-  min-height: 66px;
+  font-size: 12px;
+  min-height: 47px;
 }
 #speakers .pic-box .time {
   color: #f6f6f6;
@@ -7037,6 +7037,12 @@ footer ul li {
   font-size: 11px;
   text-align: left;
   min-height: 75px;
+}
+#speakers .pic-box .social {
+  min-height: 17px;
+}
+#speakers .pic-box .social a {
+  padding: 0px 8px;
 }
 @media (min-width: 992px) {
   #speakers .break {
