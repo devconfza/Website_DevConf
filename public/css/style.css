@@ -6987,12 +6987,13 @@ footer ul li {
   border: 1px solid white;
 }
 #speakers .break {
-  background-color: #e9e9e9;
+  color: white;
+  background-color: #990020;
   border-radius: 8px;
   margin: 10px 0px;
   padding: 4px;
   max-width: 320px;
-  font-size: 13px;
+  font-size: 16px;
 }
 #speakers .pic-box {
   width: 100%;
@@ -7034,7 +7035,7 @@ footer ul li {
 #speakers .pic-box .title {
   color: #f6f6f6;
   font-size: 11px;
-  text-align: justify;
+  text-align: left;
   min-height: 75px;
 }
 @media (min-width: 992px) {
