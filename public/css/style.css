@@ -7018,7 +7018,7 @@ footer ul li {
   display: inline-block;
   font-weight: bold;
   font-size: 12px;
-  min-height: 47px;
+  min-height: 64px;
 }
 #speakers .pic-box .time {
   color: #f6f6f6;
@@ -7034,9 +7034,9 @@ footer ul li {
 }
 #speakers .pic-box .title {
   color: #f6f6f6;
-  font-size: 11px;
+  font-size: 18px;
   text-align: left;
-  min-height: 75px;
+  min-height: 90px;
 }
 #speakers .pic-box .social {
   min-height: 17px;
@@ -7047,6 +7047,9 @@ footer ul li {
 @media (min-width: 992px) {
   #speakers .break {
     max-width: none;
+  }
+  #speakers .pic-box .title {
+    font-size: 13px;
   }
 }
 #community {
