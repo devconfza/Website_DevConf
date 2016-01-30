@@ -8,6 +8,7 @@
 		</div>
 	</div>
 
+	{% assign agendaSpeakers = (site.data.speakers | sort: 'time' | group_by: 'time') %}
 	{% for agenda in site.data.agenda %}
         {% if agenda.type == 'break' %}
         	{% include index_speakers_break.html agenda=agenda %}
