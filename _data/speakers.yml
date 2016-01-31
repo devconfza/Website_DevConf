@@ -198,8 +198,8 @@
   track_order: 2
   firstname: Veroon
   lastname: Budhai
-  twitter: 
-  pic: ph.jpg
+  twitter: shIFty1010 
+  pic: Veroon-Budhai.jpg
   track: "DevOps & Automation"
   time: "13:10"
   title: Getting Started with Analytics (GTM and GA)
@@ -238,7 +238,7 @@
   track_order: 2
   firstname: Kenneth
   lastname: Kalmer
-  twitter: kenneth
+  twitter: kennethkalmer
   pic: Kenneth-Kalmer.jpg
   track: "DevOps & Automation"
   time: "16:10"
@@ -290,7 +290,7 @@
   track_order: 3
   firstname: William
   lastname: Brander
-  twitter: "@WilliamBZA"
+  twitter: WilliamBZA
   pic: William-Brander.jpg
   track: "Tools & Frameworks"
   time: "13:50"
@@ -310,7 +310,7 @@
   track_order: 3
   firstname: Andrew
   lastname: Bestbier
-  twitter: andrewbestbier
+  twitter: 
   pic: Andrew-Bestbier.jpg
   track: "Tools & Frameworks"
   time: "15:30"
@@ -352,7 +352,7 @@
   track_order: 4
   firstname: Danny
   lastname: Kopping
-  twitter: Test
+  twitter: 
   pic: Danny-Kopping.jpg
   track: Teams and People
   time: "11:50"
