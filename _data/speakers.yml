@@ -88,7 +88,7 @@
   lastname: Ugurlu 
   twitter: tourismgeek 
   pic: Tugberk-Ugurlu.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "10:30"
   title: Architecting Polyglot-Persistent Solutions
 
@@ -98,7 +98,7 @@
   lastname: Shaw
   twitter: SQLIntheWild
   pic: Gail-Shaw.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "11:10"
   title: Things I wish developers knew about SQL Server.
 
@@ -108,7 +108,7 @@
   lastname: Russell
   twitter: 
   pic: Andrew-Russell.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "11:50"
   title: Getting started with Database Unit testing with tSQLt
 
@@ -118,7 +118,7 @@
   lastname: Ndlovu
   twitter: mafiswana
   pic: Sifiso-Ndlovu.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "13:10"
   title: Multiple Options to Transposing SQL Server Data from Rows to Columns
 
@@ -128,7 +128,7 @@
   lastname: Coetzee
   twitter: tobiascode
   pic: Tobias-Coetzee.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "13:50"
   title: How to prepare your Enterprise for NoSQL
 
@@ -138,7 +138,7 @@
   lastname: Wiles
   twitter: pwiles
   pic: Peter-Wiles.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "14:50"
   title: Combining Neo4j and Elasticsearch - search and explore your data
 
@@ -148,7 +148,7 @@
   lastname: Smith
   twitter: garrensmith
   pic: Garren-Smith.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "15:30"
   title: Building responsive off-line web applications with CouchDB and PouchDB
 
@@ -158,7 +158,7 @@
   lastname: Sudhakaran
   twitter: badikumar
   pic: Badi-Sudhakaran.jpg
-  track: "Persistence"
+  track: "Persistence & Data"
   time: "16:10"
   title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
 
@@ -207,7 +207,7 @@
 - publish: true
   track_order: 2
   firstname: Rouan
-  lastname: Wilsennach
+  lastname: Wilsenach
   twitter: rouanw
   pic: Rouan-Wilsenach.jpg
   track: "DevOps & Automation"
