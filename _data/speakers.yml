@@ -410,25 +410,25 @@
 
 ##############################  Sponsor #########################
 
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
-  lastname: 
+  firstname: Rory  
+  lastname: Preddy
   twitter: 
-  pic: ph.jpg
+  pic: rorypreddy.jpg
   track: "Sponsor"
   time: "10:30"
-  title: 
+  title: Rapid prototyping with jboss forge
 
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
-  lastname: 
+  firstname: Mark Biagio 
+  lastname: "& Adriaan Putter" 
   twitter: 
   pic: ph.jpg
   track: "Sponsor"
   time: "11:10"
-  title: 
+  title: "The Pragmatic & the Purist"
 
 - publish: false
   track_order: 5
@@ -440,15 +440,15 @@
   time: "11:50"
   title: 
 
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
-  lastname: 
+  firstname: Ernst  
+  lastname: Kuschke
   twitter: 
   pic: ph.jpg
   track: "Sponsor"
   time: "13:10"
-  title: 
+  title: Automated Platform-independent deployment – our journey at Allan Gray
 
 - publish: false
   track_order: 5
