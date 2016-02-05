@@ -424,28 +424,28 @@
   track_order: 5
   firstname: Mark Biagio 
   lastname: "& Adriaan Putter" 
-  twitter: 
-  pic: ph.jpg
+  twitter: adriaanp 
+  pic: adrianpandmark.jpg
   track: "Sponsor"
   time: "11:10"
   title: "The Pragmatic & the Purist"
 
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Dave
+  lastname: Russell
+  twitter: Davemsdevsa
+  pic: daver.jpg
   track: "Sponsor"
   time: "11:50"
-  title: 
+  title: Lap around Azure Machine Learning
 
 - publish: true
   track_order: 5
   firstname: Ernst  
   lastname: Kuschke
-  twitter: 
-  pic: ph.jpg
+  twitter: ernstk 
+  pic: ernstk.jpg
   track: "Sponsor"
   time: "13:10"
   title: Automated Platform-independent deployment – our journey at Allan Gray
