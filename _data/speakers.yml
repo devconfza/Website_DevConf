@@ -19,6 +19,7 @@
   track: "Crafting Code"
   time: "11:10"
   title: Beautiful API's
+  linkedin: stevenmcd
 
 - publish: true
   track_order: 0
@@ -352,7 +353,7 @@
   track_order: 4
   firstname: Danny
   lastname: Kopping
-  twitter: 
+  twitter: dannykopping
   pic: Danny-Kopping.jpg
   track: Teams and People
   time: "11:50"
