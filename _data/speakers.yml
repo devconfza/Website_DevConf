@@ -105,33 +105,23 @@
 
 - publish: true
   track_order: 1
-  firstname: Andrew
-  lastname: Russell
-  twitter: 
-  pic: Andrew-Russell.jpg
-  track: "Persistence & Data"
-  time: "11:50"
-  title: Getting started with Database Unit testing with tSQLt
-
-- publish: true
-  track_order: 1
-  firstname: Sifiso
-  lastname: Ndlovu
-  twitter: mafiswana
-  pic: Sifiso-Ndlovu.jpg
-  track: "Persistence & Data"
-  time: "13:10"
-  title: Multiple Options to Transposing SQL Server Data from Rows to Columns
-
-- publish: true
-  track_order: 1
   firstname: Tobias
   lastname: Coetzee
   twitter: tobiascode
   pic: Tobias-Coetzee.jpg
   track: "Persistence & Data"
-  time: "13:50"
+  time: "11:50"
   title: How to prepare your Enterprise for NoSQL
+  
+- publish: true
+  track_order: 1
+  firstname: Badi
+  lastname: Sudhakaran
+  twitter: badikumar
+  pic: Badi-Sudhakaran.jpg
+  track: "Persistence & Data"
+  time: "13:10"
+  title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"  
 
 - publish: true
   track_order: 1
@@ -140,7 +130,7 @@
   twitter: pwiles
   pic: Peter-Wiles.jpg
   track: "Persistence & Data"
-  time: "14:50"
+  time: "13:50"
   title: Combining Neo4j and Elasticsearch - search and explore your data
 
 - publish: true
@@ -150,18 +140,28 @@
   twitter: garrensmith
   pic: Garren-Smith.jpg
   track: "Persistence & Data"
-  time: "15:30"
+  time: "14:50"
   title: Building responsive off-line web applications with CouchDB and PouchDB
+ 
+- publish: true
+  track_order: 1
+  firstname: Andrew
+  lastname: Russell
+  twitter: 
+  pic: Andrew-Russell.jpg
+  track: "Persistence & Data"
+  time: "15:30"
+  title: Getting started with Database Unit testing with tSQLt
 
 - publish: true
   track_order: 1
-  firstname: Badi
-  lastname: Sudhakaran
-  twitter: badikumar
-  pic: Badi-Sudhakaran.jpg
+  firstname: Sifiso
+  lastname: Ndlovu
+  twitter: mafiswana
+  pic: Sifiso-Ndlovu.jpg
   track: "Persistence & Data"
   time: "16:10"
-  title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
+  title: Multiple Options to Transposing SQL Server Data from Rows to Columns
 
 ##############################  DevOps & Automation #########################
 
