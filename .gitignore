@@ -4,3 +4,4 @@ _site
 *.*~
 .vscode
 /update.bat
+.DS_Store
