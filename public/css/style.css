@@ -7003,6 +7003,7 @@ footer ul li {
   background-color: #000B26;
   padding: 15px;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 #speakers .pic-box a {
   color: #00A4FE;
@@ -7040,9 +7041,16 @@ footer ul li {
 }
 #speakers .pic-box .social {
   min-height: 17px;
+  color: #00A4FE;
+  cursor: auto;
+}
+#speakers .pic-box .social i {
+  cursor: pointer;
+  padding: 0px 8px;
 }
 #speakers .pic-box .social a {
-  padding: 0px 8px;
+  color: #00A4FE;
+  display: inline-block;
 }
 #speakers .modal {
   background: rgba(255, 255, 255, 0.9);

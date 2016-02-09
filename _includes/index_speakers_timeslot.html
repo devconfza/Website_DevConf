@@ -25,6 +25,7 @@
 								<i class="fa fa-linkedin"></i>
 							</a>
 							{% endif %}
+							<i class="fa fa-info"></i>
 						</div>
 					</div>
 
@@ -63,7 +64,7 @@
 								<div class="row">
 						          <div class="col-md-12">
 						          	<img src="/public/images/speakers/{{ speaker.pic }}" />
-						          {% capture abstractFilename %}/public/abstract/{{ speaker.firstname }}{{ speaker.lastname | replace: ' ', '' }}.html{% endcapture %}
+						          {% capture abstractFilename %}/public/abstract/{{ speaker.firstname | replace: ' ', '' | replace: '&', '' }}{{ speaker.lastname | replace: ' ', '' | replace: '&', '' }}.html{% endcapture %}
 						          {% for static_file in site.static_files %}
 								    {% if static_file.path == abstractFilename %}
 
@@ -74,7 +75,7 @@
 						        </div>
 						        <div class="row">
 						          <div class="col-md-12">
-						          {% capture bioFilename %}/public/bio/{{ speaker.firstname }}{{ speaker.lastname }}.html{% endcapture %}
+						          {% capture bioFilename %}/public/bio/{{ speaker.firstname | replace: ' ', '' | replace: '&', '' }}{{ speaker.lastname | replace: ' ', '' | replace: '&', '' }}.html{% endcapture %}
 						          {% for static_file in site.static_files %}
 								    {% if static_file.path == bioFilename %}
 								        <p>{% include_relative {{ bioFilename }} %}</p>
