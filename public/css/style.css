@@ -7044,6 +7044,49 @@ footer ul li {
 #speakers .pic-box .social a {
   padding: 0px 8px;
 }
+#speakers .modal {
+  background: rgba(255, 255, 255, 0.9);
+  color: #f6f6f6;
+}
+#speakers .modal .modal-content {
+  background-color: #000B26;
+}
+#speakers .modal .modal-header h4 {
+  display: inline;
+}
+#speakers .modal .modal-header h5 {
+  display: inline;
+}
+#speakers .modal .modal-header .close {
+  color: #f6f6f6;
+  opacity: 0.7;
+}
+#speakers .modal .modal-body img {
+  width: 250px;
+  float: left;
+  margin: 11px 15px;
+}
+#speakers .modal .modal-body h3 {
+  color: #00A4FE;
+}
+#speakers .modal .modal-body p {
+  font-size: 13px;
+  text-align: justify;
+  padding: 0px 10px;
+}
+#speakers .modal .modal-body ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 23px;
+  margin: 0px;
+}
+#speakers .modal .modal-title {
+  color: #FF0036;
+}
+#speakers .modal .social {
+  float: left;
+  font-size: 22px;
+}
 @media (min-width: 992px) {
   #speakers .break {
     max-width: none;
