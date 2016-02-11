@@ -6706,6 +6706,10 @@ body {
 #about #ticketsremaining {
   display: none;
 }
+#about #booknow a {
+  margin: 28px 0px 0px 0px;
+  font-size: 28px;
+}
 @media (min-width: 768px) {
   #about {
     padding-top: 40px;
