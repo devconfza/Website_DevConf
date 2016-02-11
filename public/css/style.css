@@ -6707,8 +6707,8 @@ body {
   display: none;
 }
 #about #booknow a {
-  margin: 28px 0px 0px 0px;
-  font-size: 28px;
+  margin: 90px 0px 0px 0px;
+  font-size: 24px;
 }
 @media (min-width: 768px) {
   #about {
@@ -6748,7 +6748,7 @@ body {
 }
 @media (min-width: 1200px) {
   #about {
-    padding-top: 190px;
+    padding-top: 120px;
     padding-bottom: 190px;
   }
   #about img {
@@ -6765,6 +6765,10 @@ body {
   }
   #about .countdown-period {
     font-size: 15px;
+  }
+  #about #booknow a {
+    margin: 110px 0px 0px 0px;
+    font-size: 28px;
   }
 }
 footer {
