@@ -6631,6 +6631,21 @@ button.close {
 .menuBanana {
   background-color: #FF0036;
 }
+.emailUs {
+  color: #FF0036;
+}
+.largerFont {
+  font-size: 18px;
+}
+#ticketframe {
+  display: none;
+}
+#registerMenuLink {
+  display: none;
+}
+#booknow {
+  display: none;
+}
 #sponsors {
   background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
   background-position: center;

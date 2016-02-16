@@ -55,21 +55,23 @@
             }
 
             if (remaining <= 0){
-                remaining = "Sold Out!";
-                $("#ticketframe").hide();
-                $("#registerMenuLink").hide();
-                $("#booknow").hide();
-            }   
+                remaining = "Sold Out! <br/>Please <a class='emailUs' href='mailto:info@devconf.co.za'>email us</a> to be notified if more tickets open up.";
+            } else {
+                $("#ticketframe").show();
+                $("#registerMenuLink").show();
+                $("#booknow").show();
+            }  
             
             $('#ticketsremainingcount').html(remaining);
             $('#ticketsremaining').show();
 }   
 
-    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
-        dataType: 'json',
-        success: function(data) {
-           updateUIWithTicketCount(data);
-        }
-    });  
+updateUIWithTicketCount(246);
+    // $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
+    //     dataType: 'json',
+    //     success: function(data) {
+    //        updateUIWithTicketCount(data);
+    //     }
+    // });  
 </script>
 
