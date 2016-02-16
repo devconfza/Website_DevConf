@@ -30,19 +30,26 @@
     });
 </script>
 
-<script type="text/javascript">          
-    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
-        dataType: 'json',
-        success: function(data) {
-            // console.log('Resp', data);
+<script type="text/javascript">       
+function updateUIWithTicketCount(data){
+    // console.log('Resp', data);
             var remaining = 246 - data;
             if (remaining <= 0){
                 remaining = "Sold Out!"    
+                $("#ticketframe").hide();
+                $("#registerMenuLink").hide();
+                $("#booknow").hide();
             }
             
             $('#ticketsremainingcount').html(remaining);
             $('#ticketsremaining').show();
+}   
+
+    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
+        dataType: 'json',
+        success: function(data) {
+           updateUIWithTicketCount(data);
         }
-    });
+    });  
 </script>
 
