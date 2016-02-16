@@ -6628,6 +6628,9 @@ button.close {
   font-weight: bold;
   font-size: 16px;
 }
+.menuBanana {
+  background-color: #FF0036;
+}
 #sponsors {
   background-image: url(http://demo.themeum.com/wordpress/eventum/wp-content/uploads/2015/09/home-sponsors-bg.jpg?id=152);
   background-position: center;
