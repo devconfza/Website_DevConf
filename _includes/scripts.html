@@ -35,25 +35,7 @@
     function updateUIWithTicketCount(data){
         var totalCount = 246;
             console.log('Resp', data);
-            var remaining = 0;
-            if (data.total === undefined) {
-                remaining = totalCount - data;             
-            } else {
-                remaining = totalCount - data.total;
-                    // + data.Complimentary_Ticket
-                remaining += data['DevUG_Organiser'] || 0;
-                remaining += data['DevConf_Speaker'] || 0;
-                remaining += data['BBD_Sponsor_Ticket'] || 0;
-                remaining += data['DevConf_-_Media'] || 0;
-                remaining += data['Allan_Gray_Sponsor'] || 0;
-                remaining += data['Mint_Management_Technologies_Sponsor'] || 0;
-                remaining += data['Chillisoft_Sponsor'] || 0;
-                remaining += data['EOH_Sponsor'] || 0;
-                remaining += data['Microsoft_Sponsor'] || 0;
-                remaining += data['Entelect_Sponsor'] || 0;
-                remaining += data['Google_Sponsor'] || 0;
-                remaining += data['Derivco_Sponsor'] || 0;
-            }
+            var remaining = data.total;
 
             if (remaining <= 0){
                 remaining = "Sold Out! <br/>Please <a class='emailUs' href='mailto:info@devconf.co.za'>email us</a> to be notified if more tickets open up.";
