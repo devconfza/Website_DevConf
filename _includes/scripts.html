@@ -35,10 +35,16 @@
         dataType: 'json',
         success: function(data) {
             // console.log('Resp', data);
-            var remaining = 246 - data;
+            var remaining = 0;
+            if (data.total == undefined) {
+                remaining = 246 - data;             
+            } else {
+                remaining = 350 - data.DevConf_Speaker;
+            }
+
             if (remaining <= 0){
                 remaining = "Sold Out!"    
-            }
+            }   
             
             $('#ticketsremainingcount').html(remaining);
             $('#ticketsremaining').show();
