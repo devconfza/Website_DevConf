@@ -30,10 +30,9 @@
     });
 </script>
 
+
 <script type="text/javascript">          
-    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
-        dataType: 'json',
-        success: function(data) {
+    function updateUIWithTicketCount(data){
             console.log('Resp', data);
             var remaining = 0;
             if (data.total === undefined) {
