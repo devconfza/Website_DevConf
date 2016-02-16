@@ -451,7 +451,8 @@
   time: "13:10"
   title: Automated Platform-independent deployment – our journey at Allan Gray
 
-- publish: false
+#this slot reserved for Derivco#
+- publish: false 
   track_order: 5
   firstname: 
   lastname: 
@@ -461,6 +462,7 @@
   time: "13:50"
   title: 
 
+#this slot reserved for Google#
 - publish: false
   track_order: 5
   firstname: 
@@ -471,6 +473,7 @@
   time: "14:50"
   title: 
 
+#this slot reserved for Intel#
 - publish: false
   track_order: 5
   firstname: 

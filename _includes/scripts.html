@@ -57,11 +57,20 @@
 
             if (remaining <= 0){
                 remaining = "Sold Out!";
+                $("#ticketframe").hide();
+                $("#registerMenuLink").hide();
+                $("#booknow").hide();
             }   
             
             $('#ticketsremainingcount').html(remaining);
             $('#ticketsremaining').show();
+}   
+
+    $.ajax('http://helperservices.tjkruger.com/devconf/ticketssoldcount', {
+        dataType: 'json',
+        success: function(data) {
+           updateUIWithTicketCount(data);
         }
-    });
+    });  
 </script>
 
