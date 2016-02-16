@@ -33,12 +33,13 @@
 
 <script type="text/javascript">          
     function updateUIWithTicketCount(data){
+        var totalCount = 246;
             console.log('Resp', data);
             var remaining = 0;
             if (data.total === undefined) {
-                remaining = 246 - data;             
+                remaining = totalCount - data;             
             } else {
-                remaining = 246 - data.total;
+                remaining = totalCount - data.total;
                     // + data.Complimentary_Ticket
                 remaining += data['DevUG_Organiser'] || 0;
                 remaining += data['DevConf_Speaker'] || 0;
@@ -58,7 +59,7 @@
                 remaining = "Sold Out! <br/>Please <a class='emailUs' href='mailto:info@devconf.co.za'>email us</a> to be notified if more tickets open up.";
             } else {
                 $("#ticketframe").show();
-                $("#registerMenuLink").show();
+                $("#registerMenuLink").css( "display", "block");
                 $("#booknow").show();
             }  
             
