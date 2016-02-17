@@ -465,13 +465,13 @@
 #this slot reserved for Google#
 - publish: false
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Johann 
+  lastname: du Toit
+  twitter: johann_du_toit
+  pic: Johan-duToit.jpg
   track: "Sponsor"
   time: "14:50"
-  title: 
+  title: Lessons learned while crawling the internet with Kubernetes
 
 #this slot reserved for derivco#
 - publish: true
