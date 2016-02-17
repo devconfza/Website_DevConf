@@ -454,15 +454,14 @@
 #this slot reserved for Entellect#
 - publish: false 
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Tim
+  lastname: Lewis
+  twitter: timmles
+  pic: Tim-Lewis.jpg
   track: "Sponsor"
   time: "13:50"
-  title: 
+  title: "Frontend tech: Keeping up with the Jones"
 
-#this slot reserved for Google#
 - publish: false
   track_order: 5
   firstname: Johann 
@@ -473,7 +472,6 @@
   time: "14:50"
   title: Lessons learned while crawling the internet with Kubernetes
 
-#this slot reserved for derivco#
 - publish: true
   track_order: 5
   firstname: Steven
