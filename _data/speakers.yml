@@ -33,12 +33,22 @@
 
 - publish: true
   track_order: 0
+  firstname: Guillaume
+  lastname: Belrose
+  twitter: gbelrose
+  pic: Guillaume-Belrose.jpg
+  track: "Crafting Code"
+  time: "13:10"
+  title: "Testing with types, how to test more by typing less"
+
+- publish: true
+  track_order: 0
   firstname: Joshua
   lastname: Lewis
   twitter: joshilewis
   pic: Joshua-Lewis.jpg
   track: "Crafting Code"
-  time: "13:10"
+  time: "13:50"
   title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
 
 - publish: true
@@ -48,18 +58,8 @@
   twitter: MarkWhitfeld
   pic: Mark-Whitfeld.jpg
   track: "Crafting Code"
-  time: "13:50"
-  title: "Brownfield TDD: How to eat an elephant?"
-
-- publish: true
-  track_order: 0
-  firstname: Guillaume
-  lastname: Belrose
-  twitter: gbelrose
-  pic: Guillaume-Belrose.jpg
-  track: "Crafting Code"
   time: "14:50"
-  title: "Testing with types, how to test more by typing less"
+  title: "Brownfield TDD: How to eat an elephant?"
 
 - publish: true
   track_order: 0
@@ -454,35 +454,33 @@
 #this slot reserved for Entellect#
 - publish: false 
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Tim
+  lastname: Lewis
+  twitter: timmles
+  pic: Tim-Lewis.jpg
   track: "Sponsor"
   time: "13:50"
-  title: 
+  title: "Frontend tech: Keeping up with the Jones"
 
-#this slot reserved for Derivco#
 - publish: false
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Johann 
+  lastname: du Toit
+  twitter: johann_du_toit
+  pic: Johan-duToit.jpg
   track: "Sponsor"
   time: "14:50"
-  title: 
+  title: Lessons learned while crawling the internet with Kubernetes
 
-#this slot reserved for google#
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
+  firstname: Steven
   lastname: 
-  twitter: 
-  pic: ph.jpg
+  twitter: steven_vh
+  pic: Steve.jpg
   track: "Sponsor"
   time: "15:30"
-  title: 
+  title: Infrastructure as Code – Using Chef to Manage Drift
 
 #this slot reserved for intel#
 - publish: false

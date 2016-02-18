@@ -27,11 +27,13 @@
         updateCountdown();
         $('#countdown-timer').show();
         setInterval(updateCountdown, 1000);
+         $('#ticketsremainingcount').html("Sold Out! <br/>Please <a class='emailUs' href='mailto:info@devconf.co.za'>email us</a> to be notified if more tickets open up.");
+         $('#ticketsremaining').show();
     });
 </script>
 
 
-<script type="text/javascript">          
+<!--<script type="text/javascript">          
     function updateUIWithTicketCount(data){
         var totalCount = 246;
             console.log('Resp', data);
@@ -74,5 +76,4 @@ updateUIWithTicketCount(246);
     //        updateUIWithTicketCount(data);
     //     }
     // });  
-</script>
-
+</script> -->
