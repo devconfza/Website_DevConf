@@ -451,7 +451,6 @@
   time: "13:10"
   title: Automated Platform-independent deployment – our journey at Allan Gray
 
-#this slot reserved for Entellect#
 - publish: false 
   track_order: 5
   firstname: Tim
