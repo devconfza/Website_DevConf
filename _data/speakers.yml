@@ -482,12 +482,12 @@
   title: Infrastructure as Code – Using Chef to Manage Drift
 
 #this slot reserved for intel#
-- publish: false
+- publish: true
   track_order: 5
-  firstname: 
-  lastname: 
-  twitter: 
+  firstname: Mohammed  
+  lastname: O Fareed
+  twitter: OewaisM
   pic: ph.jpg
   track: "Sponsor"
   time: "16:10"
-  title: 
+  title: Intel software in SA
