@@ -1,6 +1,13 @@
 exclude: 
     - node_modules
     - package.json
+    - .gitignore
+    - _config.yml
+    - CNAME
+    - gulpfile.js
+    - update.bat
+    - bundle
+    
 defaults:
     -
         scope:
