@@ -6620,6 +6620,12 @@ button.close {
 #booknow {
   display: none;
 }
+a.redirectionLink {
+  color: #FF0036;
+}
+a.redirectionLink:hover {
+  color: #cc002b;
+}
 .navbar-default {
   background-color: inherit;
   border: none;
