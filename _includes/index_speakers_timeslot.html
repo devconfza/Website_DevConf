@@ -26,6 +26,11 @@
 							</a>
 							{% endif %}
 							<i class="fa fa-info"></i>
+							{% if speaker.slides.size > 0 %}
+							<a href="{{ speaker.slides }}" target="_blank">
+								<i class="fa fa-laptop"></i>
+							</a>
+							{% endif %}
 						</div>
 					</div>
 
@@ -43,6 +48,11 @@
 										{% if speaker.linkedin.size > 0 %}
 										<a href="https://za.linkedin.com/in/{{ speaker.linkedin }}" target="_blank">
 											<i class="fa fa-linkedin"></i>
+										</a>
+										{% endif %}
+										{% if speaker.slides.size > 0 %}
+										<a href="{{ speaker.slides }}" target="_blank">
+											<i class="fa fa-laptop"></i>
 										</a>
 										{% endif %}
 									</div>

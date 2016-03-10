@@ -40,6 +40,7 @@
   track: "Crafting Code"
   time: "13:10"
   title: "Testing with types, how to test more by typing less"
+  slides: https://github.com/kafecho/devconf2016
 
 - publish: true
   track_order: 0
@@ -194,6 +195,7 @@
   track: "DevOps & Automation"
   time: "11:50"
   title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
+  slides: https://www.dropbox.com/s/pwz6hyxxrhm9olc/DC16-GRABNER-ANDREAS-MetricsDrivenDevOps_Extended.pptx?dl=0
 
 - publish: true
   track_order: 2
@@ -244,6 +246,7 @@
   track: "DevOps & Automation"
   time: "16:10"
   title: Make your CI server a productive team member
+  slides: https://speakerdeck.com/kennethkalmer/make-your-ci-server-a-productive-team-member
 
 ##############################  Tools & Frameworks #########################
 
@@ -470,6 +473,7 @@
   track: "Sponsor"
   time: "14:50"
   title: Lessons learned while crawling the internet with Kubernetes
+  slides: https://speakerdeck.com/johanndutoit/lessons-learned-while-crawling-the-web-with-kubernetes
 
 - publish: true
   track_order: 5
