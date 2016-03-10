@@ -1,5 +1,7 @@
-	<p>Testing is important, but I am lazy.</p>
-
-	<p>In this talk, I will show how to leverage types (as in statically typed languages) so you can prevent certain types of bugs from occurring in the 1st place. It is about how to use the machinery of the compiler to check that your code is sound (and therefore does not need to be tested by traditional unit test approaches). I will also talk about property-based testing, or how you can use tools to automatically generate vast amounts of test cases so that you don't have to. </p>
-
-	<p>Some tools are clever enough to hone on the particular test case that result in failure (the one that you have to fix). I will use Scala as a vehicle for demonstration, but the principles have been applied successfully to many other languages.</p>
+<p>Testing is important, but I am lazy. So why spending copious time thinking about test cases when your computer can do this for you in a fraction of the time?</p>
+<p>In this talk, I will show you how to use an awesome approach called property-based testing.</p>
+<p>It allows you to automatically generate test values based on the properties of the things you want to test, from primitive types, all the way to arbitrary data structures.</p>
+<p>Generating copious amount of random data can certainly break things but sometimes you want to find out which particular test case causes your system to fail.</p>
+<p>This ability to hone on the particular bug (it is called shrinking) is extremely useful and almost makes property-based testing very hard to distinguish from magic.</p>
+<p>I will use Scala, a typed functional programming language as a driver for demonstration, together with the ScalaTest and ScalaCheck frameworks.</p>
+<p>The principles of properties-based testing have been applied successfully to many other languages, from Haskell to Erlang and I will briefly touch on those as well.</p>

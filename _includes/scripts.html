@@ -27,11 +27,13 @@
         updateCountdown();
         $('#countdown-timer').show();
         setInterval(updateCountdown, 1000);
+         $('#ticketsremainingcount').html("104% Sold Out!<br/>Please <a class='emailUs' href='mailto:info@devconf.co.za'>email us</a> to be added to the 2017 early bird notification list.");
+         $('#ticketsremaining').show();
     });
 </script>
 
 
-<script type="text/javascript">          
+<!--<script type="text/javascript">          
     function updateUIWithTicketCount(data){
             console.log('Resp', data);
             var remaining = data.total;
@@ -55,5 +57,4 @@ updateUIWithTicketCount({ total: 0 });
     //        updateUIWithTicketCount(data);
     //     }
     // });  
-</script>
-
+</script> -->
