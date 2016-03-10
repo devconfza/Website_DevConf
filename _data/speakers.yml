@@ -194,6 +194,7 @@
   track: "DevOps & Automation"
   time: "11:50"
   title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
+  slides: https://www.dropbox.com/s/pwz6hyxxrhm9olc/DC16-GRABNER-ANDREAS-MetricsDrivenDevOps_Extended.pptx?dl=0
 
 - publish: true
   track_order: 2
@@ -244,6 +245,7 @@
   track: "DevOps & Automation"
   time: "16:10"
   title: Make your CI server a productive team member
+  slides: https://speakerdeck.com/kennethkalmer/make-your-ci-server-a-productive-team-member
 
 ##############################  Tools & Frameworks #########################
 
