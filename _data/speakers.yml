@@ -40,6 +40,7 @@
   track: "Crafting Code"
   time: "13:10"
   title: "Testing with types, how to test more by typing less"
+  slides: https://github.com/kafecho/devconf2016
 
 - publish: true
   track_order: 0
@@ -472,6 +473,7 @@
   track: "Sponsor"
   time: "14:50"
   title: Lessons learned while crawling the internet with Kubernetes
+  slides: https://speakerdeck.com/johanndutoit/lessons-learned-while-crawling-the-web-with-kubernetes
 
 - publish: true
   track_order: 5
