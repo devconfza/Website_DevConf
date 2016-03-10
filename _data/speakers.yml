@@ -122,7 +122,8 @@
   pic: Badi-Sudhakaran.jpg
   track: "Persistence & Data"
   time: "13:10"
-  title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"  
+  title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
+  slides: /public/slides/firebase_devconf_iq.pptx    
 
 - publish: true
   track_order: 1
@@ -175,6 +176,7 @@
   track: "DevOps & Automation"
   time: "10:30"
   title: DevOps Demystified
+  slides: http://1drv.ms/1RzVL5U
 
 - publish: true
   track_order: 2
@@ -423,6 +425,7 @@
   track: "Sponsor"
   time: "10:30"
   title: Rapid prototyping with jboss forge
+  slides: /public/slides/ForgeV2.pptx
 
 - publish: true
   track_order: 5
@@ -485,7 +488,6 @@
   time: "15:30"
   title: Infrastructure as Code – Using Chef to Manage Drift
 
-#this slot reserved for intel#
 - publish: true
   track_order: 5
   firstname: Mohammed  
