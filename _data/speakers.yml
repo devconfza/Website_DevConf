@@ -218,6 +218,7 @@
   track: "DevOps & Automation"
   time: "13:50"
   title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
+  slides: http://www.slideshare.net/rouanw/dashboards-using-data-to-find-out-whats-really-going-on
 
 - publish: true
   track_order: 2
@@ -363,6 +364,7 @@
   track: Teams and People
   time: "11:50"
   title: Code Reviews - a team tool
+  slides: https://speakerdeck.com/dannykopping/code-reviews-a-team-tool-devconf-16
 
 - publish: true
   track_order: 4
