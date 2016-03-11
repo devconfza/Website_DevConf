@@ -238,7 +238,8 @@
   pic: Duane-McKibbin.jpg
   track: "DevOps & Automation"
   time: "15:30"
-  title: Git vs. Continuous Integration 
+  title: Git vs. Continuous Integration
+  slides: http://source.entelect.co.za/devconf-za-2016-git-vs-continuous-integration 
 
 - publish: true
   track_order: 2
@@ -282,6 +283,7 @@
   track: "Tools & Frameworks"
   time: "11:50"
   title: "Gradle: The Build System you have been waiting for"
+  slides: /public/slides/DevConf_Gradle_Build_System_Feb2016.pptx
 
 - publish: true
   track_order: 3
@@ -292,6 +294,7 @@
   track: "Tools & Frameworks"
   time: "13:10"
   title: Performance Testing Tools in Android
+  slides: https://drive.google.com/open?id=0B7jzFAPAscSMNGt0dHpDeDBBQTA
 
 - publish: true
   track_order: 3
@@ -489,6 +492,7 @@
   track: "Sponsor"
   time: "15:30"
   title: Infrastructure as Code – Using Chef to Manage Drift
+  slides: /public/slides/DevConf Feb2016 - Infrastructure as Code – Using Chef to Manage Drift.pptx
 
 - publish: true
   track_order: 5
