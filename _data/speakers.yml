@@ -305,6 +305,7 @@
   track: "Tools & Frameworks"
   time: "13:50"
   title: What is The Actor Model? A glance using Akka.NET
+  slides: http://www.slideshare.net/WilliamBrander1/what-is-the-actor-model
 
 - publish: true
   track_order: 3
@@ -398,6 +399,7 @@
   track: "Teams & People"
   time: "14:50"
   title: "Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services"
+  slides: http://1drv.ms/1YFRByP
 
 - publish: true
   track_order: 4
