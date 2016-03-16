@@ -6958,6 +6958,10 @@ footer ul li {
 #contactus a {
   color: #000B26;
 }
+#pre-register .input-group {
+  margin-left: auto;
+  margin-right: auto;
+}
 #pre-register input {
   font-size: 10px;
   width: 90px;
