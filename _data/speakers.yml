@@ -71,6 +71,7 @@
   track: "Crafting Code"
   time: "15:30"
   title: Using forensic techniques for targeted refactoring
+  slides: https://speakerdeck.com/riaancornelius/using-forensic-techniques-for-targeted-refactoring
 
 - publish: true
   track_order: 0
