@@ -1,0 +1,21 @@
+{% assign durationInSec = include.agenda.length | times: 60 %}
+{% assign startTime = include.agenda.start %}
+{% assign endTime = include.agenda.start | date: '%s' | plus: durationInSec %}
+<tr>
+    <td>
+        {{ startTime | date: '%H' }}h{{ startTime | date: '%M' }}
+    </td>
+    <td>
+        {{ endTime | date: '%H' }}h{{ endTime | date: '%M' }}
+    </td>
+    {% assign orderedSpeakers = include.speakers | sort: 'track_order' %}
+    {% for speaker in orderedSpeakers %}
+        {% if speaker.publish == true %}
+            <td class="info"><p>{{ speaker.title }}</p>
+            <p><a href="http://www.twitter.com/{{ speaker.twitter }}" target="_blank">{{ speaker.firstname }} {{ speaker.lastname }}</a></p>
+            </td> 
+        {% else %}
+            <td class="info">TBA</td>
+        {% endif %}
+    {% endfor %}
+</tr>

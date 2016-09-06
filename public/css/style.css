@@ -6730,9 +6730,6 @@ body {
 #about h3 {
   font-size: 13px;
 }
-#about #countdown-timer {
-  display: none;
-}
 #about .countdown-amount {
   font-size: 20px;
 }

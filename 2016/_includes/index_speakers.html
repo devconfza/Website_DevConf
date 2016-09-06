@@ -1,0 +1,39 @@
+<section id="speakers" class="section-light">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="/public/images/agenda.png" download="agenda.png">Download the agenda</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="break">08h00 -> <b>Registration</b> <- 09h00</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="break">09h00 -> <b>Welcome & Keynote</b> <- 10h00</p>
+			</div>
+		</div>
+	</div>
+
+{% comment %}
+	{% include index_speakers_keynote.html %}
+{% endcomment %}	
+
+	{% assign agendaSpeakers = (site.data.speakers | sort: 'time' | group_by: 'time') %}
+	{% for agenda in site.data.agenda %}
+        {% if agenda.type == 'break' %}
+        	{% include index_speakers_break.html agenda=agenda %}
+        {% else %}
+            {% assign speakers=agendaSpeakers[agenda.sessionIndex].items %}
+            {% include index_speakers_timeslot.html speakers=speakers agenda=agenda %}
+        {% endif %}
+    {% endfor %}
+</section>

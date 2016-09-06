@@ -1,0 +1,22 @@
+gems:
+  - jekyll-redirect-from
+  
+whitelist:
+  - jekyll-redirect-from
+    
+exclude: 
+    - node_modules
+    - package.json
+    - .gitignore
+    - _config.yml
+    - CNAME
+    - gulpfile.js
+    - update.bat
+    - bundle
+    
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
