@@ -18,9 +18,21 @@
             $('#countdown-mins').html(mins);
             $('#countdown-secs').html(secs);
         };
+    
     $(function()
     {
         updateCountdown();
         setInterval(updateCountdown, 1000);
+
+    $.ajax('http://api.quicket.co.za:80/api/events/14425/guests?api_key=42dd5ced3083881a6ff01b7ef554f534', {
+        headers: {
+            usertoken: 'F6ED182757B24FBDBB74AF7CCD4D84F07B670AE0D59545F3BC523786956AF1EF'
+        },
+        dataType: 'json',
+        success: function(data) {
+            $('#ticketsremainingcount').html(618 - data.records);
+            $('#ticketsremaining').show();
+        }
+    });
     });
 </script>

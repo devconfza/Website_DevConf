@@ -6532,7 +6532,8 @@ button.close {
 .section-light {
   background-color: #f6f6f6;
   color: #000B26;
-  padding-top: 60px;
+  /*
+ 	padding-top: 60px;*/
   padding-bottom: 40px;
 }
 .section-light a {
@@ -6541,7 +6542,7 @@ button.close {
 .section-dark {
   background-color: #000B26;
   color: #f6f6f6;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   padding-bottom: 40px;
 }
 .section-dark a {
@@ -6611,15 +6612,17 @@ button.close {
 .largerFont {
   font-size: 18px;
 }
-#ticketframe {
-  display: none;
+/*#ticketframe{
+    display:none;
 }
-#registerMenuLink {
-  display: none;
+
+#registerMenuLink{
+  display:none;
 }
-#booknow {
-  display: none;
-}
+
+#booknow{
+ display:none;
+}*/
 a.redirectionLink {
   color: #FF0036;
 }
@@ -6716,8 +6719,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*#countdown-timer {
+		display: none;
+	}*/
 }
 #about img {
   width: 270px;
@@ -6748,10 +6754,6 @@ body {
   font-size: 24px;
 }
 @media (min-width: 768px) {
-  #about {
-    padding-top: 40px;
-    padding-bottom: 100px;
-  }
   #about img {
     width: 270px;
   }
@@ -6763,10 +6765,6 @@ body {
   }
 }
 @media (min-width: 992px) {
-  #about {
-    padding-top: 120px;
-    padding-bottom: 130px;
-  }
   #about img {
     width: 350px;
   }
@@ -6784,10 +6782,6 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  #about {
-    padding-top: 120px;
-    padding-bottom: 190px;
-  }
   #about img {
     width: 400px;
   }
@@ -6858,7 +6852,6 @@ footer ul li {
   padding-bottom: 90px;
 }
 #purpose {
-  padding-top: 50px;
   padding-bottom: 50px;
   color: #000A26;
   font-size: 11px;
@@ -6898,7 +6891,6 @@ footer ul li {
 }
 @media (min-width: 768px) {
   #purpose {
-    padding-top: 120px;
     padding-bottom: 20px;
     font-size: 14px;
   }
