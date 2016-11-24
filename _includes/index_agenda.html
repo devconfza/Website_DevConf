@@ -7,24 +7,28 @@
                 <tr>
                     <th>Start Time</th>
                     <th>End Time</th>
-                    <th>Crafting Code</th>
-                    <th>Persistence & Data</th>
-                    <th>DevOps & Automation</th>
-                    <th>Tools & Frameworks</th>
-                    <th>Teams & People</th>
-                    <th>Sponsor Track</th>
+                    <th>Ada Lovelace Room</th>
+                    <th>Grace Hopper Room</th>
+                    <th>Blaise Pascal Room</th>
+                    <th>Niklaus Wirth Room</th>
+                    <th>Frederick Brooks Room</th>
                 </tr>
             </thead>
             <tbody>
                 <tr> 
                     <td>08h00</td>
                     <td>09h00</td>
-                    <td class="text-center info" colspan="6">Registration</td>
+                    <td class="text-center info" colspan="5">Registration</td>
                 </tr>
                 <tr> 
                     <td>09h00</td>
+                    <td>09h15</td>
+                    <td class="text-center info" colspan="5">Welcome</td>
+                </tr>
+                <tr> 
+                    <td>09h15</td>
                     <td>10h00</td>
-                    <td class="text-center info" colspan="6">Welcome & Keynote</td>
+                    <td class="text-center info" colspan="5">Keynote with Terri Burns</td>
                 </tr>
 
                 {% for agenda in site.data.agenda %}
@@ -36,6 +40,11 @@
                     {% endif %}
                 {% endfor %}
         
+                <tr> 
+                    <td>17h10</td>
+                    <td>19h00</td>
+                    <td class="text-center info" colspan="5">Networking, Prize Announcements &amp; Cocktails Sponsored by EOH</td>
+                </tr>
             </tbody>
         </table>
 	</div>

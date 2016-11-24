@@ -1,13 +1,14 @@
 
 	<div class="container">
 		{% assign sorted_speakers = (include.speakers | sort: 'track_order') %}
-		{% for speaker in sorted_speakers %}
-		{% assign loopindex = forloop.index | modulo: 6 %}
+		{% for speaker in sorted_speakers %}		
+		{% assign loopindex = forloop.index | modulo: 5 %}
 		  {% if loopindex == 1 %}
 		  
 			  <div class="row">
 			  {% endif %}
 				<div class="col-md-2">
+					{% if speaker.publish == true %}
 					<div class="pic-box" data-toggle="modal" data-target="#{{ speaker.firstname | replace: ' ', '' | replace: '&', '' }}{{ speaker.lastname | replace: ' ', '' | replace: '&', '' }}Modal">
 						<div class="track">{{ speaker.track }}</div>
 						<div class="time">{{ speaker.time }}</div>
@@ -97,10 +98,13 @@
 							</div><!-- /.modal-content -->
 						</div><!-- /.modal-dialog -->
 					</div><!-- /.modal -->
+					{% else %}
+					To be announced
+		  			{% endif %}
 				</div>
 			  {% if loopindex == 0 or forloop.last %}
 			  </div>
 		  
-		  {% endif %}
+		  {% endif %}	
 		{% endfor %}
 	</div>

@@ -1,24 +1,74 @@
 <section id="speakers" class="section-light">
 
-	<div class="container">
+	<!--<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<a href="/public/images/agenda.png" download="agenda.png">Download the agenda</a>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<p class="break">08h00 -> <b>Registration</b> <- 09h00</p>
+			<div class="col-md-10">
+				<p class="break">08h00 → <b>Registration</b> ← 09h00</p>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<p class="break">09h00 -> <b>Welcome & Keynote</b> <- 10h00</p>
+			<div class="col-md-10">
+				<p class="break">09h00 → <b>Welcome</b> ← 09h15</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" data-toggle="modal" data-target="#keynotemodal">
+			<div class="col-md-10">
+				<p class="break">09h15 → <b>Keynote with Terri Burns</b> ← 10h00</p>
+				<div id="keynotemodal" class="modal fade" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<div class="social">
+										<a href="http://www.twitter.com/tcburning" target="_blank">
+											<i class="fa fa-twitter"></i>
+										</a>																		
+									</div>
+									<h4 class="modal-title">
+										Terri
+										Burns
+									</h4>
+									<h5>
+									Keynote
+									09h15
+									</h5>
+								</div>
+								<div class="modal-body">
+								<div class="row">
+						          <div class="col-md-12">
+						          	<h3>Bad People, Bad Computers</h3>
+						          </div>
+						        </div>
+								<div class="row">
+						          <div class="col-md-12">
+						          	<img src="/public/images/speakers/tburns.jpg" />
+						          "Teaching Computers to be as Flawed as Humans Through Algorithmic Bias"
+Earlier this year, NPR did a story answering the question, can computers be racist? (Yes.) Not soon after, Microsoft launched an AI chatbot experiment, called Tay, which shut down when the software began spewing hateful speech on Twitter. One of the knowns fears of AI and machine learning is the notion of algorithmic bias, which can create or indirectly allow machines to learn prejudiced behavior. In this talk, we will explore what it really means to “teach” a computer to have prejudices, and what this can mean for the future of computing.
+
+What Attendees Can Expect to Learn: Examples of “bad” computing, how personal beliefs and prejudice can manifest in code, and ways to avoid personal bias in algorithms."
+						          </div>
+						        </div>
+						        <div class="row">
+						          <div class="col-md-12">
+						         Terri Burns is a developer and technologist based in San Francisco. She's an editorial contributor at Forbes, where she offers business and leadership advice in the form of data visualizations. In addition to making visualizations, Terri's cohosted the Forbes podcast Well, Technically, a podcast about startups and technology.  She's the former-President and current Chair of Tech@NYU, the largest student technology organization in New York City. She regularly writes about technology, diversity, and inclusion, and her work has been featured in Forbes, Scientific American, and Model View Culture. Terri's interested in building products, diversifying the technology industry, and and speaking about technology. She currently works at Twitter as an Associate Product Manager.
+						          </div>
+						        </div>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
 			</div>
 		</div>
 	</div>
@@ -32,8 +82,8 @@
         {% if agenda.type == 'break' %}
         	{% include index_speakers_break.html agenda=agenda %}
         {% else %}
-            {% assign speakers=agendaSpeakers[agenda.sessionIndex].items %}
-            {% include index_speakers_timeslot.html speakers=speakers agenda=agenda %}
+            	{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %}
+            	{% include index_speakers_timeslot.html speakers=speakers agenda=agenda %}
         {% endif %}
     {% endfor %}
 </section>
