@@ -1,6 +1,6 @@
 ##############################  Crafting Code #########################
 
-- publish: false
+- publish: true
   track_order: 0
   firstname: Anujah
   lastname: Sewchurran
@@ -92,7 +92,7 @@
   time: "10:30"
   title: "Agile Database Techniques – Refactoring to keep your database current"
 
-- publish: false
+- publish: true
   track_order: 1
   firstname: Gail
   lastname: Shaw
@@ -382,7 +382,7 @@
   track_order: 4
   firstname: Marius 
   lastname: de Beer 
-  twitter: 
+  twitter: chmdebeer
   pic: ph.jpg
   track: "Frederick Brooks Room"
   time: "14:35"
