@@ -174,7 +174,7 @@
   time: "10:30"
   title: 
 
-- publish: true
+- publish: false
   track_order: 2
   firstname: Shawn 
   lastname: Wildermuth
@@ -234,7 +234,7 @@
   time: "15:50"
   title: "So you wanna build a service bus"
 
-- publish: true
+- publish: false
   track_order: 2
   firstname: Shawn 
   lastname: Wildermuth
