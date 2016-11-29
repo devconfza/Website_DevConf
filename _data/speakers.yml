@@ -122,7 +122,7 @@
   time: "13:05"
   title: "Knowing when to choose SQL and when to choose NoSQL."
 
-- publish: false
+- publish: true
   track_order: 1
   firstname: Clinton 
   lastname: van Blommestein
@@ -176,13 +176,13 @@
 
 - publish: false
   track_order: 2
-  firstname: Shawn 
-  lastname: Wildermuth
-  twitter: ShawnWildermuth
+  firstname:  
+  lastname: 
+  twitter: 
   pic: ph.jpg
   track: "Blaise Pascal Room"
   time: "11:05"
-  title: "Developing ASP.NET Core in VS Code"
+  title: 
 
 - publish: true
   track_order: 2
@@ -234,15 +234,15 @@
   time: "15:50"
   title: "So you wanna build a service bus"
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: Shawn 
-  lastname: Wildermuth
-  twitter: ShawnWildermuth
+  firstname: Rory 
+  lastname: Preddy
+  twitter: rorypreddy
   pic: ph.jpg
   track: "Blaise Pascal Room"
   time: "16:45"
-  title: "Hololens Development"
+  title: "Visual Studio Code for the Java Developer"
 
 ##############################  Tools & Frameworks #########################
 
@@ -306,7 +306,7 @@
   time: "14:35"
   title: "The mistakes I made while developing Android apps"
 
-- publish: false
+- publish: true
   track_order: 3
   firstname: Tim 
   lastname: Lewis
@@ -348,7 +348,7 @@
   time: "11:05"
   title: "The care and feeding of Microservices"
 
-- publish: false
+- publish: true
   track_order: 4
   firstname: Bukiwe 
   lastname: Tsoeu
@@ -398,7 +398,7 @@
   time: "15:50"
   title: "The Art of Mastery"
 
-- publish: false
+- publish: true
   track_order: 4
   firstname: Riaan 
   lastname: Cornelius
