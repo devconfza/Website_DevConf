@@ -30,15 +30,15 @@
   time: "12:00"
   title: 
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: # BBD Sponsored slot
-  lastname: 
+  firstname: Ruddy
+  lastname: Riba
   twitter: 
   pic: ph.jpg
   track: "Ada Lovelace Room"
   time: "13:05"
-  title: 
+  title: "REST Assured"
 
 - publish: true
   track_order: 0
