@@ -35,7 +35,7 @@
   firstname: Ruddy
   lastname: Riba
   twitter: RuddyRiba
-  pic: ph.jpg
+  pic: rubby.jpg
   track: "Ada Lovelace Room"
   time: "13:05"
   title: "REST Assured"
@@ -45,7 +45,7 @@
   firstname: Joshua
   lastname: Lewis
   twitter: joshilewis
-  pic: ph.jpg
+  pic: joshua.jpg
   track: "Ada Lovelace Room"
   time: "13:40"
   title: "The Dimensions of Tests Model"
@@ -55,7 +55,7 @@
   firstname: Mark
   lastname: Whitfeld
   twitter: MarkWhitfeld
-  pic: ph.jpg
+  pic: whitfield.jpg
   track: "Ada Lovelace Room"
   time: "14:35"
   title: "Lessons Learned from a Decade of TDD"
@@ -65,7 +65,7 @@
   firstname: Matt
   lastname: Cavanagh
   twitter: roguecode
-  pic: ph.jpg
+  pic: matt.jpg
   track: "Ada Lovelace Room"
   time: "15:50"
   title: "All your data are belong to us: Reverse-engineering API's, web scraping, and the details of how I gained access to 7 million [company name redacted *] accounts."
@@ -75,7 +75,7 @@
   firstname: Rishal 
   lastname: Hurbans
   twitter: RishalHurbans
-  pic: ph.jpg
+  pic: rishal.jpg
   track: "Ada Lovelace Room"
   time: "16:45"
   title: "AI in Perspective"
@@ -117,7 +117,7 @@
   firstname: Mercia 
   lastname: Malan
   twitter: Kitri747
-  pic: ph.jpg
+  pic: mercia.jpg
   track: "Grace Hopper Room"
   time: "13:05"
   title: "Knowing when to choose SQL and when to choose NoSQL."
@@ -127,7 +127,7 @@
   firstname: Clinton 
   lastname: van Blommestein
   twitter: clintonvb
-  pic: ph.jpg
+  pic: clinton.jpg
   track: "Grace Hopper Room"
   time: "13:40"
   title: "Relational and Graph, and a lot in between"
@@ -137,7 +137,7 @@
   firstname: Gary 
   lastname: Hope
   twitter: GaryHope
-  pic: ph.jpg
+  pic: gary.jpg
   track: "Grace Hopper Room"
   time: "14:35"
   title: "Introduction to Azure DocumentDB"
@@ -147,7 +147,7 @@
   firstname: Mark 
   lastname: Biagio
   twitter: markbiagio
-  pic: ph.jpg
+  pic: biagio.jpg
   track: "Grace Hopper Room"
   time: "15:50"
   title: "Real world applications built with Firebase"
@@ -189,7 +189,7 @@
   firstname: Badi 
   lastname: Sudhakaran
   twitter: badikumar
-  pic: ph.jpg
+  pic: badi.jpg
   track: "Blaise Pascal Room"
   time: "12:00"
   title: "Introducing Blockchain to Web Developers"
@@ -199,7 +199,7 @@
   firstname: Gareth 
   lastname: Stephenson
   twitter: GarethStep
-  pic: ph.jpg
+  pic: gareth.jpg
   track: "Blaise Pascal Room"
   time: "13:05"
   title: "Cluster Computing using Apache Spark on Raspberry Pi's"
@@ -219,7 +219,7 @@
   firstname: Robert 
   lastname: Bravery
   twitter: robertbravery
-  pic: ph.jpg
+  pic: robert.jpg
   track: "Blaise Pascal Room"
   time: "14:35"
   title: "Concurrent Programming and Distributed Computing with Akka.net"
@@ -229,7 +229,7 @@
   firstname: William 
   lastname: Brander
   twitter: WilliamBZA
-  pic: ph.jpg
+  pic: william.jpg
   track: "Blaise Pascal Room"
   time: "15:50"
   title: "So you wanna build a service bus"
@@ -239,7 +239,7 @@
   firstname: Rory 
   lastname: Preddy
   twitter: rorypreddy
-  pic: ph.jpg
+  pic: rory.jpg
   track: "Blaise Pascal Room"
   time: "16:45"
   title: "Visual Studio Code for the Java Developer"
@@ -251,7 +251,7 @@
   firstname: Geoffrey 
   lastname: Lydall
   twitter: geofflesza
-  pic: ph.jpg
+  pic: geoffrey.jpg
   track: "Niklaus Wirth Room"
   time: "10:30"
   title: "Overview of Chef"
@@ -261,20 +261,20 @@
   firstname: Niel 
   lastname: Zeeman
   twitter: teamfoundation
-  pic: ph.jpg
+  pic: niel.jpg
   track: "Niklaus Wirth Room"
   time: "11:05"
   title: "From Zero to Docker"
 
-- publish: false
+- publish: true
   track_order: 3
-  firstname: #ABSA Sponsored 
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Dan 
+  lastname: Acton
+  twitter: danacton
+  pic: dan.jpg
   track: "Niklaus Wirth Room"
   time: "12:00"
-  title: 
+  title: "Let's make Software Engineering great again: culture, practices and tools for innovation"
 
 - publish: false
   track_order: 3
@@ -301,7 +301,7 @@
   firstname: Rebecca 
   lastname: Franks
   twitter: riggaroo
-  pic: ph.jpg
+  pic: rebecca.jpg
   track: "Niklaus Wirth Room"
   time: "14:35"
   title: "The mistakes I made while developing Android apps"
@@ -321,29 +321,29 @@
   firstname: Brett 
   lastname: Magill
   twitter: BrettMagill
-  pic: ph.jpg
+  pic: brett.jpg
   track: "Niklaus Wirth Room"
   time: "16:45"
   title: "Craft Beer and Data Science: Adapt or Die"
 
 ##############################  Teams & People #########################
 
-- publish: false
+- publish: true
   track_order: 4
-  firstname: #DVT Sponsored
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Jaco
+  lastname: van der Merwe
+  twitter: jvdmerwe
+  pic: jaco.jpg
   track: "Frederick Brooks Room"
   time: "10:30"
-  title: 
+  title: Why Agile teams perform better and how it links to behaviour psychology/motivation
 
 - publish: true
   track_order: 4
   firstname: Corneil 
   lastname: du Plessis
   twitter: corneil
-  pic: ph.jpg
+  pic: corneil.jpg
   track: "Frederick Brooks Room"
   time: "11:05"
   title: "The care and feeding of Microservices"
@@ -353,7 +353,7 @@
   firstname: Bukiwe 
   lastname: Tsoeu
   twitter: BukiweT4
-  pic: ph.jpg
+  pic: Bukiwe.jpg
   track: Teams and People
   time: "12:00"
   title: "Evolutionary architectures or Event driven architecture"
@@ -363,7 +363,7 @@
   firstname: Jacques 
   lastname: de Vos
   twitter: jacdevos
-  pic: ph.jpg
+  pic: jacques.jpg
   track: "Frederick Brooks Room"
   time: "13:05"
   title: "What is software product design?"
@@ -373,7 +373,7 @@
   firstname: Mark 
   lastname: Pearl
   twitter: MarkPearlCoZa
-  pic: ph.jpg
+  pic: pearl.jpg
   track: "Frederick Brooks Room"
   time: "13:40"
   title: "Getting the best of everyone into all the code using Mob Programming"
@@ -383,7 +383,7 @@
   firstname: Marius 
   lastname: de Beer 
   twitter: chmdebeer
-  pic: ph.jpg
+  pic: marius.jpg
   track: "Frederick Brooks Room"
   time: "14:35"
   title: "Preventing Burnout"
@@ -393,7 +393,7 @@
   firstname: Stephan 
   lastname: Swart
   twitter: stephan_swart
-  pic: ph.jpg
+  pic: stephen.jpg
   track: "Frederick Brooks Room"
   time: "15:50"
   title: "The Art of Mastery"
