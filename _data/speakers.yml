@@ -87,7 +87,7 @@
   firstname: Chris  
   lastname: Tite 
   twitter:  Tite_Chris
-  pic: chris.jpg
+  pic: chris2.jpg
   track: "Grace Hopper Room"
   time: "10:30"
   title: "Agile Database Techniques – Refactoring to keep your database current"
@@ -97,7 +97,7 @@
   firstname: Gail
   lastname: Shaw
   twitter: SQLIntheWild
-  pic: gail.jpg
+  pic: gail2.jpg
   track: "Grace Hopper Room"
   time: "11:05"
   title: "Database performance monitoring for developers"
