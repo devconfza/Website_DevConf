@@ -5,7 +5,7 @@
   firstname: Anujah
   lastname: Sewchurran
   twitter: AnujahP
-  pic: ph.jpg
+  pic: anujah.jpg
   track: "Ada Lovelace Room"
   time: "10:30"
   title: "What is your value as a software developer to an employer?"
@@ -15,7 +15,7 @@
   firstname: Guillaume 
   lastname: Belrose 
   twitter: gbelrose
-  pic: ph.jpg
+  pic: belrose.jpg
   track: "Ada Lovelace Room"
   time: "11:05"
   title: "Batman tackles Functional JavaScript with Elm"
@@ -87,7 +87,7 @@
   firstname: Chris  
   lastname: Tite 
   twitter:  Tite_Chris
-  pic: ph.jpg
+  pic: chris.jpg
   track: "Grace Hopper Room"
   time: "10:30"
   title: "Agile Database Techniques – Refactoring to keep your database current"
@@ -97,7 +97,7 @@
   firstname: Gail
   lastname: Shaw
   twitter: SQLIntheWild
-  pic: ph.jpg
+  pic: gail.jpg
   track: "Grace Hopper Room"
   time: "11:05"
   title: "Database performance monitoring for developers"
@@ -107,7 +107,7 @@
   firstname: Michael 
   lastname: Johnson
   twitter: MikeJohnsonZA
-  pic: ph.jpg
+  pic: michael.jpg
   track: "Grace Hopper Room"
   time: "12:00"
   title: "Why your choice of index matters."
@@ -157,7 +157,7 @@
   firstname: Theo 
   lastname: Bohnen
   twitter: tbohnenjnr
-  pic: ph.jpg
+  pic: theo.jpg
   track: "Grace Hopper Room"
   time: "16:45"
   title: "Flying a drone with VR, what I've learnt."
@@ -179,7 +179,7 @@
   firstname: Rachel
   lastname: Reese
   twitter: rachelreese
-  pic: ph.jpg
+  pic: rachel.jpg
   track: "Blaise Pascal Room"
   time: "11:05"
   title: "Is functional programming just a fad?"
@@ -311,7 +311,7 @@
   firstname: Tim 
   lastname: Lewis
   twitter: timmles
-  pic: ph.jpg
+  pic: tim.jpg
   track: "Niklaus Wirth Room"
   time: "15:50"
   title: "NativeScript: Marrying Angular 2 and Mobile Developerment"
@@ -403,7 +403,7 @@
   firstname: Riaan 
   lastname: Cornelius
   twitter: riaancornelius
-  pic: ph.jpg
+  pic: riaan.jpg
   track: "Frederick Brooks Room"
   time: "16:45"
   title: "A short history of keyboards (and why we need better ones)"
