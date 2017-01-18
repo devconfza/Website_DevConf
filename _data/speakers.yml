@@ -276,15 +276,15 @@
   time: "12:00"
   title: "Let's make Software Engineering great again: culture, practices and tools for innovation"
 
-- publish: false
+- publish: true
   track_order: 3
-  firstname: #EOH Sponsored
-  lastname: 
+  firstname: "Denzil Govender &"
+  lastname: "Calvin Mayo"
   twitter: 
   pic: ph.jpg
   track: "Niklaus Wirth Room"
   time: "13:05"
-  title: 
+  title: "Continuous Integration and Delivery using Microsoft Team Services: A True Story"
 
 - publish: true
   track_order: 3
