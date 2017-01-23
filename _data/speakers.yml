@@ -20,15 +20,15 @@
   time: "11:05"
   title: "Batman tackles Functional JavaScript with Elm"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: # Derivco sponsored slot
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Steven
+  lastname: van Heerden
+  twitter: steven_vh
+  pic: stevenvh.jpeg
   track: "Ada Lovelace Room"
   time: "12:00"
-  title: 
+  title: "Infrastructure as Code FTW! And why it didn’t work for us"
 
 - publish: true
   track_order: 0
@@ -164,15 +164,15 @@
 
 ##############################  DevOps & Automation #########################
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: #MS sponsor slot
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Brent
+  lastname: Samodien
+  twitter: bsamodien
+  pic: brent.jpg
   track: "Blaise Pascal Room"
   time: "10:30"
-  title: 
+  title: "Coming soon"
 
 - publish: true
   track_order: 2
@@ -209,7 +209,7 @@
   firstname: Mike 
   lastname: Geyser
   twitter: mikegeyser
-  pic: ph.jpg
+  pic: mikeg.jpg
   track: "Blaise Pascal Room"
   time: "13:40"
   title: "Keep Calm and Upgrade Angular"
@@ -281,7 +281,7 @@
   firstname: "Denzil Govender &"
   lastname: "Calvin Mayo"
   twitter: 
-  pic: ph.jpg
+  pic: calvindenzil.jpg
   track: "Niklaus Wirth Room"
   time: "13:05"
   title: "Continuous Integration and Delivery using Microsoft Team Services: A True Story"
