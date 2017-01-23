@@ -164,15 +164,15 @@
 
 ##############################  DevOps & Automation #########################
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: #MS sponsor slot
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Brent
+  lastname: Samodien
+  twitter: bsamodien
+  pic: brent.jpg
   track: "Blaise Pascal Room"
   time: "10:30"
-  title: 
+  title: "Coming soon"
 
 - publish: true
   track_order: 2
