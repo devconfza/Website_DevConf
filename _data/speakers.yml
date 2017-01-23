@@ -20,15 +20,15 @@
   time: "11:05"
   title: "Batman tackles Functional JavaScript with Elm"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: # Derivco sponsored slot
-  lastname: 
-  twitter: 
-  pic: ph.jpg
+  firstname: Steven
+  lastname: van Heerden
+  twitter: steven_vh
+  pic: stevenvh.jpeg
   track: "Ada Lovelace Room"
   time: "12:00"
-  title: 
+  title: "Infrastructure as Code FTW! And why it didn’t work for us"
 
 - publish: true
   track_order: 0
