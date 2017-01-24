@@ -166,13 +166,13 @@
 
 - publish: true
   track_order: 2
-  firstname: Brent
-  lastname: Samodien
-  twitter: bsamodien
+  firstname: "Brent Samodien &"
+  lastname: "Dave Nel"
+  twitter: 
   pic: brent.jpg
   track: "Blaise Pascal Room"
   time: "10:30"
-  title: "Coming soon"
+  title: "Real World Mobile DevOps"
 
 - publish: true
   track_order: 2

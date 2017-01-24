@@ -91,10 +91,6 @@ What Attendees Can Expect to Learn: Examples of “bad” computing, how persona
 		</div>
 	</div>
 
-{% comment %}
-	{% include index_speakers_keynote.html %}
-{% endcomment %}	
-
 	{% assign agendaSpeakers = (site.data.speakers | sort: 'time' | group_by: 'time') %}
 	{% for agenda in site.data.agenda %}
         {% if agenda.type == 'break' %}
@@ -104,4 +100,11 @@ What Attendees Can Expect to Learn: Examples of “bad” computing, how persona
             	{% include index_speakers_timeslot.html speakers=speakers agenda=agenda %}
         {% endif %}
     {% endfor %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				<p class="break">17h10 → <b>Drinks, snacks, cocktails &amp; networking sponsored by EOH</b> ← 19h00</p>
+			</div>
+		</div>
+	</div>
 </section>
