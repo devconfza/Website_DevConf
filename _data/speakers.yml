@@ -1,4 +1,4 @@
-##############################  Crafting Code #########################
+﻿##############################  Crafting Code #########################
 
 - publish: true
   track_order: 0
@@ -356,7 +356,7 @@
   pic: Bukiwe.jpg
   track: Teams and People
   time: "12:00"
-  title: "Evolutionary architectures or Event driven architecture"
+  title: "Evolutionary architectures"
 
 - publish: true
   track_order: 4
