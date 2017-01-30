@@ -1,4 +1,4 @@
-﻿##############################  Crafting Code #########################
+﻿##############################  Main Room#########################
 
 - publish: true
   track_order: 0
@@ -6,7 +6,7 @@
   lastname: Sewchurran
   twitter: AnujahP
   pic: anujah.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "10:30"
   title: "What is your value as a software developer to an employer?"
 
@@ -16,7 +16,7 @@
   lastname: Belrose 
   twitter: gbelrose
   pic: belrose.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "11:05"
   title: "Batman tackles Functional JavaScript with Elm"
 
@@ -26,7 +26,7 @@
   lastname: van Heerden
   twitter: steven_vh
   pic: stevenvh.jpeg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "12:00"
   title: "Infrastructure as Code FTW! And why it didn’t work for us"
 
@@ -36,7 +36,7 @@
   lastname: Riba
   twitter: RuddyRiba
   pic: rubby.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "13:05"
   title: "REST Assured"
 
@@ -46,7 +46,7 @@
   lastname: Lewis
   twitter: joshilewis
   pic: joshua.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "13:40"
   title: "The Dimensions of Tests Model"
 
@@ -56,7 +56,7 @@
   lastname: Whitfeld
   twitter: MarkWhitfeld
   pic: mark.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "14:35"
   title: "Lessons Learned from a Decade of TDD"
 
@@ -66,7 +66,7 @@
   lastname: Cavanagh
   twitter: roguecode
   pic: matt.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "15:50"
   title: "All your data are belong to us: Reverse-engineering API's, web scraping, and the details of how I gained access to 7 million [company name redacted *] accounts."
 
@@ -76,11 +76,11 @@
   lastname: Hurbans
   twitter: RishalHurbans
   pic: rishal.jpg
-  track: "Ada Lovelace Room"
+  track: "Vodacom Dome"
   time: "16:45"
   title: "AI in Perspective"
 
-##############################  Persistence #########################
+##############################  Room 2 #########################
 
 - publish: true
   track_order: 1
@@ -88,7 +88,7 @@
   lastname: Tite 
   twitter:  Tite_Chris
   pic: chris2.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "10:30"
   title: "Agile Database Techniques – Refactoring to keep your database current"
 
@@ -98,7 +98,7 @@
   lastname: Shaw
   twitter: SQLIntheWild
   pic: gail2.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "11:05"
   title: "Database performance monitoring for developers"
 
@@ -108,7 +108,7 @@
   lastname: Johnson
   twitter: MikeJohnsonZA
   pic: michael.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "12:00"
   title: "Why your choice of index matters."
 
@@ -118,7 +118,7 @@
   lastname: Malan
   twitter: Kitri747
   pic: mercia.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "13:05"
   title: "Knowing when to choose SQL and when to choose NoSQL."
 
@@ -128,7 +128,7 @@
   lastname: van Blommestein
   twitter: clintonvb
   pic: clinton.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "13:40"
   title: "Relational and Graph, and a lot in between"
 
@@ -138,7 +138,7 @@
   lastname: Hope
   twitter: GaryHope
   pic: gary.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "14:35"
   title: "Introduction to Azure DocumentDB"
  
@@ -148,7 +148,7 @@
   lastname: Biagio
   twitter: markbiagio
   pic: biagio.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "15:50"
   title: "Real world applications built with Firebase"
 
@@ -158,11 +158,11 @@
   lastname: Bohnen
   twitter: tbohnenjnr
   pic: theo.jpg
-  track: "Grace Hopper Room"
+  track: "Talk 100"
   time: "16:45"
   title: "Flying a drone with VR, what I've learnt."
 
-##############################  DevOps & Automation #########################
+##############################  Room 3 #########################
 
 - publish: true
   track_order: 2
@@ -170,7 +170,7 @@
   lastname: "Dave Nel"
   twitter: 
   pic: brent.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "10:30"
   title: "Real World Mobile DevOps"
 
@@ -180,7 +180,7 @@
   lastname: Reese
   twitter: rachelreese
   pic: rachel.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "11:05"
   title: "Is functional programming just a fad?"
 
@@ -190,7 +190,7 @@
   lastname: Sudhakaran
   twitter: badikumar
   pic: b-dog.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "12:00"
   title: "Introducing Blockchain to Web Developers"
 
@@ -200,7 +200,7 @@
   lastname: Stephenson
   twitter: GarethStep
   pic: gareth.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "13:05"
   title: "Cluster Computing using Apache Spark on Raspberry Pi's"
 
@@ -210,7 +210,7 @@
   lastname: Geyser
   twitter: mikegeyser
   pic: mikeg.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "13:40"
   title: "Keep Calm and Upgrade Angular"
 
@@ -220,7 +220,7 @@
   lastname: Bravery
   twitter: robertbravery
   pic: robert.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "14:35"
   title: "Concurrent Programming and Distributed Computing with Akka.net"
 
@@ -230,7 +230,7 @@
   lastname: Brander
   twitter: WilliamBZA
   pic: william.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "15:50"
   title: "So you wanna build a service bus"
 
@@ -240,11 +240,11 @@
   lastname: Preddy
   twitter: rorypreddy
   pic: rory.jpg
-  track: "Blaise Pascal Room"
+  track: "Talk 200"
   time: "16:45"
   title: "Visual Studio Code for the Java Developer"
 
-##############################  Tools & Frameworks #########################
+##############################  Room 3 #########################
 
 - publish: true
   track_order: 3
@@ -252,7 +252,7 @@
   lastname: Lydall
   twitter: geofflesza
   pic: geoffrey.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "10:30"
   title: "Overview of Chef"
 
@@ -262,7 +262,7 @@
   lastname: Zeeman
   twitter: teamfoundation
   pic: niel.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "11:05"
   title: "From Zero to Docker"
 
@@ -272,7 +272,7 @@
   lastname: Acton
   twitter: danacton
   pic: dan.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "12:00"
   title: "Let's make Software Engineering great again: culture, practices and tools for innovation"
 
@@ -282,7 +282,7 @@
   lastname: "Calvin Mayo"
   twitter: 
   pic: calvindenzil.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "13:05"
   title: "Continuous Integration and Delivery using Microsoft Team Services: A True Story"
 
@@ -292,7 +292,7 @@
   lastname: Lightfoot
   twitter: dustynlightfoot
   pic: dustyn.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "13:40"
   title: "Native Cross Platform Mobile Development with Xamarin Forms"
 
@@ -302,7 +302,7 @@
   lastname: Franks
   twitter: riggaroo
   pic: rebecca.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "14:35"
   title: "Android Things - The IoT platform for everyone"
 
@@ -312,7 +312,7 @@
   lastname: Lewis
   twitter: timmles
   pic: tim.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "15:50"
   title: "NativeScript: Marrying Angular 2 and Mobile Developerment"
 
@@ -322,11 +322,11 @@
   lastname: Magill
   twitter: BrettMagill
   pic: brett.jpg
-  track: "Niklaus Wirth Room"
+  track: "Gig 1-2"
   time: "16:45"
   title: "Craft Beer and Data Science: Adapt or Die"
 
-##############################  Teams & People #########################
+##############################  Room 4 #########################
 
 - publish: true
   track_order: 4
@@ -334,7 +334,7 @@
   lastname: van der Merwe
   twitter: jvdmerwe
   pic: jaco.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "10:30"
   title: Why Agile teams perform better and how it links to behaviour psychology/motivation
 
@@ -344,7 +344,7 @@
   lastname: du Plessis
   twitter: corneil
   pic: corneil.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "11:05"
   title: "The care and feeding of Microservices"
 
@@ -364,7 +364,7 @@
   lastname: de Vos
   twitter: jacdevos
   pic: jacques.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "13:05"
   title: "What is software product design?"
 
@@ -374,7 +374,7 @@
   lastname: Pearl
   twitter: MarkPearlCoZa
   pic: pearl.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "13:40"
   title: "Getting the best of everyone into all the code using Mob Programming"
 
@@ -384,7 +384,7 @@
   lastname: de Beer 
   twitter: chmdebeer
   pic: marius.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "14:35"
   title: "Preventing Burnout"
 
@@ -394,9 +394,9 @@
   lastname: Swart
   twitter: stephan_swart
   pic: stephen.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "15:50"
-  title: "The Art of Mastery"
+  title: "Mastery: the art of software craftsmanship"
 
 - publish: true
   track_order: 4
@@ -404,6 +404,6 @@
   lastname: Cornelius
   twitter: riaancornelius
   pic: riaan.jpg
-  track: "Frederick Brooks Room"
+  track: "Gig 3-4"
   time: "16:45"
   title: "A short history of keyboards (and why we need better ones)"
