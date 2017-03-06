@@ -6642,6 +6642,10 @@ a.redirectionLink:hover {
   text-decoration: none;
   font-size: 16px;
 }
+.soldOut {
+  color: #00A4FE;
+  font-size: 34px;
+}
 .navbar-default {
   background-color: inherit;
   border: none;
