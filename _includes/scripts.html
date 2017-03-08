@@ -9,6 +9,10 @@
         {
             var now = moment(new Date());
             var confDays = moment(new Date(2017, 2, 9, 9, 0,0));
+            
+            if (now.isAfter(confDays)) {
+                $('#countdown-timer').hide();
+            } else {
             var days = confDays.diff(now, 'days');
             var hours = confDays.diff(now.add(days, 'd'), 'hours');
             var mins = confDays.diff(now.add(hours, 'h'), 'minutes');
@@ -17,6 +21,7 @@
             $('#countdown-hours').html(hours);
             $('#countdown-mins').html(mins);
             $('#countdown-secs').html(secs);
+            }
         };
     
     $(function()
