@@ -5,75 +5,65 @@
 
 - type: session
   start: "10:30"
-  length: 25
+  length: 45
   sessionIndex: 0
 
 - type: break
-  start: "10:55"
+  start: "11:15"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "11:05"
+  start: "11:25"
   length: 45
   sessionIndex: 1
 
 - type: break
-  start: "11:50"
+  start: "12:10"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "12:00"
-  length: 25
+  start: "12:20"
+  length: 45
   sessionIndex: 2
 
 - type: break
-  start: "12:25"
-  length: 40
+  start: "13:05"
+  length: 45
   title: 'Movement & Lunch'
 
 - type: session
-  start: "13:05"
-  length: 25
+  start: "13:50"
+  length: 45
   sessionIndex: 3
 
 - type: break
-  start: "13:30"
+  start: "14:35"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "13:40"
+  start: "14:45"
   length: 45
   sessionIndex: 4
 
 - type: break
-  start: "14:25"
-  length: 10
-  title: 'Movement'
-
-- type: session
-  start: "14:35"
-  length: 45
-  sessionIndex: 5
-
-- type: break
-  start: "15:20"
+  start: "15:30"
   length: 30
   title: 'Movement, Networking, &amp; Snacks'
 
 - type: session
-  start: "15:50"
+  start: "16:00"
   length: 45
-  sessionIndex: 6
+  sessionIndex: 5
 
 - type: break
-  start: "16:35"
+  start: "16:45"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "16:45"
-  length: 25
-  sessionIndex: 7
+  start: "16:55"
+  length: 45
+  sessionIndex: 6

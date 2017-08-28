@@ -6646,6 +6646,12 @@ a.redirectionLink:hover {
   color: #00A4FE;
   font-size: 34px;
 }
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: white;
+  background-color: #990020;
+}
 .navbar-default {
   background-color: inherit;
   border: none;
@@ -7163,4 +7169,32 @@ footer ul li {
   padding: 10px;
   border-radius: 6px;
   border: 3px solid white;
+}
+#mapjoburg {
+  padding-top: 100px;
+  min-height: 300px;
+  background-image: url("/public/images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px;
+}
+#mapjoburg .bubble-text {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin: 0px auto;
+  background-color: #F6F6F6;
+}
+#mapcapetown {
+  padding-top: 100px;
+  min-height: 300px;
+  background-image: url("/public/images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px;
+}
+#mapcapetown .bubble-text {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin: 0px auto;
+  background-color: #F6F6F6;
 }

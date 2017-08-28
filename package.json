@@ -1,11 +1,38 @@
 {
+  "name": "devconf",
+  "version": "1.2018.0",
+  "description": "This is the website for www.DevConf.co.za",
+  "homepage": "https://www.devconf.co.za",
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmaclean/Website_DevConf"
+  },
+  "contributors": [
+    {
+      "name": "Robert MacLean",
+      "email": "robert@sadev.co.za"
+    },
+    {
+      "name": "Candice Mesk",
+      "email": "candice@developerug.org.za"
+    },
+    {
+      "name": "Mark Pearl",
+      "email": "markpearl@gmail.com"
+    },
+    {
+      "name": "Terence Kruger",
+      "email": "terencejkruger@gmail.com"
+    }
+  ],
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-less": "^3.0.3"
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
   },
   "dependencies": {
     "bootstrap-less": "^3.3.8",
-    "jquery": "^2.1.4",
-    "moment": "^2.10.6"
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1"
   }
 }

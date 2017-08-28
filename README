@@ -1,3 +1,5 @@
+Welcome to the DevConf 2018 website
+
 # installation
 The website uses [Jekyll](https://jekyllrb.com/) so you need to install that first with `gem install jekyll`.
 If you are on Windows see the [special Windows instructions](https://jekyllrb.com/docs/windows/#installation).
