@@ -6747,7 +6747,7 @@ body {
   font-size: 13px;
 }
 #about .countdown-amount {
-  font-size: 20px;
+  font-size: 12px;
 }
 #about .countdown-period {
   font-size: 10px;
@@ -6768,7 +6768,7 @@ body {
     width: 270px;
   }
   #about .countdown-amount {
-    font-size: 20px;
+    font-size: 12px;
   }
   #about .countdown-period {
     font-size: 10px;
@@ -6785,7 +6785,7 @@ body {
     font-size: 13px;
   }
   #about .countdown-amount {
-    font-size: 25px;
+    font-size: 14px;
   }
   #about .countdown-period {
     font-size: 12px;
@@ -6802,7 +6802,7 @@ body {
     font-size: 15px;
   }
   #about .countdown-amount {
-    font-size: 35px;
+    font-size: 17px;
   }
   #about .countdown-period {
     font-size: 15px;

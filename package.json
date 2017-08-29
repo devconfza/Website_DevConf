@@ -31,8 +31,6 @@
     "gulp-less": "^3.3.2"
   },
   "dependencies": {
-    "bootstrap-less": "^3.3.8",
-    "jquery": "^3.2.1",
-    "moment": "^2.18.1"
+    "bootstrap-less": "^3.3.8"
   }
 }

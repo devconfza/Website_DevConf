@@ -1,32 +1,42 @@
-<script type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
 <script type='text/javascript' src='/public/scripts/scrolling-nav.js'></script>
 <script type='text/javascript' src='/public/scripts/bootstrap.min.js'></script>
 
 <script type="text/javascript">
-    var updateCountdown = function()
-        {
-            var now = moment(new Date());
-            var confDays = moment(new Date(2017, 2, 9, 9, 0,0));
-            
-            if (now.isAfter(confDays)) {
-                $('#countdown-timer').hide();
-            } else {
+    function countDown(date, targetPrefix) {
+        const now = moment(new Date());
+        const confDays = moment(date);
+        const root = `#${targetPrefix}countdown-timer`;
+
+        if (now.isAfter(confDays)) {
+            $(root).hide();
+        } else {
             var days = confDays.diff(now, 'days');
             var hours = confDays.diff(now.add(days, 'd'), 'hours');
             var mins = confDays.diff(now.add(hours, 'h'), 'minutes');
             var secs = confDays.diff(now.add(mins, 'm'), 'seconds');
-            $('#countdown-days').html(days);
-            $('#countdown-hours').html(hours);
-            $('#countdown-mins').html(mins);
-            $('#countdown-secs').html(secs);
-            }
-        };
-    
-    $(function()
-    {
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
+            $(`${root} #countdown-days`).html(days);
+            $(`${root} #countdown-hours`).html(hours);
+            $(`${root} #countdown-mins`).html(mins);
+            $(`${root} #countdown-secs`).html(secs);
+        }
+    }
+
+    function joburg() {
+        countDown(new Date(2018, 2, 27, 9, 0, 0), 'joburg');
+    }
+
+    function capeTown() {
+        countDown(new Date(2018, 2, 29, 9, 0, 0), 'capetown');
+    }
+
+    $(function () {
+        joburg();
+        capeTown();
+        setInterval(joburg, 1000);
+        setInterval(capeTown, 1000);
     });
+
 </script>
