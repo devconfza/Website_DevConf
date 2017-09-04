@@ -106,9 +106,15 @@
 		</div>
 	</div>
 
-	{% assign agendaSpeakers = (site.data.speakers | sort: 'time' | group_by: 'time') %} {% for agenda in site.data.agenda %}
-	{% if agenda.type == 'break' %} {% include index_speakers_break.html agenda=agenda %} {% else %} {% assign speakers=agendaSpeakers[agenda.sessionIndex].items
-	%} {% include index_speakers_timeslot.html speakers=speakers agenda=agenda %} {% endif %} {% endfor %}
+	{% assign agendaSpeakers = (site.data.speakers2018jhb | sort: 'time' | group_by: 'time') %} 
+	{% for agenda in site.data.agenda2018jhb %}
+		{% if agenda.type == 'break' %} 
+			{% include index_speakers_break.html agenda=agenda %} 
+		{% else %} 
+			{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %} 
+			{% include index_speakers_timeslot.html speakers=speakers agenda=agenda %} 
+		{% endif %} 
+	{% endfor %}
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
