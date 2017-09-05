@@ -1,6 +1,6 @@
 
 	<div class="container">
-		{% assign sorted_speakers = (include.speakers2018jhb | sort: 'track_order') %}
+		{% assign sorted_speakers = (include.speakers | sort: 'track_order') %}
 		{% for speaker in sorted_speakers %}		
 		{% assign loopindex = forloop.index | modulo: 5 %}
 		  {% if loopindex == 1 %}

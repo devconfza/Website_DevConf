@@ -106,8 +106,8 @@
 		</div>
 	</div>
 
-	{% assign agendaSpeakers = (site.data.speakers2018jhb | sort: 'time' | group_by: 'time') %} 
-	{% for agenda in site.data.agenda2018jhb %}
+	{% assign agendaSpeakers = (site.data.2018jhb.speakers | sort: 'time' | group_by: 'time') %} 
+	{% for agenda in site.data.2018jhb.agenda %}
 		{% if agenda.type == 'break' %} 
 			{% include index_speakers_break.html agenda=agenda %} 
 		{% else %} 
