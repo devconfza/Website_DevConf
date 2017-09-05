@@ -33,6 +33,7 @@
     }
 
     $(function () {
+        $("#currentYear").text((new Date()).getFullYear());
         joburg();
         capeTown();
         setInterval(joburg, 1000);
