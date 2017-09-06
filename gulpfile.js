@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
+const gulp = require('gulp');
+const less = require('gulp-less');
+const cssmin = require('gulp-cssmin');
 
 gulp.task('style', function() {
   return gulp
@@ -7,8 +8,8 @@ gulp.task('style', function() {
     .pipe(
       less({
         paths: ['./node_modules/bootstrap-less/bootstrap'],
-      })
-    ).pipe(gulp.dest('./public/css'));
+      })).pipe(cssmin())
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('update', done => {

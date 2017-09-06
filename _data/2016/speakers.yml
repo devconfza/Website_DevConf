@@ -5,7 +5,7 @@
   firstname: Chris
   lastname: Tite
   twitter: tite_chris
-  pic: Chris-Tite.jpg
+  pic: Chris-Tite
   track: "Crafting Code"
   time: "10:30"
   title: Scalable Distributed Design - Let me show you my architectures
@@ -15,7 +15,7 @@
   firstname: Steven
   lastname: McDonald 
   twitter: StevenMcD
-  pic: Steven-Mcdonald.jpg
+  pic: Steven-Mcdonald
   track: "Crafting Code"
   time: "11:10"
   title: Beautiful API's
@@ -26,7 +26,7 @@
   firstname: Ben
   lastname: Janecke
   twitter: BenJanecke
-  pic: Ben-Janecke.jpg
+  pic: Ben-Janecke
   track: "Crafting Code"
   time: "11:50"
   title: Composition over inheritance in Javascript
@@ -36,7 +36,7 @@
   firstname: Guillaume
   lastname: Belrose
   twitter: gbelrose
-  pic: Guillaume-Belrose.jpg
+  pic: Guillaume-Belrose
   track: "Crafting Code"
   time: "13:10"
   title: "Testing with types, how to test more by typing less"
@@ -47,7 +47,7 @@
   firstname: Joshua
   lastname: Lewis
   twitter: joshilewis
-  pic: Joshua-Lewis.jpg
+  pic: Joshua-Lewis
   track: "Crafting Code"
   time: "13:50"
   title: "Hi, I'm Joshua, and I'm a Reformed TDDist"
@@ -57,7 +57,7 @@
   firstname: Mark
   lastname: Whitfeld
   twitter: MarkWhitfeld
-  pic: Mark-Whitfeld.jpg
+  pic: Mark-Whitfeld
   track: "Crafting Code"
   time: "14:50"
   title: "Brownfield TDD: How to eat an elephant?"
@@ -67,7 +67,7 @@
   firstname: Riaan
   lastname: Cornelius
   twitter: riaancornelius
-  pic: Riaan-Cornelius.jpg
+  pic: Riaan-Cornelius
   track: "Crafting Code"
   time: "15:30"
   title: Using forensic techniques for targeted refactoring
@@ -77,7 +77,7 @@
   firstname: Janco
   lastname: Wolmarans
   twitter: jancowol
-  pic: Janco-Wolmarans.jpg
+  pic: Janco-Wolmarans
   track: "Crafting Code"
   time: "16:10"
   title: Safety First! How to drop the compiler crutch for faster refactoring
@@ -89,7 +89,7 @@
   firstname: Tugberk 
   lastname: Ugurlu 
   twitter: tourismgeek 
-  pic: Tugberk-Ugurlu.jpg
+  pic: Tugberk-Ugurlu
   track: "Persistence & Data"
   time: "10:30"
   title: Architecting Polyglot-Persistent Solutions
@@ -99,7 +99,7 @@
   firstname: Gail
   lastname: Shaw
   twitter: SQLIntheWild
-  pic: Gail-Shaw.jpg
+  pic: Gail-Shaw
   track: "Persistence & Data"
   time: "11:10"
   title: Things I wish developers knew about SQL Server.
@@ -109,7 +109,7 @@
   firstname: Tobias
   lastname: Coetzee
   twitter: tobiascode
-  pic: Tobias-Coetzee.jpg
+  pic: Tobias-Coetzee
   track: "Persistence & Data"
   time: "11:50"
   title: How to prepare your Enterprise for NoSQL
@@ -119,7 +119,7 @@
   firstname: Badi
   lastname: Sudhakaran
   twitter: badikumar
-  pic: Badi-Sudhakaran.jpg
+  pic: Badi-Sudhakaran
   track: "Persistence & Data"
   time: "13:10"
   title: "Rapidly fire up apps with FireBase - A no-nonsense, NoSQL database"
@@ -130,7 +130,7 @@
   firstname: Peter
   lastname: Wiles
   twitter: pwiles
-  pic: Peter-Wiles.jpg
+  pic: Peter-Wiles
   track: "Persistence & Data"
   time: "13:50"
   title: Combining Neo4j and Elasticsearch - search and explore your data
@@ -140,7 +140,7 @@
   firstname: Garren
   lastname: Smith
   twitter: garrensmith
-  pic: Garren-Smith.jpg
+  pic: Garren-Smith
   track: "Persistence & Data"
   time: "14:50"
   title: Building responsive off-line web applications with CouchDB and PouchDB
@@ -150,7 +150,7 @@
   firstname: Andrew
   lastname: Russell
   twitter: 
-  pic: Andrew-Russell.jpg
+  pic: Andrew-Russell
   track: "Persistence & Data"
   time: "15:30"
   title: Getting started with Database Unit testing with tSQLt
@@ -160,7 +160,7 @@
   firstname: Sifiso
   lastname: Ndlovu
   twitter: mafiswana
-  pic: Sifiso-Ndlovu.jpg
+  pic: Sifiso-Ndlovu
   track: "Persistence & Data"
   time: "16:10"
   title: Multiple Options to Transposing SQL Server Data from Rows to Columns
@@ -172,7 +172,7 @@
   firstname: Niel
   lastname: Zeeman
   twitter: teamfoundation
-  pic: Niel-Zeeman.JPG
+  pic: Niel-Zeeman
   track: "DevOps & Automation"
   time: "10:30"
   title: DevOps Demystified
@@ -183,7 +183,7 @@
   firstname: Colin
   lastname: Dembovsky
   twitter: "@colindembovsky"
-  pic: Colin-Dembovsky.jpg
+  pic: Colin-Dembovsky
   track: "DevOps & Automation"
   time: "11:10"
   title: Deploying at the Speed of Thought - Developing a DevOps Mindset
@@ -193,7 +193,7 @@
   firstname: Andreas
   lastname: Grabner
   twitter: grabnerandi
-  pic: Andreas-Grabner.jpg
+  pic: Andreas-Grabner
   track: "DevOps & Automation"
   time: "11:50"
   title: "Metrics Driven-DevOps: Delivering High Quality Software like Facebook & Co"
@@ -204,7 +204,7 @@
   firstname: Veroon
   lastname: Budhai
   twitter: shIFty1010 
-  pic: Veroon-Budhai.jpg
+  pic: Veroon-Budhai
   track: "DevOps & Automation"
   time: "13:10"
   title: Getting Started with Analytics (GTM and GA)
@@ -214,7 +214,7 @@
   firstname: Rouan
   lastname: Wilsenach
   twitter: rouanw
-  pic: Rouan-Wilsenach.jpg
+  pic: Rouan-Wilsenach
   track: "DevOps & Automation"
   time: "13:50"
   title: "Surround yourself with data: how to create dashboards that help you uncover what's really going on"
@@ -225,7 +225,7 @@
   firstname: Charlene
   lastname: Tshitoka
   twitter: charlymul
-  pic: Charlene-Tshitoka.jpg
+  pic: Charlene-Tshitoka
   track: "DevOps & Automation"
   time: "14:50"
   title: How About Treating Infrastructure-as-Code like Code?
@@ -235,7 +235,7 @@
   firstname: Duane
   lastname: McKibbin
   twitter: duanemck
-  pic: Duane-McKibbin.jpg
+  pic: Duane-McKibbin
   track: "DevOps & Automation"
   time: "15:30"
   title: Git vs. Continuous Integration
@@ -246,7 +246,7 @@
   firstname: Kenneth
   lastname: Kalmer
   twitter: kennethkalmer
-  pic: Kenneth-Kalmer.jpg
+  pic: Kenneth-Kalmer
   track: "DevOps & Automation"
   time: "16:10"
   title: Make your CI server a productive team member
@@ -259,7 +259,7 @@
   firstname: Simon
   lastname: Stewart
   twitter: SimonStewart
-  pic: "Simon-Stewart.jpg"
+  pic: "Simon-Stewart"
   track: "Tools & Frameworks"
   time: "10:30"
   title: iOS development in Swift 
@@ -269,7 +269,7 @@
   firstname: Brendan
   lastname: Fry
   twitter: Fry_Hard
-  pic: Brendan-Fry.jpg
+  pic: Brendan-Fry
   track: "Tools & Frameworks"
   time: "11:10"
   title: A year of dealing with RabbitMQ
@@ -279,7 +279,7 @@
   firstname: Corneil 
   lastname: Du Plessis
   twitter: corneil
-  pic: Corneil-Du-Plessis.jpg
+  pic: Corneil-Du-Plessis
   track: "Tools & Frameworks"
   time: "11:50"
   title: "Gradle: The Build System you have been waiting for"
@@ -290,7 +290,7 @@
   firstname: Rebecca
   lastname: Franks
   twitter: riggaroo
-  pic: Rebecca-Franks.jpg
+  pic: Rebecca-Franks
   track: "Tools & Frameworks"
   time: "13:10"
   title: Performance Testing Tools in Android
@@ -301,7 +301,7 @@
   firstname: William
   lastname: Brander
   twitter: WilliamBZA
-  pic: William-Brander.jpg
+  pic: William-Brander
   track: "Tools & Frameworks"
   time: "13:50"
   title: What is The Actor Model? A glance using Akka.NET
@@ -311,7 +311,7 @@
   firstname: Mike
   lastname: Geyser
   twitter: mikegeyser
-  pic: Mike-Geyser.jpg
+  pic: Mike-Geyser
   track: "Tools & Frameworks"
   time: "14:50"
   title: Patiently waiting for Angular 2
@@ -321,7 +321,7 @@
   firstname: Andrew
   lastname: Bestbier
   twitter: 
-  pic: Andrew-Bestbier.jpg
+  pic: Andrew-Bestbier
   track: "Tools & Frameworks"
   time: "15:30"
   title: An introduction to React.Js
@@ -331,7 +331,7 @@
   firstname: Rudi
   lastname: Grobler
   twitter: rudigrobler
-  pic: Rudi-Grobler.jpg
+  pic: Rudi-Grobler
   track: "Tools & Frameworks"
   time: "16:10"
   title: Building real world microservices using Node.js
@@ -343,7 +343,7 @@
   firstname: Griffiths
   lastname: Sibeko
   twitter: macgriffiths
-  pic: Griffiths-Sibeko.jpg
+  pic: Griffiths-Sibeko
   track: "Teams & People"
   time: "10:30"
   title: The simplest way I built an award winning App
@@ -353,7 +353,7 @@
   firstname: Rishal
   lastname: Hurbans
   twitter: RishalHurbans
-  pic: Rishal-Hurbans.jpg
+  pic: Rishal-Hurbans
   track: "Teams & People"
   time: "11:10"
   title: Developer Design Thinking
@@ -363,7 +363,7 @@
   firstname: Danny
   lastname: Kopping
   twitter: dannykopping
-  pic: Danny-Kopping.jpg
+  pic: Danny-Kopping
   track: Teams and People
   time: "11:50"
   title: Code Reviews - a team tool
@@ -374,7 +374,7 @@
   firstname: Oz
   lastname: Chihwayi
   twitter: ozchihwayi
-  pic: Ozwell-Chihwayi.jpg
+  pic: Ozwell-Chihwayi
   track: "Teams & People"
   time: "13:10"
   title: Who still needs a Tester? 
@@ -384,7 +384,7 @@
   firstname: Louise
   lastname: Perold
   twitter: lperold
-  pic: Louise-Perold.jpg
+  pic: Louise-Perold
   track: "Teams & People"
   time: "13:50"
   title: What is testing anyway? 
@@ -394,7 +394,7 @@
   firstname: Willy-Peter
   lastname: Schaub
   twitter: wpschaub
-  pic: Willy-Peter-Schaub.jpg
+  pic: Willy-Peter-Schaub
   track: "Teams & People"
   time: "14:50"
   title: "Scrum, Kanban, Agile Portfolio Management with Visual Studio Team Services"
@@ -404,7 +404,7 @@
   firstname: Lisa
   lastname: Basel
   twitter: lisabasel
-  pic: Lisa-Basel.jpg
+  pic: Lisa-Basel
   track: "Teams & People"
   time: "15:30"
   title: Adjust your behaviour and be surprised how much you can influence your team
@@ -414,7 +414,7 @@
   firstname: Martin
   lastname: Cronje
   twitter: martincronje
-  pic: Martin-Cronje.jpg
+  pic: Martin-Cronje
   track: "Teams & People"
   time: "16:10"
   title: "Scaling development: Simulating the flow of software delivery"
@@ -426,7 +426,7 @@
   firstname: Rory  
   lastname: Preddy
   twitter: rorypreddy
-  pic: Rory-Preddy.jpg
+  pic: Rory-Preddy
   track: "Sponsor"
   time: "10:30"
   title: Rapid prototyping with jboss forge
@@ -437,7 +437,7 @@
   firstname: Mark Biagio 
   lastname: "& Adriaan Putter" 
   twitter: adriaanp 
-  pic: adrianpandmark.jpg
+  pic: adrianpandmark
   track: "Sponsor"
   time: "11:10"
   title: "The Pragmatic & the Purist"
@@ -447,7 +447,7 @@
   firstname: Dave
   lastname: Russell
   twitter: Davemsdevsa
-  pic: daver.jpg
+  pic: daver
   track: "Sponsor"
   time: "11:50"
   title: Lap around Azure Machine Learning
@@ -457,7 +457,7 @@
   firstname: Ernst  
   lastname: Kuschke
   twitter: ernstk 
-  pic: ernstk.jpg
+  pic: ernstk
   track: "Sponsor"
   time: "13:10"
   title: Automated Platform-independent deployment – our journey at Allan Gray
@@ -467,7 +467,7 @@
   firstname: Tim
   lastname: Lewis
   twitter: timmles
-  pic: Tim-Lewis.jpg
+  pic: Tim-Lewis
   track: "Sponsor"
   time: "13:50"
   title: "Frontend tech: Keeping up with the Jones"
@@ -477,7 +477,7 @@
   firstname: Johann 
   lastname: du Toit
   twitter: johann_du_toit
-  pic: Johan-duToit.jpg
+  pic: Johan-duToit
   track: "Sponsor"
   time: "14:50"
   title: Lessons learned while crawling the internet with Kubernetes
@@ -488,7 +488,7 @@
   firstname: Steven
   lastname: van Heerden
   twitter: steven_vh
-  pic: Steve.jpg
+  pic: Steve
   track: "Sponsor"
   time: "15:30"
   title: Infrastructure as Code – Using Chef to Manage Drift
@@ -499,7 +499,7 @@
   firstname: Mohammed  
   lastname: O Fareed
   twitter: OewaisM
-  pic: ph.jpg
+  pic: ph
   track: "Sponsor"
   time: "16:10"
   title: Intel software in SA

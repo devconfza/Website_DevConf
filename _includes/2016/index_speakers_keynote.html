@@ -6,7 +6,7 @@
 					<div class="pic-box" data-toggle="modal" data-target="#{{ speaker.firstname | replace: ' ', '' | replace: '&', '' }}{{ speaker.lastname | replace: ' ', '' | replace: '&', '' }}Modal">
 						<div class="track">{{ speaker.track }}</div>
 						<div class="time">{{ speaker.time }}</div>
-						<img width="125" src="/public/images/speakers/2016/{{ speaker.pic }}" />
+						<i class="speaker2016sprite speaker2016sprite-{{ speaker.pic }}"></i>
 						<span class="name">{{ speaker.firstname }} {{ speaker.lastname }}</span>
 						<div class="title">{{ speaker.title }}</div>
 						<div class="social">
@@ -58,7 +58,7 @@
 						        </div>
 								<div class="row">
 						          <div class="col-md-12">
-						          	<img src="/public/images/speakers/2016/{{ speaker.pic }}" />
+								  <i class="speaker2016sprite speaker2016sprite-{{ speaker.pic }}"></i>
 						          {% capture abstractFilename %}/public/abstract/2016/{{ speaker.firstname | replace: ' ', '' | replace: '&', '' }}{{ speaker.lastname | replace: ' ', '' | replace: '&', '' }}.html{% endcapture %}
 						          {% for static_file in site.static_files %}
 								    {% if static_file.path == abstractFilename %}
