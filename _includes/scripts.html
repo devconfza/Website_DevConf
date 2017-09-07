@@ -1,22 +1,34 @@
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
-<script type='text/javascript' src='/public/scripts/scrolling-nav.js'></script>
-<script type='text/javascript' src='/public/scripts/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-    function countDown(date, targetPrefix) {
-        const now = moment(new Date());
-        const confDays = moment(date);
+    $(function () {
+        $('a.page-scroll').bind('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+
+    function countDown(confDays, targetPrefix) {
+        const now = new Date();
         const root = `#${targetPrefix}countdown-timer`;
 
-        if (now.isAfter(confDays)) {
+        if (now >= confDays) {
             $(root).hide();
         } else {
-            var days = confDays.diff(now, 'days');
-            var hours = confDays.diff(now.add(days, 'd'), 'hours');
-            var mins = confDays.diff(now.add(hours, 'h'), 'minutes');
-            var secs = confDays.diff(now.add(mins, 'm'), 'seconds');
+            const timeDiff = Math.abs(confDays.getTime() - now.getTime());
+            const days = Math.floor(timeDiff / 86400000);
+            const daysms = days * 86400000;
+            const hours = Math.floor((timeDiff - daysms) / 3600000);
+            const hoursms = hours * 3600000;
+            const mins = Math.floor((timeDiff - daysms - hoursms) / 60000);
+            const minsms = mins * 60000;
+            const secs = Math.floor((timeDiff - daysms - hoursms - minsms) / 1000);
             $(`${root} #countdown-days`).html(days);
             $(`${root} #countdown-hours`).html(hours);
             $(`${root} #countdown-mins`).html(mins);

@@ -229,10 +229,7 @@
       updateFormAfterValidation: function () {
         this.form.className = this.setFormClassName();
         this.submit.value = this.submitButtonText();
-        this.submit.disabled = false //!this.isValid;
-        // var validClass = this.submit.getAttribute('data-class') + ' submit';
-        // var invalidClass = this.submit.getAttribute('data-class') + ' disabled';
-        // this.submit.className = this.isValid ? validClass : invalidClass;
+        this.submit.disabled = false; 
       },
 
       setFormClassName: function () {
@@ -291,14 +288,12 @@
         this.submit.value = this.submit.getAttribute('data-submitting-text');
         this.submit.disabled = true;
         $(this.submit).addClass('disabled');
-        // this.submit.className = 'disabled';
       },
 
       onSubmitCallback: function (response) {
         if (response.success) {
           this.onSubmitSuccess(response.result);
         } else {
-          //top.location.href = this.formUrl('html');
         }
       },
 
