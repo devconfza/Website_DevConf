@@ -112,7 +112,7 @@
 			{% include index_speakers_break.html agenda=agenda %} 
 		{% else %} 
 			{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %} 
-			{% include index_speakers_timeslot.html speakers=speakers agenda=agenda %} 
+			{% include index_speakers_timeslot_fifths.html speakers=speakers agenda=agenda %} 
 		{% endif %} 
 	{% endfor %}
 	<div class="container">

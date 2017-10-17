@@ -10,26 +10,26 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<p class="break">08h00 → <b>Registration</b> ← 09h00</p>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<p class="break">09h00 → <b>Welcome</b> ← 09h15</p>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row" data-toggle="modal" data-target="#keynotemodal">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<p class="break">09h15 → <b>Keynote</b> ← 10h00</p>
 				<div class="container">
 					<div class="row">
 
-						<div class="col-md-2 col-md-offset-4">
+						<div class="col-md-4 col-md-offset-4">
 							To be announced
 							<!-- <div class="pic-box" data-toggle="modal">
 								<div class="track">Keynote Speaker</div>
@@ -106,18 +106,18 @@
 		</div>
 	</div>
 
-	{% assign agendaSpeakers = (site.data.2018jhb.speakers | sort: 'time' | group_by: 'time') %} 
-	{% for agenda in site.data.2018jhb.agenda %}
+	{% assign agendaSpeakers = (site.data.2018cpt.speakers | sort: 'time' | group_by: 'time') %} 
+	{% for agenda in site.data.2018cpt.agenda %}
 		{% if agenda.type == 'break' %} 
-			{% include index_speakers_break.html agenda=agenda %} 
+			{% include index_speakers_break_thirds.html agenda=agenda %} 
 		{% else %} 
 			{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %} 
-			{% include index_speakers_timeslot.html speakers=speakers agenda=agenda %} 
+			{% include index_speakers_timeslot_thirds.html speakers=speakers agenda=agenda %} 
 		{% endif %} 
 	{% endfor %}
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<p class="break">17h40 → <b>Drinks, snacks, cocktails &amp; networking</b> ← 19h00</p>
 			</div>
 		</div>

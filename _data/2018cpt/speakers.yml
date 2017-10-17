@@ -6,7 +6,7 @@
   lastname: Sewchurran
   twitter: AnujahP
   pic: anujah.jpg
-  track: "Vodacom Dome"
+  track: "Room 1"
   time: "10:30"
   title: "What is your value as a software developer to an employer?"
 
@@ -16,8 +16,8 @@
   lastname: Belrose 
   twitter: gbelrose
   pic: belrose.jpg
-  track: "Vodacom Dome"
-  time: "11:05"
+  track: "Room 1"
+  time: "11:25"
   title: "Batman tackles Functional JavaScript with Elm"
 
 - publish: false
@@ -26,8 +26,8 @@
   lastname: van Heerden
   twitter: steven_vh
   pic: stevenvh.jpeg
-  track: "Vodacom Dome"
-  time: "12:00"
+  track: "Room 1"
+  time: "13:00"
   title: "Infrastructure as Code FTW! And why it didn’t work for us"
 
 - publish: false
@@ -36,8 +36,8 @@
   lastname: Riba
   twitter: RuddyRiba
   pic: rubby.jpg
-  track: "Vodacom Dome"
-  time: "13:05"
+  track: "Room 1"
+  time: "13:55"
   title: "REST Assured"
 
 - publish: false
@@ -46,8 +46,8 @@
   lastname: Lewis
   twitter: joshilewis
   pic: joshua.jpg
-  track: "Vodacom Dome"
-  time: "13:40"
+  track: "Room 1"
+  time: "14:50"
   title: "The Dimensions of Tests Model"
 
 - publish: false
@@ -56,8 +56,8 @@
   lastname: Whitfeld
   twitter: MarkWhitfeld
   pic: mark.jpg
-  track: "Vodacom Dome"
-  time: "14:35"
+  track: "Room 1"
+  time: "16:05"
   title: "Lessons Learned from a Decade of TDD"
 
 - publish: false
@@ -66,19 +66,9 @@
   lastname: Cavanagh
   twitter: roguecode
   pic: matt.jpg
-  track: "Vodacom Dome"
-  time: "15:50"
+  track: "Room 1"
+  time: "17:00"
   title: "All your data are belong to us: Reverse-engineering API's, web scraping, and the details of how I gained access to 7 million [company name redacted *] accounts."
-
-- publish: false
-  track_order: 0
-  firstname: Rishal 
-  lastname: Hurbans
-  twitter: RishalHurbans
-  pic: rishal.jpg
-  track: "Vodacom Dome"
-  time: "16:45"
-  title: "AI in Perspective"
 
 ##############################  Room 2 #########################
 
@@ -88,7 +78,7 @@
   lastname: Tite 
   twitter:  Tite_Chris
   pic: chris2.jpg
-  track: "Talk 100"
+  track: "Room 2"
   time: "10:30"
   title: "Agile Database Techniques – Refactoring to keep your database current"
 
@@ -98,8 +88,8 @@
   lastname: Shaw
   twitter: SQLIntheWild
   pic: gail2.jpg
-  track: "Talk 100"
-  time: "11:05"
+  track: "Room 2"
+  time: "11:25"
   title: "Database performance monitoring for developers"
 
 - publish: false
@@ -108,8 +98,8 @@
   lastname: Johnson
   twitter: MikeJohnsonZA
   pic: michael.jpg
-  track: "Talk 100"
-  time: "12:00"
+  track: "Room 2"
+  time: "13:00"
   title: "Why your choice of index matters."
 
 - publish: false
@@ -118,8 +108,8 @@
   lastname: Malan
   twitter: Kitri747
   pic: mercia.jpg
-  track: "Talk 100"
-  time: "13:05"
+  track: "Room 2"
+  time: "13:55"
   title: "Knowing when to choose SQL and when to choose NoSQL."
 
 - publish: false
@@ -128,8 +118,8 @@
   lastname: van Blommestein
   twitter: clintonvb
   pic: clinton.jpg
-  track: "Talk 100"
-  time: "13:40"
+  track: "Room 2"
+  time: "14:50"
   title: "Slumdoc Billionaire"
 
 - publish: false
@@ -138,8 +128,8 @@
   lastname: Hope
   twitter: GaryHope
   pic: gary.jpg
-  track: "Talk 100"
-  time: "14:35"
+  track: "Room 2"
+  time: "16:05"
   title: "Introduction to Azure DocumentDB"
  
 - publish: false
@@ -148,19 +138,9 @@
   lastname: Biagio
   twitter: markbiagio
   pic: biagio.jpg
-  track: "Talk 100"
-  time: "15:50"
+  track: "Room 2"
+  time: "17:00"
   title: "Real world applications built with Firebase"
-
-- publish: false
-  track_order: 1
-  firstname: Theo 
-  lastname: Bohnen
-  twitter: tbohnenjnr
-  pic: theo.jpg
-  track: "Talk 100"
-  time: "16:45"
-  title: "Flying a drone with VR, what I've learnt."
 
 ##############################  Room 3 #########################
 
@@ -170,7 +150,7 @@
   lastname: "Dave Nel"
   twitter: 
   pic: brent.jpg
-  track: "Talk 200"
+  track: "Room 3"
   time: "10:30"
   title: "Real World Mobile DevOps"
 
@@ -180,8 +160,8 @@
   lastname: Reese
   twitter: rachelreese
   pic: rachel.jpg
-  track: "Talk 200"
-  time: "11:05"
+  track: "Room 3"
+  time: "11:25"
   title: "Is functional programming just a fad?"
 
 - publish: false
@@ -190,8 +170,8 @@
   lastname: Sudhakaran
   twitter: badikumar
   pic: b-dog.jpg
-  track: "Talk 200"
-  time: "12:00"
+  track: "Room 3"
+  time: "13:00"
   title: "Introducing Blockchain to Web Developers"
 
 - publish: false
@@ -200,8 +180,8 @@
   lastname: Stephenson
   twitter: GarethStep
   pic: gareth.jpg
-  track: "Talk 200"
-  time: "13:05"
+  track: "Room 3"
+  time: "13:55"
   title: "Cluster Computing using Apache Spark on Raspberry Pi's"
 
 - publish: false
@@ -210,8 +190,8 @@
   lastname: Geyser
   twitter: mikegeyser
   pic: mikeg.jpg
-  track: "Talk 200"
-  time: "13:40"
+  track: "Room 3"
+  time: "14:50"
   title: "Keep Calm and Upgrade Angular"
 
 - publish: false
@@ -220,8 +200,8 @@
   lastname: Bravery
   twitter: robertbravery
   pic: robert.jpg
-  track: "Talk 200"
-  time: "14:35"
+  track: "Room 3"
+  time: "16:05"
   title: "Concurrent Programming and Distributed Computing with Akka.net"
 
 - publish: false
@@ -230,180 +210,6 @@
   lastname: Brander
   twitter: WilliamBZA
   pic: william.jpg
-  track: "Talk 200"
-  time: "15:50"
+  track: "Room 3"
+  time: "17:00"
   title: "So you wanna build a service bus"
-
-- publish: false
-  track_order: 2
-  firstname: Rory 
-  lastname: Preddy
-  twitter: rorypreddy
-  pic: rory.jpg
-  track: "Talk 200"
-  time: "16:45"
-  title: "Visual Studio Code for the Java Developer"
-
-##############################  Room 3 #########################
-
-- publish: false
-  track_order: 3
-  firstname: Geoffrey 
-  lastname: Lydall
-  twitter: geofflesza
-  pic: geoffrey.jpg
-  track: "Gig 1-2"
-  time: "10:30"
-  title: "Overview of Chef"
-
-- publish: false
-  track_order: 3
-  firstname: Niel 
-  lastname: Zeeman
-  twitter: teamfoundation
-  pic: niel.jpg
-  track: "Gig 1-2"
-  time: "11:05"
-  title: "From Zero to Docker"
-
-- publish: false
-  track_order: 3
-  firstname: Dan 
-  lastname: Acton
-  twitter: danacton
-  pic: dan.jpg
-  track: "Gig 1-2"
-  time: "12:00"
-  title: "Let's make Software Engineering great again: culture, practices and tools for innovation"
-
-- publish: false
-  track_order: 3
-  firstname: "Denzil Govender &"
-  lastname: "Calvin Mayo"
-  twitter: 
-  pic: calvindenzil.jpg
-  track: "Gig 1-2"
-  time: "13:05"
-  title: "Continuous Integration and Delivery using Microsoft Team Services: A True Story"
-
-- publish: false
-  track_order: 3
-  firstname: Dustyn 
-  lastname: Lightfoot
-  twitter: dustynlightfoot
-  pic: dustyn.jpg
-  track: "Gig 1-2"
-  time: "13:40"
-  title: "Native Cross Platform Mobile Development with Xamarin Forms"
-
-- publish: false
-  track_order: 3
-  firstname: Rebecca 
-  lastname: Franks
-  twitter: riggaroo
-  pic: rebecca.jpg
-  track: "Gig 1-2"
-  time: "14:35"
-  title: "Android Things - The IoT platform for everyone"
-
-- publish: false
-  track_order: 3
-  firstname: Tim 
-  lastname: Lewis
-  twitter: timmles
-  pic: tim.jpg
-  track: "Gig 1-2"
-  time: "15:50"
-  title: "NativeScript: Marrying Angular 2 and Mobile Development"
-
-- publish: false
-  track_order: 3
-  firstname: Brett 
-  lastname: Magill
-  twitter: BrettMagill
-  pic: brett.jpg
-  track: "Gig 1-2"
-  time: "16:45"
-  title: "Craft Beer and Data Science: Adapt or Die"
-
-##############################  Room 4 #########################
-
-- publish: false
-  track_order: 4
-  firstname: Jaco
-  lastname: van der Merwe
-  twitter: jvdmerwe
-  pic: jaco.jpg
-  track: "Gig 3-4"
-  time: "10:30"
-  title: Why Agile teams perform better and how it links to behaviour psychology/motivation
-
-- publish: false
-  track_order: 4
-  firstname: Corneil 
-  lastname: du Plessis
-  twitter: corneil
-  pic: corneil.jpg
-  track: "Gig 3-4"
-  time: "11:05"
-  title: "The care and feeding of Microservices"
-
-- publish: false
-  track_order: 4
-  firstname: Bukiwe 
-  lastname: Tsoeu
-  twitter: BukiweT4
-  pic: Bukiwe.jpg
-  track: Teams and People
-  time: "12:00"
-  title: "Evolutionary architectures"
-
-- publish: false
-  track_order: 4
-  firstname: Jacques 
-  lastname: de Vos
-  twitter: jacdevos
-  pic: jacques.jpg
-  track: "Gig 3-4"
-  time: "13:05"
-  title: "What is software product design?"
-
-- publish: false
-  track_order: 4
-  firstname: Mark 
-  lastname: Pearl
-  twitter: MarkPearlCoZa
-  pic: pearl.jpg
-  track: "Gig 3-4"
-  time: "13:40"
-  title: "Getting the best of everyone into all the code using Mob Programming"
-
-- publish: false
-  track_order: 4
-  firstname: Marius 
-  lastname: de Beer 
-  twitter: chmdebeer
-  pic: marius.jpg
-  track: "Gig 3-4"
-  time: "14:35"
-  title: "Preventing Burnout"
-
-- publish: false
-  track_order: 4
-  firstname: Stephan 
-  lastname: Swart
-  twitter: stephan_swart
-  pic: stephen.jpg
-  track: "Gig 3-4"
-  time: "15:50"
-  title: "Mastery: the art of software craftsmanship"
-
-- publish: false
-  track_order: 4
-  firstname: Riaan 
-  lastname: Cornelius
-  twitter: riaancornelius
-  pic: riaan.jpg
-  track: "Gig 3-4"
-  time: "16:45"
-  title: "A short history of keyboards (and why we need better ones)"
