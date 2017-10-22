@@ -1,9 +1,9 @@
 <div id="speakers" class="section-light">
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<!-- <li class="active"><a data-toggle="tab" href="#speakersJhb2018">2018 ❖ Johannesburg</a></li>
-			<li><a data-toggle="tab" href="#speakersCpt2018">2018 ❖ Cape Town</a></li> -->
-			<li class="active"><a data-toggle="tab" href="#speakers2018">2018</a></li>
+			<li class="active"><a data-toggle="tab" href="#speakersJhb2018">2018 ❖ Johannesburg</a></li>
+			<li><a data-toggle="tab" href="#speakersCpt2018">2018 ❖ Cape Town</a></li>
+			<!-- <li class="active"><a data-toggle="tab" href="#speakers2018">2018</a></li> -->
 			<li><a data-toggle="tab" href="#speakers2017">2017</a></li>
 			<li><a data-toggle="tab" href="#speakers2016">2016</a></li>
 		</ul>
@@ -12,18 +12,18 @@
 
 
 <div class="tab-content">
-	<div id="speakers2018" class="tab-pane in active">
+	<!-- <div id="speakers2018" class="tab-pane in active">
 		{% include index_tracks.html %}
-	</div>
-	{% comment %}
+	</div> -->
+	
 	<div id="speakersJhb2018" class="tab-pane in active">
 		{% include index_speakers2018jhb.html %}
 	</div>
 
 	<div id="speakersCpt2018" class="tab-pane">
-		{ include index_speakers2018cpt.html %}
+		{% include index_speakers2018cpt.html %}
 	</div>
-	{% endcomment %}
+	
 
 	<div id="speakers2017" class="tab-pane">
 		{% include index_speakers2017.html %}

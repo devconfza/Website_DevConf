@@ -1,0 +1,7 @@
+### About the talk
+
+How do you migrate over 65,000 of the most demanding software engineers from infrastructure built up over decades of high-intensity work into a common engineering system based on modern software development technologies and best practices? This is exactly the challenge faced by Microsoft as they moved to their One Engineering system. Come and hear about how they did it and the lessons they learned along the way.
+
+### About the speaker
+
+Willy is a program manager with the Visual Studio Team Services (VSTS) group. He’s responsible for the ALM | DevOps Ranger community, which provides professional guidance and gap-filling solutions to the developer community. Go directly to him if you need help with missing guidance or features for VSTS. Since the mid-’80s, He’s been striving for simplicity and maintainability in software engineering. Reach him on Twitter at @wpschaub, or the aka.ms/vsarblog, aka.ms/willysblog blogs.

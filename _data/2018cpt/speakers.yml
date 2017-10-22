@@ -1,215 +1,227 @@
 ﻿##############################  Main Room#########################
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: Anujah
-  lastname: Sewchurran
-  twitter: AnujahP
-  pic: anujah.jpg
   track: "Room 1"
   time: "10:30"
-  title: "What is your value as a software developer to an employer?"
+  firstname: Oz  
+  lastname: Chihwayi 
+  twitter:  ozchihwayi
+  pic: https://secure.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
+  title: "Cultivating a Critical Thinking Mindset"
 
-- publish: false
+- publish: trues
   track_order: 0
-  firstname: Guillaume 
-  lastname: Belrose 
-  twitter: gbelrose
-  pic: belrose.jpg
   track: "Room 1"
   time: "11:25"
-  title: "Batman tackles Functional JavaScript with Elm"
+  firstname: Daniel 
+  lastname: Irvine
+  twitter: d_ir
+  pic: https://secure.gravatar.com/avatar/d58c6a5322b458bfcb8b1908e1ff4c0b
+  title: "Secrets of successful mentoring"
 
-- publish: false
+- publish: false #GOLD SPONSORS
   track_order: 0
-  firstname: Steven
-  lastname: van Heerden
-  twitter: steven_vh
-  pic: stevenvh.jpeg
   track: "Room 1"
   time: "13:00"
-  title: "Infrastructure as Code FTW! And why it didn’t work for us"
+  lightning: true
+  details: "lightninggold"
+  name1: 
+  title1: 
+  pic1: 
+  name2: 
+  title2: 
+  pic2: 
+  name3: 
+  title3: 
+  pic3: 
 
-- publish: false
+- publish: false # DVT SPONSOR
   track_order: 0
-  firstname: Ruddy
-  lastname: Riba
-  twitter: RuddyRiba
-  pic: rubby.jpg
   track: "Room 1"
   time: "13:55"
-  title: "REST Assured"
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  title: 
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: Joshua
-  lastname: Lewis
-  twitter: joshilewis
-  pic: joshua.jpg
   track: "Room 1"
   time: "14:50"
-  title: "The Dimensions of Tests Model"
+  firstname: Neo  
+  lastname: Ighodaro
+  twitter: NeoIghodaro
+  pic: https://secure.gravatar.com/avatar/a9d51d7774599f6f10875cf529608f8c
+  title: "Building for the bad guys"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: Mark
-  lastname: Whitfeld
-  twitter: MarkWhitfeld
-  pic: mark.jpg
   track: "Room 1"
   time: "16:05"
-  title: "Lessons Learned from a Decade of TDD"
+  firstname: Marco  
+  lastname: Slaviero
+  twitter: marcoslaviero
+  pic: https://secure.gravatar.com/avatar/1d31ab9ed0e2db3dc4639a8003fa3654
+  title: "Fighting the Previous War (aka: Attacking and Defending in the Era of the Cloud)"
 
-- publish: false
+- publish: true
   track_order: 0
-  firstname: Matt
-  lastname: Cavanagh
-  twitter: roguecode
-  pic: matt.jpg
   track: "Room 1"
   time: "17:00"
-  title: "All your data are belong to us: Reverse-engineering API's, web scraping, and the details of how I gained access to 7 million [company name redacted *] accounts."
+  pair: true
+  firstname: Ryan # Future me, you need the base first & last name for looking up the content
+  lastname: Kotzen
+  firstname1: Ryan 
+  lastname1: Kotzen
+  firstname2: Jake 
+  lastname2: Helme
+  twitter: eXigentCoder
+  pic1: https://secure.gravatar.com/avatar/a63ad1da5c08dd5b63d9e7dd0411d3d0
+  pic2: https://secure.gravatar.com/avatar/471d7e574b79e8d4aa465fd7955a083d
+  title: "Project Kerbini - Now with added Explosions"
 
 ##############################  Room 2 #########################
 
 - publish: false
   track_order: 1
-  firstname: Chris  
-  lastname: Tite 
-  twitter:  Tite_Chris
-  pic: chris2.jpg
   track: "Room 2"
-  time: "10:30"
-  title: "Agile Database Techniques – Refactoring to keep your database current"
+  time: "10:30" #OBSIDIAN SPONSORED
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: 
+  title: 
 
-- publish: false
+- publish: true
   track_order: 1
-  firstname: Gail
-  lastname: Shaw
-  twitter: SQLIntheWild
-  pic: gail2.jpg
   track: "Room 2"
   time: "11:25"
-  title: "Database performance monitoring for developers"
+  firstname: Rishal  
+  lastname: Hurbans
+  twitter: RishalHurbans
+  pic: https://secure.gravatar.com/avatar/0e718f0d7c944c5c93bab642d72c7b94
+  title: "Neural Networks: A Primer"
 
-- publish: false
+- publish: true
   track_order: 1
-  firstname: Michael 
-  lastname: Johnson
-  twitter: MikeJohnsonZA
-  pic: michael.jpg
   track: "Room 2"
   time: "13:00"
-  title: "Why your choice of index matters."
-
-- publish: false
-  track_order: 1
-  firstname: Mercia 
-  lastname: Malan
-  twitter: Kitri747
-  pic: mercia.jpg
-  track: "Room 2"
-  time: "13:55"
-  title: "Knowing when to choose SQL and when to choose NoSQL."
-
-- publish: false
-  track_order: 1
-  firstname: Clinton 
-  lastname: van Blommestein
-  twitter: clintonvb
-  pic: clinton.jpg
-  track: "Room 2"
-  time: "14:50"
-  title: "Slumdoc Billionaire"
-
-- publish: false
-  track_order: 1
-  firstname: Gary 
-  lastname: Hope
-  twitter: GaryHope
-  pic: gary.jpg
-  track: "Room 2"
-  time: "16:05"
-  title: "Introduction to Azure DocumentDB"
- 
-- publish: false
-  track_order: 1
-  firstname: Mark 
-  lastname: Biagio
-  twitter: markbiagio
-  pic: biagio.jpg
-  track: "Room 2"
-  time: "17:00"
-  title: "Real world applications built with Firebase"
-
-##############################  Room 3 #########################
-
-- publish: false
-  track_order: 2
-  firstname: "Brent Samodien &"
-  lastname: "Dave Nel"
-  twitter: 
-  pic: brent.jpg
-  track: "Room 3"
-  time: "10:30"
-  title: "Real World Mobile DevOps"
-
-- publish: false
-  track_order: 2
-  firstname: Rachel
-  lastname: Reese
-  twitter: rachelreese
-  pic: rachel.jpg
-  track: "Room 3"
-  time: "11:25"
-  title: "Is functional programming just a fad?"
-
-- publish: false
-  track_order: 2
-  firstname: Badi 
-  lastname: Sudhakaran
-  twitter: badikumar
-  pic: b-dog.jpg
-  track: "Room 3"
-  time: "13:00"
-  title: "Introducing Blockchain to Web Developers"
-
-- publish: false
-  track_order: 2
-  firstname: Gareth 
-  lastname: Stephenson
-  twitter: GarethStep
-  pic: gareth.jpg
-  track: "Room 3"
-  time: "13:55"
-  title: "Cluster Computing using Apache Spark on Raspberry Pi's"
-
-- publish: false
-  track_order: 2
-  firstname: Mike 
-  lastname: Geyser
-  twitter: mikegeyser
-  pic: mikeg.jpg
-  track: "Room 3"
-  time: "14:50"
-  title: "Keep Calm and Upgrade Angular"
-
-- publish: false
-  track_order: 2
   firstname: Robert 
   lastname: Bravery
   twitter: robertbravery
-  pic: robert.jpg
+  pic: https://secure.gravatar.com/avatar/c86468652dc7eee2e2724748a3601bdf
+  title: "Bots, Artificial Intelligence and Cognitive learning"
+
+- publish: true
+  track_order: 1
+  track: "Room 2"
+  time: "13:55"
+  firstname: Amy
+  lastname: Codes
+  twitter: TheAmyCode
+  pic: https://secure.gravatar.com/avatar/e67072f31f6502d4a451eacad747810b
+  title: "Building Helm charts from the ground up: An introduction to Kubernetes"
+
+- publish: true
+  track_order: 1
+  track: "Room 2"
+  time: "14:50"
+  firstname: Chris 
+  lastname: Tite
+  twitter: Tite_Chris
+  pic: https://secure.gravatar.com/avatar/33eb398a7fb31cf14fc0613e6826f5e1
+  title: "Mining your log files made simple - A Unified Logging Solution"
+
+- publish: true
+  track_order: 1
+  track: "Room 2"
+  time: "16:05"
+  firstname: Tim
+  lastname: Lewis
+  twitter: timmles
+  pic: https://secure.gravatar.com/avatar/789f43e28f35921b129e70521d5cb3a3
+  title: "JAMStack aka Serverless"
+ 
+- publish: true
+  track_order: 1
+  track: "Room 2"
+  time: "17:00"
+  firstname: Willy-Peter 
+  lastname: Schaub
+  twitter: wpschaub
+  pic: https://secure.gravatar.com/avatar/cd67e1fc084e8de47fc9410eed432bcd
+  title: "How we moved 65,000 Microsofties to DevOps with Visual Studio Team Services"
+
+##############################  Room 3 #########################
+
+- publish: true
+  track_order: 2
+  track: "Room 3"
+  time: "10:30"
+  firstname: Michael 
+  lastname: Johnson
+  twitter: MikeJohnsonZA
+  pic: https://secure.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
+  title: "You, your database and Continuous Delivery"
+
+- publish: false # MICROSOFT SPONSORED
+  track_order: 2
+  track: "Room 3"
+  time: "11:25"
+  firstname: 
+  lastname: 
+  twitter: 
+  pic: 
+  title: 
+
+- publish: true
+  track_order: 2
+  track: "Room 3"
+  time: "13:00"
+  firstname: Peter John 
+  lastname: Welcome
+  twitter: pjapplez
+  pic: https://secure.gravatar.com/avatar/7cfaab5ac5113201604c3ad16d9a293b
+  title: "Kotlin for all the Droids"
+
+- publish: true
+  track_order: 2
+  track: "Room 3"
+  time: "13:55"
+  firstname: Rebecca  
+  lastname: Franks
+  twitter: riggaroo
+  pic: https://secure.gravatar.com/avatar/2a37bf1e025cc1523124774c760df91a
+  title: "Android Architecture Components: A testable approach to Android Development"
+
+- publish: false # BBD SPONSORED
+  track_order: 2
+  track: "Room 3"
+  time: "14:50"
+  firstname:  
+  lastname: 
+  twitter: 
+  pic: 
+  title: 
+
+- publish: true
+  track_order: 2
   track: "Room 3"
   time: "16:05"
-  title: "Concurrent Programming and Distributed Computing with Akka.net"
+  firstname: Mike
+  lastname: Geyser
+  twitter: mikegeyser
+  pic: https://secure.gravatar.com/avatar/8bb0fc4afb815b0c2b303e88ce29f464
+  title: "Building Progressive Web Apps with Angular"
 
-- publish: false
+- publish: true
   track_order: 2
-  firstname: William 
-  lastname: Brander
-  twitter: WilliamBZA
-  pic: william.jpg
   track: "Room 3"
   time: "17:00"
-  title: "So you wanna build a service bus"
+  firstname: William
+  lastname: Brander
+  twitter: williambZA
+  pic: https://secure.gravatar.com/avatar/d0ab81dc797f226c36164c415b9ee674
+  title: "Microservices suck at the UI - UI Composition techniques to make this better"

@@ -30,7 +30,7 @@
 					<div class="row">
 
 						<div class="col-md-2 col-md-offset-4">
-							To be announced
+								{% include timeslot_notAnnounced.html %}
 							<!-- <div class="pic-box" data-toggle="modal">
 								<div class="track">Keynote Speaker</div>
 								<div class="time">9:15</div>
@@ -111,8 +111,8 @@
 		{% if agenda.type == 'break' %} 
 			{% include index_speakers_break.html agenda=agenda %} 
 		{% else %} 
-			{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %} 
-			{% include index_speakers_timeslot_fifths.html speakers=speakers agenda=agenda %} 
+			{% assign speakers=agendaSpeakers[agenda.sessionIndex].items %} 			
+			{% include index_speakers_timeslot_base.html speakers=speakers agenda=agenda columns=2 imageSize=133 includeFirstColumn=true year=2018 city='jhb' %} 
 		{% endif %} 
 	{% endfor %}
 	<div class="container">

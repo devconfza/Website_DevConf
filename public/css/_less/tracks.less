@@ -1,7 +1,6 @@
 #tracks {
 	padding-top: 70px;
 	padding-bottom: 100px;
-
 	h1 {
 		text-align: center;
 		padding-top: 20px;
@@ -15,35 +14,38 @@
 			&.keywords {
 				width: 150px;
 			}
-		}		
+		}
 	}
 }
 
 //768px;
-@media (min-width:@screen-sm-min) {	
+@media (min-width:@screen-sm-min) {
 	#tracks {
 		table {
-		th {
-			&.track {
-				width: 200px;
+			th {
+				&.track {
+					width: 200px;
+				}
+				&.keywords {
+					width: 200px;
+				}
 			}
-			&.keywords {
-				width: 200px;
-			}
-		}		
-	}		
+		}
 	}
 }
 
-//992px;
-@media (min-width:@screen-md-min) { 
-	#tracks {
-		
-	}	
+.lightning {
+	color: gold;
 }
-// 1200px;
-@media (min-width:@screen-lg-min) {
-	#tracks {
-		
-	}	
+
+.lightningList {
+	padding: 0px;
+}
+
+.popupImage {
+	float:right;
+}
+
+.lightningItem{
+	border-bottom: white solid 1px;
 }

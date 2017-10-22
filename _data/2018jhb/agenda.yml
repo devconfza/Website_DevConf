@@ -26,7 +26,7 @@
 - type: session
   start: "13:00"
   length: 45
-  sessionIndex: 3
+  sessionIndex: 2
 
 - type: break
   start: "13:45"
