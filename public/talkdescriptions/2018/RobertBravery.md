@@ -1,5 +1,0 @@
-### About the talk
-
-Bots, AI and Cognitive learning is going to change the way we life, how we think and how we work. It will also change how we code and how we analyse data. Automated and driverless vehicles are one example of software bots and mechanical robotics interacting. Deep learning and Natural Language Processing (NLP) will make it possible ask virtual bot assistants questions in a natural way and get meaningful answers. Analyzing huge amounts of text, social media posts to understand sentiment and thought process will be a huge advantage to business and even government. Face-recognition and photo-analysis at the hands of the populous makes searching and analyzing digital data easier smarter and more accurate. Lear how we can make use of Bot Frameworks, AI Frameworks and Cognitive Frameworks that are available today to achieve what we might have thought previously impossible or event at the least out of our reach.
-
-### About the speaker

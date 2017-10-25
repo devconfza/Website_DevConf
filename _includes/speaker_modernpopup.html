@@ -51,12 +51,10 @@
                         <img src="{{ speaker.pic }}?s=250&r=g&d=https%3A%2F%2Fwww.devconf.co.za%2Fpublic%2Fms-icon-310x310.png" />
                         {% endif %}
                         </div>
-                        {% capture abstractFilename %}/public/talkdescriptions/{{ include.year }}/{{include.modelId}}.md{% endcapture %} 
+                        {% capture abstractFilename %}/public/talkdescriptions/{{ include.year }}/{{include.modelId}}.html{% endcapture %} 
                         {% for static_file in site.static_files%} 
                             {% if static_file.path == abstractFilename %}
-{% markdown %}
 {% include_relative {{ abstractFilename }} %}
-{% endmarkdown %}
                             {% endif %} 
                         {% endfor %}
                     </div>

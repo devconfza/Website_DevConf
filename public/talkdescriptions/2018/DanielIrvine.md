@@ -1,5 +1,0 @@
-### About the talk
-
-The idea of mentorship is strongest within the software craft community, which values the idea of apprenticeship. But the concepts within the apprenticeship model are valuable to all technical mentors, not just those who hire apprentices. Knowing how to give feedback, having a set of coding exercises, regular planning and estimating are all invaluable skills. In this talk I’ll look at these and other ideas for how to ensure you give your mentees the best chance of success.
-
-### About the speaker

@@ -33,16 +33,15 @@
                                         </div>
                                     </div>
                         </div>
-                        {% capture abstractFilename %}/public/talkdescriptions/{{ include.year }}/{{include.modelId}}.md{% endcapture %} 
+                        {% capture abstractFilename %}/public/talkdescriptions/{{ include.year }}/{{include.modelId}}.html{% endcapture %} 
                         {% for static_file in site.static_files%} 
                             {% if static_file.path == abstractFilename %}
                             <h1>What is a lightning talk?</h1>
                             
                             Lightning talks are rapid fire 15 min presentations. We bundle three back to back in a single timeslot with no break.  
                             Quick presentations! Fast handover! Singular insights from the best! Below are the three talks that you will see:                            
-{% markdown %}
 {% include_relative {{ abstractFilename }} %}
-{% endmarkdown %}
+
                             {% endif %} 
                         {% endfor %}
                     </div>
