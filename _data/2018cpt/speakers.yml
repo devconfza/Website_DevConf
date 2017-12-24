@@ -196,15 +196,15 @@
   pic: https://secure.gravatar.com/avatar/2a37bf1e025cc1523124774c760df91a
   title: "Android Architecture Components: A testable approach to Android Development"
 
-- publish: false # BBD SPONSORED
+- publish: true # BBD SPONSORED
   track_order: 2
   track: "Room 3"
   time: "14:50"
-  firstname:  
-  lastname: 
-  twitter: 
-  pic: 
-  title: 
+  firstname: Gergana  
+  lastname: Young
+  twitter: GerybBg
+  pic: https://secure.gravatar.com/avatar/55f1c869ec3ea1f3b84830a6d220150f
+  title: "The physical web and beyond"
 
 - publish: true
   track_order: 2
