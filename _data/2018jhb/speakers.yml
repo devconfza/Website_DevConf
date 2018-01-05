@@ -74,11 +74,11 @@
 
 - publish: true
   track_order: 1
-  firstname: Oz  
-  lastname: Chihwayi 
-  twitter:  ozchihwayi
-  pic: https://secure.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
-  title: "Cultivating a Critical Thinking Mindset"
+  firstname: Rouan  
+  lastname: Wilsenach
+  twitter: rouanw
+  pic: https://secure.gravatar.com/avatar/fc18f2b2a8326f1e95d76b0598d7ac19
+  title: "The Curious Case of the Production Incident"
   track: "Room 2"
   time: "10:30"
 
@@ -146,13 +146,13 @@
  
 - publish: true
   track_order: 1
-  firstname: Rouan  
-  lastname: Wilsenach
-  twitter: rouanw
-  pic: https://secure.gravatar.com/avatar/fc18f2b2a8326f1e95d76b0598d7ac19
+  firstname: Oz  
+  lastname: Chihwayi 
+  twitter:  ozchihwayi
+  pic: https://secure.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
+  title: "Cultivating a Critical Thinking Mindset"
   track: "Room 2"
   time: "17:00"
-  title: "The Curious Case of the Production Incident"
 
 ##############################  Room 3 #########################
 
