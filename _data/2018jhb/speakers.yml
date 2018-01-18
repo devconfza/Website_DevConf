@@ -232,7 +232,7 @@
   time: "16:05"
   title: "A WiFi-controlled Arduino-powered hand-held potato cannon"
 
-##############################  Room 3 #########################
+##############################  Room 4 #########################
 
 - publish: true
   track_order: 3
@@ -304,7 +304,7 @@
   time: "17:00"
   title: "The physical web and beyond"
 
-##############################  Room 4 #########################
+##############################  Room 5 #########################
 
 - publish: true
   track_order: 4

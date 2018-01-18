@@ -20,21 +20,21 @@
   pic: https://secure.gravatar.com/avatar/d58c6a5322b458bfcb8b1908e1ff4c0b
   title: "Secrets of successful mentoring"
 
-- publish: false #GOLD SPONSORS
+- publish: true #GOLD SPONSORS
   track_order: 0
   track: "Room 1"
   time: "13:00"
   lightning: true
   details: "lightninggold"
-  name1: 
-  title1: 
-  pic1: 
-  name2: 
-  title2: 
-  pic2: 
-  name3: 
-  title3: 
-  pic3: 
+  name1: "Donovan Graham"
+  title1: "Micro frontends –  a micro services model for frontend development"
+  pic1: https://secure.gravatar.com/avatar/0000
+  name2: "To be announced"
+  title2: "To be announced"
+  pic2: https://secure.gravatar.com/avatar/0000
+  name3: "To be announced"
+  title3: "To be announced"
+  pic3: https://secure.gravatar.com/avatar/0000
 
 - publish: false # DVT SPONSOR
   track_order: 0
