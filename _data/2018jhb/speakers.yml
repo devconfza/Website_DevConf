@@ -176,16 +176,6 @@
   pic: https://secure.gravatar.com/avatar/e67072f31f6502d4a451eacad747810b
   title: "Kubernetes Inside and Out"
 
-- publish: false # EOH SPONSORED
-  track_order: 2
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
-  track: "Room 3"
-  time: "17:00"
-  title: ""  
-
 - publish: true
   track_order: 2
   track: "Room 3"
@@ -231,6 +221,16 @@
   track: "Room 3"
   time: "16:05"
   title: "A WiFi-controlled Arduino-powered hand-held potato cannon"
+
+- publish: true # EOH SPONSORED
+  track_order: 2
+  firstname: Warren
+  lastname: Barratt
+  twitter: 
+  pic: https://secure.gravatar.com/avatar/c85deac9b2da1200a7dc6303c3ea6fae
+  track: "Room 3"
+  time: "17:00"
+  title: "Why machine learning is going to be needed in every aspect of application development."    
 
 ##############################  Room 4 #########################
 
