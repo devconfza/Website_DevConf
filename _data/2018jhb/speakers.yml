@@ -1,4 +1,5 @@
-﻿##############################  Main Room#########################
+﻿#  Get the gravatars from https://en.gravatar.com/site/check/
+##############################  Main Room#########################
 
 - publish: false #BBD SPONSORED
   track_order: 0
@@ -98,15 +99,15 @@
   title3: "Habit Driven Design"
   pic3: https://secure.gravatar.com/avatar/ad80c364e57b384ee334b8466706b230
 
-- publish: false #CHILLISOFT SPONSOR
+- publish: true #CHILLISOFT SPONSOR
   track_order: 1
-  firstname:  
-  lastname: 
-  twitter: 
-  pic: 
+  firstname: Peter
+  lastname: Wiles
+  twitter: pwiles
+  pic: https://s.gravatar.com/avatar/afb3cebfdf2b7323d2d73c7192295f9f
   track: "Room 2"
   time: "13:00"
-  title: ""
+  title: "The Courage to be a Professional Software Developer"
 
 - publish: true
   track_order: 1
