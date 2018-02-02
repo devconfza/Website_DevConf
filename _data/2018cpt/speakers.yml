@@ -28,7 +28,7 @@
   details: "lightninggold"
   name1: "Donovan Graham"
   title1: "Micro frontends –  a micro services model for frontend development"
-  pic1: https://secure.gravatar.com/avatar/0000
+  pic1: https://s.gravatar.com/avatar/1321d3ef7498867537587b0cdd4516f2
   name2: "To be announced"
   title2: "To be announced"
   pic2: https://secure.gravatar.com/avatar/0000
@@ -84,15 +84,15 @@
 
 ##############################  Room 2 #########################
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Room 2"
   time: "10:30" #OBSIDIAN SPONSORED
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: 
-  title: 
+  firstname: Lisa 
+  lastname: Schaffer
+  twitter: lisaschaffer77
+  pic: https://s.gravatar.com/avatar/fdd083ea7223f5bdb48ebe3be4f7be16
+  title: "to be announced"
 
 - publish: true
   track_order: 1
