@@ -1,15 +1,15 @@
 ﻿#  Get the gravatars from https://en.gravatar.com/site/check/
 ##############################  Main Room#########################
 
-- publish: false #BBD SPONSORED
+- publish: true
   track_order: 0
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
+  firstname: Melissa
+  lastname: Landsberg
+  twitter: MelissaLands1
+  pic: https://s.gravatar.com/avatar/a26dee86748f62fa0751307d4d5a6587
   track: "Room 1"
   time: "10:30"
-  title: 
+  title: "A junior's guide to full stack"
 
 - publish: false # DERIVCO SPONSORED
   track_order: 0
@@ -255,15 +255,15 @@
   pic: https://secure.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
   title: "You, your database and Continuous Delivery"
 
-- publish: false # DVT SPONSORED
+- publish: true # DVT SPONSORED
   track_order: 3
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
+  firstname: Knowledge
+  lastname: Chikuse
+  twitter: guruuswa ‏ 
+  pic: https://s.gravatar.com/avatar/619584f7f57985c3ff82014c3a91a1c9
   track: "Room 4"
   time: "13:55"
-  title: 
+  title: "Blockchain is using enough juice to power Joburg"
 
 - publish: true
   track_order: 3
