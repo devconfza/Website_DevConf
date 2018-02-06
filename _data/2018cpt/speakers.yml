@@ -36,15 +36,16 @@
   title3: "To be announced"
   pic3: https://secure.gravatar.com/avatar/0000
 
-- publish: false # DVT SPONSOR
+- publish: true # DVT SPONSOR
   track_order: 0
   track: "Room 1"
   time: "13:55"
-  firstname: 
-  lastname: 
-  twitter: 
-  pic: 
-  title: 
+  firstname: Mario
+  lastname: Matthee
+  twitter: MarioMatthee
+  pic: https://s.gravatar.com/avatar/40e615d6558bbc22323b8b4ba50043fb
+  title: "Software Developers are from Mars; Testers are from Venus
+"
 
 - publish: true
   track_order: 0
