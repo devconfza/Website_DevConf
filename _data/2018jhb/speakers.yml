@@ -327,15 +327,15 @@
   pic: https://secure.gravatar.com/avatar/2a37bf1e025cc1523124774c760df91a
   title: "Android Architecture Components: A testable approach to Android Development"
 
-- publish: false #MICROSOFT SPONSOR
+- publish: true #MICROSOFT SPONSOR
   track_order: 4
-  firstname:  
-  lastname: 
-  twitter: 
-  pic: 
   track: "Room 5"
   time: "13:00"
-  title: ""
+  firstname: Mohamed 
+  lastname: Saif
+  twitter: MohamedSaif101
+  pic: https://s.gravatar.com/avatar/0e71839fb929adad1090ae42062e6a7f
+  title: "Continuously build, test, release, and monitor apps for every platform"
 
 - publish: true # LIGHTNING
   track_order: 4
