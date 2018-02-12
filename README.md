@@ -13,7 +13,7 @@ Next is to run `npm install` to get gulp and the other tools we use installed.
 To compile it is
 ```
 gulp style
-gulp scripts
+gulp update
 jekyll build
 ```
 

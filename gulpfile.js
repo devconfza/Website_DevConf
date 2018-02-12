@@ -12,7 +12,7 @@ gulp.task('style', function() {
     .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('update', done => {
+gulp.task('update', function(done) {
   gulp.src('./node_modules/bootstrap-less/js/bootstrap.min.js').pipe(gulp.dest('./public/scripts'));
   done();
 });
