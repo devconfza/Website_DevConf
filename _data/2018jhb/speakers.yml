@@ -11,15 +11,15 @@
   time: "10:30"
   title: "A junior's guide to full stack"
 
-- publish: false # DERIVCO SPONSORED
+- publish: true
   track_order: 0
-  firstname:  
-  lastname:  
-  twitter: 
-  pic: 
+  firstname: Terence 
+  lastname: Kruger
+  twitter: tjmkruger
+  pic: https://s.gravatar.com/avatar/0f7cdd38e48769c4388a415a6c6ff26a
   track: "Room 1"
   time: "11:25"
-  title: 
+  title: "Adding graphs to your toolbox"
 
 - publish: true
   track_order: 0
