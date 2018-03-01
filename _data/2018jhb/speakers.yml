@@ -255,16 +255,6 @@
   pic: https://secure.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
   title: "You, your database and Continuous Delivery"
 
-- publish: true # DVT SPONSORED
-  track_order: 3
-  firstname: Knowledge
-  lastname: Chikuse
-  twitter: guruuswa ‏ 
-  pic: https://s.gravatar.com/avatar/619584f7f57985c3ff82014c3a91a1c9
-  track: "Room 4"
-  time: "13:55"
-  title: "Blockchain is using enough juice to power Joburg"
-
 - publish: true
   track_order: 3
   track: "Room 4"
@@ -274,6 +264,16 @@
   twitter: robertbravery
   pic: https://secure.gravatar.com/avatar/c86468652dc7eee2e2724748a3601bdf
   title: "Bots, Artificial Intelligence and Cognitive learning"
+
+- publish: true # DVT SPONSORED
+  track_order: 3
+  firstname: Knowledge
+  lastname: Chikuse
+  twitter: guruuswa ‏ 
+  pic: https://s.gravatar.com/avatar/619584f7f57985c3ff82014c3a91a1c9
+  track: "Room 4"
+  time: "13:55"
+  title: "Blockchain is using enough juice to power Joburg"
 
 - publish: true
   track_order: 3
@@ -346,7 +346,7 @@
   name1: "André Odendaal"
   title1: "Create a Worthwhile Internship Programme"
   pic1: https://secure.gravatar.com/avatar/5ff98dcd7f3e8075d6422b8702e154da
-  name2: "Riaan Nel "
+  name2: "Riaan Nel"
   title2: "How and why to tell strangers on the Internet about stuff you know"
   pic2: https://secure.gravatar.com/avatar/6d46baac4ced0eae099887b274b5dc1b
   name3: "Gerard de Jong"

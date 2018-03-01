@@ -24,17 +24,11 @@
   track_order: 0
   track: "Room 1"
   time: "13:00"
-  lightning: true
-  details: "lightninggold"
-  name1: "Donovan Graham"
-  title1: "Micro frontends –  a micro services model for frontend development"
-  pic1: https://s.gravatar.com/avatar/1a5ca942c019d38469e3f0e2cfdf7797
-  name2: "To be announced"
-  title2: "To be announced"
-  pic2: https://secure.gravatar.com/avatar/0000
-  name3: "To be announced"
-  title3: "To be announced"
-  pic3: https://secure.gravatar.com/avatar/0000
+  firstname: Donovan
+  lastname: Graham
+  title: "Micro frontends –  a micro services model for frontend development"
+  pic: https://s.gravatar.com/avatar/1a5ca942c019d38469e3f0e2cfdf7797
+  twitter: 
 
 - publish: true # DVT SPONSOR
   track_order: 0
