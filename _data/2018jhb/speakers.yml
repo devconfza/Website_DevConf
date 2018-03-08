@@ -26,7 +26,7 @@
   firstname: Griffiths 
   lastname: Sibeko
   twitter: macgriffiths
-  pic: https://secure.gravatar.com/avatar/23e0ca111dd0440982ae22cc45f4f49f
+  pic: https://s.gravatar.com/avatar/23e0ca111dd0440982ae22cc45f4f49f
   track: "Room 1"
   time: "13:00"
   title: "A .net standard future for everyone"
@@ -36,7 +36,7 @@
   firstname: Kenneth
   lastname: Kalmer
   twitter: kennethkalmer
-  pic: https://secure.gravatar.com/avatar/8e033d0007374b14f6c213ede64d470b
+  pic: https://s.gravatar.com/avatar/8e033d0007374b14f6c213ede64d470b
   track: "Room 1"
   time: "13:55"
   title: "Reframing your next Single Page App"
@@ -46,7 +46,7 @@
   firstname: Christian
   lastname: Nwamba
   twitter: codebeast
-  pic: https://secure.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3
+  pic: https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3
   track: "Room 1"
   time: "14:50"
   title: "Building Offline Web Apps for the Next Billion Users"
@@ -58,7 +58,7 @@
   firstname: Mike
   lastname: Geyser
   twitter: mikegeyser
-  pic: https://secure.gravatar.com/avatar/8bb0fc4afb815b0c2b303e88ce29f464
+  pic: https://s.gravatar.com/avatar/8bb0fc4afb815b0c2b303e88ce29f464
   title: "Building Progressive Web Apps with Angular"
 
 - publish: true
@@ -68,7 +68,7 @@
   firstname: William
   lastname: Brander
   twitter: williambZA
-  pic: https://secure.gravatar.com/avatar/d0ab81dc797f226c36164c415b9ee674
+  pic: https://s.gravatar.com/avatar/d0ab81dc797f226c36164c415b9ee674
   title: "Microservices suck at the UI - UI Composition techniques to make this better"
 
 ##############################  Room 2 #########################
@@ -78,7 +78,7 @@
   firstname: Rouan  
   lastname: Wilsenach
   twitter: rouanw
-  pic: https://secure.gravatar.com/avatar/fc18f2b2a8326f1e95d76b0598d7ac19
+  pic: https://s.gravatar.com/avatar/fc18f2b2a8326f1e95d76b0598d7ac19
   title: "The Curious Case of the Production Incident"
   track: "Room 2"
   time: "10:30"
@@ -91,13 +91,13 @@
   details: "lightning1"
   name1: "Andrew Bestbier"
   title1: "The Curious Case of Monorepos"
-  pic1: https://secure.gravatar.com/avatar/872a19fe2daafcfc31f5077531d6e3be
+  pic1: https://s.gravatar.com/avatar/872a19fe2daafcfc31f5077531d6e3be
   name2: "Arohan Naidoo"
   title2: "Noobs Journey to Pi"
-  pic2: https://secure.gravatar.com/avatar/55a2a2253062d5474ae9b8a9f11c6bee
+  pic2: https://s.gravatar.com/avatar/55a2a2253062d5474ae9b8a9f11c6bee
   name3: "Nico Botha "
   title3: "Habit Driven Design"
-  pic3: https://secure.gravatar.com/avatar/ad80c364e57b384ee334b8466706b230
+  pic3: https://s.gravatar.com/avatar/ad80c364e57b384ee334b8466706b230
 
 - publish: true #CHILLISOFT SPONSOR
   track_order: 1
@@ -116,7 +116,7 @@
   firstname: Daniel 
   lastname: Irvine
   twitter: d_ir
-  pic: https://secure.gravatar.com/avatar/d58c6a5322b458bfcb8b1908e1ff4c0b
+  pic: https://s.gravatar.com/avatar/d58c6a5322b458bfcb8b1908e1ff4c0b
   title: "Secrets of successful mentoring"
 
 - publish: true
@@ -124,7 +124,7 @@
   firstname: Brendon 
   lastname: Page
   twitter: brendonpaginate
-  pic: https://secure.gravatar.com/avatar/c277d93e12300bdb6aaf107744566289
+  pic: https://s.gravatar.com/avatar/c277d93e12300bdb6aaf107744566289
   track: "Room 2"
   time: "14:50"
   title: "Build the Roof First"
@@ -137,20 +137,20 @@
   details: "lightning2"
   name1: "Riaan Cornelius"
   title1: "Brewing beer using AndroidThings"
-  pic1: https://secure.gravatar.com/avatar/5d9296a6ac72c9dcd471c1f470b6dca4
+  pic1: https://s.gravatar.com/avatar/5d9296a6ac72c9dcd471c1f470b6dca4
   name2: "Arjun Khoosal"
   title2: "Let the magic happen"
-  pic2: https://secure.gravatar.com/avatar/fb6048c5e702d000e0c1a163cf2340b5
+  pic2: https://s.gravatar.com/avatar/fb6048c5e702d000e0c1a163cf2340b5
   name3: "Simon Stewart"
   title3: "Why shipping pet projects is so important"
-  pic3: https://secure.gravatar.com/avatar/37f528e9d48effebecf06b39028f7e9f
+  pic3: https://s.gravatar.com/avatar/a6e1fc6cae0f7cea8d7e38ca7342354c
  
 - publish: true
   track_order: 1
   firstname: Oz  
   lastname: Chihwayi 
   twitter:  ozchihwayi
-  pic: https://secure.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
+  pic: https://s.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
   title: "Cultivating a Critical Thinking Mindset"
   track: "Room 2"
   time: "17:00"
@@ -164,7 +164,7 @@
   firstname: Tim
   lastname: Lewis
   twitter: timmles
-  pic: https://secure.gravatar.com/avatar/789f43e28f35921b129e70521d5cb3a3
+  pic: https://s.gravatar.com/avatar/789f43e28f35921b129e70521d5cb3a3
   title: "JAMStack aka Serverless"
 
 - publish: true
@@ -174,7 +174,7 @@
   firstname: Amy
   lastname: Codes
   twitter: TheAmyCode
-  pic: https://secure.gravatar.com/avatar/e67072f31f6502d4a451eacad747810b
+  pic: https://s.gravatar.com/avatar/e67072f31f6502d4a451eacad747810b
   title: "Kubernetes Inside and Out"
 
 - publish: true
@@ -184,7 +184,7 @@
   firstname: Willy-Peter 
   lastname: Schaub
   twitter: wpschaub
-  pic: https://secure.gravatar.com/avatar/cd67e1fc084e8de47fc9410eed432bcd
+  pic: https://s.gravatar.com/avatar/cd67e1fc084e8de47fc9410eed432bcd
   title: "How we moved 65,000 Microsofties to DevOps with Visual Studio Team Services"
 
 - publish: true
@@ -194,7 +194,7 @@
   firstname: Chris 
   lastname: Tite
   twitter: Tite_Chris
-  pic: https://secure.gravatar.com/avatar/333690f70ae7bb6960677e83feab1fb8
+  pic: https://s.gravatar.com/avatar/333690f70ae7bb6960677e83feab1fb8
   title: "Mining your log files made simple - A Unified Logging Solution"
 
 - publish: true 
@@ -209,8 +209,8 @@
   firstname2: Jake 
   lastname2: Helme
   twitter: eXigentCoder
-  pic1: https://secure.gravatar.com/avatar/a63ad1da5c08dd5b63d9e7dd0411d3d0
-  pic2: https://secure.gravatar.com/avatar/471d7e574b79e8d4aa465fd7955a083d
+  pic1: https://s.gravatar.com/avatar/a63ad1da5c08dd5b63d9e7dd0411d3d0
+  pic2: https://s.gravatar.com/avatar/471d7e574b79e8d4aa465fd7955a083d
   title: "Project Kerbini - Now with added Explosions"
 
 - publish: true
@@ -218,7 +218,7 @@
   firstname: Matt  
   lastname: Cavanagh
   twitter: RogueCode
-  pic: https://secure.gravatar.com/avatar/f8770367eb08207b92e8c47009dd1491?
+  pic: https://s.gravatar.com/avatar/f8770367eb08207b92e8c47009dd1491?
   track: "Room 3"
   time: "16:05"
   title: "A WiFi-controlled Arduino-powered hand-held potato cannon"
@@ -252,7 +252,7 @@
   firstname: Michael 
   lastname: Johnson
   twitter: MikeJohnsonZA
-  pic: https://secure.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
+  pic: https://s.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
   title: "You, your database and Continuous Delivery"
 
 - publish: true
@@ -262,7 +262,7 @@
   firstname: Robert 
   lastname: Bravery
   twitter: robertbravery
-  pic: https://secure.gravatar.com/avatar/c86468652dc7eee2e2724748a3601bdf
+  pic: https://s.gravatar.com/avatar/c86468652dc7eee2e2724748a3601bdf
   title: "Bots, Artificial Intelligence and Cognitive learning"
 
 - publish: true # DVT SPONSORED
@@ -282,7 +282,7 @@
   firstname: Rishal  
   lastname: Hurbans
   twitter: RishalHurbans
-  pic: https://secure.gravatar.com/avatar/0e718f0d7c944c5c93bab642d72c7b94
+  pic: https://s.gravatar.com/avatar/0e718f0d7c944c5c93bab642d72c7b94
   title: "Neural Networks: A Primer"
 
 - publish: true
@@ -290,7 +290,7 @@
   firstname: Dries  
   lastname: Cronje
   twitter: dries139
-  pic: https://secure.gravatar.com/avatar/efd22de9a7721f1c30dd326e9dab35c6
+  pic: https://s.gravatar.com/avatar/efd22de9a7721f1c30dd326e9dab35c6
   track: "Room 4"
   time: "16:05"
   title: "Augment your reality."
@@ -300,7 +300,7 @@
   firstname: Gergana  
   lastname: Young
   twitter: GerybBg
-  pic: https://secure.gravatar.com/avatar/55f1c869ec3ea1f3b84830a6d220150f
+  pic: https://s.gravatar.com/avatar/55f1c869ec3ea1f3b84830a6d220150f
   track: "Room 4"
   time: "17:00"
   title: "The physical web and beyond"
@@ -314,7 +314,7 @@
   firstname: Peter John 
   lastname: Welcome
   twitter: pjapplez
-  pic: https://secure.gravatar.com/avatar/7cfaab5ac5113201604c3ad16d9a293b
+  pic: https://s.gravatar.com/avatar/7cfaab5ac5113201604c3ad16d9a293b
   title: "Kotlin for all the Droids"
 
 - publish: true
@@ -324,7 +324,7 @@
   firstname: Rebecca  
   lastname: Franks
   twitter: riggaroo
-  pic: https://secure.gravatar.com/avatar/2a37bf1e025cc1523124774c760df91a
+  pic: https://s.gravatar.com/avatar/2a37bf1e025cc1523124774c760df91a
   title: "Android Architecture Components: A testable approach to Android Development"
 
 - publish: true #MICROSOFT SPONSOR
@@ -345,13 +345,13 @@
   details: "lightning3"
   name1: "André Odendaal"
   title1: "Create a Worthwhile Internship Programme"
-  pic1: https://secure.gravatar.com/avatar/5ff98dcd7f3e8075d6422b8702e154da
+  pic1: https://s.gravatar.com/avatar/5ff98dcd7f3e8075d6422b8702e154da
   name2: "Riaan Nel"
   title2: "How and why to tell strangers on the Internet about stuff you know"
-  pic2: https://secure.gravatar.com/avatar/6d46baac4ced0eae099887b274b5dc1b
+  pic2: https://s.gravatar.com/avatar/6d46baac4ced0eae099887b274b5dc1b
   name3: "Gerard de Jong"
   title3: "Breaking into a wireless networks with Kali Linux"
-  pic3: https://secure.gravatar.com/avatar/e98859705fc394d4f55822dfd1682c14
+  pic3: https://s.gravatar.com/avatar/e98859705fc394d4f55822dfd1682c14
 
 - publish: true
   track_order: 4
@@ -360,7 +360,7 @@
   firstname: Marco  
   lastname: Slaviero
   twitter: marcoslaviero
-  pic: https://secure.gravatar.com/avatar/1d31ab9ed0e2db3dc4639a8003fa3654
+  pic: https://s.gravatar.com/avatar/1d31ab9ed0e2db3dc4639a8003fa3654
   title: "Fighting the Previous War (aka: Attacking and Defending in the Era of the Cloud)"
 
 - publish: true
@@ -370,7 +370,7 @@
   firstname: Neo  
   lastname: Ighodaro
   twitter: NeoIghodaro
-  pic: https://secure.gravatar.com/avatar/a9d51d7774599f6f10875cf529608f8c
+  pic: https://s.gravatar.com/avatar/a9d51d7774599f6f10875cf529608f8c
   title: "Building for the bad guys"
 
 - publish: true
@@ -378,7 +378,7 @@
   firstname: Justin  
   lastname: Worthe
   twitter: JWorthe
-  pic: https://secure.gravatar.com/avatar/0df3f488fa7b3feeed3d590e84024253
+  pic: https://s.gravatar.com/avatar/0df3f488fa7b3feeed3d590e84024253
   track: "Room 5"
   time: "17:00"
   title: "Make better music with Rust, WebAssembly, and some funky pointers"
