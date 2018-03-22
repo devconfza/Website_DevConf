@@ -154,12 +154,12 @@
   track_order: 2
   track: "Room 3"
   time: "10:30"
-  firstname: Michael 
-  lastname: Johnson
-  twitter: MikeJohnsonZA
-  pic: https://s.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
-  title: "You, your database and Continuous Delivery"
-
+  firstname: Janco 
+  lastname: Wolmarans
+  twitter: jancowol
+  pic: https://s.gravatar.com/avatar/91abf38359e80235ba1873fac8e10d5a
+  title: "Expanding Borders: How to grow beyond just the next popular tech stack."
+  
 - publish: true # MICROSOFT SPONSORED
   track_order: 2
   track: "Room 3"

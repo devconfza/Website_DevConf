@@ -139,7 +139,7 @@
   title1: "Brewing beer using Android Things"
   pic1: https://s.gravatar.com/avatar/5d9296a6ac72c9dcd471c1f470b6dca4
   name2: "Arjun Khoosal"
-  title2: "Let the magic happen"
+  title2: "Your job is not to write code"
   pic2: https://s.gravatar.com/avatar/fb6048c5e702d000e0c1a163cf2340b5
   name3: "Simon Stewart"
   title3: "Why shipping pet projects is so important"
@@ -249,11 +249,11 @@
   track_order: 3
   track: "Room 4"
   time: "11:25"
-  firstname: Michael 
-  lastname: Johnson
-  twitter: MikeJohnsonZA
-  pic: https://s.gravatar.com/avatar/ee7cd993327c60bac88d2075f4d6695d
-  title: "You, your database and Continuous Delivery"
+  firstname: Janco 
+  lastname: Wolmarans
+  twitter: jancowol
+  pic: https://s.gravatar.com/avatar/91abf38359e80235ba1873fac8e10d5a
+  title: "Expanding Borders: How to grow beyond just the next popular tech stack."
 
 - publish: true
   track_order: 3
