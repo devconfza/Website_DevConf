@@ -7,7 +7,7 @@
   lastname: Landsberg
   twitter: MelissaLands1
   pic: https://s.gravatar.com/avatar/5a4215165726358f87db8908ccf11ac1
-  track: "Room 1"
+  track: "OR Tambo"
   time: "10:30"
   title: "A junior's guide to full stack"
 
@@ -17,7 +17,7 @@
   lastname: Kruger
   twitter: tjmkruger
   pic: https://s.gravatar.com/avatar/0f7cdd38e48769c4388a415a6c6ff26a
-  track: "Room 1"
+  track: "OR Tambo"
   time: "11:25"
   title: "Adding graphs to your toolbox"
 
@@ -27,7 +27,7 @@
   lastname: Sibeko
   twitter: macgriffiths
   pic: https://s.gravatar.com/avatar/23e0ca111dd0440982ae22cc45f4f49f
-  track: "Room 1"
+  track: "OR Tambo"
   time: "13:00"
   title: "A .net standard future for everyone"
 
@@ -37,7 +37,7 @@
   lastname: Kalmer
   twitter: kennethkalmer
   pic: https://s.gravatar.com/avatar/8e033d0007374b14f6c213ede64d470b
-  track: "Room 1"
+  track: "OR Tambo"
   time: "13:55"
   title: "Reframing your next Single Page App"
 
@@ -47,13 +47,13 @@
   lastname: Nwamba
   twitter: codebeast
   pic: https://s.gravatar.com/avatar/ffeece649256f09f8d52ebc17a8cc5e3
-  track: "Room 1"
+  track: "OR Tambo"
   time: "14:50"
   title: "Building Offline Web Apps for the Next Billion Users"
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "OR Tambo"
   time: "16:05"
   firstname: Mike
   lastname: Geyser
@@ -63,7 +63,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "OR Tambo"
   time: "17:00"
   firstname: William
   lastname: Brander
@@ -80,11 +80,11 @@
   twitter: rouanw
   pic: https://s.gravatar.com/avatar/fc18f2b2a8326f1e95d76b0598d7ac19
   title: "The Curious Case of the Production Incident"
-  track: "Room 2"
+  track: "King Shaka"
   time: "10:30"
 
 - publish: true # LIGHTNING
-  track: "Room 2"
+  track: "King Shaka"
   time: "11:25"
   track_order: 1
   lightning: true
@@ -105,13 +105,13 @@
   lastname: Wiles
   twitter: pwiles
   pic: https://s.gravatar.com/avatar/afb3cebfdf2b7323d2d73c7192295f9f
-  track: "Room 2"
+  track: "King Shaka"
   time: "13:00"
   title: "The Courage to be a Professional Software Developer"
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "King Shaka"
   time: "13:55"
   firstname: Daniel 
   lastname: Irvine
@@ -125,13 +125,13 @@
   lastname: Page
   twitter: brendonpaginate
   pic: https://s.gravatar.com/avatar/c277d93e12300bdb6aaf107744566289
-  track: "Room 2"
+  track: "King Shaka"
   time: "14:50"
   title: "Build the Roof First"
 
 - publish: true # LIGHTNING TALK
   track_order: 1
-  track: "Room 2"
+  track: "King Shaka"
   time: "16:05"
   lightning: true
   details: "lightning2"
@@ -152,14 +152,14 @@
   twitter:  ozchihwayi
   pic: https://s.gravatar.com/avatar/36614445259289b20d64ed3be53a2564
   title: "Cultivating a Critical Thinking Mindset"
-  track: "Room 2"
+  track: "King Shaka"
   time: "17:00"
 
 ##############################  Room 3 #########################
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Cape Town"
   time: "10:30"
   firstname: Tim
   lastname: Lewis
@@ -169,7 +169,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Cape Town"
   time: "11:25"
   firstname: Amy
   lastname: Codes
@@ -179,7 +179,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Cape Town"
   time: "13:00"
   firstname: Willy-Peter 
   lastname: Schaub
@@ -189,7 +189,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Cape Town"
   time: "13:55"
   firstname: Chris 
   lastname: Tite
@@ -199,7 +199,7 @@
 
 - publish: true 
   track_order: 2
-  track: "Room 3"
+  track: "Cape Town"
   time: "14:50"
   pair: true
   firstname: Ryan # Future me, you need the base first & last name for looking up the content
@@ -219,7 +219,7 @@
   lastname: Cavanagh
   twitter: RogueCode
   pic: https://s.gravatar.com/avatar/f8770367eb08207b92e8c47009dd1491?
-  track: "Room 3"
+  track: "Cape Town"
   time: "16:05"
   title: "A WiFi-controlled Arduino-powered hand-held potato cannon"
 
@@ -229,7 +229,7 @@
   lastname: Barratt
   twitter: 
   pic: https://s.gravatar.com/avatar/9a95008440339a84bfdd33afde6f8fea
-  track: "Room 3"
+  track: "Cape Town"
   time: "17:00"
   title: "Why machine learning is going to be needed in every aspect of application development."    
 
@@ -241,13 +241,13 @@
   lastname: Shaw
   twitter: SQLintheWild
   pic: /public/images/speakers/GailShaw.jpg
-  track: "Room 4"
+  track: "Auditorium"
   time: "10:30"
   title: "Something, something, Data Science"
 
 - publish: true
   track_order: 3
-  track: "Room 4"
+  track: "Auditorium"
   time: "11:25"
   firstname: Janco 
   lastname: Wolmarans
@@ -257,7 +257,7 @@
 
 - publish: true
   track_order: 3
-  track: "Room 4"
+  track: "Auditorium"
   time: "13:00"
   firstname: Robert 
   lastname: Bravery
@@ -271,13 +271,13 @@
   lastname: Chikuse
   twitter: guruuswa ‏ 
   pic: https://s.gravatar.com/avatar/619584f7f57985c3ff82014c3a91a1c9
-  track: "Room 4"
+  track: "Auditorium"
   time: "13:55"
   title: "Blockchain is using enough juice to power Joburg"
 
 - publish: true
   track_order: 3
-  track: "Room 4"
+  track: "Auditorium"
   time: "14:50"
   firstname: Rishal  
   lastname: Hurbans
@@ -291,7 +291,7 @@
   lastname: Cronje
   twitter: dries139
   pic: https://s.gravatar.com/avatar/efd22de9a7721f1c30dd326e9dab35c6
-  track: "Room 4"
+  track: "Auditorium"
   time: "16:05"
   title: "Augment your reality."
 
@@ -301,7 +301,7 @@
   lastname: Young
   twitter: GerybBg
   pic: https://s.gravatar.com/avatar/55f1c869ec3ea1f3b84830a6d220150f
-  track: "Room 4"
+  track: "Auditorium"
   time: "17:00"
   title: "The physical web and beyond"
 
@@ -309,7 +309,7 @@
 
 - publish: true
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "10:30"
   firstname: Peter John 
   lastname: Welcome
@@ -319,7 +319,7 @@
 
 - publish: true
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "11:25"
   firstname: Rebecca  
   lastname: Franks
@@ -329,7 +329,7 @@
 
 - publish: true #MICROSOFT SPONSOR
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "13:00"
   firstname: Mohamed 
   lastname: Saif
@@ -339,7 +339,7 @@
 
 - publish: true # LIGHTNING
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "13:55"
   lightning: true
   details: "lightning3"
@@ -355,7 +355,7 @@
 
 - publish: true
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "14:50"
   firstname: Marco  
   lastname: Slaviero
@@ -365,7 +365,7 @@
 
 - publish: true
   track_order: 4
-  track: "Room 5"
+  track: "Marco Polo"
   time: "16:05"
   firstname: Neo  
   lastname: Ighodaro
@@ -379,6 +379,6 @@
   lastname: Worthe
   twitter: JWorthe
   pic: https://s.gravatar.com/avatar/0df3f488fa7b3feeed3d590e84024253
-  track: "Room 5"
+  track: "Marco Polo"
   time: "17:00"
   title: "Make better music with Rust, WebAssembly, and some funky pointers"
