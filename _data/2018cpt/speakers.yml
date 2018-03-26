@@ -2,7 +2,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "10:30"
   firstname: Oz  
   lastname: Chihwayi 
@@ -12,7 +12,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "11:25"
   firstname: Daniel 
   lastname: Irvine
@@ -22,7 +22,7 @@
 
 - publish: true #GOLD SPONSORS
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "13:00"
   firstname: Donovan
   lastname: Graham
@@ -32,7 +32,7 @@
 
 - publish: true # DVT SPONSOR
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "13:55"
   firstname: Mario
   lastname: Matthee
@@ -42,7 +42,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "14:50"
   firstname: Neo  
   lastname: Ighodaro
@@ -52,7 +52,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "16:05"
   firstname: Marco  
   lastname: Slaviero
@@ -62,7 +62,7 @@
 
 - publish: true
   track_order: 0
-  track: "Room 1"
+  track: "Orange"
   time: "17:00"
   pair: true
   firstname: Ryan # Future me, you need the base first & last name for looking up the content
@@ -80,7 +80,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "10:30" #OBSIDIAN SPONSORED
   firstname: Lisa 
   lastname: Schaffer
@@ -90,7 +90,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "11:25"
   firstname: Rishal  
   lastname: Hurbans
@@ -100,7 +100,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "13:00"
   firstname: Robert 
   lastname: Bravery
@@ -110,7 +110,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "13:55"
   firstname: Amy
   lastname: Codes
@@ -120,7 +120,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "14:50"
   firstname: Chris 
   lastname: Tite
@@ -130,7 +130,7 @@
 
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "16:05"
   firstname: Tim
   lastname: Lewis
@@ -140,7 +140,7 @@
  
 - publish: true
   track_order: 1
-  track: "Room 2"
+  track: "Tugela"
   time: "17:00"
   firstname: Willy-Peter 
   lastname: Schaub
@@ -152,7 +152,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "10:30"
   firstname: Janco 
   lastname: Wolmarans
@@ -162,7 +162,7 @@
   
 - publish: true # MICROSOFT SPONSORED
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "11:25"
   firstname: Mohamed 
   lastname: Saif
@@ -172,7 +172,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "13:00"
   firstname: Peter John 
   lastname: Welcome
@@ -182,7 +182,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "13:55"
   firstname: Rebecca  
   lastname: Franks
@@ -192,7 +192,7 @@
 
 - publish: true # BBD SPONSORED
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "14:50"
   firstname: Gergana  
   lastname: Young
@@ -202,7 +202,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "16:05"
   firstname: Mike
   lastname: Geyser
@@ -212,7 +212,7 @@
 
 - publish: true
   track_order: 2
-  track: "Room 3"
+  track: "Congo"
   time: "17:00"
   firstname: William
   lastname: Brander
