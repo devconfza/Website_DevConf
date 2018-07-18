@@ -1,12 +1,13 @@
-Welcome to the DevConf 2018 website
+Welcome to the DevConf Website
 
-# installation
+# Installation
+If you are on Windows see the then you need Ruby `choco install ruby` and node `choco install nodejs`.
+
 The website uses [Jekyll](https://jekyllrb.com/) so you need to install that first with `gem install jekyll`.
-If you are on Windows see the [special Windows instructions](https://jekyllrb.com/docs/windows/#installation).
 
 Once done you also need to run `gem install jekyll-redirect-from` to install the dependencies.
 
-Next is to run `npm install` to get gulp and the other tools we use installed.
+Next is to run `npm install` to get gulp and the other tools we use installed. You will likely need gulp too `npm install -g gulp` and `npm i -g gulp-cli`.
 
 # compile
 
