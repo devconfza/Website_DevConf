@@ -1,0 +1,366 @@
+﻿##############################  Main Room #########################
+
+- publish: false
+  track_order: 0
+  track: "Track 1"
+  time: "10:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 0
+  track: "Track 1"
+  time: "11:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 0
+  track: "Track 1"
+  time: "12:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false 
+  track_order: 0
+  track: "Track 1"
+  time: "13:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 0
+  track: "Track 1"
+  time: "14:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 0
+  track: "Track 1"
+  time: "16:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: true
+  track_order: 0
+  track: "Track 1"
+  time: "17:00"
+  firstname: Gerard 
+  lastname: de Jong
+  twitter: GDdeJong
+  pic: /public/images/speakers/2019/gerard.jpg
+  title: "Hacking satellites with Software Defined Radio (SDR)"
+  linkedin: gerarddiederikdejong
+
+##############################  Room 2 #########################
+
+- publish: false
+  track_order: 1
+  track: "Track 2"
+  time: "10:00" #OBSIDIAN SPONSORED
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 1
+  track: "Track 2"
+  time: "11:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 1
+  track: "Track 2"
+  time: "12:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: true
+  track_order: 1
+  track: "Track 2"
+  time: "13:40"
+  firstname: Justin
+  lastname: Slack
+  twitter: justin_r_slack
+  pic: /public/images/speakers/2019/justin.jpg
+  title: "Fonts on the web: past, present and future"
+  website: https://justinslack.com
+  linkedin: justinslack
+
+- publish: false
+  track_order: 1
+  track: "Track 2"
+  time: "14:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: true
+  track_order: 1
+  track: "Track 2"
+  time: "16:00"
+  firstname: Enrique  
+  lastname: Geldenhuys
+  twitter: _eegee_ 
+  pic: /public/images/speakers/2019/enrique.jpg
+  title: "Treating Problems Like Nails"
+  linkedin: enriquegeldenhuys
+ 
+- publish: false
+  track_order: 1
+  track: "Track 2"
+  time: "17:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+##############################  Room 3 #########################
+
+- publish: false
+  track_order: 2
+  track: "Track 3"
+  time: "10:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+  
+- publish: true 
+  track_order: 2
+  track: "Track 3"
+  time: "11:00"
+  firstname: Felix   
+  lastname: Wu
+  twitter: flxwu 
+  pic: /public/images/speakers/2019/felix.jpg
+  title: "Testing your tests’ quality - Introduction to Mutation Testing"
+  linkedin: felix-wu-de
+  website: https://flxwu.com
+
+- publish: false
+  track_order: 2
+  track: "Track 3"
+  time: "12:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 2
+  track: "Track 3"
+  time: "13:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false 
+  track_order: 2
+  track: "Track 3"
+  time: "14:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 2
+  track: "Track 3"
+  time: "16:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 2
+  track: "Track 3"
+  time: "17:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+##############################  Room 4 #########################
+
+- publish: false
+  track_order: 3
+  track: "Track 4"
+  time: "10:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+  
+- publish: false 
+  track_order: 3
+  track: "Track 4"
+  time: "11:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 3
+  track: "Track 4"
+  time: "12:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 3
+  track: "Track 4"
+  time: "13:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: true 
+  track_order: 3
+  track: "Track 4"
+  time: "14:40"
+  firstname: Jaap 
+  lastname: Coomans
+  twitter: JaapCoomans
+  pic: /public/images/speakers/2019/jaap.jpg
+  title: "Apache Kafka from the trenches: a practical guide"
+  linkedin: jaapcoomans
+
+- publish: false
+  track_order: 3
+  track: "Track 4"
+  time: "16:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 3
+  track: "Track 4"
+  time: "17:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+  ##############################  Room 5 #########################
+
+- publish: false
+  track_order: 4
+  track: "Track 5"
+  time: "10:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+  
+- publish: false 
+  track_order: 4
+  track: "Track 5"
+  time: "11:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 4
+  track: "Track 5"
+  time: "12:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: true
+  track_order: 4
+  track: "Track 5"
+  time: "13:40"
+  firstname: Gergana    
+  lastname: Young
+  twitter: GerybBg 
+  pic: /public/images/speakers/2019/gery.jpg
+  title: "The 'I' in IoT"
+
+- publish: false 
+  track_order: 4
+  track: "Track 5"
+  time: "14:40"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 4
+  track: "Track 5"
+  time: "16:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
+
+- publish: false
+  track_order: 4
+  track: "Track 5"
+  time: "17:00"
+  firstname:   
+  lastname:  
+  twitter:  
+  pic: /public/images/speakers/2019/ 
+  title: 
