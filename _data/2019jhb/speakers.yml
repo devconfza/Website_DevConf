@@ -180,15 +180,17 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 2
   track: "Track 3"
   time: "13:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Chris  
+  lastname: Tite
+  twitter: tite_chris 
+  pic: /public/images/speakers/2019/chris.jpg	
+  title: "Mentoring and growing stronger teams using Agile techniques"
+  website: http://www.christite.net/
+  linkedin: chris-tite-6b74901a
 
 - publish: false 
   track_order: 2
