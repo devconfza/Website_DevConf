@@ -20,15 +20,17 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Liz 
+  lastname: Spangenberg  
+  twitter: Lizz_S2
+  pic: /public/images/speakers/2019/lizz.jpg
+  website: https://medium.com/@Lizz_S2
+  linkedin: lizette-spangenberg-a8850b20
+  title: "Design tips for Android"
 
 - publish: false 
   track_order: 0
