@@ -95,15 +95,16 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Anna   
+  lastname: Migas  
+  twitter: szynszyliszys 
+  pic: /public/images/speakers/2019/anna.jpg 
+  title: "Fast but not furious: debugging user interaction performance issues"
+  linkedin: anna-migas-56575159
 
 - publish: false
   track_order: 1
