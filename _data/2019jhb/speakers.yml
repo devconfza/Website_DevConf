@@ -76,15 +76,15 @@
 
 ##############################  Room 2 #########################
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
-  time: "10:00" #OBSIDIAN SPONSORED
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  time: "10:00" 
+  firstname: William   
+  lastname: Brander
+  twitter: williambza 
+  pic: /public/images/speakers/2019/william.jpg
+  title: "Microfrontends as a solution to legacy JavaScript"
 
 - publish: false
   track_order: 1
@@ -227,15 +227,16 @@
 
 ##############################  Room 4 #########################
 
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "10:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Rory   
+  lastname: Preddy
+  twitter: rorypreddy  
+  pic: /public/images/speakers/2019/rory.jpg
+  title: "Programming for Accessibility"
+  linkedin: rorypreddy
   
 - publish: false 
   track_order: 3
