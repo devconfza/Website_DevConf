@@ -20,15 +20,16 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Madene  
+  lastname: Marais  
+  twitter: MadeneMarais 
+  pic: /public/images/speakers/2019/madene.jpg 
+  title: "Building a next generation web application"
+  linkedin: madene-marais 
 
 - publish: true 
   track_order: 0
@@ -45,7 +46,7 @@
 - publish: false
   track_order: 0
   track: "Track 1"
-  time: "14:40"
+  time: "15:00"
   firstname:   
   lastname:  
   twitter:  
@@ -106,25 +107,28 @@
   title: "Fast but not furious: debugging user interaction performance issues"
   linkedin: anna-migas-56575159
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
   time: "13:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Matt    
+  lastname: Cavanagh  
+  twitter: roguecode 
+  pic: /public/images/speakers/2019/matt.jpg
+  title: "Building a self-loading Arduino-powered Wi-Fi-controlled catapult for office warfare through simulation driven design"
+  website: http://blog.roguecode.com
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
-  time: "14:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  time: "15:00"
+  firstname: Ryan    
+  lastname: Kotzen 
+  twitter: eXigentCoder 
+  pic: /public/images/speakers/2019/ryan.jpg
+  title: "Zen and the Art of Developer Maintenance"
+  website: http://ryankotzen.com/
+  linkedin: ryan-kotzen-0a6665112
 
 - publish: false
   track_order: 1
@@ -181,20 +185,22 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 2
   track: "Track 3"
   time: "13:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Liam    
+  lastname: Norman 
+  twitter: liamjnorman 
+  pic: /public/images/speakers/2019/liam.jpg
+  title: "From Monolith To Microservices"
+  website: http://www.liamnorman.com/
+  linkedin: liam-norman-5528a44b
 
 - publish: false 
   track_order: 2
   track: "Track 3"
-  time: "14:40"
+  time: "15:00"
   firstname:   
   lastname:  
   twitter:  
@@ -246,15 +252,20 @@
   title: "Apache Kafka from the trenches: a practical guide"
   linkedin: jaapcoomans
 
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  pair: true
+  firstname: Tanya  # Future me, you need the base first & last name for looking up the content
+  lastname: "du Plessis"
+  firstname1: Tanya 
+  lastname1: "du Plessis"
+  firstname2: Riaan
+  lastname2: "du Plessis"
+  pic1: /public/images/speakers/2019/tanya.jpg
+  pic2: /public/images/speakers/2019/riaan.jpg
+  title: "Burnout - A Burning Issue"
 
 - publish: false
   track_order: 3
@@ -266,15 +277,16 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false 
+- publish: true 
   track_order: 3
   track: "Track 4"
-  time: "14:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  time: "15:00"
+  firstname: Chris    
+  lastname: Dawson
+  twitter: chrisdawson 
+  pic: /public/images/speakers/2019/chrisd.jpg 
+  title: "Why I decided to ditch dev and dive into UX" 
+  linkedin: chrisdawson24
 
 - publish: false
   track_order: 3
