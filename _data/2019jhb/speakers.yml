@@ -10,15 +10,17 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "11:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Jade    
+  lastname: Abbott  
+  twitter: alienelf 
+  pic: /public/images/speakers/2019/jade.jpg
+  title: "Cloud Shootout!" 
+  website: https://medium.com/@alienelf
+  linkedin: jade-abbott-5b3a692a
 
 - publish: true
   track_order: 0
@@ -165,9 +167,9 @@
   time: "10:00"
   firstname: Christina   
   lastname: Burger 
-  twitter: "Where Have All the Women Gone?"  
+  twitter: pypmannetjies
   pic: /public/images/speakers/2019/christina.jpg 
-  title: pypmannetjies
+  title: "Where Have All the Women Gone?"
   linkedin: christienkroeze 
   
 - publish: true 
@@ -215,15 +217,17 @@
   title: "Why I decided to ditch dev and dive into UX" 
   linkedin: chrisdawson24
 
-- publish: false
+- publish: true
   track_order: 2
   track: "Track 3"
   time: "16:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Kevin   
+  lastname: Trethewey 
+  twitter: kevintrethewey 
+  pic: /public/images/speakers/2019/kevin.jpg
+  title: "When creating software, what Really Matters?"
+  website: https://kevintrethewey.com
+  linkedin: kevint
 
 - publish: true
   track_order: 2
@@ -250,17 +254,18 @@
   title: "Programming for Accessibility"
   linkedin: rorypreddy
   
-- publish: false 
+- publish: true 
   track_order: 3
   track: "Track 4"
   time: "11:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Claire   
+  lastname: Wood
+  twitter: oscarwhiskylima 
+  pic: /public/images/speakers/2019/claire.jpg 
+  title: "Pink Hardhats and other Anomalies"
+  linkedin: claire-wood-56875018
 
-- publish: false
+- publish: false 
   track_order: 3
   track: "Track 4"
   time: "12:00"
@@ -302,27 +307,29 @@
   title: "How to build a scaled down version of a self-driving car?"
   linkedin: saurabhagrawal86
 
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "17:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Sewagodimo   
+  lastname: Matlapeng 
+  twitter: sewagodimo_m
+  pic: /public/images/speakers/2019/sewagodimo.jpg 
+  title: "From Zero to kind of hero: Getting your Python side project ready for deployment"
 
   ##############################  Room 5 #########################
 
-- publish: false
+- publish: true
   track_order: 4
   track: "Track 5"
   time: "10:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Gareth   
+  lastname: Stephenson 
+  twitter: garethstep
+  pic: /public/images/speakers/2019/gareth.jpg
+  title: "Mob Programming and Personality Traits, a controlled experiment"
+  website: http://www.netdev.co.za/
+  linkedin: gareth-stephenson-b3382a148
   
 - publish: true 
   track_order: 4
