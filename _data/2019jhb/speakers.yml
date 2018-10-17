@@ -343,15 +343,16 @@
   website: http://ryankotzen.com/
   linkedin: ryan-kotzen-0a6665112
 
-- publish: false
+- publish: true
   track_order: 4
   track: "Track 5"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Helge   
+  lastname: Reikeras 
+  twitter: hreikeras 
+  pic: /public/images/speakers/2019/helge.jpg 
+  title: "Data Science and Machine Learning Tools for Developers"
+  linkedin: hreikeras
 
 - publish: true
   track_order: 4

@@ -305,12 +305,13 @@
   pic: /public/images/speakers/2019/ 
   title: 
 
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "17:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Helge   
+  lastname: Reikeras 
+  twitter: hreikeras 
+  pic: /public/images/speakers/2019/helge.jpg 
+  title: "Data Science and Machine Learning Tools for Developers"
+  linkedin: hreikeras

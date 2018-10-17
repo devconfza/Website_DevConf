@@ -39,6 +39,11 @@
 				<i class="fa fa-linkedin"></i>
 			</a>
 			{% endif %}
+			{% if speaker.website.size > 0 %}
+			<a href="{{ speaker.website }}" rel="noopener noreferrer" target="_blank">
+				<i class="fa fa-globe"></i>
+			</a>
+			{% endif %}
 			<i class="fa fa-info"></i>
 			{% if speaker.slides.size > 0 %}
 			<a href="{{ speaker.slides }}" rel="noopener noreferrer" target="_blank">

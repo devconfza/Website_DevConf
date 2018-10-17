@@ -12,6 +12,7 @@
     img {
         width: 100%;
         border: 1px solid white;
+        width: 200px;
     }
     .break {
         color: white;
@@ -19,7 +20,6 @@
         border-radius: 8px;
         margin: 10px 0px;
         padding: 4px;
-        max-width: 320px;
         font-size: 16px;
     }
     .pic-box {
@@ -30,6 +30,10 @@
         background-color: @brand-primary;
         padding: 15px;
         margin-bottom: 2px;
+        height: 500px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
         cursor: pointer;
         a {
             color: @brand-2; //@gray-lighter; 
@@ -44,14 +48,14 @@
             padding: 15px;
             display: inline-block;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 20px;
             min-height: 64px;
         }
         .lightningname {
             color: @brand-3; //@gray-lighter;            
             display: inline-block;
             font-weight: bold;
-            font-size: 12px;            
+            font-size: 12px;
         }
         .time {
             color: @gray-lighter;
@@ -137,10 +141,30 @@
 //992px;
 @media (min-width:@screen-md-min) {
     .speakers {
+        .name {
+            font-size: 12px !important;
+        }
+        .social {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+        }
         .break {
             max-width: none;
         }
+        img {
+            width: 100%;
+            border: 1px solid white;
+        }
         .pic-box {
+            height: 415px;
+            bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            left: 0;
+            right: 0;
             .title {
                 font-size: 13px;
             }
