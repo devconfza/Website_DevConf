@@ -5,14 +5,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="social">
-                    {% if speaker.twitter.size > 0 %}
-                    <a href="http://www.twitter.com/{{ speaker.twitter }}" rel="noopener noreferrer" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    {% endif %} 
-                </div>
+                </button>               
                 {% if speaker.pair == true %}
                 <h4 class="modal-title">
                     {{ speaker.firstname1 }} {{ speaker.lastname1 }} and {{ speaker.firstname2 }} {{ speaker.lastname2 }}
