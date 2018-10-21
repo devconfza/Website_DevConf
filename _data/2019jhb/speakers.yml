@@ -265,15 +265,16 @@
   title: "Pink Hardhats and other Anomalies"
   linkedin: claire-wood-56875018
 
-- publish: false 
+- publish: true 
   track_order: 3
   track: "Track 4"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Karl   
+  lastname: Fischer 
+  twitter: kmf 
+  pic: /public/images/speakers/2019/karl.jpg
+  title: "Where Test-driven development and Infrastructure as code have a love child"
+  website: https://kmf.co
 
 - publish: false
   track_order: 3

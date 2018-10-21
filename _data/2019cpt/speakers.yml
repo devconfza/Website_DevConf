@@ -295,15 +295,16 @@
   title: "Why I decided to ditch dev and dive into UX" 
   linkedin: chrisdawson24
 
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "16:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Karl   
+  lastname: Fischer 
+  twitter: kmf 
+  pic: /public/images/speakers/2019/karl.jpg
+  title: "Where Test-driven development and Infrastructure as code have a love child"
+  website: https://kmf.co
 
 - publish: true
   track_order: 3
