@@ -43,13 +43,18 @@
     function capeTown() {
         countDown(new Date(2019, 2, 26, 9, 0, 0), 'capetown');
     }
-
+ 
     $(function () {
         $("#currentYear").text((new Date()).getFullYear());
         joburg();
         capeTown();
         setInterval(joburg, 1000);
         setInterval(capeTown, 1000);
+  
+        var profilePosition = window.location.href.indexOf('/#profile');
+        if (profilePosition > -1) {
+            var profileToOpen = `#${window.location.href.substring(profilePosition+10)}Modal`;
+            $(profileToOpen).modal('show')
+        }
     });
-
 </script>

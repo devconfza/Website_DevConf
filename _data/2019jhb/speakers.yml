@@ -123,15 +123,17 @@
   website: https://justinslack.com
   linkedin: justinslack
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
   time: "15:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Robert   
+  lastname: Bravery 
+  twitter:  robertbravery
+  pic: /public/images/speakers/2019/robert.jpg
+  title: "Using AI for facial recognition to understand emotion, gender and age"
+  website: http://www.integralwebsolutions.co.za/Blog.aspx
+  linkedin: integralwebsolutions
 
 - publish: true
   track_order: 1
