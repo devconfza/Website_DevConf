@@ -43,18 +43,33 @@
     function capeTown() {
         countDown(new Date(2019, 2, 26, 9, 0, 0), 'capetown');
     }
- 
+
     $(function () {
         $("#currentYear").text((new Date()).getFullYear());
         joburg();
         capeTown();
         setInterval(joburg, 1000);
         setInterval(capeTown, 1000);
-  
+
+        function scrollToCorrectSpeakersSection(section) {
+            return $(':root').scrollTop($('#speakers').offset().top)
+                .find(`a[href="#speakers${section}"]`).tab('show');
+        }
+
+        var speakersPosition = window.location.href.indexOf('/#speakers');
+        if (speakersPosition > -1) {
+            var speakerSectionToOpen = window.location.href.substring(speakersPosition + 10).trim();
+            if (speakerSectionToOpen.length > 0) {
+                scrollToCorrectSpeakersSection(speakerSectionToOpen);
+            }
+        }
+
         var profilePosition = window.location.href.indexOf('/#profile');
         if (profilePosition > -1) {
-            var profileToOpen = `#${window.location.href.substring(profilePosition+10)}Modal`;
-            $(profileToOpen).modal('show')
-        }
+            var speakerProfile = window.location.href.substring(profilePosition + 10);
+            var profileToOpen = `#${speakerProfile}Modal`;
+            scrollToCorrectSpeakersSection(speakerProfile.substring(speakerProfile.length - 7)).end()
+                .find(profileToOpen).modal('show');
+        } 
     });
 </script>
