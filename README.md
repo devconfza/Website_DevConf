@@ -19,4 +19,10 @@ jekyll build
 ```
 
 You can swop `build` for `serve` to run the web server which does incremental updates as you change files.
+
+---
+
+Useful tools
+- https://www.textfixer.com/html/convert-text-html.php
+- https://app.grammarly.com
   
