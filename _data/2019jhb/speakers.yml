@@ -89,15 +89,15 @@
   pic: /public/images/speakers/2019/william.jpg
   title: "Microfrontends as a solution to legacy JavaScript"
 
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
   time: "11:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Stephen
+  lastname: James Smith
+  pic: /public/images/hl3confirmed.jpg
+  title: "How Micro Focus is including Security in their DevOps product pipelines, what SAST and DAST are and how they work"
+  linkedin: stephen-smith-0134b621
 
 - publish: true
   track_order: 1
