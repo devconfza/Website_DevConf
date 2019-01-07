@@ -44,15 +44,16 @@
   linkedin: felix-wu-de
   website: https://flxwu.com
 
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "15:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Craig   
+  lastname: Risi
+  twitter: RisiCraig
+  pic: /public/images/speakers/2019/craig.jpg
+  title: "Moving from sedan to sports car – Building for Software Performance"
+  linkedin: craig-risi-25608986
 
 - publish: true
   track_order: 0
