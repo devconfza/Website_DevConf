@@ -186,15 +186,14 @@
   linkedin: felix-wu-de
   website: https://flxwu.com
 
-- publish: false
+- publish: true
   track_order: 2
   track: "Track 3"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Barry   
+  lastname: Jordan 
+  pic: /public/images/speakers/2019/barry.jpg
+  title: Fit For Purpose – Golang as a driver for simpler, more efficient Micro Services
 
 - publish: true
   track_order: 2
