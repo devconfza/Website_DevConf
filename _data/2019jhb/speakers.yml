@@ -1,6 +1,6 @@
 ﻿##############################  Main Room #########################
 
-- publish: false
+- publish: false 
   track_order: 0
   track: "Track 1"
   time: "10:00"
@@ -8,7 +8,7 @@
   lastname:  
   twitter:  
   pic: /public/images/speakers/2019/ 
-  title: 
+  title: # JHB DIAMOND	
 
 - publish: true
   track_order: 0
@@ -48,7 +48,7 @@
 - publish: true
   track_order: 0
   track: "Track 1"
-  time: "15:00"
+  time: "14:40"
   firstname: Anna   
   lastname: Migas  
   twitter: szynszyliszys 
@@ -56,6 +56,7 @@
   title: "Fast but not furious: debugging user interaction performance issues"
   linkedin: anna-migas-56575159
 
+# Synthesis sponsor
 - publish: false
   track_order: 0
   track: "Track 1"
@@ -89,6 +90,7 @@
   pic: /public/images/speakers/2019/william.jpg
   title: "Microfrontends as a solution to legacy JavaScript"
 
+# MICRO FOCUS SPONSOR
 - publish: true
   track_order: 1
   track: "Track 2"
@@ -97,7 +99,7 @@
   lastname: James Smith
   pic: /public/images/hl3confirmed.jpg
   title: "How Micro Focus is including Security in their DevOps product pipelines, what SAST and DAST are and how they work"
-  linkedin: stephen-smith-0134b621
+  linkedin: stephen-smith-0134b621 
 
 - publish: true
   track_order: 1
@@ -126,7 +128,7 @@
 - publish: true
   track_order: 1
   track: "Track 2"
-  time: "15:00"
+  time: "14:40"
   firstname: Robert   
   lastname: Bravery 
   twitter:  robertbravery
@@ -186,6 +188,7 @@
   linkedin: felix-wu-de
   website: https://flxwu.com
 
+# ALLAN GRAY SPONSOR
 - publish: true
   track_order: 2
   track: "Track 3"
@@ -210,7 +213,7 @@
 - publish: true 
   track_order: 2
   track: "Track 3"
-  time: "15:00"
+  time: "14:40"
   firstname: Chris    
   lastname: Dawson
   twitter: chrisdawson 
@@ -277,6 +280,7 @@
   title: "Where Test-driven development and Infrastructure as code have a love child"
   website: https://kmf.co
 
+# Obsidian Sponsor
 - publish: false
   track_order: 3
   track: "Track 4"
@@ -290,7 +294,7 @@
 - publish: true 
   track_order: 3
   track: "Track 4"
-  time: "15:00"
+  time: "14:40"
   firstname: Jaap 
   lastname: Coomans
   twitter: JaapCoomans
@@ -366,10 +370,11 @@
   pic: /public/images/speakers/2019/gery.jpg
   title: "The 'I' in IoT"
 
+# EOH Sponsor
 - publish: false 
   track_order: 4
   track: "Track 5"
-  time: "15:00"
+  time: "14:40"
   firstname:   
   lastname:  
   twitter:  

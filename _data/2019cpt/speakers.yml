@@ -1,5 +1,6 @@
 ﻿##############################  Main Room #########################
 
+#DIAMOND SPONSOR
 - publish: false
   track_order: 0
   track: "Track 1"
@@ -44,10 +45,11 @@
   linkedin: felix-wu-de
   website: https://flxwu.com
 
+# ALLEN GREY SPONSOR
 - publish: true
   track_order: 0
   track: "Track 1"
-  time: "15:00"
+  time: "14:40"
   firstname: Craig   
   lastname: Risi
   twitter: RisiCraig
@@ -90,6 +92,7 @@
   pic: /public/images/speakers/2019/william.jpg
   title: "Microfrontends as a solution to legacy JavaScript"
 
+# Obsidian sponsor
 - publish: false
   track_order: 1
   track: "Track 2"
@@ -125,7 +128,7 @@
 - publish: true
   track_order: 1
   track: "Track 2"
-  time: "15:00"
+  time: "14:40"
   firstname: Ryan    
   lastname: Kotzen 
   twitter: eXigentCoder 
@@ -134,6 +137,7 @@
   website: http://ryankotzen.com/
   linkedin: ryan-kotzen-0a6665112
 
+# TFG SPONSOR
 - publish: false
   track_order: 1
   track: "Track 2"
@@ -181,6 +185,7 @@
   website: https://medium.com/@alienelf
   linkedin: jade-abbott-5b3a692a
 
+# PLATINUNM SPONSOR 2
 - publish: false
   track_order: 2
   track: "Track 3"
@@ -206,7 +211,7 @@
 - publish: true 
   track_order: 2
   track: "Track 3"
-  time: "15:00"
+  time: "14:40"
   firstname: Robert   
   lastname: Bravery 
   twitter:  robertbravery
@@ -277,6 +282,7 @@
   pic2: /public/images/speakers/2019/riaan.jpg
   title: "Burnout - A Burning Issue"
 
+# PLATINUNM SPONSOR 3
 - publish: false
   track_order: 3
   track: "Track 4"
@@ -290,7 +296,7 @@
 - publish: true 
   track_order: 3
   track: "Track 4"
-  time: "15:00"
+  time: "14:40"
   firstname: Chris    
   lastname: Dawson
   twitter: chrisdawson 
