@@ -56,7 +56,7 @@
   title: "Fast but not furious: debugging user interaction performance issues"
   linkedin: anna-migas-56575159
 
-# Synthesis sponsor
+# EOH sponsor
 - publish: false
   track_order: 0
   track: "Track 1"
@@ -370,16 +370,15 @@
   pic: /public/images/speakers/2019/gery.jpg
   title: "The 'I' in IoT"
 
-# EOH Sponsor
-- publish: false 
+# Synthesis Sponsor
+- publish: true	 
   track_order: 4
   track: "Track 5"
   time: "14:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Tom   
+  lastname: Wells
+  pic: /public/images/speakers/2019/tom.jpg
+  title: "RESTful must die! Challenges building realtime AI at hyper-scale."
 
 - publish: true
   track_order: 4
