@@ -57,15 +57,17 @@
   linkedin: anna-migas-56575159
 
 # EOH sponsor
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "16:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Greg   
+  lastname: Fullard  
+  twitter: gregfullard
+  pic: /public/images/speakers/2019/greg.jpg
+  title: "Understanding the Kruger-Dunning Effect on Photography, Competitive Cycling and Software Development"
+  website: http://www.softwarehippie.com/
+  linkedin: gregfullard
 
 - publish: true
   track_order: 0

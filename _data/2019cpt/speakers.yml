@@ -172,7 +172,7 @@
   website: https://justinslack.com
   linkedin: justinslack
   
-- publish: false 
+- publish: true 
   track_order: 2
   track: "Track 3"
   time: "11:00"
