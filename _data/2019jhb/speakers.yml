@@ -283,15 +283,16 @@
   website: https://kmf.co
 
 # Obsidian Sponsor
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "13:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Ian   
+  lastname: Buchanan
+  twitter: devpartisan
+  pic: /public/images/speakers/2019/ian.jpg
+  title: "Why everything you learned about CI/CD is wrong"
+  linkedin: ianbuchanan
 
 - publish: true 
   track_order: 3

@@ -93,15 +93,16 @@
   title: "Microfrontends as a solution to legacy JavaScript"
 
 # Obsidian sponsor
-- publish: false
+- publish: true
   track_order: 1
   track: "Track 2"
   time: "11:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Ian   
+  lastname: Buchanan
+  twitter: devpartisan
+  pic: /public/images/speakers/2019/ian.jpg
+  title: "Why everything you learned about CI/CD is wrong"
+  linkedin: ianbuchanan
 
 - publish: true
   track_order: 1
