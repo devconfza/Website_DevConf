@@ -186,15 +186,14 @@
   linkedin: jade-abbott-5b3a692a
 
 # PLATINUNM SPONSOR 2
-- publish: false
+- publish: true
   track_order: 2
   track: "Track 3"
   time: "12:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Phillip    
+  lastname: Kruger 
+  pic: /public/images/speakers/2019/phillip.jpg 
+  title: "Modern application services with OpenShift"
 
 - publish: true
   track_order: 2
