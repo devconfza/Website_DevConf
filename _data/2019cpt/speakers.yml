@@ -194,6 +194,7 @@
   lastname: Kruger 
   pic: /public/images/speakers/2019/phillip.jpg 
   title: "Modern application services with OpenShift"
+  linkedin: phillipkruger
 
 - publish: true
   track_order: 2
@@ -282,15 +283,14 @@
   title: "Burnout - A Burning Issue"
 
 # PLATINUNM SPONSOR 3
-- publish: false
+- publish: true
   track_order: 3
   track: "Track 4"
   time: "13:40"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Quintin   
+  lastname: "De Kok" 
+  pic: /public/images/speakers/2019/quintin.jpg 
+  title: "Scaling out at Netstar using Open Source and Cloud"
 
 - publish: true 
   track_order: 3
