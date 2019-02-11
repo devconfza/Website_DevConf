@@ -1,15 +1,16 @@
 ﻿##############################  Main Room #########################
 
 #DIAMOND SPONSOR
-- publish: false
+- publish: true
   track_order: 0
   track: "Track 1"
   time: "10:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: 
+  firstname: Cleopatra   
+  lastname: Douglas  
+  twitter: succedor23   
+  pic: /public/images/hl3confirmed.jpg 
+  title: "Scaling your product for Africa" 
+  linkedin: cleopatra-douglas-68458590
 
 - publish: true
   track_order: 0
@@ -291,6 +292,8 @@
   lastname: "De Kok" 
   pic: /public/images/speakers/2019/quintin.jpg 
   title: "Scaling out at Netstar using Open Source and Cloud"
+  twitter: quintindk
+  linkedin: quintindk
 
 - publish: true 
   track_order: 3

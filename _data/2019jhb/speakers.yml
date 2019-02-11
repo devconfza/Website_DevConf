@@ -1,14 +1,13 @@
 ﻿##############################  Main Room #########################
 
-- publish: false 
+- publish: true 
   track_order: 0
   track: "Track 1"
   time: "10:00"
-  firstname:   
-  lastname:  
-  twitter:  
-  pic: /public/images/speakers/2019/ 
-  title: # JHB DIAMOND	
+  firstname: Quraish     
+  lastname: Behari    
+  pic: /public/images/speakers/2019/quraish.jpg 
+  title: "The power of tech is not tech"
 
 - publish: true
   track_order: 0
