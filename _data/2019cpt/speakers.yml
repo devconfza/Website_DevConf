@@ -291,7 +291,7 @@
   firstname: Quintin   
   lastname: "De Kok" 
   pic: /public/images/speakers/2019/quintin.jpg 
-  title: "Scaling out at Netstar using Open Source and Cloud"
+  title: "Infrastructure as Code on Azure AKS"
   twitter: quintindk
   linkedin: quintindk
 
