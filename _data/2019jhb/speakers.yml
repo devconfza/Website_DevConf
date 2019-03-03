@@ -2,7 +2,7 @@
 
 - publish: true 
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "10:00"
   firstname: Quraish     
   lastname: Behari    
@@ -12,7 +12,7 @@
 
 - publish: true
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "11:00"
   firstname: Jade    
   lastname: Abbott  
@@ -24,7 +24,7 @@
 
 - publish: true
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "12:00"
   firstname: Liz 
   lastname: Spangenberg  
@@ -36,7 +36,7 @@
 
 - publish: true 
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "13:40"
   firstname: Matt    
   lastname: Cavanagh  
@@ -47,7 +47,7 @@
 
 - publish: true
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "14:40"
   firstname: Anna   
   lastname: Migas  
@@ -59,7 +59,7 @@
 # EOH sponsor
 - publish: true
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "16:00"
   firstname: Greg   
   lastname: Fullard  
@@ -71,7 +71,7 @@
 
 - publish: true
   track_order: 0
-  track: "Track 1"
+  track: "The Dome"
   time: "17:00"
   firstname: Gerard 
   lastname: de Jong
@@ -84,7 +84,7 @@
 
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "10:00" 
   firstname: William   
   lastname: Brander
@@ -95,7 +95,7 @@
 # MICRO FOCUS SPONSOR
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "11:00"
   firstname: Stephen
   lastname: James Smith
@@ -105,7 +105,7 @@
 
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "12:00"
   firstname: Liam    
   lastname: Norman 
@@ -117,7 +117,7 @@
 
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "13:40"
   firstname: Justin
   lastname: Slack
@@ -129,7 +129,7 @@
 
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "14:40"
   firstname: Robert   
   lastname: Bravery 
@@ -141,7 +141,7 @@
 
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "16:00"
   firstname: Enrique  
   lastname: Geldenhuys
@@ -152,7 +152,7 @@
  
 - publish: true
   track_order: 1
-  track: "Track 2"
+  track: "Talk 100"
   time: "17:00"
   pair: true
   firstname: Tanya  # Future me, you need the base first & last name for looking up the content
@@ -169,7 +169,7 @@
 
 - publish: true
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "10:00"
   firstname: Christina   
   lastname: Burger 
@@ -180,7 +180,7 @@
   
 - publish: true 
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "11:00"
   firstname: Felix   
   lastname: Wu
@@ -193,7 +193,7 @@
 # ALLAN GRAY SPONSOR
 - publish: true
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "12:00"
   firstname: Barry   
   lastname: Jordan 
@@ -202,7 +202,7 @@
 
 - publish: true
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "13:40"
   firstname: Chris  
   lastname: Tite
@@ -214,7 +214,7 @@
 
 - publish: true 
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "14:40"
   firstname: Chris    
   lastname: Dawson
@@ -225,7 +225,7 @@
 
 - publish: true
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "16:00"
   firstname: Kevin   
   lastname: Trethewey 
@@ -237,7 +237,7 @@
 
 - publish: true
   track_order: 2
-  track: "Track 3"
+  track: "Talk 200"
   time: "17:00"
   firstname: Pamela   
   lastname: Hill 
@@ -251,7 +251,7 @@
 
 - publish: true
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "10:00"
   firstname: Rory   
   lastname: Preddy
@@ -262,7 +262,7 @@
   
 - publish: true 
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "11:00"
   firstname: Claire   
   lastname: Wood
@@ -273,7 +273,7 @@
 
 - publish: true 
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "12:00"
   firstname: Karl   
   lastname: Fischer 
@@ -285,7 +285,7 @@
 # Obsidian Sponsor
 - publish: true
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "13:40"
   firstname: Ian   
   lastname: Buchanan
@@ -296,7 +296,7 @@
 
 - publish: true 
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "14:40"
   firstname: Jaap 
   lastname: Coomans
@@ -307,7 +307,7 @@
 
 - publish: true
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "16:00"
   firstname: Saurabh   
   lastname: Agrawal  
@@ -318,7 +318,7 @@
 
 - publish: true
   track_order: 3
-  track: "Track 4"
+  track: "Gig 1 & 2"
   time: "17:00"
   firstname: Sewagodimo   
   lastname: Matlapeng 
@@ -330,7 +330,7 @@
 
 - publish: true
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "10:00"
   firstname: Gareth   
   lastname: Stephenson 
@@ -342,7 +342,7 @@
   
 - publish: true 
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "11:00"
   firstname: Ryan    
   lastname: Kotzen 
@@ -354,7 +354,7 @@
 
 - publish: true
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "12:00"
   firstname: Helge   
   lastname: Reikeras 
@@ -365,7 +365,7 @@
 
 - publish: true
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "13:40"
   firstname: Gergana    
   lastname: Young
@@ -376,7 +376,7 @@
 # Synthesis Sponsor
 - publish: true	 
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "14:40"
   firstname: Tom   
   lastname: Wells
@@ -385,7 +385,7 @@
 
 - publish: true
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "16:00"
   firstname: Madene  
   lastname: Marais  
@@ -396,7 +396,7 @@
 
 - publish: true
   track_order: 4
-  track: "Track 5"
+  track: "Gig 3 & 4"
   time: "17:00"
   firstname: Mike    
   lastname: Geyser

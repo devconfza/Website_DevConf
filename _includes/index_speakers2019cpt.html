@@ -1,12 +1,12 @@
 <section class="section-light speakers">
 
-	<!--<div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<a href="/public/images/agenda.png" download="agenda.png">Download the agenda</a>
+				<a href="/public/docs/agenda.pdf">Download the agenda</a>
 			</div>
 		</div>
-	</div>-->
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -29,6 +29,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
@@ -38,6 +39,13 @@
 	</div>
 	<div class="container">
 		{% include keynote_row_2019.html location='cpt' %}
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<p class="break">10h00 → <b>Unpanel is Opens</b> ← 17h50</p>
+			</div>
+		</div>
 	</div>
 
 	{% assign agendaSpeakers = (site.data.2019cpt.speakers | sort: 'time' | group_by: 'time') %} 
