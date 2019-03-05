@@ -382,6 +382,7 @@
   lastname: Wells
   pic: /public/images/speakers/2019/tom.jpg
   title: "RESTful must die! Challenges building realtime AI at hyper-scale."
+  linkedin: https://www.linkedin.com/in/tomwells80/
 
 - publish: true
   track_order: 4
