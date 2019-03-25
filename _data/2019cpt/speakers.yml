@@ -5,12 +5,10 @@
   track_order: 0
   track: "Orange Room"
   time: "10:00"
-  firstname: Cleopatra   
-  lastname: Douglas  
-  twitter: succedor23   
-  pic: /public/images/speakers/2019/cleopatria.jpg
-  title: "Scaling your product for Africa" 
-  linkedin: cleopatra-douglas-68458590
+  firstname: Various   
+  lastname: Speakers 
+  pic: /public/images/hl3confirmed.jpg
+  title: "Panel discussion on The Age of the Modern Developer"
 
 - publish: true
   track_order: 0
