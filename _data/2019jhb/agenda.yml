@@ -29,41 +29,41 @@
   sessionIndex: 2
 
 - type: break
-  start: "12:50"
-  length: 50
+  start: "13:20"
+  length: 40
   title: 'Lunch'
 
 - type: session
-  start: "13:40"
+  start: "14:00"
   length: 50
   sessionIndex: 3
 
 - type: break
-  start: "14:30"
+  start: "14:50"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "14:40"
+  start: "15:00"
   length: 50
   sessionIndex: 4
 
 - type: break
-  start: "15:30"
-  length: 30
+  start: "15:50"
+  length: 20
   title: 'Movement, Networking, &amp; Snacks'
 
 - type: session
-  start: "16:00"
+  start: "16:10"
   length: 50
   sessionIndex: 5
 
 - type: break
-  start: "16:50"
+  start: "17:00"
   length: 10
   title: 'Movement'
 
 - type: session
-  start: "17:00"
+  start: "17:10"
   length: 50
   sessionIndex: 6
