@@ -1,0 +1,23 @@
+tickets:
+  cpt_wait: https://www.google.com
+  cpt: https://www.google.com
+  jhb: https://www.google.com
+  jhb_wait: https://www.google.com
+  cpt_sell: false
+  jhb_sell: false
+
+events:
+  - location: "Cape Town"
+    date: "31 March 2020"
+    info: "/capetown"
+  - location: "Johannesburg"
+    date: "2 April 2020"
+    info: "/johannesburg"
+
+sponsorLevels:
+  - level: 10
+    title: "Diamond"
+  - level: 20
+    title: "Platinum"
+  - level: 30
+    title: "Gold"

@@ -1,0 +1,395 @@
+@import 'choose-contrast-color.scss';
+$brandpink: #fc003d;
+$brandblue: #000d28;
+$mobileWidth: 700px;
+
+a {
+    color: $brandpink;
+
+    &:hover {
+        color: lighten($brandpink, 10);
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: Helvetica, 'Segoe UI', Verdana, sans-serif;
+    color: rgb(10, 10, 10);
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: 0.03rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: $brandblue;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    font-weight: bolder;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $brandpink;
+        }
+    }
+
+    .left {
+        justify-self: start;
+    }
+
+    .right {
+        @media (max-width: $mobileWidth) {
+            visibility: hidden;
+        }
+
+        justify-self: end;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 10px;
+
+        .spacer {
+            color: rgb(197, 197, 197);
+        }
+    }
+}
+
+.hero {
+    background-image: url("/public/images/Background_Web.jpg");
+    background-color: $brandblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    grid-row-gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .brand {
+        display: grid;
+        justify-items: center;
+
+        img {
+            max-width: 80%;
+            max-height: 100px;
+            object-fit: contain;
+        }
+    }
+
+    .eventbananas {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        row-gap: 10px;
+
+        .event {
+            display: grid;
+            grid-row-gap: 10px;
+            justify-content: center;
+
+            .location {
+                font-size: 1.6rem;
+                color: $brandpink;
+                font-weight: bolder;
+            }
+
+            .countdown {}
+        }
+    }
+
+    .mailingList {
+        font-size: 0.9rem;
+
+        .input-group {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input {
+            border: 0;
+            padding: 5px;
+
+            &[type=submit] {
+                background: $brandblue;
+                color: white;
+                border-color: darken($brandpink, 25);
+                border-width: 1px;
+                border-style: solid;
+
+                &:hover {
+                    background: $brandpink;
+                }
+            }
+        }
+
+        a {
+            color: $brandpink;
+
+            &:hover {
+                color: lighten($brandpink, 10);
+            }
+        }
+    }
+}
+
+.content {
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: white;
+    line-height: 180%;
+
+    .highlight {
+        font-weight: bold;
+        color: $brandpink;
+    }
+
+    .seperator {
+        width: 100%;
+        height: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom-color: $brandblue;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .sectionTitle {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: $brandpink;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        letter-spacing: -0.02rem;
+    }
+
+    .subSectionTitle {
+        @extend .sectionTitle;
+        color: $brandblue;
+        font-size: 1.2rem;
+    }
+
+    .media {
+        display: grid;
+
+        .mediaArticles {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 200px;
+            overflow-x: auto;
+            grid-column-gap: 10px;
+        }
+    }
+
+    .sponsors {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(auto-fit, 150px);
+    }
+
+
+    @mixin card($dimension) {
+        border: 1px solid lighten($brandblue, 50);
+        border-radius: 5px;
+        height: $dimension;
+        width: $dimension;
+        font-size: 0.7rem;
+        font-variant-caps: all-small-caps;
+        font-weight: bold;
+        display: grid;
+        align-items: end;
+        background-color: $brandblue;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        .title {
+            padding: 5px;
+            width: ($dimension - 9px);
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.705);
+            color: white;
+        }
+    }
+
+    .card {
+        @include card(200px);
+    }
+
+    .smallerCard {
+        @include card(150px);
+    }
+
+    .map {
+        background-image: url('/public/images/map.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .overlaytext {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+    }
+
+    .contactus {
+        display: grid;
+
+        .contactDetails {
+            align-self: stretch;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(auto-fill, 200px);
+
+            a {
+                color: $brandblue;
+
+                &:hover {
+                    color: lighten($brandblue, 10);
+                }
+            }
+        }
+    }
+}
+
+.agenda {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-row-gap: 5px;
+
+    .agendaTimeslot {
+        display: grid;
+        justify-items: stretch;
+
+        @mixin eventType($coreColour) {
+            background-color: $coreColour;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lighten($coreColour, 25);
+            color: choose-contrast-color($coreColour);
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        >.agendateriaryEvent {
+            @include eventType(darken($brandpink, 20));
+        }
+
+        >.agendasecondaryEvent {
+            @include eventType(darken($brandpink, 10));
+        }
+
+        >.agendasession {
+            @include eventType($brandpink);
+        }
+
+        >.agendabreak {
+            @include eventType($brandblue);
+        }
+
+        .talks {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-row-end: 5px;
+            grid-column-gap: 5px;
+
+            .talkSlotCard {
+                height: 300px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: lighten($brandblue, 25);
+                display: grid;
+                grid-template-rows: min-content;
+                align-content: end;
+
+                .talkLabel {
+                    color: rgb(158, 158, 158);
+                    background-color: rgba(0, 0, 0, 0.692);
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    .talkLabelText {
+                        padding: 5px;
+
+                        .talkTitle {
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .talkSpeaker {
+                            color: white;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    @media (max-width: $mobileWidth) {
+        visibility: hidden;
+    }
+
+    background-color: $brandblue;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5rem;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+a.button {
+    height: 30px;
+    background-color: $brandpink;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: lighten($brandpink, 10);
+    }
+}
+
+a.smalllink {
+    font-size: 0.7rem;
+    color: $brandblue;
+    text-decoration: underline;
+}

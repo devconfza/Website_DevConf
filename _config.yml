@@ -1,0 +1,31 @@
+plugins:
+  - jekyll-redirect-from
+  
+whitelist:
+  - jekyll-redirect-from
+    
+exclude: 
+    - node_modules
+    - package.json
+    - .gitignore
+    - _config.yml
+    - CNAME
+    - gulpfile.js
+    - update.bat
+    - bundle
+    - scss
+    - googled96e0dc1bdd986c8.html
+    - README.md
+    - yarn.lock
+    
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+
+compress_html: 
+    clippings: all
+    comments: all
+ 

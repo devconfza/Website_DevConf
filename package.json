@@ -1,0 +1,46 @@
+{
+  "name": "devconf",
+  "version": "2.0-beta",
+  "description": "This is the website for www.DevConf.co.za",
+  "homepage": "https://www.devconf.co.za",
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmaclean/Website_DevConf"
+  },
+  "contributors": [
+    {
+      "name": "Robert MacLean",
+      "email": "robert@sadev.co.za"
+    },
+    {
+      "name": "Candice Herodotou",
+      "email": "candice@developerug.org.za"
+    },
+    {
+      "name": "Mark Pearl",
+      "email": "markpearl@gmail.com"
+    },
+    {
+      "name": "Terence Kruger",
+      "email": "terencejkruger@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "concurrently": "^4.1.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"yarn run build-css\"",
+    "watch-code": "yarn run webpack --progress --color --display-error-details --watch",
+    "start": "concurrently -k --kill-others-on-fail \"jekyll s\" \"yarn run watch-css\" \"yarn run watch-code\""
+  },
+  "dependencies": {}
+}

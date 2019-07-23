@@ -1,0 +1,320 @@
+/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
+a {
+  color: #fc003d; }
+  a:hover {
+    color: #ff3062; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: white;
+  font-family: Helvetica, 'Segoe UI', Verdana, sans-serif;
+  color: #0a0a0a;
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: 0.03rem; }
+
+a {
+  text-decoration: none; }
+
+.menu {
+  background-color: #000d28;
+  color: white;
+  height: 40px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  font-weight: bolder; }
+  .menu a {
+    color: white; }
+    .menu a:hover {
+      color: #fc003d; }
+  .menu .left {
+    justify-self: start; }
+  .menu .right {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px; }
+    @media (max-width: 700px) {
+      .menu .right {
+        visibility: hidden; } }
+    .menu .right .spacer {
+      color: #c5c5c5; }
+
+.hero {
+  background-image: url("/public/images/Background_Web.jpg");
+  background-color: #000d28;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  grid-row-gap: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .hero .brand {
+    display: grid;
+    justify-items: center; }
+    .hero .brand img {
+      max-width: 80%;
+      max-height: 100px;
+      object-fit: contain; }
+  .hero .eventbananas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 10px; }
+    .hero .eventbananas .event {
+      display: grid;
+      grid-row-gap: 10px;
+      justify-content: center; }
+      .hero .eventbananas .event .location {
+        font-size: 1.6rem;
+        color: #fc003d;
+        font-weight: bolder; }
+  .hero .mailingList {
+    font-size: 0.9rem; }
+    .hero .mailingList .input-group {
+      margin-left: auto;
+      margin-right: auto; }
+    .hero .mailingList input {
+      border: 0;
+      padding: 5px; }
+      .hero .mailingList input[type=submit] {
+        background: #000d28;
+        color: white;
+        border-color: #7d001e;
+        border-width: 1px;
+        border-style: solid; }
+        .hero .mailingList input[type=submit]:hover {
+          background: #fc003d; }
+    .hero .mailingList a {
+      color: #fc003d; }
+      .hero .mailingList a:hover {
+        color: #ff3062; }
+
+.content {
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: white;
+  line-height: 180%; }
+  .content .highlight {
+    font-weight: bold;
+    color: #fc003d; }
+  .content .seperator {
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-color: #000d28;
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+  .content .sectionTitle, .content .subSectionTitle {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fc003d;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: -0.02rem; }
+  .content .subSectionTitle {
+    color: #000d28;
+    font-size: 1.2rem; }
+  .content .media {
+    display: grid; }
+    .content .media .mediaArticles {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 200px;
+      overflow-x: auto;
+      grid-column-gap: 10px; }
+  .content .sponsors {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 150px); }
+  .content .card {
+    border: 1px solid #286eff;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    font-size: 0.7rem;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    display: grid;
+    align-items: end;
+    background-color: #000d28;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    .content .card .title {
+      padding: 5px;
+      width: 191px;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.705);
+      color: white; }
+  .content .smallerCard {
+    border: 1px solid #286eff;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    font-size: 0.7rem;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    display: grid;
+    align-items: end;
+    background-color: #000d28;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    .content .smallerCard .title {
+      padding: 5px;
+      width: 141px;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.705);
+      color: white; }
+  .content .map {
+    background-image: url("/public/images/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .content .map .overlaytext {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      padding: 10px; }
+  .content .contactus {
+    display: grid; }
+    .content .contactus .contactDetails {
+      align-self: stretch;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill, 200px); }
+      .content .contactus .contactDetails a {
+        color: #000d28; }
+        .content .contactus .contactDetails a:hover {
+          color: #001e5b; }
+
+.agenda {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-row-gap: 5px; }
+  .agenda .agendaTimeslot {
+    display: grid;
+    justify-items: stretch; }
+    .agenda .agendaTimeslot > .agendateriaryEvent {
+      background-color: #960024;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ff174f;
+      color: white;
+      text-align: center;
+      font-weight: bolder; }
+    .agenda .agendaTimeslot > .agendasecondaryEvent {
+      background-color: #c90031;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ff4a75;
+      color: white;
+      text-align: center;
+      font-weight: bolder; }
+    .agenda .agendaTimeslot > .agendasession {
+      background-color: #fc003d;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ff7d9c;
+      color: black;
+      text-align: center;
+      font-weight: bolder; }
+    .agenda .agendaTimeslot > .agendabreak {
+      background-color: #000d28;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #0036a8;
+      color: white;
+      text-align: center;
+      font-weight: bolder; }
+    .agenda .agendaTimeslot .talks {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-row-end: 5px;
+      grid-column-gap: 5px; }
+      .agenda .agendaTimeslot .talks .talkSlotCard {
+        height: 300px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0036a8;
+        display: grid;
+        grid-template-rows: min-content;
+        align-content: end; }
+        .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel {
+          color: #9e9e9e;
+          background-color: rgba(0, 0, 0, 0.692);
+          width: 100%;
+          margin-bottom: 10px; }
+          .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText {
+            padding: 5px; }
+            .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText .talkTitle {
+              color: white;
+              font-weight: bold; }
+            .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText .talkSpeaker {
+              color: white;
+              font-weight: bolder; }
+
+.footer {
+  background-color: #000d28;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.5rem;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px; }
+  @media (max-width: 700px) {
+    .footer {
+      visibility: hidden; } }
+
+a.button {
+  height: 30px;
+  background-color: #fc003d;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center; }
+  a.button:hover {
+    background-color: #ff3062; }
+
+a.smalllink {
+  font-size: 0.7rem;
+  color: #000d28;
+  text-decoration: underline; }

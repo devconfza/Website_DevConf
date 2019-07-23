@@ -1,0 +1,95 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="/public/css/main.css">
+	<title>DevConf ❤ The conference for professional South African software engineers.</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/public/images/hl3confirmed.jpg" type="image/x-icon" />
+
+	<meta name="keywords" content="business, conference website, convene, event website, exhibition, keynote, meeting, schedule, seminar, speakers, venue, workshop" />
+	<meta name="description" content="DevConf is a conference in South Africa for professional software developers focusing on the enterprise development scenarios." />
+
+	<!-- Open Graph (Facebook) -->
+	<meta property="og:locale" content="en_za" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="DevConf ❤ The conference for professional South African software engineers." />
+	<meta property="og:description" content="DevConf is the conference in South Africa for professional software engineers focusing on the enterprise development challenges and team dynamics." />
+	<meta property="og:url" content="http://devconf.co.za" />
+	<meta property="og:site_name" content="DevConf ZA" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="DevConf is the conference in South Africa for professional software engineers focusing on the enterprise development challenges and team dynamics." />
+	<meta name="twitter:title" content="DevConf" />
+	<meta name="twitter:image" content="/public/images/hl3confirmed.jpg" />
+	<meta name="twitter:site" content="devconfza" />
+
+	<!-- FAV and App icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/public/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/public/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/public/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/public/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/public/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/public/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/public/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/public/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/public/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/public/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+	<link rel="manifest" href="/public/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="menu" role="menu">
+		<div class="left">
+			<a href="/">
+				<img src="/public/images/logoDevSml.jpg" alt="DevConf" role="img" />
+			</a>
+		</div>
+		<div class="right">
+			<!-- {% for event in site.data.config.events %}
+			<a href="{{ event.info }}" alt="{{ event.location }}" role="menuitem">{{ event.location }}</a>
+			<div class="spacer">|</div>
+			{% endfor %} -->
+			<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
+			<div class="spacer">|</div>
+			<a href="/faq" alt="FAQ" role="menuitem">FAQ</a>
+			<div class="spacer">|</div>
+			<a href="/#contacts" alt="Contact Us" role="menuitem">Contact Us</a>
+		</div>
+	</div>
+	{{ content }}
+	<div class="footer">© 2015-<span id="currentYear">2019</span> The Developer User Group. All Rights Reserved. <a href="https://github.com/rmaclean/Website_DevConf">Contribute on Github</a></div>
+
+	<script>
+		document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-123039368-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script src="/scripts/devconf.js"></script>
+</body>
+
+</html>

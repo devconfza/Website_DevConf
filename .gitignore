@@ -1,0 +1,8 @@
+*.swp
+node_modules
+_site
+*.*~
+.vscode
+/update.bat
+.DS_Store
+yarn-error.log

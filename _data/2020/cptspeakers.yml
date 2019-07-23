@@ -1,0 +1,339 @@
+﻿- publish: true
+  track_order: 0
+  time: "08:30" 
+  infokey: welcome
+  speakers:
+  - name: "Candice Herodotu"   
+    twitter: candicemesk
+    pic: candice.jpg
+  - name: "Robert MacLean"
+    twitter: rmaclean
+    pic: robert.jpg
+  title: "Welcome"
+
+- publish: true
+  track_order: 0
+  time: "08:45" 
+  infokey: keynote
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg
+  pic: william.jpg
+  title: "Keynote"
+
+##############################  Main Room #########################
+
+#DIAMOND SPONSOR
+- publish: true
+  track_order: 0
+  sponsored: true
+  time: "10:00"
+  infokey: keynote
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+  title: "Scaling your product for Africa" 
+
+- publish: true
+  track_order: 0
+  time: "11:00"
+  infokey: keynote
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+  title: "Pink Hardhats and other Anomalies"
+
+- publish: true
+  track_order: 0
+  time: "12:00"
+  infokey: keynote
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+  title: "Building a next generation web application"
+
+- publish: true 
+  track_order: 0
+  time: "13:40"
+  infokey: keynote
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Testing your tests’ quality - Introduction to Mutation Testing"
+
+# ALLEN GREY SPONSOR
+- publish: true
+  track_order: 0
+  time: "14:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Moving from sedan to sports car – Building for Software Performance"
+
+- publish: true
+  track_order: 0
+  time: "16:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "When creating software, what Really Matters?"
+
+- publish: true
+  track_order: 0
+  time: "17:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Hacking satellites with Software Defined Radio (SDR)"
+
+##############################  Room 2 #########################
+
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "10:00" 
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Microfrontends as a solution to legacy JavaScript"
+
+# Obsidian sponsor
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "11:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Why everything you learned about CI/CD is wrong"
+
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "12:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Fast but not furious: debugging user interaction performance issues"
+
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "13:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Building a self-loading Arduino-powered Wi-Fi-controlled catapult for office warfare through simulation driven design"
+
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "14:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Zen and the Art of Developer Maintenance"
+
+# TFG SPONSOR
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "16:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Lessons learnt implementing a true cross-platform retail application using Xamarin"
+ 
+- publish: true
+  track_order: 1
+  track: "Congo Room"
+  time: "17:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Programming for Accessibility"
+
+##############################  Room 3 #########################
+
+- publish: true
+  track_order: 2
+  track: "Tugela Room"
+  time: "10:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Fonts on the web: past, present and future"
+  
+- publish: true 
+  track_order: 2
+  track: "Tugela Room"
+  time: "11:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Cloud Shootout!" 
+
+# PLATINUNM SPONSOR 2
+- publish: true
+  track_order: 2
+  track: "Tugela Room"
+  time: "12:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Modern application services with OpenShift"
+
+- publish: true
+  track_order: 2
+  track: "Tugela Room"
+  time: "13:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "From Monolith To Microservices"
+
+- publish: true 
+  track_order: 2
+  track: "Tugela Room"
+  time: "14:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Using AI for facial recognition to understand emotion, gender and age"
+
+- publish: true
+  track_order: 2
+  track: "Tugela Room"
+  time: "16:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Mob Programming and Personality Traits, a controlled experiment"
+
+- publish: true
+  track_order: 2
+  track: "Tugela Room"
+  time: "17:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "From Zero to kind of hero: Getting your Python side project ready for deployment"
+
+##############################  Room 4 #########################
+
+- publish: true
+  track_order: 3
+  track: "Berg Room"
+  time: "10:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Mentoring and growing stronger teams using Agile techniques"
+  
+- publish: true 
+  track_order: 3
+  track: "Berg Room"
+  time: "11:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Apache Kafka from the trenches: a practical guide"
+
+- publish: true
+  track_order: 3
+  track: "Berg Room"
+  time: "12:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Burnout - A Burning Issue"
+
+# PLATINUNM SPONSOR 3
+- publish: true
+  track_order: 3
+  track: "Berg Room"
+  time: "13:40"
+  title: "Infrastructure as Code on Azure AKS"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+
+- publish: true 
+  track_order: 3
+  track: "Berg Room"
+  time: "14:40"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Why I decided to ditch dev and dive into UX" 
+
+- publish: true
+  track_order: 3
+  track: "Berg Room"
+  time: "16:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Where Test-driven development and Infrastructure as code have a love child"
+
+- publish: true
+  track_order: 3
+  track: "Berg Room"
+  time: "17:00"
+  speakers:
+  - name: "Cliff de Wet"   
+    pic: candice.jpg  
+    linkedin: cleopatra-douglas-68458590
+    website: https://flxwu.com
+  title: "Data Science and Machine Learning Tools for Developers"
