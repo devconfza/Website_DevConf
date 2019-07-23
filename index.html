@@ -37,20 +37,24 @@ layout: default
                         required>
                 </span>
                 <span class="input-group-btn mimi_field">
-                    <input type="submit" class="submit btn btn-primary" value="Keep me informed" id="webform_submit_button"
-                        data-default-text="Keep me informed" data-submitting-text="Signing Up..." data-invalid-text="Try Again"
+                    <input type="submit" class="submit btn btn-primary" value="Keep me informed"
+                        id="webform_submit_button" data-default-text="Keep me informed"
+                        data-submitting-text="Signing Up..." data-invalid-text="Try Again"
                         data-choose-list="↑ Choose a list" data-thanks="Thank you!" data-class="btn btn-primary" />
                 </span>
             </div>
             <div class="mimi_field checkgroup" id="signup_audience_lists">
                 <div style="display: none">
-                    <input class="checkbox" id="list_2073517" name="lists[]" value="2073517" type="checkbox" checked="checked" />
+                    <input class="checkbox" id="list_2073517" name="lists[]" value="2073517" type="checkbox"
+                        checked="checked" />
                     <label for="list_2073517">DevConf2016PreRegister</label>
                 </div>
                 <div class="checkbox">
                     <input id="list_1138553" name="lists[]" value="1138553" type="checkbox" checked="checked" />
-                    <label for="list_1138553">I would like to receive the Developer User Group newsletter as well!</label>
-                    <p>The <a href="https://www.developerug.org.za" class="devuglink" target="_blank" rel="noopener noreferrer">Developer
+                    <label for="list_1138553">I would like to receive the Developer User Group newsletter as
+                        well!</label>
+                    <p>The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
+                            rel="noopener noreferrer">Developer
                             User Group</a> is a monthly free meeting for software developers which takes place in Cape
                         Town, Pretoria &amp; Johannesburg.</p>
                 </div>
@@ -58,11 +62,7 @@ layout: default
         </form>
     </div>
 </div>
-<div class="content">
-    <div class="intro">
-            The <span class="highlight">DevConf</span> Call For Papers Opens 15 August!
-    </div>
-</div>
+
 
 <div class="content">
     <div class="intro">
@@ -75,26 +75,38 @@ layout: default
         technology stack and programming language of choice.
     </div>
 
+    <div class="intro">
+        <h3>Important Dates (join the mailing list to be notified)!</h3>
+        <ul>
+            <li>The <span class="highlight">DevConf</span> Call For Papers Opens 15 August!</li>
+            <li>Our sponsorship proposal will go out in September!</li>
+        </ul>
+    </div>
+
     <div class="seperator">&nbsp;</div>
 
     <div class="media">
         <div class="sectionTitle">DevConf in the press</div>
         <div class="mediaArticles">
             {% for media in site.data.media %}
-            
-            <script type="text/javascript">
-            fetch("https://dcunfurl.sadev.workers.dev/?target={{ media.link }}").then(response => {
-                response.text().then(body => {
-                    let data = JSON.parse(body);
-                    document.getElementById("mediaBlock{{forloop.index}}").style.backgroundImage = `url(${data.icon})`;
 
-                    if (data.theme !== undefined) {
-                        document.getElementById("mediaBlock{{forloop.index}}").style.backgroundColor = data.theme
-                    }
-                })
-            });
+            <script type="text/javascript">
+                fetch("https://dcunfurl.sadev.workers.dev/?target={{ media.link }}").then(response => {
+                    response.text().then(body => {
+                        let data = JSON.parse(body);
+                        document.getElementById("mediaBlock{{forloop.index}}").style.backgroundImage =
+                            `url(${data.icon})`;
+
+                        if (data.theme !== undefined) {
+                            document.getElementById("mediaBlock{{forloop.index}}").style
+                                .backgroundColor = data.theme
+                        }
+                    })
+                });
             </script>
-            <a href="{{ media.link }}" id="mediaBlock{{forloop.index}}" class="card" style="background-image: url('/public/images/hl3confirmed.jpg');" target="_blank" rel="noopener noreferrer">
+            <a href="{{ media.link }}" id="mediaBlock{{forloop.index}}" class="card"
+                style="background-image: url('/public/images/hl3confirmed.jpg');" target="_blank"
+                rel="noopener noreferrer">
                 <div class="title">{{ media.title }}</div>
             </a>
             {% endfor %}
@@ -107,10 +119,14 @@ layout: default
         <div class="sectionTitle">Contact Us</div>
         <div class="contactDetails">
             <div>Email us:<br /><a href='mailto:info@devconf.co.za'>info@devconf.co.za</a></div>
-            <div>Facebook:<br /><a href='https://www.facebook.com/devconfza' target='_blank' rel="noopener noreferrer">@devconfza</a></div>
-            <div>Twitter:<br /><a href='https://twitter.com/devconfza' target='_blank' rel="noopener noreferrer">@devconfza</a>
-                or <a href='https://twitter.com/search?q=%23devconf' target='_blank' rel="noopener noreferrer">#devconf</a></div>
-            <div>Instagram:<br /><a href='https://www.instagram.com/devconfza/' target='_blank' rel="noopener noreferrer">@devconfza</a></div>
+            <div>Facebook:<br /><a href='https://www.facebook.com/devconfza' target='_blank'
+                    rel="noopener noreferrer">@devconfza</a></div>
+            <div>Twitter:<br /><a href='https://twitter.com/devconfza' target='_blank'
+                    rel="noopener noreferrer">@devconfza</a>
+                or <a href='https://twitter.com/search?q=%23devconf' target='_blank'
+                    rel="noopener noreferrer">#devconf</a></div>
+            <div>Instagram:<br /><a href='https://www.instagram.com/devconfza/' target='_blank'
+                    rel="noopener noreferrer">@devconfza</a></div>
         </div>
     </div>
 </div>
@@ -158,8 +174,9 @@ layout: default
                             case "select-multiple":
                                 for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
                                     if (form.elements[i].options[j].selected) {
-                                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[
-                                            j].value))
+                                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i]
+                                            .options[
+                                                j].value))
                                     }
                                 }
                                 break
@@ -401,7 +418,8 @@ layout: default
                 if (this.isValid || !invalidFields) {
                     text = this.submit.getAttribute('data-default-text');
                 } else {
-                    if (invalidFields.length || invalidFields[0].className.indexOf('checkgroup') === -1) {
+                    if (invalidFields.length || invalidFields[0].className.indexOf('checkgroup') === -
+                        1) {
                         text = this.submit.getAttribute('data-invalid-text');
                     } else {
                         text = this.submit.getAttribute('data-choose-list');
