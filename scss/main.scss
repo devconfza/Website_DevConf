@@ -18,7 +18,7 @@ html {
 
 body {
     background-color: white;
-    font-family: Helvetica, 'Segoe UI', Verdana, sans-serif;
+    font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
     color: rgb(10, 10, 10);
     margin: 0;
     font-size: 1rem;
@@ -96,6 +96,36 @@ a {
             max-width: 80%;
             max-height: 100px;
             object-fit: contain;
+        }
+    }
+
+    .CFPSection {
+        display: grid;
+        justify-items: center;
+
+        .cfpbutton {
+            background-color: #fc003d;
+            color: white;
+            border-radius: 30px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+
+            &:hover {
+                background-color: #6d001b;
+                border-color: #fc003d;
+            }
+
+            a {
+                color:white;
+            }
+
+            p.cfpTimeline {
+                font-size: 0.8rem;
+            }   
         }
     }
 
