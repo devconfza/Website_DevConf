@@ -2,7 +2,7 @@
  * Calculate the luminance for a color.
  * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  */
-/**
+/** 
  * Calculate the contrast ratio between two colors.
  * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  */
@@ -91,7 +91,7 @@ a {
       color: white;
       border-radius: 30px;
       padding-bottom: 8px;
-      padding-left: 15px;
+      padding-left: 15px;  
       padding-right: 15px;
       border-width: 2px;
       border-style: solid;
