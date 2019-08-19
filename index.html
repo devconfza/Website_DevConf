@@ -41,7 +41,7 @@ layout: default
                 <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required"
                     placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
                 <span class="">
-                    <input id="signup_email" name="signup[email]" type="text" class="form-control mimi_field required"
+                    <input id="signup_email" name="signup[email]" type="email" class="form-control mimi_field required"
                         placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email"
                         required>
                 </span>
@@ -251,20 +251,8 @@ layout: default
 
             validate: function () {
                 this.isValid = true;
-                this.emailValidation();
                 this.fieldAndListValidation();
                 this.updateFormAfterValidation();
-            },
-
-            emailValidation: function () {
-                var email = document.getElementById('signup_email');
-
-                if (this.validEmail.test(email.value)) {
-                    this.removeTextFieldError(email);
-                } else {
-                    this.textFieldError(email);
-                    this.isValid = false;
-                }
             },
 
             fieldAndListValidation: function () {
@@ -371,18 +359,6 @@ layout: default
                 }
             },
 
-            textFieldError: function (input) {
-                input.className = input.className + ' invalid';
-                $(input).parent().addClass('has-error');
-                input.placeholder = input.getAttribute('data-required-field');
-            },
-
-            removeTextFieldError: function (input) {
-                input.className = input.className.replace('required', '');
-                $(input).parent().removeClass('has-error');
-                input.placeholder = input.getAttribute('data-required-placeholder');
-            },
-
             onSelectCallback: function (input) {
                 if (typeof Widget === 'undefined' || !Widget.BasicDropdown) return;
 
@@ -459,16 +435,17 @@ layout: default
             },
 
             formSubmitting: function () {
-                this.form.className += ' mimi_submitting';
                 this.submit.value = this.submit.getAttribute('data-submitting-text');
                 this.submit.disabled = true;
-                $(this.submit).addClass('disabled');
             },
 
             onSubmitCallback: function (response) {
                 if (response.success) {
                     this.onSubmitSuccess(response.result);
-                } else {}
+                } else {
+                    this.submit.value = this.submit.getAttribute('data-invalid-text');
+                    this.submit.disabled = false;
+                }
             },
 
             onSubmitSuccess: function (result) {
