@@ -11,41 +11,10 @@ layout: default
     <a class="smalllink" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Have a ticket already and need to update details OR have a access code?</a>
     {% endif %}
     <div class="sectionTitle">Agenda</div>
-    <div class="agenda">
-        {% assign agendaSpeakers = (site.data.2020.cptspeakers | sort: 'time' | group_by: 'time') %}
-        {% for agendaslot in site.data.2020.cptagenda %}
-        <div class="agendaTimeslot">
-            {% assign title = 'Sessions' %}
-            {% if agendaslot.title %}
-            {% assign title = agendaslot.title %}
-            {% endif %}
-
-            <div class="agenda{{ agendaslot.type}}">{{ agendaslot.start }} ➡ {{ title }} ⬅ {{ agendaslot.end }}</div>
-            {% if agendaslot.type == "session" %}
-            <div class="talks">
-                {% assign talks=agendaSpeakers[agendaslot.sessionIndex].items %}
-
-                {% for talk in talks %}
-                <div class="talkSlotCard">
-                    <div class="talkLabel">
-                        <div class="talkLabelText">
-                            <span class="talkTitle">{{ talk.title }}</span><br />
-                            presented by<br />
-                            <span class="talkSpeaker">
-                                {% for speaker in talk.speakers %}
-                                {{ speaker.name }}
-                                {% endfor %}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div>
-        {% endfor %}
-    </div>
-
+    <div id="agenda" class="agenda"></div>
+    <script>
+        DevConf.loadEventSessions("6gi5ncom", document.getElementById("agenda"));
+    </script>
     <div class="seperator">&nbsp;</div>
     <div class="sectionTitle">Sponsors</div>
     {% assign sponsorsByLevel = (site.data.2020.cptsponsors | sort: 'level' | group_by: 'level') %}
@@ -56,8 +25,9 @@ layout: default
         <div class="subSectionTitle">{{ levelInfo.title }}</div>
         <div class="sponsors">
             {% for sponsor in level.items %}
-            <a class="smallerCard" href="{{ sponsor.link }}" style="background-image: url('/public/images/sponsors/{{ sponsor.logo }}');"
-                target="_blank" rel="noopener noreferrer">
+            <a class="smallerCard" href="{{ sponsor.link }}"
+                style="background-image: url('/public/images/sponsors/{{ sponsor.logo }}');" target="_blank"
+                rel="noopener noreferrer">
                 <div class="title">{{ sponsor.sponsor }}</div>
             </a>
             {% endfor %}
@@ -77,4 +47,21 @@ layout: default
             </p>
         </div>
     </div>
-</div> -->
+</div>
+<template id="sessionTemplate">
+    <div class="session">
+        <div class="talkLabel">
+            <div class="talkLabelText">
+                <span class="talkTitle"></span><br />
+                presented by<br />
+                <span class="talkSpeaker"></span>
+            </div>
+        </div>
+        <div class="talkImages"></div>  
+    </div>
+</template>
+<template id="breakTeamplate">
+    <div class="break">
+
+    </div>
+</template>

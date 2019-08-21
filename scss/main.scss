@@ -344,78 +344,93 @@ a {
     display: grid;
     grid-auto-flow: row;
     justify-items: stretch;
-    grid-row-gap: 5px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    align-items: end;
+    background-color: $brandblue;
 
-    .agendaTimeslot {
+    @mixin eventType($coreColour) {
+        background-color: $coreColour;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lighten($coreColour, 25);
+        color: choose-contrast-color($coreColour);
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .session {
+        cursor: pointer;
+        height: 150px;
+        @media (max-width: 1000px) {
+            height: 100px;
+        }
+        border-style: solid;
+        border-width: 1px;
+        border-color: lighten($brandblue, 25);
         display: grid;
-        justify-items: stretch;
+        grid-template-rows: 1fr;
+        align-content: end;
 
-        @mixin eventType($coreColour) {
-            background-color: $coreColour;
-            border-style: solid;
-            border-width: 1px;
-            border-color: lighten($coreColour, 25);
-            color: choose-contrast-color($coreColour);
-            text-align: center;
-            font-weight: bolder;
-        }
-
-        >.agendateriaryEvent {
-            @include eventType(darken($brandpink, 20));
-        }
-
-        >.agendasecondaryEvent {
-            @include eventType(darken($brandpink, 10));
-        }
-
-        >.agendasession {
-            @include eventType($brandpink);
-        }
-
-        >.agendabreak {
-            @include eventType($brandblue);
-        }
-
-        .talks {
-            margin-top: 10px;
+        .talkImages {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            grid-row-end: 5px;
-            grid-column-gap: 5px;
+            justify-items: end;
+            height: 100%;
+            grid-row: 1;
+            grid-column: 1;
 
-            .talkSlotCard {
-                height: 300px;
-                border-style: solid;
-                border-width: 1px;
-                border-color: lighten($brandblue, 25);
-                display: grid;
-                grid-template-rows: min-content;
-                align-content: end;
+            .profileImage {
+                width: auto;
+                height: 100%;
 
-                .talkLabel {
-                    color: rgb(158, 158, 158);
-                    background-color: rgba(0, 0, 0, 0.692);
-                    width: 100%;
-                    margin-bottom: 10px;
+                @media (max-width: 1000px) {
+                    visibility: hidden;
+                }
+            }
+        }
 
-                    .talkLabelText {
-                        padding: 5px;
+        .talkLabel {
+            color: rgb(158, 158, 158);
+            background-color: rgba(0, 0, 0, 0.692);
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            grid-column: 1;
+            grid-row: 1;
 
-                        .talkTitle {
-                            color: white;
-                            font-weight: bold;
-                        }
+            @media (max-width: 1000px) {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
 
-                        .talkSpeaker {
-                            color: white;
-                            font-weight: bolder;
-                        }
-                    }
+            .talkLabelText {
+                padding: 5px;
+
+                .talkTitle {
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .talkSpeaker {
+                    color: white;
+                    font-weight: bolder;
                 }
             }
         }
     }
+
+    .highlight {
+        @extend .session;
+        @include eventType(darken($brandpink, 10));
+    }
+
+    .break {
+        @include eventType($brandblue);
+    }
 }
+
 
 .footer {
     @media (max-width: $mobileWidth) {

@@ -679,69 +679,72 @@ a {
   display: grid;
   grid-auto-flow: row;
   justify-items: stretch;
-  grid-row-gap: 5px; }
-  .agenda .agendaTimeslot {
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  align-items: end;
+  background-color: #000d28; }
+  .agenda .session, .agenda .highlight {
+    cursor: pointer;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0036a8;
     display: grid;
-    justify-items: stretch; }
-    .agenda .agendaTimeslot > .agendateriaryEvent {
-      background-color: #960024;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #ff174f;
-      color: white;
-      text-align: center;
-      font-weight: bolder; }
-    .agenda .agendaTimeslot > .agendasecondaryEvent {
-      background-color: #c90031;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #ff4a75;
-      color: white;
-      text-align: center;
-      font-weight: bolder; }
-    .agenda .agendaTimeslot > .agendasession {
-      background-color: #fc003d;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #ff7d9c;
-      color: black;
-      text-align: center;
-      font-weight: bolder; }
-    .agenda .agendaTimeslot > .agendabreak {
-      background-color: #000d28;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #0036a8;
-      color: white;
-      text-align: center;
-      font-weight: bolder; }
-    .agenda .agendaTimeslot .talks {
-      margin-top: 10px;
+    grid-template-rows: 1fr;
+    align-content: end; }
+    @media (max-width: 1000px) {
+      .agenda .session, .agenda .highlight {
+        height: 100px; } }
+    .agenda .session .talkImages, .agenda .highlight .talkImages {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      grid-row-end: 5px;
-      grid-column-gap: 5px; }
-      .agenda .agendaTimeslot .talks .talkSlotCard {
-        height: 300px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #0036a8;
-        display: grid;
-        grid-template-rows: min-content;
-        align-content: end; }
-        .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel {
-          color: #9e9e9e;
-          background-color: rgba(0, 0, 0, 0.692);
-          width: 100%;
-          margin-bottom: 10px; }
-          .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText {
-            padding: 5px; }
-            .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText .talkTitle {
-              color: white;
-              font-weight: bold; }
-            .agenda .agendaTimeslot .talks .talkSlotCard .talkLabel .talkLabelText .talkSpeaker {
-              color: white;
-              font-weight: bolder; }
+      justify-items: end;
+      height: 100%;
+      grid-row: 1;
+      grid-column: 1; }
+      .agenda .session .talkImages .profileImage, .agenda .highlight .talkImages .profileImage {
+        width: auto;
+        height: 100%; }
+        @media (max-width: 1000px) {
+          .agenda .session .talkImages .profileImage, .agenda .highlight .talkImages .profileImage {
+            visibility: hidden; } }
+    .agenda .session .talkLabel, .agenda .highlight .talkLabel {
+      color: #9e9e9e;
+      background-color: rgba(0, 0, 0, 0.692);
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      grid-column: 1;
+      grid-row: 1; }
+      @media (max-width: 1000px) {
+        .agenda .session .talkLabel, .agenda .highlight .talkLabel {
+          margin-top: 5px;
+          margin-bottom: 5px; } }
+      .agenda .session .talkLabel .talkLabelText, .agenda .highlight .talkLabel .talkLabelText {
+        padding: 5px; }
+        .agenda .session .talkLabel .talkLabelText .talkTitle, .agenda .highlight .talkLabel .talkLabelText .talkTitle {
+          color: white;
+          font-weight: bold; }
+        .agenda .session .talkLabel .talkLabelText .talkSpeaker, .agenda .highlight .talkLabel .talkLabelText .talkSpeaker {
+          color: white;
+          font-weight: bolder; }
+  .agenda .highlight {
+    background-color: #c90031;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ff4a75;
+    color: white;
+    text-align: center;
+    font-weight: bolder; }
+  .agenda .break {
+    background-color: #000d28;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0036a8;
+    color: white;
+    text-align: center;
+    font-weight: bolder; }
 
 .footer {
   background-color: #000d28;
