@@ -1,20 +1,20 @@
-<!-- ---
+---
 layout: default
 ---
 <div class="content">
     <h1 class="highlight">DevConf Cape Town</h1>
     <div class="subSectionTitle">26 March 2020 | 4 Tracks | 30 Speakers </div>
     {% if site.data.config.tickets.cpt_sell %}
-    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt }}">Buy tickets</a>
+    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt }}">Buy
+        tickets</a>
     {% else %}
-    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Waiting List</a>
-    <a class="smalllink" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Have a ticket already and need to update details OR have a access code?</a>
+    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Waiting
+        List</a>
+    <a class="smalllink" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Have a
+        ticket already and need to update details OR have a access code?</a>
     {% endif %}
     <div class="sectionTitle">Agenda</div>
-    <div id="agenda" class="agenda"></div>
-    <script>
-        DevConf.loadEventSessions("6gi5ncom", document.getElementById("agenda"));
-    </script>
+    <div id="agenda" class="agenda" data-event-id="6gi5ncom" data-event-date="2019-08-19"></div>
     <div class="seperator">&nbsp;</div>
     <div class="sectionTitle">Sponsors</div>
     {% assign sponsorsByLevel = (site.data.2020.cptsponsors | sort: 'level' | group_by: 'level') %}
@@ -49,19 +49,36 @@ layout: default
     </div>
 </div>
 <template id="sessionTemplate">
-    <div class="session">
-        <div class="talkLabel">
-            <div class="talkLabelText">
-                <span class="talkTitle"></span><br />
-                presented by<br />
-                <span class="talkSpeaker"></span>
+    <a class="modal">
+        <div class="session">
+            <div class="talkLabel">
+                <div class="talkLabelText">
+                    <span class="talkTitle"></span><br />
+                    presented by<br />
+                    <span class="talkSpeaker"></span>
+                </div>
             </div>
+            <div class="talkImages"></div>
         </div>
-        <div class="talkImages"></div>  
-    </div>
+    </a>
 </template>
 <template id="breakTeamplate">
     <div class="break">
 
     </div>
+</template>
+<template id="roomCardTemplate">
+    <div class="room">
+
+    </div>
+</template>
+<template id="timeslotCardTemplate">
+    <div class="timeslot">
+
+    </div>
+</template>
+<template id="sessionDetail">
+    <aside class="popupContainer">
+        <span class="talkTitle"></span>
+    </aside>
 </template>
