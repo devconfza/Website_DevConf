@@ -421,6 +421,11 @@ a {
         }
     }
 
+    .tbaCard {
+        @include eventType(rgb(255, 181, 198));
+        text-align: center;
+    }
+
     .highlight {
         @extend .session;
         @include eventType(darken($brandpink, 10));

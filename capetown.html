@@ -14,7 +14,7 @@ layout: default
         ticket already and need to update details OR have a access code?</a>
     {% endif %}
     <div class="sectionTitle">Agenda</div>
-    <div id="agenda" class="agenda" data-event-id="6gi5ncom" data-event-date="2019-08-19"></div>
+    <div id="agenda" class="agenda" data-event-id="b5u8ycnc" data-event-date="2020-03-31"></div>
     <div class="seperator">&nbsp;</div>
     <div class="sectionTitle">Sponsors</div>
     {% assign sponsorsByLevel = (site.data.2020.cptsponsors | sort: 'level' | group_by: 'level') %}
@@ -75,6 +75,11 @@ layout: default
 <template id="timeslotCardTemplate">
     <div class="timeslot">
 
+    </div>
+</template>
+<template id="tbaCardTemplate">
+    <div class="tbaCard">
+        Session To Be Announced
     </div>
 </template>
 <template id="sessionDetail">
