@@ -76,7 +76,7 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
 
     const parseEventData = (event: Sessionize.Event) => {
         const rooms = event.rooms.length;
-        target.style.gridTemplateColumns = "180px " + "auto ".repeat(rooms);
+        target.style.gridTemplateColumns = `180px ${"auto ".repeat(rooms)}`;
 
         event.rooms
             .forEach((room, i) => {
