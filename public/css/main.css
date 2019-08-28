@@ -10,6 +10,81 @@
  * Determine whether to use dark or light text on top of given color.
  * Returns black for dark text and white for light text.
  */
+.sponsor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px repeat(5, auto); }
+  .sponsor-button {
+    background-color: #1ba6e3;
+    font-size: 0.9rem;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 8px 8px 10px 8px;
+    font-variant-caps: all-small-caps;
+    color: white;
+    cursor: pointer; }
+    .sponsor-button:hover {
+      color: white;
+      background-color: #106388; }
+  .sponsor-title {
+    background-color: #ff3263;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+    .sponsor-title-ellipse {
+      width: 540px;
+      height: 540px;
+      border-radius: 50%;
+      background-color: #ff2357;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+      z-index: 10; }
+    .sponsor-title-content {
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+      z-index: 100;
+      color: white;
+      justify-self: center;
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 60px;
+      justify-items: center;
+      display: grid;
+      grid-template-rows: min-content min-content;
+      grid-row-gap: 10px; }
+  .sponsor-content-detail {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .sponsor-content-detail-heading {
+      color: #ff3263;
+      font-variant-caps: all-small-caps;
+      padding-top: 10px;
+      font-weight: 800;
+      font-size: 2rem; }
+    .sponsor-content-detail-mission {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px; }
+      @media (max-width: 700px) {
+        .sponsor-content-detail-mission {
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: 1fr;
+          grid-row-gap: 5px; } }
+    .sponsor-content-detail-introduction {
+      justify-self: left; }
+    .sponsor-content-detail:nth-child(even) {
+      background-color: white; }
+    .sponsor-content-detail:nth-child(odd) {
+      background-color: #f4f4f4; }
+
 a {
   color: #fc003d; }
   a:hover {
