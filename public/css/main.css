@@ -64,14 +64,47 @@
       @media (max-width: 700px) {
         .sponsor-title-content {
           font-size: 2.5rem; } }
-  .sponsor-content-detail {
+  .sponsor-content-detail, .sponsor-content-detail-packages {
     display: grid;
     justify-items: center;
     padding-bottom: 15px;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px; }
-    .sponsor-content-detail-heading {
+    .sponsor-content-detail-packages {
+      grid-column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      justify-items: stretch;
+      background-color: white !important; }
+      .sponsor-content-detail-packages > div {
+        background-color: #f4f4f4;
+        padding: 5px; }
+      @media (max-width: 700px) {
+        .sponsor-content-detail-packages {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto; } }
+    .sponsor-content-detail-package-cards {
+      display: grid;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-columns: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-items: center; }
+    .sponsor-content-detail-package-card {
+      padding: 10px;
+      background-color: white;
+      color: #ff3263;
+      display: grid;
+      justify-items: center;
+      grid-row-gap: 5px;
+      width: 200px;
+      text-align: center; }
+      .sponsor-content-detail-package-card > img {
+        width: 150px; }
+      .sponsor-content-detail-package-card > div:nth-child(1), .sponsor-content-detail-package-card > div:nth-child(5), .sponsor-content-detail-package-card > div:nth-child(7) {
+        font-weight: 800; }
+    .sponsor-content-detail-heading, .sponsor-content-detail-heading-blue {
       color: #ff3263;
       text-transform: uppercase;
       padding-top: 10px;
@@ -79,6 +112,10 @@
       font-size: 2rem;
       margin-bottom: 20px;
       text-align: center; }
+      .sponsor-content-detail-heading-blue {
+        color: #1BA6E3; }
+    .sponsor-content-detail-termsAndConditions {
+      font-size: 0.6rem; }
     .sponsor-content-detail-media {
       display: grid;
       grid-template-rows: auto auto;
@@ -211,9 +248,9 @@
           font-weight: 800; }
     .sponsor-content-detail-introduction {
       justify-self: left; }
-    .sponsor-content-detail:nth-child(even) {
+    .sponsor-content-detail:nth-child(even), .sponsor-content-detail-packages:nth-child(even) {
       background-color: white; }
-    .sponsor-content-detail:nth-child(odd) {
+    .sponsor-content-detail:nth-child(odd), .sponsor-content-detail-packages:nth-child(odd) {
       background-color: #f4f4f4; }
 
 a {

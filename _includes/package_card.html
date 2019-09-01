@@ -1,0 +1,25 @@
+<div class="sponsor-content-detail-package-card">
+    <div>{{ package.package }}</div>
+    <div>{{ package.price }}</div>
+    {% if package.limit %}
+    <div>Limited to {{ package.limit }}</div>
+    {% else %}
+    <div>&nbsp;</div>
+    {% endif %}
+    <img src="/public/images/sponsorship/{{ package.logo }}" />
+    {% if package.expo_space %}
+    <div>Exhibition & networking space</div>
+    <div>{{ package.expo_space }}</div>
+    {% else %}
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    {% endif %}
+    {% if package.speaker_slot %}
+    <div>Speaker Slot</div>
+    <div>{{ package.speaker_slot }}</div>
+    {% else %}
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    {% endif %}
+    <a class="sponsor-button" href="/package">More Info</a>
+</div>

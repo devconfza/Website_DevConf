@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+
+<div class="sponsor">
+    <div class="sponsor-title">
+        <div class="sponsor-title-ellipse">&nbsp;</div>
+        <div class="sponsor-title-content">
+            <div>Sponsorships</div>
+        </div>
+    </div>
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Introduction</div>
+        <div class="sponsor-content-detail-introduction">
+            <p>By providing the right sponsorship platforms, we aim to work with our sponsors in providing delegates
+                with further event benefits such as networking, career discussions and opportunities.</p>
+            <p>All packages come standard with:
+                <ul>
+                    <li>Full delegate tickets to the event (number dependant on package chosen)</li>
+                    <li>Logo on all scheduled emails to database</li>
+                    <li>Logo on event website</li>
+                    <li>Logo and sponsorship acknowledgement in keynote</li>
+                    <li>Logo on printed agenda</li>
+                    <li>Option to include brochure and/or promotional item in delegate bag – (subject to refusal)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="sponsor-content-detail-packages">
+        <div>
+            <div class="sponsor-content-detail-heading">Cape Town</div>
+            <div class="sponsor-content-detail-package-cards">
+                {% for package in site.data.2020.sponsorship %}
+                {% if package.city == "CapeTown" %}
+                {% include package_card.html %}
+                {% endif %}
+                {% endfor %}  
+            </div>
+        </div>
+        <div>
+            <div class="sponsor-content-detail-heading-blue">Johannesburg</div>
+            <div class="sponsor-content-detail-package-cards">
+                {% for package in site.data.2020.sponsorship %}
+                {% if package.city == "Joburg" %}
+                {% include package_card.html %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-termsAndConditions">
+            <ul>
+                <li>Terms and conditions apply</li>
+                <li>All prices are excluding VAT of 15%</li>
+            </ul>
+        </div>
+    </div>
+</div>
