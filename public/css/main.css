@@ -10,7 +10,7 @@
  * Determine whether to use dark or light text on top of given color.
  * Returns black for dark text and white for light text.
  */
-.sponsor {
+.sponsor {    
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px repeat(5, auto); }
