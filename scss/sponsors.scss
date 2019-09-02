@@ -9,15 +9,16 @@
     grid-template-rows: $titleHeight repeat(5, auto);
 
     &-button {
-        $buttonColour: #1ba6e3;
+        $buttonColour: #021637;
         background-color: $buttonColour;
         font-size: 0.9rem;
         font-weight: 800;
         border-radius: 20px;
-        padding: 8px 8px 10px 8px;
+        padding: 10px 20px;
         text-transform: uppercase;
         color: white;
         cursor: pointer;
+        line-height: 1rem;
 
         &:hover {
             color: white;
@@ -25,12 +26,14 @@
         }
     }
 
-    &-title {
-        background-color: $brandPink;
+    @mixin titleBlock($brandColour) {
+        background-color: $brandColour;
+
         overflow: hidden;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        padding-top: 10px;
 
         $circleDimensions: $titleHeight * 2;
         $circlePadding: $circleDimensions * 0.1;
@@ -39,7 +42,7 @@
             width: $circleDimensions - $circlePadding;
             height: $circleDimensions - $circlePadding;
             border-radius: 50%;
-            background-color: darken($brandPink, 3%);
+            background-color: darken($brandColour, 3%);
             margin-left: auto;
             margin-right: auto;
             margin-top: $circlePadding;
@@ -67,11 +70,20 @@
             display: grid;
             grid-template-rows: min-content min-content;
             grid-row-gap: 10px;
+            text-transform: uppercase;
 
             @media (max-width: $mobileWidth) {
                 font-size: 2.5rem;
             }
         }
+    }
+
+    &-title {
+        @include titleBlock($brandPink)
+    }
+
+    &-title-blue {
+        @include titleBlock($brandBlue)
     }
 
     &-content-detail {
@@ -82,6 +94,16 @@
         padding-left: 20px;
         padding-right: 20px;
 
+        >* {
+            padding-left: 15%;
+            padding-right: 15%;
+
+            @media (max-width: 1200px) {
+                padding-left: unset;
+                padding-right: unset;
+            }
+        }
+
         &-packages {
             @extend .sponsor-content-detail;
             grid-column-gap: 20px;
@@ -89,10 +111,12 @@
             grid-template-rows: auto;
             justify-items: stretch;
             background-color: white !important;
+            padding-left: 15%;
+            padding-right: 15%;
 
             >div {
-                background-color: #f4f4f4;
-                padding: 5px;
+                padding-left: 0;
+                padding-right: 0;
             }
 
             @media (max-width: $mobileWidth) {
@@ -111,14 +135,15 @@
         }
 
         &-package-card {
-            padding: 10px;
-            background-color: white;
+            padding: 25px 10px;
+            background-color: #f4f4f4;
             color: $brandPink;
             display: grid;
             justify-items: center;
             grid-row-gap: 5px;
             width: 200px;
             text-align: center;
+            line-height: 1.5rem;
 
             >img {
                 width: 150px;
@@ -158,6 +183,7 @@
             grid-template-rows: auto auto;
             grid-template-columns: auto;
             justify-items: center;
+            line-height: 1.5rem;
 
             &-points {
                 display: grid;
@@ -166,8 +192,12 @@
                 @media (max-width: $mobileWidth) {
                     grid-template-columns: auto;
                     grid-template-rows: repeat(2, auto);
+                }
 
-                    >div>img {
+                >div>img {
+                    height: 250px;
+
+                    @media (max-width: $mobileWidth) {
                         width: 200px;
                     }
                 }
@@ -190,12 +220,13 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 10px;
+            line-height: 1.5rem;
 
             &>div {
                 display: grid;
                 justify-items: center;
                 grid-row-gap: 10px;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto auto 1fr;
                 grid-template-columns: auto;
 
                 &>img {
@@ -218,6 +249,7 @@
             grid-template-rows: auto;
             grid-template-columns: auto auto;
             justify-items: center;
+            line-height: 1.5rem;
 
             @media (max-width: $mobileWidth) {
                 grid-template-columns: auto;
@@ -236,6 +268,7 @@
             grid-row-gap: 10px;
             grid-column-gap: 20px;
             grid-auto-flow: column;
+            line-height: 1.5rem;
 
             @media (max-width: $mobileWidth) {
                 grid-auto-flow: row;
@@ -289,6 +322,7 @@
             grid-row-gap: 10px;
             justify-items: center;
             margin-bottom: 20px;
+            line-height: 1.5rem;
 
             @media (max-width: $mobileWidth) {
                 grid-template-columns: auto;
@@ -318,6 +352,7 @@
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
             grid-column-gap: 20px;
+            line-height: 1.5rem;
 
             @media (max-width: $mobileWidth) {
                 grid-template-rows: repeat(3, 1fr);
@@ -339,6 +374,7 @@
 
         &-introduction {
             justify-self: left;
+            line-height: 1.5rem;
         }
 
         &:nth-child(even) {

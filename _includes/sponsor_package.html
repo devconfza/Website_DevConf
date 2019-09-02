@@ -1,0 +1,43 @@
+<div class="sponsor">
+    <div class="{{ include.baseStyle }}">
+        <div class="{{ include.baseStyle }}-ellipse">&nbsp;</div>
+        <div class="sponsor-title-content">
+            <div>[ {{ include.city }} ]</div>
+            <div>{{ page.title }}</div>
+            <div>{{ page.price }}</div>
+            <div>{{ page.limit }}</div>
+        </div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Brand Exposure</div>
+        <div>
+            <div>Logo on all scheduled emails to database</div>
+            <div>Logo on event website</div>
+            <div>Logo and sponsorship acknowledgement in keynote</div>
+            <div>Logo on printed agenda</div>
+            <div>Logo on podium in keynote room</div>
+            {% for benefit in page.brand_benefits %}
+            <div>{{ benefit }}</div>
+            {% endfor %}
+            <div>Option to include brochure and/or promotional item in delegate bag – (subject to refusal)</div>
+            <div>Logo size on all material: {{ page.logo_size }}%</div>
+        </div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Exhibition Space &amp; Networking Area</div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Conference Benefits</div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Exclusive {{ page.title }} Only Benefit</div>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <a class="sponsor-button" href="/packages">Explore All Sponsorships</a>
+    </div>
+</div>

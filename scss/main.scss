@@ -44,6 +44,9 @@ a {
     align-items: center;
     grid-template-columns: auto auto;
     font-weight: bolder;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 
     a {
         color: white;

@@ -1,5 +1,5 @@
 <div class="sponsor-content-detail-package-card">
-    <div>{{ package.package }}</div>
+    <div>{{ package.title }}</div>
     <div>{{ package.price }}</div>
     {% if package.limit %}
     <div>Limited to {{ package.limit }}</div>
@@ -21,5 +21,5 @@
     <div>&nbsp;</div>
     <div>&nbsp;</div>
     {% endif %}
-    <a class="sponsor-button" href="/package">More Info</a>
+    <a class="sponsor-button" href="{{ package.url }}">More Info</a>
 </div>

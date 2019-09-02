@@ -17,13 +17,28 @@ exclude:
     - googled96e0dc1bdd986c8.html
     - README.md
     - yarn.lock
+
+collections:
+  jhb_sponsor_packages:
+    output: true
+  cpt_sponsor_packages:
+    output: true
     
 defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: "default"
+  - scope: 
+      path: ""
+      type: "jhb_sponsor_packages"
+    values:
+      layout: "jhb_sponsor_package"
+  - scope: 
+      path: ""
+      type: "cpt_sponsor_packages"
+    values:
+      layout: "cpt_sponsor_package"      
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 compress_html: 
     clippings: all

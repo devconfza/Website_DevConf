@@ -6,7 +6,7 @@
   "license": "CC-BY-SA-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmaclean/Website_DevConf"
+    "url": "https://github.com/devconfza/Website_DevConf"
   },
   "contributors": [
     {
@@ -27,14 +27,14 @@
     }
   ],
   "devDependencies": {
-    "@types/node": "^12.6.2",
-    "concurrently": "^4.1.1",
+    "@types/node": "^12.7.3",
+    "concurrently": "^4.1.2",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
     "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   },
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
