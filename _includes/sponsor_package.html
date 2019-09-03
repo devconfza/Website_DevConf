@@ -2,21 +2,22 @@
     <div class="{{ include.baseStyle }}">
         <div class="{{ include.baseStyle }}-ellipse">&nbsp;</div>
         <div class="sponsor-title-content">
-            <div>[ {{ include.city }} ]</div>
+            <div class="sponsor-title-content-third">[ {{ include.city }} ]</div>
             <div>{{ page.title }}</div>
-            <div>{{ page.price }}</div>
-            <div>{{ page.limit }}</div>
+            <div class="sponsor-title-content-second">{{ page.price }}</div>
+            {% if page.limit %}
+            <div class="sponsor-title-content-second">Limited to {{ page.limit }} sponsor/s</div>
+            {% endif %}
         </div>
     </div>
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Brand Exposure</div>
-        <div>
+        <div class="sponsor-content-detail-brand">
             <div>Logo on all scheduled emails to database</div>
             <div>Logo on event website</div>
             <div>Logo and sponsorship acknowledgement in keynote</div>
             <div>Logo on printed agenda</div>
-            <div>Logo on podium in keynote room</div>
             {% for benefit in page.brand_benefits %}
             <div>{{ benefit }}</div>
             {% endfor %}
@@ -25,17 +26,53 @@
         </div>
     </div>
 
+    {% if page.expo %}
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Exhibition Space &amp; Networking Area</div>
+        <div class="sponsor-content-detail-expo">
+            {% if page.expo_space %}
+            <div>{{ page.expo_space }} Tension fabric stand with raised carpeting flooring, branded counter which can be
+                used for storage space, cocktail table, two chairs, mounted plasma screen, plug point for screen and
+                laptop</div>
+            {% endif %}
+            {% if page.watercooler %}
+            <div>Water cooler at stand to bring attendees to the stand</div>
+            {% endif %}
+            {% if page.banners %}
+            <div>Option to display {{ page.banners }} pull up banners in networking area</div>
+            {% endif %}
+            {% for extra in page.expo_extras %}
+            <div>{{ extra }}</div>
+            {% endfor %}
+        </div>
     </div>
+    {% endif %}
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Conference Benefits</div>
+        <div class="sponsor-content-detail-benefits">
+            {% if page.delegateDB %}
+            <div>Access to delegate database (based on opt in)</div>
+            {% endif %}
+            {% if page.speakerSlot %}
+            <div>50 minute speaker slot (Subject to content approval. Single presenter only)</div>
+            {% endif %}
+            <div>{{ page.passes }} x Delegate passes with full access to event</div>
+            <div>Maximum discount of 12,5% on delegate tickets (not applicable on early bird or existing bulk discount
+                prices)</div>
+        </div>
     </div>
 
+    {% if page.exclusive %}
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Exclusive {{ page.title }} Only Benefit</div>
+        <div class="sponsor-content-detail-exclusive">
+            {% for benefit in page.exclusive %}
+            <div>{{ benefit }}</div>
+            {% endfor %}
+        </div>
     </div>
+    {% endif %}
 
     <div class="sponsor-content-detail">
         <a class="sponsor-button" href="/packages">Explore All Sponsorships</a>

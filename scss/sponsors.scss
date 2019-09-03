@@ -68,12 +68,20 @@
             margin-top: $circlePadding;
             justify-items: center;
             display: grid;
-            grid-template-rows: min-content min-content;
+            grid-template-rows: repeat(4, minmax(0, min-content));
             grid-row-gap: 10px;
             text-transform: uppercase;
 
             @media (max-width: $mobileWidth) {
                 font-size: 2.5rem;
+            }
+
+            &-second {
+                font-size: 1.5rem;
+            }
+
+            &-third {
+                font-size: 1rem;
             }
         }
     }
@@ -94,7 +102,7 @@
         padding-left: 20px;
         padding-right: 20px;
 
-        >* {
+        >*:not(a) {
             padding-left: 15%;
             padding-right: 15%;
 
@@ -132,12 +140,13 @@
             grid-template-columns: 100%;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             justify-items: center;
+            align-items: baseline;
         }
 
-        &-package-card {
+        @mixin themableCard($colour) {
             padding: 25px 10px;
             background-color: #f4f4f4;
-            color: $brandPink;
+            color: $colour;
             display: grid;
             justify-items: center;
             grid-row-gap: 5px;
@@ -147,6 +156,9 @@
 
             >img {
                 width: 150px;
+                @media (max-width: $mobileWidth) {
+                    display: none;
+                }
             }
 
             >div {
@@ -157,6 +169,14 @@
                     font-weight: 800;
                 }
             }
+        }
+
+        &-package-card {
+            @include themableCard($brandPink)
+        }
+
+        &-package-card-blue {
+            @include themableCard($brandBlue)
         }
 
         &-heading {
@@ -377,6 +397,36 @@
             line-height: 1.5rem;
         }
 
+        @mixin bulletSection($bullet) {
+            line-height: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 50px;
+
+            >div:before {
+                content: $bullet;
+            }
+            @media (max-width: $mobileWidth) {
+                grid-template-columns: 1fr;
+            }            
+        }
+
+        &-brand {
+            @include bulletSection("🧡 ")
+        }
+
+        &-expo {
+            @include bulletSection("💜 ")
+        }
+
+        &-benefits {
+            @include bulletSection("💙 ")
+        }
+
+        &-exclusive {
+            @include bulletSection("💚 ")
+        }
+
         &:nth-child(even) {
             background-color: white;
         }
@@ -384,5 +434,9 @@
         &:nth-child(odd) {
             background-color: #f4f4f4;
         }
+    }
+
+    .more-info {
+        margin-top: 10px;
     }
 }

@@ -31,7 +31,7 @@ layout: default
         <div>
             <div class="sponsor-content-detail-heading">Cape Town</div>
             <div class="sponsor-content-detail-package-cards">
-                {% assign sorted = (site.cpt_sponsor_packages | sort: 'order') %}
+                {% assign sorted = site.cpt_sponsor_packages | sort: 'order' %}
                 {% for package in sorted %}
                 {% include package_card.html %}
                 {% endfor %}
@@ -40,13 +40,13 @@ layout: default
         <div>
             <div class="sponsor-content-detail-heading-blue">Johannesburg</div>
             <div class="sponsor-content-detail-package-cards">
-                {% assign sorted = (site.jhb_sponsor_packages | sort: 'order') %}
+                {% assign sorted = site.jhb_sponsor_packages | sort: 'order' %}
                 {% for package in sorted %}
-                {% include package_card.html %}
+                {% include package_card.html suffix="-blue" %}
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </div> 
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-termsAndConditions">

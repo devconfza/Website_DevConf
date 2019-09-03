@@ -1,4 +1,4 @@
-<div class="sponsor-content-detail-package-card">
+<div class="sponsor-content-detail-package-card{{ include.suffix }}">
     <div>{{ package.title }}</div>
     <div>{{ package.price }}</div>
     {% if package.limit %}
@@ -10,16 +10,10 @@
     {% if package.expo_space %}
     <div>Exhibition & networking space</div>
     <div>{{ package.expo_space }}</div>
-    {% else %}
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
     {% endif %}
-    {% if package.speaker_slot %}
+    {% if package.speakerSlot %}
     <div>Speaker Slot</div>
-    <div>{{ package.speaker_slot }}</div>
-    {% else %}
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
+    <div>50 minute speaker slot</div>
     {% endif %}
-    <a class="sponsor-button" href="{{ package.url }}">More Info</a>
+    <a class="sponsor-button more-info" href="{{ package.url }}">More Info</a>
 </div>
