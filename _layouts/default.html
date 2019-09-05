@@ -67,7 +67,7 @@ layout: compress
 			<a href="{{ event.info }}" alt="{{ event.location }}" role="menuitem">{{ event.location }}</a>
 			<div class="spacer">|</div>
 			{% endfor %} -->
-			<!-- <div class="right-mobile-icon">🍔</div> -->
+			<div class="right-mobile-icon"><img class="hamburger-menu" src="/public/images/hamburger.png" /></div>
 			<div class="right-menu">
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
@@ -82,6 +82,25 @@ layout: compress
 			href="https://github.com/devconfza" target="_blank">Contribute on Github</a></div>
 
 	<script>
+		const menu = document.querySelector("div.right-menu");
+		const openMenuStyle = "right-menu-open";
+		const toggleMenu = () => {
+			menu.classList.toggle(openMenuStyle, true);
+		};
+
+		const hamburgerButton = document.querySelector("img.hamburger-menu");
+		hamburgerButton.addEventListener("click", toggleMenu);
+
+		window.addEventListener("click", (event) => {								
+			if (event.target === hamburgerButton) {
+				return;
+			}
+			
+			if (menu.classList.contains(openMenuStyle)) {
+				menu.classList.remove(openMenuStyle);
+			}
+		}, { passive: true});
+
 		document.getElementById('currentYear').innerText = new Date().getFullYear();
 
 		(function (i, s, o, g, r, a, m) {

@@ -467,7 +467,8 @@ a {
       @media (max-width: 700px) {
         .menu .right-mobile-icon {
           display: grid;
-          justify-content: end; } }
+          justify-content: end;
+          cursor: pointer; } }
     .menu .right-menu {
       justify-self: end;
       display: grid;

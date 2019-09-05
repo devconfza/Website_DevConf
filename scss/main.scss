@@ -69,6 +69,7 @@ a {
             @media (max-width: $mobileWidth) {
                 display: grid;
                 justify-content: end;
+                cursor: pointer;
             } 
         }
 
