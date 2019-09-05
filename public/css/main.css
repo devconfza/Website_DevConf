@@ -458,15 +458,36 @@ a {
     .menu a:hover {
       color: #fc003d; }
   .menu .left {
-    justify-self: start; }
+    justify-self: start;
+    align-self: baseline; }
   .menu .right {
-    justify-self: end;
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px; }
-    @media (max-width: 700px) {
-      .menu .right {
-        visibility: hidden; } }
+    justify-self: end; }
+    .menu .right-mobile-icon {
+      display: none; }
+      @media (max-width: 700px) {
+        .menu .right-mobile-icon {
+          display: grid;
+          justify-content: end; } }
+    .menu .right-menu {
+      justify-self: end;
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 10px; }
+      @media (max-width: 700px) {
+        .menu .right-menu {
+          display: none; }
+          .menu .right-menu-open {
+            display: grid;
+            grid-auto-flow: row;
+            background: #000d28;
+            padding: 20px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 5px;
+            grid-row-gap: 20px; }
+            .menu .right-menu-open > div.spacer {
+              display: none; } }
     .menu .right .spacer {
       color: #c5c5c5; }
 

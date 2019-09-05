@@ -16,7 +16,7 @@ html {
     position: relative;
     min-height: 100%;
 }
- 
+
 body {
     background-color: white;
     font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
@@ -58,17 +58,45 @@ a {
 
     .left {
         justify-self: start;
+        align-self: baseline;
     }
 
-    .right {
-        @media (max-width: $mobileWidth) {
-            visibility: hidden;
+    .right {    
+        justify-self: end;
+
+        &-mobile-icon {
+            display: none;
+            @media (max-width: $mobileWidth) {
+                display: grid;
+                justify-content: end;
+            } 
         }
 
-        justify-self: end;
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 10px;
+        &-menu {
+            justify-self: end;
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 10px;
+            @media (max-width: $mobileWidth) {
+                display: none;
+
+                &-open {
+                    display: grid;
+                    grid-auto-flow: row;
+                    background: $brandblue;
+                    padding: 20px;
+                    border-color: darken($brandpink, 50%);
+                    border-width: 1px;
+                    border-style: solid;
+                    margin-top: 5px;
+                    grid-row-gap: 20px;
+
+                    >div.spacer{
+                        display: none;
+                    }
+                }
+            }
+        }
 
         .spacer {
             color: rgb(197, 197, 197);
@@ -124,12 +152,12 @@ a {
             }
 
             a {
-                color:white;
+                color: white;
             }
 
             p.cfpTimeline {
                 font-size: 0.8rem;
-            }   
+            }
         }
     }
 
