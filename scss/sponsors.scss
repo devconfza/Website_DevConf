@@ -81,10 +81,14 @@
                     align-items: start;
                     margin-top: -130px;
                     z-index: 150;
-                    margin-bottom: -40px;                    
+                    margin-bottom: -40px;      
+                    
+                    @media (max-width: $mobileWidth) {
+                        display: none;
+                    }
 
                     >img {
-                        height: 300px;
+                        height: 300px;                        
                     }
                 }
             }
