@@ -72,6 +72,23 @@
             grid-row-gap: 10px;
             text-transform: uppercase;
 
+            &-package {
+                margin-top: 0;
+
+                &-image {
+                    display: grid;
+                    justify-items: center;
+                    align-items: start;
+                    margin-top: -130px;
+                    z-index: 150;
+                    margin-bottom: -40px;                    
+
+                    >img {
+                        height: 300px;
+                    }
+                }
+            }
+
             @media (max-width: $mobileWidth) {
                 font-size: 2.5rem;
             }
@@ -427,11 +444,11 @@
             @include bulletSection("💚 ")
         }
 
-        &:nth-child(even) {
+        &:nth-child(odd) {
             background-color: white;
         }
 
-        &:nth-child(odd) {
+        &:nth-child(even) {
             background-color: #f4f4f4;
         }
     }

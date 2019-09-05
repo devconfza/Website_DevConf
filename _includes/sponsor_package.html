@@ -1,7 +1,7 @@
 <div class="sponsor">
     <div class="{{ include.baseStyle }}">
         <div class="{{ include.baseStyle }}-ellipse">&nbsp;</div>
-        <div class="sponsor-title-content">
+        <div class="sponsor-title-content sponsor-title-content-package">
             <div class="sponsor-title-content-third">[ {{ include.city }} ]</div>
             <div>{{ page.title }}</div>
             <div class="sponsor-title-content-second">{{ page.price }}</div>
@@ -9,6 +9,10 @@
             <div class="sponsor-title-content-second">Limited to {{ page.limit }} sponsor/s</div>
             {% endif %}
         </div>
+    </div>
+
+    <div class="sponsor-title-content-package-image">
+        <img src="/public/images/sponsorship/{{ page.large-logo }}" />
     </div>
 
     <div class="sponsor-content-detail">
