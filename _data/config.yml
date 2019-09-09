@@ -7,19 +7,22 @@ tickets:
   jhb_sell: false
 
 events:
-  - id: "cpt2020"
-    location: "Cape Town"
+  - location: "Cape Town"
     date: "31 March 2020"
     info: "/capetown"
     sessionizeId: "b5u8ycnc"
     sessionizeDate: "2020-03-31"
-    venue:
-      - title: "Century City Conference Centre"
-      - website: "https://ccconferencecentre.co.za/"
-      - mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
+    venue: "Century City Conference Centre"
+    website: "https://ccconferencecentre.co.za/"
+    mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
   - location: "Johannesburg"
     date: "2 April 2020"
     info: "/johannesburg"
+    sessionizeId: "b5u8ycnc"
+    sessionizeDate: "2020-03-31"
+    venue: "Gallagher Convention Centre"
+    website: "https://gallagher.co.za"
+    mapLink: "https://goo.gl/maps/NwCiffFc5eCAtyLr7"
 
 sponsorLevels:
   - level: 10

@@ -1,7 +1,7 @@
-{% assign settings =  %}
+{% assign event = site.data.config.events[include.offset] %}
 <div class="content">
-    <h1 class="highlight">DevConf {{ settings.location }}</h1>
-    <div class="subSectionTitle">{{settings.date}} | 5 Tracks | Over 40 Speakers</div>
+    <h1 class="highlight">DevConf {{ event.location }}</h1>
+    <div class="subSectionTitle">{{event.date}} | 5 Tracks | Over 40 Speakers</div>
     <!-- {% if site.data.config.tickets.cpt_sell %}
     <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt }}">Buy
         tickets</a>
@@ -12,8 +12,8 @@
         ticket already and need to update details OR have a access code?</a>
     {% endif %} -->
     <div class="sectionTitle">Agenda</div>
-    <div id="agenda" class="agenda" data-event-id="{{ settings.sessionizeId }}"
-        data-event-date="{{ settings.sessionizeDate}}"></div>
+    <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}"
+        data-event-date="{{ event.sessionizeDate}}"></div>
     <!-- <div class="seperator">&nbsp;</div>
     <div class="sectionTitle">Sponsors</div>
     {% assign sponsorsByLevel = (site.data.2020.cptsponsors | sort: 'level' | group_by: 'level') %}
@@ -38,11 +38,11 @@
     <div class="map">
         <div class="overlaytext">
             <p>DevConf will be held at
-                <a href="{{ settings.venue.website }}" target="_blank"
-                    rel="noopener noreferrer">{{ settings.venue.title }}</a>, in
-                {{ settings.location }}, South Africa.</p>
+                <a href="{{ event.venue.website }}" target="_blank"
+                    rel="noopener noreferrer">{{ event.venue }}</a>, in
+                {{ event.location }}, South Africa.</p>
             <p>
-                <a href="{{ settings.venue.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
+                <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
                     Maps</a>
             </p>
         </div> 
