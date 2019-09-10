@@ -1,6 +1,6 @@
 ---
 title: WiFi
-price: R35 000
+price: R25 000
 limit: 1
 logo: diamond.png
 large-logo: diamond-large.png
@@ -12,6 +12,7 @@ banners: 1
 
 #benefits
 passes: 1
+discount_disabled: true
 
 exclusive:
     - Exclusive logo on printed WIFI ticket for each delegate

@@ -209,9 +209,9 @@
             margin-bottom: 30px;
             text-align: center;
 
-            &-blue {
+            &-pink {
                 @extend .sponsor-content-detail-heading;
-                color: $brandBlue;
+                color: $brandPink;
             }
 
             &-attendees {

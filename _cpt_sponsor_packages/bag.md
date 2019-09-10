@@ -1,6 +1,6 @@
 ---
 title: Bag
-price: R80 000
+price: R60 000
 limit: 1
 logo: diamond.png
 large-logo: diamond-large.png
@@ -8,6 +8,7 @@ logo_size: 100
 
 #benefits
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive branding on delegate bag redemption voucher

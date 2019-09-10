@@ -1,6 +1,6 @@
 ---
 title: Diamond
-price: R160 000
+price: R150 000
 limit: 1
 logo: diamond.png
 large-logo: diamond-large.png
@@ -11,11 +11,15 @@ expo: yes
 expo_space: 6x3m
 watercooler: yes
 banners: 4
+stand: 555_ Dev Conference 2020_ CPT_ DIAMOND 6 X 3_B.pdf
+furniture: Standard with the larger conversation table with 5 chairs. Additional furniture options are available at a extra cost
+stand_style: Tension fabric
 
 #benefits
 delegateDB: yes
 speakerSlot: yes
 passes: 5
+discount_disabled: false
 
 brand_benefits:
     - Logo on podium in keynote room
@@ -24,6 +28,7 @@ brand_benefits:
 
 exclusive:
     - Exclusive logo branding on delegate hoodies
+    - Exclusive brand exposure at post event function
 sold_out: no
 order: 10
 ---

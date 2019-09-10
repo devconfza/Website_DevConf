@@ -12,6 +12,7 @@ banners: 1
 
 #benefits
 passes: 1
+discount_disabled: true
 
 exclusive:
     - Exclusive logo on printed WIFI ticket for each delegate

@@ -12,6 +12,7 @@ banners: 2
 
 #benefits
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive logo on 2 x refreshment bars, branded cup sleeves for 1600 servings of speciality coffee and 1000 fruit crushes or something similar

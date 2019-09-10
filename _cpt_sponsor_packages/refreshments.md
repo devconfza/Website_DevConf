@@ -1,6 +1,6 @@
 ---
 title: Refreshments
-price: R80 000
+price: R65 000
 limit: 1
 logo: diamond.png
 large-logo: diamond-large.png
@@ -12,6 +12,7 @@ banners: 2
 
 #benefits
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive logo on 2 x refreshment bars, branded cup sleeves for 900 servings of speciality coffee and 400 fruit crushes or something similar

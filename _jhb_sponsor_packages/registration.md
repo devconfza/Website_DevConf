@@ -9,6 +9,7 @@ logo_size: 100
 #benefits
 delegateDB: yes
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive logo branding on registration counters

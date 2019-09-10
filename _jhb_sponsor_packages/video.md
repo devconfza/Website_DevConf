@@ -14,6 +14,7 @@ expo_extras:
 
 #benefits
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive logo on footer of all recorded sessions which is uploaded to YouTube for the public to consume content post event

@@ -1,6 +1,6 @@
 ---
 title: Registration
-price: R85 000
+price: R70 000
 limit: 1
 logo: diamond.png
 large-logo: diamond-large.png
@@ -9,6 +9,7 @@ logo_size: 100
 #benefits
 delegateDB: yes
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive logo branding on registration counters

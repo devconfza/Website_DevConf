@@ -8,6 +8,7 @@ logo_size: 100
 
 #benefits
 passes: 1
+discount_disabled: false
 
 exclusive:
     - Exclusive branding on delegate bag redemption voucher

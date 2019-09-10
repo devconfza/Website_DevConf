@@ -35,9 +35,15 @@
         <div class="sponsor-content-detail-heading">Exhibition Space &amp; Networking Area</div>
         <div class="sponsor-content-detail-expo">
             {% if page.expo_space %}
-            <div>{{ page.expo_space }} Tension fabric stand with raised carpeting flooring, branded counter which can be
-                used for storage space, cocktail table, two chairs, mounted plasma screen, plug point for screen and
+            <div><strong>{{ page.expo_space }} {{ page.stand_style }}</strong> stand with raised carpeting flooring,
+                branded counter which can be
+                used for storage space, mounted plasma screen, plug point for screen and
                 laptop</div>
+            <div>{{ page.furniture }}</div>
+            {% endif %}
+            {% if page.stand %}
+            <div><a href="/public/docs/2020/{{page.stand}}" target="_blank">Click to view the amazing new 2020 stand
+                    design unique to the {{ page.title }} package</a></div>
             {% endif %}
             {% if page.watercooler %}
             <div>Water cooler at stand to bring attendees to the stand</div>
@@ -62,8 +68,10 @@
             <div>50 minute speaker slot (Subject to content approval. Single presenter only)</div>
             {% endif %}
             <div>{{ page.passes }} x Delegate passes with full access to event</div>
+            {% if page.discount_disabled == false %}
             <div>Maximum discount of 12,5% on delegate tickets (not applicable on early bird or existing bulk discount
                 prices)</div>
+            {% endif %}
         </div>
     </div>
 

@@ -211,7 +211,7 @@
             display: none; } }
       .sponsor-content-detail-package-card-blue > div:nth-child(1), .sponsor-content-detail-package-card-blue > div:nth-child(5), .sponsor-content-detail-package-card-blue > div:nth-child(7) {
         font-weight: 800; }
-    .sponsor-content-detail-heading, .sponsor-content-detail-heading-blue {
+    .sponsor-content-detail-heading, .sponsor-content-detail-heading-pink {
       color: #1BA6E3;
       text-transform: uppercase;
       padding-top: 10px;
@@ -219,8 +219,8 @@
       font-size: 2rem;
       margin-bottom: 30px;
       text-align: center; }
-      .sponsor-content-detail-heading-blue {
-        color: #1BA6E3; }
+      .sponsor-content-detail-heading-pink {
+        color: #ff3263; }
       @media (min-width: 700px) {
         .sponsor-content-detail-heading-attendees {
           text-align: left; } }
