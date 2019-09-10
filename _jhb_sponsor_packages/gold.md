@@ -10,7 +10,7 @@ logo_size: 120
 expo: yes
 expo_space: 3x3m
 banners: 3
-stand: 556 Dev Conference 2020_JHB_Gold 3 x 3m.pdf
+stand: 556 Dev Conference 2020_JHB_Gold 3 x 3m
 furniture: Standard with cocktail table and two chairs. Additional furniture options are available at a extra cost
 stand_style: Corner tension fabric    
 

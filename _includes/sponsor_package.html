@@ -41,10 +41,6 @@
                 laptop</div>
             <div>{{ page.furniture }}</div>
             {% endif %}
-            {% if page.stand %}
-            <div><a href="/public/docs/2020/{{page.stand}}" target="_blank">Click to view the amazing new 2020 stand
-                    design unique to the {{ page.title }} package</a></div>
-            {% endif %}
             {% if page.watercooler %}
             <div>Water cooler at stand to bring attendees to the stand</div>
             {% endif %}
@@ -56,6 +52,17 @@
             {% endfor %}
         </div>
     </div>
+    {% if page.stand %}
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Exhibition Stand</div>
+        <div class="sponsor-content-detail-expo-stand">
+            <a href="/public/docs/2020/{{page.stand}}.pdf" target="_blank">
+                Click to view the amazing new 2020 stand design unique to the {{ page.title }} package<br />
+                <img src="/public/images/sponsorship/2020/{{page.stand}}-1.png" alt="Stand design" />
+            </a>
+        </div>
+    </div>
+    {% endif %}
     {% endif %}
 
     <div class="sponsor-content-detail">

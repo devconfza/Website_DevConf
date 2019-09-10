@@ -11,7 +11,7 @@ expo: yes
 expo_space: 3x3m
 watercooler: yes
 banners: 4
-stand: 555_ Dev Conference 2020_CPT_Platinum 3 x 3m.pdf
+stand: 555_ Dev Conference 2020_CPT_Platinum 3 x 3m
 furniture: Standard with cocktail table and two chairs. Additional furniture options are available at a extra cost
 stand_style: Corner tension fabric
 

@@ -11,7 +11,7 @@ expo: yes
 expo_space: 6x3m
 watercooler: yes
 banners: 4
-stand: 556_ Dev Conference 2020_ JHB_ Diamond 6 x 3m_ B.pdf
+stand: 556_ Dev Conference 2020_ JHB_ Diamond 6 x 3m_ B
 furniture: Standard with the larger conversation table with 5 chairs. Additional furniture options are available at a extra cost
 stand_style: Tension fabric
 
