@@ -455,7 +455,10 @@
             @include bulletSection("💜 ");
 
             &-stand {
+                text-align: center;
+                font-size: 0.7rem;
                 >a {
+                    font-size: 1rem;
                     display: grid;
                     justify-items: center;
                     row-gap: 20px;

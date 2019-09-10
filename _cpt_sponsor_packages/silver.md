@@ -10,7 +10,7 @@ logo_size: 110
 expo: yes
 expo_space: 3x2m
 banners: 2
-stand: 556 Dev Conference 2020_JHB_Silver 3 x 2m
+stand: 555_ Dev Conference 2020_CPT_Bronze 3 x 2m
 furniture: Standard with cocktail table and two chairs. Additional furniture options are available at a extra cost
 stand_style: Backwall tension fabric
 

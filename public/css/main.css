@@ -394,11 +394,15 @@
       @media (max-width: 700px) {
         .sponsor-content-detail-expo {
           grid-template-columns: 1fr; } }
-      .sponsor-content-detail-expo-stand > a {
-        display: grid;
-        justify-items: center;
-        row-gap: 20px;
-        text-align: center; }
+      .sponsor-content-detail-expo-stand {
+        text-align: center;
+        font-size: 0.7rem; }
+        .sponsor-content-detail-expo-stand > a {
+          font-size: 1rem;
+          display: grid;
+          justify-items: center;
+          row-gap: 20px;
+          text-align: center; }
     .sponsor-content-detail-benefits {
       line-height: 1.5rem;
       display: grid;
