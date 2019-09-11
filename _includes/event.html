@@ -1,89 +1,80 @@
 {% assign event = site.data.config.events[include.offset] %}
-<div class="content">
-    <h1 class="highlight">DevConf {{ event.location }}</h1>
-    <div class="subSectionTitle">{{event.date}} | 5 Tracks | Over 40 Speakers</div>
-    <!-- {% if site.data.config.tickets.cpt_sell %}
-    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt }}">Buy
-        tickets</a>
-    {% else %}
-    <a class="button" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Waiting
-        List</a>
-    <a class="smalllink" target="_blank" rel="noopener noreferrer" href="{{ site.data.config.tickets.cpt_wait }}">Have a
-        ticket already and need to update details OR have a access code?</a>
-    {% endif %} -->
-    <div class="sectionTitle">Agenda</div>
-    <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}"
-        data-event-date="{{ event.sessionizeDate}}"></div>
-    <!-- <div class="seperator">&nbsp;</div>
-    <div class="sectionTitle">Sponsors</div>
-    {% assign sponsorsByLevel = (site.data.2020.cptsponsors | sort: 'level' | group_by: 'level') %}
 
-    {% for level in sponsorsByLevel %}
-    <div class="sponsorLevel">
-        {% assign levelInfo = site.data.config.sponsorLevels | where:"level", level.name | first %}
-        <div class="subSectionTitle">{{ levelInfo.title }}</div>
-        <div class="sponsors">
-            {% for sponsor in level.items %}
-            <a class="smallerCard" href="{{ sponsor.link }}"
-                style="background-image: url('/public/images/sponsors/{{ sponsor.logo }}');" target="_blank"
-                rel="noopener noreferrer">
-                <div class="title">{{ sponsor.sponsor }}</div>
-            </a>
-            {% endfor %}
+<div class="sponsor">
+    <div class="{{ include.baseStyle }}">
+        <div class="{{ include.baseStyle }}-ellipse">&nbsp;</div>
+        <div class="sponsor-title-content">
+            <div class="sponsor-title-content-third">[ DevConf 2020 ]</div>
+            <div>{{ event.location }}</div>
+            <div class="sponsor-title-content-second">{{event.date}} | 5 Tracks | Over 40 Speakers</div>
         </div>
     </div>
-    {% endfor %} -->
-    <div class="seperator">&nbsp;</div>
-    <div class="sectionTitle">Location</div>
-    <div class="map">
-        <div class="overlaytext">
-            <p>DevConf will be held at
-                <a href="{{ event.venue.website }}" target="_blank"
-                    rel="noopener noreferrer">{{ event.venue }}</a>, in
-                {{ event.location }}, South Africa.</p>
-            <p>
-                <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
-                    Maps</a>
-            </p>
-        </div> 
-    </div>
-</div>
-<template id="sessionTemplate">
-    <a class="modal">
-        <div class="session">
-            <div class="talkLabel">
-                <div class="talkLabelText">
-                    <span class="talkTitle"></span><br />
-                    presented by<br />
-                    <span class="talkSpeaker"></span>
+
+    <div class="sponsor-content-detail event-content-detail">
+        <div class="sponsor-content-detail-heading">Buy your tickets</div>
+        <div class="sponsor-content-detail-tickets">
+            <div>Limited tickets available with something for everyone. All tickets include full day access to all
+                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
+            <div class="sponsor-content-detail-tickets-cards">
+                <div>
+                    <div>Early bird tickets</div>
+                    <div>The best price ticket but highly limited!</div>
+                    <a class="sponsor-button" href="/packages" target="_blank">Buy an early bird ticket now!</a>
+                </div>
+                <div>
+                    <div>Individual Tickets</div>
+                    <div>For community members and solo developers who are paying their own way. Only
+                    available via Quicket with credit card payment.</div>
+                    <a class="sponsor-button" href="/packages" target="_blank">Buy an individual ticket now!</a>
+                </div>
+                <div>
+                    <div>Corporate Tickets</div>
+                    <div>Corporates are on the honour system to purchase this ticket and support the
+                    community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
+                    payment.</div>
+                    <div>
+                    Purchase 10 or more to get 10% off!
+                    </div>
+                    <a class="sponsor-button" href="/packages" target="_blank">Buy a corporate ticket now!</a>
+                </div>
+                <div>
+                    <div>Manual Corporate Tickets</div>
+                    <div>Have a special requirement? Pro-forma invoice? Need us to register as a
+                    supplier? Need special payment terms?<br />
+                    <strong>No problem</strong> - we can assist with a manual ticket purchase</div>
+                    <div>Purchase 10 or more to get 10% off!</div>
+                    <a class="sponsor-button"
+                        href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
+                        target="_blank">Let us help you now!</a>
                 </div>
             </div>
-            <div class="talkImages"></div>
         </div>
-    </a>
-</template>
-<template id="breakTeamplate">
-    <div class="break">
+    </div>
 
+    <div class="sponsor-content-detail event-content-detail">
+        <div class="sponsor-content-detail-heading">Agenda</div>
+        <div class="sponsor-content-detail-content">
+            Will be announced in November
+        </div>
     </div>
-</template>
-<template id="roomCardTemplate">
-    <div class="room">
 
+    <div class="sponsor-content-detail event-content-detail">
+        <div class="sponsor-content-detail-heading">Sponsors</div>
+        <div class="sponsor-content-detail-content">            
+            <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a>
+        </div>
     </div>
-</template>
-<template id="timeslotCardTemplate">
-    <div class="timeslot">
 
+    <div class="sponsor-content-detail event-content-detail">
+        <div class="sponsor-content-detail-heading">Location</div>
+        <div class="sponsor-content-detail-location">
+            <div>DevConf will be held at
+                <a href="{{ event.venue.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
+                {{ event.location }}, South Africa.</div>
+            <div>
+                <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
+                    Maps</a>
+            </div>
+        </div>
     </div>
-</template>
-<template id="tbaCardTemplate">
-    <div class="tbaCard">
-        Session To Be Announced
-    </div>
-</template>
-<template id="sessionDetail">
-    <aside class="popupContainer">
-        <span class="talkTitle"></span>
-    </aside>
-</template>
+</div>

@@ -132,6 +132,63 @@
             }
         }
 
+        &-tickets {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+
+            &-cards {
+                display: grid;
+                text-align: center;
+                padding: 25px 10px;
+                background-color: white;
+                grid-row-gap: 5px;
+                text-align: center;
+                line-height: 1.5rem;
+                grid-template-columns: auto auto;
+                row-gap: 30px;
+                column-gap: 30px;
+
+                @media (max-width: $mobileWidth) {
+                    grid-template-columns: auto;
+                }
+
+                >div {
+                    display: grid;
+                    align-items: start;
+                    row-gap: 5px;   
+                    justify-items: center;
+                    background-color: #f4f4f4;     
+                    padding: 20px;       
+
+                    >div {
+                        &:nth-child(1) {
+                            color: $brandPink
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 0.8rem;
+                        }
+
+                        &:nth-child(3) {
+                            font-size: 0.8rem;
+                            font-weight: 800;
+                        }
+                    }
+
+                    >a{
+                        width: max-content;
+                    }
+                }
+            }
+        }
+
+        &-location {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+        }
+
         &-packages {
             @extend .sponsor-content-detail;
             grid-column-gap: 20px;
@@ -457,6 +514,7 @@
             &-stand {
                 text-align: center;
                 font-size: 0.7rem;
+
                 >a {
                     font-size: 1rem;
                     display: grid;
@@ -486,5 +544,15 @@
 
     .more-info {
         margin-top: 10px;
+    }
+}
+
+.event-content-detail {
+    &:nth-child(odd) {
+        background-color: #f4f4f4;
+    }
+
+    &:nth-child(even) {
+        background-color: white;
     }
 }

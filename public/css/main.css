@@ -154,6 +154,44 @@
         .sponsor-content-detail > *:not(a), .sponsor-content-detail-packages > *:not(a) {
           padding-left: unset;
           padding-right: unset; } }
+    .sponsor-content-detail-tickets {
+      display: grid;
+      justify-items: center;
+      text-align: center; }
+      .sponsor-content-detail-tickets-cards {
+        display: grid;
+        text-align: center;
+        padding: 25px 10px;
+        background-color: white;
+        grid-row-gap: 5px;
+        text-align: center;
+        line-height: 1.5rem;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+        column-gap: 30px; }
+        @media (max-width: 700px) {
+          .sponsor-content-detail-tickets-cards {
+            grid-template-columns: auto; } }
+        .sponsor-content-detail-tickets-cards > div {
+          display: grid;
+          align-items: start;
+          row-gap: 5px;
+          justify-items: center;
+          background-color: #f4f4f4;
+          padding: 20px; }
+          .sponsor-content-detail-tickets-cards > div > div:nth-child(1) {
+            color: #ff3263; }
+          .sponsor-content-detail-tickets-cards > div > div:nth-child(2) {
+            font-size: 0.8rem; }
+          .sponsor-content-detail-tickets-cards > div > div:nth-child(3) {
+            font-size: 0.8rem;
+            font-weight: 800; }
+          .sponsor-content-detail-tickets-cards > div > a {
+            width: max-content; }
+    .sponsor-content-detail-location {
+      display: grid;
+      justify-items: center;
+      text-align: center; }
     .sponsor-content-detail-packages {
       grid-column-gap: 20px;
       grid-template-columns: 1fr 1fr;
@@ -429,6 +467,12 @@
       background-color: #f4f4f4; }
   .sponsor .more-info {
     margin-top: 10px; }
+
+.event-content-detail:nth-child(odd) {
+  background-color: #f4f4f4; }
+
+.event-content-detail:nth-child(even) {
+  background-color: white; }
 
 a {
   color: #fc003d; }
