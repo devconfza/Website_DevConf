@@ -2,8 +2,8 @@
 title: Silver
 price: R70 000
 limit: 4
-logo: diamond-blue.png
-large-logo: diamond-large.png
+logo: silver-jhb.png
+large-logo: silver-header.png
 logo_size: 110
 
 # Expo info

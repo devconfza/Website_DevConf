@@ -15,7 +15,7 @@
         <img src="/public/images/sponsorship/{{ page.large-logo }}" />
     </div>
 
-    <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail sponsor-content-detail-white">
         <div class="sponsor-content-detail-heading">Brand Exposure</div>
         <div class="sponsor-content-detail-brand">
             <div>Logo on all scheduled emails to database</div>
@@ -30,8 +30,10 @@
         </div>
     </div>
 
+    <hr/>
+
     {% if page.expo %}
-    <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail sponsor-content-detail-white">
         <div class="sponsor-content-detail-heading">Exhibition Space &amp; Networking Area</div>
         <div class="sponsor-content-detail-expo">
             {% if page.expo_space %}
@@ -52,8 +54,9 @@
             {% endfor %}
         </div>
     </div>
+    <hr/>
     {% if page.stand %}
-    <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail sponsor-content-detail-white">
         <div class="sponsor-content-detail-heading">Exhibition Stand</div>
         <div class="sponsor-content-detail-expo-stand">
             <a href="/public/docs/2020/{{page.stand}}.pdf" target="_blank">
@@ -63,10 +66,11 @@
             Note: Branding will be tailored to your company.
         </div>
     </div>
+    <hr/>
     {% endif %}
     {% endif %}
 
-    <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail sponsor-content-detail-white">
         <div class="sponsor-content-detail-heading">Conference Benefits</div>
         <div class="sponsor-content-detail-benefits">
             {% if page.delegateDB %}
@@ -84,7 +88,8 @@
     </div>
 
     {% if page.exclusive %}
-    <div class="sponsor-content-detail">
+    <hr/>
+    <div class="sponsor-content-detail sponsor-content-detail-white">
         <div class="sponsor-content-detail-heading">Exclusive {{ page.title }} Only Benefit</div>
         <div class="sponsor-content-detail-exclusive">
             {% for benefit in page.exclusive %}

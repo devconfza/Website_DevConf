@@ -2,8 +2,8 @@
 title: Registration
 price: R70 000
 limit: 1
-logo: diamond.png
-large-logo: diamond-large.png
+logo: registration-cpt.png
+large-logo: registration-header.png
 logo_size: 100
 
 #benefits

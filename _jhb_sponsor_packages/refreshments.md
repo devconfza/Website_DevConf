@@ -2,8 +2,8 @@
 title: Refreshments
 price: R80 000
 limit: 1
-logo: diamond-blue.png
-large-logo: diamond-large.png
+logo: refreshment-jhb.png
+large-logo: refreshment-header.png
 logo_size: 100
 
 # Expo info

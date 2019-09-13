@@ -69,6 +69,8 @@ layout: compress
 			{% endfor %} -->
 			<div class="right-mobile-icon"><img class="hamburger-menu" src="/public/images/hamburger.png" /></div>
 			<div class="right-menu">
+				<a href="/" alt="Home" role="menuitem">Home</a>
+				<div class="spacer">|</div>
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
 				<a href="/faq" alt="FAQ" role="menuitem">FAQ</a>
@@ -91,15 +93,17 @@ layout: compress
 		const hamburgerButton = document.querySelector("img.hamburger-menu");
 		hamburgerButton.addEventListener("click", toggleMenu);
 
-		window.addEventListener("click", (event) => {								
+		window.addEventListener("click", (event) => {
 			if (event.target === hamburgerButton) {
 				return;
 			}
-			
+
 			if (menu.classList.contains(openMenuStyle)) {
 				menu.classList.remove(openMenuStyle);
 			}
-		}, { passive: true});
+		}, {
+			passive: true
+		});
 
 		document.getElementById('currentYear').innerText = new Date().getFullYear();
 

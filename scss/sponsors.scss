@@ -8,6 +8,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: $titleHeight repeat(5, auto);
 
+    hr{
+        width: 90%;
+        border-style: none;
+        height: 2px;
+        background-color: #f4f4f4;
+    }
+
     &-button {
         $buttonColour: #021637;
         background-color: $buttonColour;
@@ -70,6 +77,11 @@
             grid-template-rows: repeat(4, minmax(0, min-content));
             grid-row-gap: 10px;
             text-transform: uppercase;
+
+            &-packages-intro {
+                font-size: 1rem;
+                width: 350px;
+            }
 
             &-package {
                 margin-top: 0;
@@ -212,12 +224,16 @@
 
         &-package-cards {
             display: grid;
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
             grid-template-columns: 100%;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             justify-items: center;
             align-items: baseline;
+
+            @media (min-width: 2350px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
 
         @mixin themableCard($colour) {
@@ -301,6 +317,7 @@
 
                 >div>img {
                     height: 250px;
+                    padding-bottom: 20px;
 
                     @media (max-width: $mobileWidth) {
                         width: 200px;
@@ -312,6 +329,7 @@
                     grid-template-columns: auto;
                     grid-template-rows: repeat(3, auto);
                     justify-items: center;
+                    padding: 0px 20px;
 
                     >div:nth-child(2) {
                         font-weight: bold;
@@ -421,6 +439,7 @@
 
                     >div:nth-child(odd) {
                         text-transform: uppercase;
+                        font-weight: 800;
                     }
                 }
             }
@@ -435,6 +454,7 @@
             justify-items: center;
             margin-bottom: 20px;
             line-height: 1.5rem;
+            padding-bottom: 20px;   
 
             @media (max-width: $mobileWidth) {
                 grid-template-columns: auto;
@@ -505,11 +525,11 @@
         }
 
         &-brand {
-            @include bulletSection("🧡 ");
+            @include bulletSection("• ");
         }
 
         &-expo {
-            @include bulletSection("💜 ");
+            @include bulletSection("• ");
 
             &-stand {
                 text-align: center;
@@ -526,33 +546,27 @@
         }
 
         &-benefits {
-            @include bulletSection("💙 ");
+            @include bulletSection("• ");
         }
 
         &-exclusive {
-            @include bulletSection("💚 ");
+            @include bulletSection("• ");
+        }
+
+        &-white{
+            background-color: white !important;
         }
 
         &:nth-child(odd) {
-            background-color: white;
+            background-color: #f4f4f4;
         }
 
         &:nth-child(even) {
-            background-color: #f4f4f4;
+            background-color: white;
         }
     }
 
     .more-info {
         margin-top: 10px;
-    }
-}
-
-.event-content-detail {
-    &:nth-child(odd) {
-        background-color: #f4f4f4;
-    }
-
-    &:nth-child(even) {
-        background-color: white;
     }
 }

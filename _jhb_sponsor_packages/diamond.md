@@ -2,7 +2,7 @@
 title: Diamond
 price: R160 000
 limit: 1
-logo: diamond-blue.png
+logo: diamond.png
 large-logo: diamond-large.png
 logo_size: 150
 

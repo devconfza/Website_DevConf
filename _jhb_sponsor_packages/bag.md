@@ -2,8 +2,8 @@
 title: Bag
 price: R80 000
 limit: 1
-logo: diamond-blue.png
-large-logo: diamond-large.png
+logo: bag-jhb.png
+large-logo: bag-header.png
 logo_size: 100
 
 #benefits

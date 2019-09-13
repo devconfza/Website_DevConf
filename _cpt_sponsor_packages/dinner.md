@@ -2,8 +2,8 @@
 title: Speakers Dinner
 price: R25 000
 limit: 1
-logo: diamond.png
-large-logo: diamond-large.png
+logo: speakers-dinner-cpt.png
+large-logo: speakers-dinner-header.png
 logo_size: 100
 
 #benefits

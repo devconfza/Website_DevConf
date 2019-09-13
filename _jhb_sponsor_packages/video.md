@@ -2,8 +2,8 @@
 title: Video
 price: R80 000
 limit: 1
-logo: diamond-blue.png
-large-logo: diamond-large.png
+logo: video-jhb.png
+large-logo: video-header.png
 logo_size: 100
 
 # Expo info

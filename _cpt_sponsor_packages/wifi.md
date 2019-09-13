@@ -2,8 +2,8 @@
 title: WiFi
 price: R25 000
 limit: 1
-logo: diamond.png
-large-logo: diamond-large.png
+logo: wifi-cpt.png
+large-logo: wifi-header.png
 logo_size: 100
 
 # Expo info

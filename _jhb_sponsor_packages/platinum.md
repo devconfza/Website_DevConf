@@ -2,8 +2,8 @@
 title: Platinum
 price: R100 000
 limit: 2
-logo: diamond-blue.png
-large-logo: diamond-large.png
+logo: platinum-jhb.png
+large-logo: platinum-header.png
 logo_size: 135
 
 # Expo info

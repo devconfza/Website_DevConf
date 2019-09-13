@@ -2,8 +2,8 @@
 title: Gold
 price: R80 000
 limit: 4
-logo: diamond.png
-large-logo: diamond-large.png
+logo: gold-cpt.png
+large-logo: gold-header.png
 logo_size: 120
 
 # Expo info

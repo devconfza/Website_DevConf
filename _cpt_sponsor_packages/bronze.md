@@ -1,8 +1,8 @@
 ---
 package: Bronze
 price: R50 000
-logo: diamond.png
-large-logo: diamond-large.png
+logo: bronze-cpt.png
+large-logo: bronze-header.png
 logo_size: 100
 
 # Expo info
