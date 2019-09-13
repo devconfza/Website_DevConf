@@ -61,16 +61,17 @@ a {
         align-self: baseline;
     }
 
-    .right {    
+    .right {
         justify-self: end;
 
         &-mobile-icon {
             display: none;
+
             @media (max-width: $mobileWidth) {
                 display: grid;
                 justify-content: end;
                 cursor: pointer;
-            } 
+            }
         }
 
         &-menu {
@@ -78,6 +79,7 @@ a {
             display: grid;
             grid-auto-flow: column;
             grid-gap: 10px;
+
             @media (max-width: $mobileWidth) {
                 display: none;
 
@@ -92,7 +94,7 @@ a {
                     margin-top: 5px;
                     grid-row-gap: 20px;
 
-                    >div.spacer{
+                    >div.spacer {
                         display: none;
                     }
                 }
@@ -264,14 +266,6 @@ a {
         }
     }
 
-    .sponsors {
-        display: grid;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        grid-template-columns: repeat(auto-fit, 150px);
-    }
-
-
     @mixin card($dimension) {
         border: 1px solid lighten($brandblue, 50);
         border-radius: 5px;
@@ -304,22 +298,6 @@ a {
         @include card(150px);
     }
 
-    .map {
-        background-image: url('/public/images/map.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .overlaytext {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 100%;
-            color: white;
-            font-weight: bold;
-            padding: 10px;
-
-        }
-    }
-
     .contactus {
         display: grid;
 
@@ -340,6 +318,8 @@ a {
     }
 }
 
+$agendaBase: #f4f4f4;
+
 .agenda {
     display: grid;
     grid-auto-flow: row;
@@ -349,90 +329,35 @@ a {
     font-variant-caps: all-small-caps;
     font-weight: bold;
     align-items: end;
-    background-color: $brandblue;
+    background-color: $agendaBase;
+    color: black;
+    justify-self: stretch;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    align-items: stretch;
+    text-align: center;
 
-    @mixin eventType($coreColour) {
-        background-color: $coreColour;
-        border-style: solid;
-        border-width: 1px;
-        border-color: lighten($coreColour, 25);
-        color: choose-contrast-color($coreColour);
-        text-align: center;
-        font-weight: bolder;
+    &-room {
+        background-color: darken($agendaBase, 20%);
     }
 
-    .session {
-        cursor: pointer;
-        height: 150px;
-        @media (max-width: 1000px) {
-            height: 100px;
-        }
-        border-style: solid;
-        border-width: 1px;
-        border-color: lighten($brandblue, 25);
-        display: grid;
-        grid-template-rows: 1fr;
-        align-content: end;
-
-        .talkImages {
-            display: grid;
-            justify-items: end;
-            height: 100%;
-            grid-row: 1;
-            grid-column: 1;
-
-            .profileImage {
-                width: auto;
-                height: 100%;
-
-                @media (max-width: 1000px) {
-                    visibility: hidden;
-                }
+    &-session {
+        &-talk {
+            &-content {
+                display: grid;
+                justify-items: center;
             }
         }
 
-        .talkLabel {
-            color: rgb(158, 158, 158);
-            background-color: rgba(0, 0, 0, 0.692);
-            width: 100%;
-            margin-top: 40px;
-            margin-bottom: 10px;
-            grid-column: 1;
-            grid-row: 1;
-
-            @media (max-width: 1000px) {
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-
-            .talkLabelText {
-                padding: 5px;
-
-                .talkTitle {
-                    color: white;
-                    font-weight: bold;
-                }
-
-                .talkSpeaker {
-                    color: white;
-                    font-weight: bolder;
-                }
-            }
-        }
+        &-highlight {}
     }
 
-    .tbaCard {
-        @include eventType(rgb(255, 181, 198));
-        text-align: center;
+    &-break {
+        background-color: darken($agendaBase, 20%);
     }
 
-    .highlight {
-        @extend .session;
-        @include eventType(darken($brandpink, 10));
-    }
-
-    .break {
-        @include eventType($brandblue);
+    &-room {
+        background-color: darken($agendaBase, 30%);
     }
 }
 

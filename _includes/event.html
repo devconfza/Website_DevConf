@@ -24,24 +24,24 @@
                 <div>
                     <div>Individual Tickets</div>
                     <div>For community members and solo developers who are paying their own way. Only
-                    available via Quicket with credit card payment.</div>
+                        available via Quicket with credit card payment.</div>
                     <a class="sponsor-button" href="/packages" target="_blank">Buy an individual ticket now!</a>
                 </div>
                 <div>
                     <div>Corporate Tickets</div>
                     <div>Corporates are on the honour system to purchase this ticket and support the
-                    community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
-                    payment.</div>
+                        community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
+                        payment.</div>
                     <div>
-                    Purchase 10 or more to get 10% off!
+                        Purchase 10 or more to get 10% off!
                     </div>
                     <a class="sponsor-button" href="/packages" target="_blank">Buy a corporate ticket now!</a>
                 </div>
                 <div>
                     <div>Manual Corporate Tickets</div>
                     <div>Have a special requirement? Pro-forma invoice? Need us to register as a
-                    supplier? Need special payment terms?<br />
-                    <strong>No problem</strong> - we can assist with a manual ticket purchase</div>
+                        supplier? Need special payment terms?<br />
+                        <strong>No problem</strong> - we can assist with a manual ticket purchase</div>
                     <div>Purchase 10 or more to get 10% off!</div>
                     <a class="sponsor-button"
                         href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
@@ -54,13 +54,15 @@
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
         <div class="sponsor-content-detail-content">
-            Will be announced in November
+            Full agenda to be announced in November
         </div>
+        <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}"
+            data-event-date="{{ event.sessionizeDate}}"></div>
     </div>
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Sponsors</div>
-        <div class="sponsor-content-detail-content">            
+        <div class="sponsor-content-detail-content">
             <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a>
         </div>
     </div>
@@ -78,3 +80,38 @@
         </div>
     </div>
 </div>
+
+<template id="sessionTemplate">
+    <a class="modal">
+        <div class="agenda-session">
+            <div class="agenda-session-talk">
+                <div class="agenda-session-talk-content">
+                    <span class="agenda-session-talk-content-title"></span><br />
+                    presented by<br />
+                    <span class="agenda-session-talk-content-speaker"></span>
+                </div>
+            </div>
+            <!-- <div class="talkImages"></div> -->
+        </div>
+    </a>
+</template>
+<template id="breakTeamplate">
+    <div class="agenda-break">
+
+    </div>
+</template>
+<template id="roomCardTemplate">
+    <div class="agenda-room">
+
+    </div>
+</template>
+<template id="timeslotCardTemplate">
+    <div class="agenda-timeslot">
+
+    </div>
+</template>
+<template id="tbaCardTemplate">
+    <div class="agenda-tbaCard">
+        Session To Be Announced
+    </div>
+</template>

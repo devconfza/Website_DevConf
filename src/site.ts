@@ -23,7 +23,7 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
 
     const roomCard = (roomName: string, column: number) => {
         const content = getTemplate("roomCardTemplate");
-        const rootDiv = content.querySelector("div.room")! as HTMLDivElement;
+        const rootDiv = content.querySelector(".agenda-room")! as HTMLDivElement;
         rootDiv.textContent = roomName;
         rootDiv.style.gridColumn = column.toString();
         return content;
@@ -31,38 +31,9 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
 
     const sessionCard = (session: Sessionize.Session, speakers: Sessionize.Speaker[], span: Number) => {
         const content = getTemplate("sessionTemplate");
-        content.querySelector("span.talkTitle")!.textContent = session.title;
+        content.querySelector(".agenda-session-talk-content-title")!.textContent = session.title;
         const link = (content.querySelector("a.modal")! as HTMLAnchorElement);
         link.href = `#modal-window-${session.id}`;
-
-        const imageHolder = content.querySelector("div.talkImages") as HTMLDivElement;
-        speakers
-            .map(speaker => {
-                const image = document.createElement("img");
-                image.classList.add("profileImage");
-                image.src = speaker.profilePicture;
-                image.alt = `Profile picture of ${speaker.fullName}`;
-                return image;
-            })
-            .forEach(image => imageHolder.appendChild(image));
-
-        content.querySelector("span.talkSpeaker")!.innerHTML = speakers
-            .map(speaker => speaker.fullName)
-            .join(" &amp; ");
-
-        const sessionDiv = content.querySelector("div.session") as HTMLDivElement;
-        if (session.isPlenumSession) {
-            sessionDiv.classList.add("highlight");
-            link.style.gridColumnEnd = `span ${span}`;
-        }
-
-        return content;
-    }
-
-    const sessionPopup = (session: Sessionize.Session, speakers: Sessionize.Speaker[]) => {
-        const content = getTemplate("sessionDetail");
-        content.querySelector("aside.popupContainer")!.id = `modal-window-${session.id}`;
-        //content.querySelector("span.talkTitle")!.textContent = session.title;
 
         // const imageHolder = content.querySelector("div.talkImages") as HTMLDivElement;
         // speakers
@@ -75,16 +46,22 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
         //     })
         //     .forEach(image => imageHolder.appendChild(image));
 
-        // content.querySelector("span.talkSpeaker")!.innerHTML = speakers
-        //     .map(speaker => speaker.fullName)
-        //     .join("<br/>");
+        content.querySelector(".agenda-session-talk-content-speaker")!.innerHTML = speakers
+            .map(speaker => speaker.fullName)
+            .join(" &amp; ");
+
+        const sessionDiv = content.querySelector(".agenda-session") as HTMLDivElement;
+        if (session.isPlenumSession) {
+            sessionDiv.classList.add("agenda-session-highlight");
+            link.style.gridColumnEnd = `span ${span}`;
+        }
 
         return content;
     }
 
     const breakCard = (session: Sessionize.Session, span: Number) => {
         const content = getTemplate("breakTeamplate");
-        const rootDiv = content.querySelector("div.break")! as HTMLDivElement;
+        const rootDiv = content.querySelector(".agenda-break")! as HTMLDivElement;
         rootDiv.textContent = session.title;
         rootDiv.style.gridColumnEnd = `span ${span}`;
         return content;
@@ -96,14 +73,14 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
 
     const timeslotCard = (session: Sessionize.Session) => {
         const content = getTemplate("timeslotCardTemplate");
-        const rootDiv = content.querySelector("div.timeslot")! as HTMLDivElement;
+        const rootDiv = content.querySelector(".agenda-timeslot")! as HTMLDivElement;
         rootDiv.textContent = `${new Date(session.startsAt).toLocaleTimeString()} - ${new Date(session.endsAt).toLocaleTimeString()}`;
         return content;
     }
 
     const parseEventData = (event: Sessionize.Event) => {
         const rooms = event.rooms.length;
-        target.style.gridTemplateColumns = "180px " + "auto ".repeat(rooms);
+        target.style.gridTemplateColumns = `90px repeat(${rooms}, 1fr)`;
 
         event.rooms
             .forEach((room, i) => {
@@ -133,7 +110,6 @@ function loadEventSessions(id: String, target: HTMLElement, eventDate: Date) {
 
             const sessionSpeakers = session.speakers
                 .map(speakerId => event.speakers.filter(s => s.id === speakerId)[0]);
-            popups.push(sessionPopup(session, sessionSpeakers));
             accumalator.push(sessionCard(session, sessionSpeakers, rooms));
             return accumalator;
         }, Array<DocumentFragment>())
