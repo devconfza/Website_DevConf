@@ -79,7 +79,7 @@
             {% if page.speakerSlot %}
             <div>50 minute speaker slot (Subject to content approval. Single presenter only)</div>
             {% endif %}
-            <div>{{ page.passes }} x Delegate passes with full access to event</div>
+            <div>{{ page.passes }} x Delegate {% if page.passes == 1%}pass{% else %}passes{% endif %} with full access to event</div>
             {% if page.discount_disabled == false %}
             <div>Maximum discount of 12,5% on delegate tickets (not applicable on early bird or existing bulk discount
                 prices)</div>
