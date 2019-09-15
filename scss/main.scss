@@ -363,19 +363,37 @@ $agendaBase: #f4f4f4;
 
 
 .footer {
-    @media (max-width: $mobileWidth) {
-        visibility: hidden;
-    }
-
     background-color: $brandblue;
     color: white;
     width: 100%;
     position: absolute;
     bottom: 0;
     font-size: 0.8rem;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    @media (max-width: 605px) {
+        font-size:0.5rem;
+    }
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+
+    >div:nth-child(1){
+        margin-left: 15px;
+    }
+
+    >div:nth-child(2){
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        justify-items: end;
+        margin-right: 15px;
+
+        >a:nth-child(1){
+            @media (max-width: 768px) {
+                visibility: hidden;
+            }
+        }
+    }
 }
 
 a.button {

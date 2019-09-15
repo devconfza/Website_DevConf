@@ -8,7 +8,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: $titleHeight repeat(5, auto);
 
-    hr{
+    hr {
         width: 90%;
         border-style: none;
         height: 2px;
@@ -46,14 +46,12 @@
         $circlePadding: $circleDimensions * 0.1;
 
         &-ellipse {
-            width: 90%;
-            height: 90%;
+            width: 100vw;
+            height: 100vw;
             border-radius: 50%;
             background-color: #000;
             opacity: 0.08;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 160px;
+            margin-top: 20px;
             grid-row: 1 / 1;
             grid-column: 1 / 1;
             z-index: 10;
@@ -168,10 +166,10 @@
                 >div {
                     display: grid;
                     align-items: start;
-                    row-gap: 5px;   
+                    row-gap: 5px;
                     justify-items: center;
-                    background-color: #f4f4f4;     
-                    padding: 20px;       
+                    background-color: #f4f4f4;
+                    padding: 20px;
 
                     >div {
                         &:nth-child(1) {
@@ -188,7 +186,7 @@
                         }
                     }
 
-                    >a{
+                    >a {
                         width: max-content;
                     }
                 }
@@ -320,7 +318,7 @@
                     padding-bottom: 20px;
 
                     @media (max-width: $mobileWidth) {
-                        width: 200px;
+                        height: 200px;
                     }
                 }
 
@@ -454,7 +452,7 @@
             justify-items: center;
             margin-bottom: 20px;
             line-height: 1.5rem;
-            padding-bottom: 20px;   
+            padding-bottom: 20px;
 
             @media (max-width: $mobileWidth) {
                 grid-template-columns: auto;
@@ -553,7 +551,7 @@
             @include bulletSection("• ");
         }
 
-        &-white{
+        &-white {
             background-color: white !important;
         }
 
