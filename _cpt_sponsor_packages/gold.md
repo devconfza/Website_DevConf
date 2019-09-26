@@ -5,6 +5,7 @@ limit: 4
 logo: gold-cpt.png
 large-logo: gold-header.png
 logo_size: 120
+remaining: 1
 
 # Expo info
 expo: yes

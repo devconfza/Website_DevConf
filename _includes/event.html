@@ -63,6 +63,21 @@
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Sponsors</div>
         <div class="sponsor-content-detail-content">
+            {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
+            {% for level in sponsorsByLevel %}
+            <div class="sponsor-content-detail-content-level">
+                <div class="sponsor-content-detail-content-level-title">{{ level.name }}</div>
+                <div class="sponsor-content-detail-content-level-sponsors-{{ level.name }}">
+                    {% for sponsor in level.items %}
+                    <a class="sponsor-content-detail-content-level-sponsors-card" href="{{ sponsor.Url }}"
+                        style="background-image: url('/public/images/sponsors/{{ sponsor.Logo }}');" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="title">{{ sponsor.Name }}</div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
             <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a>
         </div>
     </div>

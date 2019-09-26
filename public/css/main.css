@@ -159,8 +159,8 @@
       padding-right: 15%; }
       @media (max-width: 1200px) {
         .sponsor-content-detail > *:not(a), .sponsor-content-detail-packages > *:not(a) {
-          padding-left: unset;
-          padding-right: unset; } }
+          padding-left: 15px;
+          padding-right: 15px; } }
     .sponsor-content-detail-tickets {
       display: grid;
       justify-items: center;
@@ -240,6 +240,9 @@
         @media (max-width: 700px) {
           .sponsor-content-detail-package-card > img {
             display: none; } }
+      .sponsor-content-detail-package-card > div > div.sponsor-content-detail-package-card-remaining {
+        font-weight: 800;
+        color: #cb0031; }
       .sponsor-content-detail-package-card > div:nth-child(1), .sponsor-content-detail-package-card > div:nth-child(5), .sponsor-content-detail-package-card > div:nth-child(7) {
         font-weight: 800; }
     .sponsor-content-detail-package-card-blue {
@@ -257,6 +260,9 @@
         @media (max-width: 700px) {
           .sponsor-content-detail-package-card-blue > img {
             display: none; } }
+      .sponsor-content-detail-package-card-blue > div > div.sponsor-content-detail-package-card-remaining {
+        font-weight: 800;
+        color: #106388; }
       .sponsor-content-detail-package-card-blue > div:nth-child(1), .sponsor-content-detail-package-card-blue > div:nth-child(5), .sponsor-content-detail-package-card-blue > div:nth-child(7) {
         font-weight: 800; }
     .sponsor-content-detail-heading, .sponsor-content-detail-heading-pink {

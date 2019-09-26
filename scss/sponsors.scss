@@ -137,8 +137,8 @@
             padding-right: 15%;
 
             @media (max-width: 1200px) {
-                padding-left: unset;
-                padding-right: unset;
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
 
@@ -254,6 +254,10 @@
             }
 
             >div {
+                >div.sponsor-content-detail-package-card-remaining {
+                    font-weight: 800;
+                    color: darken($colour, 20%);
+                }
 
                 &:nth-child(1),
                 &:nth-child(5),

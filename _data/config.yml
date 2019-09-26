@@ -1,11 +1,3 @@
-tickets:
-  cpt_wait: https://www.google.com
-  cpt: https://www.google.com
-  jhb: https://www.google.com
-  jhb_wait: https://www.google.com
-  cpt_sell: false
-  jhb_sell: false
-
 events:
   - location: "Cape Town"
     date: "31 March 2020"
@@ -23,11 +15,3 @@ events:
     venue: "Gallagher Convention Centre"
     website: "https://gallagher.co.za"
     mapLink: "https://goo.gl/maps/NwCiffFc5eCAtyLr7"
-
-sponsorLevels:
-  - level: 10
-    title: "Diamond"
-  - level: 20
-    title: "Platinum"
-  - level: 30
-    title: "Gold"

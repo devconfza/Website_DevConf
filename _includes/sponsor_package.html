@@ -6,7 +6,7 @@
             <div>{{ page.title }}</div>
             <div class="sponsor-title-content-second">{{ page.price }}</div>
             {% if page.limit %}
-            <div class="sponsor-title-content-second">Limited to {{ page.limit }} sponsor/s</div>
+            <div class="sponsor-title-content-second">Limited to {{ page.limit }} sponsor{% if page.limit > 1 %}s{% endif %}{% if page.remaining %}<br/>Only {{page.remaining}} remaining! {% endif %}</div>
             {% endif %}
         </div>
     </div>

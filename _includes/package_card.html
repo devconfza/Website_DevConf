@@ -2,7 +2,8 @@
     <div>{{ package.title }}</div>
     <div>{{ package.price }}</div>
     {% if package.limit %}
-    <div>Limited to {{ package.limit }}</div>
+    <div>Limited to {{ package.limit }}{% if package.remaining %}<div class="sponsor-content-detail-package-card-remaining">Only {{package.remaining}} left</div>{% endif %}
+    </div>
     {% else %}
     <div>&nbsp;</div>
     {% endif %}
