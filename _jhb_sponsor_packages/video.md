@@ -10,14 +10,14 @@ logo_size: 100
 expo: yes
 banners: 1
 expo_extras: 
-    - Should sponsor which to add a 3x2m Inline stand, sponsorship package would increase to R90 000 ex VAT
+    - Should sponsor wish to add a 3x2m Inline stand, sponsorship package would increase to R90 000 ex VAT
 
 #benefits
 passes: 1
 discount_disabled: false
 
 exclusive:
-    - Exclusive logo on footer of all recorded sessions which is uploaded to YouTube for the public to consume content post event
+    - Exclusive logo on footer of all recorded sessions which are uploaded to YouTube for the public to consume content post event
     
 sold_out: no
 order: 100
