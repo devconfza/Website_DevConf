@@ -76,6 +76,11 @@
             grid-row-gap: 10px;
             text-transform: uppercase;
 
+            &-sponsor {
+                display: grid;
+                justify-items: center;
+            }
+
             &-packages-intro {
                 font-size: 1rem;
                 width: 350px;
@@ -275,6 +280,30 @@
             @include themableCard($brandBlue)
         }
 
+        &-sponsors {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(4, auto);
+            justify-items: center;
+        }
+
+        &-sponsor {
+            border-color: $brandPink;
+            border-width: 1px;
+            border-style: solid;            
+
+            &-level {
+                display: grid;
+                justify-items: center;
+                margin-bottom: 15px;            
+            }
+
+            &-Gold {
+                @extend .sponsor-content-detail-sponsor;
+                height: 180px;
+            }
+        }
+
         &-heading {
             color: $brandBlue;
             text-transform: uppercase;
@@ -283,6 +312,10 @@
             font-size: 2rem;
             margin-bottom: 30px;
             text-align: center;
+
+            &-smaller {
+                font-size: 1.6rem;
+            }
 
             &-pink {
                 @extend .sponsor-content-detail-heading;

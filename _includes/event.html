@@ -62,18 +62,19 @@
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Sponsors</div>
-        <div class="sponsor-content-detail-content">
+        <div class="sponsor-content-detail-content-sponsor">
             {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
             {% for level in sponsorsByLevel %}
-            <div class="sponsor-content-detail-content-level">
-                <div class="sponsor-content-detail-content-level-title">{{ level.name }}</div>
-                <div class="sponsor-content-detail-content-level-sponsors-{{ level.name }}">
+            <div class="sponsor-content-detail-sponsor-level">
+                <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
+                <div class="sponsor-content-detail-sponsors">
                     {% for sponsor in level.items %}
-                    <a class="sponsor-content-detail-content-level-sponsors-card" href="{{ sponsor.Url }}"
-                        style="background-image: url('/public/images/sponsors/{{ sponsor.Logo }}');" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="title">{{ sponsor.Name }}</div>
-                    </a>
+                    <div class="sponsor-content-detail-sponsor-{{ level.name }}">
+                        <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                            <img src="/public/images/sponsorship/2020/sponsors/{{sponsor.Logo }}"
+                                alt="The logo for {{ sponsor.Name }}" />
+                        </a>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
