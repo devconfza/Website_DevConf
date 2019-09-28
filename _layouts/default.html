@@ -5,7 +5,7 @@ layout: compress
 
 <head>
 	<link rel="stylesheet" href="/public/css/main.css">
-	<title>DevConf ❤ The conference for professional South African software engineers.</title>
+	<title>DevConf ❤ The conference for professional South African software developers.</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +21,16 @@ layout: compress
 	<!-- Open Graph (Facebook) -->
 	<meta property="og:locale" content="en_za" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="DevConf ❤ The conference for professional South African software engineers." />
+	<meta property="og:title" content="DevConf ❤ The conference for professional South African software developers." />
 	<meta property="og:description"
-		content="DevConf is the conference in South Africa for professional software engineers focusing on the enterprise development challenges and team dynamics." />
+		content="DevConf is the conference in South Africa for professional software developers focusing on the enterprise development challenges and team dynamics." />
 	<meta property="og:url" content="http://devconf.co.za" />
 	<meta property="og:site_name" content="DevConf ZA" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:description"
-		content="DevConf is the conference in South Africa for professional software engineers focusing on the enterprise development challenges and team dynamics." />
+		content="DevConf is the conference in South Africa for professional software developers focusing on the enterprise development challenges and team dynamics." />
 	<meta name="twitter:title" content="DevConf" />
 	<meta name="twitter:image" content="/public/images/hl3confirmed.jpg" />
 	<meta name="twitter:site" content="devconfza" />
@@ -71,6 +71,8 @@ layout: compress
 			<div class="right-menu">
 				<a href="/" alt="Home" role="menuitem">Home</a>
 				<div class="spacer">|</div>
+				<a href="/sponsorship" alt="Sponsorship" role="menuitem">Sponsorship</a>
+				<div class="spacer">|</div>
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
 				<a href="/faq" alt="FAQ" role="menuitem">FAQ</a>
@@ -80,8 +82,19 @@ layout: compress
 		</div>
 	</div>
 	{{ content }}
-	<div class="footer">© 2015-<span id="currentYear">2019</span> The Developer User Group. All Rights Reserved. <a
-			href="https://github.com/devconfza" target="_blank">Contribute on Github</a></div>
+	<div class="footer">
+		<div>© 2015-<span id="currentYear">2019</span> The Developer User Group. All Rights Reserved.</div>
+		<div> <a href="https://github.com/devconfza" rel="noopener noreferrer" target="_blank">Contribute on Github</a>
+			<a href="https://www.linkedin.com/company/devconf" target='_blank' rel="noopener noreferrer"><img
+					src="/public/images/linkedin.png" alt="LinkedIn" /></a>
+			<a href='https://www.facebook.com/devconfza' target='_blank' rel="noopener noreferrer"><img
+					src="/public/images/facebook.png" alt="Facebook" /></a>
+			<a href='https://twitter.com/devconfza' target='_blank' rel="noopener noreferrer"><img
+					src="/public/images/twitter.png" alt="Twitter" /></a>
+			<a href='https://www.instagram.com/devconfza/' target='_blank' rel="noopener noreferrer"><img
+					src="/public/images/instagram.png" alt="Instagram" /></a>
+		</div>
+	</div>
 
 	<script>
 		const menu = document.querySelector("div.right-menu");
