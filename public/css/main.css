@@ -822,7 +822,6 @@ a {
         visibility: hidden; } }
 
 a.button {
-  height: 30px;
   background-color: #fc003d;
   border-radius: 10px;
   padding: 5px;

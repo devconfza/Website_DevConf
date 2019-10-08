@@ -63,21 +63,19 @@ layout: compress
 			</a>
 		</div>
 		<div class="right">
-			<!-- {% for event in site.data.config.events %}
-			<a href="{{ event.info }}" alt="{{ event.location }}" role="menuitem">{{ event.location }}</a>
-			<div class="spacer">|</div>
-			{% endfor %} -->
 			<div class="right-mobile-icon"><img class="hamburger-menu" src="/public/images/hamburger.png" /></div>
 			<div class="right-menu">
 				<a href="/" alt="Home" role="menuitem">Home</a>
 				<div class="spacer">|</div>
+				{% for event in site.data.config.events %}
+				<a href="{{ event.info }}" alt="{{ event.location }}" role="menuitem">{{ event.menuTitle }}</a>
+				<div class="spacer">|</div>
+				{% endfor %}	
 				<a href="/sponsorship" alt="Sponsorship" role="menuitem">Sponsorship</a>
 				<div class="spacer">|</div>
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
 				<a href="/faq" alt="FAQ" role="menuitem">FAQ</a>
-				<div class="spacer">|</div>
-				<a href="/#contacts" alt="Contact Us" role="menuitem">Contact Us</a>
 			</div>
 		</div>
 	</div>

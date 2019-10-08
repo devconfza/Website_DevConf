@@ -1,5 +1,6 @@
 events:
   - location: "Cape Town"
+    menuTitle: "Cape Town"
     date: "31 March 2020"
     info: "/capetown"
     sessionizeId: "b5u8ycnc"
@@ -15,6 +16,7 @@ events:
       corporate:
         price: R2,350.00     
   - location: "Johannesburg"
+    menuTitle: "Joburg"
     date: "2 April 2020"
     info: "/johannesburg"
     sessionizeId: "b5u8ycnc"
