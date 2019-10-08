@@ -353,11 +353,20 @@ $agendaBase: #f4f4f4;
     }
 
     &-break {
+        align-content: center;
+        display: grid;
         background-color: darken($agendaBase, 20%);
     }
 
     &-room {
+        align-content: center;
+        display: grid;
         background-color: darken($agendaBase, 30%);
+    }
+
+    &-tbaCard {
+        align-content: center;
+        display: grid;
     }
 }
 

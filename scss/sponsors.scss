@@ -163,6 +163,13 @@
                 grid-template-columns: auto auto;
                 row-gap: 30px;
                 column-gap: 30px;
+                align-content: center;
+
+                &-price {
+                    color: $brandPink;
+                    font-size: 1rem !important;
+                    font-weight: 800 !important;
+                }
 
                 @media (max-width: $mobileWidth) {
                     grid-template-columns: auto;

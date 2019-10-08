@@ -181,7 +181,12 @@
         line-height: 1.5rem;
         grid-template-columns: auto auto;
         row-gap: 30px;
-        column-gap: 30px; }
+        column-gap: 30px;
+        align-content: center; }
+        .sponsor-content-detail-tickets-cards-price {
+          color: #ff3263;
+          font-size: 1rem !important;
+          font-weight: 800 !important; }
         @media (max-width: 700px) {
           .sponsor-content-detail-tickets-cards {
             grid-template-columns: auto; } }
@@ -773,9 +778,16 @@ a {
     display: grid;
     justify-items: center; }
   .agenda-break {
+    align-content: center;
+    display: grid;
     background-color: #c1c1c1; }
   .agenda-room {
+    align-content: center;
+    display: grid;
     background-color: #a8a8a8; }
+  .agenda-tbaCard {
+    align-content: center;
+    display: grid; }
 
 .footer {
   background-color: #000d28;

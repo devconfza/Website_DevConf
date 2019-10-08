@@ -19,13 +19,15 @@
                 <div>
                     <div>Early bird tickets</div>
                     <div>The best price ticket but highly limited!</div>
-                    <a class="sponsor-button" href="/packages" target="_blank">Buy an early bird ticket now!</a>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlyBird.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an early bird ticket now!</a>
                 </div>
                 <div>
                     <div>Individual Tickets</div>
                     <div>For community members and solo developers who are paying their own way. Only
                         available via Quicket with credit card payment.</div>
-                    <a class="sponsor-button" href="/packages" target="_blank">Buy an individual ticket now!</a>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.solo.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an individual ticket now!</a>
                 </div>
                 <div>
                     <div>Corporate Tickets</div>
@@ -35,7 +37,8 @@
                     <div>
                         Purchase 10 or more to get 10% off!
                     </div>
-                    <a class="sponsor-button" href="/packages" target="_blank">Buy a corporate ticket now!</a>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy a corporate ticket now!</a>
                 </div>
                 <div>
                     <div>Manual Corporate Tickets</div>
@@ -43,6 +46,7 @@
                         supplier? Need special payment terms?<br />
                         <strong>No problem</strong> - we can assist with a manual ticket purchase</div>
                     <div>Purchase 10 or more to get 10% off!</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
                     <a class="sponsor-button"
                         href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
                         target="_blank">Let us help you now!</a>
@@ -56,8 +60,8 @@
         <div class="sponsor-content-detail-content">
             Full agenda to be announced in November
         </div>
-        <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}"
-            data-event-date="{{ event.sessionizeDate}}"></div>
+        <!-- <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}"
+            data-event-date="{{ event.sessionizeDate}}"></div> -->
     </div>
 
     <div class="sponsor-content-detail">

@@ -3,15 +3,29 @@ events:
     date: "31 March 2020"
     info: "/capetown"
     sessionizeId: "b5u8ycnc"
-    sessionizeDate: "2020-03-31"
     venue: "Century City Conference Centre"
     website: "https://ccconferencecentre.co.za/"
     mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
+    tickets:
+      purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
+      earlyBird:
+        price: R1,880.00
+      solo:
+        price: R1,997.50
+      corporate:
+        price: R2,350.00     
   - location: "Johannesburg"
     date: "2 April 2020"
     info: "/johannesburg"
     sessionizeId: "b5u8ycnc"
-    sessionizeDate: "2020-03-31"
     venue: "Gallagher Convention Centre"
     website: "https://gallagher.co.za"
     mapLink: "https://goo.gl/maps/NwCiffFc5eCAtyLr7"
+    tickets:
+      purchaseSite: https://www.quicket.co.za/events/86889-devconf-2020-johannesburg
+      earlyBird:
+        price: R2,092.00
+      solo:
+        price: R2,222.75
+      corporate:
+        price: R2,615.00        
