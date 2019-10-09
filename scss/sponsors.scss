@@ -302,12 +302,21 @@
             &-level {
                 display: grid;
                 justify-items: center;
-                margin-bottom: 15px;            
-            }
+                margin-bottom: 15px; 
 
-            &-Gold {
-                @extend .sponsor-content-detail-sponsor;
-                height: 180px;
+                img{
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $brandPink;
+                }
+                
+                a{
+                    color: transparent !important;
+
+                    &:hover{
+                        color: transparent !important;
+                    }
+                }
             }
         }
 

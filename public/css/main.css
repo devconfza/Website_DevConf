@@ -281,7 +281,7 @@
       grid-auto-flow: column;
       grid-template-columns: repeat(4, auto);
       justify-items: center; }
-    .sponsor-content-detail-sponsor, .sponsor-content-detail-sponsor-Gold {
+    .sponsor-content-detail-sponsor {
       border-color: #ff3263;
       border-width: 1px;
       border-style: solid; }
@@ -289,8 +289,14 @@
         display: grid;
         justify-items: center;
         margin-bottom: 15px; }
-      .sponsor-content-detail-sponsor-Gold {
-        height: 180px; }
+        .sponsor-content-detail-sponsor-level img {
+          border-style: solid;
+          border-width: 1px;
+          border-color: #ff3263; }
+        .sponsor-content-detail-sponsor-level a {
+          color: transparent !important; }
+          .sponsor-content-detail-sponsor-level a:hover {
+            color: transparent !important; }
     .sponsor-content-detail-heading, .sponsor-content-detail-heading-pink {
       color: #1BA6E3;
       text-transform: uppercase;
