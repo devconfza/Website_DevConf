@@ -531,6 +531,77 @@
   .sponsor .more-info {
     margin-top: 10px; }
 
+#agenda {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  row-gap: 3px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.agenda-row-style-break {
+  background-color: #ed3259;
+  display: grid;
+  justify-self: stretch;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  font-size: 0.8rem; }
+
+.agenda-row-style-key {
+  background-color: #990020;
+  display: grid;
+  justify-self: stretch;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  font-size: 0.8rem; }
+
+.agenda-row-style-highlight {
+  background-color: #fc003d;
+  display: grid;
+  justify-self: stretch;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  justify-content: space-between; }
+
+.agenda-row-style-keynote {
+  background-color: #000d28;
+  display: grid;
+  justify-self: stretch;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  justify-content: space-between; }
+
+.agenda-row-timeslot {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-self: stretch;
+  column-gap: 5px; }
+
+.agenda-session {
+  background-color: #000d28;
+  border-radius: 5px;
+  display: grid;
+  justify-self: stretch;
+  justify-items: center;
+  color: white; }
+
 a {
   color: #fc003d; }
   a:hover {
@@ -768,39 +839,6 @@ a {
         color: #000d28; }
         .content .contactus .contactDetails a:hover {
           color: #001e5b; }
-
-.agenda {
-  display: grid;
-  grid-auto-flow: row;
-  justify-items: stretch;
-  grid-row-gap: 2px;
-  grid-column-gap: 2px;
-  font-variant-caps: all-small-caps;
-  font-weight: bold;
-  align-items: end;
-  background-color: #f4f4f4;
-  color: black;
-  justify-self: stretch;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  align-items: stretch;
-  text-align: center; }
-  .agenda-room {
-    background-color: #c1c1c1; }
-  .agenda-session-talk-content {
-    display: grid;
-    justify-items: center; }
-  .agenda-break {
-    align-content: center;
-    display: grid;
-    background-color: #c1c1c1; }
-  .agenda-room {
-    align-content: center;
-    display: grid;
-    background-color: #a8a8a8; }
-  .agenda-tbaCard {
-    align-content: center;
-    display: grid; }
 
 .footer {
   background-color: #000d28;

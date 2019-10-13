@@ -1,0 +1,57 @@
+#agenda {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: 3px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@mixin full-agenda-row($bgcolour) {
+    background-color: $bgcolour;
+    display: grid;
+    justify-self: stretch;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.agenda-row-style-break {
+    @include full-agenda-row(#ed3259);
+    font-size: 0.8rem;
+}
+
+.agenda-row-style-key {
+    @include full-agenda-row(#990020);
+    font-size: 0.8rem;
+}
+
+.agenda-row-style-highlight {
+    @include full-agenda-row(#fc003d);
+}
+
+.agenda-row-style-keynote {
+    @include full-agenda-row(#000d28);
+}
+
+.agenda-row-timeslot {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    justify-self: stretch;
+    column-gap: 5px;
+}
+
+.agenda-session {
+    background-color: #000d28;
+    border-radius: 5px;
+    display: grid;
+    justify-self: stretch;
+    justify-items: center;
+    color: white;
+}

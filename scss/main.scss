@@ -1,5 +1,6 @@
 @import 'choose-contrast-color.scss';
 @import 'sponsors.scss';
+@import 'agenda.scss';
 $brandpink: #fc003d;
 $brandblue: #000d28;
 $mobileWidth: 700px;
@@ -317,59 +318,6 @@ a {
         }
     }
 }
-
-$agendaBase: #f4f4f4;
-
-.agenda {
-    display: grid;
-    grid-auto-flow: row;
-    justify-items: stretch;
-    grid-row-gap: 2px;
-    grid-column-gap: 2px;
-    font-variant-caps: all-small-caps;
-    font-weight: bold;
-    align-items: end;
-    background-color: $agendaBase;
-    color: black;
-    justify-self: stretch;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    align-items: stretch;
-    text-align: center;
-
-    &-room {
-        background-color: darken($agendaBase, 20%);
-    }
-
-    &-session {
-        &-talk {
-            &-content {
-                display: grid;
-                justify-items: center;
-            }
-        }
-
-        &-highlight {}
-    }
-
-    &-break {
-        align-content: center;
-        display: grid;
-        background-color: darken($agendaBase, 20%);
-    }
-
-    &-room {
-        align-content: center;
-        display: grid;
-        background-color: darken($agendaBase, 30%);
-    }
-
-    &-tbaCard {
-        align-content: center;
-        display: grid;
-    }
-}
-
 
 .footer {
     background-color: $brandblue;
