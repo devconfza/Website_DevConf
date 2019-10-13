@@ -8,6 +8,10 @@
     padding-bottom: 5px;
 }
 
+.agenda > .hidden-row {
+    display: none;
+}
+
 @mixin full-agenda-row($bgcolour) {
     background-color: $bgcolour;
     display: grid;
@@ -54,4 +58,20 @@
     justify-self: stretch;
     justify-items: center;
     color: white;
+}
+
+.agenda-row-style-loading {
+    font-size: 0.8rem;
+}
+
+.agenda-session-time,
+.agenda-session-room {
+    font-size: 0.8rem;
+    margin: 3px;
+}
+
+.agenda-session-image,
+.agenda-session-name,
+.agenda-session-title {
+    margin: 3px;
 }

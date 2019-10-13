@@ -540,6 +540,9 @@
   padding-top: 5px;
   padding-bottom: 5px; }
 
+.agenda > .hidden-row {
+  display: none; }
+
 .agenda-row-style-break {
   background-color: #ed3259;
   display: grid;
@@ -601,6 +604,19 @@
   justify-self: stretch;
   justify-items: center;
   color: white; }
+
+.agenda-row-style-loading {
+  font-size: 0.8rem; }
+
+.agenda-session-time,
+.agenda-session-room {
+  font-size: 0.8rem;
+  margin: 3px; }
+
+.agenda-session-image,
+.agenda-session-name,
+.agenda-session-title {
+  margin: 3px; }
 
 a {
   color: #fc003d; }
