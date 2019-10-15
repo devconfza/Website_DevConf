@@ -633,6 +633,9 @@
   margin: 3px;
   font-weight: 700; }
 
+.agenda-session-image {
+  padding: 10px; }
+
 .speaker-image {
   width: 100%;
   border-radius: 50%; }
@@ -642,6 +645,12 @@
 
 .clickable-session {
   cursor: pointer; }
+  @media (max-width: 700px) {
+    .clickable-session {
+      grid-template-rows: auto 0 auto auto; } }
+
+.unclickable-session {
+  align-items: center; }
 
 .popupBackdrop {
   width: 100%;
@@ -669,7 +678,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
-  padding: 10px; }
+  padding: 10px;
+  grid-column-gap: 10px; }
   @media (max-width: 700px) {
     .popupBio {
       grid-template-columns: auto;
@@ -706,7 +716,12 @@
   grid-row: 3/3;
   grid-column: 1/1;
   margin-top: 5px;
-  justify-self: center; }
+  justify-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10px; }
+  .bio-social img {
+    height: 35px; }
   @media (max-width: 700px) {
     .bio-social {
       grid-column: unset;
@@ -722,44 +737,56 @@
       grid-column: unset;
       grid-row: unset; } }
 
-.bio-title {
+.bio-speaker-bio-title {
   grid-row: 5/5;
-  grid-column: 1/1;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  justify-self: center; }
-  @media (max-width: 700px) {
-    .bio-title {
-      grid-column: unset;
-      grid-row: unset; } }
-
-.bio-talk-description {
-  grid-row: 6/6;
   grid-column: 1/1;
   margin-top: 5px; }
   @media (max-width: 700px) {
-    .bio-talk-description {
-      grid-column: unset;
-      grid-row: unset; } }
-
-.bio-speaker-bio-title {
-  grid-row: 1/1;
-  grid-column: 2/2; }
-  @media (max-width: 700px) {
     .bio-speaker-bio-title {
-      margin-top: 5px;
       grid-column: unset;
       grid-row: unset; } }
 
 .bio-speaker-bio {
-  grid-row: 1/4;
-  grid-column: 2/2;
-  margin-top: 30px; }
+  grid-row: 6/6;
+  grid-column: 1/1;
+  margin-top: 5px; }
   @media (max-width: 700px) {
     .bio-speaker-bio {
       grid-column: unset;
+      grid-row: unset; } }
+
+.bio-title {
+  grid-row: 1/1;
+  grid-column: 2/2;
+  justify-self: center; }
+  @media (max-width: 700px) {
+    .bio-title {
+      margin-top: 5px;
+      grid-column: unset;
+      grid-row: unset; } }
+
+.bio-talk-description {
+  grid-row: 1/6;
+  grid-column: 2/2;
+  margin-top: 25px; }
+  @media (max-width: 700px) {
+    .bio-talk-description {
+      grid-column: unset;
       grid-row: unset;
       margin-top: 10px; } }
+
+.bio-track {
+  grid-row: 6/6;
+  grid-column: 2/2;
+  font-size: 0.8rem;
+  align-self: center;
+  justify-self: end; }
+  @media (max-width: 700px) {
+    .bio-track {
+      grid-column: unset;
+      grid-row: unset;
+      margin-top: 5px;
+      justify-self: start; } }
 
 .largePopupImage {
   grid-column: 1/1;

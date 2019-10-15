@@ -1,4 +1,5 @@
 import { Sessionize } from './definations/sessions';
+import { Session } from 'inspector';
 
 if (typeof fetch === "undefined") {
     alert("Oh no 😢 We don't support your web browser. Please upgrade to a newer version!");
@@ -33,6 +34,7 @@ if (agendaPlaceholder) {
 
 function loadEventSessions(id: String, target: HTMLElement) {
     let eventData: Sessionize.Event;
+    let tracks: Array<Sessionize.Item>;
 
     const getTemplate = (id: string) => {
         return ((document.getElementById(id) as HTMLTemplateElement)
@@ -63,7 +65,17 @@ function loadEventSessions(id: String, target: HTMLElement) {
             return remappedSpeakers[0];
         }
 
-        return remappedSpeakers.filter((value, index) => index < remappedSpeakers.length - 1).join(', ') + '& ' + remappedSpeakers[remappedSpeakers.length - 1];
+        return remappedSpeakers.filter((value, index) => index < remappedSpeakers.length - 1).join(', ') + ' & ' + remappedSpeakers[remappedSpeakers.length - 1];
+    }
+
+    const getTrack = (session: Sessionize.Session) => {
+        const trackId = session.categoryItems.filter(category => tracks.map(track => track.id).indexOf(category) > -1)[0];
+
+        if (trackId) {
+            return tracks.filter(category => category.id === trackId)[0].name;
+        }
+
+        return "";
     }
 
     const singleSpeaker = (sessionSpeakers: Array<string>) => {
@@ -95,9 +107,19 @@ function loadEventSessions(id: String, target: HTMLElement) {
             image.alt = link.title;
             switch (link.title) {
                 case "Twitter": {
+                    image.src = "/public/images/icons8-twitter-50.png";
                     break;
                 }
                 case "LinkedIn": {
+                    image.src = "/public/images/icons8-linkedin-50.png";
+                    break;
+                }
+                case "Blog": {
+                    image.src = "/public/images/icons8-website-50.png";
+                    break;
+                }
+                default: {
+                    image.src = "/public/images/icons8-external-link-50.png";
                     break;
                 }
             }
@@ -106,6 +128,10 @@ function loadEventSessions(id: String, target: HTMLElement) {
         });
 
         return result;
+    }
+
+    const setDivText = (element: Element, querySelector: string, content: string) => {
+        (element.querySelector(querySelector)! as HTMLDivElement).innerText = content;
     }
 
     const addPopupHandler = () => {
@@ -138,18 +164,21 @@ function loadEventSessions(id: String, target: HTMLElement) {
                     const socialLinks = buildSocialBadges(speakerInfo);
                     const bioContent = getTemplate("popupBioContent").firstElementChild!;
                     (bioContent.querySelector("img.largePopupImage")! as HTMLImageElement).src = speakerInfo.profilePicture;
-                    (bioContent.querySelector("div.bio-speaker")! as HTMLDivElement).innerText = multipleSpeakerNames(matchedSession.speakers);
+                    setDivText(bioContent, "div.bio-speaker", multipleSpeakerNames(matchedSession.speakers));
                     const socialLinkPlaceholder = (bioContent.querySelector("div.bio-social")! as HTMLDivElement);
                     socialLinks.forEach(link => {
                         socialLinkPlaceholder.appendChild(link);
                     });
 
-                    (bioContent.querySelector("div.bio-tagline")! as HTMLDivElement).innerText = speakerInfo.tagLine;
-                    (bioContent.querySelector("div.bio-title")! as HTMLDivElement).innerText = matchedSession.title;
-                    (bioContent.querySelector("div.bio-talk-description")! as HTMLDivElement).innerText = matchedSession.description;
-                    (bioContent.querySelector("div.bio-speaker-bio")! as HTMLDivElement).innerText = speakerInfo.bio;
+                    setDivText(bioContent, "div.bio-tagline", speakerInfo.tagLine);
+                    setDivText(bioContent, "div.bio-title", matchedSession.title);
+                    setDivText(bioContent, "div.bio-talk-description", matchedSession.description);
+                    setDivText(bioContent, "div.bio-speaker-bio", speakerInfo.bio);
+                    setDivText(bioContent, "div.bio-track", `Track: ${getTrack(matchedSession)}`);
                     popupContent.insertAdjacentElement("beforeend", bioContent);
                 };
+            } else {
+                div.classList.add("unclickable-session");
             }
         });
     }
@@ -160,6 +189,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
 
     const parseEventData = (event: Sessionize.Event) => {
         eventData = event;
+        tracks = event.categories.filter(category => category.title === "Track")[0].items;
 
         document.querySelectorAll(".agenda-session").forEach((element, index) => {
             const div = element as HTMLDivElement;

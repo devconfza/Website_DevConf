@@ -1,17 +1,22 @@
 export module Sessionize {
-
     export interface Session {
         id: string;
         title: string;
         description: string;
-        startsAt: string;
-        endsAt: string;
+        startsAt: Date;
+        endsAt: Date;
         isServiceSession: boolean;
         isPlenumSession: boolean;
         speakers: string[];
-        categoryItems: any[];
+        categoryItems: number[];
         questionAnswers: any[];
         roomId: number;
+    }
+
+    export interface Link {
+        title: string;
+        url: string;
+        linkType: string;
     }
 
     export interface Speaker {
@@ -22,11 +27,24 @@ export module Sessionize {
         tagLine: string;
         profilePicture: string;
         isTopSpeaker: boolean;
-        links: any[];
+        links: Link[];
         sessions: number[];
         fullName: string;
         categoryItems: any[];
         questionAnswers: any[];
+    }
+
+    export interface Item {
+        id: number;
+        name: string;
+        sort: number;
+    }
+
+    export interface Category {
+        id: number;
+        title: string;
+        items: Item[];
+        sort: number;
     }
 
     export interface Room {
@@ -38,8 +56,9 @@ export module Sessionize {
     export interface Event {
         sessions: Session[];
         speakers: Speaker[];
+        questions: any[];
+        categories: Category[];
         rooms: Room[];
     }
-
 }
 
