@@ -75,13 +75,17 @@ a {
             }
         }
 
-        &-menu {
-            justify-self: end;
+        &-menu {        
             display: grid;
             grid-auto-flow: column;
             grid-gap: 10px;
+            @media (max-width: 840px) {                
+                grid-template-columns: repeat(11, min-content);
+            }
+            text-align: center;
+            align-items: center;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: $mobileWidth) {                
                 display: none;
 
                 &-open {
@@ -94,6 +98,7 @@ a {
                     border-style: solid;
                     margin-top: 5px;
                     grid-row-gap: 20px;
+                    grid-template-columns: unset;
 
                     >div.spacer {
                         display: none;
@@ -170,6 +175,7 @@ a {
         width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         row-gap: 10px;
+        column-gap: 20px;
 
         .event {
             display: grid;

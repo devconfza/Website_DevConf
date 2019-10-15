@@ -587,7 +587,9 @@
   border-radius: 5px;
   padding: 5px;
   grid-auto-flow: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  justify-content: unset;
+  grid-auto-flow: row; }
 
 .agenda-row-timeslot {
   display: grid;
@@ -647,7 +649,7 @@
   cursor: pointer; }
   @media (max-width: 700px) {
     .clickable-session {
-      grid-template-rows: auto 0 auto auto; } }
+      grid-template-rows: 0 auto auto; } }
 
 .unclickable-session {
   align-items: center; }
@@ -801,6 +803,20 @@
       grid-column: unset;
       grid-row: unset; } }
 
+.agenda-keynote-session {
+  background-color: unset;
+  color: black;
+  font-size: 1.3rem; }
+  .agenda-keynote-session img.speaker-image {
+    height: 160px;
+    width: unset; }
+
+.agenda-session-header {
+  justify-self: stretch;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between; }
+
 a {
   color: #fc003d; }
   a:hover {
@@ -855,10 +871,14 @@ a {
           justify-content: end;
           cursor: pointer; } }
     .menu .right-menu {
-      justify-self: end;
       display: grid;
       grid-auto-flow: column;
-      grid-gap: 10px; }
+      grid-gap: 10px;
+      text-align: center;
+      align-items: center; }
+      @media (max-width: 840px) {
+        .menu .right-menu {
+          grid-template-columns: repeat(11, min-content); } }
       @media (max-width: 700px) {
         .menu .right-menu {
           display: none; }
@@ -871,7 +891,8 @@ a {
             border-width: 1px;
             border-style: solid;
             margin-top: 5px;
-            grid-row-gap: 20px; }
+            grid-row-gap: 20px;
+            grid-template-columns: unset; }
             .menu .right-menu-open > div.spacer {
               display: none; } }
     .menu .right .spacer {
@@ -923,7 +944,8 @@ a {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 10px; }
+    row-gap: 10px;
+    column-gap: 20px; }
     .hero .eventbananas .event {
       display: grid;
       grid-row-gap: 10px;

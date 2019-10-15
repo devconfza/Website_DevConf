@@ -42,6 +42,8 @@
 
 .agenda-row-style-keynote {
     @include full-agenda-row($brandBlue);
+    justify-content: unset;
+    grid-auto-flow: row;
 }
 
 .agenda-row-timeslot {
@@ -67,7 +69,7 @@
     justify-items: center;
     color: white;
     text-align: center;
-    padding: 2px;    
+    padding: 2px;
 }
 
 .agenda-row-style-loading {
@@ -114,7 +116,7 @@
     cursor: pointer;
 
     @media (max-width: $mobileWidth) {
-        grid-template-rows: auto 0 auto auto;
+        grid-template-rows: 0 auto auto;
     }
 }
 
@@ -297,4 +299,22 @@
         grid-column: unset;
         grid-row: unset;
     }
+}
+
+.agenda-keynote-session {
+    background-color: unset;
+    color: black;
+    font-size: 1.3rem;
+
+    img.speaker-image {
+        height: 160px;
+        width: unset;
+    }
+}
+
+.agenda-session-header {
+    justify-self: stretch;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
 }
