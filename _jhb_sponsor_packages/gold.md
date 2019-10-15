@@ -5,7 +5,7 @@ limit: 4
 logo: gold-jhb.png
 large-logo: gold-header.png
 logo_size: 120
-remaining: 3
+remaining: 0
 
 # Expo info
 expo: yes

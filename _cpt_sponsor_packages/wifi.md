@@ -18,6 +18,6 @@ exclusive:
     - Exclusive logo on printed WIFI ticket for each delegate
     - Exclusive logo on WIFI signage in each track room
     
-sold_out: no
+sold_out: yes
 order: 100
 ---
