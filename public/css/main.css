@@ -881,7 +881,9 @@ a {
           grid-template-columns: repeat(11, min-content); } }
       @media (max-width: 700px) {
         .menu .right-menu {
-          display: none; }
+          display: none;
+          position: relative;
+          z-index: 10001; }
           .menu .right-menu-open {
             display: grid;
             grid-auto-flow: row;
