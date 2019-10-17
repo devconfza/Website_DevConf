@@ -15,6 +15,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px repeat(5, auto); }
+  .sponsor a {
+    text-decoration: none; }
   .sponsor hr {
     width: 90%;
     border-style: none;

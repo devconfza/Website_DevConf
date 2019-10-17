@@ -1,6 +1,10 @@
 @import 'variables.scss';
 
 .sponsor {
+    a {
+        text-decoration: none;
+    }
+
     $titleHeight: 300px;
 
     display: grid;
@@ -304,24 +308,24 @@
         &-sponsor {
             border-color: $brandPink;
             border-width: 1px;
-            border-style: solid;            
+            border-style: solid;
 
             &-level {
                 display: grid;
                 justify-items: center;
-                margin-bottom: 15px; 
+                margin-bottom: 15px;
 
-                img{
+                img {
                     border-style: solid;
                     border-width: 1px;
                     border-color: $brandPink;
                     padding: 5px;
                 }
-                
-                a{
+
+                a {
                     color: transparent !important;
 
-                    &:hover{
+                    &:hover {
                         color: transparent !important;
                     }
                 }
