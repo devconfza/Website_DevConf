@@ -1,15 +1,14 @@
+@import 'variables.scss';
 @import 'choose-contrast-color.scss';
 @import 'sponsors.scss';
 @import 'agenda.scss';
-$brandpink: #fc003d;
-$brandblue: #000d28;
 $mobileWidth: 700px;
 
 a {
-    color: $brandpink;
+    color: $brandPink;
 
     &:hover {
-        color: lighten($brandpink, 10);
+        color: lighten($brandPink, 10);
     }
 }
 
@@ -32,12 +31,8 @@ body {
     letter-spacing: 0.03rem;
 }
 
-a {
-    text-decoration: none;
-}
-
 .menu {
-    background-color: $brandblue;
+    background-color: $darkBrandBlue;
     color: white;
     height: 40px;
     padding: 10px;
@@ -51,9 +46,10 @@ a {
 
     a {
         color: white;
+        text-decoration: none;
 
         &:hover {
-            color: $brandpink;
+            color: $brandPink;
         }
     }
 
@@ -93,9 +89,9 @@ a {
                 &-open {
                     display: grid;
                     grid-auto-flow: row;
-                    background: $brandblue;
+                    background: $darkBrandBlue;
                     padding: 20px;
-                    border-color: darken($brandpink, 50%);
+                    border-color: darken($brandPink, 25%);
                     border-width: 1px;
                     border-style: solid;
                     margin-top: 5px;
@@ -117,7 +113,7 @@ a {
 
 .hero {
     background-image: url("/public/images/Background_Web.jpg");
-    background-color: $brandblue;
+    background-color: $darkBrandBlue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +182,7 @@ a {
 
             .location {
                 font-size: 1.6rem;
-                color: $brandpink;
+                color: $darkBrandPink;
                 font-weight: bolder;
             }
         }
@@ -205,23 +201,23 @@ a {
             padding: 5px;
 
             &[type=submit] {
-                background: $brandblue;
+                background: $darkBrandBlue;
                 color: white;
-                border-color: darken($brandpink, 25);
+                border-color: darken($brandPink, 25);
                 border-width: 1px;
                 border-style: solid;
 
                 &:hover {
-                    background: $brandpink;
+                    background: $brandPink;
                 }
             }
         }
 
         a {
-            color: $brandpink;
+            color: $darkBrandPink;
 
             &:hover {
-                color: lighten($brandpink, 10);
+                color: lighten($darkBrandPink, 10%);
             }
         }
     }
@@ -235,7 +231,7 @@ a {
 
     .highlight {
         font-weight: bold;
-        color: $brandpink;
+        color: $darkBrandPink;
     }
 
     .seperator {
@@ -243,7 +239,7 @@ a {
         height: 3px;
         margin-top: 10px;
         margin-bottom: 10px;
-        border-bottom-color: $brandblue;
+        border-bottom-color: $darkBrandBlue;
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
@@ -251,7 +247,7 @@ a {
     .sectionTitle {
         font-weight: bold;
         font-size: 1.4rem;
-        color: $brandpink;
+        color: $darkBrandPink;
         margin-bottom: 10px;
         margin-top: 10px;
         letter-spacing: -0.02rem;
@@ -259,7 +255,7 @@ a {
 
     .subSectionTitle {
         @extend .sectionTitle;
-        color: $brandblue;
+        color: $darkBrandBlue;
         font-size: 1.2rem;
     }
 
@@ -276,7 +272,7 @@ a {
     }
 
     @mixin card($dimension) {
-        border: 1px solid lighten($brandblue, 50);
+        border: 1px solid lighten($darkBrandBlue, 50);
         border-radius: 5px;
         height: $dimension;
         width: $dimension;
@@ -285,7 +281,7 @@ a {
         font-weight: bold;
         display: grid;
         align-items: end;
-        background-color: $brandblue;
+        background-color: $darkBrandBlue;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -317,10 +313,10 @@ a {
             grid-template-columns: repeat(auto-fill, 200px);
 
             a {
-                color: $brandblue;
+                color: $darkBrandBlue;
 
                 &:hover {
-                    color: lighten($brandblue, 10);
+                    color: lighten($darkBrandBlue, 10);
                 }
             }
         }
@@ -328,7 +324,7 @@ a {
 }
 
 .footer {
-    background-color: $brandblue;
+    background-color: $darkBrandBlue;
     color: white;
     width: 100%;
     position: absolute;
@@ -362,7 +358,8 @@ a {
 }
 
 a.button {
-    background-color: $brandpink;
+    background-color: $darkBrandPink;
+    text-decoration: none;
     border-radius: 10px;
     padding: 5px;
     color: white;
@@ -372,12 +369,12 @@ a.button {
     justify-content: center;
 
     &:hover {
-        background-color: lighten($brandpink, 10);
+        background-color: lighten($darkBrandPink, 10%);
     }
 }
 
 a.smalllink {
     font-size: 0.7rem;
-    color: $brandblue;
+    color: $darkBrandBlue;
     text-decoration: underline;
 }

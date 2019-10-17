@@ -818,9 +818,9 @@
   justify-content: space-between; }
 
 a {
-  color: #fc003d; }
+  color: #ff3263; }
   a:hover {
-    color: #ff3062; }
+    color: #ff658a; }
 
 html {
   position: relative;
@@ -839,9 +839,6 @@ body {
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.03rem; }
 
-a {
-  text-decoration: none; }
-
 .menu {
   background-color: #000d28;
   color: white;
@@ -855,9 +852,10 @@ a {
   top: 0;
   z-index: 10000; }
   .menu a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
     .menu a:hover {
-      color: #fc003d; }
+      color: #ff3263; }
   .menu .left {
     justify-self: start;
     align-self: baseline; }
@@ -889,7 +887,7 @@ a {
             grid-auto-flow: row;
             background: #000d28;
             padding: 20px;
-            border-color: black;
+            border-color: #b2002a;
             border-width: 1px;
             border-style: solid;
             margin-top: 5px;
@@ -967,11 +965,11 @@ a {
       .hero .mailingList input[type=submit] {
         background: #000d28;
         color: white;
-        border-color: #7d001e;
+        border-color: #b2002a;
         border-width: 1px;
         border-style: solid; }
         .hero .mailingList input[type=submit]:hover {
-          background: #fc003d; }
+          background: #ff3263; }
     .hero .mailingList a {
       color: #fc003d; }
       .hero .mailingList a:hover {
@@ -1091,6 +1089,7 @@ a {
 
 a.button {
   background-color: #fc003d;
+  text-decoration: none;
   border-radius: 10px;
   padding: 5px;
   color: white;
