@@ -934,146 +934,137 @@ body {
       max-width: 80%;
       max-height: 100px;
       object-fit: contain; }
-  .hero .CFPSection {
-    display: grid;
-    justify-items: center; }
-    .hero .CFPSection .cfpbutton {
-      background-color: #fc003d;
-      color: white;
-      border-radius: 30px;
-      padding-bottom: 8px;
-      padding-left: 15px;
-      padding-right: 15px;
-      border-width: 2px;
-      border-style: solid;
-      border-color: white; }
-      .hero .CFPSection .cfpbutton:hover {
-        background-color: #6d001b;
-        border-color: #fc003d; }
-      .hero .CFPSection .cfpbutton a {
-        color: white; }
-      .hero .CFPSection .cfpbutton p.cfpTimeline {
-        font-size: 0.8rem; }
-  .hero .eventbananas {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 10px;
-    column-gap: 20px; }
-    .hero .eventbananas .event {
-      display: grid;
-      grid-row-gap: 10px;
-      justify-content: center; }
-      .hero .eventbananas .event .location {
-        font-size: 1.6rem;
-        color: #fc003d;
-        font-weight: bolder; }
-  .hero .mailingList {
-    font-size: 0.9rem; }
-    .hero .mailingList .input-group {
-      margin-left: auto;
-      margin-right: auto; }
-    .hero .mailingList input {
-      border: 0;
-      padding: 5px; }
-      .hero .mailingList input[type=submit] {
-        background: #000d28;
-        color: white;
-        border-color: #b2002a;
-        border-width: 1px;
-        border-style: solid; }
-        .hero .mailingList input[type=submit]:hover {
-          background: #ff3263; }
-    .hero .mailingList a {
-      color: #fc003d; }
-      .hero .mailingList a:hover {
-        color: #ff3062; }
+  .hero .slogan {
+    margin-top: 10px;
+    margin-bottom: 40px; }
+  .hero .intro {
+    font-size: 0.8rem; }
 
-.content {
-  padding: 20px;
-  font-size: 0.9rem;
-  background-color: white;
-  line-height: 180%; }
-  .content .highlight {
-    font-weight: bold;
-    color: #fc003d; }
-  .content .seperator {
-    width: 100%;
-    height: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom-color: #000d28;
-    border-bottom-style: solid;
-    border-bottom-width: 1px; }
-  .content .sectionTitle, .content .subSectionTitle {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #fc003d;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    letter-spacing: -0.02rem; }
-  .content .subSectionTitle {
-    color: #000d28;
-    font-size: 1.2rem; }
-  .content .media {
-    display: grid; }
-    .content .media .mediaArticles {
-      display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: 200px;
-      overflow-x: auto;
-      grid-column-gap: 10px; }
-  .content .card {
-    border: 1px solid #286eff;
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
-    font-size: 0.7rem;
-    font-variant-caps: all-small-caps;
-    font-weight: bold;
+.highlight {
+  font-weight: bold;
+  color: #fc003d; }
+
+.sponsor-content-detail-event-bananas {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  grid-column-gap: 20px; }
+  .sponsor-content-detail-event-bananas .event {
     display: grid;
-    align-items: end;
-    background-color: #000d28;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-    .content .card .title {
-      padding: 5px;
-      width: 191px;
-      margin-bottom: 10px;
-      background-color: rgba(0, 0, 0, 0.705);
-      color: white; }
-  .content .smallerCard {
-    border: 1px solid #286eff;
-    border-radius: 5px;
-    height: 150px;
-    width: 150px;
-    font-size: 0.7rem;
-    font-variant-caps: all-small-caps;
-    font-weight: bold;
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-items: center; }
+    .sponsor-content-detail-event-bananas .event .location {
+      color: #000d28;
+      text-transform: uppercase;
+      padding-top: 10px;
+      font-weight: 800;
+      font-size: 2rem;
+      text-align: center; }
+    .sponsor-content-detail-event-bananas .event a {
+      background-color: #000d28;
+      font-size: 0.8rem; }
+
+.sponsor-content-detail-media {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
+  overflow-x: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 20px; }
+
+.sponsor-content-detail-media-full {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, auto); }
+
+.sponsor-content-detail-mailing-list {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  font-size: 0.8rem; }
+  .sponsor-content-detail-mailing-list input[type=text] {
+    width: 500px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px; }
+    .sponsor-content-detail-mailing-list input[type=text]::placeholder {
+      color: #1BA6E3; }
+  .sponsor-content-detail-mailing-list input[type=email] {
+    width: 500px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px; }
+    .sponsor-content-detail-mailing-list input[type=email]::placeholder {
+      color: #1BA6E3; }
+  .sponsor-content-detail-mailing-list a {
+    color: #1BA6E3; }
+    .sponsor-content-detail-mailing-list a:hover {
+      color: #1685b5; }
+  .sponsor-content-detail-mailing-list div.checkbox {
     display: grid;
-    align-items: end;
-    background-color: #000d28;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-    .content .smallerCard .title {
-      padding: 5px;
-      width: 141px;
-      margin-bottom: 10px;
-      background-color: rgba(0, 0, 0, 0.705);
-      color: white; }
-  .content .contactus {
-    display: grid; }
-    .content .contactus .contactDetails {
-      align-self: stretch;
-      display: grid;
-      align-items: center;
-      grid-template-columns: repeat(auto-fill, 200px); }
-      .content .contactus .contactDetails a {
-        color: #000d28; }
-        .content .contactus .contactDetails a:hover {
-          color: #001e5b; }
+    grid-template-columns: auto auto;
+    align-items: center; }
+    .sponsor-content-detail-mailing-list div.checkbox input[type=checkbox] {
+      width: 20px;
+      height: 20px; }
+
+.card {
+  border: 1px solid #286eff;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  font-size: 0.7rem;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  display: grid;
+  align-items: end;
+  background-color: #000d28;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+  .card .title {
+    padding: 5px;
+    width: 191px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white; }
+
+.smallerCard {
+  border: 1px solid #286eff;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+  font-size: 0.7rem;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  display: grid;
+  align-items: end;
+  background-color: #000d28;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+  .smallerCard .title {
+    padding: 5px;
+    width: 141px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white; }
+
+.contactus {
+  display: grid; }
+  .contactus .contactDetails {
+    align-self: stretch;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, 200px); }
+    .contactus .contactDetails a {
+      color: #000d28; }
+      .contactus .contactDetails a:hover {
+        color: #001e5b; }
 
 .footer {
   background-color: #000d28;
@@ -1101,6 +1092,34 @@ body {
       .footer > div:nth-child(2) > a:nth-child(1) {
         visibility: hidden; } }
 
+input[type=submit].button {
+  background-color: #1BA6E3;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: none; }
+  input[type=submit].button:hover {
+    background-color: #48b8e9; }
+
+a.button-blue {
+  background-color: #1BA6E3;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: none; }
+  a.button-blue:hover {
+    background-color: #48b8e9; }
+
 a.button {
   background-color: #fc003d;
   text-decoration: none;
@@ -1110,7 +1129,8 @@ a.button {
   width: 200px;
   display: grid;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border: none; }
   a.button:hover {
     background-color: #ff3062; }
 

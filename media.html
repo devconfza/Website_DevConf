@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="sponsor">
+    <div class="sponsor-title">
+        <div class="sponsor-title-ellipse">&nbsp;</div>
+        <div class="sponsor-title-content">
+            <div>DevConf In The Media</div>
+        </div>
+    </div>
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-media-full">
+            {% for media in site.data.media %}
+            {% include media_card.html link=media.link title=media.title %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

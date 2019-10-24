@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    fetch(`https://dcunfurl.sadev.workers.dev/?target=${encodeURIComponent("{{ include.link }}")}`).then(
+        response => {
+            response.text().then(body => {
+                let data = JSON.parse(body);
+                document.getElementById("mediaBlock{{forloop.index}}").style
+                    .backgroundImage = `url(${data.icon})`;
+
+                if (data.theme !== undefined) {
+                    document.getElementById("mediaBlock{{forloop.index}}").style
+                        .backgroundColor = data.theme;
+                }
+            });
+        });
+</script>
+<a href="{{ include.link }}" id="mediaBlock{{forloop.index}}" class="card"
+    style="background-image: url('/public/images/hl3confirmed.jpg');" target="_blank"
+    rel="noopener noreferrer">
+    <div class="title">{{ include.title }}</div>
+</a>

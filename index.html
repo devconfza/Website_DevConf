@@ -2,118 +2,84 @@
 layout: default
 ---
 
-<div class="hero">
-    <div class="brand">
-        <img src="/public/images/bannerTitle.png" alt='DevConf;' />
-        <div class="slogan">solving today and tomorrow's software development challenges</div>
-    </div> 
-    <div class="eventbananas">
-        {% for event in site.data.config.events %}
-        <div class="event">
-            <div class="location">{{ event.location }}</div>
-            <div class="date">{{ event.date }}</div>
-            <!-- <div class="countdown">365 days to go</div> -->
-            <a href="{{ event.info }}" class="button" role="button">
-                <div>Buy Tickets, Review The Agenda &amp; Learn More</div>
-            </a>
+<div class="sponsor">
+    <div class="hero">
+        <div class="brand">
+            <img src="/public/images/bannerTitle.png" alt='DevConf;' />
+            <div class="slogan">solving today and tomorrow's software development challenges</div>
+            <div class="intro">
+                DevConf is a community-driven, professional software developer focused, one-day
+                conference hosted annually.<br />
+                DevConf provides professional software developers with a buffet of tools,
+                practices and
+                principles applicable to tackling current and future challenges in the South African software
+                development
+                environment. It's an event where attendees can learn, network and be inspired regardless of their
+                specific
+                technology stack and programming language of choice.
+            </div>
         </div>
-        {% endfor%}
     </div>
-    <!-- <div class="CFPSection">
-        <div class="cfpbutton">
-            <a href="https://sessionize.com/devconf2020/" target="_blank" type="button">
-                <h3>Speak at DevConf</h3>
-                <p class="cfpTimeline">Call for papers (CFP) is open until September 14<sup>th</sup>.</p>
-                <p>👩‍💻 Come on, do it! You'll be awesome! ✨</p>
-            </a>
+
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-event-bananas">
+                {% for event in site.data.config.events %}
+                <div class="event">
+                    <div class="location">{{ event.location }}</div>
+                    <div class="date">{{ event.date }}</div>
+                    <!-- <div class="countdown">365 days to go</div> -->
+                    <a href="{{ event.info }}" class="button" role="button">
+                        <div>Tickets, Agenda &amp; More</div>
+                    </a>
+                </div>
+                {% endfor %}
         </div>
-    </div> -->
-    <div class="mailingList">
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Keep Me Informed</div>
         <form id="madmimi">
-            <p>
-                If you would like to be added to our mailing list for announcements, please signup below...
-            </p>
-            <div class="input-group">
+            <div class="sponsor-content-detail-mailing-list">
+                <p>
+                    If you would like to be added to our mailing list for announcements, please signup below...
+                </p>
                 <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required"
                     placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
-                <span class="">
-                    <input id="signup_email" name="signup[email]" type="email" class="form-control mimi_field required"
-                        placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email"
-                        required>
-                </span>
-                <span class="input-group-btn mimi_field">
-                    <input type="submit" class="submit btn btn-primary" value="Keep me informed"
-                        id="webform_submit_button" data-default-text="Keep me informed"
-                        data-submitting-text="Signing Up..." data-invalid-text="Try Again" data-thanks="Thank you!"
-                        data-class="btn btn-primary" />
-                </span>
-            </div>
-            <div class="mimi_field checkgroup" id="signup_audience_lists">
-                <div style="display: none">
-                    <input class="checkbox" id="list_2073517" name="lists[]" value="2073517" type="checkbox"
-                        checked="checked" />
-                    <label for="list_2073517">DevConf2016PreRegister</label>
-                </div>
+                <input id="signup_email" name="signup[email]" type="email" class="form-control mimi_field required"
+                    placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email"
+                    required>
                 <div class="checkbox">
                     <input id="list_1138553" name="lists[]" value="1138553" type="checkbox" checked="checked" />
                     <label for="list_1138553">I would like to receive the Developer User Group newsletter as
                         well!</label>
-                    <p>The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
-                            rel="noopener noreferrer">Developer
-                            User Group</a> is a monthly free meeting for software developers which takes place in Cape
-                        Town, Pretoria &amp; Johannesburg.</p>
                 </div>
+                <p>The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
+                        rel="noopener noreferrer">Developer
+                        User Group</a> is a monthly free meeting for software developers which takes place in
+                    Cape
+                    Town, Pretoria &amp; Johannesburg.</p>
+                <input type="submit" class="button" value="Keep me informed" id="webform_submit_button"
+                    data-default-text="Keep me informed" data-submitting-text="Signing Up..."
+                    data-invalid-text="Try Again" data-thanks="Thank you!" data-class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
 
-
-<div class="content">
-    <div class="intro">
-        <span class="highlight">DevConf</span> is a community-driven, professional software developer focused, one-day
-        conference hosted annually.<br />
-        <span class="highlight">DevConf</span> provides professional software developers with a buffet of tools,
-        practices and
-        principles applicable to tackling current and future challenges in the South African software development
-        environment. It's an event where attendees can learn, network and be inspired regardless of their specific
-        technology stack and programming language of choice.
-    </div>
-
-    <div class="seperator">&nbsp;</div>
-
-    <div class="media">
-        <div class="sectionTitle">DevConf in the media</div>
-        <div class="mediaArticles">
-            {% for media in site.data.media %}
-
-            <script type="text/javascript">
-                fetch(`https://dcunfurl.sadev.workers.dev/?target=${encodeURIComponent("{{ media.link }}")}`).then(response => {
-                    response.text().then(body => {
-                        let data = JSON.parse(body);
-                        document.getElementById("mediaBlock{{forloop.index}}").style.backgroundImage = `url(${data.icon})`;
-
-                        if (data.theme !== undefined) {
-                            document.getElementById("mediaBlock{{forloop.index}}").style.backgroundColor = data.theme;
-                        }
-                    });
-                });
-            </script>
-            <a href="{{ media.link }}" id="mediaBlock{{forloop.index}}" class="card"
-                style="background-image: url('/public/images/hl3confirmed.jpg');" target="_blank"
-                rel="noopener noreferrer">
-                <div class="title">{{ media.title }}</div>
-            </a>
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">DevConf in the media</div>
+        <div class="sponsor-content-detail-media">
+            {% for media in site.data.media limit: 6 %}
+            {% include media_card.html link=media.link title=media.title %}
             {% endfor %}
         </div>
+        <a class="button-blue" href="/media">View More</a>
     </div>
 
-    <div class="seperator">&nbsp;</div>
-
-    <div class="contactus" id="contacts">
-        <div class="sectionTitle">Contact Us</div>
-        <div class="contactDetails">
-            <div>Email us:<br /><a href='mailto:info@devconf.co.za'>info@devconf.co.za</a></div>
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Email Us</div>
+        <div class="sponsor-content-detail-email">
+            <a class="button" href="mailto:info@devconf.co.za">info@devconf.co.za</a>
         </div>
     </div>
 </div>
@@ -147,7 +113,7 @@ layout: default
             document.body.removeChild(script);
             submitButton.disabled = false;
             if (response.success) {
-                submitButton.value = submitButton.attributes['data-thanks'].value; 
+                submitButton.value = submitButton.attributes['data-thanks'].value;
             } else {
                 submitButton.value = submitButton.attributes['data-invalid-text'].value;
             }
