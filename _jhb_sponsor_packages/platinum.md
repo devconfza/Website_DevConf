@@ -5,7 +5,7 @@ limit: 2
 logo: platinum-jhb.png
 large-logo: platinum-header.png
 logo_size: 135
-remaining: 1
+remaining: 0
 
 # Expo info
 expo: yes
