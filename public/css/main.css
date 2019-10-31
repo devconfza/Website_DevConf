@@ -948,7 +948,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
-  grid-column-gap: 20px; }
+  grid-column-gap: 100px; }
   .sponsor-content-detail-event-bananas .event {
     display: grid;
     grid-row-gap: 10px;
@@ -1102,7 +1102,8 @@ input[type=submit].button {
   display: grid;
   align-items: center;
   justify-content: center;
-  border: none; }
+  border: none;
+  text-align: center; }
   input[type=submit].button:hover {
     background-color: #48b8e9; }
 
@@ -1116,7 +1117,8 @@ a.button-blue {
   display: grid;
   align-items: center;
   justify-content: center;
-  border: none; }
+  border: none;
+  text-align: center; }
   a.button-blue:hover {
     background-color: #48b8e9; }
 
@@ -1130,11 +1132,30 @@ a.button {
   display: grid;
   align-items: center;
   justify-content: center;
-  border: none; }
+  border: none;
+  text-align: center; }
   a.button:hover {
     background-color: #ff3062; }
+
+div.button {
+  background-color: #000d28;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center; }
+  div.button:hover {
+    background-color: #001e5b; }
 
 a.smalllink {
   font-size: 0.7rem;
   color: #000d28;
   text-decoration: underline; }
+
+.nudgeDown {
+  margin-top: 50px; }

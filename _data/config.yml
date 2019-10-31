@@ -4,6 +4,7 @@ events:
     date: "31 March 2020"
     info: "/capetown"
     sessionizeId: "b5u8ycnc"
+    logo: devconfcpt.png
     # sessionizeId: "f0el0uow"
     venue: "Century City Conference Centre"
     website: "https://ccconferencecentre.co.za/"
@@ -22,6 +23,7 @@ events:
     date: "2 April 2020"
     info: "/johannesburg"
     sessionizeId: "b5u8ycnc"
+    logo: devconfjhb.png
     # sessionizeId: "f0el0uow"
     venue: "Gallagher Convention Centre"
     website: "https://gallagher.co.za"

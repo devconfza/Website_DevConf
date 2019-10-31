@@ -190,7 +190,7 @@ body {
         display: grid;
         grid-template-columns: auto auto;
         justify-items: center;
-        grid-column-gap: 20px;
+        grid-column-gap: 100px;
 
         .event {
             display: grid;
@@ -376,6 +376,7 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
+    text-align: center;
 
     &:hover {
         background-color: lighten($colour, 10%);
@@ -394,8 +395,16 @@ a.button {
     @include button($darkBrandPink);
 }
 
+div.button {
+    @include button($darkBrandBlue);
+}
+
 a.smalllink {
     font-size: 0.7rem;
     color: $darkBrandBlue;
     text-decoration: underline;
+}
+
+.nudgeDown {
+    margin-top: 50px;
 }

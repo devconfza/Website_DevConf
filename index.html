@@ -24,16 +24,17 @@ layout: default
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-event-bananas">
-                {% for event in site.data.config.events %}
-                <div class="event">
-                    <div class="location">{{ event.location }}</div>
-                    <div class="date">{{ event.date }}</div>
-                    <!-- <div class="countdown">365 days to go</div> -->
-                    <a href="{{ event.info }}" class="button" role="button">
-                        <div>Tickets, Agenda &amp; More</div>
-                    </a>
+            {% for event in site.data.config.events %}
+            <a class="event" href="{{ event.info }}">
+                <div class="location">{{ event.location }}</div>
+                <div class="date">{{ event.date }}</div>
+                <img src="/public/images/{{ event.logo }}">
+                <!-- <div class="countdown">365 days to go</div> -->
+                <div class="button" role="button">
+                    Tickets, Agenda &amp; More
                 </div>
-                {% endfor %}
+            </a>
+            {% endfor %}
         </div>
     </div>
 
@@ -64,6 +65,12 @@ layout: default
                     data-invalid-text="Try Again" data-thanks="Thank you!" data-class="btn btn-primary" />
             </div>
         </form>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Videos</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA" target="_blank">Visit Our YouTube Channel</a>
     </div>
 
     <div class="sponsor-content-detail">
