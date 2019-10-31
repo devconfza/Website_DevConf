@@ -18,8 +18,7 @@
         background-color: #f4f4f4;
     }
 
-    &-button {
-        $buttonColour: #021637;
+    @mixin buttonBase($buttonColour) {
         background-color: $buttonColour;
         font-size: 0.9rem;
         font-weight: 800;
@@ -27,8 +26,17 @@
         padding: 10px 20px;
         text-transform: uppercase;
         color: white;
-        cursor: pointer;
         line-height: 1rem;
+    }
+
+    &-fake-button {
+        @include buttonBase(#021637);
+    }
+
+    &-button {
+        $buttonColour: #021637;
+        @include buttonBase($buttonColour);
+        cursor: pointer;
 
         &:hover {
             color: white;

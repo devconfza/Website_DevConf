@@ -12,6 +12,7 @@ events:
       purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
       earlyBird:
         price: R1,880.00
+        sold_out: true
       solo:
         price: R1,997.50
       corporate:

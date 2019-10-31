@@ -20,8 +20,12 @@
                     <div>Early Bird Tickets</div>
                     <div>The best price ticket but <i>extremely</i> limited!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlyBird.price }}</div>
+                    {% if event.tickets.earlyBird.sold_out %}
+                    <div class="sponsor-fake-button">Sold Out!</div>
+                    {% else %}
                     <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an early bird
                         ticket now!</a>
+                    {% endif %}
                 </div>
                 <div>
                     <div>Individual Tickets</div>

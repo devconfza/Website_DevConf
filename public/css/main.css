@@ -22,6 +22,15 @@
     border-style: none;
     height: 2px;
     background-color: #f4f4f4; }
+  .sponsor-fake-button {
+    background-color: #021637;
+    font-size: 0.9rem;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1rem; }
   .sponsor-button {
     background-color: #021637;
     font-size: 0.9rem;
@@ -30,8 +39,8 @@
     padding: 10px 20px;
     text-transform: uppercase;
     color: white;
-    cursor: pointer;
-    line-height: 1rem; }
+    line-height: 1rem;
+    cursor: pointer; }
     .sponsor-button:hover {
       color: white;
       background-color: black; }
@@ -683,7 +692,9 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   padding: 10px;
-  grid-column-gap: 10px; }
+  grid-column-gap: 10px;
+  max-height: 80%;
+  overflow-y: scroll; }
   @media (max-width: 700px) {
     .popupBio {
       grid-template-columns: auto;
@@ -693,7 +704,8 @@
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center;
-  max-width: 90%; }
+  max-width: 90%;
+  max-height: 80%; }
 
 .bio-title,
 .bio-speaker-bio-title,
