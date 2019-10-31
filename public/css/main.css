@@ -17,6 +17,8 @@
   grid-template-rows: 300px repeat(5, auto); }
   .sponsor a {
     text-decoration: none; }
+  .sponsor-home {
+    grid-template-rows: auto repeat(5, auto); }
   .sponsor hr {
     width: 90%;
     border-style: none;
@@ -332,34 +334,6 @@
           text-align: left; } }
     .sponsor-content-detail-termsAndConditions {
       font-size: 0.6rem; }
-    .sponsor-content-detail-media {
-      display: grid;
-      grid-template-rows: auto auto;
-      grid-template-columns: auto;
-      justify-items: center;
-      line-height: 1.5rem; }
-      .sponsor-content-detail-media-points {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin-top: 30px; }
-        @media (max-width: 700px) {
-          .sponsor-content-detail-media-points {
-            grid-template-columns: auto;
-            grid-template-rows: repeat(2, auto); } }
-        .sponsor-content-detail-media-points > div > img {
-          height: 250px;
-          padding-bottom: 20px; }
-          @media (max-width: 700px) {
-            .sponsor-content-detail-media-points > div > img {
-              height: 200px; } }
-        .sponsor-content-detail-media-points > div {
-          display: grid;
-          grid-template-columns: auto;
-          grid-template-rows: repeat(3, auto);
-          justify-items: center;
-          padding: 0px 20px; }
-          .sponsor-content-detail-media-points > div > div:nth-child(2) {
-            font-weight: bold; }
     .sponsor-content-detail-mission {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -853,6 +827,14 @@ body {
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.03rem; }
 
+.youtube {
+  width: "560px";
+  height: "315px"; }
+  @media (max-width: 700px) {
+    .youtube {
+      width: "300px";
+      height: "168.75px"; } }
+
 .menu {
   background-color: #000d28;
   color: white;
@@ -948,7 +930,11 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
-  grid-column-gap: 100px; }
+  grid-column-gap: 100px;
+  grid-row-gap: 50px; }
+  @media (max-width: 700px) {
+    .sponsor-content-detail-event-bananas {
+      grid-template-columns: auto; } }
   .sponsor-content-detail-event-bananas .event {
     display: grid;
     grid-row-gap: 10px;
@@ -969,10 +955,43 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 200px;
-  overflow-x: auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  line-height: 1.5rem; }
+  .sponsor-content-detail-media-points {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px; }
+    @media (max-width: 700px) {
+      .sponsor-content-detail-media-points {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto); } }
+    .sponsor-content-detail-media-points > div > img {
+      height: 250px;
+      padding-bottom: 20px; }
+      @media (max-width: 700px) {
+        .sponsor-content-detail-media-points > div > img {
+          height: 200px; } }
+    .sponsor-content-detail-media-points > div {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      justify-items: center;
+      padding: 0px 20px; }
+      .sponsor-content-detail-media-points > div > div:nth-child(2) {
+        font-weight: bold; }
+  @media (max-width: 700px) {
+    .sponsor-content-detail-media {
+      grid-auto-flow: row;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto auto; } }
+  @media (max-width: 530px) {
+    .sponsor-content-detail-media {
+      grid-template-columns: auto; } }
 
 .sponsor-content-detail-media-full {
   display: grid;
@@ -987,14 +1006,16 @@ body {
   justify-items: center;
   font-size: 0.8rem; }
   .sponsor-content-detail-mailing-list input[type=text] {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     padding: 10px;
     border: none;
     margin-bottom: 10px; }
     .sponsor-content-detail-mailing-list input[type=text]::placeholder {
       color: #1BA6E3; }
   .sponsor-content-detail-mailing-list input[type=email] {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     padding: 10px;
     border: none;
     margin-bottom: 10px; }

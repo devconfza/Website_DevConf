@@ -11,6 +11,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: $titleHeight repeat(5, auto);
 
+    &-home {
+        grid-template-rows: auto repeat(5, auto);
+    }
+
     hr {
         width: 90%;
         border-style: none;
@@ -367,46 +371,6 @@
 
         &-termsAndConditions {
             font-size: 0.6rem;
-        }
-
-        &-media {
-            display: grid;
-            grid-template-rows: auto auto;
-            grid-template-columns: auto;
-            justify-items: center;
-            line-height: 1.5rem;
-
-            &-points {
-                display: grid;
-                grid-template-columns: auto auto;
-                margin-top: 30px;
-
-                @media (max-width: $mobileWidth) {
-                    grid-template-columns: auto;
-                    grid-template-rows: repeat(2, auto);
-                }
-
-                >div>img {
-                    height: 250px;
-                    padding-bottom: 20px;
-
-                    @media (max-width: $mobileWidth) {
-                        height: 200px;
-                    }
-                }
-
-                >div {
-                    display: grid;
-                    grid-template-columns: auto;
-                    grid-template-rows: repeat(3, auto);
-                    justify-items: center;
-                    padding: 0px 20px;
-
-                    >div:nth-child(2) {
-                        font-weight: bold;
-                    }
-                }
-            }
         }
 
         &-mission {
