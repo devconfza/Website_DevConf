@@ -134,6 +134,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    z-index: 600;
 }
 
 .popupBackdropHidden {
@@ -155,8 +156,8 @@
     grid-template-rows: repeat(6, auto);
     padding: 10px;
     grid-column-gap: 10px;
-    max-height: 80%;
-    overflow-y: scroll;
+    overflow-y: auto;
+    height: 600px;
 
     @media (max-width: $mobileWidth) {
         grid-template-columns: auto;
@@ -169,7 +170,7 @@
     grid-template-rows: auto auto;
     justify-items: center;
     max-width: 90%;
-    max-height: 80%;
+    margin-top: 49px;
 }
 
 .bio-title,
@@ -243,6 +244,7 @@
     grid-row: 6/6;
     grid-column: 1/1;
     margin-top: 5px;
+    margin-bottom: 20px;
 
     @media (max-width: $mobileWidth) {
         grid-column: unset;

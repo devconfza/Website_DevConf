@@ -648,7 +648,8 @@
   background-color: #000000a6;
   display: grid;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 600; }
 
 .popupBackdropHidden {
   display: none; }
@@ -667,8 +668,8 @@
   grid-template-rows: repeat(6, auto);
   padding: 10px;
   grid-column-gap: 10px;
-  max-height: 80%;
-  overflow-y: scroll; }
+  overflow-y: auto;
+  height: 600px; }
   @media (max-width: 700px) {
     .popupBio {
       grid-template-columns: auto;
@@ -679,7 +680,7 @@
   grid-template-rows: auto auto;
   justify-items: center;
   max-width: 90%;
-  max-height: 80%; }
+  margin-top: 49px; }
 
 .bio-title,
 .bio-speaker-bio-title,
@@ -739,7 +740,8 @@
 .bio-speaker-bio {
   grid-row: 6/6;
   grid-column: 1/1;
-  margin-top: 5px; }
+  margin-top: 5px;
+  margin-bottom: 20px; }
   @media (max-width: 700px) {
     .bio-speaker-bio {
       grid-column: unset;
@@ -920,7 +922,8 @@ body {
     margin-top: 10px;
     margin-bottom: 40px; }
   .hero .intro {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    max-width: 80%; }
 
 .highlight {
   font-weight: bold;
