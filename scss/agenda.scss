@@ -155,13 +155,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    padding: 10px;
+    padding: 20px;
     grid-column-gap: 10px;
     overflow-y: auto;
-    height: 600px;
+    max-height: 600px;
 
     @media (max-width: $mobileWidth) {
         grid-template-columns: auto;
+        padding: 10px;
         grid-template-rows: repeat(2, auto);
     }
 }
