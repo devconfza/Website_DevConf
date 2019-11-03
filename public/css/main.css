@@ -624,7 +624,8 @@
   padding: 10px; }
 
 .speaker-image {
-  width: 100%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%; }
   @media (max-width: 700px) {
     .speaker-image {
@@ -665,7 +666,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: auto;
   padding: 10px;
   grid-column-gap: 10px;
   overflow-y: auto;
@@ -673,7 +674,19 @@
   @media (max-width: 700px) {
     .popupBio {
       grid-template-columns: auto;
-      grid-template-rows: repeat(8, auto); } }
+      grid-template-rows: repeat(2, auto); } }
+
+.popupBioLeft {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 5px;
+  align-content: start; }
+
+.popupBioRight {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 5px;
+  align-content: start; }
 
 .popupContent {
   display: grid;
@@ -694,9 +707,6 @@
   font-size: 0.8rem; }
 
 .bio-speaker {
-  grid-column: 1/1;
-  grid-row: 2/2;
-  margin-top: 10px;
   justify-self: center; }
   @media (max-width: 700px) {
     .bio-speaker {
@@ -704,9 +714,6 @@
       grid-row: unset; } }
 
 .bio-social {
-  grid-row: 3/3;
-  grid-column: 1/1;
-  margin-top: 5px;
   justify-self: center;
   display: grid;
   grid-auto-flow: column;
@@ -719,27 +726,18 @@
       grid-row: unset; } }
 
 .bio-tagline {
-  grid-row: 4/4;
-  grid-column: 1/1;
-  margin-top: 5px;
   justify-self: center; }
   @media (max-width: 700px) {
     .bio-tagline {
       grid-column: unset;
       grid-row: unset; } }
 
-.bio-speaker-bio-title {
-  grid-row: 5/5;
-  grid-column: 1/1;
-  margin-top: 5px; }
-  @media (max-width: 700px) {
-    .bio-speaker-bio-title {
-      grid-column: unset;
-      grid-row: unset; } }
+@media (max-width: 700px) {
+  .bio-speaker-bio-title {
+    grid-column: unset;
+    grid-row: unset; } }
 
 .bio-speaker-bio {
-  grid-row: 6/6;
-  grid-column: 1/1;
   margin-top: 5px;
   margin-bottom: 20px; }
   @media (max-width: 700px) {
@@ -748,8 +746,6 @@
       grid-row: unset; } }
 
 .bio-title {
-  grid-row: 1/1;
-  grid-column: 2/2;
   justify-self: center; }
   @media (max-width: 700px) {
     .bio-title {
@@ -757,19 +753,13 @@
       grid-column: unset;
       grid-row: unset; } }
 
-.bio-talk-description {
-  grid-row: 1/6;
-  grid-column: 2/2;
-  margin-top: 25px; }
-  @media (max-width: 700px) {
-    .bio-talk-description {
-      grid-column: unset;
-      grid-row: unset;
-      margin-top: 10px; } }
+@media (max-width: 700px) {
+  .bio-talk-description {
+    grid-column: unset;
+    grid-row: unset;
+    margin-top: 10px; } }
 
 .bio-track {
-  grid-row: 6/6;
-  grid-column: 2/2;
   font-size: 0.8rem;
   align-self: center;
   justify-self: end; }
