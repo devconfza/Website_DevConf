@@ -28,7 +28,7 @@ layout: default
             <a class="event" href="{{ event.info }}">
                 <div class="location">{{ event.location }}</div>
                 <div class="date">{{ event.date }}</div>
-                <img src="/public/images/{{ event.logo }}">
+                <img class="event-logo" src="/public/images/{{ event.logo }}">
                 <!-- <div class="countdown">365 days to go</div> -->
                 <div class="button" role="button">
                     Tickets, Agenda &amp; More
@@ -43,7 +43,7 @@ layout: default
         <form id="madmimi">
             <div class="sponsor-content-detail-mailing-list">
                 <p>
-                    If you would like to be added to our mailing list for announcements, please signup below...
+                    If you would like to be added to our mailing list for announcements, please signup below:
                 </p>
                 <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required"
                     placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
@@ -55,12 +55,12 @@ layout: default
                     <label for="list_1138553">I would like to receive the Developer User Group newsletter as
                         well!</label>
                 </div>
-                <p>The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
+                <p class="devugblurb">The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
                         rel="noopener noreferrer">Developer
                         User Group</a> is a monthly free meeting for software developers which takes place in
                     Cape
                     Town, Pretoria &amp; Johannesburg.</p>
-                <input type="submit" class="button" value="Keep me informed" id="webform_submit_button"
+                <input type="submit" class="button" value="Sign Up" id="webform_submit_button"
                     data-default-text="Keep me informed" data-submitting-text="Signing Up..."
                     data-invalid-text="Try Again" data-thanks="Thank you!" data-class="btn btn-primary" />
             </div>

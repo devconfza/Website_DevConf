@@ -31,13 +31,13 @@ body {
     letter-spacing: 0.03rem;
 }
 
-.youtube {
-    width: "560px";
-    height: "315px";
+.youtubes {
+    width: 560px;
+    height: 315px;
 
     @media (max-width: $mobileWidth) {
-        width: "300px";
-        height: "168.75px";
+        width: 300px;
+        height: 168.75px;
     }
 }
 
@@ -123,14 +123,24 @@ body {
     }
 }
 
+.date a {
+    color: #000d28;
+}
+
+.event-logo {
+    height: 250px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
 .hero {
     background-image: url("/public/images/Background_Web.jpg");
     background-color: $darkBrandBlue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: grid;
     color: white;
     justify-content: center;
@@ -157,7 +167,8 @@ body {
 
     .intro {
         font-size: 0.8rem;
-        max-width: 80%;
+        max-width: 50%;
+        line-height: 1.5rem;
     }
 
     // .CFPSection {
@@ -191,6 +202,15 @@ body {
     // }
 }
 
+.content {
+    padding-left: 20%;
+    padding-right: 20%;
+    @media (max-width: $mobileWidth) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 .highlight {
     font-weight: bold;
     color: $darkBrandPink;
@@ -203,7 +223,7 @@ body {
         justify-items: center;
         grid-column-gap: 100px;
         grid-row-gap: 50px;
-        
+
         @media (max-width: $mobileWidth) {
             grid-template-columns: auto;
         }
@@ -298,14 +318,15 @@ body {
         display: grid;
         text-align: center;
         justify-items: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
 
         @mixin inputField() {
             max-width: 500px;
             width: 100%;
-            padding: 10px;
+            padding: 20px;
             border: none;
             margin-bottom: 10px;
+            font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
 
             &::placeholder {
                 color: $brandBlue;
@@ -339,6 +360,12 @@ body {
             }
         }
     }
+}
+
+.devugblurb {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
 }
 
 @mixin card($dimension) {
@@ -429,17 +456,24 @@ body {
 }
 
 @mixin button($colour) {
+    font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
     background-color: $colour;
     text-decoration: none;
-    border-radius: 10px;
-    padding: 5px;
-    color: white;
     width: 200px;
     display: grid;
     align-items: center;
     justify-content: center;
     border: none;
     text-align: center;
+    font-size: .9rem;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1rem;
+
+    cursor: pointer;
 
     &:hover {
         background-color: lighten($colour, 10%);
