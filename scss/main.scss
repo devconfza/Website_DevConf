@@ -440,6 +440,16 @@ body {
     grid-auto-flow: column;
     justify-items: center;
 
+    div>a>img {
+        height: 30px;
+        width: 30px;
+
+        @media (max-width: $mobileWidth) {
+            height: 45px;
+            width: 45px;
+        }
+    }
+
     >div:nth-child(1) {
         margin-left: 15px;
     }
