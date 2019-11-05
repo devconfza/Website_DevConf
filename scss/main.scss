@@ -169,6 +169,10 @@ body {
         font-size: 0.8rem;
         max-width: 50%;
         line-height: 1.5rem;
+
+        @media (max-width: $mobileWidth) {
+            max-width: 90%;
+        }
     }
 
     // .CFPSection {
