@@ -27,6 +27,6 @@ brand_benefits:
 exclusive:
     - Exclusive logo branding on delegate eco-friendly notebooks
 
-sold_out: no
+sold_out: yes
 order: 30
 ---

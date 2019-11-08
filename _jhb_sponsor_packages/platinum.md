@@ -29,6 +29,6 @@ brand_benefits:
 
 exclusive:
     - Exclusive logo branding on water bottles
-sold_out: no
+sold_out: yes
 order: 20
 ---
