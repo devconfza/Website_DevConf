@@ -7,6 +7,8 @@
     row-gap: 3px;
     padding-top: 30px;
     padding-bottom: 5px;
+    padding-left: unset;
+    padding-right: unset;
 }
 
 .agenda>.hidden-row {
@@ -58,6 +60,10 @@
     row-gap: 3px;
     column-gap: 5px;
 
+    @media (max-width: 1114px) {
+        grid-template-columns: repeat(5, 150px);
+    }
+
     @media (max-width: $mobileWidth) {
         grid-auto-flow: row;
         grid-template-columns: auto;
@@ -73,6 +79,14 @@
     color: white;
     text-align: center;
     padding: 10px;
+    grid-template-rows: 20px 20px 170px 50px;
+    @media (max-width: 1114px) {
+        grid-template-rows: 20px 20px 170px 50px;
+    }
+
+    @media (max-width: $mobileWidth) {
+        grid-template-rows: repeat(3, auto);
+    }
 }
 
 .agenda-row-style-loading {
@@ -110,6 +124,11 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+
+    @media (max-width: 1114px) {
+        width: 100px;
+        height: 100px;
+    }
 
     @media (max-width: $mobileWidth) {
         display: none;
@@ -317,6 +336,7 @@
     background-color: unset;
     color: black;
     font-size: 1.3rem;
+    grid-template-rows: unset;
 
     img.speaker-image {
         height: 160px;

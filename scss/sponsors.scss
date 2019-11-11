@@ -32,6 +32,7 @@
         text-transform: uppercase;
         color: white;
         line-height: 1rem;
+        text-decoration: none;
     }
 
     &-fake-button {
@@ -158,6 +159,7 @@
         padding-left: 20px;
         padding-right: 20px;
         grid-row-gap: 20px;
+        max-width: 100vw;
 
         >*:not(a) {
             padding-left: 15%;
@@ -617,5 +619,6 @@
 
     .more-info {
         margin-top: 10px;
+        text-decoration: none;
     }
 }
