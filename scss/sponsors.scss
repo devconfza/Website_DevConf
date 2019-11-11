@@ -3,6 +3,7 @@
 .sponsor {
     a {
         text-decoration: none;
+        text-align: center;
     }
 
     $titleHeight: 300px;
@@ -38,6 +39,8 @@
     }
 
     &-button {
+        margin-top: 10px;
+        margin-bottom: 10px;    
         $buttonColour: #021637;
         @include buttonBase($buttonColour);
         cursor: pointer;
@@ -94,6 +97,7 @@
             &-sponsor {
                 display: grid;
                 justify-items: center;
+            
             }
 
             &-packages-intro {
@@ -151,6 +155,7 @@
         padding-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
+        grid-row-gap: 20px;
 
         >*:not(a) {
             padding-left: 15%;
@@ -200,7 +205,8 @@
 
                     >div {
                         &:nth-child(1) {
-                            color: $brandPink
+                            color: $brandPink;
+                            font-weight: 800;
                         }
 
                         &:nth-child(2) {
@@ -224,6 +230,7 @@
             display: grid;
             justify-items: center;
             text-align: center;
+            grid-row-gap: 20px;
         }
 
         &-packages {
@@ -317,6 +324,11 @@
             grid-row-gap: 10px;
         }
 
+        &-content-sponsor {
+            display: grid;
+            justify-items: center;
+        }
+
         &-sponsor {
             border-color: $brandPink;
             border-width: 1px;
@@ -330,7 +342,7 @@
                 img {
                     border-style: solid;
                     border-width: 1px;
-                    border-color: $brandPink;
+                    border-color: #f0638547;
                     padding: 5px;
                 }
 

@@ -31,7 +31,7 @@ body {
     letter-spacing: 0.03rem;
 }
 
-.youtubes {
+@mixin iframe() {
     width: 560px;
     height: 315px;
 
@@ -40,6 +40,16 @@ body {
         height: 168.75px;
     }
 }
+
+.googleMapEmbed {
+    @include iframe();
+}
+
+.youtubes {
+    @include iframe();
+}
+
+
 
 .menu {
     background-color: $darkBrandBlue;
@@ -207,6 +217,8 @@ body {
 }
 
 .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20%;
     padding-right: 20%;
     @media (max-width: $mobileWidth) {
@@ -473,7 +485,7 @@ body {
     font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
     background-color: $colour;
     text-decoration: none;
-    width: 200px;
+    min-width: 200px;
     display: grid;
     align-items: center;
     justify-content: center;

@@ -16,7 +16,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 300px repeat(5, auto); }
   .sponsor a {
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
   .sponsor-home {
     grid-template-rows: auto repeat(5, auto); }
   .sponsor hr {
@@ -34,6 +35,8 @@
     color: white;
     line-height: 1rem; }
   .sponsor-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #021637;
     font-size: 0.9rem;
     font-weight: 800;
@@ -172,7 +175,8 @@
     padding-bottom: 50px;
     padding-top: 50px;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    grid-row-gap: 20px; }
     .sponsor-content-detail > *:not(a), .sponsor-content-detail-packages > *:not(a) {
       padding-left: 15%;
       padding-right: 15%; }
@@ -211,7 +215,8 @@
           background-color: #f4f4f4;
           padding: 20px; }
           .sponsor-content-detail-tickets-cards > div > div:nth-child(1) {
-            color: #ff3263; }
+            color: #ff3263;
+            font-weight: 800; }
           .sponsor-content-detail-tickets-cards > div > div:nth-child(2) {
             font-size: 0.8rem; }
           .sponsor-content-detail-tickets-cards > div > div:nth-child(3) {
@@ -222,7 +227,8 @@
     .sponsor-content-detail-location {
       display: grid;
       justify-items: center;
-      text-align: center; }
+      text-align: center;
+      grid-row-gap: 20px; }
     .sponsor-content-detail-packages {
       grid-column-gap: 20px;
       grid-template-columns: 1fr 1fr;
@@ -300,6 +306,9 @@
         .sponsor-content-detail-sponsors {
           grid-auto-flow: row;
           grid-template-columns: auto; } }
+    .sponsor-content-detail-content-sponsor {
+      display: grid;
+      justify-items: center; }
     .sponsor-content-detail-sponsor {
       border-color: #ff3263;
       border-width: 1px;
@@ -311,7 +320,7 @@
         .sponsor-content-detail-sponsor-level img {
           border-style: solid;
           border-width: 1px;
-          border-color: #ff3263;
+          border-color: #f0638547;
           padding: 5px; }
         .sponsor-content-detail-sponsor-level a {
           color: transparent !important; }
@@ -521,8 +530,7 @@
   grid-auto-flow: row;
   justify-items: center;
   row-gap: 3px;
-  width: 100%;
-  padding-top: 5px;
+  padding-top: 30px;
   padding-bottom: 5px; }
 
 .agenda > .hidden-row {
@@ -538,6 +546,7 @@
   padding: 5px;
   grid-auto-flow: column;
   justify-content: space-between;
+  padding: 10px;
   font-size: 0.8rem; }
 
 .agenda-row-style-key {
@@ -550,7 +559,8 @@
   padding: 5px;
   grid-auto-flow: column;
   justify-content: space-between;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  padding: 10px; }
 
 .agenda-row-style-highlight {
   background-color: #ff3263;
@@ -561,7 +571,9 @@
   border-radius: 5px;
   padding: 5px;
   grid-auto-flow: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 10px; }
 
 .agenda-row-style-keynote {
   background-color: #1BA6E3;
@@ -597,7 +609,7 @@
   justify-items: center;
   color: white;
   text-align: center;
-  padding: 2px; }
+  padding: 10px; }
 
 .agenda-row-style-loading {
   font-size: 0.8rem; }
@@ -667,10 +679,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  padding: 20px;
   grid-column-gap: 10px;
   overflow-y: auto;
-  max-height: 600px; }
+  max-height: 600px;
+  max-height: 100%;
+  padding: 30px; }
   @media (max-width: 700px) {
     .popupBio {
       grid-template-columns: auto;
@@ -693,19 +706,28 @@
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center;
-  max-width: 90%;
-  margin-top: 49px; }
+  max-width: 100%;
+  margin-top: 49px;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 .bio-title,
 .bio-speaker-bio-title,
 .bio-speaker {
   color: #ff3263;
-  font-weight: 800; }
+  font-weight: 800;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 1.5rem; }
+
+.bio-title {
+  justify-self: left; }
 
 .bio-tagline,
 .bio-speaker-bio,
 .bio-talk-description {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  line-height: 1.3rem; }
 
 .bio-speaker {
   justify-self: center; }
@@ -777,7 +799,8 @@
   align-self: center;
   border-radius: 50%;
   border-radius: 50%;
-  max-width: 60%;
+  width: 200px;
+  height: 200px;
   justify-self: center; }
   @media (max-width: 700px) {
     .largePopupImage {
@@ -796,7 +819,9 @@
   justify-self: stretch;
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 1rem; }
 
 a {
   color: #ff3263; }
@@ -819,6 +844,14 @@ body {
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.03rem; }
+
+.googleMapEmbed {
+  width: 560px;
+  height: 315px; }
+  @media (max-width: 700px) {
+    .googleMapEmbed {
+      width: 300px;
+      height: 168.75px; } }
 
 .youtubes {
   width: 560px;
@@ -929,6 +962,8 @@ body {
         max-width: 90%; } }
 
 .content {
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20%;
   padding-right: 20%; }
   @media (max-width: 700px) {
@@ -1145,7 +1180,7 @@ input[type=submit].button {
   font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
   background-color: #1BA6E3;
   text-decoration: none;
-  width: 200px;
+  min-width: 200px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -1166,7 +1201,7 @@ a.button-blue {
   font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
   background-color: #1BA6E3;
   text-decoration: none;
-  width: 200px;
+  min-width: 200px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -1187,7 +1222,7 @@ a.button {
   font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
   background-color: #fc003d;
   text-decoration: none;
-  width: 200px;
+  min-width: 200px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -1208,7 +1243,7 @@ div.button {
   font-family: 'Armata', Helvetica, 'Segoe UI', Verdana, sans-serif;
   background-color: #000d28;
   text-decoration: none;
-  width: 200px;
+  min-width: 200px;
   display: grid;
   align-items: center;
   justify-content: center;

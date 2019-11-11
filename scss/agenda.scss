@@ -5,8 +5,7 @@
     grid-auto-flow: row;
     justify-items: center;
     row-gap: 3px;
-    width: 100%;
-    padding-top: 5px;
+    padding-top: 30px;
     padding-bottom: 5px;
 }
 
@@ -28,16 +27,20 @@
 
 .agenda-row-style-break {
     @include full-agenda-row(#ed3259);
+    padding: 10px;
     font-size: 0.8rem;
 }
 
 .agenda-row-style-key {
     @include full-agenda-row(#990020);
     font-size: 0.8rem;
+    padding: 10px;
 }
 
 .agenda-row-style-highlight {
     @include full-agenda-row($brandPink);
+    font-size: 1rem;
+    padding: 10px;
 }
 
 .agenda-row-style-keynote {
@@ -69,7 +72,7 @@
     justify-items: center;
     color: white;
     text-align: center;
-    padding: 2px;
+    padding: 10px;
 }
 
 .agenda-row-style-loading {
@@ -155,10 +158,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    padding: 20px;
     grid-column-gap: 10px;
     overflow-y: auto;
     max-height: 600px;
+    max-height: 100%;
+    padding: 30px;
 
     @media (max-width: $mobileWidth) {
         grid-template-columns: auto;
@@ -167,14 +171,14 @@
     }
 }
 
-.popupBioLeft{
+.popupBioLeft {
     display: grid;
     grid-template-rows: repeat(6, auto);
     row-gap: 5px;
     align-content: start;
 }
 
-.popupBioRight{
+.popupBioRight {
     display: grid;
     grid-template-rows: repeat(3, auto);
     row-gap: 5px;
@@ -185,8 +189,10 @@
     display: grid;
     grid-template-rows: auto auto;
     justify-items: center;
-    max-width: 90%;
+    max-width: 100%;
     margin-top: 49px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .bio-title,
@@ -194,12 +200,20 @@
 .bio-speaker {
     color: $brandPink;
     font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.bio-title {
+    justify-self: left;
 }
 
 .bio-tagline,
 .bio-speaker-bio,
 .bio-talk-description {
     font-size: 0.8rem;
+    line-height: 1.3rem;
 }
 
 .bio-speaker {
@@ -290,7 +304,8 @@
     align-self: center;
     border-radius: 50%;
     border-radius: 50%;
-    max-width: 60%;
+    width: 200px;
+    height: 200px;
     justify-self: center;
 
     @media (max-width: $mobileWidth) {
@@ -315,4 +330,6 @@
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
+    padding: 5px;
+    font-size: 1rem;
 }

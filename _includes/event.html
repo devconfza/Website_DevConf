@@ -373,12 +373,15 @@
         <div class="sponsor-content-detail-heading">Location</div>
         <div class="sponsor-content-detail-location">
             <div>DevConf will be held at
-                <a href="{{ event.venue.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
+                <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
                 {{ event.location }}, South Africa.</div>
-            <div>
-                <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
-                    Maps</a>
-            </div>
+
+            <iframe class="googleMapEmbed" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q={{ event.venue }}&key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g"
+                allowfullscreen></iframe>
+            <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
+                Maps</a>
+
         </div>
     </div>
 
