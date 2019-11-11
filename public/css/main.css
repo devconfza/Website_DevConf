@@ -106,7 +106,9 @@
         .sponsor-title-content {
           font-size: 2.5rem; } }
       .sponsor-title-content-second {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-right: 10%; }
       .sponsor-title-content-third {
         font-size: 1rem; }
   .sponsor-title-blue {
@@ -166,7 +168,9 @@
         .sponsor-title-blue-content {
           font-size: 2.5rem; } }
       .sponsor-title-blue-content-second {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-right: 10%; }
       .sponsor-title-blue-content-third {
         font-size: 1rem; }
   .sponsor-content-detail, .sponsor-content-detail-packages {
