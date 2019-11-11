@@ -376,9 +376,8 @@
                 <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
                 {{ event.location }}, South Africa.</div>
 
-            <iframe class="googleMapEmbed" frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?q={{ event.venue }}&key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g"
-                allowfullscreen></iframe>
+
+            <div id="map" class="googleMapEmbed" referrerpolicy="unsafe-url" frameborder="0" style="border:0"></div>
             <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
                 Maps</a>
 
@@ -419,3 +418,23 @@
         </div>
     </div>
 </template>
+
+<script>
+    function initMap() {
+        const venue = {
+            lat: {{ event.lat }},
+            lng: {{ event.long }}
+        };
+        const map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 16,
+                center: venue
+            });
+        const marker = new google.maps.Marker({
+            position: venue,
+            map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g&callback=initMap"></script>
