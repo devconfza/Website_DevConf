@@ -9,8 +9,8 @@ events:
     venue: "Century City Conference Centre"
     website: "https://ccconferencecentre.co.za/"
     mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
-    lat: "-33.895791"
-    long: "18.50296"
+    lat: "-33.895823"
+    long: "18.505293"
     tickets:
       purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
       earlyBird:
