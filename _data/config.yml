@@ -36,6 +36,7 @@ events:
       purchaseSite: https://www.quicket.co.za/events/86889-devconf-2020-johannesburg
       earlyBird:
         price: R2,092.00
+        sold_out: true
       solo:
         price: R2,222.75
       corporate:
