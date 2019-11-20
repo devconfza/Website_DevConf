@@ -5,7 +5,7 @@ limit: 2
 logo: platinum-jhb.png
 large-logo: platinum-header.png
 logo_size: 135
-remaining: 0
+remaining: 1
 
 # Expo info
 expo: yes
@@ -29,6 +29,6 @@ brand_benefits:
 
 exclusive:
     - Exclusive logo branding on water bottles
-sold_out: yes
+sold_out: no
 order: 20
 ---
