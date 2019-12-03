@@ -316,7 +316,6 @@
         &-sponsors {
             display: grid;
             grid-auto-flow: column;
-            grid-template-columns: repeat(4, auto);
 
             @media (max-width: $mobileWidth) {
                 grid-auto-flow: row;

@@ -14,6 +14,6 @@ exclusive:
     - Exclusive branding on delegate bag redemption voucher
     - Exclusive logo on eco-friendly delegate bag
     
-sold_out: no
+sold_out: yes
 order: 90
 ---

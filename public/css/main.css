@@ -305,7 +305,6 @@
     .sponsor-content-detail-sponsors {
       display: grid;
       grid-auto-flow: column;
-      grid-template-columns: repeat(4, auto);
       justify-items: center;
       grid-column-gap: 10px;
       grid-row-gap: 10px; }
@@ -540,8 +539,8 @@
   row-gap: 3px;
   padding-top: 30px;
   padding-bottom: 5px;
-  padding-left: unset;
-  padding-right: unset; }
+  padding-left: 2%;
+  padding-right: 2%; }
 
 .agenda > .hidden-row {
   display: none; }
