@@ -13,6 +13,11 @@
   Url: https://capenetworks.com/
   Logo: arubagold.jpg
 
+- Level: Silver
+  Name: Thinkst
+  Url: https://thinkst.com/
+  Logo: thinkstsilver.jpg
+
 - Level: Gold
   Name: Synthesis
   Url: https://www.synthesis.co.za/
@@ -27,6 +32,11 @@
   Name: WorldAware 
   Url: https://www.worldaware.com/
   Logo: worldawarebronze.jpg
+
+- Level: WiFi
+  Name: alis_  
+  Url: https://alis.fund/
+  Logo: aliswifi.jpg
 
 - Level: Prize
   Name: JetBrains  
