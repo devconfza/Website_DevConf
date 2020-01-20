@@ -29,9 +29,14 @@
   "devDependencies": {
     "@types/node": "^12.7.3",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "concurrently": "^4.1.2",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
     "ts-loader": "^6.0.4",
@@ -45,5 +50,8 @@
     "watch-code": "yarn run webpack --progress --color --display-error-details --watch",
     "start": "concurrently -k --kill-others-on-fail \"jekyll s\" \"yarn run watch-css\" \"yarn run watch-code\""
   },
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "tree-kill": "^1.2.2"
+  }
 }
