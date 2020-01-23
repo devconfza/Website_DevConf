@@ -29,9 +29,19 @@
   Logo: synthesisgold.jpg
 
 - Level: Bronze
+  Name: Entersekt 
+  Url: https://www.entersekt.com/
+  Logo: entersektbronze.jpg
+
+- Level: Bronze
   Name: Karat
   Url: https://karat.com/
   Logo: karatbronze.jpg
+
+- Level: Bronze
+  Name: PayFast 
+  Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
+  Logo: payfastbronze.jpg
 
 - Level: Bronze
   Name: WorldAware 
