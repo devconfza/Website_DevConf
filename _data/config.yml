@@ -5,7 +5,6 @@ events:
     info: "/capetown"
     sessionizeId: "b5u8ycnc"
     logo: devconfcpt.png
-    # sessionizeId: "f0el0uow"
     venue: "Century City Conference Centre"
     website: "https://ccconferencecentre.co.za/"
     mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
@@ -19,14 +18,19 @@ events:
       solo:
         price: R1,997.50
       corporate:
-        price: R2,350.00     
+        price: R2,350.00    
+    rooms: 
+      room_3: "Hall A"
+      room_1: "Hall B"
+      room_4: "Hall C"
+      room_2: "Meeting Room 11"
+      room_5: "Meeting Rooms 8 & 9"
   - location: "Johannesburg"
     menuTitle: "Joburg"
     date: "2 April 2020"
     info: "/johannesburg"
     sessionizeId: "b5u8ycnc"
     logo: devconfjhb.png
-    # sessionizeId: "f0el0uow"
     venue: "Gallagher Convention Centre"
     website: "https://gallagher.co.za"
     mapLink: "https://goo.gl/maps/NwCiffFc5eCAtyLr7"
@@ -40,4 +44,10 @@ events:
       solo:
         price: R2,222.75
       corporate:
-        price: R2,615.00        
+        price: R2,615.00     
+    rooms: 
+      room_3: "Ballroom"
+      room_1: "Hall 4"
+      room_4: "Auditorium"
+      room_2: "Gallagher Grill"
+      room_5: "Gallagher 3"   

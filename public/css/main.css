@@ -103,7 +103,8 @@
             .sponsor-title-content-package-image {
               display: none; } }
           .sponsor-title-content-package-image > img {
-            height: 300px; }
+            height: 300px;
+            margin-top: 50px; }
       @media (max-width: 850px) {
         .sponsor-title-content {
           font-size: 2.5rem; } }
@@ -165,7 +166,8 @@
             .sponsor-title-blue-content-package-image {
               display: none; } }
           .sponsor-title-blue-content-package-image > img {
-            height: 300px; }
+            height: 300px;
+            margin-top: 50px; }
       @media (max-width: 850px) {
         .sponsor-title-blue-content {
           font-size: 2.5rem; } }
