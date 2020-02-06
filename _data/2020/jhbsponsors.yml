@@ -2,6 +2,11 @@
   Name: IBM
   Url: https://www.ibm.com/za-en
   Logo: ibmdiamond.jpg
+
+- Level: Platinum
+  Name: AWS
+  Url: https://aws.amazon.com/
+  Logo: awsplat.jpg  
   
 - Level: Platinum
   Name: Microsoft
