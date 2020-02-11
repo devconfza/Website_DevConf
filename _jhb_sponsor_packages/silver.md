@@ -5,7 +5,7 @@ limit: 4
 logo: silver-jhb.png
 large-logo: silver-header.png
 logo_size: 110
-remaining: 2
+remaining: 0
 
 # Expo info
 expo: yes

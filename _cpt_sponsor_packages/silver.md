@@ -5,7 +5,7 @@ limit: 4
 logo: silver-cpt.png
 large-logo: silver-header.png
 logo_size: 110
-remaining: 3
+remaining: 2
 
 # Expo info
 expo: yes
