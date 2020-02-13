@@ -163,9 +163,6 @@
         max-width: 100vw;
 
         >*:not(a) {
-            padding-left: 15%;
-            padding-right: 15%;
-
             @media (max-width: 1200px) {
                 padding-left: 15px;
                 padding-right: 15px;
@@ -316,10 +313,9 @@
 
         &-sponsors {
             display: grid;
-            grid-auto-flow: column;
+            grid-template-columns: repeat(3, minmax(0, max-content));
 
             @media (max-width: $mobileWidth) {
-                grid-auto-flow: row;
                 grid-template-columns: auto;
             }
 
