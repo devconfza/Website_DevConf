@@ -1,47 +1,52 @@
 ---
 layout: default
----
+--- 
 
-Oh no 🙀 the page canot be not found. Our smart robot 🤖 will try and find the best fit and redirect you to it in a few seconds... if he can find anything.
+<div class="sponsor sponsor-home">
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Page_not_found</div>
+        <div class="sponsor-content-detail-workshop">
+            Oh no 🙀 the page canot be not found. Our smart robot 🤖 will try and find the best fit and redirect you to
+            it in a few seconds... if he can find anything.
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
-console.debug('Starting hunt for URLs');
+    console.debug('Starting hunt for URLs');
 
-function findPage() {
-    "use-strict"; 
+    function findPage() {
+        "use-strict";
 
-    const allpages = [];
-    
-    {% for post in site.pages %}
-    allpages.push('{{ post.url }}');
-    {% endfor %}
+        const allpages = [];
 
-    console.dir(allpages);
+        {% for post in site.pages %}
+        allpages.push('{{ post.url }}'); 
+        {% endfor %}
 
-    let url = window.location.pathname;
-	if (url.slice(-1) === "/") {  
-        url = url.slice(0, -1);  
+        let url = window.location.pathname;
+        if (url.slice(-1) === "/") {
+            url = url.slice(0, -1);
+        }
+
+        url = url.toUpperCase();
+
+        const normalisedPages = allpages.map((value) => {
+            if (value.slice(-1) === "/") {
+                value = value.slice(0, -1);
+            }
+
+            return value.toUpperCase();
+        });
+
+        const matchedPage = normalisedPages.indexOf(url);
+        if (matchedPage !== -1) {
+            console.log(`Redirecting to ${allpages[matchedPage]}`);
+            window.location = allpages[matchedPage];
+        } else {
+            console.log(`No match found for ${url}`);
+        }
     }
 
-    url = url.toUpperCase();
-    
-    const normalisedPages = allpages.map((value) => {  
-	    if (value.slice(-1) === "/") {  
-			value = value.slice(0, -1);  
-	  	}
-        
-        return value.toUpperCase();  
-    });  
-    
-    const matchedPage = normalisedPages.indexOf(url); 
-    if (matchedPage !== -1) {
-        console.debug(`Redirecting to ${allpages[matchedPage]}`);
-        window.location = allpages[matchedPage]; 
-    } else {
-        console.debug(`No match found for ${url}`);
-    }
-}
-
-findPage();
+    findPage();
 </script>
-

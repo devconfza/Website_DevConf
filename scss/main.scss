@@ -265,6 +265,19 @@ body {
         }
     }
 
+    &collapse {
+        padding: 20px;
+    }
+
+    &workshop {
+        max-width: 75%;
+        display: grid;
+
+        >a.button {
+            justify-self: center;
+        }
+    }
+
     &media {
         display: grid;
         grid-auto-flow: column;

@@ -1021,6 +1021,15 @@ body {
       background-color: #000d28;
       font-size: 0.8rem; }
 
+.sponsor-content-detail-collapse {
+  padding: 20px; }
+
+.sponsor-content-detail-workshop {
+  max-width: 75%;
+  display: grid; }
+  .sponsor-content-detail-workshop > a.button {
+    justify-self: center; }
+
 .sponsor-content-detail-media {
   display: grid;
   grid-auto-flow: column;
