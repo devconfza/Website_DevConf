@@ -23,15 +23,20 @@
   Url: https://www.google.com
   Logo: googlegold.jpg
 
-- Level: Silver
-  Name: Thinkst
-  Url: https://thinkst.com/
-  Logo: thinkstsilver.jpg
-
 - Level: Gold
   Name: Synthesis
   Url: https://www.synthesis.co.za/
   Logo: synthesisgold.jpg
+
+- Level: Silver
+  Name: Red Hat
+  Url: https://www.redhat.com
+  Logo: redhatsilver.jpg
+
+- Level: Silver
+  Name: Thinkst
+  Url: https://thinkst.com/
+  Logo: thinkstsilver.jpg
 
 - Level: Bronze
   Name: DVT
@@ -67,6 +72,16 @@
   Name: WorldAware 
   Url: https://www.worldaware.com/
   Logo: worldawarebronze.jpg
+
+- Level: Registration
+  Name: Microsoft
+  Url: https://www.microsoft.com
+  Logo: microsoftrefreshment.jpg
+
+- Level: Refreshment
+  Name: Microsoft
+  Url: https://www.microsoft.com
+  Logo: microsoftrefreshment.jpg
 
 - Level: WiFi
   Name: alis_  

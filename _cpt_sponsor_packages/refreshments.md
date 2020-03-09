@@ -20,6 +20,6 @@ exclusive:
     - Exclusive branding at catering stations
     - Option to add a branded re-usable coffee cup to be added to delegate bag *price available on request
 
-sold_out: no
+sold_out: yes
 order: 80
 ---

@@ -17,6 +17,6 @@ exclusive:
     - Exclusive logo branding on name badges
     - 15% discount on the Bronze package if would like to add the bronze stand
 
-sold_out: no
+sold_out: yes
 order: 60
 ---
