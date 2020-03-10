@@ -30,6 +30,6 @@ exclusive:
     - Exclusive logo branding on delegate hoodies
     - Exclusive brand exposure at post event function
     
-sold_out: yes
+sold_out: no
 order: 10
 ---
