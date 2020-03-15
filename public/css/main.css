@@ -652,6 +652,14 @@
 .agenda-session-image {
   padding: 10px; }
 
+.agenda-session-remote {
+  font-size: 0.7rem;
+  color: #1BA6E3;
+  display: none; }
+
+.agenda-keynote-session > .agenda-session-remote {
+  color: #000d28; }
+
 .speaker-image {
   width: 150px;
   height: 150px;

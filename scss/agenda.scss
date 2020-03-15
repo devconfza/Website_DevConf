@@ -120,6 +120,16 @@
     padding: 10px;
 }
 
+.agenda-session-remote {
+    font-size: 0.7rem;
+    color: $brandBlue;
+    display: none;
+}
+
+.agenda-keynote-session > .agenda-session-remote {
+    color: $darkBrandBlue;
+}
+
 .speaker-image {
     width: 150px;
     height: 150px;

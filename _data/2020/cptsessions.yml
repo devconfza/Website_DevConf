@@ -1,51 +1,123 @@
 # Keynote
-- 158072
+-
+  id: 158072
+  remote: true
 
 # Slot one
-- 000000 # SPONSOR - DIAMOND -- ?
-- 148519
-- 142034
-- 000000 # Was Mark but Corona
-- 143373
+-
+  id: 000000 # SPONSORED OFFERZEN
+  remote: true
+-
+  id: 148519 # jean swart
+  remote: yes
+-
+  id: 142034 #  venessa
+  remote: false
+-
+  id: 000000 # Was Mark but Corona
+  remote: false
+-
+  id: 143373 $ natu
+  remote: false
 
 # Slot two
-- 148566 # Was Ferdi; now Mercia but Corona
-- 146358
-- 193001 # SPONSOR - MICROSOFT
-- 144203
-- 148582
+-
+  id: 148566 # Mercia
+  remote: false
+-
+  id: 146358 # cobus
+  remote: true
+-
+  id: 193001 # SPONSOR MICROSOFT - rory
+  remote: false
+-
+  id: 144203 # Pamela
+  remote: true
+-
+  id: 148582 # Rachel
+  remote: true
 
 # Slot Three
-- 147518
-- 143289
-- 146531
-- 180257 # SPONSOR - PLATINUM - AWS
-- 148071
+-
+  id: 147518 # cliff
+  remote: false
+-
+  id: 143289 # renette
+  remote: false
+- 
+  id: 146531 # liz
+  remote: true
+-
+  id: 180257 # SPONSOR PLATINUM - AWS - darko
+  remote: true
+-
+  id: 148071 # Pieter
+  remote: false
 
 # Slot Four
-- 148617
-- 146567
-- 148306
-- 148657
-- 181185 # SPONSOR - GOLD - SYNTHESIS
+-
+  id: 148617 # jacque
+  remote: false
+-
+  id: 146567 # ronica
+  remote: false
+-
+  id: 148306 # chris
+  remote: false
+-
+  id: 148657 #nthabiseng
+  remote: false
+-
+  id: 181185 # SPONSOR - GOLD - SYNTHESIS - paul
+  remote: false
 
 # Slot Five
-- 147960
-- 143527 # SPONSOR - GOLD - AllanGrey
-- 147860
-- 148332
-- 148485
+-
+  id: 147960 # bhekani
+  remote: true
+-
+  id: 143527 # SPONSOR - GOLD - AllanGrey bria n
+  remote: false
+-
+  id: 147860 # joshua
+  remote: false
+-
+  id: 148332 #michaal
+  remote: false
+-
+  id: 148485 # lorraine
+  remote: false
 
 # Slot Six
-- 142870
-- 143286
-- 000000 # Was Matt but Corona
-- 181028 # SPONSOR - GOLD - aruba
-- 144259
+-
+  id: 142870 # veronia
+  remote: false
+-
+  id: 143286 #lukonde
+  remote: false
+-
+  id: 000000 # Was Matt but Corona; maybe darrin?
+  remote: false
+-
+  id: 181028 # SPONSOR - GOLD - aruba - jaime
+  remote: false
+-
+  id: 144259 # russel
+  remote: false
 
 # Slot Seven
-- 147880
-- 142096
-- 181192 # SPONSOR - GOLD - google
-- 144312
-- 148234
+-
+  id: 147880 # gerard
+  remote: false
+-
+  id: 142096 # anjuan
+  remote: true
+-
+  id: 181192 # SPONSOR - GOLD - google - mike
+  remote: false
+-
+  id: 144312 # tshepeng
+  remote: false
+-
+  id: 148234 #justin
+  remote: false

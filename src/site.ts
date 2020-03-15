@@ -194,6 +194,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
         document.querySelectorAll(".agenda-session").forEach((element, index) => {
             const div = element as HTMLDivElement;
             const id = div.attributes["data-slot-id"].value;
+            const remote = div.attributes["data-remote"].value === "true";
             const matchedSession = getSession(id);
 
             if (!matchedSession) {
@@ -216,6 +217,13 @@ function loadEventSessions(id: String, target: HTMLElement) {
                         }
                         case "agenda-session-title": {
                             templateElement.innerText = matchedSession.title;
+                            break;
+                        }
+                        case "agenda-session-remote": {
+                            if (remote) {
+                                templateElement.style.display = "block";
+                            }
+
                             break;
                         }
                     }

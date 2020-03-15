@@ -1,51 +1,120 @@
 # Keynote
-- 158072
+-
+  id: 158072
+  remote: true
 
 # Slot one
-- 188363 # SPONSOR - DIAMOND - IBM
-- 148519
-- 142034
-- 146588 
-- 143373
+-
+  id: 188363 # SPONSOR - DIAMOND - IBM - clive
+  remote: false
+-
+  id: 148519 # jean
+  remote: true
+-
+  id: 142034 # vanessa
+  remote: false
+-
+  id: 146588 # daniel 
+  remote: false
 
+-
+  id: 143373 #natu 
+  remote: false
 # Slot two
-- 181530 # SPONSOR - GOLD - Outsurance
-- 146358
-- 193001 # SPONSOR - MICROSOFT
-- 144203
-- 148582
-
+-
+  id: 181530 # SPONSOR - GOLD - Outsurance - matt
+  remote: false
+-
+  id: 147860 # jishua
+  remote: false
+-
+  id: 193001 # SPONSOR - MICROSOFT rory
+  remote: false
+-
+  id: 144203 # pamela
+  remote: true
+-
+  id: 148582 # rachel
+  remote: true
 # Slot Three
-- 147518
-- 143289
-- 146531
-- 180257 # SPONSOR - PLATINUM - ?? Maybe AWS
-- 148071
-
+-
+  id: 147518 #cliff
+  remote: false
+-
+  id: 143289 # renette
+  remote: false
+-
+  id: 146531 # liz
+  remote: true
+-
+  id: 180257 # SPONSOR - PLATINUM - ?? Maybe AWS - darko
+  remote: true
+-
+  id: 148071 # pieter
+  remote: false
 # Slot Four
-- 148617 
-- 146567
-- 148306
-- 148657
-- 165777 # SPONSOR - Retro Rabbit
+-
+  id: 148617  # jacques
+  remote: false
+-
+  id: 146567 # ronica
+  remote: false
+-
+  id: 148306 # chris
+  remote: false
+-
+  id: 148657 #nthabiseng
+  remote: false
+-
+  id: 165777 # SPONSOR - Retro Rabbit - jade
+  remote: false
 
 # Slot Five
-- 147960
-- 179075 # SPONSOR - GOLD - KARAT
-- 147860
-- 148332
-- 148485
+-
+  id: 147960 # bhekani
+  remote: true
+-
+  id: 179075 # SPONSOR - GOLD - KARAT - lusen
+  remote: true
 
+-
+  id: 146358 # cobus
+  remote: true
+-
+  id: 148332 # michael
+  remote: false
+-
+  id: 148485 # lorraine
+  remote: false
 # Slot Six
-- 142870
-- 143286
-- 000000 # Was Matt but Corona
-- 181191 # SPONSOR - GOLD - AllanGray
-- 144259
-
+-
+  id: 142870 # veronica
+  remote: false
+-
+  id: 143286 #lukonde
+  remote: false
+-
+  id: 000000 # Was Matt but Corona
+  remote: false
+-
+  id: 181191 # SPONSOR - GOLD - AllanGray - edmore
+  remote: false
+-
+  id: 144259 # russel
+  remote: false
 # Slot Seven
-- 147880
-- 142096
-- 148566 # Was ferdi; now Mercia but corona and moved 
-- 144312
-- 148234
+-
+  id: 147880 # gerard
+  remote: false
+-
+  id: 142096 #anjuan
+  remote: true
+-
+  id: 148566 # Was ferdi; now Mercia but corona and moved \
+  remote: false
+-
+  id: 144312 #tshepang
+  remote: false
+-
+  id: 148234 #justin
+  remote: false
