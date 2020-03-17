@@ -25,15 +25,16 @@ layout: default
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-event-bananas">
             {% for event in site.data.config.events %}
+            {% if event.show %}
             <a class="event" href="{{ event.info }}">
                 <div class="location">{{ event.location }}</div>
                 <div class="date">{{ event.date }}</div>
                 <img class="event-logo" src="/public/images/{{ event.logo }}">
-                <!-- <div class="countdown">365 days to go</div> -->
                 <div class="button" role="button">
                     Tickets, Agenda &amp; More
                 </div>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -41,17 +42,31 @@ layout: default
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Statement regarding Presential Address to COVID-19</div>
         <div class="sponsor-content-detail-workshop">
-            <p>DevConf will still go ahead and will change to be virtual event rather than an in-person event.</p>
-            <p>Details of how to attend, dates, how to get your swag and more will be shared during the week.</p>
-            <p>We thank you from the bottom of our hearts for the outpouring of support and cannot wait to see you virtually!</p>
+            <h3>Read our official statements</h3>
+            <ul>
+                <li><a href="https://madmimi.com/p/b2c7601" target="_blank">Official statement released 16<sup>th</sup> of March</a></li>
+                <li><a href="https://madmimi.com/s/375e501" target="_blank">Official statement released 9<sup>th</sup> of March</a></li>
+            </ul>
+            <p>DevConf will still go ahead and we are joining both Johannesburg and Cape Town into a new virtual event:
+                <span class="pink">DevConf Live!</span></p>
+            <p>The event will take place on the <span class="blue">2<sup>nd</sup> of April</span> and will be live
+                streamed to all ticket
+                holders.</p>
+            <p>DevConf Live will <span class="blue">increase to 6 concurrent tracks</span> of content and ticket holders
+                will still be able to
+                collect their amazing swag before the event and will get time limited exclusive access to the recorded
+                sessions after the event.</p>
+            <p>This change would not be possible without all the support from our sponsors, so please take time to
+                thank each and every one of then.</p>
+            <p>We thank you from the bottom of our hearts for the outpouring of support and cannot wait to see you
+                virtually!</p>
             <p>Your hosts, Candice &amp; Robert</p>
-            <p>15 March 2020 20h44 SAST</p>
         </div>
     </div>
-    
+
     <div class="sponsor-content-detail sponsor-content-detail-collapse">
     </div>
-    
+
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Keep Me Informed</div>
@@ -84,8 +99,10 @@ layout: default
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Videos</div>
-        <iframe class="youtubes" src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA" target="_blank">Visit Our YouTube Channel</a>
+        <iframe class="youtubes" src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA"
+            target="_blank">Visit Our YouTube Channel</a>
     </div>
 
     <div class="sponsor-content-detail">

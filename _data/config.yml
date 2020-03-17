@@ -1,5 +1,35 @@
 events:
-  - location: "Cape Town"
+  - virtual: true
+    show: true
+    menuTitle: "Live"
+    location: "Live"
+    date: "2 April 2020"
+    info: "/live"
+    sessionizeId: "b5u8ycnc"
+    logo: devconfvirtual.jpg
+    tickets:
+      joburg:
+        purchaseSite: https://www.quicket.co.za/events/86889-devconf-2020-johannesburg
+        solo:
+          price: R2,222.75
+        corporate:
+          price: R2,615.00     
+      capetown:
+        purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
+        solo:
+          price: R1,997.50
+        corporate:
+          price: R2,350.00    
+    rooms: 
+      room_1: "Stream 1"
+      room_2: "Stream 2"
+      room_3: "Stream 3"
+      room_4: "Stream 4"
+      room_5: "Stream 5"   
+      room_6: "Stream 6"
+  - virtual: false
+    show: false
+    location: "Cape Town"
     menuTitle: "Cape Town"
     date: "31 March 2020"
     info: "/capetown"
@@ -25,7 +55,9 @@ events:
       room_4: "Hall C"
       room_2: "Meeting Room 11"
       room_5: "Meeting Rooms 8 & 9"
-  - location: "Johannesburg"
+  - virtual: false
+    show: false
+    location: "Johannesburg"
     menuTitle: "Joburg"
     date: "2 April 2020"
     info: "/johannesburg"

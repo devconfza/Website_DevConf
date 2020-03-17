@@ -70,6 +70,25 @@
     }
 }
 
+.agenda-virtual-row-timeslot {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    justify-self: stretch;
+    row-gap: 3px;
+    column-gap: 5px;
+
+    @media (max-width: 1114px) {
+        grid-template-columns: repeat(6, 150px);
+    }
+
+    @media (max-width: 940px) {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+    }
+}
+
 .agenda-session {
     background-color: #000d28;
     border-radius: 5px;
@@ -84,7 +103,7 @@
         grid-template-rows: 35px 20px 170px 50px;
     }
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: 940px) {
         grid-template-rows: repeat(3, auto);
     }
 }

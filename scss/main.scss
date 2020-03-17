@@ -3,6 +3,19 @@
 @import 'sponsors.scss';
 @import 'agenda.scss';
 
+
+span.pink {
+    color: $brandPink;
+}
+
+span.blue {
+    color: $brandBlue
+}
+
+span.dark {
+    color: #0a0a0a;
+}
+
 a {
     color: $brandPink;
 
@@ -220,6 +233,7 @@ body {
     padding-bottom: 15px;
     padding-left: 20%;
     padding-right: 20%;
+
     @media (max-width: $mobileWidth) {
         padding-left: 5%;
         padding-right: 5%;
@@ -236,7 +250,7 @@ body {
         display: grid;
         grid-template-columns: auto auto;
         justify-items: center;
-        grid-column-gap: 100px;
+        // grid-column-gap: 100px;
         grid-row-gap: 50px;
 
         @media (max-width: $mobileWidth) {
