@@ -1,6 +1,6 @@
 ---
 layout: default
---- 
+---
 
 <div class="sponsor sponsor-home">
     <div class="sponsor-content-detail">
@@ -8,23 +8,24 @@ layout: default
         <div class="sponsor-content-detail-workshop">
             <p>Want to win a
                 <a href="https://getrocketbook.co.za/" rel="noopener noreferrer" target="_blank"><span
-                        class="emailUs">Rocketbook Wave Hamper</span></a>? Complete the speaker feedback for
-                the event you attended</p>
+                        class="emailUs">Rocketbook Wave Hamper</span></a>? Click the link to the speaker feedback form below!</p>
+
+
+            <a href="javascript:void(
+      window.open(
+        'https://form.jotform.com/200812894276561',
+        'blank',
+        'scrollbars=yes,
+        toolbar=no,
+        width=700,
+        height=500'
+      )
+    )
+  ">
+                DevConf 2020 💎 Event Feedback
+            </a>
         </div>
     </div>
 
-    <div class="sponsor-content-detail">
-        <div class="sponsor-content-detail-event-bananas">
-            {% for event in site.data.config.events %}
-            <a class="event" href="{{ event.rateUrl }}">
-                <div class="location">{{ event.location }}</div>
-                <div class="date">{{ event.date }}</div>
-                <img class="event-logo" src="/public/images/{{ event.logo }}">
-                <div class="button" role="button">
-                    Rate &amp; Win!
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
+
 </div>
