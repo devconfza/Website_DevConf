@@ -11,6 +11,56 @@
     </div>
 
     <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Buy your tickets</div>
+        <div class="sponsor-content-detail-tickets">
+            <div>Tickets available with something for everyone. All tickets include full day access to all
+                sessions, the amazing swag and limited DevConf hoodie, an limited time exclusive post event access to session videos!</div>
+            <div class="sponsor-content-detail-tickets-cards">
+                <div>
+                    <div><span class="blue">Cape Town</span> <span class="dark">|</span> Individual Tickets</div>
+                    <div>For community members and solo developers who are paying their own way. Only
+                        available via Quicket with credit card payment.</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.capetown.solo.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.capetown.purchaseSite }}" target="_blank">Buy an individual
+                        ticket now!</a>
+                </div>
+                <div>
+                    <div><span class="blue">Cape Town</span> <span class="dark">|</span> Corporate Tickets</div>
+                    <div>Corporates are on the honour system to purchase this ticket and support the
+                        community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
+                        payment.</div>
+                    <div>
+                        Purchase 10 or more to get 10% off!
+                    </div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.capetown.corporate.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.capetown.purchaseSite }}" target="_blank">Buy a corporate
+                        ticket now!</a>
+                </div>
+                <div>
+                    <div><span class="blue">Johannesburg</span> <span class="dark">|</span> Individual Tickets</div>
+                    <div>For community members and solo developers who are paying their own way. Only
+                        available via Quicket with credit card payment.</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.joburg.solo.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.joburg.purchaseSite }}" target="_blank">Buy an individual
+                        ticket now!</a>
+                </div>
+                <div>
+                    <div><span class="blue">Johannesburg</span> <span class="dark">|</span> Corporate Tickets</div>
+                    <div>Corporates are on the honour system to purchase this ticket and support the
+                        community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
+                        payment.</div>
+                    <div>
+                        Purchase 10 or more to get 10% off!
+                    </div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.joburg.corporate.price }}</div>
+                    <a class="sponsor-button" href="{{ event.tickets.joburg.purchaseSite }}" target="_blank">Buy a corporate
+                        ticket now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
 
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">

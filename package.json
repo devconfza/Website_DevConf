@@ -52,6 +52,8 @@
   },
   "dependencies": {},
   "resolutions": {
-    "tree-kill": "^1.2.2"
+    "tree-kill": "^1.2.2",
+    "minimist": "^1.2.3",
+    "acorn": "^7.1.1"
   }
 }
