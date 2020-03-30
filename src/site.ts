@@ -68,6 +68,26 @@ function loadEventSessions(id: String, target: HTMLElement) {
         return remappedSpeakers.filter((value, index) => index < remappedSpeakers.length - 1).join(', ') + ' & ' + remappedSpeakers[remappedSpeakers.length - 1];
     }
 
+    const getSpeakerBio = (sessionSpeakers: Array<string>): string => {
+        const remappedSpeakers = getSpeakerInfo(sessionSpeakers).map((s) => s.bio);
+
+        if (remappedSpeakers.length === 1) {
+            return remappedSpeakers[0];
+        }
+
+        return remappedSpeakers.join(" <br/> ");
+    }
+
+    const otherSpeakerImages = (sessionSpeakers: Array<string>): Array<string> => {
+        const remappedSpeakers = getSpeakerInfo(sessionSpeakers).map((s) => s.profilePicture);
+
+        if (remappedSpeakers.length === 1) {
+            return [];
+        }
+
+        return remappedSpeakers.slice(1);
+    }
+
     const getTrack = (session: Sessionize.Session) => {
         const trackId = session.categoryItems.filter(category => tracks.map(track => track.id).indexOf(category) > -1)[0];
 
@@ -131,7 +151,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
     }
 
     const setDivText = (element: Element, querySelector: string, content: string) => {
-        (element.querySelector(querySelector)! as HTMLDivElement).innerText = content;
+        (element.querySelector(querySelector)! as HTMLDivElement).innerHTML = content;
     }
 
     const addPopupHandler = () => {
@@ -163,17 +183,25 @@ function loadEventSessions(id: String, target: HTMLElement) {
                     const speakerInfo = singleSpeaker(matchedSession.speakers);
                     const socialLinks = buildSocialBadges(speakerInfo);
                     const bioContent = getTemplate("popupBioContent").firstElementChild!;
-                    (bioContent.querySelector("img.largePopupImage")! as HTMLImageElement).src = speakerInfo.profilePicture;
+                    const imageElement = (bioContent.querySelector("img.largePopupImage")! as HTMLImageElement);
+                    imageElement.src = speakerInfo.profilePicture;
+                    const otherImages = otherSpeakerImages(matchedSession.speakers);
+                    if (otherImages.length > 0) {
+                        imageElement.setAttribute("x-altImage", otherImages[0]);
+                    }
+
                     setDivText(bioContent, "div.bio-speaker", multipleSpeakerNames(matchedSession.speakers));
                     const socialLinkPlaceholder = (bioContent.querySelector("div.bio-social")! as HTMLDivElement);
                     socialLinks.forEach(link => {
                         socialLinkPlaceholder.appendChild(link);
                     });
 
+
+                    const bio = getSpeakerBio(matchedSession.speakers);
                     setDivText(bioContent, "div.bio-tagline", speakerInfo.tagLine);
                     setDivText(bioContent, "div.bio-title", matchedSession.title);
                     setDivText(bioContent, "div.bio-talk-description", matchedSession.description);
-                    setDivText(bioContent, "div.bio-speaker-bio", speakerInfo.bio);
+                    setDivText(bioContent, "div.bio-speaker-bio", bio);
                     setDivText(bioContent, "div.bio-track", `Track: ${getTrack(matchedSession)}`);
                     popupContent.insertAdjacentElement("beforeend", bioContent);
                 };
@@ -207,6 +235,11 @@ function loadEventSessions(id: String, target: HTMLElement) {
                         case "agenda-session-image": {
                             const imageElement = document.createElement("img");
                             imageElement.src = singleSpeakerImage(matchedSession.speakers);
+                            const otherImages = otherSpeakerImages(matchedSession.speakers);
+                            if (otherImages.length > 0) {
+                                imageElement.setAttribute("x-altImage", otherImages[0]);
+                            }
+
                             imageElement.classList.add("speaker-image");
                             templateElement.appendChild(imageElement);
                             break;
@@ -247,6 +280,17 @@ function loadEventSessions(id: String, target: HTMLElement) {
         }
     }
 
+    const rotateImages = () => {
+        setInterval(() => {
+            const images = Array.from(document.getElementsByTagName("img")).filter(image => image.getAttribute("x-altImage") !== null) as Array<HTMLImageElement>;
+            images.forEach(image => {
+                const current = image.src;
+                image.src = image.getAttribute("x-altImage")!;
+                image.setAttribute("x-altImage", current);
+            });
+        }, 2500);
+    }
+
     if (navigator.onLine) {
         fetch(`https://sessionize.com/api/v2/${id}/view/all`).then(response => {
             switch (response.status) {
@@ -269,4 +313,6 @@ function loadEventSessions(id: String, target: HTMLElement) {
     } else {
         loadStoredData();
     }
+
+    rotateImages();
 }
