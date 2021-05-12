@@ -5,18 +5,18 @@ layout: default
 <div class="sponsor sponsor-home">
     <div class="hero">
         <div class="brand">
-            <img src="/public/images/bannerTitle.png" alt='DevConf;' />
+            <img alt="DevConf;" src="/public/images/bannerTitle.png"/>
             <div class="slogan">solving today and tomorrow's software development challenges</div>
             <div class="intro">
                 DevConf is a community-driven, professional software developer focused, one-day
-                conference hosted annually.<br />
+                                conference hosted annually.<br/>
                 DevConf provides professional software developers with a buffet of tools,
-                practices and
-                principles applicable to tackling current and future challenges in the South African software
-                development
-                environment. It's an event where attendees can learn, network and be inspired regardless of their
-                specific
-                technology stack and programming language of choice.
+                                practices and
+                                principles applicable to tackling current and future challenges in the South African software
+                                development
+                                environment. It's an event where attendees can learn, network and be inspired regardless of their
+                                specific
+                                technology stack and programming language of choice.
             </div>
         </div>
     </div>
@@ -25,23 +25,26 @@ layout: default
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-event-bananas">
             {% for event in site.data.config.events %}
-            {% if event.show %}
-            <a class="event" href="{{ event.info }}">
-                <div class="location">{{ event.location }}</div>
-                <div class="date">{{ event.date }}</div>
-                <img class="event-logo" src="/public/images/{{ event.logo }}">
-                <div class="button" role="button">
-                    Tickets, Agenda &amp; More
-                </div>
-            </a>
-            {% endif %}
+                {% if event.show %}
+                    <a class="event" href="{{ event.info }}">
+                        <div class="location">{{ event.location }}</div>
+                        <div class="date">{{ event.date }}</div>
+                        <img class="event-logo" src="/public/images/{{ event.logo }}">
+                        <div class="button" role="button">
+                            Tickets, Agenda &amp; More
+                        </div>
+                    </a>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
 
-    <div class="sponsor-content-detail sponsor-content-detail-collapse">
+    <div class="sponsor-content-detail">
+        <h1>DevConf 2022 is coming.<br/><a href="https://madmimi.com/s/6497521" rel="noopener noreferrer" target="_blank">Find out more</a>
+        </h1>
     </div>
 
+    <div class="sponsor-content-detail"></div>
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Keep Me Informed</div>
@@ -50,41 +53,35 @@ layout: default
                 <p>
                     If you would like to be added to our mailing list for announcements, please signup below:
                 </p>
-                <input id="signup_name" name="signup[name]" type="text" class="form-control mimi_field required"
-                    placeholder="Name" data-required-field="Name is required" data-required-placeholder="Name" required>
-                <input id="signup_email" name="signup[email]" type="email" class="form-control mimi_field required"
-                    placeholder="Email" data-required-field="Email is required" data-required-placeholder="Email"
-                    required>
+                <input class="form-control mimi_field required" data-required-field="Name is required" data-required-placeholder="Name" id="signup_name" name="signup[name]" placeholder="Name" required type="text">
+                <input class="form-control mimi_field required" data-required-field="Email is required" data-required-placeholder="Email" id="signup_email" name="signup[email]" placeholder="Email" required type="email">
                 <div class="checkbox">
-                    <input id="list_1138553" name="lists[]" value="1138553" type="checkbox" checked="checked" />
+                    <input checked="checked" id="list_1138553" name="lists[]" type="checkbox" value="1138553"/>
                     <label for="list_1138553">I would like to receive the Developer User Group newsletter as
-                        well!</label>
+                                                well!</label>
                 </div>
-                <p class="devugblurb">The <a href="https://www.developerug.org.za" class="devuglink" target="_blank"
-                        rel="noopener noreferrer">Developer
-                        User Group</a> is a monthly free meeting for software developers which takes place in
-                    Cape
-                    Town, Pretoria &amp; Johannesburg.</p>
-                <input type="submit" class="button" value="Sign Up" id="webform_submit_button"
-                    data-default-text="Keep me informed" data-submitting-text="Signing Up..."
-                    data-invalid-text="Try Again" data-thanks="Thank you!" data-class="btn btn-primary" />
+                <p class="devugblurb">The
+                    <a class="devuglink" href="https://www.developerug.org.za" rel="noopener noreferrer" target="_blank">Developer
+                                                User Group</a>
+                    is a monthly free meeting for software developers which takes place in
+                                        Cape
+                                        Town, Pretoria &amp; Johannesburg.</p>
+                <input class="button" data-class="btn btn-primary" data-default-text="Keep me informed" data-invalid-text="Try Again" data-submitting-text="Signing Up..." data-thanks="Thank you!" id="webform_submit_button" type="submit" value="Sign Up"/>
             </div>
         </form>
     </div>
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Videos</div>
-        <iframe class="youtubes" src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA"
-            target="_blank">Visit Our YouTube Channel</a>
+        <iframe allow="autoplay; encrypted-media" allowfullscreen class="youtubes" frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"></iframe>
+        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA" target="_blank">Visit Our YouTube Channel</a>
     </div>
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">DevConf in the media</div>
         <div class="sponsor-content-detail-media">
             {% for media in site.data.media limit: 6 %}
-            {% include media_card.html link=media.link title=media.title %}
+                {% include media_card.html link=media.link title=media.title %}
             {% endfor %}
         </div>
         <a class="button-blue" href="/media">View More</a>
@@ -106,20 +103,28 @@ layout: default
     document.getElementById("madmimi").onsubmit = (e) => {
         e.preventDefault();
 
-        const submitButton = document.getElementById('webform_submit_button');
-        submitButton.value = submitButton.attributes['data-submitting-text'].value;
+        const submitButton = document.getElementById("webform_submit_button");
+        submitButton.value = submitButton.attributes["data-submitting-text"].value;
         submitButton.disabled = true;
         const parts = ["lists[]=2073517"];
-        if (document.getElementById('list_1138553').checked) {
+        if (document.getElementById("list_1138553").checked) {
             parts.push("lists[]=1138553");
         }
 
-        const callbackFunction = `jsonp_callback_${Math.round(100000 * Math.random())}`;
-        parts.push(`signup[name]=${getInputValue('signup_name')}`);
-        parts.push(`signup[email]=${getInputValue('signup_email')}`);
+        const callbackFunction = `jsonp_callback_${
+            Math.round(100000 * Math.random())
+        }`;
+        parts.push(`signup[name]=${
+            getInputValue("signup_name")
+        }`);
+        parts.push(`signup[email]=${
+            getInputValue("signup_email")
+        }`);
         parts.push(`callback=${callbackFunction}`);
 
-        const mm_url = `https://madmimi.com/signups/subscribe/176015.json?${parts.join('&')}`;
+        const mm_url = `https://madmimi.com/signups/subscribe/176015.json?${
+            parts.join("&")
+        }`;
 
         const _this = this;
         window[callbackFunction] = function (response) {
@@ -127,13 +132,13 @@ layout: default
             document.body.removeChild(script);
             submitButton.disabled = false;
             if (response.success) {
-                submitButton.value = submitButton.attributes['data-thanks'].value;
+                submitButton.value = submitButton.attributes["data-thanks"].value;
             } else {
-                submitButton.value = submitButton.attributes['data-invalid-text'].value;
+                submitButton.value = submitButton.attributes["data-invalid-text"].value;
             }
         };
 
-        const script = document.createElement('script');
+        const script = document.createElement("script");
         script.src = mm_url;
         document.body.appendChild(script);
 

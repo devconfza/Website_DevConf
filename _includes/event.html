@@ -6,7 +6,8 @@
         <div class="sponsor-title-content">
             <div class="sponsor-title-content-third">[ DevConf 2020 ]</div>
             <div>{{ event.location }}</div>
-            <div class="sponsor-title-content-second">{{event.date}} | 5 Tracks | Over 40 Speakers</div>
+            <div class="sponsor-title-content-second">{{event.date}}
+                | 5 Tracks | Over 40 Speakers</div>
         </div>
     </div>
 
@@ -14,49 +15,51 @@
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         <div class="sponsor-content-detail-tickets">
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
-                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
+                                                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
             <div class="sponsor-content-detail-tickets-cards">
                 <div>
                     <div>Early Bird Tickets</div>
-                    <div>The best price ticket but <i>extremely</i> limited!</div>
+                    <div>The best price ticket but
+                        <i>extremely</i>
+                        limited!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlyBird.price }}</div>
                     {% if event.tickets.earlyBird.sold_out %}
-                    <div class="sponsor-fake-button">Sold Out!</div>
+                        <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
-                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an early bird
-                        ticket now!</a>
+                        <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an early bird
+                                                                                ticket now!</a>
                     {% endif %}
                 </div>
                 <div>
                     <div>Individual Tickets</div>
                     <div>For community members and solo developers who are paying their own way. Only
-                        available via Quicket with credit card payment.</div>
+                                                                        available via Quicket with credit card payment.</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.solo.price }}</div>
-                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an individual
-                        ticket now!</a>
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an individual
+                                                                        ticket now!</a>
                 </div>
                 <div>
                     <div>Corporate Tickets</div>
                     <div>Corporates are on the honour system to purchase this ticket and support the
-                        community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
-                        payment.</div>
+                                                                        community. You can pay with EFT or Credit Card and get an invoice from Quicket prior to EFT
+                                                                        payment.</div>
                     <div>
                         Purchase 10 or more to get 10% off!
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
-                    <a class="sponsor-button" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy a corporate
-                        ticket now!</a>
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy a corporate
+                                                                        ticket now!</a>
                 </div>
                 <div>
                     <div>Manual Corporate Tickets</div>
                     <div>Have a special requirement? Pro-forma invoice? Need us to register as a
-                        supplier? Need special payment terms?<br />
-                        <strong>No problem</strong> - we can assist with a manual ticket purchase</div>
+                                                                        supplier? Need special payment terms?<br/>
+                        <strong>No problem</strong>
+                        - we can assist with a manual ticket purchase
+                    </div>
                     <div>Purchase 10 or more to get 10% off!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
-                    <a class="sponsor-button"
-                        href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
-                        target="_blank">Let us help you now!</a>
+                    <a class="sponsor-button" href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}" target="_blank">Let us help you now!</a>
                 </div>
             </div>
         </div>
@@ -64,25 +67,37 @@
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
-  
+
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key">
-                07h15 → <b>Registration</b> ← 08h30
+                07h15 →
+                <b>Registration</b>
+                ← 08h30
             </div>
             <div class="agenda-row-style-key">
-                07h30 → <b>Lean Coffee</b> ← 08h30
+                07h30 →
+                <b>Lean Coffee</b>
+                ← 08h30
             </div>
             <div class="agenda-row-style-key">
-                08h00 → <b>Expo Opens</b> ← 19h00
+                08h00 →
+                <b>Expo Opens</b>
+                ← 19h00
             </div>
             <div class="agenda-row-style-highlight">
-                08h30 → <b>Welcome</b> ← 08h45
-            </div>            
+                08h30 →
+                <b>Welcome</b>
+                ← 08h45
+            </div>
             <div class="agenda-row-style-break">
-                08h45 → <b>Movement</b> ← 08h50
-            </div>            
+                08h45 →
+                <b>Movement</b>
+                ← 08h50
+            </div>
             <div class="agenda-row-style-key">
-                08h50 → <b>Timeslot 1</b> ← 09h40
+                08h50 →
+                <b>Timeslot 1</b>
+                ← 09h40
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[1].id }}" data-remote="{{ include.sessions[1].remote }}">
@@ -114,10 +129,14 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                09h40 → <b>Movement, Networking &amp; Refreshements</b> ← 10h10
+                09h40 →
+                <b>Movement, Networking &amp; Refreshements</b>
+                ← 10h10
             </div>
             <div class="agenda-row-style-key">
-                10h10 → <b>Timeslot 2</b> ← 11h00
+                10h10 →
+                <b>Timeslot 2</b>
+                ← 11h00
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[6].id }}" data-remote="{{ include.sessions[6].remote }}">
@@ -148,11 +167,15 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                11h00 → <b>Movement</b> ← 11h10
+                11h00 →
+                <b>Movement</b>
+                ← 11h10
             </div>
             <div class="agenda-row-style-key">
-                11h10 → <b>Timeslot 3</b> ← 12h00
-            </div>    
+                11h10 →
+                <b>Timeslot 3</b>
+                ← 12h00
+            </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[11].id }}" data-remote="{{ include.sessions[11].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -182,10 +205,14 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                12h00 → <b>Movement</b> ← 12h10
+                12h00 →
+                <b>Movement</b>
+                ← 12h10
             </div>
             <div class="agenda-row-style-key">
-                12h10 → <b>Timeslot 4</b> ← 13h00
+                12h10 →
+                <b>Timeslot 4</b>
+                ← 13h00
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}" data-remote="{{ include.sessions[16].remote }}">
@@ -213,10 +240,14 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                13h00 → <b>Lunch</b> ← 13h50
+                13h00 →
+                <b>Lunch</b>
+                ← 13h50
             </div>
             <div class="agenda-row-style-key">
-                13h50 → <b>Timeslot 5</b> ← 14h40
+                13h50 →
+                <b>Timeslot 5</b>
+                ← 14h40
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[21].id }}" data-remote="{{ include.sessions[21].remote }}">
@@ -246,10 +277,14 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                14h40 → <b>Movement, Networking &amp; Refreshments</b> ← 14h50
+                14h40 →
+                <b>Movement, Networking &amp; Refreshments</b>
+                ← 14h50
             </div>
             <div class="agenda-row-style-key">
-                14h50 → <b>Timeslot 6</b> ← 15h40
+                14h50 →
+                <b>Timeslot 6</b>
+                ← 15h40
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[26].id }}" data-remote="{{ include.sessions[26].remote }}">
@@ -277,10 +312,14 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                15h40 → <b>Movement</b> ← 15h50
+                15h40 →
+                <b>Movement</b>
+                ← 15h50
             </div>
             <div class="agenda-row-style-key">
-                15h50 → <b>Timeslot 7</b> ← 16h40
+                15h50 →
+                <b>Timeslot 7</b>
+                ← 16h40
             </div>
             <div class="agenda-row-timeslot hidden-row">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[31].id }}" data-remote="{{ include.sessions[31].remote }}">
@@ -308,18 +347,23 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break">
-                16h40 → <b>Movement</b> ← 16h50
+                16h40 →
+                <b>Movement</b>
+                ← 16h50
             </div>
             <div class="agenda-row-style-keynote hidden-row">
-                <div class="agenda-session-header">16h50 → <b>Closing Keynote</b> ← 17h50</div>
-                <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}" data-remote="{{ include.sessions[0].remote }}">
-                </div>
+                <div class="agenda-session-header">16h50 →
+                    <b>Closing Keynote</b>
+                    ← 17h50</div>
+                <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}" data-remote="{{ include.sessions[0].remote }}"></div>
             </div>
             <div class="agenda-row-style-loading">
                 Loading...
             </div>
             <div class="agenda-row-style-key">
-                17h50 → <b>Drinks &amp; networking</b> ← 19h00
+                17h50 →
+                <b>Drinks &amp; networking</b>
+                ← 19h00
             </div>
         </div>
     </div>
@@ -329,19 +373,18 @@
         <div class="sponsor-content-detail-content-sponsor">
             {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
             {% for level in sponsorsByLevel %}
-            <div class="sponsor-content-detail-sponsor-level">
-                <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
-                <div class="sponsor-content-detail-sponsors">
-                    {% for sponsor in level.items %}
-                    <div class="sponsor-content-detail-sponsor-{{ level.name }}">
-                        <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
-                            <img src="/public/images/sponsorship/2020/sponsors/{{sponsor.Logo }}"
-                                alt="The logo for {{ sponsor.Name }}" />
-                        </a>
+                <div class="sponsor-content-detail-sponsor-level">
+                    <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
+                    <div class="sponsor-content-detail-sponsors">
+                        {% for sponsor in level.items %}
+                            <div class="sponsor-content-detail-sponsor-{{ level.name }}">
+                                <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                                    <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/2020/sponsors/{{sponsor.Logo }}"/>
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
-            </div>
             {% endfor %}
             <!-- <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a> -->
         </div>
@@ -352,12 +395,13 @@
         <div class="sponsor-content-detail-location">
             <div>DevConf will be held at
                 <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
-                {{ event.location }}, South Africa.</div>
+                {{ event.location }}, South Africa.
+            </div>
 
 
-            <div id="map" class="googleMapEmbed" referrerpolicy="unsafe-url" frameborder="0" style="border:0"></div>
+            <div class="googleMapEmbed" frameborder="0" id="map" referrerpolicy="unsafe-url" style="border:0"></div>
             <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
-                Maps</a>
+                                                Maps</a>
 
         </div>
     </div>
@@ -383,7 +427,7 @@
 <template id="popupBioContent">
     <div class="popupBio">
         <div class="popupBioLeft">
-            <img class="largePopupImage" />
+            <img class="largePopupImage"/>
             <div class="bio-speaker"></div>
             <div class="bio-social"></div>
             <div class="bio-tagline"></div>
@@ -415,5 +459,4 @@
         });
     }
 </script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g&callback=initMap"></script>

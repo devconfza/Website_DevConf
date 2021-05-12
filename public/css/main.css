@@ -523,7 +523,8 @@
     .sponsor-content-detail-white {
       background-color: white !important; }
     .sponsor-content-detail:nth-child(odd), .sponsor-content-detail-packages:nth-child(odd) {
-      background-color: #f4f4f4; }
+      background-color: #000d28;
+      color: white; }
     .sponsor-content-detail:nth-child(even), .sponsor-content-detail-packages:nth-child(even) {
       background-color: white; }
   .sponsor .more-info {

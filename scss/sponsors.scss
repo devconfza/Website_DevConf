@@ -605,7 +605,8 @@
         }
 
         &:nth-child(odd) {
-            background-color: #f4f4f4;
+            background-color: $darkBrandBlue;
+            color: white;
         }
 
         &:nth-child(even) {

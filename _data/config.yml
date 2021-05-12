@@ -1,6 +1,6 @@
 events:
   - virtual: true
-    show: true
+    show: false
     menuTitle: "Live"
     location: "Live"
     date: "2 April 2020"
