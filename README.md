@@ -17,9 +17,9 @@ Currently this is the latest that has been tested with WSL
 
 ## Next Steps
 
-The website uses [Jekyll](https://jekyllrb.com/) so you need to install that first with `gem install bundler jekyll`.
+The website uses [Jekyll](https://jekyllrb.com/) so you need to install that first with `sudo gem install bundler jekyll`.
 
-Once done you also need to run `gem install jekyll-redirect-from` to install the dependencies.
+Once done you also need to run `sudo gem install jekyll-redirect-from` to install the dependencies.
 
 Next install the development tools with `yarn install`
 
