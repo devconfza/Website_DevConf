@@ -58,7 +58,7 @@
         overflow: hidden;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr; 
         padding-top: 10px;
 
         $circleDimensions: $titleHeight * 2;
@@ -84,7 +84,6 @@
             grid-row: 1 / 1;
             grid-column: 1 / 1;
             z-index: 100;
-            color: white;
             justify-self: center;
             font-size: 3rem;
             text-align: center;
@@ -145,11 +144,18 @@
     }
 
     &-title {
-        @include titleBlock($brandPink)
+        @include titleBlock($brandPink);
+        color: white;
     }
 
     &-title-blue {
-        @include titleBlock($brandBlue)
+        @include titleBlock($brandBlue);
+        color: white;
+    }
+
+    &-title-yellow {
+        @include titleBlock($brandYellow);
+        color: $darkBrandBlue;
     }
 
     &-content-detail {

@@ -8,12 +8,12 @@ If you are on Windows see the then you need Ruby `choco install ruby` and node `
 ## Setup for Linux
 Currently this is the latest that has been tested with WSL
 
-`sudo apt-get install ruby-full`
-`sudo apt-get install -y nodejs`
-`sudo apt-get install build-essential`
-`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
-`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
-`sudo apt-get update && sudo apt-get install yarn`
+- `sudo apt-get install ruby-full`  
+- `sudo apt-get install -y nodejs`  
+- `sudo apt-get install build-essential`  
+- `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`  
+- `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`  
+- `sudo apt-get update && sudo apt-get install yarn`  
 
 ## Next Steps
 

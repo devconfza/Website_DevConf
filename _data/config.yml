@@ -1,85 +1,74 @@
 events:
   - virtual: true
-    show: false
-    menuTitle: "Live"
-    location: "Live"
-    date: "2 April 2020"
-    info: "/live"
-    sessionizeId: "b5u8ycnc"
+    show: true
+    menuTitle: "Virtual"
+    location: "Virtual"
+    date: "TBD"
+    info: "/virtual"
+    sessionizeId: ""
     logo: devconfvirtual.jpg
     tickets:
-      joburg:
-        purchaseSite: https://www.quicket.co.za/events/86889-devconf-2020-johannesburg
-        solo:
-          price: R2,222.75
-        corporate:
-          price: R2,615.00     
-      capetown:
-        purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
-        solo:
-          price: R1,997.50
-        corporate:
-          price: R2,350.00    
+      purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
+      fullprice:
+        price: "R3,142"
+      earlybird:
+        price: "R2,825"  
+        sold_out: false  
     rooms: 
       room_1: "Stream 1"
       room_2: "Stream 2"
       room_3: "Stream 3"
       room_4: "Stream 4"
       room_5: "Stream 5"   
-      room_6: "Stream 6"
   - virtual: false
-    show: false
+    show: true
     location: "Cape Town"
     menuTitle: "Cape Town"
-    date: "31 March 2020"
+    date: "TBD"
     info: "/capetown"
-    sessionizeId: "b5u8ycnc"
+    sessionizeId: ""
     logo: devconfcpt.png
-    venue: "Century City Conference Centre"
-    website: "https://ccconferencecentre.co.za/"
-    mapLink: "https://goo.gl/maps/qccHEpfpQbAQ2caD7"
-    lat: "-33.895823"
-    long: "18.505293"
+    venue: "Lagoon Beach Hotel & Spa"
+    website: "https://www.lagoonbeachhotel.co.za/"
+    mapLink: "https://g.page/LagoonBeachHotelSpa?share"
+    lat: "-33.89207"
+    long: "18.48262"
     tickets:
-      purchaseSite: https://www.quicket.co.za/events/82483-devconf-2020-cape-town-
-      earlyBird:
-        price: R1,880.00
-        sold_out: true
-      solo:
-        price: R1,997.50
-      corporate:
-        price: R2,350.00    
+      purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
+      fullprice:
+        price: "R3,142"
+      earlybird:
+        price: "R2,825" 
+        sold_out: false   
     rooms: 
-      room_3: "Hall A"
-      room_1: "Hall B"
-      room_4: "Hall C"
-      room_2: "Meeting Room 11"
-      room_5: "Meeting Rooms 8 & 9"
+      room_3: "Room 1"
+      room_1: "Room 2"
+      room_4: "Room 3"
+      room_2: "Room 4"
+      room_5: "Room 5"
   - virtual: false
-    show: false
+    show: true
     location: "Johannesburg"
     menuTitle: "Joburg"
-    date: "2 April 2020"
-    info: "/johannesburg"
-    sessionizeId: "b5u8ycnc"
+    date: "TBD"
+    info: "/joburg"
+    sessionizeId: ""
     logo: devconfjhb.png
-    venue: "Gallagher Convention Centre"
-    website: "https://gallagher.co.za"
-    mapLink: "https://goo.gl/maps/NwCiffFc5eCAtyLr7"
-    lat: "-26.0014965"
-    long: "28.1273613"
+    venue: "Riversands I-Hub"
+    website: "https://www.riversandsihub.co.za/"
+    mapLink: "https://g.page/Riversands-Incubation-Hub?share"
+    lat: "-25.96466"
+    long: "28.02339"
     tickets:
-      purchaseSite: https://www.quicket.co.za/events/86889-devconf-2020-johannesburg
-      earlyBird:
-        price: R2,092.00
-        sold_out: true
-      solo:
-        price: R2,222.75
-      corporate:
-        price: R2,615.00     
+      purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
+      fullprice:
+        price: "R3,142"
+      earlybird:
+        price: "R2,825"  
+        sold_out: false     
     rooms: 
-      room_3: "Ballroom"
-      room_1: "Hall 4"
-      room_4: "Auditorium"
-      room_2: "Gallagher Grill"
-      room_5: "Gallagher 3"   
+      room_3: "Room 1"
+      room_1: "Room 2"
+      room_4: "Room 3"
+      room_2: "Room 4"
+      room_5: "Room 5"
