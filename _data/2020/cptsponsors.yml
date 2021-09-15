@@ -1,104 +1,104 @@
-- Level: Platinum
-  Name: AWS
-  Url: https://aws.amazon.com/
-  Logo: awsplat.jpg
+# - Level: Platinum
+#   Name: AWS
+#   Url: https://aws.amazon.com/
+#   Logo: awsplat.jpg
 
-- Level: Platinum
-  Name: Microsoft
-  Url: https://www.microsoft.com
-  Logo: microsoftplat.jpg
+# - Level: Platinum
+#   Name: Microsoft
+#   Url: https://www.microsoft.com
+#   Logo: microsoftplat.jpg
 
-- Level: Gold
-  Name: AllanGray
-  Url: https://www.allangray.co.za/
-  Logo: AllanGrayGold.jpg
+# - Level: Gold
+#   Name: AllanGray
+#   Url: https://www.allangray.co.za/
+#   Logo: AllanGrayGold.jpg
 
-- Level: Gold
-  Name: Aruba
-  Url: https://capenetworks.com/
-  Logo: arubagold.jpg
+# - Level: Gold
+#   Name: Aruba
+#   Url: https://capenetworks.com/
+#   Logo: arubagold.jpg
 
-- Level: Gold
-  Name: Google
-  Url: https://www.google.com
-  Logo: googlegold.jpg
+# - Level: Gold
+#   Name: Google
+#   Url: https://www.google.com
+#   Logo: googlegold.jpg
 
-- Level: Gold
-  Name: Synthesis
-  Url: https://www.synthesis.co.za/
-  Logo: synthesisgold.jpg
+# - Level: Gold
+#   Name: Synthesis
+#   Url: https://www.synthesis.co.za/
+#   Logo: synthesisgold.jpg
 
-- Level: Silver
-  Name: Red Hat
-  Url: https://www.redhat.com
-  Logo: redhatsilver.jpg
+# - Level: Silver
+#   Name: Red Hat
+#   Url: https://www.redhat.com
+#   Logo: redhatsilver.jpg
 
-- Level: Silver
-  Name: Thinkst
-  Url: https://thinkst.com/
-  Logo: thinkstsilver.jpg
+# - Level: Silver
+#   Name: Thinkst
+#   Url: https://thinkst.com/
+#   Logo: thinkstsilver.jpg
 
-- Level: Bronze
-  Name: DVT
-  Url: https://www.dvt.co.za/
-  Logo: dvtbronze.jpg
+# - Level: Bronze
+#   Name: DVT
+#   Url: https://www.dvt.co.za/
+#   Logo: dvtbronze.jpg
 
-- Level: Bronze
-  Name: Entersekt 
-  Url: https://www.entersekt.com/
-  Logo: entersektbronze.jpg
+# - Level: Bronze
+#   Name: Entersekt 
+#   Url: https://www.entersekt.com/
+#   Logo: entersektbronze.jpg
 
-- Level: Bronze
-  Name: IITPSA 
-  Url: https://www.iitpsa.org.za/
-  Logo: iitpsabronze.jpg
+# - Level: Bronze
+#   Name: IITPSA 
+#   Url: https://www.iitpsa.org.za/
+#   Logo: iitpsabronze.jpg
 
-- Level: Bronze
-  Name: Karat
-  Url: https://karat.com/
-  Logo: karatbronze.jpg
+# - Level: Bronze
+#   Name: Karat
+#   Url: https://karat.com/
+#   Logo: karatbronze.jpg
   
-- Level: Bronze
-  Name: OfferZen
-  Url: https://www.offerzen.com/
-  Logo: offerzenbronze.jpg
+# - Level: Bronze
+#   Name: OfferZen
+#   Url: https://www.offerzen.com/
+#   Logo: offerzenbronze.jpg
 
-- Level: Bronze
-  Name: PayFast 
-  Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
-  Logo: payfastbronze.jpg
+# - Level: Bronze
+#   Name: PayFast 
+#   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
+#   Logo: payfastbronze.jpg
 
-- Level: Bronze
-  Name: WorldAware 
-  Url: https://www.worldaware.com/
-  Logo: worldawarebronze.jpg
+# - Level: Bronze
+#   Name: WorldAware 
+#   Url: https://www.worldaware.com/
+#   Logo: worldawarebronze.jpg
 
-- Level: Registration
-  Name: Microsoft
-  Url: https://www.microsoft.com
-  Logo: microsoftrefreshment.jpg
+# - Level: Registration
+#   Name: Microsoft
+#   Url: https://www.microsoft.com
+#   Logo: microsoftrefreshment.jpg
 
-- Level: Refreshment
-  Name: Microsoft
-  Url: https://www.microsoft.com
-  Logo: microsoftrefreshment.jpg
+# - Level: Refreshment
+#   Name: Microsoft
+#   Url: https://www.microsoft.com
+#   Logo: microsoftrefreshment.jpg
 
-- Level: WiFi
-  Name: alis_  
-  Url: https://alis.fund/
-  Logo: aliswifi.jpg
+# - Level: WiFi
+#   Name: alis_  
+#   Url: https://alis.fund/
+#   Logo: aliswifi.jpg
 
-- Level: Media
-  Name: Digital Street
-  Url: https://www.digitalstreetsa.com/
-  Logo: digitalstreetmedia.jpg
+# - Level: Media
+#   Name: Digital Street
+#   Url: https://www.digitalstreetsa.com/
+#   Logo: digitalstreetmedia.jpg
 
-- Level: Media
-  Name: TechCentral
-  Url: https://techcentral.co.za/
-  Logo: techcentralmedia.jpg  
+# - Level: Media
+#   Name: TechCentral
+#   Url: https://techcentral.co.za/
+#   Logo: techcentralmedia.jpg  
 
-- Level: Prize
-  Name: JetBrains  
-  Url: https://www.jetbrains.com/
-  Logo: jetbrainsprize.jpg
+# - Level: Prize
+#   Name: JetBrains  
+#   Url: https://www.jetbrains.com/
+#   Logo: jetbrainsprize.jpg

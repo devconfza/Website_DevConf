@@ -67,8 +67,8 @@
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
-
-        <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
+        Coming soon...
+        <!-- <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key">
                 07h15 →
                 <b>Registration</b>
@@ -365,7 +365,7 @@
                 <b>Drinks &amp; networking</b>
                 ← 19h00
             </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="sponsor-content-detail">
@@ -390,6 +390,14 @@
         </div>
     </div>
 
+    {% if event.virtual %}
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">Join DevConf Online!</div>
+        <div class="sponsor-content-detail-location">
+            <div>DevConf Virtual will be streamed online, with a dedicated chat functionality for networking, special online only content from sponsors and REAL WORLD SWAG delivered to your door!</div>
+        </div>
+    </div>
+    {% else %}
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Location</div>
         <div class="sponsor-content-detail-location">
@@ -397,14 +405,11 @@
                 <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
                 {{ event.location }}, South Africa.
             </div>
-
-
             <div class="googleMapEmbed" frameborder="0" id="map" referrerpolicy="unsafe-url" style="border:0"></div>
-            <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google
-                                                Maps</a>
-
+            <a href="{{ event.mapLink }}" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
         </div>
     </div>
+    {% endif %}
 
     <div class="popupBackdrop popupBackdropHidden">
         <div class="popupContent" onclick="event.stopPropagation()">

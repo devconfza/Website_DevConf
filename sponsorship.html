@@ -14,20 +14,16 @@ layout: default
         <div class="sponsor-content-detail-heading">Our Mission</div>
         <div class="sponsor-content-detail-mission">
             <div><img src="/public/images/sponsorship/mission-1.png" alt="1" />
-                <div>Host a world-class professional software
-                    developer event</div>
+                <div>Host a world-class professional software developer event</div>
             </div>
             <div><img src="/public/images/sponsorship/mission-2.png" alt="2" />
-                <div>Bring together top industry speakers
-                    &amp; the South African audience</div>
+                <div>Bring together top industry speakers &amp; the South African audience</div>
             </div>
             <div><img src="/public/images/sponsorship/mission-3.png" alt="3" />
-                <div>Ensure quality content that is most
-                    sought after by professional software developers</div>
+                <div>Ensure quality content that is most sought after by professional software developers</div>
             </div>
             <div><img src="/public/images/sponsorship/mission-4.png" alt="4" />
-                <div>Highlight the brands and goals of our
-                    sponsors while ensuring value for money</div>
+                <div>Highlight the brands and goals of our sponsors while ensuring value for money</div>
             </div>
         </div>
     </div>
@@ -38,22 +34,20 @@ layout: default
                 <div class="sponsor-content-detail-heading sponsor-content-detail-heading-attendees">Attendee Profile
                 </div>
                 <p>The event targets professional software developers. These people include anyone from solo developers
-                    to
-                    anyone who works in mid- to large-sized organisations who develop systems of all sizes for
-                    enterprise
-                    companies.</p>
+                    to anyone who works in mid- to large-sized organisations who develop systems of all sizes for
+                    enterprise companies.</p>
                 <p>The event aims to attract attendees across industries such as financial services, media houses,
                     telco’s, retail, etc.</p>
-                <p>Attendees range in experience from junior to senior developer, including managers from SDM up to
-                    CIO, as well as a smaller audience comprising DevOps/operability developers, software testers, UX/UI
+                <p>Attendees range in experience from junior to senior developer, including managers from SDM up to CIO,
+                    as well as a smaller audience comprising DevOps/operability developers, software testers, UX/UI
                     designers and agile practitioners.</p>
-                <p><strong>Key 2019 Headline Statistics</strong></p>
+                <p><strong>Key 2020 Headline Statistics</strong></p>
                 <ul>
-                    <li>49% of attendees identified as a senior level, 35% at intermediate and 12% at a junior level.
+                    <li>49% of attendees identified as a senior level, 34% at intermediate and 13% at a junior level.
                     </li>
-                    <li>75% of attendees are developers, and 11% are managers.</li>
-                    <li><a href="https://twitter.com/devconfza/status/1114875253388468224" target="_blank">View our
-                            Twitter Thread on this for more info</a></li>
+                    <li>76% of attendees are developers, and 18% are managers.</li>
+                    <li><a href="https://twitter.com/devconfza/status/1438190188686200834" target="_blank">View our
+                            Twitter Thread on this for more info and stats from 2019</a></li>
                 </ul>
             </div>
         </div>
@@ -63,17 +57,17 @@ layout: default
         <div class="sponsor-content-detail-media">
             <div>DevConf is always supported by a strong PR campaign, not only drive sponsorship and ticket sales but
                 also to give as much value as possible to our valued sponsors. We aim to include awareness, quotes and
-                highlight our sponsors in our PR campaign where possible. Our 2019 PR campaign yielded the following
+                higlight our sponsors in our PR campaign where possible. Our 2019 PR campaign yielded the following
                 results which included online coverage as well as print:</div>
             <div class="sponsor-content-detail-media-points">
                 <div>
                     <img src="/public/images/sponsorship/published-articles.png" alt="articles" />
-                    <div>24</div>
+                    <div>22</div>
                     <div>published articles</div>
                 </div>
                 <div>
                     <img src="/public/images/sponsorship/money.png" alt="money" />
-                    <div>R544 168</div>
+                    <div>R288 902</div>
                     <div>advertising value equivalent</div>
                 </div>
             </div>
@@ -82,83 +76,53 @@ layout: default
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Event Overview</div>
         <div class="sponsor-content-detail-overview">
-            <div>Cape Town</div>
-            <div>
+            {% for event in site.data.config.events %}
+                {% if event.show %}
+                <div>{{ event.location }}</div>
                 <div>
-                    <div>Date</div>
-                    <div>31 March 2020</div>
-                </div>
-                <div>
-                    <div>Minimum Attendees</div>
-                    <div>450</div>
-                </div>
-                <div>
-                    <div>Venue</div>
-                    <div>Century City Conference Centre</div>
-                </div>
-                <div>
-                    <div>Event Structure</div>
-                    <div>Full-day event with 5 tracks, pre and post-conference events, and sponsor networking area
+                    <div>
+                        <div>Date</div>
+                        <div>{{ event.date }}</div>
+                    </div>
+                    <div>
+                        <div>Minimum Attendees</div>
+                        <div>{{ event.minattendees }}*</div>
+                    </div>
+                    <div>
+                        <div>Venue</div>
+                        <div>{{ event.venue }}</div>
+                    </div>
+                    <div>
+                        <div>Event Structure</div>
+                        <div>Full-day event with {{ event.rooms.length }} tracks, pre and post-conference events, and sponsor networking area</div>
                     </div>
                 </div>
-            </div>
-            <div>Johannesburg</div>
-            <div>
-                <div>
-                    <div>Date</div>
-                    <div>2 April 2020</div>
-                </div>
-                <div>
-                    <div>Minimum Attendees</div>
-                    <div>800</div>
-                </div>
-                <div>
-                    <div>Venue</div>
-                    <div>Gallagher Convention Centre</div>
-                </div>
-                <div>
-                    <div>Event Structure</div>
-                    <div>Full-day event with 5 tracks, pre and post-conference events, and sponsor networking area
-                    </div>
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
     <div class="sponsor-content-detail">
-        <div class="sponsor-content-detail-heading">2019 Reflection</div>
+        <div class="sponsor-content-detail-heading">2020 Reflection</div>
         <div class="sponsor-content-detail-reflection">
             <div>
                 <img src="/public/images/sponsorship/attendees.png" alt="Attendees" />
-                <div><strong>1 081</strong></div>
+                <div><strong>767</strong></div>
                 <div>attendees</div>
             </div>
             <div>
-                <img src="/public/images/sponsorship/coffees.png" alt="Coffee" />
-                <div><strong>2 500</strong></div>
-                <div>coffees consumed</div>
-            </div>
-            <div>
                 <img src="/public/images/sponsorship/speakers.png" alt="Speakers" />
-                <div><strong>37</strong></div>
+                <div><strong>43</strong></div>
                 <div>speakers</div>
             </div>
             <div>
                 <img src="/public/images/sponsorship/sponsors.png" alt="Sponsors" />
-                <div><strong>21</strong></div>
+                <div><strong>26</strong></div>
                 <div>sponsors</div>
-            </div>
-            <div>
-                <img src="/public/images/sponsorship/photos-taken.png" alt="Photos" />
-                <div><a href="https://www.facebook.com/pg/devconfza/photos/?ref=page_internal" target="_blank"><strong>1
-                            542</strong></a>
-                </div>
-                <div><a href="https://www.facebook.com/pg/devconfza/photos/?ref=page_internal" target="_blank">photos
-                        taken</a></div>
             </div>
             <div>
                 <img src="/public/images/sponsorship/videos-recorded.png" alt="Videos" />
                 <div><a href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA"
-                        target="_blank"><strong>35</strong></a></div>
+                        target="_blank"><strong>43</strong></a></div>
                 <div><a href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA" target="_blank">videos
                         recorded</a></div>
             </div>

@@ -7,6 +7,7 @@ events:
     info: "/virtual"
     sessionizeId: ""
     logo: devconfvirtual.jpg
+    minattendees: 250
     tickets:
       purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
       fullprice:
@@ -28,6 +29,7 @@ events:
     info: "/capetown"
     sessionizeId: ""
     logo: devconfcpt.png
+    minattendees: 250
     venue: "Lagoon Beach Hotel & Spa"
     website: "https://www.lagoonbeachhotel.co.za/"
     mapLink: "https://g.page/LagoonBeachHotelSpa?share"
@@ -54,6 +56,7 @@ events:
     info: "/joburg"
     sessionizeId: ""
     logo: devconfjhb.png
+    minattendees: 250
     venue: "Riversands I-Hub"
     website: "https://www.riversandsihub.co.za/"
     mapLink: "https://g.page/Riversands-Incubation-Hub?share"
