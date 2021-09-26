@@ -11,12 +11,12 @@
             {% elsif package.remaining > 0 %}
             <div class="sponsor-content-detail-package-card-remaining">Only {{package.remaining}} left</div>
             {% endif %}
-        {% endif %}
+        {% endif %} 
     </div>
     {% else %}    
     <div>&nbsp;</div>
     {% endif %}
-    <img src="/public/images/sponsorship/{{ package.logo }}" />
+    <!-- <img src="/public/images/sponsorship/{{ package.logo }}" /> -->
     {% if package.expo_space %}
     <div>Exhibition & networking space</div>
     <div>{{ package.expo_space }}</div>

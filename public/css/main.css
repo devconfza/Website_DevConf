@@ -265,8 +265,7 @@
         grid-row-gap: 5px;
         text-align: center;
         line-height: 1.5rem;
-        grid-template-columns: auto auto;
-        row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         align-content: center; }
         .sponsor-content-detail-tickets-cards-price {
@@ -300,10 +299,9 @@
       grid-row-gap: 20px; }
     .sponsor-content-detail-packages {
       grid-column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
       justify-items: stretch;
-      background-color: white !important;
       padding-left: 15%;
       padding-right: 15%; }
       .sponsor-content-detail-packages > div {
@@ -327,6 +325,7 @@
     .sponsor-content-detail-package-card {
       padding: 25px 10px;
       background-color: #f4f4f4;
+      border-radius: 5px;
       color: #ff3263;
       display: grid;
       justify-items: center;
@@ -347,6 +346,7 @@
     .sponsor-content-detail-package-card-blue {
       padding: 25px 10px;
       background-color: #f4f4f4;
+      border-radius: 5px;
       color: #19C3FC;
       display: grid;
       justify-items: center;
@@ -393,7 +393,7 @@
           color: transparent !important; }
           .sponsor-content-detail-sponsor-level a:hover {
             color: transparent !important; }
-    .sponsor-content-detail-heading, .sponsor-content-detail-heading-pink {
+    .sponsor-content-detail-heading, .sponsor-content-detail-heading-yellow, .sponsor-content-detail-heading-pink {
       color: #19C3FC;
       text-transform: uppercase;
       padding-top: 10px;
@@ -403,6 +403,8 @@
       text-align: center; }
       .sponsor-content-detail-heading-smaller {
         font-size: 1.6rem; }
+      .sponsor-content-detail-heading-yellow {
+        color: #FCEE19; }
       .sponsor-content-detail-heading-pink {
         color: #ff3263; }
       @media (min-width: 850px) {

@@ -188,8 +188,7 @@
                 grid-row-gap: 5px;
                 text-align: center;
                 line-height: 1.5rem;
-                grid-template-columns: auto auto;
-                row-gap: 30px;
+                grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 30px;
                 align-content: center;
 
@@ -244,10 +243,9 @@
         &-packages {
             @extend .sponsor-content-detail;
             grid-column-gap: 20px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
             justify-items: stretch;
-            background-color: white !important;
             padding-left: 15%;
             padding-right: 15%;
 
@@ -279,6 +277,7 @@
         @mixin themableCard($colour) {
             padding: 25px 10px;
             background-color: #f4f4f4;
+            border-radius: 5px;
             color: $colour;
             display: grid;
             justify-items: center;
@@ -373,6 +372,11 @@
 
             &-smaller {
                 font-size: 1.6rem;
+            }
+
+            &-yellow {
+                @extend .sponsor-content-detail-heading;
+                color: $brandYellow;
             }
 
             &-pink {

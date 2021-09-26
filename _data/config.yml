@@ -3,12 +3,13 @@ events:
     show: true
     menuTitle: "Virtual"
     location: "Virtual"
-    date: "TBD"
+    date: "7 April 2022"
     info: "/virtual"
     sessionizeId: ""
     logo: devconfvirtual.jpg
     minattendees: 250
     tickets:
+      onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
       fullprice:
         price: "R3,142"
@@ -25,7 +26,7 @@ events:
     show: true
     location: "Cape Town"
     menuTitle: "Cape Town"
-    date: "TBD"
+    date: "5 April 2022"
     info: "/capetown"
     sessionizeId: ""
     logo: devconfcpt.png
@@ -36,6 +37,7 @@ events:
     lat: "-33.89207"
     long: "18.48262"
     tickets:
+      onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
       fullprice:
         price: "R3,142"
@@ -52,7 +54,7 @@ events:
     show: true
     location: "Johannesburg"
     menuTitle: "Joburg"
-    date: "TBD"
+    date: "7 April 2022"
     info: "/joburg"
     sessionizeId: ""
     logo: devconfjhb.png
@@ -63,6 +65,7 @@ events:
     lat: "-25.96466"
     long: "28.02339"
     tickets:
+      onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
       fullprice:
         price: "R3,142"
