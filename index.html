@@ -28,7 +28,7 @@ layout: default
                         {% else %}
                             <div class="event">
                             {% endif %}
-                            <div class="location">{{ event.location }}</div>
+                            <div class="location-{{event.colour }}">{{ event.location }}</div>
                             <div class="date">{{ event.date }}</div>
                             <img class="event-logo" src="/public/images/{{ event.logo }}">
                             {% if event.infoOn %}

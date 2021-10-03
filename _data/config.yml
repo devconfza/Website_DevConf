@@ -15,6 +15,7 @@ events:
     lat: "-33.89207"
     long: "18.48262"
     sponsorOpen: false
+    colour: blue
     tickets:
       onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
@@ -40,6 +41,7 @@ events:
     logo: devconfvirtual.png
     minattendees: 250
     sponsorOpen: false
+    colour: third
     tickets:
       onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
@@ -70,6 +72,7 @@ events:
     lat: "-25.96466"
     long: "28.02339"
     sponsorOpen: false
+    colour: pink
     tickets:
       onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
