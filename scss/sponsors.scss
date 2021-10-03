@@ -153,9 +153,9 @@
         color: white;
     }
 
-    &-title-yellow {
-        @include titleBlock($brandYellow);
-        color: $darkBrandBlue;
+    &-title-third {
+        @include titleBlock($brandThird);
+        color: white;
     }
 
     &-content-detail {
@@ -374,9 +374,9 @@
                 font-size: 1.6rem;
             }
 
-            &-yellow {
+            &-third {
                 @extend .sponsor-content-detail-heading;
-                color: $brandYellow;
+                color: $brandThird;
             }
 
             &-pink {
@@ -462,7 +462,7 @@
             >div:nth-child(1),
             >div:nth-child(3),
             >div:nth-child(5) {
-                color: $brandYellow;
+                color: $brandThird;
                 font-weight: 800;
                 margin-bottom: 20px;
             }
@@ -500,8 +500,8 @@
             }
 
             >div:nth-child(2) {
-                background-color: $brandYellow;
-                color: $darkBrandBlue;
+                background-color: $brandThird;
+                // color: $darkBrandBlue;
             }
 
             >div:nth-child(4) {

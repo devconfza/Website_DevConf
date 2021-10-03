@@ -8,8 +8,12 @@ layout: default
             <img alt="DevConf;" src="/public/images/bannerTitle.png"/>
             <div class="slogan">solving today and tomorrow's software development challenges</div>
             <div class="intro">
-                DevConf is a community-driven, professional software developer focused, one-day conference hosted annually.<br/>
-                DevConf provides professional software developers with a buffet of tools, practices and principles applicable to tackling current and future challenges in the South African software development environment. It's an event where attendees can learn, network and be inspired regardless of their specific technology stack and programming language of choice.
+                DevConf is a community-driven, professional software developer focused, one-day conference hosted
+                                                                                                annually.<br/>
+                DevConf provides professional software developers with a buffet of tools, practices and principles
+                                                                                                applicable to tackling current and future challenges in the South African software development
+                                                                                                environment. It's an event where attendees can learn, network and be inspired regardless of their
+                                                                                                specific technology stack and programming language of choice.
             </div>
         </div>
     </div>
@@ -19,14 +23,24 @@ layout: default
         <div class="sponsor-content-detail-event-bananas">
             {% for event in site.data.config.events %}
                 {% if event.show %}
-                    <a class="event" href="{{ event.info }}">
-                        <div class="location">{{ event.location }}</div>
-                        <div class="date">{{ event.date }}</div>
-                        <img class="event-logo" src="/public/images/{{ event.logo }}">
-                        <div class="button" role="button">
-                            Tickets, Agenda &amp; More
+                    {% if event.infoOn %}
+                        <a class="event" href="{{ event.info }}">
+                        {% else %}
+                            <div class="event">
+                            {% endif %}
+                            <div class="location">{{ event.location }}</div>
+                            <div class="date">{{ event.date }}</div>
+                            <img class="event-logo" src="/public/images/{{ event.logo }}">
+                            {% if event.infoOn %}
+                                <div class="button" role="button">
+                                    Tickets, Agenda &amp; More
+                                </div>
+                            {% endif %}
+                            {% if event.infoOn %}
+                            </a>
+                    {% else %}
                         </div>
-                    </a>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </div>
@@ -43,10 +57,13 @@ layout: default
                 <input class="form-control mimi_field required" data-required-field="Email is required" data-required-placeholder="Email" id="signup_email" name="signup[email]" placeholder="Email" required type="email">
                 <div class="checkbox">
                     <input checked="checked" id="list_1138553" name="lists[]" type="checkbox" value="1138553"/>
-                    <label for="list_1138553">I would like to receive the Developer User Group newsletter as well!</label>
+                    <label for="list_1138553">I would like to receive the Developer User Group newsletter as
+                                                                                                                                                well!</label>
                 </div>
                 <p class="devugblurb">The
-                    <a class="devuglink" href="https://www.developerug.org.za" rel="noopener noreferrer" target="_blank">Developer  User Group</a> is a monthly free meeting for software developers.</p>
+                    <a class="devuglink" href="https://www.developerug.org.za" rel="noopener noreferrer" target="_blank">Developer User Group</a>
+                    is a monthly free meeting for software developers.
+                </p>
                 <input class="button" data-class="btn btn-primary" data-default-text="Keep me informed" data-invalid-text="Try Again" data-submitting-text="Signing Up..." data-thanks="Thank you!" id="webform_submit_button" type="submit" value="Sign Up"/>
             </div>
         </form>

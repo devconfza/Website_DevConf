@@ -12,6 +12,7 @@
     </div>
 
     <div class="sponsor-content-detail">
+        {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         <div class="sponsor-content-detail-tickets">
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
@@ -47,6 +48,9 @@
                 </div>
             </div>
         </div>
+        {% else %}
+        <div class="sponsor-content-detail-heading">Ticket sales coming soon</div>
+        {% endif %}
     </div>
 
     <div class="sponsor-content-detail">
@@ -353,6 +357,7 @@
     </div>
 
     <div class="sponsor-content-detail">
+        {% if event.sponsorOpen %}
         <div class="sponsor-content-detail-heading">Sponsors</div>
         <div class="sponsor-content-detail-content-sponsor">
             {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
@@ -372,6 +377,9 @@
             {% endfor %}
             <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a>
         </div>
+        {% else %}
+        <div class="sponsor-content-detail-heading">Sponsorship coming soon</div>
+        {% endif %}
     </div>
 
     {% if event.virtual %}

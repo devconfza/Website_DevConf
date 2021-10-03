@@ -1,13 +1,45 @@
 events:
+  - virtual: false
+    show: true
+    location: "Cape Town"
+    menuTitle: "Cape Town"
+    date: "5 April 2022"
+    info: "/capetown"
+    infoOn: false
+    sessionizeId: ""
+    logo: devconfcpt.png
+    minattendees: 250
+    venue: "Lagoon Beach Hotel & Spa"
+    website: "https://www.lagoonbeachhotel.co.za/"
+    mapLink: "https://g.page/LagoonBeachHotelSpa?share"
+    lat: "-33.89207"
+    long: "18.48262"
+    sponsorOpen: false
+    tickets:
+      onsale: false
+      purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
+      fullprice:
+        price: "R3,142"
+      earlybird:
+        price: "R2,825" 
+        sold_out: false   
+    rooms: 
+      room_3: "Room 1"
+      room_1: "Room 2"
+      room_4: "Room 3"
+      room_2: "Room 4"
+      room_5: "Room 5"
   - virtual: true
     show: true
     menuTitle: "Virtual"
     location: "Virtual"
     date: "7 April 2022"
     info: "/virtual"
+    infoOn: false
     sessionizeId: ""
-    logo: devconfvirtual.jpg
+    logo: devconfvirtual.png
     minattendees: 250
+    sponsorOpen: false
     tickets:
       onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
@@ -24,38 +56,11 @@ events:
       room_5: "Stream 5"   
   - virtual: false
     show: true
-    location: "Cape Town"
-    menuTitle: "Cape Town"
-    date: "5 April 2022"
-    info: "/capetown"
-    sessionizeId: ""
-    logo: devconfcpt.png
-    minattendees: 250
-    venue: "Lagoon Beach Hotel & Spa"
-    website: "https://www.lagoonbeachhotel.co.za/"
-    mapLink: "https://g.page/LagoonBeachHotelSpa?share"
-    lat: "-33.89207"
-    long: "18.48262"
-    tickets:
-      onsale: false
-      purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
-      fullprice:
-        price: "R3,142"
-      earlybird:
-        price: "R2,825" 
-        sold_out: false   
-    rooms: 
-      room_3: "Room 1"
-      room_1: "Room 2"
-      room_4: "Room 3"
-      room_2: "Room 4"
-      room_5: "Room 5"
-  - virtual: false
-    show: true
     location: "Johannesburg"
     menuTitle: "Joburg"
     date: "7 April 2022"
     info: "/joburg"
+    infoOn: false
     sessionizeId: ""
     logo: devconfjhb.png
     minattendees: 250
@@ -64,6 +69,7 @@ events:
     mapLink: "https://g.page/Riversands-Incubation-Hub?share"
     lat: "-25.96466"
     long: "28.02339"
+    sponsorOpen: false
     tickets:
       onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
