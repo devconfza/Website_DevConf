@@ -5,7 +5,7 @@ events:
     menuTitle: "Cape Town"
     date: "5 April 2022"
     info: "/capetown"
-    infoOn: false
+    infoOn: true
     sessionizeId: ""
     logo: devconfcpt.png
     minattendees: 250
@@ -14,7 +14,7 @@ events:
     mapLink: "https://g.page/LagoonBeachHotelSpa?share"
     lat: "-33.89207"
     long: "18.48262"
-    sponsorOpen: false
+    sponsorOpen: true
     colour: blue
     tickets:
       onsale: false
@@ -36,11 +36,11 @@ events:
     location: "Virtual"
     date: "7 April 2022"
     info: "/virtual"
-    infoOn: false
+    infoOn: true
     sessionizeId: ""
     logo: devconfvirtual.png
     minattendees: 250
-    sponsorOpen: false
+    sponsorOpen: true
     colour: third
     tickets:
       onsale: false
@@ -62,7 +62,7 @@ events:
     menuTitle: "Joburg"
     date: "7 April 2022"
     info: "/joburg"
-    infoOn: false
+    infoOn: true
     sessionizeId: ""
     logo: devconfjhb.png
     minattendees: 250
@@ -71,7 +71,7 @@ events:
     mapLink: "https://g.page/Riversands-Incubation-Hub?share"
     lat: "-25.96466"
     long: "28.02339"
-    sponsorOpen: false
+    sponsorOpen: true
     colour: pink
     tickets:
       onsale: false

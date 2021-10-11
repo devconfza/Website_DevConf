@@ -16,16 +16,17 @@
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         <div class="sponsor-content-detail-tickets">
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
-                                                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
+                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
             <div class="sponsor-content-detail-tickets-cards">
                 <div>
                     <div>Early Bird Tickets</div>
                     <div>The best priced ticket, but <i>extremely</i> limited!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlyBird.price }}</div>
                     {% if event.tickets.earlyBird.sold_out %}
-                        <div class="sponsor-fake-button">Sold Out!</div>
+                    <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
-                        <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy an early bird ticket now!</a>
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
+                        target="_blank">Buy an early bird ticket now!</a>
                     {% endif %}
                 </div>
                 <div>
@@ -35,16 +36,20 @@
                         Purchase 10 or more to get 7% off!
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
-                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}" target="_blank">Buy a ticket now!</a>
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
+                        target="_blank">Buy a ticket now!</a>
                 </div>
                 <div>
                     <div>Manual Tickets</div>
-                    <div>Have a special requirement? Pro-forma invoice? Need us to register as a supplier? Need special payment terms?<br/>
+                    <div>Have a special requirement? Pro-forma invoice? Need us to register as a supplier? Need special
+                        payment terms?<br />
                         <strong>No problem</strong> - we can assist with a manual ticket purchase
                     </div>
                     <div>Purchase 10 or more to get 7% off!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
-                    <a class="sponsor-button" href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}" target="_blank">Let us help you now!</a>
+                    <a class="sponsor-button"
+                        href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
+                        target="_blank">Let us help you now!</a>
                 </div>
             </div>
         </div>
@@ -55,7 +60,10 @@
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
-        Coming soon...
+        <div>Our amazing agenda will be announced in January 2022!</div>
+
+        <div>Get a feel for the content by enjoying sessions from previous years on our YouTube channel.</div>
+        <a class="button-blue nudgeDown" href="https://www.youtube.com/channel/UCuzlYYs3p-_4y5_EKjN3pAA" target="_blank">Visit Our YouTube Channel</a>
         <!-- <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key">
                 07h15 →
@@ -362,20 +370,25 @@
         <div class="sponsor-content-detail-content-sponsor">
             {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
             {% for level in sponsorsByLevel %}
-                <div class="sponsor-content-detail-sponsor-level">
-                    <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
-                    <div class="sponsor-content-detail-sponsors">
-                        {% for sponsor in level.items %}
-                            <div class="sponsor-content-detail-sponsor-{{ level.name }}">
-                                <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
-                                    <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/2020/sponsors/{{sponsor.Logo }}"/>
-                                </a>
-                            </div>
-                        {% endfor %}
+            <div class="sponsor-content-detail-sponsor-level">
+                <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
+                <div class="sponsor-content-detail-sponsors">
+                    {% for sponsor in level.items %}
+                    <div class="sponsor-content-detail-sponsor-{{ level.name }}">
+                        <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="The logo for {{ sponsor.Name }}"
+                                src="/public/images/sponsorship/2022/sponsors/{{sponsor.Logo }}" />
+                        </a>
                     </div>
+                    {% endfor %}
                 </div>
+            </div>
             {% endfor %}
-            <a href="/sponsorship" target="_blank">Interested in sponsoring? Review our 2020 Sponsor Proposal now!</a>
+            <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div>
+            <div>&nbsp;</div>
+            <div class="sponsor-content-detail-email" role="button">
+                <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor Proposal now!</a>
+            </div>
         </div>
         {% else %}
         <div class="sponsor-content-detail-heading">Sponsorship coming soon</div>
@@ -386,7 +399,8 @@
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Join DevConf Online!</div>
         <div class="sponsor-content-detail-location">
-            <div>DevConf Virtual will be streamed online, with a dedicated chat functionality for networking, special online only content from sponsors and REAL WORLD SWAG delivered to your door!</div>
+            <div>DevConf Virtual will be streamed online, with a dedicated chat functionality for networking, special
+                online only content from sponsors and REAL WORLD SWAG delivered to your door!</div>
         </div>
     </div>
     {% else %}
@@ -424,7 +438,7 @@
 <template id="popupBioContent">
     <div class="popupBio">
         <div class="popupBioLeft">
-            <img class="largePopupImage"/>
+            <img class="largePopupImage" />
             <div class="bio-speaker"></div>
             <div class="bio-social"></div>
             <div class="bio-tagline"></div>
@@ -445,15 +459,18 @@
             lat: {{ event.lat }},
             lng: {{ event.long }}
         };
+
         const map = new google.maps.Map(
             document.getElementById('map'), {
-                zoom: 16,
-                center: venue
-            });
+            zoom: 16,
+            center: venue,
+        });
+
         const marker = new google.maps.Marker({
             position: venue,
-            map: map
+            map: map,
         });
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g&callback=initMap"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBst3wwICkBsSju8yT7S2fC60vqjKAfe3g&callback=initMap"></script>
