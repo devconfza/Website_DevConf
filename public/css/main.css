@@ -463,11 +463,11 @@
       .sponsor-content-detail-overview > div:nth-child(1),
       .sponsor-content-detail-overview > div:nth-child(3),
       .sponsor-content-detail-overview > div:nth-child(5) {
-        color: #a53ed2;
+        color: #19C3FC;
         font-weight: 800;
         margin-bottom: 20px; }
       .sponsor-content-detail-overview > div:nth-child(3) {
-        color: #19C3FC; }
+        color: #a53ed2; }
       .sponsor-content-detail-overview > div:nth-child(5) {
         color: #ff3263; }
       .sponsor-content-detail-overview > div:nth-child(2),
@@ -493,9 +493,9 @@
             text-transform: uppercase;
             font-weight: 800; }
       .sponsor-content-detail-overview > div:nth-child(2) {
-        background-color: #a53ed2; }
-      .sponsor-content-detail-overview > div:nth-child(4) {
         background-color: #19C3FC; }
+      .sponsor-content-detail-overview > div:nth-child(4) {
+        background-color: #a53ed2; }
       .sponsor-content-detail-overview > div:nth-child(6) {
         background-color: #ff3263; }
     .sponsor-content-detail-reflection {
