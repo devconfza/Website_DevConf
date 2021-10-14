@@ -7,7 +7,8 @@ layout: default
         <div class="sponsor-title-ellipse">&nbsp;</div>
         <div class="sponsor-title-content">
             <div>Sponsorship Proposal<br />2022</div>
-            <a class="sponsor-button sponsor-title-button" href="/public/docs/DevConf%202022%20Sponsorship%20Proposal%20V1.pdf">Explore All Sponsorships</a>
+            <a class="sponsor-button sponsor-title-button"
+                href="/public/docs/DevConf%202022%20Sponsorship%20Proposal%20V1.pdf">Explore All Sponsorships</a>
         </div>
     </div>
     <div class="sponsor-content-detail">
@@ -88,13 +89,19 @@ layout: default
                         <div>Minimum Attendees</div>
                         <div>{{ event.minattendees }}*</div>
                     </div>
+                    {% if event.virtual == false %}
                     <div>
                         <div>Venue</div>
                         <div>{{ event.venue }}</div>
                     </div>
+                    {% endif %}
                     <div>
                         <div>Event Structure</div>
-                        <div>Full-day event with {{ event.rooms.length }} tracks, pre and post-conference events, and sponsor networking area</div>
+                        {% if event.virtual %}
+                            <div>Full-day event with {{ event.rooms.length }} tracks, special online activities, dedicated streaming options for sponsors and online networking options. </div>
+                        {% else %}
+                            <div>Full-day event with {{ event.rooms.length }} tracks, conference events, and a sponsor networking area.</div>
+                        {% endif %}
                     </div>
                 </div>
                 {% endif %}
@@ -127,7 +134,8 @@ layout: default
                         recorded</a></div>
             </div>
         </div>
-        <a class="sponsor-button" href="/public/docs/DevConf%202022%20Sponsorship%20Proposal%20V1.pdf">Explore All Sponsorships</a>
+        <a class="sponsor-button" href="/public/docs/DevConf%202022%20Sponsorship%20Proposal%20V1.pdf">Explore All
+            Sponsorships</a>
     </div>
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Contact Details</div>
