@@ -68,10 +68,10 @@
 #   Url: https://www.saratoga.co.za/
 #   Logo: saratogabag.jpg
 
-# - Level: Wi-Fi
-#   Name: Blue Bean Software
-#   Url: https://web.bluebeansoftware.com/
-#   Logo: bluebeanwifi.jpg
+- Level: Registration
+  Name: Blue Bean Software
+  Url: https://web.bluebeansoftware.com/
+  Logo: bluebeanregistration.jpg
 
 - Level: Media
   Name: Digital Street
