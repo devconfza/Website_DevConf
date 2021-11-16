@@ -1,5 +1,4 @@
 import { Sessionize } from './definations/sessions';
-import { Session } from 'inspector';
 
 if (typeof fetch === "undefined") {
     alert("Oh no 😢 We don't support your web browser. Please upgrade to a newer version!");

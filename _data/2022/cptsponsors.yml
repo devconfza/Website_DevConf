@@ -33,10 +33,10 @@
 #   Url: https://www.redhat.com
 #   Logo: redhatsilver.jpg
 
-# - Level: Silver
-#   Name: Thinkst
-#   Url: https://thinkst.com/
-#   Logo: thinkstsilver.jpg
+- Level: Silver
+  Name: Thinkst
+  Url: https://thinkst.com/
+  Logo: thinkstsilver.jpg
 
 # - Level: Bronze
 #   Name: DVT
