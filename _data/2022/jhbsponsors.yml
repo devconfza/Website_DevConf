@@ -1,17 +1,17 @@
-# - Level: Platinum
-#   Name: AWS
-#   Url: https://aws.amazon.com/
-#   Logo: awsplat.jpg  
+- Level: Diamond
+  Name: AWS
+  Url: https://aws.amazon.com/
+  Logo: awsdiamond.png
   
 # - Level: Platinum
 #   Name: Microsoft
 #   Url: https://www.microsoft.com
 #   Logo: microsoftplat.jpg
   
-# - Level: Gold
-#   Name: AllanGray
-#   Url: https://www.allangray.co.za/
-#   Logo: AllanGrayGold.jpg
+- Level: Gold
+  Name: AllanGray
+  Url: https://www.allangray.co.za/
+  Logo: AllanGrayGold.jpg
 
 # - Level: Gold
 #   Name: Karat
