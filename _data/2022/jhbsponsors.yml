@@ -28,6 +28,11 @@
 #   Url: http://www.retrorabbit.co.za/
 #   Logo: retrorabbitgold.jpg
 
+- Level: Silver
+  Name: PayFast 
+  Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
+  Logo: payfastsilver.jpg
+
 # - Level: Silver
 #   Name: Google
 #   Url: https://www.google.com

@@ -34,9 +34,15 @@
 #   Logo: redhatsilver.jpg
 
 - Level: Silver
+  Name: PayFast 
+  Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
+  Logo: payfastsilver.jpg
+
+- Level: Silver
   Name: Thinkst
   Url: https://thinkst.com/
   Logo: thinkstsilver.jpg
+  
 
 # - Level: Bronze
 #   Name: DVT
