@@ -21,8 +21,8 @@
                 <div>
                     <div>Early Bird Tickets</div>
                     <div>The best priced ticket, but <i>extremely</i> limited!</div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlyBird.price }}</div>
-                    {% if event.tickets.earlyBird.sold_out %}
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlybird.price }}</div>
+                    {% if event.tickets.earlybird.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
@@ -35,7 +35,7 @@
                     <div>
                         Purchase 10 or more to get 7% off!
                     </div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
                         target="_blank">Buy a ticket now!</a>
                 </div>
@@ -46,7 +46,7 @@
                         <strong>No problem</strong> - we can assist with a manual ticket purchase
                     </div>
                     <div>Purchase 10 or more to get 7% off!</div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.corporate.price }}</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
                     <a class="sponsor-button"
                         href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
                         target="_blank">Let us help you now!</a>
