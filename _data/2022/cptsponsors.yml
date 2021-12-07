@@ -34,6 +34,11 @@
 #   Logo: redhatsilver.jpg
 
 - Level: Silver
+  Name: Entersekt 
+  Url: https://www.entersekt.com/
+  Logo: entersektsilver.jpg
+
+- Level: Silver
   Name: PayFast 
   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
   Logo: payfastsilver.jpg
