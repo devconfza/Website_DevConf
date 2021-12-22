@@ -1,383 +1,383 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 #agenda {
-    display: grid;
-    grid-auto-flow: row;
-    justify-items: center;
-    row-gap: 3px;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    padding-left: 2%;
-    padding-right: 2%;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  row-gap: 3px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-.agenda>.hidden-row {
-    display: none;
+.agenda > .hidden-row {
+  display: none;
 }
 
 @mixin full-agenda-row($bgcolour) {
-    background-color: $bgcolour;
-    display: grid;
-    justify-self: stretch;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    grid-auto-flow: column;
-    justify-content: space-between;
+  background-color: $bgcolour;
+  display: grid;
+  justify-self: stretch;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  justify-content: space-between;
 }
 
 .agenda-row-style-break {
-    @include full-agenda-row(#ed3259);
-    padding: 10px;
-    font-size: 0.8rem;
+  @include full-agenda-row(#ed3259);
+  padding: 10px;
+  font-size: 0.8rem;
 }
 
 .agenda-row-style-key {
-    @include full-agenda-row(#990020);
-    font-size: 0.8rem;
-    padding: 10px;
+  @include full-agenda-row(#990020);
+  font-size: 0.8rem;
+  padding: 10px;
 }
 
 .agenda-row-style-highlight {
-    @include full-agenda-row($brandPink);
-    font-size: 1rem;
-    padding: 10px;
+  @include full-agenda-row($brandPink);
+  font-size: 1rem;
+  padding: 10px;
 }
 
 .agenda-row-style-keynote {
-    @include full-agenda-row($brandBlue);
-    justify-content: unset;
-    grid-auto-flow: row;
+  @include full-agenda-row($brandBlue);
+  justify-content: unset;
+  grid-auto-flow: row;
 }
 
 .agenda-row-timeslot {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    justify-self: stretch;
-    row-gap: 3px;
-    column-gap: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-self: stretch;
+  row-gap: 3px;
+  column-gap: 5px;
 
-    @media (max-width: 1114px) {
-        grid-template-columns: repeat(5, 150px);
-    }
+  @media (max-width: 1114px) {
+    grid-template-columns: repeat(5, 150px);
+  }
 
-    @media (max-width: $mobileWidth) {
-        grid-auto-flow: row;
-        grid-template-columns: auto;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+  }
 }
 
 .agenda-virtual-row-timeslot {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    justify-self: stretch;
-    row-gap: 3px;
-    column-gap: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  justify-self: stretch;
+  row-gap: 3px;
+  column-gap: 5px;
 
-    @media (max-width: 1114px) {
-        grid-template-columns: repeat(6, 150px);
-    }
+  @media (max-width: 1114px) {
+    grid-template-columns: repeat(6, 150px);
+  }
 
-    @media (max-width: 940px) {
-        grid-auto-flow: row;
-        grid-template-columns: auto;
-    }
+  @media (max-width: 940px) {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+  }
 }
 
 .agenda-session {
-    background-color: #000d28;
-    border-radius: 5px;
-    display: grid;
-    justify-self: stretch;
-    justify-items: center;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background-color: #000d28;
+  border-radius: 5px;
+  display: grid;
+  justify-self: stretch;
+  justify-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  grid-template-rows: 35px 20px 170px 50px;
+  @media (max-width: 1114px) {
     grid-template-rows: 35px 20px 170px 50px;
-    @media (max-width: 1114px) {
-        grid-template-rows: 35px 20px 170px 50px;
-    }
+  }
 
-    @media (max-width: 940px) {
-        grid-template-rows: repeat(3, auto);
-    }
+  @media (max-width: 940px) {
+    grid-template-rows: repeat(3, auto);
+  }
 }
 
 .agenda-row-style-loading {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .agenda-session-time,
 .agenda-session-room {
-    font-size: 0.8rem;
-    margin: 3px;
+  font-size: 0.8rem;
+  margin: 3px;
 }
 
 .agenda-session-time {
-    @media (max-width: $mobileWidth) {
-        display: none;
-    }
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
 }
 
 .agenda-session-name {
-    color: #990020;
+  color: #990020;
 }
 
 .agenda-session-image,
 .agenda-session-name,
 .agenda-session-title {
-    margin: 3px;
-    font-weight: 700;
+  margin: 3px;
+  font-weight: 700;
 }
 
 .agenda-session-image {
-    padding: 10px;
+  padding: 10px;
 }
 
 .agenda-session-remote {
-    font-size: 0.7rem;
-    color: $brandBlue;
-    display: none;
+  font-size: 0.7rem;
+  color: $brandBlue;
+  display: none;
 }
 
 .agenda-keynote-session > .agenda-session-remote {
-    color: $darkBrandBlue;
+  color: $darkBrandBlue;
 }
 
 .speaker-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 
-    @media (max-width: 1114px) {
-        width: 100px;
-        height: 100px;
-    }
+  @media (max-width: 1114px) {
+    width: 100px;
+    height: 100px;
+  }
 
-    @media (max-width: $mobileWidth) {
-        display: none;
-    }
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
 }
 
 .clickable-session {
-    cursor: pointer;
+  cursor: pointer;
 
-    @media (max-width: $mobileWidth) {
-        grid-template-rows: 0 auto auto;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-template-rows: 0 auto auto;
+  }
 }
 
 .unclickable-session {
-    align-items: center;
+  align-items: center;
 }
 
 .popupBackdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #000000a6;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    z-index: 600;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000a6;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  z-index: 600;
 }
 
 .popupBackdropHidden {
-    display: none;
+  display: none;
 }
 
 .popupClose {
-    color: white;
-    font-weight: 800;
-    font-size: 2rem;
-    justify-self: right;
-    cursor: pointer;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  justify-self: right;
+  cursor: pointer;
 }
 
 .popupBio {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    overflow-y: auto;
-    height: 500px;
-    padding: 30px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  overflow-y: auto;
+  height: 500px;
+  padding: 30px;
 
-    @media (max-width: $mobileWidth) {
-        grid-template-columns: auto;
-        padding: 10px;
-        grid-template-rows: repeat(2, auto);
-    }
+  @media (max-width: $mobileWidth) {
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-template-rows: repeat(2, auto);
+  }
 }
 
 .popupBioLeft {
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    row-gap: 5px;
-    align-content: start;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 5px;
+  align-content: start;
 }
 
 .popupBioRight {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 5px;
-    align-content: start;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 5px;
+  align-content: start;
 }
 
 .popupContent {
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    max-width: 100%;
-    margin-top: 49px;
-    padding-left: 5%;
-    padding-right: 5%;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  max-width: 100%;
+  margin-top: 49px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .bio-title,
 .bio-speaker-bio-title,
 .bio-speaker {
-    color: $brandPink;
-    font-weight: 800;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    font-size: 1.5rem;
+  color: $brandPink;
+  font-weight: 800;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 1.5rem;
 }
 
 .bio-title {
-    justify-self: left;
+  justify-self: left;
 }
 
 .bio-tagline,
 .bio-speaker-bio,
 .bio-talk-description {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .bio-speaker {
-    justify-self: center;
+  justify-self: center;
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-social {
-    justify-self: center;
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
+  justify-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10px;
 
-    img {
-        height: 35px;
-    }
+  img {
+    height: 35px;
+  }
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-tagline {
-    justify-self: center;
+  justify-self: center;
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-speaker-bio-title {
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-speaker-bio {
-    margin-top: 5px;
-    margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-title {
-    justify-self: center;
+  justify-self: center;
 
-    @media (max-width: $mobileWidth) {
-        margin-top: 5px;
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    margin-top: 5px;
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .bio-talk-description {
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-        margin-top: 10px;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+    margin-top: 10px;
+  }
 }
 
 .bio-track {
-    font-size: 0.8rem;
-    align-self: center;
-    justify-self: end;
+  font-size: 0.8rem;
+  align-self: center;
+  justify-self: end;
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-        margin-top: 5px;
-        justify-self: start;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+    margin-top: 5px;
+    justify-self: start;
+  }
 }
 
 .largePopupImage {
-    grid-column: 1/1;
-    grid-row: 1/1;
-    align-self: center;
-    border-radius: 50%;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    justify-self: center;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  align-self: center;
+  border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  justify-self: center;
 
-    @media (max-width: $mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-    }
+  @media (max-width: $mobileWidth) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .agenda-keynote-session {
-    background-color: unset;
-    color: black;
-    font-size: 1.3rem;
-    grid-template-rows: unset;
+  background-color: unset;
+  color: black;
+  font-size: 1.3rem;
+  grid-template-rows: unset;
 
-    img.speaker-image {
-        height: 160px;
-        width: unset;
-    }
+  img.speaker-image {
+    height: 160px;
+    width: unset;
+  }
 }
 
 .agenda-session-header {
-    justify-self: stretch;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    padding: 5px;
-    font-size: 1rem;
+  justify-self: stretch;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 1rem;
 }

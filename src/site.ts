@@ -2,7 +2,7 @@ import { Sessionize } from './definations/sessions';
 
 if (typeof fetch === "undefined") {
     alert("Oh no 😢 We don't support your web browser. Please upgrade to a newer version!");
-}
+} 
 
 const timeslots = [
     "10h00",
