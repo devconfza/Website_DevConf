@@ -1,4 +1,6 @@
 const path = require('path');
+const RemovePlugin = require('remove-files-webpack-plugin');
+const pkg = require('./package.json');
 
 module.exports = {
   entry: './src/site.ts',
@@ -16,7 +18,21 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'devconf.js',
+    filename: 'devconf-[fullhash:8].js',
     path: path.resolve(__dirname, 'scripts')
-  }
+  },
+  plugins: [
+    new RemovePlugin({
+        before: {
+           include: [
+             "./scripts",
+           ]
+        },
+        watch: {
+          include: [
+            "./scripts",
+          ]
+        },
+    })
+]
 };
