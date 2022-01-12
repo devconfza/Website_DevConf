@@ -2,25 +2,7 @@ import { Sessionize } from './definations/sessions';
 
 if (typeof fetch === "undefined") {
     alert("Oh no 😢 We don't support your web browser. Please upgrade to a newer version!");
-} 
-
-const timeslots = [
-    "10h00",
-    "11h00",
-    "12h00",
-    "13h40",
-    "14h40",
-    "16h00",
-    "17h00"
-];
-
-const rooms = [
-    "Room 1",
-    "Room 2",
-    "Room 3",
-    "Room 4",
-    "Room 5",
-];
+}
 
 const agendaPlaceholder = document.getElementById("agenda");
 if (agendaPlaceholder) {
@@ -33,7 +15,6 @@ if (agendaPlaceholder) {
 
 function loadEventSessions(id: String, target: HTMLElement) {
     let eventData: Sessionize.Event;
-    let tracks: Array<Sessionize.Item>;
 
     const getTemplate = (id: string) => {
         return ((document.getElementById(id) as HTMLTemplateElement)
@@ -64,7 +45,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
             return remappedSpeakers[0];
         }
 
-        return remappedSpeakers.filter((value, index) => index < remappedSpeakers.length - 1).join(', ') + ' & ' + remappedSpeakers[remappedSpeakers.length - 1];
+        return remappedSpeakers.filter((_, index) => index < remappedSpeakers.length - 1).join(', ') + ' & ' + remappedSpeakers[remappedSpeakers.length - 1];
     }
 
     const getSpeakerBio = (sessionSpeakers: Array<string>): string => {
@@ -85,16 +66,6 @@ function loadEventSessions(id: String, target: HTMLElement) {
         }
 
         return remappedSpeakers.slice(1);
-    }
-
-    const getTrack = (session: Sessionize.Session) => {
-        const trackId = session.categoryItems.filter(category => tracks.map(track => track.id).indexOf(category) > -1)[0];
-
-        if (trackId) {
-            return tracks.filter(category => category.id === trackId)[0].name;
-        }
-
-        return "";
     }
 
     const singleSpeaker = (sessionSpeakers: Array<string>) => {
@@ -201,7 +172,6 @@ function loadEventSessions(id: String, target: HTMLElement) {
                     setDivText(bioContent, "div.bio-title", matchedSession.title);
                     setDivText(bioContent, "div.bio-talk-description", matchedSession.description);
                     setDivText(bioContent, "div.bio-speaker-bio", bio);
-                    setDivText(bioContent, "div.bio-track", `Track: ${getTrack(matchedSession)}`);
                     popupContent.insertAdjacentElement("beforeend", bioContent);
                 };
             } else {
@@ -216,12 +186,10 @@ function loadEventSessions(id: String, target: HTMLElement) {
 
     const parseEventData = (event: Sessionize.Event) => {
         eventData = event;
-        tracks = event.categories.filter(category => category.title === "Track")[0].items;
 
-        document.querySelectorAll(".agenda-session").forEach((element, index) => {
+        document.querySelectorAll(".agenda-session").forEach((element, _) => {
             const div = element as HTMLDivElement;
             const id = div.attributes["data-slot-id"].value;
-            const remote = div.attributes["data-remote"].value === "true";
             const matchedSession = getSession(id);
 
             if (!matchedSession) {
@@ -249,13 +217,6 @@ function loadEventSessions(id: String, target: HTMLElement) {
                         }
                         case "agenda-session-title": {
                             templateElement.innerText = matchedSession.title;
-                            break;
-                        }
-                        case "agenda-session-remote": {
-                            if (remote) {
-                                templateElement.style.display = "block";
-                            }
-
                             break;
                         }
                     }

@@ -6,7 +6,7 @@ events:
     date: "5 April 2022"
     info: "/capetown"
     infoOn: true
-    sessionizeId: ""
+    sessionizeId: "p87oviq3"
     logo: devconfcpt.png
     minattendees: 250
     venue: "Lagoon Beach Hotel & Spa"
@@ -25,10 +25,10 @@ events:
         price: "R2,825" 
         sold_out: true   
     rooms: 
-      room_3: "Room 1"
-      room_1: "Room 2"
-      room_4: "Room 3"
-      room_2: "Room 4"
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
       room_5: "Room 5"
   - virtual: true
     show: true
@@ -37,7 +37,7 @@ events:
     date: "7 April 2022"
     info: "/virtual"
     infoOn: true
-    sessionizeId: ""
+    sessionizeId: "p87oviq3"
     logo: devconfvirtual.png
     minattendees: 250
     sponsorOpen: true
@@ -63,7 +63,7 @@ events:
     date: "7 April 2022"
     info: "/joburg"
     infoOn: true
-    sessionizeId: ""
+    sessionizeId: "p87oviq3"
     logo: devconfjhb.png
     minattendees: 250
     venue: "Riversands I-Hub"
@@ -82,8 +82,8 @@ events:
         price: "R2,825"  
         sold_out: true     
     rooms: 
-      room_3: "Room 1"
-      room_1: "Room 2"
-      room_4: "Room 3"
-      room_2: "Room 4"
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
       room_5: "Room 5"

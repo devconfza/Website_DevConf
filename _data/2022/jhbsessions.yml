@@ -1,0 +1,53 @@
+# Keynote
+- id: 000000
+  
+# Slot one
+- id: 298944 
+- id: 293777 
+- id: 298468
+- id: 299048
+- id: 294735
+  
+# Slot two
+- id: 000000 # Diamond 1
+- id: 298838 
+- id: 298484
+- id: 291753
+- id: 292664
+  
+# Slot Three
+- id: 299230 
+- id: 000000 # Plat 1
+- id: 299081 
+- id: 292543
+- id: 298879 
+  
+# Slot Four
+- id: 000000 # Plat 2
+- id: 298122
+- id: 299049
+- id: 297621
+- id: 298068
+  
+# Slot Five
+- id: 298653
+- id: 295594
+- id: 000000 # gold 1
+- id: 298885
+- id: 291968
+  
+# Slot Six
+- id: 298869
+- id: 298664
+- id: 291995
+- id: 000000 # gold 2
+- id: 297079
+  
+
+# Slot Seven
+- id: 000000 # Offerzen
+- id: 292249
+- id: 000000 # gold 3
+- id: 294011
+- id: 299122
+  
