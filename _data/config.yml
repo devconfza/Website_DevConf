@@ -65,11 +65,11 @@ events:
     sessionizeId: "p87oviq3"
     logo: devconfjhb.png
     minattendees: 250
-    venue: "Riversands I-Hub"
-    website: "https://www.riversandsihub.co.za/"
-    mapLink: "https://g.page/Riversands-Incubation-Hub?share"
-    lat: "-25.96466"
-    long: "28.02339"
+    venue: "The Canvas | Riversands Conferencing"
+    website: "https://www.thecanvasriversands.co.za/"
+    mapLink: "https://g.page/TheCanvasRiversandsConference?share"
+    lat: "-25.96448"
+    long: "28.019760"
     sponsorOpen: true
     colour: pink
     tickets:
