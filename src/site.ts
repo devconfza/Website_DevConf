@@ -44,7 +44,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
         if (remappedSpeakers.length === 1) {
             return remappedSpeakers[0];
         }
-
+ 
         return remappedSpeakers.filter((_, index) => index < remappedSpeakers.length - 1).join(', ') + ' & ' + remappedSpeakers[remappedSpeakers.length - 1];
     }
 
