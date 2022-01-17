@@ -164,6 +164,19 @@
   }
 }
 
+.multi-speaker-container {
+  display: grid;
+}
+
+.multi-speaker-image {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.hide {
+  display: none;
+}
+
 .clickable-session {
   cursor: pointer;
 
