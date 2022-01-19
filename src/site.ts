@@ -55,7 +55,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
             return remappedSpeakers[0];
         }
 
-        return remappedSpeakers.join(" <br/> ");
+        return remappedSpeakers.join(" <hr/> ");
     }
 
     const otherSpeakerImages = (sessionSpeakers: Array<string>): Array<string> => {
@@ -151,13 +151,18 @@ function loadEventSessions(id: String, target: HTMLElement) {
                     });
 
                     const speakerInfo = singleSpeaker(matchedSession.speakers);
-                    const socialLinks = buildSocialBadges(speakerInfo);
-                    const bioContent = getTemplate("popupBioContent").firstElementChild!;
-                    const imageElement = (bioContent.querySelector("img.largePopupImage")! as HTMLImageElement);
-                    imageElement.src = speakerInfo.profilePicture;
+                    const socialLinks = getSpeakerInfo(matchedSession.speakers).flatMap(s => buildSocialBadges(s));
+                    const contentNode = getTemplate("popupBioContent");
+                    const bioContent = contentNode.firstElementChild!;
                     const otherImages = otherSpeakerImages(matchedSession.speakers);
                     if (otherImages.length > 0) {
-                        imageElement.setAttribute("x-altImage", otherImages[0]);
+                        const imageElement = bioContent.querySelector("img.largePopupImage")!!;
+                        imageElement.classList.add("hide");
+                        const multiImageElement = buildMuliSpeakerImageBlock(speakerInfo.profilePicture, otherImages, true);
+                        imageElement.insertAdjacentElement('afterend', multiImageElement)
+                    } else {
+                        const imageElement = (bioContent.querySelector("img.largePopupImage")! as HTMLImageElement);
+                        imageElement.src = speakerInfo.profilePicture;
                     }
 
                     setDivText(bioContent, "div.bio-speaker", multipleSpeakerNames(matchedSession.speakers));
@@ -168,7 +173,10 @@ function loadEventSessions(id: String, target: HTMLElement) {
 
 
                     const bio = getSpeakerBio(matchedSession.speakers);
-                    setDivText(bioContent, "div.bio-tagline", speakerInfo.tagLine);
+                    if (otherImages.length == 0) {
+                        setDivText(bioContent, "div.bio-tagline", speakerInfo.tagLine);
+                    }
+
                     setDivText(bioContent, "div.bio-title", matchedSession.title);
                     setDivText(bioContent, "div.bio-talk-description", matchedSession.description);
                     setDivText(bioContent, "div.bio-speaker-bio", bio);
@@ -182,6 +190,41 @@ function loadEventSessions(id: String, target: HTMLElement) {
 
     const getSession = (sessionId: String) => {
         return eventData.sessions.filter(session => session.id === sessionId)[0];
+    }
+
+    const speakerImageCreator = (src: string, hide = false): HTMLImageElement => {
+        const imageElement = document.createElement("img");
+        imageElement.src = src;
+        imageElement.classList.add("speaker-image");
+        if (hide) {
+            imageElement.classList.add("hide");
+        }
+        return imageElement;
+    }
+
+    const buildMuliSpeakerImageBlock = (primaryImage: string, otherImages: string[], isLargePopupImage = false): HTMLDivElement => {
+        const imagesHolder = document.createElement("div");
+        imagesHolder.setAttribute("x-imageset", "");
+        imagesHolder.classList.add("multi-speaker-container");
+        const firstImage = speakerImageCreator(primaryImage);
+        firstImage.classList.add("multi-speaker-image");
+        if (isLargePopupImage) {
+            firstImage.classList.add("largePopupImage");
+        }
+
+        imagesHolder.appendChild(firstImage);
+
+        otherImages.forEach((otherSpeaker) => {
+            const nextImage = speakerImageCreator(otherSpeaker, true);
+            nextImage.classList.add("multi-speaker-image");
+            if (isLargePopupImage) {
+                nextImage.classList.add("largePopupImage");
+            }
+
+            imagesHolder.appendChild(nextImage);
+        });
+
+        return imagesHolder;
     }
 
     const parseEventData = (event: Sessionize.Event) => {
@@ -200,15 +243,14 @@ function loadEventSessions(id: String, target: HTMLElement) {
                 templateDivs.forEach((templateElement) => {
                     switch (templateElement.className) {
                         case "agenda-session-image": {
-                            const imageElement = document.createElement("img");
-                            imageElement.src = singleSpeakerImage(matchedSession.speakers);
                             const otherImages = otherSpeakerImages(matchedSession.speakers);
                             if (otherImages.length > 0) {
-                                imageElement.setAttribute("x-altImage", otherImages[0]);
+                                const imagesHolder = buildMuliSpeakerImageBlock(singleSpeakerImage(matchedSession.speakers), otherImages);
+                                templateElement.appendChild(imagesHolder);
+                            } else {
+                                templateElement.appendChild(speakerImageCreator(singleSpeakerImage(matchedSession.speakers)));
                             }
 
-                            imageElement.classList.add("speaker-image");
-                            templateElement.appendChild(imageElement);
                             break;
                         }
                         case "agenda-session-name": {
@@ -228,6 +270,7 @@ function loadEventSessions(id: String, target: HTMLElement) {
 
         addPopupHandler();
         toggleUI();
+        rotateImages();
     }
 
     const loadStoredData = () => {
@@ -240,15 +283,53 @@ function loadEventSessions(id: String, target: HTMLElement) {
         }
     }
 
+    const fadeOut = (element: HTMLElement) => {
+        let opacity = 1;  // initial opacity
+        const decrease = () => {
+            if (opacity <= 0.1) {
+                element.classList.add("hide");
+                return true;
+            }
+
+            element.style.opacity = opacity.toString();
+            opacity -= opacity * 0.025;
+            requestAnimationFrame(decrease);
+        };
+
+        decrease();
+    }
+
+    const fadeIn = (element: HTMLElement) => {
+        let opacity = 0.1;  // initial opacity
+        element.classList.remove("hide");
+        const increase = () => {
+            if (opacity >= 1) {
+                return true;
+            }
+
+            element.style.opacity = opacity.toString();
+            opacity += opacity * 0.025;
+            requestAnimationFrame(increase)
+        };
+
+        increase();
+    }
+
     const rotateImages = () => {
         setInterval(() => {
-            const images = Array.from(document.getElementsByTagName("img")).filter(image => image.getAttribute("x-altImage") !== null) as Array<HTMLImageElement>;
-            images.forEach(image => {
-                const current = image.src;
-                image.src = image.getAttribute("x-altImage")!;
-                image.setAttribute("x-altImage", current);
+            const imageSets = Array.from(document.querySelectorAll("div[x-imageSet]"));
+            imageSets.forEach(imageSet => {
+                const images = imageSet.querySelectorAll("img") as NodeListOf<HTMLImageElement>;
+                const currentImageIndex = Array.from(images).findIndex(i => !i.classList.contains("hide"));
+                fadeOut(images[currentImageIndex]);
+                let next = currentImageIndex + 1;
+                if (next >= images.length) {
+                    next = 0;
+                }
+
+                fadeIn(images[next]);
             });
-        }, 2500);
+        }, 3500);
     }
 
     if (navigator.onLine) {
@@ -273,6 +354,4 @@ function loadEventSessions(id: String, target: HTMLElement) {
     } else {
         loadStoredData();
     }
-
-    rotateImages();
 }

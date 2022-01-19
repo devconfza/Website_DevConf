@@ -2,9 +2,9 @@
 layout: compress
 ---
 <!DOCTYPE html>
-
+{% assign cacheBust = site.time | date:'?v=%s' %}
 <head>
-	<link rel="stylesheet" href="/public/css/main.css?bash=100">
+	<link rel="stylesheet" href="{{ '/public/css/main.css' | relative_url | append: cacheBust }}">
 	<title>DevConf ❤ The conference for professional South African software developers.</title>
 
 	<meta charset="UTF-8">
@@ -141,7 +141,8 @@ layout: compress
 		ga('create', 'UA-123039368-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	<script src="/scripts/devconf-b11ab8ac.js"></script>
+
+	<script src="{{ '/scripts/devconf.js' | relative_url | append: cacheBust }}"></script>
 	<script type="text/javascript">
 		_linkedin_partner_id = "2283849";
 		window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
