@@ -3,9 +3,9 @@ Welcome to the DevConf 2.0 Website
 # Installation
 
 ## Setup for Windows
-If you are on Windows see the then you need Ruby `choco install ruby` and node `choco install nodejs`.
+If you are on Windows you need Ruby `choco install ruby` and node `choco install nodejs`.
 
-## Setup for Linux
+## Setup for Linux/WSL
 Currently this is the latest that has been tested with WSL
 
 - `sudo apt-get install ruby-full`  
