@@ -15,8 +15,13 @@
         {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         <div class="sponsor-content-detail-tickets">
+            {% if event.virtual %}
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
-                sessions, the amazing welcome gifts, lunch, snacks, and access to the post-conference event!</div>
+                sessions, the amazing swag, and access to the virtual network space!</div>
+            {% else %} 
+            <div>Limited tickets available with something for everyone. All tickets include full day access to all
+                sessions, the amazing swag, lunch, snacks, and access to the post-conference event!</div>
+            {% endif %}
             <div class="sponsor-content-detail-tickets-cards">
                 <div>
                     <div>Early Bird Tickets</div>
