@@ -41,8 +41,12 @@
                         Purchase 10 or more to get 7% off!
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
+                    {% if event.tickets.fullprice.sold_out %}
+                    <div class="sponsor-fake-button">Sold Out!</div>
+                    {% else %}
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
                         target="_blank">Buy a ticket now!</a>
+                    {% endif %}
                 </div>
                 <div>
                     <div>Manual Tickets</div>
@@ -52,9 +56,13 @@
                     </div>
                     <div>Purchase 10 or more to get 7% off!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
+                    {% if event.tickets.fullprice.sold_out %}
+                    <div class="sponsor-fake-button">Sold Out!</div>
+                    {% else %}
                     <a class="sponsor-button"
                         href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
                         target="_blank">Let us help you now!</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

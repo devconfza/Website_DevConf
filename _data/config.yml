@@ -21,6 +21,7 @@ events:
       purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
       fullprice:
         price: "R3,142"
+        sold_out: true
       earlybird:
         price: "R2,825" 
         sold_out: true  
