@@ -41,10 +41,10 @@ layout: default
 
         const matchedPage = normalisedPages.indexOf(url);
         if (matchedPage !== -1) {
-            console.log(`Redirecting to ${allpages[matchedPage]}`);
+            console.debug(`Redirecting to ${allpages[matchedPage]}`);
             window.location = allpages[matchedPage];
         } else {
-            console.log(`No match found for ${url}`);
+            console.debug(`No match found for ${url}`);
         }
     }
 
