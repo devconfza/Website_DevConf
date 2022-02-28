@@ -26,11 +26,11 @@ events:
         price: "R2,825" 
         sold_out: true  
     rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5"
+      room_1: "Atlantic 2"
+      room_2: "Atlantic 1"
+      room_3: "Marine"
+      room_4: "Courtyard 1"
+      room_5: "Courtyard 2"
   - virtual: true
     show: true
     menuTitle: "Virtual"
@@ -79,12 +79,13 @@ events:
       purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
       fullprice:
         price: "R3,142"
+        sold_out: true
       earlybird:
         price: "R2,825"  
         sold_out: true     
     rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5"
+      room_1: "Auditorium"
+      room_2: "Training Room 3"
+      room_3: "Training Room 10"
+      room_4: "Hall 1"
+      room_5: "Hall 2"
