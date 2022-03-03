@@ -29,6 +29,11 @@
   Logo: entersektsilver.jpg
 
 - Level: Silver
+  Name: Microsoft 
+  Url: https://www.microsoft.com
+  Logo: microsoftsilver.jpg
+
+- Level: Silver
   Name: PayFast 
   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
   Logo: payfastsilver.jpg
@@ -47,6 +52,11 @@
   Name: Red Hat 
   Url: https://www.redhat.com/
   Logo: redhatregistration.jpg  
+
+- Level: Refreshment
+  Name: Paystack
+  Url: https://paystack.com/
+  Logo: paystackrefreshment.jpg
 
 - Level: Bag
   Name: Saratoga

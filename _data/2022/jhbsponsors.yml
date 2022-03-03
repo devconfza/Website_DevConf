@@ -19,6 +19,11 @@
   Logo: AllanGrayGold.jpg
 
 - Level: Gold
+  Name: Microsoft 
+  Url: https://www.microsoft.com
+  Logo: microsoftgold.jpg
+
+- Level: Gold
   Name: Equal Experts
   Url: https://www.equalexperts.com/
   Logo: equalexpertsgold.jpg
@@ -47,6 +52,11 @@
   Name: Blue Bean Software
   Url: https://web.bluebeansoftware.com/
   Logo: bluebeanregistration.jpg
+
+- Level: Refreshment
+  Name: Paystack
+  Url: https://paystack.com/
+  Logo: paystackrefreshment.jpg
 
 - Level: Special
   Name: IITPSA 

@@ -17,7 +17,7 @@ events:
     sponsorOpen: true
     colour: blue
     tickets:
-      onsale: true
+      onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
       fullprice:
         price: "R3,142"
@@ -75,7 +75,7 @@ events:
     sponsorOpen: true
     colour: pink
     tickets:
-      onsale: true
+      onsale: false
       purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
       fullprice:
         price: "R3,142"

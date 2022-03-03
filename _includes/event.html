@@ -18,7 +18,7 @@
             {% if event.virtual %}
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, and access to the virtual network space!</div>
-            {% else %} 
+            {% else %}
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, lunch, snacks, and access to the post-conference event!</div>
             {% endif %}
@@ -67,7 +67,11 @@
             </div>
         </div>
         {% else %}
-        <div class="sponsor-content-detail-heading">Ticket sales coming soon</div>
+        <!-- <div class="sponsor-content-detail-heading">Ticket sales coming soon</div> -->
+        <div class="sponsor-content-detail-heading">All tickets sold out for this event</div>
+        <div class="sponsor-content-detail-tickets">
+                <a class="sponsor-button" href="/virtual">Virtual event tickets are still available for sale</a>
+        </div>
         {% endif %}
     </div>
 
@@ -94,8 +98,10 @@
             <div class="agenda-row-style-keynote hidden-row">
                 <div class="agenda-session-header">08h45 →
                     <b>Keynote</b>
-                    ← 09h30</div>
-                <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}" data-remote="{{ include.sessions[0].remote }}"></div>
+                    ← 09h30
+                </div>
+                <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}"
+                    data-remote="{{ include.sessions[0].remote }}"></div>
             </div>
             <div class="agenda-row-style-loading">
                 Loading...
@@ -111,27 +117,32 @@
                 ← 10h40
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[1].id }}" data-remote="{{ include.sessions[1].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[1].id }}"
+                    data-remote="{{ include.sessions[1].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">10h00</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[2].id }}" data-remote="{{ include.sessions[2].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[2].id }}"
+                    data-remote="{{ include.sessions[2].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">10h00</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[3].id }}" data-remote="{{ include.sessions[3].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[3].id }}"
+                    data-remote="{{ include.sessions[3].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">10h00</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[4].id }}" data-remote="{{ include.sessions[4].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[4].id }}"
+                    data-remote="{{ include.sessions[4].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">10h00</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[5].id }}" data-remote="{{ include.sessions[5].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[5].id }}"
+                    data-remote="{{ include.sessions[5].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">10h00</div>
                 </div>
@@ -150,26 +161,31 @@
                 ← 11h30
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[6].id }}" data-remote="{{ include.sessions[6].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[6].id }}"
+                    data-remote="{{ include.sessions[6].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">10h50</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[7].id }}" data-remote="{{ include.sessions[7].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[7].id }}"
+                    data-remote="{{ include.sessions[7].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">10h50</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[8].id }}" data-remote="{{ include.sessions[8].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[8].id }}"
+                    data-remote="{{ include.sessions[8].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">10h50</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[9].id }}" data-remote="{{ include.sessions[9].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[9].id }}"
+                    data-remote="{{ include.sessions[9].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">10h50</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[10].id }}" data-remote="{{ include.sessions[10].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[10].id }}"
+                    data-remote="{{ include.sessions[10].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">10h50</div>
                 </div>
@@ -188,26 +204,31 @@
                 ← 12h20
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[11].id }}" data-remote="{{ include.sessions[11].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[11].id }}"
+                    data-remote="{{ include.sessions[11].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">11h40</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[12].id }}" data-remote="{{ include.sessions[12].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[12].id }}"
+                    data-remote="{{ include.sessions[12].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">11h40</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[13].id }}" data-remote="{{ include.sessions[13].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[13].id }}"
+                    data-remote="{{ include.sessions[13].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">11h40</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[14].id }}" data-remote="{{ include.sessions[14].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[14].id }}"
+                    data-remote="{{ include.sessions[14].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">11h40</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[15].id }}" data-remote="{{ include.sessions[15].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[15].id }}"
+                    data-remote="{{ include.sessions[15].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">11h40</div>
                 </div>
@@ -226,23 +247,28 @@
                 ← 14h00
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}" data-remote="{{ include.sessions[16].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}"
+                    data-remote="{{ include.sessions[16].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">13h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[17].id }}" data-remote="{{ include.sessions[17].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[17].id }}"
+                    data-remote="{{ include.sessions[17].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">13h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[18].id }}" data-remote="{{ include.sessions[18].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[18].id }}"
+                    data-remote="{{ include.sessions[18].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">13h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[19].id }}" data-remote="{{ include.sessions[19].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[19].id }}"
+                    data-remote="{{ include.sessions[19].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">13h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[20].id }}" data-remote="{{ include.sessions[20].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[20].id }}"
+                    data-remote="{{ include.sessions[20].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">13h20</div>
                 </div>
@@ -261,25 +287,30 @@
                 ← 14h50
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[21].id }}" data-remote="{{ include.sessions[21].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[21].id }}"
+                    data-remote="{{ include.sessions[21].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">14h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[22].id }}" data-remote="{{ include.sessions[22].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[22].id }}"
+                    data-remote="{{ include.sessions[22].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">14h10</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[23].id }}" data-remote="{{ include.sessions[23].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[23].id }}"
+                    data-remote="{{ include.sessions[23].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">14h10</div>
 
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[24].id }}" data-remote="{{ include.sessions[24].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[24].id }}"
+                    data-remote="{{ include.sessions[24].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">14h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[25].id }}" data-remote="{{ include.sessions[25].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[25].id }}"
+                    data-remote="{{ include.sessions[25].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">14h10</div>
                 </div>
@@ -298,23 +329,28 @@
                 ← 16h00
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[26].id }}" data-remote="{{ include.sessions[26].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[26].id }}"
+                    data-remote="{{ include.sessions[26].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">15h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[27].id }}" data-remote="{{ include.sessions[27].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[27].id }}"
+                    data-remote="{{ include.sessions[27].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">15h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[28].id }}" data-remote="{{ include.sessions[28].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[28].id }}"
+                    data-remote="{{ include.sessions[28].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">15h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[29].id }}" data-remote="{{ include.sessions[29].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[29].id }}"
+                    data-remote="{{ include.sessions[29].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">15h20</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[30].id }}" data-remote="{{ include.sessions[30].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[30].id }}"
+                    data-remote="{{ include.sessions[30].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">15h20</div>
                 </div>
@@ -333,23 +369,28 @@
                 ← 16h50
             </div>
             <div class="agenda-row-timeslot hidden-row">
-                <div class="agenda-session" data-slot-id="{{ include.sessions[31].id }}" data-remote="{{ include.sessions[31].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[31].id }}"
+                    data-remote="{{ include.sessions[31].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">16h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[32].id }}" data-remote="{{ include.sessions[32].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[32].id }}"
+                    data-remote="{{ include.sessions[32].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">16h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[33].id }}" data-remote="{{ include.sessions[33].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[33].id }}"
+                    data-remote="{{ include.sessions[33].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_3 }}</div>
                     <div class="agenda-session-time">16h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[34].id }}" data-remote="{{ include.sessions[34].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[34].id }}"
+                    data-remote="{{ include.sessions[34].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_4 }}</div>
                     <div class="agenda-session-time">16h10</div>
                 </div>
-                <div class="agenda-session" data-slot-id="{{ include.sessions[35].id }}" data-remote="{{ include.sessions[35].remote }}">
+                <div class="agenda-session" data-slot-id="{{ include.sessions[35].id }}"
+                    data-remote="{{ include.sessions[35].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_5 }}</div>
                     <div class="agenda-session-time">16h10</div>
                 </div>
@@ -385,7 +426,8 @@
             <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div>
             <div>&nbsp;</div>
             <div class="sponsor-content-detail-email" role="button">
-                <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor Proposal now!</a>
+                <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor
+                    Proposal now!</a>
             </div>
         </div>
         {% else %}
