@@ -19,11 +19,6 @@
   Logo: AllanGrayGold.jpg
 
 - Level: Gold
-  Name: Microsoft 
-  Url: https://www.microsoft.com
-  Logo: microsoftgold.jpg
-
-- Level: Gold
   Name: Equal Experts
   Url: https://www.equalexperts.com/
   Logo: equalexpertsgold.jpg
@@ -37,6 +32,11 @@
   Name: Agile Bridge 
   Url: https://www.agilebridge.co.za/
   Logo: agilebridgesilver.jpg
+
+- Level: Silver
+  Name: Microsoft 
+  Url: https://www.microsoft.com
+  Logo: microsoftsilver.jpg
 
 - Level: Silver
   Name: PayFast 
