@@ -11,7 +11,8 @@
         </div>
     </div>
 
-    <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail-collapse">
+        {% comment %}
         {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         <div class="sponsor-content-detail-tickets">
@@ -73,12 +74,12 @@
                 <a class="sponsor-button" href="/virtual">Virtual event tickets are still available for sale</a>
         </div>
         {% endif %}
+        {% endcomment %}
     </div>
+
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
-        <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
-        </div>
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key">
                 07h30 →
@@ -423,12 +424,14 @@
                 </div>
             </div>
             {% endfor %}
+            {% comment %}
             <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div>
             <div>&nbsp;</div>
             <div class="sponsor-content-detail-email" role="button">
                 <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor
                     Proposal now!</a>
             </div>
+            {% endcomment %}
         </div>
         {% else %}
         <div class="sponsor-content-detail-heading">Sponsorship coming soon</div>
