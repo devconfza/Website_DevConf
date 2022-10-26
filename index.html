@@ -30,6 +30,7 @@ layout: default
                     {% endif %}
                     <div class="location-{{event.colour }}">{{ event.location }}</div>
                     <div class="date">{{ event.date }}</div>
+                    <!-- <div class="date">{{ event.venue }}</div> -->
                     <img class="event-logo" src="/public/images/{{ event.logo }}">
                     {% if event.infoOn %}
                     <div class="button" role="button">
@@ -43,6 +44,18 @@ layout: default
         {% endif %}
         {% endif %}
         {% endfor %}
+    </div>
+    <div>
+        <div class="sponsor-content-detail-heading">Important Dates for 2023</div>
+        <ul>
+            <li>4th November 2022: Call for Speakers opens</li>
+            <li>Week of 21st November 2022: Sponsorship opens for 2022 sponsors</li>
+            <li>Week of 16th January 2023: Call for Speakers closes</li>
+            <li>Week of 16th January 2023: Public sponsorship opens</li>
+            <li>Week of 16th January 2023: Tickets go on sale</li>
+            <li>End of February 2023: Agenda announced</li>
+            <li>1st May 2023: Ticket sales and sponsorship closes</li>
+        </ul>
     </div>
 </div>
 

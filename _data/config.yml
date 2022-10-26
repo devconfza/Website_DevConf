@@ -3,18 +3,18 @@ events:
     show: true
     location: "Cape Town"
     menuTitle: "Cape Town"
-    date: "5 April 2022"
+    date: "23 May 2023"
     info: "/capetown"
-    infoOn: true
-    sessionizeId: "p87oviq3"
+    infoOn: false
+    sessionizeId: ""
     logo: devconfcpt.png
-    minattendees: 250
-    venue: "Lagoon Beach Hotel & Spa"
-    website: "https://www.lagoonbeachhotel.co.za/"
-    mapLink: "https://g.page/LagoonBeachHotelSpa?share"
-    lat: "-33.89207"
-    long: "18.48262"
-    sponsorOpen: true
+    minattendees: 500
+    venue: "Cape Town International Convention Centre 2"
+    website: "https://www.cticc.co.za/"
+    mapLink: "https://g.page/CTICC2?share"
+    lat: "-33.91743373623432"
+    long: "18.429546394164426"
+    sponsorOpen: false
     colour: blue
     tickets:
       onsale: false
@@ -26,53 +26,27 @@ events:
         price: "R2,825" 
         sold_out: true  
     rooms: 
-      room_1: "Atlantic 2"
-      room_2: "Atlantic 1"
-      room_3: "Marine"
-      room_4: "Courtyard 1"
-      room_5: "Courtyard 2"
-  - virtual: true
-    show: true
-    menuTitle: "Virtual"
-    location: "Virtual"
-    date: "7 April 2022"
-    info: "/virtual"
-    infoOn: true
-    sessionizeId: "p87oviq3"
-    logo: devconfvirtual.png
-    minattendees: 250
-    sponsorOpen: true
-    colour: third
-    tickets:
-      onsale: true
-      purchaseSite: "https://www.quicket.co.za/events/150965-devconf-2022-virtual"
-      fullprice:
-        price: "R3,142"
-      earlybird:
-        price: "R2,825"  
-        sold_out: false  
-    rooms: 
-      room_1: "Stream 1"
-      room_2: "Stream 2"
-      room_3: "Stream 3"
-      room_4: "Stream 4"
-      room_5: "Stream 5"   
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
+      room_5: "Room 5" 
   - virtual: false
     show: true
     location: "Johannesburg"
     menuTitle: "Joburg"
-    date: "7 April 2022"
+    date: "25 May 2023"
     info: "/joburg"
-    infoOn: true
-    sessionizeId: "p87oviq3"
+    infoOn: false
+    sessionizeId: ""
     logo: devconfjhb.png
-    minattendees: 250
-    venue: "The Canvas | Riversands Conferencing"
-    website: "https://www.thecanvasriversands.co.za/"
-    mapLink: "https://g.page/TheCanvasRiversandsConference?share"
-    lat: "-25.96448"
-    long: "28.019760"
-    sponsorOpen: true
+    minattendees: 500
+    venue: "CSIR International Conference Centre"
+    website: "https://www.csiricc.co.za/"
+    mapLink: "https://goo.gl/maps/DFndScsarXYkhMLJ7"
+    lat: "-25.752775506234492"
+    long: "28.27698733915744"
+    sponsorOpen: false
     colour: pink
     tickets:
       onsale: false
@@ -84,8 +58,8 @@ events:
         price: "R2,825"  
         sold_out: true     
     rooms: 
-      room_1: "Auditorium"
-      room_2: "Training Room 3"
-      room_3: "Training Room 10"
-      room_4: "Hall 1"
-      room_5: "Hall 2"
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
+      room_5: "Room 5" 
