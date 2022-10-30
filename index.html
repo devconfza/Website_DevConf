@@ -30,8 +30,10 @@ layout: default
                     {% endif %}
                     <div class="location-{{event.colour }}">{{ event.location }}</div>
                     <div class="date">{{ event.date }}</div>
-                    <!-- <div class="date">{{ event.venue }}</div> -->
-                    <img class="event-logo" src="/public/images/{{ event.logo }}">
+                    <a class="button-blue" href="{{ event.website }}" target="_blank">
+                        <div class="date">{{ event.venue }}</div>
+                    </a>
+                    <!-- <img class="event-logo" src="/public/images/{{ event.logo }}"> -->
                     {% if event.infoOn %}
                     <div class="button" role="button">
                         Tickets, Agenda &amp; More
@@ -49,13 +51,17 @@ layout: default
         <div class="sponsor-content-detail-heading">Important Dates for 2023</div>
         <ul>
             <li>4th November 2022: Call for Speakers opens</li>
-            <li>Week of 21st November 2022: Sponsorship opens for sponsors from the 2022 event</li>
-            <li>Week of 16th January 2023: Call for Speakers closes</li>
+            <li>Week of 21st November 2022: Sponsorship opens to sponsors who sponsored the 2022 event</li>
             <li>Week of 16th January 2023: Public sponsorship opens</li>
             <li>Week of 16th January 2023: Tickets go on sale</li>
+            <li>17th January 2023: Call for Speakers closes</li>
             <li>End of February 2023: Agenda announced</li>
             <li>Early May 2023: Ticket sales and sponsorship closes</li>
         </ul>
+    </div>
+    <div>
+        <a class="button" href="https://sessionize.com/devconf-2023/" target="_blank">Submit to our call for
+            speakers</a>
     </div>
 </div>
 
@@ -93,8 +99,8 @@ layout: default
     <div class="sponsor-content-detail-heading">Videos</div>
     <iframe allow="autoplay; encrypted-media" allowfullscreen class="youtubes" frameborder="0"
         src="https://www.youtube.com/embed/videoseries?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"></iframe>
-    <a class="button-blue nudgeDown" href="https://youtube.com/c/devconfza"
-        target="_blank">Visit Our YouTube Channel</a>
+    <a class="button-blue nudgeDown" href="https://youtube.com/c/devconfza" target="_blank">Visit Our YouTube
+        Channel</a>
 </div>
 
 <div class="sponsor-content-detail">
