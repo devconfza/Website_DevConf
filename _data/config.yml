@@ -33,10 +33,10 @@ events:
       room_5: "Room 5" 
   - virtual: false
     show: true
-    location: "Johannesburg"
-    menuTitle: "Joburg"
+    location: "Pretoria"
+    menuTitle: "Pretoria"
     date: "25 May 2023"
-    info: "/joburg"
+    info: "/pretoria"
     infoOn: false
     sessionizeId: ""
     logo: devconfjhb.png
