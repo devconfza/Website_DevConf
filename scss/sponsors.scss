@@ -443,10 +443,7 @@
     &-overview {
       display: grid;
       grid-template-rows: auto auto;
-      grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(
-          auto,
-          350px
-        );
+      grid-template-columns: minmax(auto, 350px) minmax(auto, 350px);
       justify-items: center;
       grid-row-gap: 10px;
       grid-column-gap: 50px;
