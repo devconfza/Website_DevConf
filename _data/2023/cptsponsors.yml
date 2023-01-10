@@ -1,0 +1,74 @@
+# - Level: Diamond
+#   Name: AWS
+#   Url: https://aws.amazon.com/
+#   Logo: awsdiamond.png
+
+# - Level: Platinum
+#   Name: Aruba
+#   Url: https://capenetworks.com/
+#   Logo: arubaplatinum.jpg
+
+# - Level: Platinum
+#   Name: Kurtosys System
+#   Url: https://www.kurtosys.com/
+#   Logo: kurtosysplat.jpg
+
+# - Level: Gold
+#   Name: AllanGray
+#   Url: https://www.allangray.co.za/
+#   Logo: AllanGrayGold.jpg
+
+# - Level: Gold
+#   Name: Microsoft 
+#   Url: https://www.microsoft.com
+#   Logo: microsoftgold.jpg
+
+# - Level: Gold
+#   Name: Peach Payments
+#   Url: https://www.peachpayments.com/
+#   Logo: peachpaymentsgold.jpg
+
+# - Level: Silver
+#   Name: Entersekt 
+#   Url: https://www.entersekt.com/
+#   Logo: entersektsilver.jpg
+
+# - Level: Silver
+#   Name: PayFast 
+#   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
+#   Logo: payfastsilver.jpg
+
+- Level: Silver
+  Name: Thinkst Canary
+  Url: https://canary.tools
+  Logo: thinkstsilver.jpg
+
+# - Level: Silver
+#   Name: VALR
+#   Url: https://www.valr.com/
+#   Logo: valrsilver.jpg
+
+# - Level: Registration
+#   Name: Red Hat 
+#   Url: https://www.redhat.com/
+#   Logo: redhatregistration.jpg  
+
+# - Level: Refreshment
+#   Name: Paystack
+#   Url: https://paystack.com/
+#   Logo: paystackrefreshment.jpg
+
+# - Level: Bag
+#   Name: Saratoga
+#   Url: https://www.saratoga.co.za/
+#   Logo: saratogabag.jpg
+
+# - Level: Special
+#   Name: IITPSA 
+#   Url: https://www.iitpsa.org.za/
+#   Logo: iitpsa.jpg
+
+# - Level: Media
+#   Name: Digital Street
+#   Url: https://www.digitalstreetsa.com/
+#   Logo: digitalstreetmedia.jpg

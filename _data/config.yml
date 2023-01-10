@@ -5,7 +5,7 @@ events:
     menuTitle: "Cape Town"
     date: "23 May 2023"
     info: "/capetown"
-    infoOn: false
+    infoOn: true
     sessionizeId: ""
     logo: devconfcpt.png
     minattendees: 500
@@ -18,13 +18,13 @@ events:
     colour: blue
     tickets:
       onsale: false
-      purchaseSite: "https://www.quicket.co.za/events/150961-devconf-2022-cape-town"
+      purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       fullprice:
-        price: "R3,142"
-        sold_out: true
+        price: "R2,999"
+        sold_out: false
       earlybird:
-        price: "R2,825" 
-        sold_out: true  
+        price: "R2,699"  
+        sold_out: false  
     rooms: 
       room_1: "Room 1"
       room_2: "Room 2"
@@ -37,7 +37,7 @@ events:
     menuTitle: "Pretoria"
     date: "25 May 2023"
     info: "/pretoria"
-    infoOn: false
+    infoOn: true
     sessionizeId: ""
     logo: devconfpta.png
     minattendees: 500
@@ -50,13 +50,13 @@ events:
     colour: pink
     tickets:
       onsale: false
-      purchaseSite: "https://www.quicket.co.za/events/150895-devconf-2022-johannesburg"
+      purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
       fullprice:
-        price: "R3,142"
-        sold_out: true
+        price: "R2,999"
+        sold_out: false
       earlybird:
-        price: "R2,825"  
-        sold_out: true     
+        price: "R2,699"  
+        sold_out: false     
     rooms: 
       room_1: "Room 1"
       room_2: "Room 2"
