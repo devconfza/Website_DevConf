@@ -509,21 +509,20 @@
 <script>
     function initMap() {
         const venue = {
-            lat: {{ event.lat }
-    },
-    lng: { { event.long } }
+            lat: {{ event.lat }},
+            lng: {{ event.long }}
         };
 
-    const map = new google.maps.Map(
-        document.getElementById('map'), {
-        zoom: 16,
-        center: venue,
-    });
+        const map = new google.maps.Map(
+            document.getElementById('map'), {
+            zoom: 16,
+            center: venue,
+        });
 
-    const marker = new google.maps.Marker({
-        position: venue,
-        map: map,
-    });
+        const marker = new google.maps.Marker({
+            position: venue,
+            map: map,
+        });
     }
 </script>
 <script async defer
