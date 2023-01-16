@@ -14,10 +14,10 @@ events:
     mapLink: "https://g.page/CTICC2?share"
     lat: "-33.91743373623432"
     long: "18.429546394164426"
-    sponsorOpen: false
+    sponsorOpen: true
     colour: blue
     tickets:
-      onsale: false
+      onsale: true
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       fullprice:
         price: "R2,999"
@@ -46,10 +46,10 @@ events:
     mapLink: "https://goo.gl/maps/DFndScsarXYkhMLJ7"
     lat: "-25.752775506234492"
     long: "28.27698733915744"
-    sponsorOpen: false
+    sponsorOpen: true
     colour: pink
     tickets:
-      onsale: false
+      onsale: true
       purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
       fullprice:
         price: "R2,999"
