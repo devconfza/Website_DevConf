@@ -33,7 +33,10 @@
                 <div>
                     <div>Early Bird Tickets</div>
                     <div>The best priced ticket, but <i>extremely</i> limited!</div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.earlybird.price }}</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">
+                        R{{ event.tickets.earlybird.price }} ex. vat<br/>
+                        <small>R{{ event.tickets.earlybird.price | times:1.15 | floor}} incl. vat</small>
+                    </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.earlybird.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
@@ -49,7 +52,10 @@
                     <div>
                         Purchase 10 or more to get a discount!
                     </div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
+                    <div class="sponsor-content-detail-tickets-cards-price">
+                        R{{ event.tickets.fullprice.price }} ex. vat<br/>
+                        <small>R{{ event.tickets.fullprice.price | times:1.15 | floor}} incl. vat</small>
+                    </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
@@ -65,8 +71,11 @@
                         payment terms?<br />
                         <strong>No problem</strong> - we can assist with a manual ticket purchase
                     </div>
-                    <div>Purchase 10 or more to get a discount!</div>
-                    <div class="sponsor-content-detail-tickets-cards-price">{{ event.tickets.fullprice.price }}</div>
+                    <!-- <div>Purchase 10 or more to get a discount!</div> -->
+                    <div class="sponsor-content-detail-tickets-cards-price">
+                        R{{ event.tickets.fullprice.price }} ex. vat<br/>
+                        <small>R{{ event.tickets.fullprice.price | times:1.15 | floor }} incl. vat</small>
+                    </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>

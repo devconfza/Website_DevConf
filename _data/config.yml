@@ -20,10 +20,10 @@ events:
       onsale: true
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       fullprice:
-        price: "R2,999"
+        price: 2999
         sold_out: false
       earlybird:
-        price: "R2,699"  
+        price: 2699  
         sold_out: false  
     rooms: 
       room_1: "Room 1"
@@ -52,10 +52,10 @@ events:
       onsale: true
       purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
       fullprice:
-        price: "R2,999"
+        price: 2999
         sold_out: false
       earlybird:
-        price: "R2,699"  
+        price: 2699  
         sold_out: false     
     rooms: 
       room_1: "Room 1"

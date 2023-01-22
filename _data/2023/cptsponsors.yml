@@ -68,7 +68,7 @@
 #   Url: https://www.iitpsa.org.za/
 #   Logo: iitpsa.jpg
 
-# - Level: Media
-#   Name: Digital Street
-#   Url: https://www.digitalstreetsa.com/
-#   Logo: digitalstreetmedia.jpg
+- Level: Media
+  Name: Digital Street
+  Url: https://www.digitalstreetsa.com/
+  Logo: digitalstreetmedia.jpg
