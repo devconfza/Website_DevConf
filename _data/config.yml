@@ -24,7 +24,7 @@ events:
         sold_out: false
       earlybird:
         price: 2699  
-        sold_out: false  
+        sold_out: true  
     rooms: 
       room_1: "Room 1"
       room_2: "Room 2"
@@ -56,7 +56,7 @@ events:
         sold_out: false
       earlybird:
         price: 2699  
-        sold_out: false     
+        sold_out: true     
     rooms: 
       room_1: "Room 1"
       room_2: "Room 2"
