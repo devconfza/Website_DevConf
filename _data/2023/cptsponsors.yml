@@ -13,10 +13,10 @@
 #   Url: https://www.kurtosys.com/
 #   Logo: kurtosysplat.jpg
 
-# - Level: Gold
-#   Name: AllanGray
-#   Url: https://www.allangray.co.za/
-#   Logo: AllanGrayGold.jpg
+- Level: Gold
+  Name: Allan Gray
+  Url: https://www.allangray.co.za/
+  Logo: AllanGrayGold.jpg
 
 # - Level: Gold
 #   Name: Microsoft 
@@ -37,6 +37,11 @@
 #   Name: PayFast 
 #   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
 #   Logo: payfastsilver.jpg
+
+- Level: Silver
+  Name: Obsidian Systems
+  Url: https://obsidian.co.za/ 
+  Logo: obsidiansilver.jpg
 
 - Level: Silver
   Name: Thinkst Canary
