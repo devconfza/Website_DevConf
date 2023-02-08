@@ -434,7 +434,7 @@
                 <div class="sponsor-content-detail-heading-smaller">{{ level.name }}</div>
                 <div class="sponsor-content-detail-sponsors">
                     {% for sponsor in level.items %}
-                    <div class="sponsor-content-detail-sponsor-{{ level.name }}">
+                    <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
                         <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
                             <img alt="The logo for {{ sponsor.Name }}"
                                 src="/public/images/sponsorship/2023/{{sponsor.Logo }}" />

@@ -246,12 +246,17 @@ body {
   color: $darkBrandPink;
 }
 
+.sponsor-content-detail-content-sponsor-card:not(:last-child) {
+  @media (min-width: $mobileWidth) {
+    margin-right: 10px;
+  }
+}
+
 .sponsor-content-detail- {
   &event-bananas {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
-    grid-column-gap: 50px;
     grid-row-gap: 50px;
 
     @media (max-width: $mobileWidth) {
@@ -263,6 +268,12 @@ body {
       grid-row-gap: 10px;
       justify-content: center;
       justify-items: center;
+
+      &:not(:last-child) {
+        @media (min-width: $mobileWidth) {
+          margin-right: 50px;
+        }
+      }
 
       .location {
         &-pink {
