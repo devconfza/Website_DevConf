@@ -3,10 +3,10 @@
   Url: https://www.offerzen.com
   Logo: offerzendiamond.jpg
 
-# - Level: Platinum
-#   Name: SUSE
-#   Url: https://www.suse.com/
-#   Logo: suseplatinum.png 
+- Level: Platinum
+  Name: Paystack
+  Url: https://www.paystack.com/
+  Logo: paystackplat.jpg
 
 # - Level: Platinum
 #   Name: VALR

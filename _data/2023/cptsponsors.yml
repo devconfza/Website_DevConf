@@ -8,10 +8,10 @@
   Url: https://www.flowgear.net
   Logo: flowgearplat.jpg
 
-# - Level: Platinum
-#   Name: Kurtosys System
-#   Url: https://www.kurtosys.com/
-#   Logo: kurtosysplat.jpg
+- Level: Platinum
+  Name: Paystack
+  Url: https://www.paystack.com/
+  Logo: paystackplat.jpg
 
 - Level: Gold
   Name: Allan Gray
