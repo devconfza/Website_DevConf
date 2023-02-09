@@ -23,20 +23,11 @@
   Url: https://www.valr.com/about-us
   Logo: valrgold.jpg
 
-# - Level: Gold
-#   Name: Peach Payments
-#   Url: https://www.peachpayments.com/
-#   Logo: peachpaymentsgold.jpg
-
+# When payment is made
 # - Level: Silver
-#   Name: Entersekt 
-#   Url: https://www.entersekt.com/
-#   Logo: entersektsilver.jpg
-
-# - Level: Silver
-#   Name: PayFast 
-#   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
-#   Logo: payfastsilver.jpg
+#   Name: BET Software
+#   Url: https://www.betsoftware.com
+#   Logo: betsilver.jpg
 
 - Level: Silver
   Name: Obsidian Systems
@@ -52,11 +43,6 @@
   Name: Thinkst Canary
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
-
-# - Level: Silver
-#   Name: VALR
-#   Url: https://www.valr.com/
-#   Logo: valrsilver.jpg
 
 # - Level: Registration
 #   Name: Red Hat 

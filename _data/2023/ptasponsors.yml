@@ -8,11 +8,6 @@
   Url: https://www.paystack.com/
   Logo: paystackplat.jpg
 
-# - Level: Platinum
-#   Name: VALR
-#   Url: https://www.valr.com/
-#   Logo: valrplatinum.jpg  
-
 - Level: Gold
   Name: Agile Bridge
   Url: https://www.agilebridge.co.za/
@@ -28,25 +23,11 @@
   Url: https://www.valr.com/about-us
   Logo: valrgold.jpg
 
+# When payment is made
 # - Level: Silver
-#   Name: Agile Bridge 
-#   Url: https://www.agilebridge.co.za/
-#   Logo: agilebridgesilver.jpg
-
-# - Level: Silver
-#   Name: Microsoft 
-#   Url: https://www.microsoft.com
-#   Logo: microsoftsilver.jpg
-
-# - Level: Silver
-#   Name: PayFast 
-#   Url: https://www.payfast.co.za/?utm_source=devconf&utm_medium=logo&utm_campaign=dev_conf
-#   Logo: payfastsilver.jpg
-
-# - Level: Silver
-#   Name: Red Hat 
-#   Url: https://www.redhat.com/
-#   Logo: redhatsilver.jpg  
+#   Name: BET Software
+#   Url: https://www.betsoftware.com
+#   Logo: betsilver.jpg
 
 - Level: Silver
   Name: RadixTrie
@@ -58,10 +39,11 @@
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
 
+# To only announce when they they ok it
 # - Level: Registration
-#   Name: Blue Bean Software
-#   Url: https://web.bluebeansoftware.com/
-#   Logo: bluebeanregistration.jpg
+#   Name: Bob Group
+#   Url: https://www.bob.co.za/ 
+#   Logo: bobregistration.jpg
 
 # - Level: Refreshment
 #   Name: Paystack
