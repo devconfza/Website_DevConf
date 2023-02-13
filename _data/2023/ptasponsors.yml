@@ -38,11 +38,10 @@
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
 
-# To only announce when they they ok it
-# - Level: Registration
-#   Name: Bob Group
-#   Url: https://www.bob.co.za/ 
-#   Logo: bobregistration.jpg
+- Level: Registration
+  Name: Bob Group
+  Url: https://www.bob.co.za/ 
+  Logo: bobregistration.jpg
 
 # - Level: Refreshment
 #   Name: Paystack
