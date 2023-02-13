@@ -3,6 +3,12 @@
   Url: https://www.offerzen.com
   Logo: offerzendiamond.jpg
 
+# awaiting logo
+# - Level: Platinum
+#   Name: Betway
+#   Url: https://www.osiristrading.com  
+#   Logo: betwayplat.jpg
+
 - Level: Platinum
   Name: Paystack
   Url: https://www.paystack.com/
@@ -27,6 +33,11 @@
   Name: BET Software
   Url: https://www.betsoftware.com
   Logo: betsilver.jpg
+
+- Level: Silver
+  Name: Payfast by Network
+  Url: https://payfast.io/
+  Logo: payfastsilver.jpg
 
 - Level: Silver
   Name: RadixTrie

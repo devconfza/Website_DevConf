@@ -19,6 +19,11 @@
   Logo: allangraygold.jpg
 
 - Level: Gold
+  Name: Equal Experts 
+  Url: https://www.equalexperts.com/
+  Logo: equalexpertsgold.jpg  
+
+- Level: Gold
   Name: VALR 
   Url: https://www.valr.com/about-us
   Logo: valrgold.jpg
@@ -34,6 +39,11 @@
   Logo: obsidiansilver.jpg
 
 - Level: Silver
+  Name: Payfast by Network
+  Url: https://payfast.io/
+  Logo: payfastsilver.jpg
+
+- Level: Silver
   Name: RadixTrie
   Url: https://www.radixtrie.com
   Logo: radixtriesilver.jpg
@@ -42,6 +52,11 @@
   Name: Thinkst Canary
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
+
+- Level: Workshop
+  Name: Equal Experts 
+  Url: https://www.equalexperts.com/
+  Logo: equalexpertsworkshop.jpg  
 
 # - Level: Registration
 #   Name: Red Hat 
