@@ -23,11 +23,10 @@
   Url: https://www.valr.com/about-us
   Logo: valrgold.jpg
 
-# When payment is made
-# - Level: Silver
-#   Name: BET Software
-#   Url: https://www.betsoftware.com
-#   Logo: betsilver.jpg
+- Level: Silver
+  Name: BET Software
+  Url: https://www.betsoftware.com
+  Logo: betsilver.jpg
 
 - Level: Silver
   Name: Obsidian Systems
