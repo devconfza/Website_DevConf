@@ -3,11 +3,10 @@
   Url: https://www.offerzen.com
   Logo: offerzendiamond.jpg
 
-# awaiting logo
-# - Level: Platinum
-#   Name: Betway
-#   Url: https://www.osiristrading.com  
-#   Logo: betwayplat.jpg
+- Level: Platinum
+  Name: Betway
+  Url: https://www.osiristrading.com  
+  Logo: betwayplat.jpg
 
 - Level: Platinum
   Name: Paystack
