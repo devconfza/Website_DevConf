@@ -1,12 +1,13 @@
 events:
   - virtual: false
     show: true
+    showAgenda: false
     location: "Cape Town"
     menuTitle: "Cape Town"
     date: "23 May 2023"
     info: "/capetown"
     infoOn: true
-    sessionizeId: ""
+    sessionizeId: "3hwiocdj"
     logo: devconfcpt.png
     minattendees: 500
     venue: "Cape Town International Convention Centre 2"
@@ -26,19 +27,35 @@ events:
         price: 2699  
         sold_out: true  
     rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5" 
+      room_1: "Hall 5"
+      room_2: "Watsonia"
+      room_3: "Bluebell"
+      room_4: "Daisy + Freesia + Orchid"
+      room_5: "Nerina + Protea" 
+    workshops:
+      workshop1:
+        announceSponsor: false
+        sponsor: 
+        sponsorLink: 
+        title: Morning Workshop
+        content: To be announced
+        room: Workshop Space in Expo
+      workshop2:
+        announceSponsor: true
+        sponsor: Equal Experts
+        sponsorLink: https://www.equalexperts.com/
+        title: Afternoon Workshop
+        content: To be announced
+        room: Workshop Space in Expo
   - virtual: false
     show: true
+    showAgenda: false
     location: "Pretoria"
     menuTitle: "Pretoria"
     date: "25 May 2023"
     info: "/pretoria"
     infoOn: true
-    sessionizeId: ""
+    sessionizeId: "3hwiocdj"
     logo: devconfpta.png
     minattendees: 500
     venue: "CSIR International Conference Centre"
@@ -58,8 +75,23 @@ events:
         price: 2699  
         sold_out: true     
     rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5" 
+      room_1: "Diamond"
+      room_2: "Amber"
+      room_3: "Amethyst"
+      room_4: "Ruby"
+      room_5: "Emerald" 
+    workshops:
+      workshop1:
+        announceSponsor: true
+        sponsor: cloudandthings.io 
+        sponsorLink: https://cloudandthings.io
+        title: Morning Workshop
+        content: To be announced
+        room: Workshop Space
+      workshop2:
+        announceSponsor: false
+        sponsor: 
+        sponsorLink: 
+        title: Afternoon Workshop
+        content: To be announced
+        room: Workshop Space

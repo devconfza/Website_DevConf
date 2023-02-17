@@ -8,6 +8,7 @@
 
   $titleHeight: 300px;
 
+  overflow-x: clip;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: $titleHeight repeat(5, auto);
@@ -365,7 +366,7 @@
       padding-top: 10px;
       font-weight: 800;
       font-size: 2rem;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       text-align: center;
 
       &-smaller {

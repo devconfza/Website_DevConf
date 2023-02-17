@@ -1,18 +1,139 @@
 @import "variables.scss";
 
 #agenda {
+  width: 100%;
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
   row-gap: 3px;
-  // padding-top: 30px;
+  column-gap: 5px;
   padding-bottom: 5px;
   padding-left: 2%;
   padding-right: 2%;
+  grid-template-rows: repeat(33, min-content);
+  grid-template-columns: 1fr 250px;
+  grid-template-areas:
+    "registration registration"
+    "expo expo"
+    "welcome welcome"
+    "keynote keynote"
+    "loading1 loading1"
+    "break1 break1"
+    "timeslot1 workshoptime1"
+    "session1 workshop10"
+    "loading2 workshop10"
+    "movement1 workshop10"
+    "timeslot2 workshop10"
+    "session2 workshop10"
+    "loading3 workshop10"
+    "lunch lunch"
+    "timeslot3 workshoptime2"
+    "session3 workshop11"
+    "loading4 workshop11"
+    "movement2 movement2"
+    "timeslot4 ."
+    "session4 ."
+    "loading5 ."
+    "movement3 movement3"
+    "timeslot5 workshoptime3"
+    "session5 workshop20"
+    "loading6 workshop20"
+    "break2 break2"
+    "timeslot6 workshoptime4"
+    "session6 workshop21"
+    "loading7 workshop21"
+    "movement4 workshop21"
+    "timeslot7 workshop21"
+    "session7 workshop21"
+    "cocktail cocktail";
+
+  @media (max-width: $mobileWidth) {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "registration"
+      "expo"
+      "welcome"
+      "keynote"
+      "loading1"
+      "break1"
+      "timeslot1"
+      "session1"
+      "loading2"
+      "movement1"
+      "timeslot2"
+      "session2"
+      "loading3 "
+      "lunch"
+      "timeslot3"
+      "session3"
+      "loading4"
+      "movement2"
+      "timeslot4"
+      "session4"
+      "loading5"
+      "movement3"
+      "timeslot5"
+      "session5"
+      "loading6"
+      "break2"
+      "timeslot6"
+      "session6"
+      "loading7"
+      "movement4"
+      "timeslot7"
+      "session7"
+      "cocktail"
+      "workshoptitle"
+      "workshoptime1"
+      "workshop10"
+      "workshoptime2"
+      "workshop11"
+      "workshoptime3"
+      "workshop20"
+      "workshoptime4"
+      "workshop21";
+  }
 }
 
 .agenda > .hidden-row {
   display: none;
+}
+
+.agenda-workshop-sponsor a {
+  color: $darkBrandBlue;
+
+  &:hover {
+    color: lighten($darkBrandBlue, 10%);
+  }
+}
+
+.agenda-workshop-title {
+  display: none;
+
+  @media (max-width: $mobileWidth) {
+    display: grid;
+  }
+}
+
+.agenda-workshop-time {
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: 800;
+  color: #001e5b;
+}
+
+.agenda-workshop-content {
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+.agenda-workshop {
+  background-color: #0479a0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  justify-self: stretch;
 }
 
 @mixin full-agenda-row($bgcolour) {
