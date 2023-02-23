@@ -89,9 +89,9 @@ events:
         content: To be announced
         room: Workshop Space
       workshop2:
-        announceSponsor: false
-        sponsor: 
-        sponsorLink: 
+        announceSponsor: true
+        sponsor: Runninghill Software Development (Pty)Ltd 
+        sponsorLink: https://www.runninghill.co.za 
         title: Afternoon Workshop
         content: To be announced
         room: Workshop Space
