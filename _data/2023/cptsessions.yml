@@ -2,15 +2,15 @@
 - id: 000000
   
 # Slot one
-- id: 000000 
-- id: 000000 
-- id: 000000
+- id: 431089 
+- id: 404856 
+- id: 410736
 - id: 000000
 - id: 000000
   
 # Slot two
 - id: 000000 # Diamond 1
-- id: 000000 
+- id: 424951 
 - id: 419273
 - id: 000000
 - id: 000000
@@ -20,7 +20,7 @@
 - id: 000000 # Plat 1
 - id: 413330 
 - id: 000000
-- id: 000000 
+- id: 424713 
   
 # Slot Four
 - id: 000000 
@@ -32,12 +32,12 @@
 # Slot Five
 - id: 000000
 - id: 427242
-- id: 000000 
+- id: 429688 
 - id: 000000 # gold 1
-- id: 000000
+- id: 414282
   
 # Slot Six
-- id: 000000
+- id: 424218
 - id: 430384
 - id: 000000 # gold 2
 - id: 427230 
@@ -48,5 +48,5 @@
 - id: 000000 # gold 3
 - id: 408986 
 - id: 000000
-- id: 000000 # Remember this is different in each city
+- id: 431226 # Remember this is different in each city
   
