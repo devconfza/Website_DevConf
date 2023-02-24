@@ -302,7 +302,7 @@
   cursor: pointer;
 
   @media (max-width: $mobileWidth) {
-    grid-template-rows: 0 auto auto;
+    grid-template-rows: repeat(3, min-content);
   }
 }
 
