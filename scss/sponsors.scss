@@ -54,6 +54,7 @@
   }
 
   @mixin titleBlock($brandColour) {
+    width: 100%;
     background-color: $brandColour;
 
     overflow: hidden;

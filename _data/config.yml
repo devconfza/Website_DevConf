@@ -28,10 +28,10 @@ events:
         sold_out: true  
     rooms: 
       room_1: "Hall 5"
-      room_2: "Watsonia"
-      room_3: "Bluebell"
-      room_4: "Daisy + Freesia + Orchid"
-      room_5: "Nerina + Protea" 
+      room_2: "Daisy + Freesia + Orchid"
+      room_3: "Nerine + Protea"
+      room_4: "Watsonia"
+      room_5: "Bluebell" 
     workshops:
       workshop1:
         announceSponsor: false
@@ -75,11 +75,11 @@ events:
         price: 2699  
         sold_out: true     
     rooms: 
-      room_1: "Diamond"
+      room_1: "Diamond Auditorium"
       room_2: "Amber"
       room_3: "Amethyst"
-      room_4: "Ruby"
-      room_5: "Emerald" 
+      room_4: "Ruby Auditorium"
+      room_5: "Emerald Auditorium" 
     workshops:
       workshop1:
         announceSponsor: true
