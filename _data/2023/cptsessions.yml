@@ -12,8 +12,8 @@
 - id: 000000 # Diamond 1
 - id: 424951 
 - id: 419273
-- id: 000000
-- id: 000000
+- id: 420520
+- id: 427230
   
 # Slot Three
 - id: 000000 
@@ -40,13 +40,13 @@
 - id: 424218
 - id: 430384
 - id: 000000 # gold 2
-- id: 427230 
+- id: 000000 
 - id: 417259
 
 # Slot Seven
 - id: 000000
 - id: 000000 # gold 3
 - id: 408986 
-- id: 000000
+- id: 430729
 - id: 431226 # Remember this is different in each city
   
