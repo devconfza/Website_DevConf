@@ -47,7 +47,7 @@
     "session7 workshop21"
     "cocktail cocktail";
 
-  @media (max-width: $mobileWidth) {
+  @media (max-width: $workshopMoveBelowWidth) {
     grid-template-rows: unset;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -111,7 +111,7 @@
 .agenda-workshop-title {
   display: none;
 
-  @media (max-width: $mobileWidth) {
+  @media (max-width: $workshopMoveBelowWidth) {
     display: grid;
   }
 }
@@ -140,30 +140,32 @@
   background-color: $bgcolour;
   display: grid;
   justify-self: stretch;
-  text-align: center;
   color: white;
   border-radius: 5px;
   padding: 5px;
   grid-auto-flow: column;
-  justify-content: space-between;
+  justify-content: stretch;
 }
 
 .agenda-row-style-break {
   @include full-agenda-row(#ed3259);
   padding: 10px;
   font-size: 0.8rem;
+  grid-template-columns: max-content max-content 1fr max-content max-content;
 }
 
 .agenda-row-style-key {
   @include full-agenda-row(#990020);
   font-size: 0.8rem;
   padding: 10px;
+  grid-template-columns: max-content max-content 1fr max-content max-content;
 }
 
 .agenda-row-style-highlight {
   @include full-agenda-row($brandPink);
   font-size: 1rem;
   padding: 10px;
+  grid-template-columns: max-content max-content 1fr max-content max-content;
 }
 
 .agenda-row-style-keynote {
@@ -181,10 +183,6 @@
   row-gap: 3px;
   column-gap: 5px;
 
-  @media (max-width: 1114px) {
-    grid-template-columns: repeat(5, 150px);
-  }
-
   @media (max-width: $mobileWidth) {
     grid-auto-flow: row;
     grid-template-columns: auto;
@@ -200,11 +198,7 @@
   row-gap: 3px;
   column-gap: 5px;
 
-  @media (max-width: 1114px) {
-    grid-template-columns: repeat(6, 150px);
-  }
-
-  @media (max-width: 940px) {
+  @media (max-width: $mobileWidth) {
     grid-auto-flow: row;
     grid-template-columns: auto;
   }
@@ -219,12 +213,9 @@
   color: white;
   text-align: center;
   padding: 10px;
-  grid-template-rows: 35px 20px 170px 50px;
-  @media (max-width: 1114px) {
-    grid-template-rows: 35px 20px 170px 50px;
-  }
+  grid-template-rows: 55px 20px 170px 50px;
 
-  @media (max-width: 940px) {
+  @media (max-width: $mobileWidth) {
     grid-template-rows: repeat(3, auto);
   }
 }
@@ -237,6 +228,7 @@
 .agenda-session-room {
   font-size: 0.8rem;
   margin: 3px;
+  align-self: center;
 }
 
 .agenda-session-time {
@@ -274,11 +266,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-
-  @media (max-width: 1114px) {
-    width: 100px;
-    height: 100px;
-  }
 
   @media (max-width: $mobileWidth) {
     display: none;
@@ -511,7 +498,33 @@
   justify-self: stretch;
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
+  grid-template-columns: max-content max-content 1fr max-content max-content;
   padding: 5px;
   font-size: 1rem;
+}
+
+.time-from-time {
+  text-align: left;
+}
+
+.time-from-arrow {
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 0.97;
+}
+
+.time-title {
+  text-align: center;
+}
+
+.time-to-arrow {
+  text-align: right;
+  margin-left: 10px;
+  margin-right: 5px;
+  line-height: 0.97;
+}
+
+.time-to-time {
+  text-align: right;
 }

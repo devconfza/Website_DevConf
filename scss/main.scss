@@ -3,6 +3,11 @@
 @import "sponsors.scss";
 @import "agenda.scss";
 
+@font-face {
+  font-family: "Armata";
+  src: url("/public/Armata-Regular.ttf");
+}
+
 span.third {
   color: $brandThird;
 }
@@ -190,43 +195,9 @@ body {
 
   .intro {
     font-size: 0.8rem;
-    max-width: 52%;
     line-height: 1.5rem;
-
-    @media (max-width: $mobileWidth) {
-      max-width: 90%;
-    }
+    width: 100%;
   }
-
-  // .CFPSection {
-  //     display: grid;
-  //     justify-items: center;
-
-  //     .cfpbutton {
-  //         background-color: #fc003d;
-  //         color: white;
-  //         border-radius: 30px;
-  //         padding-bottom: 8px;
-  //         padding-left: 15px;
-  //         padding-right: 15px;
-  //         border-width: 2px;
-  //         border-style: solid;
-  //         border-color: white;
-
-  //         &:hover {
-  //             background-color: #6d001b;
-  //             border-color: #fc003d;
-  //         }
-
-  //         a {
-  //             color: white;
-  //         }
-
-  //         p.cfpTimeline {
-  //             font-size: 0.8rem;
-  //         }
-  //     }
-  // }
 }
 
 .content {

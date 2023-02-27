@@ -71,7 +71,6 @@
                         payment terms?<br />
                         <strong>No problem</strong> - we can assist with a manual ticket purchase
                     </div>
-                    <!-- <div>Purchase 10 or more to get a discount!</div> -->
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.price }} ex. vat<br />
                         <small>R{{ event.tickets.fullprice.price | times:1.15 | floor }} incl. vat</small>
@@ -96,24 +95,33 @@
         {% if event.showAgenda %}
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key" style="grid-area: registration;">
-                07h30 →
-                <b>Registration</b>
-                ← 09h00
+                <span class="time-from-time">07h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Registration</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">09h00</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: expo;">
-                08h00 →
-                <b>Expo Opens</b>
-                ← 19h00
+                <span class="time-from-time">08h00</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Expo Opens</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">19h00</span>
             </div>
             <div class="agenda-row-style-highlight" style="grid-area: welcome;">
-                09h00 →
-                <b>Welcome</b>
-                ← 09h15
+                <span class="time-from-time">09h00</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Welcome</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">09h15</span>
             </div>
             <div class="agenda-row-style-keynote hidden-row" style="grid-area: keynote;">
-                <div class="agenda-session-header">09h15 →
-                    <b>Keynote</b>
-                    ← 10h30
+                <div class="agenda-session-header">
+                    <span class="time-from-time">09h15</span>
+                    <span class="time-from-arrow">→</span>
+                    <b class="time-title">Keynote</b>
+                    <span class="time-to-arrow">←</span>
+                    <span class="time-to-time">10h30</span>
                 </div>
                 <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}"
                     data-remote="{{ include.sessions[0].remote }}"></div>
@@ -122,14 +130,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: break1;">
-                10h00 →
-                <b>Movement, Networking &amp; Refreshements</b>
-                ← 10h30
+                <span class="time-from-time">10h00</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement, Networking &amp; Refreshements</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">10h30</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot1;">
-                10h30 →
-                <b>Timeslot 1</b>
-                ← 11h10
+                <span class="time-from-time">10h30 </span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 1</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">11h10</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session1;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[1].id }}"
@@ -166,14 +178,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: movement1;">
-                11h10 →
-                <b>Movement</b>
-                ← 11h20
+                <span class="time-from-time">11h10</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">11h20</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot2;">
-                11h20 →
-                <b>Timeslot 2</b>
-                ← 12h00
+                <span class="time-from-time">11h20</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 2</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">12h00</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[6].id }}"
@@ -209,14 +225,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: lunch;">
-                12h00 →
-                <b>Lunch</b>
-                ← 12h50
+                <span class="time-from-time">12h00</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Lunch</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">12h50</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot3;">
-                12h50 →
-                <b>Timeslot 3</b>
-                ← 13h30
+                <span class="time-from-time">12h50</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 3</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">13h30</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session3;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[11].id }}"
@@ -252,14 +272,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: movement2;">
-                13h30 →
-                <b>Movement</b>
-                ← 13h40
+                <span class="time-from-time">13h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">13h40</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot4;">
-                13h40 →
-                <b>Timeslot 4</b>
-                ← 14h20
+                <span class="time-from-time">13h40</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 4</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">14h20</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session4;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}"
@@ -292,14 +316,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: movement3;">
-                14h20 →
-                <b>Movement</b>
-                ← 14h30
+                <span class="time-from-time">14h20</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">14h30</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot5;">
-                14h30 →
-                <b>Timeslot 5</b>
-                ← 15h10
+                <span class="time-from-time">14h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 5</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">15h10</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session5;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[21].id }}"
@@ -334,14 +362,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: break2;">
-                15h10 →
-                <b>Movement, Networking &amp; Refreshments</b>
-                ← 15h40
+                <span class="time-from-time">15h10</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement, Networking &amp; Refreshments</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">15h40</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot6;">
-                15h40 →
-                <b>Timeslot 6</b>
-                ← 16h20
+                <span class="time-from-time">15h40</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 6</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">16h20</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session6;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[26].id }}"
@@ -374,14 +406,18 @@
                 Loading...
             </div>
             <div class="agenda-row-style-break" style="grid-area: movement4;">
-                16h20 →
-                <b>Movement</b>
-                ← 16h30
+                <span class="time-from-time">16h20</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Movement</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">16h30</span>
             </div>
             <div class="agenda-row-style-key" style="grid-area: timeslot7;">
-                16h30 →
-                <b>Timeslot 7</b>
-                ← 17h10
+                <span class="time-from-time">16h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Timeslot 7</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">17h10</span>
             </div>
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session7;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[31].id }}"
@@ -411,17 +447,22 @@
                 </div>
             </div>
             <div class="agenda-row-style-key" style="grid-area: cocktail;">
-                17h10 →
-                <b>Drinks &amp; networking</b>
-                ← 19h00
+                <span class="time-from-time">17h10</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Drinks &amp; networking</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">19h00</span>
             </div>
 
-            <div class="sponsor-content-detail-heading agenda-workshop-title" style="grid-area: workshoptitle;">Workshops</div>
+            <div class="sponsor-content-detail-heading agenda-workshop-title" style="grid-area: workshoptitle;">
+                Workshops</div>
 
             <div class="agenda-row-style-key" style="grid-area: workshoptime1;">
-                10h30 →
-                <b>Workshop</b>
-                ← 12h10
+                <span class="time-from-time">10h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Workshop</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">12h10</span>
             </div>
             <div class="agenda-workshop" style="grid-area: workshop10;">
                 <h3>{{ event.workshops.workshop1.title }}</h3>
@@ -437,9 +478,11 @@
             </div>
 
             <div class="agenda-row-style-key" style="grid-area: workshoptime2;">
-                12h30 →
-                <b>Workshop</b>
-                ← 13h3
+                <span class="time-from-time">12h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Workshop</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">13h30</span>
             </div>
             <div class="agenda-workshop" style="grid-area: workshop11;">
                 <h3>{{ event.workshops.workshop1.title }}</h3>
@@ -455,9 +498,11 @@
             </div>
 
             <div class="agenda-row-style-key" style="grid-area: workshoptime3;">
-                14h30 →
-                <b>Workshop</b>
-                ← 15h10
+                <span class="time-from-time">14h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Workshop</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">15h10</span>
             </div>
             <div class="agenda-workshop" style="grid-area: workshop20;">
                 <h3>{{ event.workshops.workshop2.title }}</h3>
@@ -473,9 +518,11 @@
             </div>
 
             <div class="agenda-row-style-key" style="grid-area: workshoptime4;">
-                15h30 →
-                <b>Workshop</b>
-                ← 17h20
+                <span class="time-from-time">15h30</span>
+                <span class="time-from-arrow">→</span>
+                <b class="time-title">Workshop</b>
+                <span class="time-to-arrow">←</span>
+                <span class="time-to-time">17h20</span>
             </div>
             <div class="agenda-workshop" style="grid-area: workshop21;">
                 <h3>{{ event.workshops.workshop2.title }}</h3>
@@ -520,14 +567,12 @@
                 </div>
             </div>
             {% endfor %}
-            {% comment %}
-            <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div>
-            <div>&nbsp;</div>
+            <!-- <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div> -->
+            <!-- <div>&nbsp;</div> -->
             <div class="sponsor-content-detail-email" role="button">
                 <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor
                     Proposal now!</a>
             </div>
-            {% endcomment %}
         </div>
         {% else %}
         <div class="sponsor-content-detail-heading">Sponsorship coming soon</div>
