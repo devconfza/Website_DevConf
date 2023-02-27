@@ -135,8 +135,17 @@
       &-second {
         width: 100%;
         font-size: 1.5rem;
-        padding-left: 10%;
-        padding-right: 10%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(5, auto);
+        align-items: center;
+        justify-items: stretch;
+        text-align: center;
+
+        @media (max-width: 600px) {
+          grid-auto-flow: row;
+          grid-template-columns: unset;
+        }
       }
 
       &-third {
