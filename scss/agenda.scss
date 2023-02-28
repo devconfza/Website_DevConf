@@ -180,7 +180,6 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
-  justify-self: stretch;
   row-gap: 3px;
   column-gap: 5px;
 
@@ -251,6 +250,7 @@
 
 .agenda-session-image {
   padding: 10px;
+  max-width: 150px;
 }
 
 .agenda-session-remote {
@@ -264,8 +264,7 @@
 }
 
 .speaker-image {
-  width: 150px;
-  height: 150px;
+  width: 100%;
   border-radius: 50%;
 
   @media (max-width: $mobileWidth) {
