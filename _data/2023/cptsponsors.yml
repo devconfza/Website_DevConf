@@ -68,10 +68,10 @@
   Url: https://www.equalexperts.com/
   Logo: equalexpertsworkshop.jpg  
 
-# - Level: Registration
-#   Name: Red Hat 
-#   Url: https://www.redhat.com/
-#   Logo: redhatregistration.jpg  
+- Level: Registration
+  Name: Mobiquity B.V.
+  Url: https://www.mobiquity.com 
+  Logo: mobiquityregistration.jpg  
 
 # - Level: Refreshment
 #   Name: Paystack
