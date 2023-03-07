@@ -85,6 +85,23 @@ layout: default
 </div>
 
 <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
+    <div class="sponsor-content-detail-wide-body">
+        {% assign sponsorsByLevel = site.data["2023"]["cptsponsors"] | concat: site.data["2023"]["ptasponsors"] | group_by: 'Level' %}
+        {% for level in sponsorsByLevel %}
+        {% assign sponsors = level.items | sort: "Name" | uniq: "Name"%}
+        {% for sponsor in sponsors %}
+        <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
+            <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/2023/{{sponsor.Logo }}" />
+            </a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">DevConf in the media</div>
     <div class="sponsor-content-detail-media">
         {% for media in site.data.media limit: 6 %}

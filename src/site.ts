@@ -13,6 +13,21 @@ if (agendaPlaceholder) {
     }
 }
 
+const sponsorBlock = document.getElementsByClassName("sponsor-content-detail-wide-body")[0];
+if (sponsorBlock) {
+    let sponsorPosition = 0;
+
+    setInterval(() => {
+        sponsorPosition += 0.25;
+        if (sponsorPosition > sponsorBlock.scrollWidth) {
+            sponsorPosition = 0;
+        }
+        sponsorBlock.scrollTo(sponsorPosition, 0);
+    }, 10)
+}
+
+
+
 function loadEventSessions(id: String, target: HTMLElement) {
     let eventData: Sessionize.Event;
 

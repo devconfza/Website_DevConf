@@ -186,6 +186,23 @@
       }
     }
 
+    &-wide-body {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      display: flex;
+      grid-column-gap: 20px;
+      width: 100vw;
+
+      & img {
+        border-style: solid;
+        border-width: 1px;
+        border-color: $darkBrandPink;
+        padding: 5px;
+        background-color: white;
+        height: 150px;
+      }
+    }
+
     &-tickets {
       display: grid;
       justify-items: center;
@@ -203,13 +220,13 @@
         column-gap: 30px;
         align-content: center;
         grid-template-areas: "first second third";
-        
+
         @media (max-width: $mobileWidth) {
-          grid-template-areas: "first" 
-            "second" 
+          grid-template-areas:
+            "first"
+            "second"
             "third";
         }
-
 
         &-price {
           color: $brandPink;
