@@ -331,6 +331,7 @@
   overflow-y: auto;
   height: 500px;
   padding: 30px;
+  @include scrollbar();
 
   @media (max-width: $mobileWidth) {
     grid-template-columns: auto;

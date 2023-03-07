@@ -30,6 +30,15 @@
                 sessions, the amazing swag, lunch, snacks, and access to the post-conference event!</div>
             {% endif %}
             <div class="sponsor-content-detail-tickets-cards">
+                {% if event.tickets.totally_sold_out %}
+                <div style="grid-area: second;">
+                    <div>DevConf {{ event.location }} is<br/>SOLD OUT</div>
+                    <div>Unfortunately all tickets for the event are sold out. You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
+                
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.waiting_list }}"
+                        target="_blank">Join the waiting list</a>
+                </div>
+                {% else %}
                 <div>
                     <div>Early Bird Tickets</div>
                     <div>The best priced ticket, but <i>extremely</i> limited!</div>
@@ -85,6 +94,7 @@
                     {% endif %}
                     {% endif %}
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>

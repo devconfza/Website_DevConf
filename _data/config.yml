@@ -19,6 +19,8 @@ events:
     colour: blue
     tickets:
       onsale: true
+      totally_sold_out: false
+      waiting_list: 
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       fullprice:
         price: 2999
@@ -66,7 +68,9 @@ events:
     sponsorOpen: true
     colour: pink
     tickets:
+      totally_sold_out: true
       onsale: true
+      waiting_list: https://forms.office.com/r/KZXA0XQXrf
       purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
       fullprice:
         price: 2999

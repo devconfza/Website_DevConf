@@ -49,6 +49,7 @@ body {
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.03rem;
+  @include scrollbar();
 }
 
 @mixin iframe() {
@@ -283,7 +284,10 @@ body {
   }
 
   &collapse {
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &workshop {

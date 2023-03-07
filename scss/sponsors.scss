@@ -202,6 +202,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         align-content: center;
+        grid-template-areas: "first second third";
+        
+        @media (max-width: $mobileWidth) {
+          grid-template-areas: "first" 
+            "second" 
+            "third";
+        }
+
 
         &-price {
           color: $brandPink;
@@ -219,7 +227,8 @@
           row-gap: 5px;
           justify-items: center;
           background-color: #f4f4f4;
-          padding: 20px;
+          padding: 10px;
+          border-radius: 5px;
 
           > div {
             &:nth-child(1) {
