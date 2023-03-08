@@ -17,7 +17,7 @@
   
 # Slot Three
 - id: 424847 
-- id: 000000 # Plat 1
+- id: 429080 # gold 3 - obsidian
 - id: 413330 
 - id: 427828
 - id: 424713 
@@ -33,19 +33,19 @@
 - id: 431500
 - id: 427242
 - id: 429688 
-- id: 453060 # gold 1 - agilebridge
+- id: 000000 # Plat 1
 - id: 414282
   
 # Slot Six
 - id: 424218
 - id: 430384
-- id: 430666 # gold 2 - valr
+- id: 453060 # gold 1 - agilebridge
 - id: 403301 
 - id: 417259
 
 # Slot Seven
 - id: 424363
-- id: 000000 # gold 3
+- id: 430666 # gold 2 - valr
 - id: 408986 
 - id: 430729
 - id: 427347 # Remember this is different in each city
