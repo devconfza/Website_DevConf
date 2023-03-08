@@ -26,7 +26,24 @@ if (sponsorBlock) {
     }, 10)
 }
 
+// const youtubeSection = document.getElementById("youtubeSection");
+// if (youtubeSection) {
+//     fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=40&playlistId=PLZgTMWtBnKkoLMiqqYd99f6StZovjxszG&key=AIzaSyBw1dUP0nQwOF8P6RRrPVqKGBXPK5Gl598`).then(async response => {
+//         if (response.ok) {
+//             document.getElementById("youtubeIframe")?.remove();
+//             const data = await response.json();
 
+//             data.items.forEach(element => {
+//                 const link = document.createElement("a");
+//                 link.href = `https://www.youtube.com/watch?${element.contentDetails.videoId}`
+//                 const image = document.createElement("img")
+//                 image.src = element.snippet.thumbnails.default.url;
+//                 link.append(image)
+//                 youtubeSection.append(link)
+//             });
+//         }
+//     });
+// }
 
 function loadEventSessions(id: String, target: HTMLElement) {
     let eventData: Sessionize.Event;
