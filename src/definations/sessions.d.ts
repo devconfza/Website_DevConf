@@ -61,4 +61,3 @@ export module Sessionize {
         rooms: Room[];
     }
 }
-
