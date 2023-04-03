@@ -25,7 +25,7 @@
 # Slot Four
 - id: 427288 
 - id: 428626
-- id: 000000 # Plat 1
+- id: 453060 # gold 1 - agilebridge
 - id: 408237
 - id: 403000
   
@@ -33,13 +33,13 @@
 - id: 431500
 - id: 427242
 - id: 429688 
-- id: 460376 # Plat 2 - osiris
+- id: 469901 # Plat 1 - paystack
 - id: 414282
   
 # Slot Six
 - id: 424218
 - id: 430384
-- id: 453060 # gold 1 - agilebridge
+- id: 460376 # Plat 2 - osiris
 - id: 403301 
 - id: 417259
 
