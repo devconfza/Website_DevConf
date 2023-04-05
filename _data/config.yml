@@ -19,9 +19,11 @@ events:
     colour: blue
     tickets:
       onsale: true
-      totally_sold_out: false
-      waiting_list: 
+      totally_sold_out: true
+      has_shuttle: false
+      waiting_list: "https://forms.office.com/r/qVxjgmV94r"
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
+      merch_link: 
       fullprice:
         price: 2999
         sold_out: false
@@ -70,8 +72,10 @@ events:
     tickets:
       totally_sold_out: true
       onsale: true
+      has_shuttle: true
       waiting_list: https://forms.office.com/r/KZXA0XQXrf
       purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
+      merch_link: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria/?preview=t#/merchandise"
       fullprice:
         price: 2999
         sold_out: false

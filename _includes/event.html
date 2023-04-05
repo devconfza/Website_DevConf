@@ -31,12 +31,28 @@
             {% endif %}
             <div class="sponsor-content-detail-tickets-cards">
                 {% if event.tickets.totally_sold_out %}
+                {% if event.tickets.has_shuttle %}
+                <div style="grid-area: first;">
+                    <div>SERVICE BUS! Want to arrive in style?</div>
+                    <div>For the first time ever, we have a DevConf Shuttle to the venue! The shuttle is from Monte Casino Johannesburg to the venue and returns in the evening after the event.</div>
+                
+                    <a class="sponsor-button" rel="noopener" href="{{ event.tickets.merch_link }}"
+                        target="_blank">Buy a bus ticket for R100</a>
+                </div>
+                {% endif %}
                 <div style="grid-area: second;">
                     <div>DevConf {{ event.location }} is<br/>SOLD OUT</div>
                     <div>Unfortunately all tickets for the event are sold out. You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
                 
-                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.waiting_list }}"
+                    <a class="sponsor-button" rel="noopener" href="{{ event.tickets.waiting_list }}"
                         target="_blank">Join the waiting list</a>
+                </div>
+                <div style="grid-area: third;">
+                    <div>Need to update your ticket details?</div>
+                    <div>Need to complete your details on the ticket? Need to transfer it to someone else? You can do all of that by logging into Quicket!</div>
+                
+                    <a class="sponsor-button" rel="noopener" href="https://www.quicket.co.za/"
+                        target="_blank">Update your ticket</a>
                 </div>
                 {% else %}
                 <div>
