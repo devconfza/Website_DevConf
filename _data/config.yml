@@ -21,6 +21,7 @@ events:
       onsale: true
       totally_sold_out: true
       has_shuttle: false
+      has_waiting_list: true
       waiting_list: "https://forms.office.com/r/qVxjgmV94r"
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       merch_link: 
@@ -73,6 +74,7 @@ events:
       totally_sold_out: true
       onsale: true
       has_shuttle: true
+      has_waiting_list: false
       waiting_list: https://forms.office.com/r/KZXA0XQXrf
       purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
       merch_link: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria/?preview=t#/merchandise"
@@ -106,6 +108,6 @@ Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
         announceSponsor: true
         sponsor: Runninghill Software Development (Pty)Ltd 
         sponsorLink: https://www.runninghill.co.za 
-        title: Afternoon Workshop
+        title: "Game changing AI tools for full stack apps: Unleash your potential!"
         content: To be announced
         room: Workshop Space

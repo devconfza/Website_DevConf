@@ -42,11 +42,14 @@
                 {% endif %}
                 <div style="grid-area: second;">
                     <div>DevConf {{ event.location }} is<br/>SOLD OUT</div>
-                    <div>Unfortunately all tickets for the event are sold out. You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
+                    <div>Unfortunately all tickets for the event are sold out. 
+                        {% if event.tickets.has_waiting_list %}
+                        You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
                 
                     <a class="sponsor-button" rel="noopener" href="{{ event.tickets.waiting_list }}"
                         target="_blank">Join the waiting list</a>
 
+                        {% endif %}
                     <div class="soldOutFooter">Already have a ticket and need to update the details or transfer the ticket to someone else?<br/><a rel="noopener" href="https://www.quicket.co.za/"
                     target="_blank">Login to Quicket to manage your ticket</a></div>
                 </div>
