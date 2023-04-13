@@ -4,7 +4,7 @@
 # Slot one
 - id: 431089 
 - id: 404856 
-- id: 410736
+- id: 427288
 - id: 431631
 - id: 430722
   
@@ -23,30 +23,30 @@
 - id: 424713 
   
 # Slot Four
-- id: 427288 
+- id: 424363
 - id: 428626
-- id: 000000 # Plat 2
 - id: 408237
+- id: 478453 # gold 3 - EE
 - id: 403000
   
 # Slot Five
 - id: 431500
+- id: 430384
+- id: 478512 # Plat 2 - flowgear
 - id: 427242
-- id: 429688 
-- id: 416359 # gold 1 - allan grey
 - id: 414282
   
 # Slot Six
 - id: 424218
-- id: 430384
-- id: 430666 # gold 2 - valr
+- id: 416359 # gold 1 - allan grey
+- id: 429688 
 - id: 403301 
 - id: 417259
 
 # Slot Seven
-- id: 424363
-- id: 000000 # gold 3
-- id: 408986 
-- id: 430729
+- id: 408986
+- id: 430666 # gold 2 - valr
+- id: 410736
 - id: 431226 # Remember this is different in each city
+- id: 430729
   

@@ -93,8 +93,14 @@ events:
         announceSponsor: true
         sponsor: cloudandthings.io 
         sponsorLink: https://cloudandthings.io
-        title: Morning Workshop
-        content: To be announced
+        title: "Deploying a Serverless ChatGPT Bot"
+        content: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
+
+A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
+
+Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
+
+<strong>Attendees need to bring their own laptops</strong>."
         room: Workshop Space
       workshop2:
         announceSponsor: true
