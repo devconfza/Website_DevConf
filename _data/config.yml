@@ -49,8 +49,9 @@ events:
         announceSponsor: true
         sponsor: Equal Experts
         sponsorLink: https://www.equalexperts.com/
-        title: Afternoon Workshop
-        content: To be announced
+        title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
+        content: "We will be exploring the world of data engineering.<br/>
+<strong>Please bring alone your laptops for an exciting experience.</strong>"
         room: Workshop Space in Expo
   - virtual: false
     show: true
@@ -95,7 +96,7 @@ events:
         announceSponsor: true
         sponsor: cloudandthings.io 
         sponsorLink: https://cloudandthings.io
-        title: "Deploying a Serverless ChatGPT Bot"
+        title: "Deploying a Serverless ChatGPT Bot with Devan Barwood"
         content: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
 
 A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
