@@ -43,15 +43,18 @@ events:
         sponsor: 
         sponsorLink: 
         title: Morning Workshop
-        content: To be announced
+        content1: To be announced
+        content2: To be announced
         room: Workshop Space in Expo
       workshop2:
         announceSponsor: true
         sponsor: Equal Experts
         sponsorLink: https://www.equalexperts.com/
         title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
-        content: "We will be exploring the world of data engineering.<br/>
-<strong>Please bring alone your laptops for an exciting experience.</strong>"
+        content1: "We will be exploring the world of data engineering.<br/>
+<strong>Please bring along your laptops for an exciting experience.</strong>"
+        content2: "We will be exploring the world of data engineering.<br/>
+<strong>Please bring along your laptops for an exciting experience.</strong>"
         room: Workshop Space in Expo
   - virtual: false
     show: true
@@ -97,7 +100,14 @@ events:
         sponsor: cloudandthings.io 
         sponsorLink: https://cloudandthings.io
         title: "Deploying a Serverless ChatGPT Bot with Devan Barwood"
-        content: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
+        content1: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
+
+A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
+
+Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
+
+<strong>Attendees need to bring their own laptops</strong>."
+        content2: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
 
 A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
 
@@ -110,5 +120,19 @@ Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
         sponsor: Runninghill Software Development (Pty)Ltd 
         sponsorLink: https://www.runninghill.co.za 
         title: "Game changing AI tools for full stack apps: Unleash your potential!"
-        content: To be announced
+        content1: "<strong>Introduction</strong><br/>Explanation of workshop goals and objectives.<br/>
+Overview of the benefits of using AI tools in full stack app development.<br/><br/>
+<strong>All attendees to please bring their laptops!</strong>"
+        content2: "<strong>Understanding AI Tools for Full Stack App Development</strong><br/>
+Explanation of what AI tools are and how they can be used in full stack app development.<br/>
+Overview of the different types of AI tools available for full stack app development.<br/>
+<br/><strong>Hands-On Session: Using AI Tools in Full Stack App Development</strong><br/>
+Participants will work on a guided exercise to use AI tools for full stack app development.<br/>
+Participants will learn how to use AI tools to improve their development process.<br/>
+<br/><strong>Best Practices for Using AI Tools in Full Stack App Development</strong><br/>
+Overview of best practices for using AI tools in full stack app development.<br/>
+Discussion of how AI tools can improve productivity and creativity in full stack app development.<br/>
+<br/><strong>Conclusion</strong><br/>
+Recap of workshop topics and discussion of next steps.<br/>
+Q&A session with workshop participants."
         room: Workshop Space
