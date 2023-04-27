@@ -21,7 +21,7 @@ events:
       onsale: true
       totally_sold_out: true
       has_shuttle: false
-      has_waiting_list: true
+      has_waiting_list: false
       waiting_list: "https://forms.office.com/r/qVxjgmV94r"
       purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
       merch_link: 
@@ -39,6 +39,7 @@ events:
       room_5: "Bluebell" 
     workshops:
       workshop1:
+        enabled: false
         announceSponsor: false
         sponsor: 
         sponsorLink: 
@@ -47,6 +48,7 @@ events:
         content2: To be announced
         room: Workshop Space in Expo
       workshop2:
+        enabled: true
         announceSponsor: true
         sponsor: Equal Experts
         sponsorLink: https://www.equalexperts.com/
@@ -96,6 +98,7 @@ events:
       room_5: "Emerald Auditorium" 
     workshops:
       workshop1:
+        enabled: true
         announceSponsor: true
         sponsor: cloudandthings.io 
         sponsorLink: https://cloudandthings.io
@@ -116,6 +119,7 @@ Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
 <strong>Attendees need to bring their own laptops</strong>."
         room: Workshop Space
       workshop2:
+        enabled: true
         announceSponsor: true
         sponsor: Runninghill Software Development (Pty)Ltd 
         sponsorLink: https://www.runninghill.co.za 

@@ -212,11 +212,15 @@
   justify-items: center;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   grid-template-rows: 55px 20px 170px 50px;
 
   @media (max-width: $mobileWidth) {
     grid-template-rows: repeat(3, auto);
+    padding-bottom: 0px;
   }
 }
 
@@ -249,6 +253,10 @@
 }
 
 .agenda-session-image {
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
+
   padding: 10px;
   max-width: 150px;
 }
@@ -533,6 +541,17 @@
   margin-right: 5px;
 
   @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.agenda-session-underline {
+  height: 1px;
+  background-color: $darkBrandPink;
+  width: 80%;
+  margin-top: 10px;
+
+  @media (min-width: $mobileWidth) {
     display: none;
   }
 }

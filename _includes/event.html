@@ -161,25 +161,33 @@
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">10h30</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-key" style="grid-area: timeslot1;">
+            {% else %}
+            <div class="agenda-row-style-key" style="grid-area: timeslot1 / span 2;">
+            {% endif %}
                 <span class="time-from-time">10h30 </span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 1</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">11h10</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session1;">
+            {% else %}
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session1 / span 2;">
+            {% endif %}
                 <div class="agenda-session" data-slot-id="{{ include.sessions[1].id }}"
                     data-remote="{{ include.sessions[1].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">10h30</div>
-
+                    
                 </div>
                 <div class="agenda-session" data-slot-id="{{ include.sessions[2].id }}"
                     data-remote="{{ include.sessions[2].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">10h30</div>
-
+                    
                 </div>
                 <div class="agenda-session" data-slot-id="{{ include.sessions[3].id }}"
                     data-remote="{{ include.sessions[3].remote }}">
@@ -202,21 +210,33 @@
             <div class="agenda-row-style-loading" style="grid-area: loading2;">
                 Loading...
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-break" style="grid-area: movement1;">
+            {% else %}
+            <div class="agenda-row-style-break" style="grid-area: movement1 / span 2;">
+            {% endif %}
                 <span class="time-from-time">11h10</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">11h20</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-key" style="grid-area: timeslot2;">
+            {% else %}
+            <div class="agenda-row-style-key" style="grid-area: timeslot2 / span 2;">
+            {% endif %}
                 <span class="time-from-time">11h20</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 2</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">12h00</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session2;">
+            {% else %}
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session2 / span 2;">
+            {% endif %}
                 <div class="agenda-session" data-slot-id="{{ include.sessions[6].id }}"
                     data-remote="{{ include.sessions[6].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -256,14 +276,22 @@
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">12h50</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-key" style="grid-area: timeslot3;">
+            {% else %}
+            <div class="agenda-row-style-key" style="grid-area: timeslot3 / span 2;">
+            {% endif %}
                 <span class="time-from-time">12h50</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 3</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">13h30</span>
             </div>
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session3;">
+            {% else %}
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session3 / span 2;">
+            {% endif %}
                 <div class="agenda-session" data-slot-id="{{ include.sessions[11].id }}"
                     data-remote="{{ include.sessions[11].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -296,21 +324,21 @@
             <div class="agenda-row-style-loading" style="grid-area: loading4;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: movement2;">
+            <div class="agenda-row-style-break" style="grid-area: movement2 / span 2;">
                 <span class="time-from-time">13h30</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">13h40</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: timeslot4;">
+            <div class="agenda-row-style-key" style="grid-area: timeslot4 / span 2;">
                 <span class="time-from-time">13h40</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 4</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">14h20</span>
             </div>
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session4;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session4 / span 2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}"
                     data-remote="{{ include.sessions[16].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -386,7 +414,7 @@
             <div class="agenda-row-style-loading" style="grid-area: loading6;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: break2;">
+            <div class="agenda-row-style-break" style="grid-area: break2 / span 2">
                 <span class="time-from-time">15h10</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement, Networking &amp; Refreshments</b>
@@ -482,6 +510,7 @@
             <div class="sponsor-content-detail-heading agenda-workshop-title" style="grid-area: workshoptitle;">
                 Workshops</div>
 
+            {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-key" style="grid-area: workshoptime1;">
                 <span class="time-from-time">10h30</span>
                 <span class="time-from-arrow">&#10095;</span>
@@ -521,7 +550,9 @@
 
                 <div class="agenda-workshop-content">{{ event.workshops.workshop1.content2 }}</div>
             </div>
+            {% endif %}
 
+            {% if event.workshops.workshop2.enabled %}
             <div class="agenda-row-style-key" style="grid-area: workshoptime3;">
                 <span class="time-from-time">14h30</span>
                 <span class="time-from-arrow">&#10095;</span>
@@ -561,6 +592,7 @@
 
                 <div class="agenda-workshop-content">{{ event.workshops.workshop2.content2 }}</div>
             </div>
+            {% endif %}
         </div>
         {% else %}
         <div>Our amazing agenda will be announced at the end of February 2023!</div>
@@ -642,6 +674,7 @@
     <div class="agenda-session-name">Name</div>
     <div class="agenda-session-title">Title</div>
     <div class="agenda-session-remote">This will be a remote presentation</div>
+    <div class="agenda-session-underline">&nbsp;</div>
 </template>
 
 <template id="popupBioContent">
