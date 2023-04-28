@@ -24,8 +24,10 @@
             "error",
             200
         ],
+        "no-lonely-if": "off",
         "default-case": "off",
         "no-param-reassign": "off",
-        "no-use-before-define": "off"
+        "no-use-before-define": "off",
+        "no-plusplus": "off"
     }
 }

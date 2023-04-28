@@ -1,0 +1,383 @@
+{
+    "structure": [
+        {
+            "title": "Keynote",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Did you attend the Keynote?",
+                    "type": "yesno"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on the keynote?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 1",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot one?",
+                    "type": "timeslot-selector",
+                    "key": "0"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 2",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot two?",
+                    "type": "timeslot-selector",
+                    "key": "1"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 3",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot three?",
+                    "type": "timeslot-selector",
+                    "key": "2"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 4",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot four?",
+                    "type": "timeslot-selector",
+                    "key": "3"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 5",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot five?",
+                    "type": "timeslot-selector",
+                    "key": "4"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 6",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot six?",
+                    "type": "timeslot-selector",
+                    "key": "5"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Timeslot 7",
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Who did you see in timeslot seven?",
+                    "type": "timeslot-selector",
+                    "key": "6"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this session?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Morning Workshop",
+            "workshop": 0,
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Did you attend the workshop?",
+                    "type": "yesno"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this workshop?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Afternoon Workshop",
+            "workshop": 1,
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Did you attend the workshop?",
+                    "type": "yesno"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this workshop?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "General Event feedback",
+            "questions": [
+                {
+                    "id": "ratingGeneral",
+                    "label": "How would you rate the DevConf overall?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingSwag",
+                    "label": "How would you rate the DevConf swag overall?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingVenue",
+                    "label": "How would you rate the venue?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingFood",
+                    "label": "How would you rate the food?",
+                    "type": "rate"
+                },
+                {
+                    "id": "ratingExpo",
+                    "label": "How would you rate the expo?",
+                    "type": "rate"
+                },
+                {
+                    "id": "attended",
+                    "label": "Would you attend DevConf next year?",
+                    "type": "yesno"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback about DevConf?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Demographics",
+            "questions": [
+                {
+                    "id": "jobTitle",
+                    "label": "What is your job title?",
+                    "type": "role"
+                },
+                {
+                    "id": "jobLevel",
+                    "label": "What is your job level?",
+                    "type": "level"
+                },
+                {
+                    "id": "influence",
+                    "label": "What is your influence in company buying decisions?",
+                    "type": "influence"
+                },
+                {
+                    "id": "years",
+                    "label": "How many years working experience do you have?",
+                    "type": "years"
+                },
+                {
+                    "id": "email",
+                    "label": "What is your email (this is needed to win the competition)?",
+                    "type": "email"
+                }
+            ]
+        }
+    ]
+}
