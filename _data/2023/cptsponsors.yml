@@ -39,11 +39,6 @@
   Logo: intersystemssilver.jpg
 
 - Level: Silver
-  Name: Micro Focus
-  Url: https://www.opentext.com/microfocus 
-  Logo: microfocussilver.jpg
-
-- Level: Silver
   Name: Ninety One
   Url: https://www.ninetyone.com
   Logo: nintyonesilver.jpg
@@ -52,6 +47,11 @@
   Name: Obsidian Systems
   Url: https://obsidian.co.za/ 
   Logo: obsidiansilver.jpg
+
+- Level: Silver
+  Name: OpenText 
+  Url: https://www.opentext.com/microfocus 
+  Logo: opentextsilver.jpg
 
 - Level: Silver
   Name: Payfast by Network

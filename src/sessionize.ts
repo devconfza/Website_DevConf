@@ -66,12 +66,11 @@ const loadStoredData = (id: string): SessionizeEvent | undefined => {
         try {
            return JSON.parse(sessionData) as SessionizeEvent
         } catch {
+            alert('Oh no! Something has gone horribly wrong. Please close and reopen your browser and try again.')
             return undefined
         }
     }
-
-    // eslint-disable-next-line no-alert
-    alert('Oh no! Something has gone horribly wrong. Please reload your browser and try again.')
+    
     return undefined
 }
 

@@ -39,14 +39,14 @@
   Logo: intersystemssilver.jpg
 
 - Level: Silver
-  Name: Micro Focus
-  Url: https://www.opentext.com/microfocus 
-  Logo: microfocussilver.jpg
-
-- Level: Silver
   Name: Network IT
   Url: https://www.networkrecruitmentinternational.com/
   Logo: networkrecruitmentsilver.jpg
+
+- Level: Silver
+  Name: OpenText 
+  Url: https://www.opentext.com/microfocus 
+  Logo: opentextsilver.jpg
 
 - Level: Silver
   Name: Payfast by Network
