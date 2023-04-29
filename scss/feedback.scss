@@ -131,6 +131,7 @@ input[type="radio"] {
 }
 
 .saveButton {
+    display: none;
     width: 300px;
     justify-self: center;
     font-size: x-large;
@@ -179,4 +180,10 @@ input[type="number"] {
     display: grid;
     grid-auto-flow: column;
     margin-bottom: 40px;
+}
+
+.loading {
+    justify-self: center;
+    grid-area: 1 / span 4;
+    font-size: xx-large;
 }

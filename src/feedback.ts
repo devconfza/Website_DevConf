@@ -312,35 +312,41 @@ export default async () => {
                 }
             })
         }
+
+        saveButton.style.display = 'unset'
     }
 
-    questions.structure.forEach((question, index) => {
-        let show = false
-        let title: string | undefined = undefined
-        if (question.workshop !== undefined) {
-            const workshopTitle = workshopStructure[question.workshop]
-            if (workshopTitle !== 'none') {
+    const addButtons = () => {
+        stage.removeChild(document.getElementById('feedbackLoading')!)
+        questions.structure.forEach((question, index) => {
+            let show = false
+            let title: string | undefined = undefined
+            if (question.workshop !== undefined) {
+                const workshopTitle = workshopStructure[question.workshop]
+                if (workshopTitle !== 'none') {
+                    show = true
+                    title = workshopTitle
+                }
+            } else {
                 show = true
-                title = workshopTitle
-            }
-        } else {
-            show = true
-        }
-
-        if (show) {
-            const questionButton = getTemplate('feedbackButton').querySelector('div')!
-            questionButton.setAttribute('data-id', index.toString())
-            setText(questionButton, '.feedbackButtonTitle', question.title)
-            const completed = Object.keys(ratingData[`s${index}`] || {}).length
-            setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${completed} / ${question.questions.length}`)
-            if (title) {
-                setText(questionButton, '.feedbackButtonWorkshop', title)
             }
 
-            stage.insertAdjacentElement('beforeend', questionButton)
-        }
-    })
+            if (show) {
+                const questionButton = getTemplate('feedbackButton').querySelector('div')!
+                questionButton.setAttribute('data-id', index.toString())
+                setText(questionButton, '.feedbackButtonTitle', question.title)
+                const completed = Object.keys(ratingData[`s${index}`] || {}).length
+                setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${completed} / ${question.questions.length}`)
+                if (title) {
+                    setText(questionButton, '.feedbackButtonWorkshop', title)
+                }
 
+                stage.insertAdjacentElement('beforeend', questionButton)
+            }
+        })
+    }
+
+    addButtons()
     addPopups()
     addSubmit()
 }

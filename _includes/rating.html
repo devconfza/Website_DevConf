@@ -37,12 +37,15 @@
 
     <div id="feedbackStage" class="sponsor-content-detail-collapse feedbackBase"
         data-event-id="{{ event.sessionizeId }}" data-rating-id="-2023-{{ include.offset }}">
+        <span id="feedbackLoading" class="loading">
+            Loading...
+        </span>
     </div>
 
     <div class="submitButtons">
         <button id="saveDataButton" class="saveButton">Save</button>
     </div>
-    
+
 
     <div class="popupBackdrop popupBackdropHidden">
         <div class="popupContent" onclick="event.stopPropagation()">
@@ -122,7 +125,7 @@
         <option value="senior">Senior</option>
         <option value="lead">Lead</option>
         <option value="manager">Manager</option>
-        <option value="director">Director or Executive</option>        
+        <option value="director">Director or Executive</option>
     </select>
 </template>
 
@@ -132,7 +135,7 @@
         <option value="non-decision-maker">Non-Decision Maker</option>
         <option value="influencer">Influencer</option>
         <option value="decision-maker">Decision Maker</option>
-        <option value="sole-decision-maker">Sole Decision Maker</option>            
+        <option value="sole-decision-maker">Sole Decision Maker</option>
     </select>
 </template>
 
