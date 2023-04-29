@@ -95,6 +95,8 @@
       grid-template-rows: repeat(4, minmax(0, min-content));
       grid-row-gap: 10px;
       text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px;
 
       &-sponsor {
         display: grid;

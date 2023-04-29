@@ -148,6 +148,10 @@ input[type="radio"] {
     &:active {
         background: darken($darkBrandPink, 10%);
     }
+
+    &:disabled {
+        background-color: $darkBrandBlue;
+    }
 }
 
 select {

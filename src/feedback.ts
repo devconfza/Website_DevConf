@@ -283,7 +283,10 @@ export default async () => {
     }
 
     const addSubmit = () => {
-        (document.getElementById('saveDataButton') as HTMLButtonElement).onclick = (event) => {
+        const saveButton = (document.getElementById('saveDataButton') as HTMLButtonElement)
+        saveButton.onclick = (event) => {
+            saveButton.innerText = 'Saving...';
+            saveButton.disabled = true
             event.preventDefault()
             // eslint-disable-next-line no-undef
             grecaptcha.ready(async () => {
@@ -297,10 +300,16 @@ export default async () => {
                 })
 
                 if (!uploadResult.ok) {
+                    saveButton.innerText = 'Save';
+                    saveButton.disabled = false
                     alert('Oh no! Something has gone horribly wrong. Please reload your browser and try again.')
+                } else {
+                    saveButton.disabled = false
+                    saveButton.innerText = 'Save Complete';
+                    setTimeout(() => {
+                        saveButton.innerText = 'Save';
+                    }, 2000)
                 }
-
-                console.log(uploadResult)
             })
         }
     }
