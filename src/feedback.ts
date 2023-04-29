@@ -209,7 +209,7 @@ export default async () => {
                     valueAsNumber = +value
                 } catch { }
 
-                if (valueAsNumber) {
+                if (valueAsNumber && valueAsNumber >= 0 && valueAsNumber <= 60) {
                     setValue(dataSlotId, question.id, value)
                 }
             }
@@ -309,6 +309,11 @@ export default async () => {
                 popupContent.insertAdjacentElement('beforeend', questionBaseElement)
             })
 
+            const doneButton = getTemplate('doneButton').firstElementChild! as HTMLButtonElement
+            doneButton.onclick = () => {
+                (document.querySelector('div.popupClose')! as HTMLDivElement).dispatchEvent(new Event('click'))
+            }
+            popupContent.insertAdjacentElement('beforeend', doneButton)
             return popupContent
         }, undefined, undefined, () => {
             updateCompleted()

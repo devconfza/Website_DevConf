@@ -6,10 +6,7 @@
         <div class="sponsor-title-content">
             <div>DevConf {{ event.location }} 2023 - Feedback</div>
             <div class="sponsor-title-content-third">This is your event! Tell us how to improve it for you!</div>
-            <div class="sponsor-title-content-third">
-                <p>All questions optional.</p>
-                <p>Want to win XXX, complete your email in "Demographics"</p>
-            </div>
+            <div class="sponsor-title-content-third">Want to win XXX, complete your email in "Demographics"</div>
         </div>
     </div>
 
@@ -35,15 +32,20 @@
         {% endfor %}
     </data>
 
-    <div id="feedbackStage" class="sponsor-content-detail-collapse feedbackBase"
+    <div id="feedbackStage" class="sponsor-content-detail feedbackBase"
         data-event-id="{{ event.sessionizeId }}" data-rating-id="-2023-{{ include.offset }}">
         <span id="feedbackLoading" class="loading">
             Loading...
         </span>
+        
     </div>
 
     <div class="submitButtons">
         <button id="saveDataButton" class="saveButton">Save</button>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <p>All questions optional. Pressing "save" will update your submission - so you can update during the day</p>
     </div>
 
 
@@ -53,6 +55,10 @@
         </div>
     </div>
 </div>
+
+<template id="doneButton">
+    <button class="doneButton">Done</button>
+</template>
 
 <template id="feedbackButton">
     <div class="feedbackButton">

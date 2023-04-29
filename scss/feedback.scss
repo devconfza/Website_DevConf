@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(4, 300px);
     justify-self: center;
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
     grid-row-gap: 10px;
 
     @media (max-width: 1300px) {
@@ -23,12 +23,13 @@
     align-content: center;
     width: 300px;
     height: 150px;
-    background: #000d28;
+    background: #fff;
     border-width: 2px;
     border-radius: 10px;
     border-style: solid;
-    border-color: #19c3fc;
-    color: #fff;
+    border-color: $darkBrandBlue;
+    color: $darkBrandBlue;
+    border-width: 4px;
     text-align: center;
     cursor: pointer;
     display: grid;
@@ -36,7 +37,7 @@
     row-gap: 10px;
 
     &:hover {
-        background: lighten($darkBrandBlue, 10);
+        background: darken(white, 10);
     }
 }
 
@@ -128,6 +129,30 @@ input[type="radio"] {
     grid-auto-flow: column;
     align-items: center;
     grid-template-columns: 45px 100px 45px 100px;
+}
+
+.doneButton {
+    width: 300px;
+    justify-self: center;
+    font-size: large;
+    border-radius: 10px;
+    border-color: $brandPink;
+    background: $darkBrandPink;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background: lighten($darkBrandPink, 10%);
+    }
+    
+    &:active {
+        background: darken($darkBrandPink, 10%);
+    }
+
+    &:disabled {
+        background-color: $darkBrandBlue;
+    }
 }
 
 .saveButton {
