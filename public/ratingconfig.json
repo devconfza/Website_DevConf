@@ -2,6 +2,7 @@
     "structure": [
         {
             "title": "Keynote",
+            "subtitle": "09h15 - 10h00",
             "questions": [
                 {
                     "id": "attended",
@@ -11,17 +12,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -32,6 +36,7 @@
         },
         {
             "title": "Timeslot 1",
+            "subtitle": "10h30 - 11h10",
             "questions": [
                 {
                     "id": "attended",
@@ -42,17 +47,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -63,6 +71,7 @@
         },
         {
             "title": "Timeslot 2",
+            "subtitle": "11h20 - 12h00",
             "questions": [
                 {
                     "id": "attended",
@@ -73,17 +82,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -94,6 +106,7 @@
         },
         {
             "title": "Timeslot 3",
+            "subtitle": "12h50 - 13h30",
             "questions": [
                 {
                     "id": "attended",
@@ -104,17 +117,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -125,6 +141,7 @@
         },
         {
             "title": "Timeslot 4",
+            "subtitle": "13h40 - 14h20",
             "questions": [
                 {
                     "id": "attended",
@@ -135,17 +152,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -156,6 +176,7 @@
         },
         {
             "title": "Timeslot 5",
+            "subtitle": "14h30 - 15h10",
             "questions": [
                 {
                     "id": "attended",
@@ -166,17 +187,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -187,6 +211,7 @@
         },
         {
             "title": "Timeslot 6",
+            "subtitle": "15h40 - 16h20",
             "questions": [
                 {
                     "id": "attended",
@@ -197,17 +222,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -218,6 +246,7 @@
         },
         {
             "title": "Timeslot 7",
+            "subtitle": "16h30 - 17h10",
             "questions": [
                 {
                     "id": "attended",
@@ -228,17 +257,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -259,17 +291,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",
@@ -290,17 +325,20 @@
                 {
                     "id": "ratingContent",
                     "label": "How would you rate the content?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
                     "label": "How would you rate the presentation?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
                     "label": "How valuable was this presentation to you?",
-                    "type": "rate"
+                    "type": "rate",
+                    "needs": "attended"
                 },
                 {
                     "id": "feedback",

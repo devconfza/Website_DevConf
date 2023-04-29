@@ -6,11 +6,13 @@ interface QuestionStructure {
     id: string,
     label: string,
     type: 'rate' | 'text' | 'timeslot-selector' | 'yesno' | 'role' | 'level' | 'years' | 'email' | 'influence'
-    key: number | undefined
+    key: number | undefined,
+    needs?: string,
 }
 
 interface SectionStructure {
     title: string,
+    subtitle?: string,
     questions: QuestionStructure[]
     workshop?: number,
 }
@@ -27,10 +29,20 @@ export default async () => {
         return
     }
 
-    const questionsResponse = await fetch('/public/ratingconfig.json')
-    if (!questionsResponse.ok) {
-        return
+    let questions: QuestionaireStructure
+    const storedQuestions = window.sessionStorage.getItem('questionStructure')
+    if (storedQuestions) {
+        questions = JSON.parse(storedQuestions)
+    } else {
+        const questionsResponse = await fetch('/public/ratingconfig.json')
+        if (!questionsResponse.ok) {
+            return
+        } else {
+            questions = await questionsResponse.json()
+            window.sessionStorage.setItem('questionStructure', JSON.stringify(questions))
+        }
     }
+
 
     const ratingId = stage.getAttribute('data-rating-id');
     if (!ratingId) {
@@ -211,15 +223,41 @@ export default async () => {
         inputElement.onchange = updateValue
     }
 
+    const needsNotMet = ['no', 'none']
+
+    const countComplete = (id: number): number => {
+        const answers = ratingData[`s${id}`] || {}
+        return Object.keys(answers).filter(key => {
+            const questionStructure = questions.structure[id].questions.find(q => q.id === key)
+            if (!questionStructure) {
+                return false
+            }
+            
+            const answeredValue = answers[key]
+            if (questionStructure.type === 'timeslot-selector' && answeredValue === 'none') {
+                return false
+            } 
+
+            const needs = questionStructure.needs
+            if (!needs) {
+                return true
+            }
+
+            const needsValue = answers[needs]
+            if (!needsValue) {
+                return true
+            }
+
+            return !needsNotMet.find(n => n === needsValue)
+        }).length
+    }
+
     const updateCompleted = () => {
         document.querySelectorAll('div.feedbackButton').forEach((button) => {
             const id = +button.attributes['data-id'].value
-            const completed = Object.keys(ratingData[`s${id}`] || {}).length
-            setText(button, '.feedbackButtonProgressBar', `Questions Completed ${completed} / ${questions.structure[id].questions.length}`)
+            setText(button, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(id)} / ${questions.structure[id].questions.length}`)
         })
     }
-
-    const questions = await questionsResponse.json() as QuestionaireStructure
 
     const addPopups = () => {
         addPopupHandler(document.querySelectorAll('.feedbackButton'), (div) => {
@@ -265,10 +303,9 @@ export default async () => {
                         break
                     }
                 }
-                if (inputElement) {
-                    questionBaseElement.insertAdjacentElement('beforeend', inputElement)
-                }
 
+                inputElement.attributes['data-rating-field-id'] = question.id
+                questionBaseElement.insertAdjacentElement('beforeend', inputElement)
                 popupContent.insertAdjacentElement('beforeend', questionBaseElement)
             })
 
@@ -320,14 +357,18 @@ export default async () => {
         stage.removeChild(document.getElementById('feedbackLoading')!)
         questions.structure.forEach((question, index) => {
             let show = false
-            let title: string | undefined = undefined
+            let subTitle: string | undefined = undefined
             if (question.workshop !== undefined) {
                 const workshopTitle = workshopStructure[question.workshop]
                 if (workshopTitle !== 'none') {
                     show = true
-                    title = workshopTitle
+                    subTitle = workshopTitle
                 }
             } else {
+                if (question.subtitle) {
+                    subTitle = question.subtitle
+                }
+
                 show = true
             }
 
@@ -335,10 +376,9 @@ export default async () => {
                 const questionButton = getTemplate('feedbackButton').querySelector('div')!
                 questionButton.setAttribute('data-id', index.toString())
                 setText(questionButton, '.feedbackButtonTitle', question.title)
-                const completed = Object.keys(ratingData[`s${index}`] || {}).length
-                setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${completed} / ${question.questions.length}`)
-                if (title) {
-                    setText(questionButton, '.feedbackButtonWorkshop', title)
+                setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(index)} / ${question.questions.length}`)
+                if (subTitle) {
+                    setText(questionButton, '.feedbackButtonWorkshop', subTitle)
                 }
 
                 stage.insertAdjacentElement('beforeend', questionButton)
