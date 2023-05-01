@@ -1,6 +1,7 @@
 import feedback from "./feedback"
 import event from "./event"
 import sponsorBlock from "./sponsorBlock"
+import speakerFeedback from "./speakerFeedback"
 
 if (typeof fetch === 'undefined') {
     // eslint-disable-next-line no-alert
@@ -10,3 +11,4 @@ if (typeof fetch === 'undefined') {
 event()
 feedback()
 sponsorBlock()
+speakerFeedback()

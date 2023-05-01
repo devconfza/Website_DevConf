@@ -1,3 +1,5 @@
+export const feedbackServerUrl = 'https://ratings-2slkxdorza-nw.a.run.app'
+
 export const getTemplate = (templateId: string) => ((document.getElementById(templateId) as HTMLTemplateElement)
     ?.cloneNode(true) as HTMLTemplateElement)
     ?.content

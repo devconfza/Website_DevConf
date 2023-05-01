@@ -1,4 +1,4 @@
-import { addPopupHandler, getTemplate, setText } from './common'
+import { addPopupHandler, feedbackServerUrl, getTemplate, setText } from './common'
 import { loadSessionizeData } from './sessionize'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -335,8 +335,7 @@ export default async () => {
                 // eslint-disable-next-line no-undef
                 const token = await grecaptcha.execute('6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j', { action: 'submit' })
                 ratingData.captcha = token
-                // const uploadResult = await fetch('http://localhost:8080/', {
-                const uploadResult = await fetch('https://ratings-2slkxdorza-nw.a.run.app', {
+                const uploadResult = await fetch(feedbackServerUrl, {
                     method: 'POST',
                     body: JSON.stringify(ratingData),
                 })

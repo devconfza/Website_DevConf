@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="sponsor-content-detail">
+    <label for="speakerKey">Your speaker key</label>
+    <input type="text" id="speakerKey" required autocomplete="off" />
+    <button class="doneButton" id="getDataButton">Get Report</button>
+</div>
+
+<div class="sponsor-content-detail" id="speakerFeedbackReport">
+
+</div>
+
+<template id="title">
+    <div class="sponsor-content-detail-heading"></div>
+</template>
+
+<template id="feedbackTable">
+    <table class="feedbackTable">
+        <thead id="tableHeader" class="feedbackHeader">
+            <td>&nbsp;</td>
+            <td>Presentation</td>
+            <td>Content</td>
+            <td>Value</td>
+            <td>Feedback</td>
+        </thead>
+
+        <tfoot id="feedbackFooter" class="feedbackFooter">
+            <td>Averages</td>
+            <td id="presAvg"></td>
+            <td id="contentAvg"></td>
+            <td id="valueAvg"></td>
+            <td>&nbsp;</td>
+        </tfoot>
+    </table>
+</template>
+
+
+<template id="feedbackRow">
+    <tr>
+        <td class="indexValue">&nbsp;</td>
+        <td class="presValue"></td>
+        <td class="contentValue"></td>
+        <td class="valueValue"></td>
+        <td class="feedbackValue"></td>
+    </tr>
+</template>

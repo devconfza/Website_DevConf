@@ -59,7 +59,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5px;
-  }
+}
 
 .feedbackPopup {
     width: 75vw;
@@ -145,7 +145,7 @@ input[type="radio"] {
     &:hover {
         background: lighten($darkBrandPink, 10%);
     }
-    
+
     &:active {
         background: darken($darkBrandPink, 10%);
     }
@@ -170,7 +170,7 @@ input[type="radio"] {
     &:hover {
         background: lighten($darkBrandPink, 10%);
     }
-    
+
     &:active {
         background: darken($darkBrandPink, 10%);
     }
@@ -181,6 +181,13 @@ input[type="radio"] {
 }
 
 select {
+    font-size: larger;
+    width: 90%;
+    border-color: $darkBrandPink;
+    padding: 10px;
+}
+
+input[type="text"] {
     font-size: larger;
     width: 90%;
     border-color: $darkBrandPink;
@@ -211,4 +218,32 @@ input[type="number"] {
     justify-self: center;
     grid-area: 1 / span 4;
     font-size: xx-large;
+}
+
+.feedbackTable {
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.feedbackTable td,
+.feedbackTable th {
+    border: 1px solid #ffffff;
+    padding: 5px;
+}
+
+.feedbackTable tr:nth-child(even) {
+    background: #d0e4f5;
+    color: $darkBrandBlue;
+}
+
+.feedbackTable thead {
+    background: $darkBrandPink;
+    border-bottom: 5px solid #ffffff;
+}
+
+.feedbackTable tfoot {
+    color: #ffffff;
+    background: $darkBrandBlue;
+    border-top: 3px solid $brandBlue;
 }
