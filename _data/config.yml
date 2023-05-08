@@ -53,10 +53,15 @@ events:
         sponsor: Equal Experts
         sponsorLink: https://www.equalexperts.com/
         title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
-        content1: "We will be exploring the world of data engineering.<br/>
-<strong>Please bring along your laptops for an exciting experience.</strong>"
-        content2: "We will be exploring the world of data engineering.<br/>
-<strong>Please bring along your laptops for an exciting experience.</strong>"
+        content1: "14h20: <strong>Welcome to Data Workshop with Steve Riley</strong><br>
+        Some highlights from EE’s data work and then workshop agenda<br/>
+        <br/>
+        14h30: <strong>lean MLOps with Austin Poulton</strong><br/>
+        An introduction to the key considerations and useful OSS technologies to operating machine learning models. Attendees may bring their own device and optionally follow along."
+        content2: "15h30: <strong>Introduction to analytics with dbt with Nicolas Kew & Riaz Arbi</strong><br/>
+        An introduction to analytics engineering and demonstration using dbt.<br/><br/>
+        16h20: <strong>Panel discussion on software engineer to data engineer journey</strong><br/>
+        Panel discussion with Dawid du Toit, Riaz Arbi, Neil Murray, & Nicolaw Kew"
         room: Workshop Space in Expo
   - virtual: false
     show: true
