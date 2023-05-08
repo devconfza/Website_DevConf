@@ -12,6 +12,10 @@
     </div>
 
     <div class="sponsor-content-detail-collapse">
+        &nbsp;
+    </div>
+    {% comment %}
+    <div class="sponsor-content-detail-collapse">
         {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         {% else %}
@@ -113,6 +117,7 @@
             </div>
         </div>
     </div>
+    {% endcomment %}
 
 
     <div class="sponsor-content-detail">
@@ -626,10 +631,12 @@
             {% endfor %}
             <!-- <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div> -->
             <!-- <div>&nbsp;</div> -->
+            {% comment %}
             <div class="sponsor-content-detail-email" role="button">
                 <a class="button" href="/sponsorship" target="_blank">Interested in sponsoring? Review our Sponsor
                     Proposal now!</a>
             </div>
+            {% endcomment %}
         </div>
         {% else %}
         <div class="sponsor-content-detail-heading">Sponsorship coming soon</div>
