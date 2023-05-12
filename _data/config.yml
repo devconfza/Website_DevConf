@@ -15,11 +15,11 @@ events:
     mapLink: "https://g.page/CTICC2?share"
     lat: "-33.91743373623432"
     long: "18.429546394164426"
-    sponsorOpen: true
+    sponsorOpen: false
     colour: blue
     tickets:
       onsale: true
-      totally_sold_out: true
+      totally_sold_out: false
       has_shuttle: false
       has_waiting_list: false
       waiting_list: "https://forms.office.com/r/qVxjgmV94r"
@@ -79,11 +79,11 @@ events:
     mapLink: "https://goo.gl/maps/DFndScsarXYkhMLJ7"
     lat: "-25.752775506234492"
     long: "28.27698733915744"
-    sponsorOpen: true
+    sponsorOpen: false
     colour: pink
     tickets:
       totally_sold_out: true
-      onsale: true
+      onsale: false
       has_shuttle: true
       has_waiting_list: false
       waiting_list: https://forms.office.com/r/KZXA0XQXrf
@@ -91,7 +91,7 @@ events:
       merch_link: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria/?preview=t#/merchandise"
       fullprice:
         price: 2999
-        sold_out: false
+        sold_out: true
       earlybird:
         price: 2699  
         sold_out: true     

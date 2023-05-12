@@ -12,22 +12,13 @@
     </div>
 
     <div class="sponsor-content-detail-collapse">
-        <div class="sponsor-content-detail-heading">This event is sold out!</div>
-        <div class="sponsor-content-detail-tickets"> We cannot wait to meet all of you soon!</div>
-        <div><br/></div>
-    </div>
-    {% comment %}
-    <div class="sponsor-content-detail-collapse">
         {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
         {% else %}
-        <div class="sponsor-content-detail-heading">Tickets coming soon</div>
+            <div class="sponsor-content-detail-heading">This event is sold out!</div>
         {% endif %}
         <div class="sponsor-content-detail-tickets">
             {% if event.tickets.onsale %}
-            {% else %}
-            <div><strong>Ticket sales here from 17th January 2023!</strong></div>
-            {% endif %}
             {% if event.virtual %}
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, and access to the virtual network space!</div>
@@ -35,6 +26,11 @@
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, lunch, snacks, and access to the post-conference event!</div>
             {% endif %}
+            {% else %}
+            <div class="sponsor-content-detail-tickets"> We cannot wait to meet all of you soon!</div>
+            {% endif %}
+           
+            {% if event.tickets.onsale %}
             <div class="sponsor-content-detail-tickets-cards">
                 {% if event.tickets.totally_sold_out %}
                 {% if event.tickets.has_shuttle %}
@@ -95,6 +91,7 @@
                     {% endif %}
                     {% endif %}
                 </div>
+                {% comment %}
                 <div>
                     <div>Manual Tickets</div>
                     <div>Have a special requirement? Pro-forma invoice? Need us to register as a supplier? Need special
@@ -115,12 +112,12 @@
                     {% endif %}
                     {% endif %}
                 </div>
+                {% endcomment %}
                 {% endif %}
             </div>
+            {% endif %}
         </div>
     </div>
-    {% endcomment %}
-
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
