@@ -21,7 +21,25 @@ export default () => {
 
     const speakerKeyElement = (document.getElementById('speakerKey') as HTMLInputElement)!
 
-    const showData = (data: EventData[]) => {
+    const comparedValue = (speakerScore: number, average: number | undefined): string => {
+        const avgValue = (average || 0)
+        if (avgValue === 0) {
+            return avgValue.toFixed(2);
+        }
+
+        let symbol = ''
+        if (speakerScore > avgValue) {
+            symbol = '↑'
+        }
+
+        if (speakerScore < avgValue) {
+            symbol = '↓'
+        }
+
+        return `${avgValue.toFixed(2)} ${symbol}`
+    }
+
+    const showData = (data: EventData[], averages) => {
         target.innerHTML = ''
         data.forEach(event => {
             const title = getTemplate('title')!.firstElementChild as HTMLDivElement
@@ -37,12 +55,36 @@ export default () => {
                 return acc
             }, { presSum: 0, contentSum: 0, valueSum: 0 });
 
-            (feedbackTable.querySelector('#presAvg') as HTMLTableCellElement).innerText = (feedbackTotals.presSum / event.feedback.length).toFixed(2);
-            (feedbackTable.querySelector('#contentAvg') as HTMLTableCellElement).innerText = (feedbackTotals.contentSum / event.feedback.length).toFixed(2);
-            (feedbackTable.querySelector('#valueAvg') as HTMLTableCellElement).innerText = (feedbackTotals.valueSum / event.feedback.length).toFixed(2);
+            const presAvg = (feedbackTotals.presSum / event.feedback.length);
+            const contentAvg = (feedbackTotals.contentSum / event.feedback.length);
+            const valueAvg = (feedbackTotals.valueSum / event.feedback.length);
+
+            (feedbackTable.querySelector('#presAvg') as HTMLTableCellElement).innerText = presAvg.toFixed(2);
+            (feedbackTable.querySelector('#contentAvg') as HTMLTableCellElement).innerText = contentAvg.toFixed(2);
+            (feedbackTable.querySelector('#valueAvg') as HTMLTableCellElement).innerText = valueAvg.toFixed(2);
+
+            if (averages.length > 0) {
+                const average = averages[0];
+                (feedbackTable.querySelector('#timeslotPresAvg') as HTMLTableCellElement).innerText = comparedValue(presAvg, average[`${event.event}-ratingPresentationtimeslot`]);
+                (feedbackTable.querySelector('#timeslotContentAvg') as HTMLTableCellElement).innerText = comparedValue(contentAvg, average[`${event.event}-ratingContenttimeslot`]);
+                (feedbackTable.querySelector('#timeslotValueAvg') as HTMLTableCellElement).innerText = comparedValue(valueAvg, average[`${event.event}-ratingValuetimeslot`]);
+
+                (feedbackTable.querySelector('#eventPresAvg') as HTMLTableCellElement).innerText = comparedValue(presAvg, average[`${event.event}-ratingPresentation`]);
+                (feedbackTable.querySelector('#eventContentAvg') as HTMLTableCellElement).innerText = comparedValue(contentAvg, average[`${event.event}-ratingContent`]);
+                (feedbackTable.querySelector('#eventValueAvg') as HTMLTableCellElement).innerText = comparedValue(valueAvg, average[`${event.event}-ratingValue`]);
+
+                (feedbackTable.querySelector('#globalPresAvg') as HTMLTableCellElement).innerText = comparedValue(presAvg, average['global-ratingPresentation']);
+                (feedbackTable.querySelector('#globalContentAvg') as HTMLTableCellElement).innerText = comparedValue(contentAvg, average['global-ratingContent']);
+                (feedbackTable.querySelector('#globalValueAvg') as HTMLTableCellElement).innerText = comparedValue(valueAvg, average['global-ratingValue']);
+            } else {
+                feedbackTable.querySelectorAll('.additionalAverageInfo').forEach(item => { 
+                    console.log('sdd');
+                    (item as HTMLTableRowElement).style.display = 'none'; 
+                });
+            }
 
             const footerRow = (feedbackTable.querySelector('#feedbackFooter') as HTMLTableRowElement)
-            event.feedback.forEach((f)=> {
+            event.feedback.forEach((f) => {
                 const row = getTemplate('feedbackRow')!.firstElementChild as HTMLTableRowElement
                 (row.querySelector('.presValue') as HTMLTableCellElement).innerText = f.ratingValue.toString();
                 (row.querySelector('.contentValue') as HTMLTableCellElement).innerText = f.ratingContent.toString();
@@ -68,7 +110,9 @@ export default () => {
             const key = speakerKeyElement.value
             const data = await fetch(`${feedbackServerUrl}?speaker=${key}`)
             if (data.ok) {
-                showData(await data.json())
+                const dataSet = await data.json() as Array<any>;
+                const averages = dataSet.filter(row => !row.event)
+                showData(dataSet.filter(row => row.event) as EventData[], averages)
                 window.localStorage.setItem('speakerFeedbackKey', key)
             }
 
