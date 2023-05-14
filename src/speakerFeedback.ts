@@ -86,9 +86,9 @@ export default () => {
             const footerRow = (feedbackTable.querySelector('#feedbackFooter') as HTMLTableRowElement)
             event.feedback.forEach((f) => {
                 const row = getTemplate('feedbackRow')!.firstElementChild as HTMLTableRowElement
-                (row.querySelector('.presValue') as HTMLTableCellElement).innerText = f.ratingValue.toString();
-                (row.querySelector('.contentValue') as HTMLTableCellElement).innerText = f.ratingContent.toString();
-                (row.querySelector('.valueValue') as HTMLTableCellElement).innerText = f.ratingValue.toString();
+                (row.querySelector('.presValue') as HTMLTableCellElement).innerText = f.ratingPresentation.toFixed(0);
+                (row.querySelector('.contentValue') as HTMLTableCellElement).innerText = f.ratingContent.toFixed(0);
+                (row.querySelector('.valueValue') as HTMLTableCellElement).innerText = f.ratingValue.toFixed(0);
                 (row.querySelector('.feedbackValue') as HTMLTableCellElement).innerText = f.feedback || ''
 
                 footerRow.insertAdjacentElement('beforebegin', row)
