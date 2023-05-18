@@ -28,7 +28,9 @@ export default async () => {
         })
     }
 
-    const getSpeakerInfo = (sessionSpeakers: Array<string>) => eventData!.speakers.filter((s: SessionizeSpeaker) => sessionSpeakers.indexOf(s.id) >= 0)
+    const getSpeakerInfo = (sessionSpeakers: Array<string>) => {
+        return eventData!.speakers.filter((s: SessionizeSpeaker) => sessionSpeakers.indexOf(s.id) >= 0)
+    }
 
     const multipleSpeakerNames = (sessionSpeakers: Array<string>): string => {
         const remappedSpeakers = getSpeakerInfo(sessionSpeakers).map((s: SessionizeSpeaker) => s.fullName)
@@ -73,22 +75,22 @@ export default async () => {
             const image = document.createElement('img')
             image.alt = link.title
             switch (link.title) {
-            case 'Twitter': {
-                image.src = '/public/images/icons8-twitter-50.png'
-                break
-            }
-            case 'LinkedIn': {
-                image.src = '/public/images/icons8-linkedin-50.png'
-                break
-            }
-            case 'Blog': {
-                image.src = '/public/images/icons8-website-50.png'
-                break
-            }
-            default: {
-                image.src = '/public/images/icons8-external-link-50.png'
-                break
-            }
+                case 'Twitter': {
+                    image.src = '/public/images/icons8-twitter-50.png'
+                    break
+                }
+                case 'LinkedIn': {
+                    image.src = '/public/images/icons8-linkedin-50.png'
+                    break
+                }
+                case 'Blog': {
+                    image.src = '/public/images/icons8-website-50.png'
+                    break
+                }
+                default: {
+                    image.src = '/public/images/icons8-external-link-50.png'
+                    break
+                }
             }
             aTag.appendChild(image)
             result.push(aTag)
@@ -144,36 +146,40 @@ export default async () => {
             const divDataSlotId = div.attributes['data-slot-id'].value
             const matchedSession = getSession(divDataSlotId)
 
-            const speakerInfo = singleSpeaker(matchedSession.speakers)
-            const socialLinks = getSpeakerInfo(matchedSession.speakers).flatMap((s) => buildSocialBadges(s))
-            const contentNode = getTemplate('popupBioContent')
-            const bioContent = contentNode.firstElementChild!
-            const otherImages = otherSpeakerImages(matchedSession.speakers)
-            if (otherImages.length > 0) {
-                const imageElement = bioContent.querySelector('img.largePopupImage')!!
-                imageElement.classList.add('hide')
-                const multiImageElement = buildMuliSpeakerImageBlock(speakerInfo.profilePicture, otherImages, true)
-                imageElement.insertAdjacentElement('afterend', multiImageElement)
+            if (matchedSession) {
+                const speakerInfo = singleSpeaker(matchedSession.speakers)
+                const socialLinks = getSpeakerInfo(matchedSession.speakers).flatMap((s) => buildSocialBadges(s))
+                const contentNode = getTemplate('popupBioContent')
+                const bioContent = contentNode.firstElementChild!
+                const otherImages = otherSpeakerImages(matchedSession.speakers)
+                if (otherImages.length > 0) {
+                    const imageElement = bioContent.querySelector('img.largePopupImage')!!
+                    imageElement.classList.add('hide')
+                    const multiImageElement = buildMuliSpeakerImageBlock(speakerInfo.profilePicture, otherImages, true)
+                    imageElement.insertAdjacentElement('afterend', multiImageElement)
+                } else {
+                    const imageElement = (bioContent.querySelector('img.largePopupImage')! as HTMLImageElement)
+                    imageElement.src = speakerInfo.profilePicture
+                }
+
+                setText(bioContent, 'div.bio-speaker', multipleSpeakerNames(matchedSession.speakers))
+                const socialLinkPlaceholder = (bioContent.querySelector('div.bio-social')! as HTMLDivElement)
+                socialLinks.forEach((link) => {
+                    socialLinkPlaceholder.appendChild(link)
+                })
+
+                const bio = getSpeakerBio(matchedSession.speakers)
+                if (otherImages.length === 0) {
+                    setText(bioContent, 'div.bio-tagline', speakerInfo.tagLine)
+                }
+
+                setText(bioContent, 'div.bio-title', matchedSession.title)
+                setText(bioContent, 'div.bio-talk-description', matchedSession.description)
+                setText(bioContent, 'div.bio-speaker-bio', bio)
+                return bioContent
             } else {
-                const imageElement = (bioContent.querySelector('img.largePopupImage')! as HTMLImageElement)
-                imageElement.src = speakerInfo.profilePicture
+                return null;
             }
-
-            setText(bioContent, 'div.bio-speaker', multipleSpeakerNames(matchedSession.speakers))
-            const socialLinkPlaceholder = (bioContent.querySelector('div.bio-social')! as HTMLDivElement)
-            socialLinks.forEach((link) => {
-                socialLinkPlaceholder.appendChild(link)
-            })
-
-            const bio = getSpeakerBio(matchedSession.speakers)
-            if (otherImages.length === 0) {
-                setText(bioContent, 'div.bio-tagline', speakerInfo.tagLine)
-            }
-
-            setText(bioContent, 'div.bio-title', matchedSession.title)
-            setText(bioContent, 'div.bio-talk-description', matchedSession.description)
-            setText(bioContent, 'div.bio-speaker-bio', bio)
-            return bioContent
         }, 'clickable-session', 'unclickable-session')
     }
 
@@ -239,25 +245,25 @@ export default async () => {
                 const templateDivs = getTemplate('sessionCardTemplate').querySelectorAll('div')
                 templateDivs.forEach((templateElement) => {
                     switch (templateElement.className) {
-                    case 'agenda-session-image': {
-                        const otherImages = otherSpeakerImages(matchedSession.speakers)
-                        if (otherImages.length > 0) {
-                            const imagesHolder = buildMuliSpeakerImageBlock(singleSpeakerImage(matchedSession.speakers), otherImages)
-                            templateElement.appendChild(imagesHolder)
-                        } else {
-                            templateElement.appendChild(speakerImageCreator(singleSpeakerImage(matchedSession.speakers)))
-                        }
+                        case 'agenda-session-image': {
+                            const otherImages = otherSpeakerImages(matchedSession.speakers)
+                            if (otherImages.length > 0) {
+                                const imagesHolder = buildMuliSpeakerImageBlock(singleSpeakerImage(matchedSession.speakers), otherImages)
+                                templateElement.appendChild(imagesHolder)
+                            } else {
+                                templateElement.appendChild(speakerImageCreator(singleSpeakerImage(matchedSession.speakers)))
+                            }
 
-                        break
-                    }
-                    case 'agenda-session-name': {
-                        templateElement.innerText = multipleSpeakerNames(matchedSession.speakers)
-                        break
-                    }
-                    case 'agenda-session-title': {
-                        templateElement.innerText = matchedSession.title
-                        break
-                    }
+                            break
+                        }
+                        case 'agenda-session-name': {
+                            templateElement.innerText = multipleSpeakerNames(matchedSession.speakers)
+                            break
+                        }
+                        case 'agenda-session-title': {
+                            templateElement.innerText = matchedSession.title
+                            break
+                        }
                     }
 
                     div.insertAdjacentElement('beforeend', templateElement)

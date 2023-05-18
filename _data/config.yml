@@ -18,7 +18,7 @@ events:
     sponsorOpen: true
     colour: blue
     tickets:
-      onsale: true
+      onsale: false
       totally_sold_out: false
       has_shuttle: false
       has_waiting_list: false
