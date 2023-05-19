@@ -19,4 +19,5 @@ module.exports = {
         filename: 'devconf.js',
         path: path.resolve(__dirname, 'scripts'),
     },
+    devtool: "source-map",
 }

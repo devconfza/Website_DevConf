@@ -71,8 +71,17 @@ export default async () => {
     }
 
     const talkTitle = (sessionId: string): string => {
-        const session = eventData!.sessions.find((s) => s.id === sessionId)!
-        const speakers = session.speakers.map((speakerId) => eventData!.speakers.find((speaker) => speaker.id === speakerId)!.fullName).join(' and ')
+        const session = eventData!.sessions.find((s) => s.id === sessionId)
+        if (!session) {
+            return "To Be Announced";
+        }
+
+        const speakers = session.speakers
+            .map((speakerId) => eventData!.speakers.find((speaker) => speaker?.id === speakerId))
+            .filter((speaker) => !!speaker)
+            .map((speaker) => speaker?.fullName)
+            .join(' and ');
+        
         return `${session.title} by ${speakers}`
     }
 
