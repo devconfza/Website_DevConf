@@ -236,38 +236,43 @@ export default async () => {
         document.querySelectorAll('.agenda-session').forEach((element) => {
             const div = element as HTMLDivElement
             const dataSlotId = div.attributes['data-slot-id'].value
-            const matchedSession = getSession(dataSlotId)
-
-            if (!matchedSession) {
-                const tbaTemplate = getTemplate('tbaCardTemplate').querySelector('div')
+            if (dataSlotId === '999999') {
+                const tbaTemplate = getTemplate('noSessionCardTemplate').querySelector('div')
                 div.insertAdjacentElement('beforeend', tbaTemplate!)
             } else {
-                const templateDivs = getTemplate('sessionCardTemplate').querySelectorAll('div')
-                templateDivs.forEach((templateElement) => {
-                    switch (templateElement.className) {
-                        case 'agenda-session-image': {
-                            const otherImages = otherSpeakerImages(matchedSession.speakers)
-                            if (otherImages.length > 0) {
-                                const imagesHolder = buildMuliSpeakerImageBlock(singleSpeakerImage(matchedSession.speakers), otherImages)
-                                templateElement.appendChild(imagesHolder)
-                            } else {
-                                templateElement.appendChild(speakerImageCreator(singleSpeakerImage(matchedSession.speakers)))
+                const matchedSession = getSession(dataSlotId)
+
+                if (!matchedSession) {
+                    const tbaTemplate = getTemplate('tbaCardTemplate').querySelector('div')
+                    div.insertAdjacentElement('beforeend', tbaTemplate!)
+                } else {
+                    const templateDivs = getTemplate('sessionCardTemplate').querySelectorAll('div')
+                    templateDivs.forEach((templateElement) => {
+                        switch (templateElement.className) {
+                            case 'agenda-session-image': {
+                                const otherImages = otherSpeakerImages(matchedSession.speakers)
+                                if (otherImages.length > 0) {
+                                    const imagesHolder = buildMuliSpeakerImageBlock(singleSpeakerImage(matchedSession.speakers), otherImages)
+                                    templateElement.appendChild(imagesHolder)
+                                } else {
+                                    templateElement.appendChild(speakerImageCreator(singleSpeakerImage(matchedSession.speakers)))
+                                }
+
+                                break
                             }
+                            case 'agenda-session-name': {
+                                templateElement.innerText = multipleSpeakerNames(matchedSession.speakers)
+                                break
+                            }
+                            case 'agenda-session-title': {
+                                templateElement.innerText = matchedSession.title
+                                break
+                            }
+                        }
 
-                            break
-                        }
-                        case 'agenda-session-name': {
-                            templateElement.innerText = multipleSpeakerNames(matchedSession.speakers)
-                            break
-                        }
-                        case 'agenda-session-title': {
-                            templateElement.innerText = matchedSession.title
-                            break
-                        }
-                    }
-
-                    div.insertAdjacentElement('beforeend', templateElement)
-                })
+                        div.insertAdjacentElement('beforeend', templateElement)
+                    })
+                }
             }
         })
 

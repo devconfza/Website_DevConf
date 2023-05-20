@@ -101,6 +101,9 @@ export default async () => {
 
         for (let index = start; index < end; index++) {
             const sessionId = sessionStructure[index]
+            if (sessionId === '999999') {
+                continue
+            }
 
             const option = document.createElement('option')
 
