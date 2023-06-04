@@ -1,0 +1,167 @@
+{% assign event = site.data.config.events[include.offset] %}
+
+<div class="sponsor">
+    <div class="{{ include.baseStyle }}">
+        <div class="{{ include.baseStyle }}-ellipse">&nbsp;</div>
+        <div class="sponsor-title-content">
+            <div>DevConf {{ event.location }} 2023 - Feedback</div>
+            <div class="sponsor-title-content-third">This is your event! Tell us how to improve it for you!</div>
+            <div class="sponsor-title-content-third">Want to win a Loadshedding Essentials Kit which conatins a GIZZU 242Wh Portal Power Station and solar panels, complete your email in "Demographics"</div>
+        </div>
+    </div>
+
+    <data style="display:none;" id="workshopData">
+        {% if event.workshops.workshop1.enabled %}
+        {{ event.workshops.workshop1.title }}
+        {% else %}
+        none
+        {% endif %}
+
+        ;;;
+
+        {% if event.workshops.workshop2.enabled %}
+        {{ event.workshops.workshop2.title }}
+        {% else %}
+        none
+        {% endif %}
+    </data>
+
+    <data style="display: none;" id="sessionData">
+        {% for session in include.sessions %}
+        {{ session.id }}
+        {% endfor %}
+    </data>
+
+    <div id="feedbackStage" class="sponsor-content-detail feedbackBase"
+        data-event-id="{{ event.sessionizeId }}" data-rating-id="-2023-{{ include.offset }}">
+        <span id="feedbackLoading" class="loading">
+            Loading...
+        </span>
+        
+    </div>
+
+    <div class="submitButtons">
+        <button id="saveDataButton" class="saveButton">Save</button>
+    </div>
+
+    <div class="sponsor-content-detail">
+        <p>All questions optional. Pressing "save" will update your submission - so you can update during the day</p>
+    </div>
+
+
+    <div class="popupBackdrop popupBackdropHidden">
+        <div class="popupContent" onclick="event.stopPropagation()">
+            <div class="popupClose popupRatingClose">X</div>
+        </div>
+    </div>
+</div>
+
+<template id="doneButton">
+    <button class="doneButton">Done</button>
+</template>
+
+<template id="feedbackButton">
+    <div class="feedbackButton">
+        <div class="feedbackButtonTitle"></div>
+        <div class="feedbackButtonWorkshop"></div>
+        <div class="feedbackButtonProgressBar"></div>
+    </div>
+</template>
+
+<template id="feedbackPopup">
+    <div class="feedbackPopup">
+        <div class="feedbackTitle"></div>
+    </div>
+</template>
+
+<template id="questionTemplate">
+    <div class="questionBase">
+        <div class="questionTitle"></div>
+    </div>
+</template>
+
+<template id="rateQuestionStyleTemplate">
+    <div class="rating">
+        <input class="styled-slider" type="range" min="1" max="5" list="ratingValues" />
+        <datalist id="ratingValues">
+            <option value="1" label="Bad"></option>
+            <option value="5" label="Great!"></option>
+        </datalist>
+    </div>
+</template>
+
+<template id="textQuestionStyleTemplate">
+    <textarea class="textFeedback" spellcheck="true"></textarea>
+</template>
+
+<template id="timeslot-selectorQuestionStyleTemplate">
+    <select id="timeSlotSelector">
+        <option value="none">None</option>
+    </select>
+</template>
+
+<template id="roleQuestionStyleTemplate">
+    <select>
+        <option>Please select</option>
+        <option value="backend">Back-end Developer</option>
+        <option value="business-analyst">Business Analyst</option>
+        <option value="data-scientist">Data Scientist</option>
+        <option value="database-administrator">Database Administrator</option>
+        <option value="designer">UI/UX Designer</option>
+        <option value="devops">DevOps Engineer</option>
+        <option value="frontend">Front-end Developer</option>
+        <option value="fullstack">Full-stack Developer</option>
+        <option value="it-support">IT Support Specialist</option>
+        <option value="mobile">Mobile Developer</option>
+        <option value="project-manager">Project Manager</option>
+        <option value="product-owner">Product Owner</option>
+        <option value="qa">Quality Assurance Engineer</option>
+        <option value="scrum-master">Scrum Master</option>
+        <option value="systems-analyst">Systems Analyst</option>
+        <option value="tech-lead">Technical Lead</option>
+        <option value="technical-writer">Technical Writer</option>
+        <option value="other">Other</option>
+    </select>
+</template>
+
+<template id="levelQuestionStyleTemplate">
+    <select>
+        <option>Please select</option>
+        <option value="junior">Junior</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="senior">Senior</option>
+        <option value="lead">Lead</option>
+        <option value="manager">Manager</option>
+        <option value="director">Director or Executive</option>
+        <option value="other">Other</option>
+    </select>
+</template>
+
+<template id="influenceQuestionStyleTemplate">
+    <select>
+        <option>Please select</option>
+        <option value="non-decision-maker">Non-Decision Maker</option>
+        <option value="influencer">Influencer</option>
+        <option value="decision-maker">Decision Maker</option>
+        <option value="sole-decision-maker">Sole Decision Maker</option>
+    </select>
+</template>
+
+<template id="yearsQuestionStyleTemplate">
+    <input type="number" autocomplete="off" min="0" max="60" />
+</template>
+
+<template id="emailQuestionStyleTemplate">
+    <input type="email" autocomplete="email" />
+</template>
+
+<template id="yesnoQuestionStyleTemplate">
+    <div class="radioSet">
+        <input type="radio" value="yes" id="yes" name="yesno" />
+        <label for="yes">Yes</label>
+        <input type="radio" value="no" id="no" name="yesno" />
+        <label for="no">No</label>
+    </div>
+</template>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j"></script>
