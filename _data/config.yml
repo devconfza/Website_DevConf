@@ -2,77 +2,13 @@ events:
   - virtual: false
     show: true
     showAgenda: true
-    location: "Cape Town"
-    menuTitle: "Cape Town"
-    date: "2024"
-    info: "/capetown"
-    infoOn: false
-    sessionizeId: "3hwiocdj"
-    logo: devconfcpt.png
-    minattendees: 500
-    venue: "Cape Town International Convention Centre 2"
-    website: "https://www.cticc.co.za/"
-    mapLink: "https://g.page/CTICC2?share"
-    lat: "-33.91743373623432"
-    long: "18.429546394164426"
-    sponsorOpen: false
-    colour: blue
-    tickets:
-      onsale: false
-      totally_sold_out: false
-      has_shuttle: false
-      has_waiting_list: false
-      waiting_list: "https://forms.office.com/r/qVxjgmV94r"
-      purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
-      merch_link: 
-      fullprice:
-        price: 2999
-        sold_out: false
-      earlybird:
-        price: 2699  
-        sold_out: true  
-    rooms: 
-      room_1: "Hall 5"
-      room_2: "Daisy + Freesia + Orchid"
-      room_3: "Nerine + Protea"
-      room_4: "Watsonia"
-      room_5: "Bluebell" 
-    workshops:
-      workshop1:
-        enabled: false
-        announceSponsor: false
-        sponsor: 
-        sponsorLink: 
-        title: Morning Workshop
-        content1: To be announced
-        content2: To be announced
-        room: Workshop Space in Expo
-      workshop2:
-        enabled: true
-        announceSponsor: true
-        sponsor: Equal Experts
-        sponsorLink: https://www.equalexperts.com/
-        title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
-        content1: "14h20: <strong>Welcome to Data Workshop with Steve Riley</strong><br>
-        Some highlights from EE’s data work and then workshop agenda<br/>
-        <br/>
-        14h30: <strong>lean MLOps with Austin Poulton</strong><br/>
-        An introduction to the key considerations and useful OSS technologies to operating machine learning models. Attendees may bring their own device and optionally follow along."
-        content2: "15h30: <strong>Introduction to analytics with dbt with Nicolas Kew & Riaz Arbi</strong><br/>
-        An introduction to analytics engineering and demonstration using dbt.<br/><br/>
-        16h20: <strong>Panel discussion on software engineer to data engineer journey</strong><br/>
-        Panel discussion with Dawid du Toit, Riaz Arbi, Neil Murray, & Nicolaw Kew"
-        room: Workshop Space in Expo
-  - virtual: false
-    show: true
-    showAgenda: true
     location: "Johannesburg"
     menuTitle: "Joburg"
     date: "2024"
     info: "/joburg"
     infoOn: false
     sessionizeId: "3hwiocdj"
-    logo: devconfpta.png
+    logo: devconfjhb.png
     minattendees: 500
     venue: "CSIR International Conference Centre"
     website: "https://www.csiricc.co.za/"
@@ -145,3 +81,67 @@ Discussion of how AI tools can improve productivity and creativity in full stack
 Recap of workshop topics and discussion of next steps.<br/>
 Q&A session with workshop participants."
         room: Workshop Space
+  - virtual: false
+    show: true
+    showAgenda: true
+    location: "Cape Town"
+    menuTitle: "Cape Town"
+    date: "2024"
+    info: "/capetown"
+    infoOn: false
+    sessionizeId: "3hwiocdj"
+    logo: devconfcpt.png
+    minattendees: 500
+    venue: "Cape Town International Convention Centre 2"
+    website: "https://www.cticc.co.za/"
+    mapLink: "https://g.page/CTICC2?share"
+    lat: "-33.91743373623432"
+    long: "18.429546394164426"
+    sponsorOpen: false
+    colour: blue
+    tickets:
+      onsale: false
+      totally_sold_out: false
+      has_shuttle: false
+      has_waiting_list: false
+      waiting_list: "https://forms.office.com/r/qVxjgmV94r"
+      purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
+      merch_link: 
+      fullprice:
+        price: 2999
+        sold_out: false
+      earlybird:
+        price: 2699  
+        sold_out: true  
+    rooms: 
+      room_1: "Hall 5"
+      room_2: "Daisy + Freesia + Orchid"
+      room_3: "Nerine + Protea"
+      room_4: "Watsonia"
+      room_5: "Bluebell" 
+    workshops:
+      workshop1:
+        enabled: false
+        announceSponsor: false
+        sponsor: 
+        sponsorLink: 
+        title: Morning Workshop
+        content1: To be announced
+        content2: To be announced
+        room: Workshop Space in Expo
+      workshop2:
+        enabled: true
+        announceSponsor: true
+        sponsor: Equal Experts
+        sponsorLink: https://www.equalexperts.com/
+        title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
+        content1: "14h20: <strong>Welcome to Data Workshop with Steve Riley</strong><br>
+        Some highlights from EE’s data work and then workshop agenda<br/>
+        <br/>
+        14h30: <strong>lean MLOps with Austin Poulton</strong><br/>
+        An introduction to the key considerations and useful OSS technologies to operating machine learning models. Attendees may bring their own device and optionally follow along."
+        content2: "15h30: <strong>Introduction to analytics with dbt with Nicolas Kew & Riaz Arbi</strong><br/>
+        An introduction to analytics engineering and demonstration using dbt.<br/><br/>
+        16h20: <strong>Panel discussion on software engineer to data engineer journey</strong><br/>
+        Panel discussion with Dawid du Toit, Riaz Arbi, Neil Murray, & Nicolaw Kew"
+        room: Workshop Space in Expo
