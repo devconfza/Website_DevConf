@@ -32,8 +32,11 @@ layout: default
                     <div class="date">{{ event.date }}</div>
                     <img class="event-logo" src="/public/images/{{ event.logo }}">
                     {% if event.infoOn %}
-                    <div class="button" role="button">
+                    <!-- <div class="button" role="button">
                         Agenda, venue &amp; sponsors
+                    </div> -->
+                    <div class="button" role="button">
+                        Event Info
                     </div>
                     {% endif %}
                     {% if event.infoOn %}
@@ -44,6 +47,34 @@ layout: default
         {% endif %}
         {% endfor %}
     </div>
+    <div>
+        <div class="sponsor-content-detail-heading">Ticket Prices</div>
+        <p>
+        <ul>
+            <li>Limited Early Bird Price: R3 150.43</li>
+            <li>Sponsor Price:  R3 220.44</li>
+            <li>Bulk Discount Price: R3 293.64</li>
+            <li>Full Price: R3 623.00</li>
+        </ul>
+        <small style="display: block;text-align: right;">Prices include VAT</small>
+        </p>
+    </div>
+    <div>
+        <div class="sponsor-content-detail-heading">Important Dates for 2024</div>
+        <ul>
+            <li>2 October 2023: Call for speakers opens</li>
+            <li>2 October 2023: Early sponsorship opens to 2023 sponsors</li>
+            <li>31 October 2023: Call for speakers closes</li>
+            <li>1 November 2023: Public sponsorship opens</li>
+            <li>1 November 2023: Tickets go on sale</li>
+            <li>12th of February 2024: Agenda announced</li>
+            <li>Early May 2024: Ticket sales and sponsorship closes</li>
+        </ul>
+    </div>
+    <!-- <div>
+        <a class="button" href="https://sessionize.com/devconf-2024/" target="_blank">Submit to our call for
+            speakers</a>
+    </div> -->
 </div>
 
 <div class="sponsor-content-detail">
