@@ -1,102 +1,86 @@
 events:
   - virtual: false
     show: true
-    showAgenda: true
+    showAgenda: false
     location: "Johannesburg"
     menuTitle: "Joburg"
-    date: "2024"
+    date: "7 May 2024"
     info: "/joburg"
-    infoOn: false
-    sessionizeId: "3hwiocdj"
+    infoOn: true
+    sessionizeId: ""
     logo: devconfjhb.png
-    minattendees: 500
-    venue: "CSIR International Conference Centre"
-    website: "https://www.csiricc.co.za/"
-    mapLink: "https://goo.gl/maps/DFndScsarXYkhMLJ7"
-    lat: "-25.752775506234492"
-    long: "28.27698733915744"
-    sponsorOpen: true
+    minattendees: 750
+    venue: "Emperors Palace Conference Centre"
+    website: "https://emperorspalace.com/conferences-overview/"
+    mapLink: "https://goo.gl/maps/eQKGw5XmjA5RjPQa8"
+    lat: "-26.146498178859964"
+    long: "28.223241542328243"
+    sponsorOpen: false
     colour: pink
     tickets:
       totally_sold_out: true
       onsale: false
-      has_shuttle: true
+      has_shuttle: false
       has_waiting_list: false
-      waiting_list: https://forms.office.com/r/KZXA0XQXrf
-      purchaseSite: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria"
-      merch_link: "https://www.quicket.co.za/events/201818-devconf-2023-pretoria/?preview=t#/merchandise"
+      waiting_list: 
+      purchaseSite: ""
+      merch_link: ""
       fullprice:
-        price: 2999
-        sold_out: true
+        price: 3623
+        sold_out: false
       earlybird:
-        price: 2699  
-        sold_out: true     
+        price: 3150.43  
+        sold_out: false     
     rooms: 
-      room_1: "Diamond Auditorium"
-      room_2: "Amber"
-      room_3: "Amethyst"
-      room_4: "Ruby Auditorium"
-      room_5: "Emerald Auditorium" 
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
+      room_5: "Room 5" 
     workshops:
       workshop1:
         enabled: true
-        announceSponsor: true
-        sponsor: cloudandthings.io 
-        sponsorLink: https://cloudandthings.io
-        title: "Deploying a Serverless ChatGPT Bot with Devan Barwood"
-        content1: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
-
-A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
-
-Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
-
-<strong>Attendees need to bring their own laptops</strong>."
-        content2: "This workshop will introduce you to a basic software lifecycle. From infrastructure to application deployment and unit testing.<br/> 
-
-A quick start to learning some of the best practices when deploying an application to AWS.<br/> 
-
-Technologies: Terraform, Github Actions, AWS Serverless Services, Python.<br/>
-
-<strong>Attendees need to bring their own laptops</strong>."
+        announceSponsor: false
+        sponsor:
+        sponsorLink:
+        title:
+        content1:
+        content2:
         room: Workshop Space
       workshop2:
         enabled: true
-        announceSponsor: true
-        sponsor: Runninghill Software Development (Pty)Ltd 
-        sponsorLink: https://www.runninghill.co.za 
-        title: "Game changing AI tools for full stack apps: Unleash your potential!"
-        content1: "<strong>Introduction</strong><br/>Explanation of workshop goals and objectives.<br/>
-Overview of the benefits of using AI tools in full stack app development.<br/><br/>
-<strong>All attendees to please bring their laptops!</strong>"
-        content2: "<strong>Understanding AI Tools for Full Stack App Development</strong><br/>
-Explanation of what AI tools are and how they can be used in full stack app development.<br/>
-Overview of the different types of AI tools available for full stack app development.<br/>
-<br/><strong>Hands-On Session: Using AI Tools in Full Stack App Development</strong><br/>
-Participants will work on a guided exercise to use AI tools for full stack app development.<br/>
-Participants will learn how to use AI tools to improve their development process.<br/>
-<br/><strong>Best Practices for Using AI Tools in Full Stack App Development</strong><br/>
-Overview of best practices for using AI tools in full stack app development.<br/>
-Discussion of how AI tools can improve productivity and creativity in full stack app development.<br/>
-<br/><strong>Conclusion</strong><br/>
-Recap of workshop topics and discussion of next steps.<br/>
-Q&A session with workshop participants."
+        announceSponsor: false
+        sponsor:
+        sponsorLink: 
+        title: 
+        content1: 
+        content2: 
+        room: Workshop Space
+      workshop3:
+        enabled: true
+        announceSponsor: false
+        sponsor:
+        sponsorLink: 
+        title: 
+        content1: 
+        content2: 
         room: Workshop Space
   - virtual: false
     show: true
-    showAgenda: true
+    showAgenda: false
     location: "Cape Town"
     menuTitle: "Cape Town"
-    date: "2024"
+    date: "9 May 2024"
     info: "/capetown"
-    infoOn: false
-    sessionizeId: "3hwiocdj"
+    infoOn: true
+    sessionizeId: ""
     logo: devconfcpt.png
-    minattendees: 500
-    venue: "Cape Town International Convention Centre 2"
-    website: "https://www.cticc.co.za/"
-    mapLink: "https://g.page/CTICC2?share"
-    lat: "-33.91743373623432"
-    long: "18.429546394164426"
+    minattendees: 750
+    venue: "Century City Conference Centre"
+    website: "http://ccconferencecentre.co.za/"
+    mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
+    lat: "-33.895519679277136"
+    long: "18.504693653133835"
     sponsorOpen: false
     colour: blue
     tickets:
@@ -104,44 +88,46 @@ Q&A session with workshop participants."
       totally_sold_out: false
       has_shuttle: false
       has_waiting_list: false
-      waiting_list: "https://forms.office.com/r/qVxjgmV94r"
-      purchaseSite: "https://www.quicket.co.za/events/202726-devconf-2023-cape-town"
+      waiting_list: ""
+      purchaseSite: ""
       merch_link: 
       fullprice:
-        price: 2999
+        price: 3623
         sold_out: false
       earlybird:
-        price: 2699  
-        sold_out: true  
+        price: 3150.43  
+        sold_out: false   
     rooms: 
-      room_1: "Hall 5"
-      room_2: "Daisy + Freesia + Orchid"
-      room_3: "Nerine + Protea"
-      room_4: "Watsonia"
-      room_5: "Bluebell" 
+      room_1: "Room 1"
+      room_2: "Room 2"
+      room_3: "Room 3"
+      room_4: "Room 4"
+      room_5: "Room 5" 
     workshops:
       workshop1:
-        enabled: false
+        enabled: true
         announceSponsor: false
-        sponsor: 
-        sponsorLink: 
-        title: Morning Workshop
-        content1: To be announced
-        content2: To be announced
-        room: Workshop Space in Expo
+        sponsor:
+        sponsorLink:
+        title:
+        content1:
+        content2:
+        room: Workshop Space
       workshop2:
         enabled: true
-        announceSponsor: true
-        sponsor: Equal Experts
-        sponsorLink: https://www.equalexperts.com/
-        title: "Equal Experts Data Workshop with Austin Poulton &amp; team"
-        content1: "14h20: <strong>Welcome to Data Workshop with Steve Riley</strong><br>
-        Some highlights from EE’s data work and then workshop agenda<br/>
-        <br/>
-        14h30: <strong>lean MLOps with Austin Poulton</strong><br/>
-        An introduction to the key considerations and useful OSS technologies to operating machine learning models. Attendees may bring their own device and optionally follow along."
-        content2: "15h30: <strong>Introduction to analytics with dbt with Nicolas Kew & Riaz Arbi</strong><br/>
-        An introduction to analytics engineering and demonstration using dbt.<br/><br/>
-        16h20: <strong>Panel discussion on software engineer to data engineer journey</strong><br/>
-        Panel discussion with Dawid du Toit, Riaz Arbi, Neil Murray, & Nicolaw Kew"
-        room: Workshop Space in Expo
+        announceSponsor: false
+        sponsor:
+        sponsorLink: 
+        title: 
+        content1: 
+        content2: 
+        room: Workshop Space
+      workshop3:
+        enabled: true
+        announceSponsor: false
+        sponsor:
+        sponsorLink: 
+        title: 
+        content1: 
+        content2: 
+        room: Workshop Space
