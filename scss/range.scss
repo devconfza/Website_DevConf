@@ -3,6 +3,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 input[type="range"].styled-slider {
     height: 2.2em;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 input[type="range"].styled-slider:focus {
@@ -12,6 +13,7 @@ input[type="range"].styled-slider:focus {
 /*webkit*/
 input[type="range"].styled-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     width: 2em;
     height: 2em;
     border-radius: 1em;

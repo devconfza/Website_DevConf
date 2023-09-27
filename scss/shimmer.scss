@@ -1,0 +1,32 @@
+@keyframes TransitioningBackground {
+    0% {
+        background-position: 1% 0%;
+    }
+    50% {
+        background-position: 99% 100%;
+    }
+    100% {
+        background-position: 1% 0%;
+    }
+}
+
+.shimmer {
+    animation: TransitioningBackground 10s ease infinite;
+    // to ease the button growth on hover
+    transition: 0.6s;
+
+    // grow button and change background gradient on hover
+    &:hover {
+        // makes button grow from its center instead of growing right and down to expand
+        transform: scale(1.2);
+        cursor: pointer;
+
+        // psuedo-elements for right- and left-side shine animations
+        &::before,
+        &::after {
+            display: block;
+            transform: translateX(300px) skewX(-15deg);
+            transition: 0.7s;
+        }
+    }
+}

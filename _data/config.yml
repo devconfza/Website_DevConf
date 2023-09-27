@@ -1,133 +1,136 @@
+callForSpeakers:
+    show: true
+    link: https://sessionize.com/devconf-2024
 events:
-  - virtual: false
-    show: true
-    showAgenda: false
-    location: "Johannesburg"
-    menuTitle: "Joburg"
-    date: "7 May 2024"
-    info: "/joburg"
-    infoOn: true
-    sessionizeId: ""
-    logo: devconfjhb.png
-    minattendees: 750
-    venue: "Emperors Palace Conference Centre"
-    website: "https://emperorspalace.com/conferences-overview/"
-    mapLink: "https://goo.gl/maps/eQKGw5XmjA5RjPQa8"
-    lat: "-26.146498178859964"
-    long: "28.223241542328243"
-    sponsorOpen: false
-    colour: pink
-    tickets:
-      totally_sold_out: true
-      onsale: false
-      has_shuttle: false
-      has_waiting_list: false
-      waiting_list: 
-      purchaseSite: ""
-      merch_link: ""
-      fullprice:
-        price: 3623
-        sold_out: false
-      earlybird:
-        price: 3150.43  
-        sold_out: false     
-    rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5" 
-    workshops:
-      workshop1:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink:
-        title:
-        content1:
-        content2:
-        room: Workshop Space
-      workshop2:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink: 
-        title: 
-        content1: 
-        content2: 
-        room: Workshop Space
-      workshop3:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink: 
-        title: 
-        content1: 
-        content2: 
-        room: Workshop Space
-  - virtual: false
-    show: true
-    showAgenda: false
-    location: "Cape Town"
-    menuTitle: "Cape Town"
-    date: "9 May 2024"
-    info: "/capetown"
-    infoOn: true
-    sessionizeId: ""
-    logo: devconfcpt.png
-    minattendees: 750
-    venue: "Century City Conference Centre"
-    website: "http://ccconferencecentre.co.za/"
-    mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
-    lat: "-33.895519679277136"
-    long: "18.504693653133835"
-    sponsorOpen: false
-    colour: blue
-    tickets:
-      onsale: false
-      totally_sold_out: false
-      has_shuttle: false
-      has_waiting_list: false
-      waiting_list: ""
-      purchaseSite: ""
-      merch_link: 
-      fullprice:
-        price: 3623
-        sold_out: false
-      earlybird:
-        price: 3150.43  
-        sold_out: false   
-    rooms: 
-      room_1: "Room 1"
-      room_2: "Room 2"
-      room_3: "Room 3"
-      room_4: "Room 4"
-      room_5: "Room 5" 
-    workshops:
-      workshop1:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink:
-        title:
-        content1:
-        content2:
-        room: Workshop Space
-      workshop2:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink: 
-        title: 
-        content1: 
-        content2: 
-        room: Workshop Space
-      workshop3:
-        enabled: true
-        announceSponsor: false
-        sponsor:
-        sponsorLink: 
-        title: 
-        content1: 
-        content2: 
-        room: Workshop Space
+    - virtual: false
+      show: true
+      showAgenda: false
+      location: "Johannesburg"
+      menuTitle: "Joburg"
+      date: "7 May 2024"
+      info: "/joburg"
+      infoOn: true
+      sessionizeId: ""
+      logo: devconfjhb.png
+      minattendees: 750
+      venue: "Emperors Palace Conference Centre"
+      website: "https://emperorspalace.com/conferences-overview/"
+      mapLink: "https://goo.gl/maps/eQKGw5XmjA5RjPQa8"
+      lat: "-26.146498178859964"
+      long: "28.223241542328243"
+      sponsorOpen: false
+      colour: pink
+      tickets:
+          totally_sold_out: true
+          onsale: false
+          has_shuttle: false
+          has_waiting_list: false
+          waiting_list:
+          purchaseSite: ""
+          merch_link: ""
+          fullprice:
+              price: 3623
+              sold_out: false
+          earlybird:
+              price: 3150.43
+              sold_out: false
+      rooms:
+          room_1: "Room 1"
+          room_2: "Room 2"
+          room_3: "Room 3"
+          room_4: "Room 4"
+          room_5: "Room 5"
+      workshops:
+          workshop1:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space
+          workshop2:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space
+          workshop3:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space
+    - virtual: false
+      show: true
+      showAgenda: false
+      location: "Cape Town"
+      menuTitle: "Cape Town"
+      date: "9 May 2024"
+      info: "/capetown"
+      infoOn: true
+      sessionizeId: ""
+      logo: devconfcpt.png
+      minattendees: 750
+      venue: "Century City Conference Centre"
+      website: "http://ccconferencecentre.co.za/"
+      mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
+      lat: "-33.895519679277136"
+      long: "18.504693653133835"
+      sponsorOpen: false
+      colour: blue
+      tickets:
+          onsale: false
+          totally_sold_out: false
+          has_shuttle: false
+          has_waiting_list: false
+          waiting_list: ""
+          purchaseSite: ""
+          merch_link:
+          fullprice:
+              price: 3623
+              sold_out: false
+          earlybird:
+              price: 3150.43
+              sold_out: false
+      rooms:
+          room_1: "Room 1"
+          room_2: "Room 2"
+          room_3: "Room 3"
+          room_4: "Room 4"
+          room_5: "Room 5"
+      workshops:
+          workshop1:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space
+          workshop2:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space
+          workshop3:
+              enabled: true
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room: Workshop Space

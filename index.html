@@ -62,7 +62,7 @@ layout: default
     <div>
         <div class="sponsor-content-detail-heading">Important Dates for 2024</div>
         <ul>
-            <li>2 October 2023: Call for speakers opens</li>
+            <li>1 October 2023: Call for speakers opens</li>
             <li>2 October 2023: Early sponsorship opens to 2023 sponsors</li>
             <li>31 October 2023: Call for speakers closes</li>
             <li>1 November 2023: Public sponsorship opens</li>
@@ -71,10 +71,11 @@ layout: default
             <li>Early May 2024: Ticket sales and sponsorship closes</li>
         </ul>
     </div>
-    <!-- <div>
-        <a class="button" href="https://sessionize.com/devconf-2024/" target="_blank">Submit to our call for
-            speakers</a>
-    </div> -->
+    {% if site.data.config.callForSpeakers.show %}
+    <div>
+        <a class="button callforspeakers shimmer" href="{{ site.data.config.callForSpeakers.link }}" target="_blank">Speak at DevConf!<br/>Send us your talk proposal today!</a>
+    </div>
+    {% endif %}
 </div>
 
 <div class="sponsor-content-detail">

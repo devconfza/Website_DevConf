@@ -8,21 +8,21 @@ $workshopMoveBelowWidth: 1220px;
 
 @mixin scrollbar() {
     &::-webkit-scrollbar {
-      width: 12px;
+        width: 12px;
     }
-  
+
     &::-webkit-scrollbar-track {
-      background: $darkBrandBlue;
+        background: $darkBrandBlue;
     }
-  
+
     &::-webkit-scrollbar-thumb {
-      background: rgb(252, 0, 61);
-      background: linear-gradient(
-        0deg,
-        rgba(252, 0, 61, 1) 25%,
-        rgba(25, 195, 252, 1) 75%
-      );
-      border-radius: 20px;
-      border: 0;
+        background: rgb(252, 0, 61);
+        background: linear-gradient(
+            0deg,
+            rgba(252, 0, 61, 1) 25%,
+            rgba(25, 195, 252, 1) 75%
+        );
+        border-radius: 20px;
+        border: 0;
     }
-  }
+}
