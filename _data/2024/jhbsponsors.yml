@@ -1,12 +1,7 @@
-# - Level: Diamond
-#   Name: OfferZen
-#   Url: https://www.offerzen.com
-#   Logo: offerzendiamond.jpg
-
-# - Level: Platinum
-#   Name: Betway
-#   Url: https://www.osiristrading.com  
-#   Logo: betwayplat.jpg
+- Level: Diamond
+  Name: Betway
+  Url: https://www.osiristrading.com  
+  Logo: betwayplat.jpg
 
 # - Level: Platinum
 #   Name: Paystack
@@ -58,10 +53,10 @@
 #   Url: https://www.radixtrie.com
 #   Logo: radixtriesilver.jpg
 
-# - Level: Silver
-#   Name: Thinkst Canary
-#   Url: https://canary.tools
-#   Logo: thinkstsilver.jpg
+- Level: Bronze
+  Name: Thinkst Canary
+  Url: https://canary.tools
+  Logo: thinkstsilver.jpg
 
 # - Level: Registration
 #   Name: Bob Group
@@ -88,7 +83,7 @@
 #   Url: https://www.iitpsa.org.za/
 #   Logo: iitpsa.jpg
 
-# - Level: Media
-#   Name: Digital Street
-#   Url: https://www.digitalstreetsa.com/
-#   Logo: digitalstreetmedia.jpg
+- Level: Media
+  Name: Digital Street
+  Url: https://www.digitalstreetsa.com/
+  Logo: digitalstreetmedia.jpg

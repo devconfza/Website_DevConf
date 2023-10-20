@@ -68,6 +68,11 @@
 #   Url: https://canary.tools
 #   Logo: thinkstsilver.jpg
 
+- Level: Bronze
+  Name: Thinkst Canary
+  Url: https://canary.tools
+  Logo: thinkstsilver.jpg
+
 # - Level: Bag
 #   Name: Derivco
 #   Url: http://www.derivco.com/ 
@@ -98,8 +103,8 @@
 #   Url: https://www.iitpsa.org.za/
 #   Logo: iitpsa.jpg
 
-# - Level: Media
-#   Name: Digital Street
-#   Url: https://www.digitalstreetsa.com/
-#   Logo: digitalstreetmedia.jpg
+- Level: Media
+  Name: Digital Street
+  Url: https://www.digitalstreetsa.com/
+  Logo: digitalstreetmedia.jpg
   
