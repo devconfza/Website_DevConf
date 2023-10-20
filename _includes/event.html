@@ -11,11 +11,6 @@
         </div>
     </div>
 
-    <div class="sponsor-content-detail-collapse" style="display: none;">
-        &nbsp;
-    </div>
-
-    {% comment %}
     <div class="sponsor-content-detail-collapse">
         {% if event.tickets.onsale %}
         <div class="sponsor-content-detail-heading">Buy your tickets</div>
@@ -66,7 +61,6 @@
                     <div>The best priced ticket, but <i>extremely</i> limited!</div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.earlybird.price }} ex. vat<br />
-                        <small>R{{ event.tickets.earlybird.price | times:1.15 | floor}} incl. vat</small>
                     </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.earlybird.sold_out %}
@@ -85,7 +79,6 @@
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.price }} ex. vat<br />
-                        <small>R{{ event.tickets.fullprice.price | times:1.15 | floor}} incl. vat</small>
                     </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
@@ -96,7 +89,6 @@
                     {% endif %}
                     {% endif %}
                 </div>
-                {% comment %}
                 <div>
                     <div>Manual Tickets</div>
                     <div>Have a special requirement? Pro-forma invoice? Need us to register as a supplier? Need special
@@ -105,7 +97,6 @@
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.price }} ex. vat<br />
-                        <small>R{{ event.tickets.fullprice.price | times:1.15 | floor }} incl. vat</small>
                     </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
@@ -117,13 +108,11 @@
                     {% endif %}
                     {% endif %}
                 </div>
-                {% endcomment %}
                 {% endif %}
             </div>
             {% endif %}
         </div>
     </div>
-    {% endcomment %}
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
@@ -605,7 +594,7 @@
             {% endif %}
         </div>
         {% else %}
-        <div>Our amazing agenda will be announced at the end of February 2024!</div>
+        <div>Our amazing agenda will be announced in February 2024!</div>
 
         <div>Get a feel for the content by enjoying sessions from previous years on our YouTube channel.</div>
         <a class="button-blue nudgeDown" href="https://youtube.com/c/devconfza" target="_blank">Visit Our YouTube

@@ -1,5 +1,7 @@
+sponsors:
+    proposal: /public/docs/DevConf 2024 Sponsorship Proposal.pdf
 callForSpeakers:
-    show: true
+    show: false
     link: https://sessionize.com/devconf-2024
 events:
     - virtual: false
@@ -12,21 +14,21 @@ events:
       infoOn: true
       sessionizeId: ""
       logo: devconfjhb.png
-      minattendees: 750
+      minattendees: 700
       venue: "Emperors Palace Conference Centre"
       website: "https://emperorspalace.com/conferences-overview/"
       mapLink: "https://goo.gl/maps/eQKGw5XmjA5RjPQa8"
       lat: "-26.146498178859964"
       long: "28.223241542328243"
-      sponsorOpen: false
+      sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: true
-          onsale: false
+          totally_sold_out: false
+          onsale: true
           has_shuttle: false
           has_waiting_list: false
           waiting_list:
-          purchaseSite: ""
+          purchaseSite: "https://quicket.co.za"
           merch_link: ""
           fullprice:
               price: 3623
@@ -78,21 +80,21 @@ events:
       infoOn: true
       sessionizeId: ""
       logo: devconfcpt.png
-      minattendees: 750
+      minattendees: 700
       venue: "Century City Conference Centre"
       website: "http://ccconferencecentre.co.za/"
       mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
       lat: "-33.895519679277136"
       long: "18.504693653133835"
-      sponsorOpen: false
+      sponsorOpen: true
       colour: blue
       tickets:
-          onsale: false
+          onsale: true
           totally_sold_out: false
           has_shuttle: false
           has_waiting_list: false
           waiting_list: ""
-          purchaseSite: ""
+          purchaseSite: "https://quicket.co.za"
           merch_link:
           fullprice:
               price: 3623

@@ -5,6 +5,7 @@
 @import "feedback.scss";
 @import "range.scss";
 @import "shimmer.scss";
+@import "mixins.scss";
 
 @font-face {
     font-family: "Armata";
@@ -524,31 +525,6 @@ body {
                 visibility: hidden;
             }
         }
-    }
-}
-
-@mixin button($colour) {
-    font-family: "Armata", Helvetica, "Segoe UI", Verdana, sans-serif;
-    background-color: $colour;
-    text-decoration: none;
-    min-width: 200px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 800;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 1rem;
-
-    cursor: pointer;
-
-    &:hover {
-        background-color: lighten($colour, 10%);
     }
 }
 

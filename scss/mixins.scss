@@ -1,0 +1,25 @@
+@mixin button($colour) {
+    font-family: "Armata", Helvetica, "Segoe UI", Verdana, sans-serif;
+    // background-color: $colour;
+    background-image: linear-gradient(to right, lighten($colour, 10%), $colour);
+    text-decoration: none;
+    min-width: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(to left, lighten($colour, 10%), $colour) !important;
+    }
+}
