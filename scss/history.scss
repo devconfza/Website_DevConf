@@ -1,0 +1,23 @@
+.history {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+
+    > div {
+        min-height: 170px;
+        background: lightgray;
+        width: 250px;
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        > a {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-auto-flow: row;
+            row-gap: 5px;
+        }
+    }
+}

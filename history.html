@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="sponsor sponsor-home">
+    <div class="hero">
+        <div class="brand">
+            <img alt="DevConf;" src="/public/images/bannerTitle.png" />
+            <div class="slogan">solving today and tomorrow's software development challenges</div>
+            <div class="intro">
+                DevConf started in 2017 as a way to bring the joy, networking, and education that the Developer User
+                Group was doing in free meetups to a new audience. The first year was expected to be a small 250 person
+                event... and it sold out at 500. DevConf in 2023 was 1242 people and took place in 2 cities with
+                attendees and speakers from around the world. Each event has been something special and something
+                different and we have this page to remember and celebrate the work of the community of South African
+                software developers success in making DevConf what it is!
+            </div>
+        </div>
+    </div>
+
+    {% for event in site.data.past.events %}
+    <div class="sponsor-content-detail">
+        <div class="sponsor-content-detail-heading">{{ event.city }} {{ event.year }}</div>
+        <div class="history">
+            {% if event.agenda %}
+            <div><a href="/public/docs/past/{{event.agenda}}" target="_blank"><img
+                        src="/public/images/past/{{event.agenda_cover}}" alt="Agenda, speakers and sponsors"><br />
+                    Agenda, speakers and sponsors</a></div>
+            {% endif %}
+            {% if event.videos %}
+            <div><a href="{{event.videos}}" target="_blank"><img src="/public/images/past/{{event.video_cover}}"
+                        alt="Videos"><br />Videos</a></div>
+            {% endif %}
+            {% if event.photos %}
+            <div><a href="{{event.photos}}" target="_blank" alt="Photos"><img
+                        src="/public/images/past/{{event.photo_cover}}" alt="Photos"><br />Photos</a></div>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
