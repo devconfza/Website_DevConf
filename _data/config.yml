@@ -28,10 +28,11 @@ events:
           has_shuttle: false
           has_waiting_list: false
           waiting_list:
-          purchaseSite: "https://quicket.co.za"
+          purchaseSite: "https://www.quicket.co.za/events/237752-devconf-2024-johannesburg"
           merch_link: ""
           fullprice:
               price: 3623
+              bulkPrice: 3293.64
               sold_out: false
           earlybird:
               price: 3150.43
@@ -94,11 +95,12 @@ events:
           has_shuttle: false
           has_waiting_list: false
           waiting_list: ""
-          purchaseSite: "https://quicket.co.za"
+          purchaseSite: "https://www.quicket.co.za/events/239304-devconf-2024-cape-town"
           merch_link:
           fullprice:
               price: 3623
               sold_out: false
+              bulkPrice: 3293.64
           earlybird:
               price: 3150.43
               sold_out: false

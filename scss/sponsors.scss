@@ -7,7 +7,7 @@
         text-align: center;
     }
 
-    $titleHeight: 300px;
+    $titleHeight: 215px;
 
     overflow-x: clip;
     display: grid;
@@ -201,16 +201,19 @@
                 grid-row-gap: 5px;
                 text-align: center;
                 line-height: 1.5rem;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
                 column-gap: 30px;
                 align-content: center;
-                grid-template-areas: "first second third";
+
+                @media (max-width: 1280px) {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                }
 
                 @media (max-width: $mobileWidth) {
-                    grid-template-areas:
-                        "first"
-                        "second"
-                        "third";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
                 }
 
                 &-price {
@@ -225,12 +228,13 @@
 
                 > div {
                     display: grid;
-                    align-items: start;
+                    align-items: center;
                     row-gap: 5px;
                     justify-items: center;
                     background-color: #f4f4f4;
                     padding: 10px;
                     border-radius: 5px;
+                    grid-template-rows: min-content 1fr min-content min-content;
 
                     > div {
                         &:nth-child(1) {
