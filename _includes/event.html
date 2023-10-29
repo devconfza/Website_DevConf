@@ -29,7 +29,6 @@
             {% else %}
             <div class="sponsor-content-detail-tickets"> We cannot wait to meet all of you soon!</div>
             {% endif %}
-           
             {% if event.tickets.onsale %}
             <div class="sponsor-content-detail-tickets-cards">
                 {% if event.tickets.totally_sold_out %}
@@ -57,8 +56,9 @@
                 </div>
                 {% else %}
                 <div>
-                    <div>Early Bird Tickets</div>
-                    <div>The best priced ticket, but <i>extremely</i> limited!</div>
+                    <div>Early Bird Tickets 🐦 15% OFF FULL PRICE!</div>
+                    <div>Everything in the complete package at the best price, but <i>extremely</i> limited!
+                    </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.earlybird.price }} ex. vat<br />
                     </div>
@@ -72,10 +72,26 @@
                     {% endif %}
                 </div>
                 <div>
-                    <div>Standard Tickets</div>
-                    <div></div>
+                    <div>Bulk Purchase Tickets 👩‍💻 10% OFF FULL PRICE!</div>
                     <div>
-                        Purchase 10 or more to get a discount!
+                        Purchase 10 or more complete package tickets to get a discount!
+                    </div>
+                    <div class="sponsor-content-detail-tickets-cards-price">
+                        R{{ event.tickets.fullprice.bulkPrice }} ex. vat<br />
+                    </div>
+                    {% if event.tickets.onsale %}
+                    {% if event.tickets.fullprice.sold_out %}
+                    <div class="sponsor-fake-button">Sold Out!</div>
+                    {% else %}
+                    <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
+                        target="_blank">Buy tickets now!</a>
+                    {% endif %}
+                    {% endif %}
+                </div>
+                <div>
+                    <div>Complete Package Tickets</div>
+                    <div>
+                        Get everything! Our famous swag! Access all talks and master classes! Win prizes!
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.price }} ex. vat<br />
@@ -91,12 +107,10 @@
                 </div>
                 <div>
                     <div>Manual Tickets</div>
-                    <div>Have a special requirement? Pro-forma invoice? Need us to register as a supplier? Need special
-                        payment terms?<br />
-                        <strong>No problem</strong> - we can assist with a manual ticket purchase
+                    <div>Have a special requirement? We can assist with a manual ticket purchases. 
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
-                        R{{ event.tickets.fullprice.price }} ex. vat<br />
+                        &nbsp;
                     </div>
                     {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
@@ -111,6 +125,12 @@
                 {% endif %}
             </div>
             {% endif %}
+            <div><small>We use <a target="_blank" href="https://www.quicket.co.za/">Quicket</a> for ticket purchases, and payment can be made by EFT, Credit Card, SnapScan, Zapper or BitCoin. 🟣 
+                If you need an invoice prior to payment, this can be done on Quicket too! 🔵
+                You can login to <a target="_blank" href="https://www.quicket.co.za/">Quicket</a> to manage or transfer your tickets. <a target="_blank" href="mailto:support@quicket.co.za">Quicket support</a> can help with any questions on how to use their platform. 🟢
+                Manual tickets have a 5% administration fee applied. 🟡
+            <a href="/ticket_terms" target="_blank">Ticket Purchase Terms &amp; Conditions</a></small></div>
+            <div>&nbsp;</div>
         </div>
     </div>
 

@@ -2,6 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
+<html lang="en">
 {% assign cacheBust = site.time | date:'?v=%s' %}
 <head>
 	<link rel="stylesheet" href="{{ '/public/css/main.css' | relative_url | append: cacheBust }}">
@@ -72,7 +73,7 @@ layout: compress
 			</a>
 		</div>
 		<div class="right">
-			<div class="right-mobile-icon"><img class="hamburger-menu" src="/public/images/hamburger.png" /></div>
+			<div class="right-mobile-icon"><img alt="Menu" class="hamburger-menu" src="/public/images/hamburger.png" /></div>
 			<div class="right-menu">
 				<a href="/" alt="Home" role="menuitem">Home</a>
 				<div class="spacer">|</div>
@@ -82,7 +83,7 @@ layout: compress
 				<div class="spacer">|</div>
 				{% endif %}
 				{% endfor %}
-				<a href="/sponsorship" alt="Sponsorship" role="menuitem">Sponsorship</a>
+				<a href="{{ site.data.config.sponsors.proposal }}" alt="Sponsorship" role="menuitem">Sponsorship</a>
 				<div class="spacer">|</div>
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
