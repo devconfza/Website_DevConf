@@ -69,6 +69,16 @@
 #   Logo: thinkstsilver.jpg
 
 - Level: Bronze
+  Name: iOCO
+  Url: https://ioco.tech/  
+  Logo: iocobronze.jpg
+
+- Level: Bronze
+  Name: OfferZen
+  Url: https://www.offerzen.com/?utm_source=email&utm_medium=events&utm_campaign=za_supply_awareness_dev-conf_sponsored-event_email&utm_content=
+  Logo: offerzenbronze.jpg
+
+- Level: Bronze
   Name: Thinkst Canary
   Url: https://canary.tools
   Logo: thinkstbronze.jpg
@@ -93,10 +103,10 @@
 #   Url: https://www.itoo.co.za 
 #   Logo: itoowifi.jpg  
 
-# - Level: Workshop
-#   Name: Equal Experts 
-#   Url: https://www.equalexperts.com/
-#   Logo: equalexpertsworkshop.jpg  
+- Level: Master Class
+  Name: iOCO
+  Url: https://ioco.tech/  
+  Logo: iocobronze.jpg
 
 # - Level: Industry Partner
 #   Name: IITPSA
