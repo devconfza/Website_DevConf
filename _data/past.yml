@@ -7,6 +7,7 @@ events:
       agenda_cover: "2023cptagenda.jpg"
       video_cover: "2023video.jpg"
       photo_cover: "2023cptphoto.jpg"
+
     - year: 2023
       city: "Pretoria"
       agenda: "Devconf 2023_Agenda PTA_ndv2.pdf"
@@ -15,6 +16,7 @@ events:
       agenda_cover: "2023ptaagenda.jpg"
       video_cover: "2023video.jpg"
       photo_cover: "2023ptaphoto.jpg"
+
     - year: 2022
       city: "Cape Town"
       agenda: "Devconf 2022_Agenda CPT_ndv9.pdf"
@@ -23,6 +25,7 @@ events:
       agenda_cover: "2022cptagenda.jpg"
       video_cover: "2022video.jpg"
       photo_cover: "2022cptphoto.jpg"
+
     - year: 2022
       city: "Joburg"
       agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
@@ -31,50 +34,57 @@ events:
       agenda_cover: "2022jhbagenda.jpg"
       video_cover: "2022video.jpg"
       photo_cover: "2022jhbphoto.jpg"
+
     - year: 2020
       city: "Live"
       agenda: "Devconf Live 2020.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkryyB0aHBt-7PE6kt4bROs5"
       agenda_cover: "2020agenda.jpg"
       video_cover: "2020video.jpg"
+
     - year: 2019
       city: "Joburg"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "DevConf_2019_jhb.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQUQO3KBQEl4zpIIQ?e=vD8V7E"
-      agenda_cover: ""
+      agenda_cover: "agenda2019jhb.png"
       video_cover: "2019video.jpg"
       photo_cover: "2019jhbphoto.jpg"
+
     - year: 2019
       city: "Cape Town"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "DevConf_2019_cpt.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkosbeuwDrcfNxLxd5tiC3ye"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQVKTlhiNMHAWL4Cw?e=tTcnQN"
-      agenda_cover: ""
+      agenda_cover: "agenda2019cpt.png"
       video_cover: "2019video.jpg"
       photo_cover: "2019cptphoto.jpg"
+
     - year: 2018
       city: "Joburg"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "DevConf_2018_jhb.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkpOX-a-yZBLkNs1oJaE7euT"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQW0bf0lzg8fGb6QA?e=vX6MXd"
-      agenda_cover: ""
+      agenda_cover: "2018jhbagenda.png"
       video_cover: "2018video.jpg"
       photo_cover: "2018jhbphoto.jpg"
+
     - year: 2018
       city: "Cape Town"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "DevConf_2018_cpt.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkpOX-a-yZBLkNs1oJaE7euT"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQXmhf8_GvZ7_86cQ?e=QKDvQf"
-      agenda_cover: ""
+      agenda_cover: "2018cpt.png"
       video_cover: "2018video.jpg"
       photo_cover: "2018cptphoto.jpg"
+
     - year: 2017
       city: "Joburg"
       # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQYt7F7mFad2F33Gw?e=ljGXJu"
       agenda_cover: ""
       photo_cover: "2017photo.jpg"
+      
     - year: 2016
       city: "Joburg"
       # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"

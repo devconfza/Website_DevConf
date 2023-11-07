@@ -51,6 +51,7 @@ layout: default
     {% endif %}
 </div>
 
+
 <div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">Keep Me Informed</div>
     <form id="madmimi">
@@ -80,6 +81,23 @@ layout: default
         </div>
     </form>
 </div>
+
+<!-- <div class="sponsor-content-detail">
+    <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
+    <div class="sponsor-content-detail-wide-body">
+        {% assign sponsorsByLevel = site.data["2024"]["cptsponsors"] | concat: site.data["2024"]["jhbsponsors"] | group_by: 'Level' %}
+        {% for level in sponsorsByLevel %}
+        {% assign sponsors = level.items | sort: "Name" | uniq: "Name"%}
+        {% for sponsor in sponsors %}
+        <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
+            <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/2024/{{sponsor.Logo }}" />
+            </a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div> -->
 
 <div id="youtubeSection" class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">Videos</div>
