@@ -82,12 +82,13 @@ layout: default
     </form>
 </div>
 
-<!-- <div class="sponsor-content-detail">
+<div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
     <div class="sponsor-content-detail-wide-body">
-        {% assign sponsorsByLevel = site.data["2024"]["cptsponsors"] | concat: site.data["2024"]["jhbsponsors"] | group_by: 'Level' %}
+        {% assign sponsorsByLevel = site.data["2024"]["jhbsponsors"] | concat: site.data["2024"]["cptsponsors"] | uniq: "Name" | group_by: 'Level' %}
         {% for level in sponsorsByLevel %}
-        {% assign sponsors = level.items | sort: "Name" | uniq: "Name"%}
+
+        {% assign sponsors = level.items | sort: "Name" %}
         {% for sponsor in sponsors %}
         <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
             <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
@@ -95,9 +96,10 @@ layout: default
             </a>
         </div>
         {% endfor %}
+
         {% endfor %}
     </div>
-</div> -->
+</div>
 
 <div id="youtubeSection" class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">Videos</div>

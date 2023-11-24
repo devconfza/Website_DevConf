@@ -80,14 +80,14 @@ events:
 
     - year: 2017
       city: "Joburg"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "devconf2017.pdf"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQYt7F7mFad2F33Gw?e=ljGXJu"
-      agenda_cover: ""
+      agenda_cover: "devconf2017agenda.png"
       photo_cover: "2017photo.jpg"
       
     - year: 2016
       city: "Joburg"
-      # agenda: "Devconf 2022_Agenda JHB_ndv8.pdf"
+      agenda: "devconf2016.pdf"
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQZ-cqp1QXWE2Ur4A?e=sV8jFh"
-      agenda_cover: ""
+      agenda_cover: "devconf2016agenda.png"
       photo_cover: "2016photo.jpg"

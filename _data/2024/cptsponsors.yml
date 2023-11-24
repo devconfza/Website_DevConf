@@ -68,6 +68,16 @@
 #   Url: https://canary.tools
 #   Logo: thinkstsilver.jpg
 
+- Level: Gold
+  Name: Ninety One
+  Url: https://www.ninetyone.com
+  Logo: nintyonegold.jpg
+
+- Level: Silver
+  Name: Derivco
+  Url: http://www.derivco.com/ 
+  Logo: derivcosilver.jpg    
+
 - Level: Bronze
   Name: iOCO
   Url: https://ioco.tech/  
