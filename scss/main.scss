@@ -221,13 +221,7 @@ body {
 .highlight {
     font-weight: bold;
     color: $darkBrandPink;
-}
-
-.sponsor-content-detail-content-sponsor-card:not(:last-child) {
-    @media (min-width: $mobileWidth) {
-        margin-right: 10px;
-    }
-}
+}   
 
 .sponsor-content-detail- {
     &event-bananas {

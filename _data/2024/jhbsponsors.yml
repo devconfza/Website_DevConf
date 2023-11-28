@@ -3,55 +3,10 @@
   Url: https://www.osiristrading.com  
   Logo: betwaydiamond.jpg
 
-# - Level: Platinum
-#   Name: Paystack
-#   Url: https://www.paystack.com/
-#   Logo: paystackplat.jpg
-
-# - Level: Gold
-#   Name: Agile Bridge
-#   Url: https://www.agilebridge.co.za/
-#   Logo: agilebridgegold.jpg
-
-# - Level: Gold
-#   Name: Obsidian Systems
-#   Url: https://obsidian.co.za/ 
-#   Logo: obsidiangold.jpg
-
-# - Level: Gold
-#   Name: VALR 
-#   Url: https://www.valr.com/about-us
-#   Logo: valrgold.jpg
-
-# - Level: Silver
-#   Name: BET Software
-#   Url: https://www.betsoftware.com
-#   Logo: betsilver.jpg
-
-# - Level: Silver
-#   Name: InterSystems South Africa
-#   Url: https://www.intersystems.com/
-#   Logo: intersystemssilver.jpg
-
-# - Level: Silver
-#   Name: Network IT
-#   Url: https://www.networkrecruitmentinternational.com/
-#   Logo: networkrecruitmentsilver.jpg
-
-# - Level: Silver
-#   Name: OpenText 
-#   Url: https://www.opentext.com/microfocus 
-#   Logo: opentextsilver.jpg
-
-# - Level: Silver
-#   Name: Payfast by Network
-#   Url: https://payfast.io/
-#   Logo: payfastsilver.jpg
-
-# - Level: Silver
-#   Name: RadixTrie
-#   Url: https://www.radixtrie.com
-#   Logo: radixtriesilver.jpg
+- Level: Gold
+  Name: BET Software
+  Url: https://betsoftware.com
+  Logo: betsoftwaregold.jpg
 
 - Level: Silver
   Name: Derivco
@@ -73,30 +28,10 @@
   Url: https://canary.tools
   Logo: thinkstbronze.jpg
 
-# - Level: Registration
-#   Name: Bob Group
-#   Url: https://www.bob.co.za/ 
-#   Logo: bobregistration.jpg
-
-# - Level: Wi-Fi 
-#   Name: iTOO
-#   Url: https://www.itoo.co.za 
-#   Logo: itoowifi.jpg  
-
 - Level: Master Class
   Name: iOCO
   Url: https://ioco.tech/  
   Logo: iocobronze.jpg
-
-# - Level: Workshop
-#   Name: Runninghill Software Development (Pty)Ltd 
-#   Url: https://www.runninghill.co.za 
-#   Logo: runninghillworkshop.jpg
-
-# - Level: Industry Partner
-#   Name: IITPSA
-#   Url: https://www.iitpsa.org.za/
-#   Logo: iitpsa.jpg
 
 - Level: Media
   Name: Digital Street

@@ -1,5 +1,5 @@
 export default () => {
-    const sponsorBlock = document.getElementsByClassName('sponsor-content-detail-wide-body')[0]
+    const sponsorBlock = document.getElementsByClassName('sponsor-content-detail-wide-body')[0];
     if (!sponsorBlock) {
         return
     }
@@ -11,6 +11,7 @@ export default () => {
         if (sponsorPosition > sponsorBlock.scrollWidth) {
             sponsorPosition = 0
         }
-        sponsorBlock.scrollTo(sponsorPosition, 0)
+        
+        sponsorBlock.scrollTo(sponsorPosition, 0);
     }, 10)
 }
