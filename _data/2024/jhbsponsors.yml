@@ -4,9 +4,19 @@
   Logo: betwaydiamond.jpg
 
 - Level: Gold
+  Name: Agile Bridge
+  Url: https://www.agilebridge.co.za/
+  Logo: agilebridgegold.jpg
+
+- Level: Gold
   Name: BET Software
   Url: https://betsoftware.com
   Logo: betsoftwaregold.jpg
+
+- Level: Gold
+  Name: Equal Experts 
+  Url: https://www.equalexperts.com/
+  Logo: equalexpertsgold.jpg  
 
 - Level: Silver
   Name: Derivco
