@@ -36,7 +36,7 @@ events:
               sold_out: false
           earlybird:
               price: 3150.43
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Room 1"
           room_2: "Room 2"
@@ -103,7 +103,7 @@ events:
               bulkPrice: 3293.64
           earlybird:
               price: 3150.43
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Room 1"
           room_2: "Room 2"
