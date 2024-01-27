@@ -492,6 +492,7 @@ body {
     position: absolute;
     bottom: 0;
     font-size: 0.8rem;
+    overflow-x: clip;
 
     @media (max-width: 605px) {
         font-size: 0.5rem;
@@ -503,13 +504,10 @@ body {
     justify-items: center;
 
     div > a > img {
-        height: 30px;
-        width: 30px;
-
-        @media (max-width: $mobileWidth) {
-            height: 45px;
-            width: 45px;
-        }
+        min-height: 30px;
+        min-width: 30px;
+        height: 100%;
+        width: 100%;
     }
 
     > div:nth-child(1) {
