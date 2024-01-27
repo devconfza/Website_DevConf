@@ -6,13 +6,13 @@ callForSpeakers:
 events:
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Johannesburg"
       menuTitle: "Joburg"
       date: "7 May 2024"
       info: "/joburg"
       infoOn: true
-      sessionizeId: ""
+      sessionizeId: "b0tah92u"
       logo: devconfjhb.png
       minattendees: 700
       venue: "Emperors Palace Conference Centre"
@@ -73,13 +73,13 @@ events:
               room: Workshop Space
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Cape Town"
       menuTitle: "Cape Town"
       date: "9 May 2024"
       info: "/capetown"
       infoOn: true
-      sessionizeId: ""
+      sessionizeId: "b0tah92u"
       logo: devconfcpt.png
       minattendees: 700
       venue: "Century City Conference Centre"
