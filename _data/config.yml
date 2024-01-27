@@ -51,8 +51,7 @@ events:
               sponsorLink:
               title:
               content1:
-              content2:
-              room: Workshop Space
+              room: Room 6
           workshop2:
               enabled: true
               announceSponsor: false
@@ -60,8 +59,7 @@ events:
               sponsorLink:
               title:
               content1:
-              content2:
-              room: Workshop Space
+              room: Room 6
           workshop3:
               enabled: true
               announceSponsor: false
@@ -69,8 +67,7 @@ events:
               sponsorLink:
               title:
               content1:
-              content2:
-              room: Workshop Space
+              room: Room 6
     - virtual: false
       show: true
       showAgenda: true
@@ -119,7 +116,7 @@ events:
               title:
               content1:
               content2:
-              room: Workshop Space
+              room: Room 6
           workshop2:
               enabled: true
               announceSponsor: false
@@ -128,7 +125,7 @@ events:
               title:
               content1:
               content2:
-              room: Workshop Space
+              room: Room 6
           workshop3:
               enabled: true
               announceSponsor: false
@@ -137,4 +134,4 @@ events:
               title:
               content1:
               content2:
-              room: Workshop Space
+              room: Room 6
