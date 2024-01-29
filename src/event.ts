@@ -1,3 +1,4 @@
+import { count } from 'console'
 import { addPopupHandler, getTemplate, setText } from './common'
 import { SessionizeEvent, SessionizeSpeaker, loadSessionizeData } from './sessionize'
 
@@ -30,6 +31,42 @@ export default async () => {
 
     const getSpeakerInfo = (sessionSpeakers: Array<string>) => {
         return eventData!.speakers.filter((s: SessionizeSpeaker) => sessionSpeakers.indexOf(s.id) >= 0)
+    }
+
+    const seperatorSet = ["🔹"]
+
+    const speakerSubtitle = (sessionSpeakers: Array<string>): string => {
+        const speakers = getSpeakerInfo(sessionSpeakers)
+
+        if (speakers.length === 1) {
+            const speaker = speakers[0]
+            let country = ''
+            if (speaker.categoryItems.indexOf(204593) >= 0) {
+                country = 'South Africa'
+            } else {
+                debugger
+                country = speaker.questionAnswers.find(i => i.questionId === 59078)?.answerValue
+            }
+
+            let pronoun = ''
+            if (speaker.categoryItems.indexOf(204689) >= 0) {
+                pronoun = 'He/Him'
+            }
+
+            if (speaker.categoryItems.indexOf(204687) >= 0) {
+                pronoun = 'She/Her'
+            }
+
+            if (speaker.categoryItems.indexOf(204688) >= 0) {
+                pronoun = 'They/Them'
+            }
+
+            const seperator = seperatorSet[Math.floor(Math.random() * seperatorSet.length)]
+
+            return `${pronoun} ${seperator} ${country}`
+        }
+
+        return ""
     }
 
     const multipleSpeakerNames = (sessionSpeakers: Array<string>): string => {
@@ -163,6 +200,7 @@ export default async () => {
                 }
 
                 setText(bioContent, 'div.bio-speaker', multipleSpeakerNames(matchedSession.speakers))
+                setText(bioContent, 'div.bio-subtitle', speakerSubtitle(matchedSession.speakers))
                 const socialLinkPlaceholder = (bioContent.querySelector('div.bio-social')! as HTMLDivElement)
                 socialLinks.forEach((link) => {
                     socialLinkPlaceholder.appendChild(link)
@@ -259,6 +297,10 @@ export default async () => {
                                 }
 
                                 break
+                            }
+                            case 'agenda-session-subtitle': {
+                                templateElement.innerText = speakerSubtitle(matchedSession.speakers)
+                                break;
                             }
                             case 'agenda-session-name': {
                                 templateElement.innerText = multipleSpeakerNames(matchedSession.speakers)

@@ -222,6 +222,11 @@
     }
 }
 
+.agenda-session-subtitle {
+    margin-bottom: 11px;
+    font-size: small;
+}
+
 .agenda-row-style-loading {
     font-size: 0.8rem;
 }
@@ -382,6 +387,12 @@
 
 .bio-title {
     justify-self: left;
+}
+
+.bio-subtitle {
+    justify-self: center;
+    font-size: .8rem;
+    line-height: 1.3rem;
 }
 
 .bio-tagline,
