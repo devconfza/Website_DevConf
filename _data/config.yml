@@ -38,11 +38,11 @@ events:
               price: 3150.43
               sold_out: true
       rooms:
-          room_1: "Room 1"
-          room_2: "Room 2"
-          room_3: "Room 3"
-          room_4: "Room 4"
-          room_5: "Room 5"
+          room_1: "Centre Court"
+          room_2: "NCC"
+          room_3: "Senate I"
+          room_4: "Senate II"
+          room_5: "Fabia"
       workshops:
           workshop1:
               enabled: true
@@ -51,7 +51,7 @@ events:
               sponsorLink:
               title:
               content1:
-              room: Room 6
+              room: Julia
           workshop2:
               enabled: true
               announceSponsor: false
@@ -59,7 +59,7 @@ events:
               sponsorLink:
               title:
               content1:
-              room: Room 6
+              room: Julia
           workshop3:
               enabled: true
               announceSponsor: false
@@ -67,7 +67,7 @@ events:
               sponsorLink:
               title:
               content1:
-              room: Room 6
+              room: Julia
     - virtual: false
       show: true
       showAgenda: true
@@ -102,11 +102,11 @@ events:
               price: 3150.43
               sold_out: true
       rooms:
-          room_1: "Room 1"
-          room_2: "Room 2"
-          room_3: "Room 3"
-          room_4: "Room 4"
-          room_5: "Room 5"
+          room_1: "Hall A"
+          room_2: "Hall B"
+          room_3: "Hall C"
+          room_4: "Meeting Room 11"
+          room_5: "Meeting Room 8 and 9"
       workshops:
           workshop1:
               enabled: true
@@ -116,7 +116,7 @@ events:
               title:
               content1:
               content2:
-              room: Room 6
+              room: Meeting Room 10
           workshop2:
               enabled: true
               announceSponsor: false
@@ -125,7 +125,7 @@ events:
               title:
               content1:
               content2:
-              room: Room 6
+              room: Meeting Room 10
           workshop3:
               enabled: true
               announceSponsor: false
@@ -134,4 +134,4 @@ events:
               title:
               content1:
               content2:
-              room: Room 6
+              room: Meeting Room 10
