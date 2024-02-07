@@ -63,7 +63,11 @@ export default async () => {
 
             const seperator = seperatorSet[Math.floor(Math.random() * seperatorSet.length)]
 
-            return `${pronoun} ${seperator} ${country}`
+            if (pronoun){
+                return `${pronoun} ${seperator} ${country}`
+            } else {
+                return country
+            }
         }
 
         return ""
