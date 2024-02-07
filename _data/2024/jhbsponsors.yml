@@ -3,6 +3,11 @@
   Url: https://www.osiristrading.com  
   Logo: betwaydiamond.jpg
 
+- Level: Platinum
+  Name: Glucode 
+  Url: https://glucode.com/ 
+  Logo: glucodeplat.jpg  
+
 - Level: Gold
   Name: Agile Bridge
   Url: https://www.agilebridge.co.za/
@@ -20,8 +25,13 @@
 
 - Level: Silver
   Name: Derivco
-  Url: http://www.derivco.com/ 
+  Url: https://www.derivco.com/ 
   Logo: derivcosilver.jpg   
+
+- Level: Silver
+  Name: VALR 
+  Url: https://valr.com 
+  Logo: valrsilver.jpg   
 
 - Level: Bronze
   Name: iOCO

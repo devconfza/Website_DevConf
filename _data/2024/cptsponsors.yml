@@ -1,3 +1,8 @@
+- Level: Platinum
+  Name: Glucode 
+  Url: https://glucode.com/ 
+  Logo: glucodeplat.jpg  
+
 - Level: Gold
   Name: BET Software
   Url: https://betsoftware.com
@@ -8,9 +13,14 @@
   Url: https://www.ninetyone.com
   Logo: nintyonegold.jpg
 
+- Level: Gold
+  Name: VALR 
+  Url: https://valr.com 
+  Logo: valrgold.jpg   
+
 - Level: Silver
   Name: Derivco
-  Url: http://www.derivco.com/ 
+  Url: https://www.derivco.com/ 
   Logo: derivcosilver.jpg    
 
 - Level: Bronze
@@ -27,6 +37,11 @@
   Name: Thinkst Canary
   Url: https://canary.tools
   Logo: thinkstbronze.jpg
+
+- Level: Coffee
+  Name: Ecentric Payment Systems  
+  Url: https://www.ecentric.co.za/  
+  Logo: ecentriccoffee.jpg
 
 - Level: Cocktail
   Name: BBD
