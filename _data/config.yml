@@ -46,11 +46,32 @@ events:
       workshops:
           workshop1:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
+              announceSponsor: true
+              sponsor: iOCO
+              sponsorLink: https://ioco.tech/  
+              title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
+              content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
+achieving greater scalability, flexibility, and faster innovation. While the benefits of
+microservices are clear, they come with their own set of complexities. Successfully
+implementing a microservices architecture extends beyond breaking down
+applications; it demands a thorough understanding of deployment, management, and
+observability. The prevalent adoption of the &quot;You Build It, You Run It&quot; philosophy
+marks a significant shift towards developer accountability and empowerment. As a
+modern developer understanding the platform your applications run on, is not just
+beneficial, it&#39;s essential.<br/>
+We invite you to a technical session tailored for forward-thinking developers ready to
+tackle the challenges of deploying microservices using Kubernetes. This session is
+focused on demystifying the deployment platforms that will house your applications,
+emphasizing the early adoption of practices such as logging, tracing, monitoring to
+name a few.<br/>
+The session will cover:<ul>
+<li>Preparing Your Development Environment</li>
+<li>Crafting Docker Images</li>
+<li>Application Deployment with Kubernetes</li>
+<li>Monitoring and Troubleshooting Techniques within Kubernetes</li>
+<li>Security Measures and Best Practices</li>
+<li>Exploring Advanced Features of Kubernetes</li></ul>"
+              content2:
               room: Julia
           workshop2:
               enabled: true
@@ -110,11 +131,31 @@ events:
       workshops:
           workshop1:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
+              announceSponsor: true
+              sponsor: iOCO
+              sponsorLink: https://ioco.tech/  
+              title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
+              content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
+achieving greater scalability, flexibility, and faster innovation. While the benefits of
+microservices are clear, they come with their own set of complexities. Successfully
+implementing a microservices architecture extends beyond breaking down
+applications; it demands a thorough understanding of deployment, management, and
+observability. The prevalent adoption of the &quot;You Build It, You Run It&quot; philosophy
+marks a significant shift towards developer accountability and empowerment. As a
+modern developer understanding the platform your applications run on, is not just
+beneficial, it&#39;s essential.<br/>
+We invite you to a technical session tailored for forward-thinking developers ready to
+tackle the challenges of deploying microservices using Kubernetes. This session is
+focused on demystifying the deployment platforms that will house your applications,
+emphasizing the early adoption of practices such as logging, tracing, monitoring to
+name a few.<br/>
+The session will cover:<ul>
+<li>Preparing Your Development Environment</li>
+<li>Crafting Docker Images</li>
+<li>Application Deployment with Kubernetes</li>
+<li>Monitoring and Troubleshooting Techniques within Kubernetes</li>
+<li>Security Measures and Best Practices</li>
+<li>Exploring Advanced Features of Kubernetes</li></ul>"
               content2:
               room: Meeting Room 10
           workshop2:
