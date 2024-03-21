@@ -45,13 +45,20 @@ export const addPopupHandler = (
     const popupShare = document.querySelector('div.popupShare')! as HTMLDivElement
     popupShare.onclick = async () => {
         if (window.currentSpeaker) {
+            const url = `${window.location.origin + window.location.pathname}?currentSpeaker=${window.currentSpeaker.id}`
+
             const shareData = {
                 title: `DevConf Speaker: ${window.currentSpeaker.name}`,
                 text: `DevConf Speaker: ${window.currentSpeaker.name}`,
-                url: `${window.location.origin + window.location.pathname}?currentSpeaker=${window.currentSpeaker.id}`,
+                url: url,
             }
 
-            await navigator.share(shareData)
+            if (navigator.share != undefined && navigator.canShare(shareData)) {
+                await navigator.share(shareData)
+            } else {
+                await navigator.clipboard.writeText(url);
+                alert('URL is copied to clipboard')
+            }
         }
     }
 
