@@ -331,6 +331,8 @@
     font-size: 2rem;
     justify-self: right;
     cursor: pointer;
+    grid-area: closeButton;
+    margin-right: 13px;
 }
 
 .popupBio {
@@ -342,6 +344,7 @@
     overflow-y: auto;
     height: 500px;
     padding: 30px;
+    grid-area: content;
     @include scrollbar();
 
     @media (max-width: $mobileWidth) {
@@ -365,6 +368,15 @@
     align-content: start;
 }
 
+.popupShare {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    grid-area: shareButton;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
 .popupContent {
     display: grid;
     grid-template-rows: auto auto;
@@ -373,6 +385,13 @@
     margin-top: 49px;
     padding-left: 5%;
     padding-right: 5%;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas:
+        ". shareButton closeButton"
+        "content content content";
+    grid-column-gap: 25px;
+    grid-row-gap: 5px;
 }
 
 .bio-title,
@@ -391,7 +410,7 @@
 
 .bio-subtitle {
     justify-self: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.3rem;
 }
 

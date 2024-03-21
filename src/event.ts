@@ -1,4 +1,3 @@
-import { count } from 'console'
 import { addPopupHandler, getTemplate, setText } from './common'
 import { SessionizeEvent, SessionizeSpeaker, loadSessionizeData } from './sessionize'
 
@@ -63,7 +62,7 @@ export default async () => {
 
             const seperator = seperatorSet[Math.floor(Math.random() * seperatorSet.length)]
 
-            if (pronoun){
+            if (pronoun) {
                 return `${pronoun} ${seperator} ${country}`
             } else {
                 return country
@@ -184,8 +183,7 @@ export default async () => {
                 return null
             }
 
-            const divDataSlotId = div.attributes['data-slot-id'].value
-            const matchedSession = getSession(divDataSlotId)
+            const matchedSession = getSession(dataSlotId)
 
             if (matchedSession) {
                 const speakerInfo = singleSpeaker(matchedSession.speakers)
@@ -222,7 +220,19 @@ export default async () => {
             } else {
                 return null;
             }
-        }, 'clickable-session', 'unclickable-session')
+        }, 'clickable-session', 'unclickable-session', undefined, (div) => {
+            const speakerId = div.attributes["speaker-id"].value
+            if (speakerId) {
+                const matchedSession = getSession(speakerId)
+                if (matchedSession) {
+                    const speakerInfo = singleSpeaker(matchedSession.speakers)
+                    window.currentSpeaker = {
+                        name: speakerInfo.fullName,
+                        id: speakerId
+                    }
+                }
+            }
+        })
     }
 
     const fadeOut = (element: HTMLElement) => {
@@ -333,4 +343,10 @@ export default async () => {
     }
 
     parseEventData()
+
+    const requestedSpeakerId = new URLSearchParams(window.location.search).get("currentSpeaker")
+    if (requestedSpeakerId) {
+        const speakerButton = document.querySelector(`div[data-slot-id="${requestedSpeakerId}"]`) as HTMLElement
+        speakerButton.click()
+    }
 }
