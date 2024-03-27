@@ -3,6 +3,32 @@ sponsors:
 callForSpeakers:
     show: false
     link: https://sessionize.com/devconf-2024
+timing:
+    reg-start: 07h30
+    reg-end: 09h00
+    expo-start: 08h00
+    expo-end: 19h00
+    welcome-start: 09h00
+    keynote-start: 09h15
+    refresh-1-start: 10h00
+    timeslot-1-start: 10h30
+    movement-1-start: 11h10
+    timeslot-2-start: 11h25
+    movement-2-start: 12h05
+    timeslot-3-start: 12h20
+    lunch-start: 13h00
+    timeslot-4-start: 13h50
+    movement-3-start: 14h30
+    timeslot-5-start: 14h45
+    refresh-2-start: 15h25
+    timeslot-6-start: 15h55
+    movement-4-start: 16h35
+    timeslot-7-start: 16h50
+    networking-start: 17h30
+    networking-end: 19h00
+
+general:
+    year: 2024        
 events:
     - virtual: false
       show: true
