@@ -101,11 +101,30 @@ The session will cover:<ul>
               room: Julia
           workshop2:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
+              announceSponsor: true
+              sponsor: Investec
+              sponsorLink: https://www.investec.com/en_za/banking/tech-professionals/programmable-banking.html
+              title: Co-creating API Banking
+              content1: "Discover how Investec&#39;s developer community is shaping the future of API banking
+and Programmable Banking card accounts. Learn about the collaborative efforts that
+are enabling developers to craft bespoke financial solutions, drive rapid innovation,
+and seamlessly integrate banking services into diverse digital ecosystems. This
+masterclass will showcase the synergy between technology and finance, highlighting
+the collective intelligence of a thriving developer community.<br/><br/>
+Wayne Summers (Head of Open APIs at Investec) - The Story of
+Programmable Banking<br/><br/>
+Wayne will share the journey of Investec&#39;s programmable banking, its vision,
+and the impact it has on the financial industry.<br/><br/>
+Devin Pearson (Investec Developer Community member) Hands-on with
+the Investec API: Programmable Banking Card Accounts and Community
+Projects<br/><br/>
+Devin will provide a technical walkthrough of the Investec API, demonstrating
+real-world applications and community-driven projects. Attendees are
+encouraged to bring their laptops to follow along.<br/><br/>
+Nick Benson (Developer Community Lead @ Investec) The Pulse of
+Investec&#39;s Developer Community<br/><br/>
+Nick will discuss the ethos of the Investec developer community, its role in
+fostering innovation, and how new members can get involved."
               room: Julia
           workshop3:
               enabled: true
@@ -186,12 +205,30 @@ The session will cover:<ul>
               room: Meeting Room 10
           workshop2:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
-              content2:
+              announceSponsor: true
+              sponsor: Investec
+              sponsorLink: https://www.investec.com/en_za/banking/tech-professionals/programmable-banking.html
+              title: Co-creating API Banking
+              content1: "Discover how Investec&#39;s developer community is shaping the future of API banking
+and Programmable Banking card accounts. Learn about the collaborative efforts that
+are enabling developers to craft bespoke financial solutions, drive rapid innovation,
+and seamlessly integrate banking services into diverse digital ecosystems. This
+masterclass will showcase the synergy between technology and finance, highlighting
+the collective intelligence of a thriving developer community.<br/><br/>
+Wayne Summers (Head of Open APIs at Investec) - The Story of
+Programmable Banking<br/><br/>
+Wayne will share the journey of Investec&#39;s programmable banking, its vision,
+and the impact it has on the financial industry.<br/><br/>
+Devin Pearson (Investec Developer Community member) Hands-on with
+the Investec API: Programmable Banking Card Accounts and Community
+Projects<br/><br/>
+Devin will provide a technical walkthrough of the Investec API, demonstrating
+real-world applications and community-driven projects. Attendees are
+encouraged to bring their laptops to follow along.<br/><br/>
+Nick Benson (Developer Community Lead @ Investec) The Pulse of
+Investec&#39;s Developer Community<br/><br/>
+Nick will discuss the ethos of the Investec developer community, its role in
+fostering innovation, and how new members can get involved."
               room: Meeting Room 10
           workshop3:
               enabled: true
@@ -200,5 +237,4 @@ The session will cover:<ul>
               sponsorLink:
               title:
               content1:
-              content2:
               room: Meeting Room 10
