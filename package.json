@@ -28,9 +28,9 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "^3.0.9",
-    "@types/node": "^20.11.30",
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
+    "@types/node": "^20.12.2",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
