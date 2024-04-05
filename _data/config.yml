@@ -128,11 +128,30 @@ fostering innovation, and how new members can get involved."
               room: Julia
           workshop3:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
+              announceSponsor: true
+              sponsor: Veeam
+              sponsorLink: https://www.veeam.com/ 
+              title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
+              content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
+<li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
+<li>Importance of protecting Kubernetes environments and the role of K10 in achieving this.</li>
+</ul>
+<strong>Deploy 1st Application to Kubernetes:</strong><ul>
+<li>Walkthrough of deploying an application onto a Kubernetes cluster.</li>
+<li>Explanation of key concepts such as pods, deployments, and services.</li>
+</ul>
+<strong>Create Initial K10 Policy to Protect App:</strong><ul>
+<li>Demonstration of setting up K10 policies to protect the deployed application.</li>
+<li>Explanation of backup strategies, retention policies, and disaster recovery configurations.</li>
+</ul>
+<strong>Kubernetes Perform Backup & DR:</strong><ul>
+<li>Hands-on exercise on performing backups and disaster recovery operations using K10.</li>
+<li>Practice restoring applications and data in case of failures.</li>
+</ul>
+<strong>Application & Code Mobility:</strong><ul>
+<li>Discussion on strategies for application and code mobility within Kubernetes environments.</li>
+<li>Exploration of tools and practices for seamless migration and scaling of applications.</li>
+</ul>"
               room: Julia
     - virtual: false
       show: true
@@ -232,9 +251,28 @@ fostering innovation, and how new members can get involved."
               room: Meeting Room 10
           workshop3:
               enabled: true
-              announceSponsor: false
-              sponsor:
-              sponsorLink:
-              title:
-              content1:
+              announceSponsor: true
+              sponsor: Veeam
+              sponsorLink: https://www.veeam.com/ 
+              title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
+              content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
+<li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
+<li>Importance of protecting Kubernetes environments and the role of K10 in achieving this.</li>
+</ul>
+<strong>Deploy 1st Application to Kubernetes:</strong><ul>
+<li>Walkthrough of deploying an application onto a Kubernetes cluster.</li>
+<li>Explanation of key concepts such as pods, deployments, and services.</li>
+</ul>
+<strong>Create Initial K10 Policy to Protect App:</strong><ul>
+<li>Demonstration of setting up K10 policies to protect the deployed application.</li>
+<li>Explanation of backup strategies, retention policies, and disaster recovery configurations.</li>
+</ul>
+<strong>Kubernetes Perform Backup & DR:</strong><ul>
+<li>Hands-on exercise on performing backups and disaster recovery operations using K10.</li>
+<li>Practice restoring applications and data in case of failures.</li>
+</ul>
+<strong>Application & Code Mobility:</strong><ul>
+<li>Discussion on strategies for application and code mobility within Kubernetes environments.</li>
+<li>Exploration of tools and practices for seamless migration and scaling of applications.</li>
+</ul>"
               room: Meeting Room 10
