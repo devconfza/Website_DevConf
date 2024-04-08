@@ -624,12 +624,14 @@
                 </div>
             </div>
             {% endfor %}
+            {% if site.data.config.sponsors.show %}
             <div>Sponsorship is now available with exclusive options and amazing opportunties to share your brand.</div>
             <div>&nbsp;</div>
             <div class="sponsor-content-detail-email" role="button">
-                <a class="button" href="/public/docs/DevConf%202024%20Sponsorship%20Proposal.pdf" target="_blank">Interested in sponsoring? Review our Sponsor
+                <a class="button" href="{{ site.data.config.sponsors.proposal }}" target="_blank">Interested in sponsoring? Review our Sponsor
                     Proposal now!</a>
             </div>
+            {% endif %}
         </div>
         {% else %}
         <div class="sponsor-content-detail-heading">Sponsorship opening 1st November 2023</div>

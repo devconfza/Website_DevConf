@@ -1,4 +1,5 @@
 sponsors:
+    show: false
     proposal: /public/docs/DevConf 2024 Sponsorship Proposal.pdf
 callForSpeakers:
     show: false
