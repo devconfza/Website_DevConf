@@ -170,13 +170,6 @@
         grid-row-gap: 20px;
         max-width: 100vw;
 
-        > *:not(a) {
-            @media (max-width: 1200px) {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-
         &-wide-body {
             overflow-x: hidden;
             overflow-y: hidden;
@@ -198,6 +191,8 @@
             display: grid;
             justify-items: center;
             text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
 
             &-cards {
                 width: 100%;
@@ -220,7 +215,7 @@
 
                 @media (max-width: $mobileWidth) {
                     grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: min-content min-content min-content min-content;
                 }
 
                 &-price {
