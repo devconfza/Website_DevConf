@@ -558,3 +558,9 @@ a.smalllink {
 .soldOutFooter {
     font-size: 0.7em;
 }
+
+.totallySoldOut {
+    column-span: all;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}

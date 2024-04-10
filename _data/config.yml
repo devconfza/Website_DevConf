@@ -50,7 +50,7 @@ events:
       sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: false
+          totally_sold_out: true
           onsale: true
           has_shuttle: false
           has_waiting_list: false
@@ -60,7 +60,7 @@ events:
           fullprice:
               price: 3623
               bulkPrice: 3293.64
-              sold_out: false
+              sold_out: true
           earlybird:
               price: 3150.43
               sold_out: true
