@@ -2,45 +2,50 @@ Welcome to the DevConf 2.0 Website
 
 # Installation
 
+You need
+1. Ruby 3+
+2. Jekyll (installed from Gems)
+3. Jekyll redirect from addon
+4. Node.js 21
+5. Yarn classic
+
 ## Setup for Windows
 If you are on Windows you need Ruby `choco install ruby` and node `choco install nodejs`.
 
 ## Setup for Linux/WSL
 Currently this is the latest that has been tested with WSL
 
-- `sudo apt-get install ruby-full`  
-- `sudo apt-get install -y nodejs`  
-- `sudo apt-get install build-essential`  
-- `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`  
-- `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`  
-- `sudo apt-get update && sudo apt-get install yarn`  
+- `sudo apt-get install ruby-full`
+- `sudo apt-get install -y nodejs`
+- `sudo apt-get install build-essential`
+- `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
+- `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+- `sudo apt-get update && sudo apt-get install yarn`
+
+## Setup for MacOS
+- `brew install ruby@3`
 
 ## Next Steps
 
-The website uses [Jekyll](https://jekyllrb.com/) so you need to install that first with `sudo gem install bundler jekyll`.
+The website uses [Jekyll](https://jekyllrb.com/), so you need to install that first with `sudo gem install bundler jekyll`.
 
 Once done you also need to run `sudo gem install jekyll-redirect-from` to install the dependencies.
 
 Next install the development tools with `yarn install`
 
-# development
+# Development
 
-```
-yarn start
-```
+`yarn start`
 
-# compile
-  
+# Compile
+
 To compile it is
-```
-jekyll build
-```
-  
-You can swop `build` for `serve` to run the web server which does incremental updates as you change files.
+`jekyll build`
+
+You can swap `build` for `serve` to run the web server which does incremental updates as you change files.
 
 ---
 
 Useful tools
 - https://www.textfixer.com/html/convert-text-html.php
 - https://app.grammarly.com
-  

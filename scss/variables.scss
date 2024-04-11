@@ -7,6 +7,8 @@ $mobileWidth: 850px;
 $workshopMoveBelowWidth: 1220px;
 
 @mixin scrollbar() {
+    scrollbar-color: $darkBrandPink $darkBrandBlue;
+
     &::-webkit-scrollbar {
         width: 12px;
     }
