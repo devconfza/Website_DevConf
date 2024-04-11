@@ -2,7 +2,7 @@
     "structure": [
         {
             "title": "Keynote",
-            "subtitle": "09h15 - 10h00",
+            "subtitle": "$$keynote-start$$refresh-1-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -36,7 +36,7 @@
         },
         {
             "title": "Timeslot 1",
-            "subtitle": "10h30 - 11h10",
+            "subtitle": "$$timeslot-1-start$$movement-1-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -71,7 +71,7 @@
         },
         {
             "title": "Timeslot 2",
-            "subtitle": "11h20 - 12h00",
+            "subtitle": "$$timeslot-2-start$$movement-2-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -106,7 +106,7 @@
         },
         {
             "title": "Timeslot 3",
-            "subtitle": "12h50 - 13h30",
+            "subtitle": "$$timeslot-3-start$$lunch-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -141,7 +141,7 @@
         },
         {
             "title": "Timeslot 4",
-            "subtitle": "13h40 - 14h20",
+            "subtitle": "$$timeslot-4-start$$movement-3-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -176,7 +176,7 @@
         },
         {
             "title": "Timeslot 5",
-            "subtitle": "14h30 - 15h10",
+            "subtitle": "$$timeslot-5-start$$refresh-2-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -211,7 +211,7 @@
         },
         {
             "title": "Timeslot 6",
-            "subtitle": "15h40 - 16h20",
+            "subtitle": "$$timeslot-6-start$$movement-4-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -246,7 +246,7 @@
         },
         {
             "title": "Timeslot 7",
-            "subtitle": "16h30 - 17h10",
+            "subtitle": "$$timeslot-7-start$$networking-start$$",
             "questions": [
                 {
                     "id": "attended",
@@ -280,7 +280,7 @@
             ]
         },
         {
-            "title": "Morning Workshop",
+            "title": "First Workshop",
             "workshop": 0,
             "questions": [
                 {
@@ -314,8 +314,42 @@
             ]
         },
         {
-            "title": "Afternoon Workshop",
+            "title": "Second Workshop",
             "workshop": 1,
+            "questions": [
+                {
+                    "id": "attended",
+                    "label": "Did you attend the workshop?",
+                    "type": "yesno"
+                },
+                {
+                    "id": "ratingContent",
+                    "label": "How would you rate the content?",
+                    "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "ratingPresentation",
+                    "label": "How would you rate the presentation?",
+                    "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "ratingValue",
+                    "label": "How valuable was this presentation to you?",
+                    "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "feedback",
+                    "label": "Any feedback on this workshop?",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "title": "Third Workshop",
+            "workshop": 2,
             "questions": [
                 {
                     "id": "attended",

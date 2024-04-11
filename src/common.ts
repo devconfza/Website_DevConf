@@ -25,6 +25,7 @@ export const addPopupHandler = (
     unclickableClass?: string,
     onCloseHandler?: () => void,
     onOpenHandler?: (content: Element) => void,
+    popupContentKey?: string,
 ) => {
     const closePopup = () => {
         window.currentSpeaker = undefined;
@@ -42,22 +43,24 @@ export const addPopupHandler = (
         }
     }
 
-    const popupShare = document.querySelector('div.popupShare')! as HTMLDivElement
-    popupShare.onclick = async () => {
-        if (window.currentSpeaker) {
-            const url = `${window.location.origin + window.location.pathname}?currentSpeaker=${window.currentSpeaker.id}`
+    const popupShare = document.querySelector('div.popupShare') as HTMLDivElement
+    if (popupShare) {
+        popupShare.onclick = async () => {
+            if (window.currentSpeaker) {
+                const url = `${window.location.origin + window.location.pathname}?currentSpeaker=${window.currentSpeaker.id}`
 
-            const shareData = {
-                title: `DevConf Speaker: ${window.currentSpeaker.name}`,
-                text: `DevConf Speaker: ${window.currentSpeaker.name}`,
-                url: url,
-            }
+                const shareData = {
+                    title: `DevConf Speaker: ${window.currentSpeaker.name}`,
+                    text: `DevConf Speaker: ${window.currentSpeaker.name}`,
+                    url: url,
+                }
 
-            if (navigator.share != undefined && navigator.canShare(shareData)) {
-                await navigator.share(shareData)
-            } else {
-                await navigator.clipboard.writeText(url);
-                alert('URL is copied to clipboard')
+                if (navigator.share != undefined && navigator.canShare(shareData)) {
+                    await navigator.share(shareData)
+                } else {
+                    await navigator.clipboard.writeText(url);
+                    alert('URL is copied to clipboard')
+                }
             }
         }
     }
@@ -81,8 +84,12 @@ export const addPopupHandler = (
                 backdrop.classList.remove('popupBackdropHidden')
                 document.addEventListener('keydown', handleCloseKeyPress)
 
-                const popupContentStage = document.querySelector('div.popupContent')!
-                const dataSlotId = div.attributes['data-slot-id'].value
+                let elementsToSelect = 'div.popupContent'
+                if (popupContentKey) {
+                    elementsToSelect = `div.${popupContentKey}`
+                }
+                const popupContentStage = document.querySelector(elementsToSelect)!
+                const dataSlotId = div.attributes['data-slot-id']?.value
                 if (dataSlotId) {
                     popupContentStage.setAttribute("speaker-id", dataSlotId)
                 }

@@ -377,6 +377,19 @@
     cursor: pointer;
 }
 
+.feedbackPopupContent {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    max-width: 100%;
+    margin-top: 49px;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-areas:
+        ". closeButton"
+        "content content";
+}
+
 .popupContent {
     display: grid;
     grid-template-rows: auto auto;

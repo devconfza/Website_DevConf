@@ -59,6 +59,8 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5px;
+    grid-area: closeButton;
+    margin-right: 15px;
 }
 
 .feedbackPopup {
@@ -75,6 +77,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-x: hidden;
+    grid-area: content;
     @include scrollbar();
 }
 
@@ -185,6 +188,8 @@ select {
     width: 90%;
     border-color: $darkBrandPink;
     padding: 10px;
+    background-color: white;
+    border-width: 1px;
 }
 
 input[type="text"] {

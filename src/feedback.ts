@@ -2,6 +2,8 @@ import { addPopupHandler, feedbackServerUrl, getTemplate, setText } from './comm
 import { loadSessionizeData } from './sessionize'
 import { v4 as uuidv4 } from 'uuid'
 
+const timeKeyFinder = /\$\$(?<start>.+)\$\$(?<end>.+)\$\$/
+
 interface QuestionStructure {
     id: string,
     label: string,
@@ -56,11 +58,11 @@ export default async () => {
 
     const sessionStructure = document.getElementById('sessionData')!.innerText.trim().split(' ')
     const eventData = await loadSessionizeData(eventId)
-
+    const timings = document.getElementById("timings")?.innerHTML.trim().split(' ');
     const workshopStructure = document.getElementById('workshopData')!.innerText.trim().split(';;;').map(s => s.trim())
 
     const ratingStoredData = window.localStorage.getItem(`rating${ratingId}`)
-    let ratingData
+    let ratingData: { [x: string]: {}; captcha?: any; event: string; submitter: string }
     if (!ratingStoredData) {
         ratingData = {
             event: ratingId,
@@ -81,7 +83,7 @@ export default async () => {
             .filter((speaker) => !!speaker)
             .map((speaker) => speaker?.fullName)
             .join(' and ');
-        
+
         return `${session.title} by ${speakers}`
     }
 
@@ -244,11 +246,11 @@ export default async () => {
             if (!questionStructure) {
                 return false
             }
-            
+
             const answeredValue = answers[key]
             if (questionStructure.type === 'timeslot-selector' && answeredValue === 'none') {
                 return false
-            } 
+            }
 
             const needs = questionStructure.needs
             if (!needs) {
@@ -333,7 +335,8 @@ export default async () => {
             content.querySelectorAll('input[type="range"]').forEach(i => {
                 i.dispatchEvent(new Event('input'))
             })
-        })
+        },
+        'feedbackPopupContent')
     }
 
     const addSubmit = () => {
@@ -382,7 +385,16 @@ export default async () => {
                 }
             } else {
                 if (question.subtitle) {
-                    subTitle = question.subtitle
+                    const parsedSubtitle = timeKeyFinder.exec(question.subtitle)
+                    if (parsedSubtitle) {
+                        const start = parsedSubtitle.groups?.["start"] ?? ""
+                        const end = parsedSubtitle.groups?.["end"] ?? ""
+                        const startTiming = timings?.find(i => i.startsWith(start))?.substring(start.length)
+                        const endTiming = timings?.find(i => i.startsWith(end))?.substring(end?.length)
+                        subTitle =  `${startTiming} - ${endTiming}`
+                    } else {
+                        subTitle = question.subtitle
+                    }
                 }
 
                 show = true

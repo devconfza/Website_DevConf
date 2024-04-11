@@ -10,6 +10,12 @@
         </div>
     </div>
 
+    <data style="display:none;" id="timings">
+        {% for timing in site.data.config.timing %}
+        {{ timing }}
+        {% endfor %}
+    </data>
+
     <data style="display:none;" id="workshopData">
         {% if event.workshops.workshop1.enabled %}
         {{ event.workshops.workshop1.title }}
@@ -58,7 +64,7 @@
 
 
     <div class="popupBackdrop popupBackdropHidden">
-        <div class="popupContent" onclick="event.stopPropagation()">
+        <div class="feedbackPopupContent" onclick="event.stopPropagation()">
             <div class="popupClose popupRatingClose">X</div>
         </div>
     </div>
