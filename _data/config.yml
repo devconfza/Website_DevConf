@@ -29,7 +29,7 @@ timing:
     networking-end: 19h00
 
 general:
-    year: 2024        
+    year: 2024
 events:
     - virtual: false
       show: true
@@ -75,7 +75,7 @@ events:
               enabled: true
               announceSponsor: true
               sponsor: iOCO
-              sponsorLink: https://ioco.tech/  
+              sponsorLink: https://ioco.tech/
               title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
               content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
 achieving greater scalability, flexibility, and faster innovation. While the benefits of
@@ -131,7 +131,7 @@ fostering innovation, and how new members can get involved."
               enabled: true
               announceSponsor: true
               sponsor: Veeam
-              sponsorLink: https://www.veeam.com/ 
+              sponsorLink: https://www.veeam.com/
               title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
               content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
 <li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
@@ -198,7 +198,7 @@ fostering innovation, and how new members can get involved."
               enabled: true
               announceSponsor: true
               sponsor: iOCO
-              sponsorLink: https://ioco.tech/  
+              sponsorLink: https://ioco.tech/
               title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
               content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
 achieving greater scalability, flexibility, and faster innovation. While the benefits of
@@ -254,7 +254,7 @@ fostering innovation, and how new members can get involved."
               enabled: true
               announceSponsor: true
               sponsor: Veeam
-              sponsorLink: https://www.veeam.com/ 
+              sponsorLink: https://www.veeam.com/
               title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
               content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
 <li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
