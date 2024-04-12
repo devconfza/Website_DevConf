@@ -70,7 +70,7 @@ const loadStoredData = (id: string): SessionizeEvent | undefined => {
             return undefined
         }
     }
-    
+
     return undefined
 }
 
