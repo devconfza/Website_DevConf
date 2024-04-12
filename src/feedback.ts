@@ -167,7 +167,6 @@ export default async () => {
     const configureRating = (inputElement: HTMLDivElement, question: QuestionStructure, dataSlotId: number) => {
         const ratingElement = (inputElement.querySelector('input[type="range"]') as HTMLInputElement)
         const updateValue = () => {
-            console.log('update')
             const value = ratingElement.value
             if (value) {
                 setValue(dataSlotId, question.id, value)

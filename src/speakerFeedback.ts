@@ -41,6 +41,10 @@ export default () => {
 
     const showData = (data: EventData[], averages) => {
         target.innerHTML = ''
+        if (!data) {
+            console.warn("no data")
+        }
+
         data.forEach(event => {
             const title = getTemplate('title')!.firstElementChild as HTMLDivElement
             title.innerText = event.event
@@ -77,9 +81,8 @@ export default () => {
                 (feedbackTable.querySelector('#globalContentAvg') as HTMLTableCellElement).innerText = comparedValue(contentAvg, average['global-ratingContent']);
                 (feedbackTable.querySelector('#globalValueAvg') as HTMLTableCellElement).innerText = comparedValue(valueAvg, average['global-ratingValue']);
             } else {
-                feedbackTable.querySelectorAll('.additionalAverageInfo').forEach(item => { 
-                    console.log('sdd');
-                    (item as HTMLTableRowElement).style.display = 'none'; 
+                feedbackTable.querySelectorAll('.additionalAverageInfo').forEach(item => {
+                    (item as HTMLTableRowElement).style.display = 'none';
                 });
             }
 
