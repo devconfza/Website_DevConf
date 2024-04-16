@@ -191,8 +191,8 @@ fostering innovation, and how new members can get involved."
           room_1: "Hall A"
           room_2: "Hall B"
           room_3: "Hall C"
-          room_4: "Meeting Room 11"
-          room_5: "Meeting Room 8 and 9"
+          room_4: "The Verve"
+          room_5: "Meeting Room 11"
       workshops:
           workshop1:
               enabled: true
@@ -222,7 +222,7 @@ The session will cover:<ul>
 <li>Security Measures and Best Practices</li>
 <li>Exploring Advanced Features of Kubernetes</li></ul>"
               content2:
-              room: Meeting Room 10
+              room: "Meeting Room 8 and 9"
           workshop2:
               enabled: true
               announceSponsor: true
@@ -249,7 +249,7 @@ Nick Benson (Developer Community Lead @ Investec) The Pulse of
 Investec&#39;s Developer Community<br/><br/>
 Nick will discuss the ethos of the Investec developer community, its role in
 fostering innovation, and how new members can get involved."
-              room: Meeting Room 10
+              room: "Meeting Room 8 and 9"
           workshop3:
               enabled: true
               announceSponsor: true
@@ -276,4 +276,4 @@ fostering innovation, and how new members can get involved."
 <li>Discussion on strategies for application and code mobility within Kubernetes environments.</li>
 <li>Exploration of tools and practices for seamless migration and scaling of applications.</li>
 </ul>"
-              room: Meeting Room 10
+              room: "Meeting Room 8 and 9"
