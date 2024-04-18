@@ -41,8 +41,10 @@ export default () => {
 
     const showData = (data: EventData[], averages) => {
         target.innerHTML = ''
-        if (!data) {
-            console.warn("no data")
+        console.dir(data)
+        if (data.length === 0) {
+            target.innerText = 'No data yet! Check back later!'
+            return
         }
 
         data.forEach(event => {
@@ -108,19 +110,27 @@ export default () => {
         }
 
         button.onclick = async () => {
-            button.disabled = true
-            button.innerText = 'Loading...'
             const key = speakerKeyElement.value
-            const data = await fetch(`${feedbackServerUrl}?speaker=${key}`)
-            if (data.ok) {
-                const dataSet = await data.json() as Array<any>;
-                const averages = dataSet.filter(row => !row.event)
-                showData(dataSet.filter(row => row.event) as EventData[], averages)
-                window.localStorage.setItem('speakerFeedbackKey', key)
+            if (!key || key.length != 32) {
+                return
             }
 
-            button.disabled = false
-            button.innerText = 'Get Report'
+            try {
+                button.disabled = true
+                button.innerText = 'Loading...'
+                const data = await fetch(`${feedbackServerUrl}?speaker=${key}`)
+                if (data.ok) {
+                    const dataSet = await data.json() as Array<any>;
+                    const averages = dataSet.filter(row => !row.event)
+                    showData(dataSet.filter(row => row.event) as EventData[], averages)
+                    window.localStorage.setItem('speakerFeedbackKey', key)
+                } else {
+                    target.innerText = `Invalid speaker key [${data.status}]`
+                }
+            } finally {
+                button.disabled = false
+                button.innerText = 'Get Report'
+            }
         }
     }
 
