@@ -36,17 +36,17 @@
                 <div style="grid-area: first;">
                     <div>SERVICE BUS! Want to arrive in style?</div>
                     <div>For the first time ever, we have a DevConf Shuttle to the venue! The shuttle is from Monte Casino Johannesburg to the venue and returns in the evening after the event.</div>
-                
+
                     <a class="sponsor-button" rel="noopener" href="{{ event.tickets.merch_link }}"
                         target="_blank">Buy a bus ticket for R100</a>
                 </div>
                 {% endif %}
                 <div class="totallySoldOut">
                     <div>DevConf {{ event.location }} is<br/>SOLD OUT</div>
-                    <div>Unfortunately all tickets for the event are sold out. 
+                    <div>Unfortunately all tickets for the event are sold out.
                         {% if event.tickets.has_waiting_list %}
                         You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
-                
+
                     <a class="sponsor-button" rel="noopener" href="{{ event.tickets.waiting_list }}"
                         target="_blank">Join the waiting list</a>
 
@@ -107,7 +107,7 @@
                 </div>
                 <div>
                     <div>Manual Tickets</div>
-                    <div>Have a special requirement? We can assist with a manual ticket purchases. 
+                    <div>Have a special requirement? We can assist with a manual ticket purchases.
                     </div>
                     <div class="sponsor-content-detail-tickets-cards-price">
                         &nbsp;
@@ -127,7 +127,7 @@
             {% endif %}
             {% if event.tickets.totally_sold_out %}
             {% else %}
-            <div><small>We use <a target="_blank" href="https://www.quicket.co.za/">Quicket</a> for ticket purchases, and payment can be made by Instant EFT, Credit Card, SnapScan, or Zapper. 🟣 
+            <div><small>We use <a target="_blank" href="https://www.quicket.co.za/">Quicket</a> for ticket purchases, and payment can be made by Instant EFT, Credit Card, SnapScan, or Zapper. 🟣
                 If you need an PO, or "normal" EFT, please <a href="mailto:info@devconf.co.za"> email us</a> so we can help you directly with a manual purchase! 🔵
                 You can login to <a target="_blank" href="https://www.quicket.co.za/">Quicket</a> to manage or transfer your tickets. <a target="_blank" href="mailto:support@quicket.co.za">Quicket support</a> can help with any questions on how to use their platform. 🟢
             <a href="/ticket_terms" target="_blank">Ticket Purchase Terms &amp; Conditions</a></small></div>
@@ -202,13 +202,13 @@
                     data-remote="{{ include.sessions[1].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
                     <div class="agenda-session-time">{{ site.data.config.timing.timeslot-1-start }}</div>
-                    
+
                 </div>
                 <div class="agenda-session" data-slot-id="{{ include.sessions[2].id }}"
                     data-remote="{{ include.sessions[2].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_2 }}</div>
                     <div class="agenda-session-time">{{ site.data.config.timing.timeslot-1-start }}</div>
-                    
+
                 </div>
                 <div class="agenda-session" data-slot-id="{{ include.sessions[3].id }}"
                     data-remote="{{ include.sessions[3].remote }}">
@@ -619,7 +619,7 @@
                     <div
                         class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
                         <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
-                            <img alt="The logo for {{ sponsor.Name }}"
+                            <img class="sponsorLogo" alt="The logo for {{ sponsor.Name }}"
                                 src="/public/images/sponsorship/2024/{{sponsor.Logo }}" />
                         </a>
                     </div>
@@ -653,7 +653,7 @@
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Location</div>
         <div class="sponsor-content-detail-location">
-            <div>DevConf will be held at
+            <div style="max-width: 80vw;">DevConf will be held at
                 <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer">{{ event.venue }}</a>, in
                 {{ event.location }}, South Africa.
             </div>
@@ -693,7 +693,7 @@
         <div class="popupBioLeft">
             <img class="largePopupImage" />
             <div class="bio-speaker"></div>
-            <div class="bio-subtitle"></div>            
+            <div class="bio-subtitle"></div>
             <div class="bio-tagline"></div>
             <div class="bio-social"></div>
             <div class="bio-speaker-bio-title"></div>

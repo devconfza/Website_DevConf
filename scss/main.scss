@@ -63,7 +63,7 @@ body {
     height: 315px;
 
     @media (max-width: $mobileWidth) {
-        width: 300px;
+        max-width: 80vw;
         height: 168.75px;
     }
 }
