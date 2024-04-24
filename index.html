@@ -32,8 +32,16 @@ layout: default
                     <div class="date">{{ event.date }}</div>
                     <img class="event-logo" src="/public/images/{{ event.logo }}" />
                     {% if event.infoOn %}
+                        {% assign agendaText = '' %}
+                        {% assign ticketText = '' %}
+                    {% if event.showAgenda %}
+                        {% assign agendaText = 'Agenda, ' %}
+                    {% endif %}
+                    {% if event.tickets.onsale %}
+                        {% assign ticketText = 'Tickets, ' %}
+                    {% endif %}
                     <div class="button" role="button">
-                        Agenda, tickets, venue &amp; sponsors
+                        {{ agendaText | append: ticketText | append: 'Venue &amp; Sponsors'}}
                     </div>
                     {% endif %}
                     {% if event.infoOn %}
