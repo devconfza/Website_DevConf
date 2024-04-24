@@ -11,14 +11,18 @@
         </div>
     </div>
 
+    {% if event.tickets.onsale %}
     <div class="sponsor-content-detail-collapse">
-        {% if event.tickets.onsale %}
-        <div class="sponsor-content-detail-heading">Buy your tickets</div>
+        {% if event.tickets.totally_sold_out %}
+        <div class="sponsor-content-detail-heading">This event is sold out!</div>
         {% else %}
-            <div class="sponsor-content-detail-heading">This event is sold out!</div>
+        <div class="sponsor-content-detail-heading">Buy your tickets</div>
         {% endif %}
+
         <div class="sponsor-content-detail-tickets">
-            {% if event.tickets.onsale %}
+            {% if event.tickets.totally_sold_out %}
+            <div>&nbsp;</div>
+            {% else %}
             {% if event.virtual %}
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, and access to the virtual network space!</div>
@@ -26,13 +30,11 @@
             <div>Limited tickets available with something for everyone. All tickets include full day access to all
                 sessions, the amazing swag, lunch, snacks, and access to the post-conference event!</div>
             {% endif %}
-            {% else %}
-            <div class="sponsor-content-detail-tickets"> We cannot wait to meet all of you soon!</div>
             {% endif %}
-            {% if event.tickets.onsale %}
+
             <div class="sponsor-content-detail-tickets-cards">
                 {% if event.tickets.totally_sold_out %}
-                {% if event.tickets.has_shuttle %}
+                <!-- {% if event.tickets.has_shuttle %}
                 <div style="grid-area: first;">
                     <div>SERVICE BUS! Want to arrive in style?</div>
                     <div>For the first time ever, we have a DevConf Shuttle to the venue! The shuttle is from Monte Casino Johannesburg to the venue and returns in the evening after the event.</div>
@@ -40,11 +42,11 @@
                     <a class="sponsor-button" rel="noopener" href="{{ event.tickets.merch_link }}"
                         target="_blank">Buy a bus ticket for R100</a>
                 </div>
-                {% endif %}
+                {% endif %} -->
                 <div class="totallySoldOut">
                     <div>DevConf {{ event.location }} is<br/>SOLD OUT</div>
                     <div>Unfortunately all tickets for the event are sold out.
-                        {% if event.tickets.has_waiting_list %}
+                        {% if event.tickets.has_waiting_list %}x
                         You can join the waiting list below in case there are cancelled tickets or sponsor packages with tickets are not claimed.</div>
 
                     <a class="sponsor-button" rel="noopener" href="{{ event.tickets.waiting_list }}"
@@ -62,13 +64,11 @@
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.earlybird.price }} incl. vat<br />
                     </div>
-                    {% if event.tickets.onsale %}
                     {% if event.tickets.earlybird.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
                         target="_blank">Buy an early bird ticket now!</a>
-                    {% endif %}
                     {% endif %}
                 </div>
                 <div>
@@ -79,13 +79,11 @@
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.bulkPrice }} incl. vat<br />
                     </div>
-                    {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
                         target="_blank">Buy tickets now!</a>
-                    {% endif %}
                     {% endif %}
                 </div>
                 <div>
@@ -96,13 +94,11 @@
                     <div class="sponsor-content-detail-tickets-cards-price">
                         R{{ event.tickets.fullprice.price }} incl. vat<br />
                     </div>
-                    {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
                     <a class="sponsor-button" rel="noopener noreferrer" href="{{ event.tickets.purchaseSite }}"
                         target="_blank">Buy a ticket now!</a>
-                    {% endif %}
                     {% endif %}
                 </div>
                 <div>
@@ -112,7 +108,6 @@
                     <div class="sponsor-content-detail-tickets-cards-price">
                         &nbsp;
                     </div>
-                    {% if event.tickets.onsale %}
                     {% if event.tickets.fullprice.sold_out %}
                     <div class="sponsor-fake-button">Sold Out!</div>
                     {% else %}
@@ -120,9 +115,7 @@
                         href="mailto:info@devconf.co.za?subject=Manual Ticket For {{ event.location }}"
                         target="_blank">Let us help you now!</a>
                     {% endif %}
-                    {% endif %}
                 </div>
-                {% endif %}
             </div>
             {% endif %}
             {% if event.tickets.totally_sold_out %}
@@ -135,6 +128,9 @@
             {% endif %}
         </div>
     </div>
+    {% else %}
+    <div class="sponsor-content-detail collapseMe">&nbsp;</div>
+    {% endif %}
 
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
@@ -606,8 +602,8 @@
         {% endif %}
     </div>
 
+    {% if event.sponsorOpen %}
     <div class="sponsor-content-detail">
-        {% if event.sponsorOpen %}
         <div class="sponsor-content-detail-heading">Sponsors</div>
         <div class="sponsor-content-detail-content-sponsor">
             {% assign sponsorsByLevel = (include.sponsors | group_by: 'Level') %}
@@ -636,10 +632,12 @@
             </div>
             {% endif %}
         </div>
-        {% else %}
-        <div class="sponsor-content-detail-heading">Sponsorship opening 1st November 2023</div>
-        {% endif %}
     </div>
+    {% else %}
+    <div class="sponsor-content-detail collapseMe">
+    <!-- <div class="sponsor-content-detail-heading">Sponsorship opening 1st November 2023</div> -->
+    </div>
+    {% endif %}
 
     {% if event.virtual %}
     <div class="sponsor-content-detail">
