@@ -173,7 +173,7 @@ fostering innovation, and how new members can get involved."
       sponsorOpen: true
       colour: blue
       tickets:
-          onsale: true
+          onsale: false
           totally_sold_out: false
           has_shuttle: false
           has_waiting_list: false
