@@ -43,7 +43,6 @@ export default async () => {
             if (speaker.categoryItems.indexOf(204593) >= 0) {
                 country = 'South Africa'
             } else {
-                debugger
                 country = speaker.questionAnswers.find(i => i.questionId === 59078)?.answerValue
             }
 
@@ -65,7 +64,7 @@ export default async () => {
             if (pronoun) {
                 return `${pronoun} ${seperator} ${country}`
             } else {
-                return country
+                return country ?? ""
             }
         }
 
