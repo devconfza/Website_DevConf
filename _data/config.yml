@@ -1,3 +1,6 @@
+banner:
+    show: true
+    content: "DevConf 2024 is entirely sold out! We can't wait to see you all soon!"
 sponsors:
     show: false
     proposal: /public/docs/DevConf 2024 Sponsorship Proposal.pdf

@@ -563,3 +563,16 @@ a.smalllink {
     grid-column-start: 1;
     grid-column-end: 5;
 }
+
+.banner {
+    text-align: center;
+    padding: 6px;
+    background-color: #e3d9b9;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+.keyboardUserGroup {
+    color: $darkBrandBlue;
+}

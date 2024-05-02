@@ -66,6 +66,9 @@ layout: compress
 </head>
 
 <body>
+    {% if site.data.config.banner.show %}
+    <div class="banner">{{site.data.config.banner.content}}</div>
+    {% endif %}
 	<div class="menu" role="menu">
 		<div class="left">
 			<a href="/">
@@ -99,17 +102,17 @@ layout: compress
 	<div class="footer">
 		<div>© 2015-<span id="currentYear">2019</span> The Developer User Group. <a href="/notices.html"
 				target="_blank">Notices</a>.</div>
-		<div> 
+		<div>
             <a href="http://youtube.com/c/devconfza" rel="noopener noreferrer" target="_blank"><img
                 src="/public/images/icons8-youtube-50.png" alt="YouTube" /></a>
 			<a href="https://github.com/devconfza" rel="noopener noreferrer" target="_blank"><img
 					src="/public/images/icons8-github-50.png" alt="GitHub" /></a>
 			<a href="https://mastodon.cloud/@devconf" rel="noopener noreferrer" target="_blank"><img
-					src="/public/images/mastodon.png" alt="Mastodon" /></a>	
+					src="/public/images/mastodon.png" alt="Mastodon" /></a>
 			<a href="https://www.linkedin.com/company/devconf" target='_blank' rel="noopener noreferrer"><img
 					src="/public/images/linkedin.png" alt="LinkedIn" /></a>
             <a href="https://www.whatsapp.com/channel/0029Va9WHV33gvWd8SV3UB0d" target='_blank' rel="noopener noreferrer"><img
-                        src="/public/images/whatsapp.png" alt="WhatsApp Channel" /></a>        
+                        src="/public/images/whatsapp.png" alt="WhatsApp Channel" /></a>
 			<a href='https://www.facebook.com/devconfza' target='_blank' rel="noopener noreferrer"><img
 					src="/public/images/facebook.png" alt="Facebook" /></a>
 			<a href='https://twitter.com/devconfza' target='_blank' rel="noopener noreferrer"><img
@@ -153,7 +156,7 @@ layout: compress
 
   		gtag('config', 'G-PNB6H6CYN4');
 	</script>
-	
+
 	<script src="{{ '/scripts/devconf.js' | relative_url | append: cacheBust }}"></script>
 	<script type="text/javascript">
 		_linkedin_partner_id = "2283849";
