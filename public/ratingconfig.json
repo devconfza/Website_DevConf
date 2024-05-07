@@ -280,12 +280,12 @@
             ]
         },
         {
-            "title": "First Workshop",
+            "title": "First Master Class",
             "workshop": 0,
             "questions": [
                 {
                     "id": "attended",
-                    "label": "Did you attend the workshop?",
+                    "label": "Did you attend the master class?",
                     "type": "yesno"
                 },
                 {
@@ -308,18 +308,18 @@
                 },
                 {
                     "id": "feedback",
-                    "label": "Any feedback on this workshop?",
+                    "label": "Any feedback on this master class?",
                     "type": "text"
                 }
             ]
         },
         {
-            "title": "Second Workshop",
+            "title": "Second Master Class",
             "workshop": 1,
             "questions": [
                 {
                     "id": "attended",
-                    "label": "Did you attend the workshop?",
+                    "label": "Did you attend the master class?",
                     "type": "yesno"
                 },
                 {
@@ -342,18 +342,18 @@
                 },
                 {
                     "id": "feedback",
-                    "label": "Any feedback on this workshop?",
+                    "label": "Any feedback on this master class?",
                     "type": "text"
                 }
             ]
         },
         {
-            "title": "Third Workshop",
+            "title": "Third Master Class",
             "workshop": 2,
             "questions": [
                 {
                     "id": "attended",
-                    "label": "Did you attend the workshop?",
+                    "label": "Did you attend the master class?",
                     "type": "yesno"
                 },
                 {
@@ -376,7 +376,7 @@
                 },
                 {
                     "id": "feedback",
-                    "label": "Any feedback on this workshop?",
+                    "label": "Any feedback on this master class?",
                     "type": "text"
                 }
             ]
