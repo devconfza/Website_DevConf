@@ -59,37 +59,6 @@ layout: default
     {% endif %}
 </div>
 
-
-<div class="sponsor-content-detail">
-    <div class="sponsor-content-detail-heading">Keep Me Informed</div>
-    <form id="madmimi">
-        <div class="sponsor-content-detail-mailing-list">
-            <p>
-                If you would like to be added to our mailing list for announcements, please signup below:
-            </p>
-            <input class="form-control mimi_field required" data-required-field="Name is required"
-                data-required-placeholder="Name" id="signup_name" name="signup[name]" placeholder="Name" required
-                type="text">
-            <input class="form-control mimi_field required" data-required-field="Email is required"
-                data-required-placeholder="Email" id="signup_email" name="signup[email]" placeholder="Email" required
-                type="email">
-            <div class="checkbox">
-                <input checked="checked" id="list_1138553" name="lists[]" type="checkbox" value="1138553" />
-                <label for="list_1138553">I would like to receive the Developer User Group newsletter as
-                    well!</label>
-            </div>
-            <p class="devugblurb">The
-                <a class="devuglink" href="https://www.developerug.org.za" rel="noopener noreferrer"
-                    target="_blank">Developer User Group</a>
-                is a monthly free meeting for software developers.
-            </p>
-            <input class="button" data-class="btn btn-primary" data-default-text="Keep me informed"
-                data-invalid-text="Try Again" data-submitting-text="Signing Up..." data-thanks="Thank you!"
-                id="webform_submit_button" type="submit" value="Sign Up" />
-        </div>
-    </form>
-</div>
-
 <div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
     <div class="sponsor-content-detail-wide-body">
@@ -124,46 +93,3 @@ layout: default
     </div>
 </div>
 </div>
-
-<script>
-    function getInputValue(id) {
-        return encodeURIComponent(document.getElementById(id).value);
-    }
-
-    document.getElementById("madmimi").onsubmit = (e) => {
-        e.preventDefault();
-
-        const submitButton = document.getElementById("webform_submit_button");
-        submitButton.value = submitButton.attributes["data-submitting-text"].value;
-        submitButton.disabled = true;
-        const parts = ["lists[]=2073517"];
-        if (document.getElementById("list_1138553").checked) {
-            parts.push("lists[]=1138553");
-        }
-
-        const callbackFunction = `jsonp_callback_${Math.round(100000 * Math.random())}`;
-        parts.push(`signup[name]=${getInputValue("signup_name")}`);
-        parts.push(`signup[email]=${getInputValue("signup_email")}`);
-        parts.push(`callback=${callbackFunction}`);
-
-        const mm_url = `https://madmimi.com/signups/subscribe/176015.json?${parts.join("&")}`;
-
-        const _this = this;
-        window[callbackFunction] = function (response) {
-            delete window[callbackFunction];
-            document.body.removeChild(script);
-            submitButton.disabled = false;
-            if (response.success) {
-                submitButton.value = submitButton.attributes["data-thanks"].value;
-            } else {
-                submitButton.value = submitButton.attributes["data-invalid-text"].value;
-            }
-        };
-
-        const script = document.createElement("script");
-        script.src = mm_url;
-        document.body.appendChild(script);
-
-        return false;
-    };
-</script>
