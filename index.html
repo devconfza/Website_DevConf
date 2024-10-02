@@ -59,10 +59,12 @@ layout: default
     {% endif %}
 </div>
 
+{% if site.data.config.sponsors.banner %}
 <div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
     <div class="sponsor-content-detail-wide-body">
-        {% assign sponsorsByLevel = site.data["2024"]["jhbsponsors"] | concat: site.data["2024"]["cptsponsors"] | uniq: "Name" | group_by: 'Level' %}
+        {% assign year = site.data.config.general.year %}
+        {% assign sponsorsByLevel = site.data[year]["jhbsponsors"] | concat: site.data[year]["cptsponsors"] | uniq: "Name" | group_by: 'Level' %}
         {% for level in sponsorsByLevel %}
 
         {% assign sponsors = level.items | sort: "Name" %}
@@ -77,6 +79,7 @@ layout: default
         {% endfor %}
     </div>
 </div>
+{% endif %}
 
 <div id="youtubeSection" class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">Videos</div>

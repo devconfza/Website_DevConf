@@ -1,4 +1,22 @@
 events:
+    - year: 2024
+      city: "Cape Town"
+    #   agenda: "Devconf 2023_Agenda CPT_Print Ready.pdf"
+      videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkqX0gV8-VyKtJ58wNSb76BL"
+      photos: "https://1drv.ms/f/s!AjU4J9ribN2Eo4ByuqabZVuLcrce6g?e=rMx7kM"
+    #   agenda_cover: "2023cptagenda.jpg"
+      video_cover: "capetown2024video.png"
+      photo_cover: "capetown2024photo.png"
+
+    - year: 2024
+      city: "Joburg"
+    #   agenda: "Devconf 2023_Agenda PTA_ndv2.pdf"
+      videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkqX0gV8-VyKtJ58wNSb76BL"
+      photos: "https://1drv.ms/f/s!AjU4J9ribN2EovkxP2Czf_sCTczlIw?e=vuHsBc"
+    #   agenda_cover: "2023ptaagenda.jpg"
+      video_cover: "joburg2024video.png"
+      photo_cover: "joburg2024photo.png"
+
     - year: 2023
       city: "Cape Town"
       agenda: "Devconf 2023_Agenda CPT_Print Ready.pdf"
@@ -84,7 +102,7 @@ events:
       photos: "https://1drv.ms/a/s!AjU4J9ribN2EouQYt7F7mFad2F33Gw?e=ljGXJu"
       agenda_cover: "devconf2017agenda.png"
       photo_cover: "2017photo.jpg"
-      
+
     - year: 2016
       city: "Joburg"
       agenda: "devconf2016.pdf"
