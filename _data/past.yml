@@ -1,19 +1,19 @@
 events:
     - year: 2024
       city: "Cape Town"
-    #   agenda: "Devconf 2023_Agenda CPT_Print Ready.pdf"
+      agenda: "Devconf 2024_CPT Agenda_ndv4.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkqX0gV8-VyKtJ58wNSb76BL"
       photos: "https://1drv.ms/f/s!AjU4J9ribN2Eo4ByuqabZVuLcrce6g?e=rMx7kM"
-    #   agenda_cover: "2023cptagenda.jpg"
+      agenda_cover: "capetown2024agenda.png"
       video_cover: "capetown2024video.png"
       photo_cover: "capetown2024photo.png"
 
     - year: 2024
       city: "Joburg"
-    #   agenda: "Devconf 2023_Agenda PTA_ndv2.pdf"
+      agenda: "Devconf 2024_JHB Agenda_ndv4.pdf"
       videos: "https://www.youtube.com/playlist?list=PLZgTMWtBnKkqX0gV8-VyKtJ58wNSb76BL"
       photos: "https://1drv.ms/f/s!AjU4J9ribN2EovkxP2Czf_sCTczlIw?e=vuHsBc"
-    #   agenda_cover: "2023ptaagenda.jpg"
+      agenda_cover: "joburg2024agenda.png"
       video_cover: "joburg2024video.png"
       photo_cover: "joburg2024photo.png"
 
