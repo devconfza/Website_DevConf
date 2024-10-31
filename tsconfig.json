@@ -3,18 +3,17 @@
         "_site"
     ],
     "compilerOptions": {
-        "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+        "esModuleInterop": true,
         "lib": [
             "dom",
-            "es2015",
-        ], /* Specify library files to be included in the compilation. */
-        "module": "es6", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+            "ESNext",
+        ],
+        "module": "ESNext",
         "moduleResolution": "node",
-        "noImplicitAny": false, /* Raise error on expressions and declarations with an implied 'any' type. */
-        "rootDir": "./src", /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+        "noImplicitAny": false,
+        "rootDir": "./src",
         "sourceMap": true,
-        
-        "strict": true, /* Enable all strict type-checking options. */
-        "target": "ES2021", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+        "strict": true,
+        "target": "ES2022"
     }
 }

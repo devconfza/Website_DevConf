@@ -1,9 +1,9 @@
 banner:
     show: false
-    content: "DevConf 2024 is entirely sold out! We can't wait to see you all soon!"
+    content: "DevConf 2025 is entirely sold out! We can't wait to see you all soon!"
 sponsors:
-    show: false
-    proposal: /public/docs/DevConf 2024 Sponsorship Proposal.pdf
+    show: true
+    proposal: /public/docs/DevConf 2025 Sponsorship Proposal.pdf
     banner: false
 callForSpeakers:
     show: true
@@ -37,12 +37,12 @@ general:
 events:
     - virtual: false
       show: true
-      showAgenda: true
+      showAgenda: false
       location: "Johannesburg"
       menuTitle: "Joburg"
       date: "27 May 2025"
       info: "/joburg"
-      infoOn: false
+      infoOn: true
       sessionizeId: "b0tah92u"
       logo: devconfjhb.png
       minattendees: 700
@@ -54,20 +54,20 @@ events:
       sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: true
-          onsale: false
+          totally_sold_out: false
+          onsale: true
           has_shuttle: false
           has_waiting_list: false
           waiting_list:
-          purchaseSite: "https://www.quicket.co.za/events/237752-devconf-2024-johannesburg"
+          purchaseSite: "https://www.quicket.co.za/events/286990-devconf-2025-johannesburg/#/"
           merch_link: ""
           fullprice:
-              price: 3623
-              bulkPrice: 3293.64
-              sold_out: true
+              price: 3985.29
+              bulkPrice: 3622.99
+              sold_out: false
           earlybird:
-              price: 3150.43
-              sold_out: true
+              price: 3465.47
+              sold_out: false
       rooms:
           room_1: "Centre Court"
           room_2: "NCC"
@@ -160,12 +160,12 @@ events:
 #               room: Julia
     - virtual: false
       show: true
-      showAgenda: true
+      showAgenda: false
       location: "Cape Town"
       menuTitle: "Cape Town"
       date: "29 May 2025"
       info: "/capetown"
-      infoOn: false
+      infoOn: true
       sessionizeId: "b0tah92u"
       logo: devconfcpt.png
       minattendees: 700
@@ -177,20 +177,20 @@ events:
       sponsorOpen: true
       colour: blue
       tickets:
-          onsale: false
+          onsale: true
           totally_sold_out: false
           has_shuttle: false
           has_waiting_list: false
           waiting_list: ""
-          purchaseSite: "https://www.quicket.co.za/events/239304-devconf-2024-cape-town"
+          purchaseSite: "https://www.quicket.co.za/events/285080-devconf-2025-cape-town/#/"
           merch_link:
           fullprice:
-              price: 3623
+              price: 3985.29
+              bulkPrice: 3622.99
               sold_out: false
-              bulkPrice: 3293.64
           earlybird:
-              price: 3150.43
-              sold_out: true
+              price: 3465.47
+              sold_out: false
       rooms:
           room_1: "Hall A"
           room_2: "Hall B"
