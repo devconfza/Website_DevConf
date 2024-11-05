@@ -617,7 +617,7 @@
                         class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
                         <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
                             <img class="sponsorLogo" alt="The logo for {{ sponsor.Name }}"
-                                src="/public/images/sponsorship/2024/{{sponsor.Logo }}" />
+                                src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
                         </a>
                     </div>
                     {% endfor %}

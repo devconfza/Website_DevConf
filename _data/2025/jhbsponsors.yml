@@ -58,10 +58,10 @@
 #   Url: https://www.offerzen.com/?utm_source=email&utm_medium=events&utm_campaign=za_supply_awareness_dev-conf_sponsored-event_email&utm_content=
 #   Logo: offerzenbronze.jpg
 
-# - Level: Bronze
-#   Name: Thinkst Canary
-#   Url: https://canary.tools
-#   Logo: thinkstbronze.jpg
+- Level: Silver
+  Name: Thinkst Canary
+  Url: https://canary.tools
+  Logo: thinkstsilver.jpg
 
 # - Level: Coffee
 #   Name: BBD
