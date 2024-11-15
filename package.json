@@ -29,19 +29,19 @@
   "devDependencies": {
     "@types/grecaptcha": "^3.0.9",
     "@types/node": "^22.9.0",
-    "@typescript-eslint/eslint-plugin": "^8.13.0",
-    "@typescript-eslint/parser": "^8.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
     "concurrently": "^9.1.0",
     "eslint": "^9.14.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
     "nodemon": "^3.1.7",
-    "sass": "^1.80.6",
+    "sass": "^1.81.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "uuid": "^11.0.2"
+    "uuid": "^11.0.3"
   },
   "scripts": {
     "watch-css": "yarn sass --update --no-source-map -w --style compressed -I scss scss/main.scss public/css/main.css",

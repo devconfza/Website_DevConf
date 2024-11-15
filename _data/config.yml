@@ -4,7 +4,7 @@ banner:
 sponsors:
     show: true
     proposal: /public/docs/DevConf 2025 Sponsorship Proposal.pdf
-    banner: false
+    banner: true
 callForSpeakers:
     show: true
     link: https://sessionize.com/devconf-2025
