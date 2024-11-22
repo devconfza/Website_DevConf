@@ -63,10 +63,10 @@
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
 
-# - Level: Coffee
-#   Name: BBD
-#   Url: https://bbdsoftware.com/
-#   Logo: bbdcoffee.jpg
+- Level: Coffee
+  Name: BBD
+  Url: https://bbdsoftware.com/
+  Logo: bbdcoffee.jpg
 
 # - Level: Master Class
 #   Name: Investec
