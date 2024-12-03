@@ -6,7 +6,7 @@ sponsors:
     proposal: /public/docs/DevConf 2025 Sponsorship Proposal.pdf
     banner: true
 callForSpeakers:
-    show: true
+    show: false
     link: https://sessionize.com/devconf-2025
 timing:
     reg-start: 07h30
