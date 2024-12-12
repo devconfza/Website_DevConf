@@ -67,7 +67,7 @@ events:
               sold_out: false
           earlybird:
               price: 3465.47
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Centre Court"
           room_2: "NCC"
