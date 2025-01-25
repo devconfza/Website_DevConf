@@ -10,26 +10,27 @@ callForSpeakers:
     link: https://sessionize.com/devconf-2025
 timing:
     reg-start: 07h30
-    reg-end: 09h00
+    reg-end: 08h45
     expo-start: 08h00
     expo-end: 19h00
-    welcome-start: 09h00
-    keynote-start: 09h15
-    refresh-1-start: 10h00
-    timeslot-1-start: 10h30
-    movement-1-start: 11h10
-    timeslot-2-start: 11h25
-    movement-2-start: 12h05
-    timeslot-3-start: 12h20
-    lunch-start: 13h00
-    timeslot-4-start: 13h50
-    movement-3-start: 14h30
-    timeslot-5-start: 14h45
-    refresh-2-start: 15h25
-    timeslot-6-start: 15h55
-    movement-4-start: 16h35
-    timeslot-7-start: 16h50
-    networking-start: 17h30
+    welcome-start: 08h45
+    keynote-start: 09h00
+    refresh-1-start: 9h45
+    timeslot-1-start: 10h15
+    movement-1-start: 10h55
+    timeslot-2-start: 11h05
+    movement-2-start: 11h45
+    timeslot-3-start: 11h55
+    lunch-start: 12h35
+    timeslot-4-start: 13h30
+    movement-3-start: 14h10
+    timeslot-5-start: 14h20
+    refresh-2-start: 15h00
+    timeslot-6-start: 15h15
+    movement-4-start: 15h55
+    timeslot-7-start: 16h05
+    thank-you-start: 16h45
+    networking-start: 17h00
     networking-end: 19h00
 
 general:
@@ -37,13 +38,13 @@ general:
 events:
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Johannesburg"
       menuTitle: "Joburg"
       date: "27 May 2025"
       info: "/joburg"
       infoOn: true
-      sessionizeId: "b0tah92u"
+      sessionizeId: "fs0wbo5v"
       logo: devconfjhb.png
       minattendees: 700
       venue: "Emperors Palace Conference Centre"
@@ -75,98 +76,43 @@ events:
           room_4: "Senate II"
           room_5: "Fabia"
       workshops:
-#           workshop1:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: iOCO
-#               sponsorLink: https://ioco.tech/
-#               title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
-#               content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
-# achieving greater scalability, flexibility, and faster innovation. While the benefits of
-# microservices are clear, they come with their own set of complexities. Successfully
-# implementing a microservices architecture extends beyond breaking down
-# applications; it demands a thorough understanding of deployment, management, and
-# observability. The prevalent adoption of the &quot;You Build It, You Run It&quot; philosophy
-# marks a significant shift towards developer accountability and empowerment. As a
-# modern developer understanding the platform your applications run on, is not just
-# beneficial, it&#39;s essential.<br/>
-# We invite you to a technical session tailored for forward-thinking developers ready to
-# tackle the challenges of deploying microservices using Kubernetes. This session is
-# focused on demystifying the deployment platforms that will house your applications,
-# emphasizing the early adoption of practices such as logging, tracing, monitoring to
-# name a few.<br/>
-# The session will cover:<ul>
-# <li>Preparing Your Development Environment</li>
-# <li>Crafting Docker Images</li>
-# <li>Application Deployment with Kubernetes</li>
-# <li>Monitoring and Troubleshooting Techniques within Kubernetes</li>
-# <li>Security Measures and Best Practices</li>
-# <li>Exploring Advanced Features of Kubernetes</li></ul>"
-#               content2:
-#               room: Julia
-#           workshop2:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: Investec
-#               sponsorLink: https://www.investec.com/en_za/banking/tech-professionals/programmable-banking.html
-#               title: Co-creating API Banking
-#               content1: "Discover how Investec&#39;s developer community is shaping the future of API banking
-# and Programmable Banking card accounts. Learn about the collaborative efforts that
-# are enabling developers to craft bespoke financial solutions, drive rapid innovation,
-# and seamlessly integrate banking services into diverse digital ecosystems. This
-# masterclass will showcase the synergy between technology and finance, highlighting
-# the collective intelligence of a thriving developer community.<br/><br/>
-# Wayne Summers (Head of Open APIs at Investec) - The Story of
-# Programmable Banking<br/><br/>
-# Wayne will share the journey of Investec&#39;s programmable banking, its vision,
-# and the impact it has on the financial industry.<br/><br/>
-# Devin Pearson (Investec Developer Community member) Hands-on with
-# the Investec API: Programmable Banking Card Accounts and Community
-# Projects<br/><br/>
-# Devin will provide a technical walkthrough of the Investec API, demonstrating
-# real-world applications and community-driven projects. Attendees are
-# encouraged to bring their laptops to follow along.<br/><br/>
-# Nick Benson (Developer Community Lead @ Investec) The Pulse of
-# Investec&#39;s Developer Community<br/><br/>
-# Nick will discuss the ethos of the Investec developer community, its role in
-# fostering innovation, and how new members can get involved."
-#               room: Julia
-#           workshop3:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: Veeam
-#               sponsorLink: https://www.veeam.com/
-#               title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
-#               content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
-# <li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
-# <li>Importance of protecting Kubernetes environments and the role of K10 in achieving this.</li>
-# </ul>
-# <strong>Deploy 1st Application to Kubernetes:</strong><ul>
-# <li>Walkthrough of deploying an application onto a Kubernetes cluster.</li>
-# <li>Explanation of key concepts such as pods, deployments, and services.</li>
-# </ul>
-# <strong>Create Initial K10 Policy to Protect App:</strong><ul>
-# <li>Demonstration of setting up K10 policies to protect the deployed application.</li>
-# <li>Explanation of backup strategies, retention policies, and disaster recovery configurations.</li>
-# </ul>
-# <strong>Kubernetes Perform Backup & DR:</strong><ul>
-# <li>Hands-on exercise on performing backups and disaster recovery operations using K10.</li>
-# <li>Practice restoring applications and data in case of failures.</li>
-# </ul>
-# <strong>Application & Code Mobility:</strong><ul>
-# <li>Discussion on strategies for application and code mobility within Kubernetes environments.</li>
-# <li>Exploration of tools and practices for seamless migration and scaling of applications.</li>
-# </ul>"
-#               room: Julia
+          workshop1:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:
+          workshop2:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:
+          workshop3:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:
+
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Cape Town"
       menuTitle: "Cape Town"
       date: "29 May 2025"
       info: "/capetown"
       infoOn: true
-      sessionizeId: "b0tah92u"
+      sessionizeId: "fs0wbo5v"
       logo: devconfcpt.png
       minattendees: 700
       venue: "Century City Conference Centre"
@@ -198,86 +144,30 @@ events:
           room_4: "The Verve"
           room_5: "Meeting Room 11"
       workshops:
-#           workshop1:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: iOCO
-#               sponsorLink: https://ioco.tech/
-#               title: "From Complexity to Clarity: Navigating Microservices with Kubernetes"
-#               content1: "In today&#39;s dynamic software development landscape, adopting microservices is key to
-# achieving greater scalability, flexibility, and faster innovation. While the benefits of
-# microservices are clear, they come with their own set of complexities. Successfully
-# implementing a microservices architecture extends beyond breaking down
-# applications; it demands a thorough understanding of deployment, management, and
-# observability. The prevalent adoption of the &quot;You Build It, You Run It&quot; philosophy
-# marks a significant shift towards developer accountability and empowerment. As a
-# modern developer understanding the platform your applications run on, is not just
-# beneficial, it&#39;s essential.<br/>
-# We invite you to a technical session tailored for forward-thinking developers ready to
-# tackle the challenges of deploying microservices using Kubernetes. This session is
-# focused on demystifying the deployment platforms that will house your applications,
-# emphasizing the early adoption of practices such as logging, tracing, monitoring to
-# name a few.<br/>
-# The session will cover:<ul>
-# <li>Preparing Your Development Environment</li>
-# <li>Crafting Docker Images</li>
-# <li>Application Deployment with Kubernetes</li>
-# <li>Monitoring and Troubleshooting Techniques within Kubernetes</li>
-# <li>Security Measures and Best Practices</li>
-# <li>Exploring Advanced Features of Kubernetes</li></ul>"
-#               content2:
-#               room: "Meeting Room 8 and 9"
-#           workshop2:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: Investec
-#               sponsorLink: https://www.investec.com/en_za/banking/tech-professionals/programmable-banking.html
-#               title: Co-creating API Banking
-#               content1: "Discover how Investec&#39;s developer community is shaping the future of API banking
-# and Programmable Banking card accounts. Learn about the collaborative efforts that
-# are enabling developers to craft bespoke financial solutions, drive rapid innovation,
-# and seamlessly integrate banking services into diverse digital ecosystems. This
-# masterclass will showcase the synergy between technology and finance, highlighting
-# the collective intelligence of a thriving developer community.<br/><br/>
-# Wayne Summers (Head of Open APIs at Investec) - The Story of
-# Programmable Banking<br/><br/>
-# Wayne will share the journey of Investec&#39;s programmable banking, its vision,
-# and the impact it has on the financial industry.<br/><br/>
-# Devin Pearson (Investec Developer Community member) Hands-on with
-# the Investec API: Programmable Banking Card Accounts and Community
-# Projects<br/><br/>
-# Devin will provide a technical walkthrough of the Investec API, demonstrating
-# real-world applications and community-driven projects. Attendees are
-# encouraged to bring their laptops to follow along.<br/><br/>
-# Nick Benson (Developer Community Lead @ Investec) The Pulse of
-# Investec&#39;s Developer Community<br/><br/>
-# Nick will discuss the ethos of the Investec developer community, its role in
-# fostering innovation, and how new members can get involved."
-#               room: "Meeting Room 8 and 9"
-#           workshop3:
-#               enabled: true
-#               announceSponsor: true
-#               sponsor: Veeam
-#               sponsorLink: https://www.veeam.com/
-#               title: "Protecting Kubernetes Workloads: A Developer's Guide with Veeam Kasten K10"
-#               content1: "<strong>Overview of Kubernetes and its significance as a platform for running code.</strong><ul>
-# <li>Introduction to K10 and its role in Kubernetes data management and protection.</li>
-# <li>Importance of protecting Kubernetes environments and the role of K10 in achieving this.</li>
-# </ul>
-# <strong>Deploy 1st Application to Kubernetes:</strong><ul>
-# <li>Walkthrough of deploying an application onto a Kubernetes cluster.</li>
-# <li>Explanation of key concepts such as pods, deployments, and services.</li>
-# </ul>
-# <strong>Create Initial K10 Policy to Protect App:</strong><ul>
-# <li>Demonstration of setting up K10 policies to protect the deployed application.</li>
-# <li>Explanation of backup strategies, retention policies, and disaster recovery configurations.</li>
-# </ul>
-# <strong>Kubernetes Perform Backup & DR:</strong><ul>
-# <li>Hands-on exercise on performing backups and disaster recovery operations using K10.</li>
-# <li>Practice restoring applications and data in case of failures.</li>
-# </ul>
-# <strong>Application & Code Mobility:</strong><ul>
-# <li>Discussion on strategies for application and code mobility within Kubernetes environments.</li>
-# <li>Exploration of tools and practices for seamless migration and scaling of applications.</li>
-# </ul>"
-#               room: "Meeting Room 8 and 9"
+          workshop1:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:
+          workshop2:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:
+          workshop3:
+              enabled: false
+              announceSponsor: false
+              sponsor:
+              sponsorLink:
+              title:
+              content1:
+              content2:
+              room:

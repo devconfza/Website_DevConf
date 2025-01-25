@@ -434,8 +434,9 @@
             <div class="agenda-row-style-break" style="grid-area: break2 / span 2">
                 <span class="time-from-time">{{ site.data.config.timing.refresh-2-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
-                <b class="time-title">Movement, Networking &amp; Refreshments<br/><br/>
-                <span class="keyboardUserGroup">Join the CTRL Freaks in the expo area to find out about amazing keyboards!</span></b>
+                <b class="time-title">Movement, Networking &amp; Refreshments
+                <!-- <span class="keyboardUserGroup">Join the CTRL Freaks in the expo area to find out about amazing keyboards!-->
+                </span></b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.timeslot-6-start }}</span>
             </div>
@@ -525,8 +526,10 @@
                 <span class="time-to-time">{{ site.data.config.timing.networking-end }}</span>
             </div>
 
+            {% if event.workshops.workshop1.enabled || event.workshops.workshop2.enabled || event.workshops.workshop3.enabled %}
             <div class="sponsor-content-detail-heading agenda-workshop-title" style="grid-area: workshoptitle;">
                 Master Classes</div>
+
 
             {% if event.workshops.workshop1.enabled %}
             <div class="agenda-row-style-key" style="grid-area: workshoptime1;">
@@ -592,6 +595,7 @@
 
                 <div class="agenda-workshop-content">{{ event.workshops.workshop3.content1 }}</div>
             </div>
+            {% endif %}
             {% endif %}
         </div>
         {% else %}

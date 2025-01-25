@@ -40,22 +40,22 @@ export default async () => {
         if (speakers.length === 1) {
             const speaker = speakers[0]
             let country = ''
-            if (speaker.categoryItems.indexOf(204593) >= 0) {
+            if (speaker.categoryItems.indexOf(301265) >= 0) {
                 country = 'South Africa'
             } else {
-                country = speaker.questionAnswers.find(i => i.questionId === 59078)?.answerValue
+                country = speaker.questionAnswers.find(i => i.questionId === 84729)?.answerValue
             }
 
             let pronoun = ''
-            if (speaker.categoryItems.indexOf(204689) >= 0) {
+            if (speaker.categoryItems.indexOf(301285) >= 0) {
                 pronoun = 'He/Him'
             }
 
-            if (speaker.categoryItems.indexOf(204687) >= 0) {
+            if (speaker.categoryItems.indexOf(301283) >= 0) {
                 pronoun = 'She/Her'
             }
 
-            if (speaker.categoryItems.indexOf(204688) >= 0) {
+            if (speaker.categoryItems.indexOf(301284) >= 0) {
                 pronoun = 'They/Them'
             }
 
