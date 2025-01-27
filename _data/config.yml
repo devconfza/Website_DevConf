@@ -29,8 +29,9 @@ timing:
     timeslot-6-start: 15h15
     movement-4-start: 15h55
     timeslot-7-start: 16h05
-    thank-you-start: 16h45
-    networking-start: 17h00
+    movement-5-start: 16h45
+    thank-you-start: 16h55
+    networking-start: 17h15
     networking-end: 19h00
 
 general:

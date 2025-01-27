@@ -136,28 +136,28 @@
         <div class="sponsor-content-detail-heading">Agenda</div>
         {% if event.showAgenda %}
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
-            <div class="agenda-row-style-key" style="grid-area: registration;">
+            <div class="agenda-row-style-key" style="grid-area: registration / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.reg-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Registration</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.reg-end }}</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: expo;">
+            <div class="agenda-row-style-key" style="grid-area: expo / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.expo-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Expo Opens</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.expo-end }}</span>
             </div>
-            <div class="agenda-row-style-highlight" style="grid-area: welcome;">
+            <div class="agenda-row-style-highlight" style="grid-area: welcome / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.welcome-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Welcome</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.keynote-start }}</span>
             </div>
-            <div class="agenda-row-style-keynote hidden-row" style="grid-area: keynote;">
+            <div class="agenda-row-style-keynote hidden-row" style="grid-area: keynote / span 2;">
                 <div class="agenda-session-header">
                     <span class="time-from-time">{{ site.data.config.timing.keynote-start }}</span>
                     <span class="time-from-arrow">&#10095;</span>
@@ -168,10 +168,10 @@
                 <div class="agenda-session agenda-keynote-session" data-slot-id="{{ include.sessions[0].id }}"
                     data-remote="{{ include.sessions[0].remote }}"></div>
             </div>
-            <div class="agenda-row-style-loading" style="grid-area: loading1;">
+            <div class="agenda-row-style-loading" style="grid-area: loading1 / span 2;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: break1;">
+            <div class="agenda-row-style-break" style="grid-area: break1 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.refresh-1-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement, Networking &amp; Refreshments</b>
@@ -224,7 +224,7 @@
                     <div class="agenda-session-time">{{ site.data.config.timing.timeslot-1-start }}</div>
                 </div>
             </div>
-            <div class="agenda-row-style-loading" style="grid-area: loading2;">
+            <div class="agenda-row-style-loading" style="grid-area: loading2 / span 2;">
                 Loading...
             </div>
             {% if event.workshops.workshop1.enabled %}
@@ -305,7 +305,7 @@
                 <span class="time-to-time">{{ site.data.config.timing.lunch-start }}</span>
             </div>
             {% if event.workshops.workshop1.enabled %}
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session3 / span 2;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session3;">
             {% else %}
             <div class="agenda-row-timeslot hidden-row" style="grid-area: session3 / span 2;">
             {% endif %}
@@ -341,21 +341,21 @@
             <div class="agenda-row-style-loading" style="grid-area: loading4;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: lunch;">
+            <div class="agenda-row-style-break" style="grid-area: lunch / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.lunch-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Lunch</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.timeslot-4-start }}</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: timeslot4;">
+            <div class="agenda-row-style-key" style="grid-area: timeslot4 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.timeslot-4-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 4</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.movement-3-start }}</span>
             </div>
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session4;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session4 / span 2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[16].id }}"
                     data-remote="{{ include.sessions[16].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -385,21 +385,21 @@
             <div class="agenda-row-style-loading" style="grid-area: loading5;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: movement3;">
+            <div class="agenda-row-style-break" style="grid-area: movement3 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.movement-3-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.timeslot-5-start }}</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: timeslot5;">
+            <div class="agenda-row-style-key" style="grid-area: timeslot5 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.timeslot-5-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 5</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.refresh-2-start }}</span>
             </div>
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session5;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session5 / span 2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[21].id }}"
                     data-remote="{{ include.sessions[21].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -440,14 +440,14 @@
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.timeslot-6-start }}</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: timeslot6;">
+            <div class="agenda-row-style-key" style="grid-area: timeslot6 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.timeslot-6-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 6</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.movement-4-start }}</span>
             </div>
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session6;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session6 / span 2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[26].id }}"
                     data-remote="{{ include.sessions[26].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -474,24 +474,24 @@
                     <div class="agenda-session-time">{{ site.data.config.timing.timeslot-6-start }}</div>
                 </div>
             </div>
-            <div class="agenda-row-style-loading" style="grid-area: loading7;">
+            <div class="agenda-row-style-loading" style="grid-area: loading7 / span 2;">
                 Loading...
             </div>
-            <div class="agenda-row-style-break" style="grid-area: movement4;">
+            <div class="agenda-row-style-break" style="grid-area: movement4 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.movement-4-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Movement</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.timeslot-7-start }}</span>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: timeslot7;">
+            <div class="agenda-row-style-key" style="grid-area: timeslot7 / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.timeslot-7-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Timeslot 7</b>
                 <span class="time-to-arrow">&#10094;</span>
-                <span class="time-to-time">{{ site.data.config.timing.networking-start }}</span>
+                <span class="time-to-time">{{ site.data.config.timing.movement-5-start }}</span>
             </div>
-            <div class="agenda-row-timeslot hidden-row" style="grid-area: session7;">
+            <div class="agenda-row-timeslot hidden-row" style="grid-area: session7 / span 2;">
                 <div class="agenda-session" data-slot-id="{{ include.sessions[31].id }}"
                     data-remote="{{ include.sessions[31].remote }}">
                     <div class="agenda-session-room">{{ event.rooms.room_1 }}</div>
@@ -518,13 +518,28 @@
                     <div class="agenda-session-time">{{ site.data.config.timing.timeslot-7-start }}</div>
                 </div>
             </div>
-            <div class="agenda-row-style-key" style="grid-area: cocktail;">
+            <div class="agenda-row-style-break" style="grid-area: movement5 / span 2;">
+                <span class="time-from-time">{{ site.data.config.timing.movement-5-start }}</span>
+                <span class="time-from-arrow">&#10095;</span>
+                <b class="time-title">Movement</b>
+                <span class="time-to-arrow">&#10094;</span>
+                <span class="time-to-time">{{ site.data.config.timing.timeslot-7-start }}</span>
+            </div>
+            <div class="agenda-row-style-key" style="grid-area: thankyou / span 2;">
+                <span class="time-from-time">{{ site.data.config.timing.thank-you-start }}</span>
+                <span class="time-from-arrow">&#10095;</span>
+                <b class="time-title">Thank you and prizes</b>
+                <span class="time-to-arrow">&#10094;</span>
+                <span class="time-to-time">{{ site.data.config.timing.networking-start }}</span>
+            </div>
+            <div class="agenda-row-style-key" style="grid-area: cocktail / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.networking-start }}</span>
                 <span class="time-from-arrow">&#10095;</span>
                 <b class="time-title">Drinks &amp; networking</b>
                 <span class="time-to-arrow">&#10094;</span>
                 <span class="time-to-time">{{ site.data.config.timing.networking-end }}</span>
             </div>
+
 
             {% if event.workshops.workshop1.enabled || event.workshops.workshop2.enabled || event.workshops.workshop3.enabled %}
             <div class="sponsor-content-detail-heading agenda-workshop-title" style="grid-area: workshoptitle;">
