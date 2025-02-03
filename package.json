@@ -27,25 +27,29 @@
     }
   ],
   "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.19.0",
     "@types/grecaptcha": "^3.0.9",
-    "@types/node": "^22.10.10",
-    "@typescript-eslint/eslint-plugin": "^8.21.0",
-    "@typescript-eslint/parser": "^8.21.0",
+    "@types/node": "^22.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
     "concurrently": "^9.1.2",
     "eslint": "^9.19.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
     "nodemon": "^3.1.9",
     "sass": "^1.83.4",
     "ts-loader": "^9.5.2",
     "typescript": "^5.7.3",
+    "uuid": "^11.0.5",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "uuid": "^11.0.5"
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
     "watch-css": "yarn sass --update --no-source-map -w --style compressed -I scss scss/main.scss public/css/main.css",
     "watch-code": "yarn run webpack --progress --color --watch",
-    "start": "concurrently -k --kill-others-on-fail \"jekyll s\" \"yarn run watch-css\" \"yarn run watch-code\""
+    "start": "concurrently -k --kill-others-on-fail \"jekyll s\" \"yarn run watch-css\" \"yarn run watch-code\"",
+    "prepare": "husky"
   }
 }
