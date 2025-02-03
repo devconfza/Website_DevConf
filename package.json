@@ -51,5 +51,9 @@
     "watch-code": "yarn run webpack --progress --color --watch",
     "start": "concurrently -k --kill-others-on-fail \"jekyll s\" \"yarn run watch-css\" \"yarn run watch-code\"",
     "prepare": "husky"
+  },
+  "resolutions": {
+    "cross-spawn": "^7.0.6",
+    "micromatch": "^4.0.8"
   }
 }
