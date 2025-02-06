@@ -1,4 +1,4 @@
-- Level: Platinum
+- Level: Diamond
   Name: TTD Consulting
   Url: https://ttdconsulting.net/
   Logo: tddplat.jpg
@@ -23,6 +23,11 @@
   Url: https://canary.tools
   Logo: thinkstsilver.jpg
 
+- Level: Silver
+  Name: VAT IT Group
+  Url: https://www.vatit.com
+  Logo: vatsilver.jpg
+
 - Level: Cocktail
   Name: Lula
   Url: https://lula.co.za/fast-flexible-funding/?utm_source=google_search&utm_medium=cpc&utm_term=lula_em&utm_campaign=gsn_branded&utm_content=funding&code=2hours&gad_source=1&gclid=Cj0KCQiA0--6BhCBARIsADYqyL8YR7kQJvdhvkuWkuC5i6Iqu-MRrDbi-FsJ7Q_GeiBX4upefQrzwG4aAtYJEALw_wcB
@@ -32,5 +37,11 @@
   Name: BBD
   Url: https://bbdsoftware.com/
   Logo: bbdcoffee.jpg
+
+- Level: Speakers Dinner
+  Name: DVT
+  Url: https://www.dvtsoftware.com/
+  Logo: dvtdinner.jpg
+
 
 
