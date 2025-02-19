@@ -14,6 +14,11 @@
   Logo: equalexpertsgold.jpg
 
 - Level: Gold
+  Name: Luno
+  Url: https://www.luno.com
+  Logo: lunogold.jpg
+
+- Level: Gold
   Name: Ninety One
   Url: https://www.ninetyone.com
   Logo: nintyonegold.jpg
@@ -52,6 +57,11 @@
   Name: BBD
   Url: https://bbdsoftware.com/
   Logo: bbdcoffee.jpg
+
+- Level: Coffee
+  Name: eBlocks
+  Url: https://www.eblocks.co.za/
+  Logo: eblockscoffee.jpg
 
 - Level: Speakers Dinner
   Name: Comotion
