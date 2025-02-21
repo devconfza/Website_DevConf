@@ -137,7 +137,7 @@ events:
               sold_out: false
           earlybird:
               price: 3465.47
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Hall A"
           room_2: "Hall B"
