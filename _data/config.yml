@@ -3,7 +3,7 @@ banner:
     content: "DevConf 2025 is entirely sold out! We can't wait to see you all soon!"
 sponsors:
     show: true
-    proposal: /public/docs/DevConf 2025 Sponsorship Proposal.pdf
+    proposal: /public/docs/DevConf 2025 Sponsorship Proposal - PHASE 2.pdf
     banner: true
 callForSpeakers:
     show: false
