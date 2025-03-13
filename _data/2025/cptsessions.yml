@@ -2,16 +2,16 @@
 - id: 777318
 
 # Slot one
-- id: 000000 # Sponsor 1
+- id: 884897 # Sponsor 1
 - id: 792627
 - id: 782361
-- id: 792186
+- id: 796002
 - id: 778454
 
 # Slot two
 - id: 780909
 - id: 792921
-- id: 796002
+- id: 792186
 - id: 000000 # Sponsor 2
 - id: 786091
 
@@ -38,7 +38,7 @@
 
 # Slot Six
 - id: 785368
-- id: 000000 # Sponsor 6
+- id: 884956 # Sponsor 6
 - id: 790727
 - id: 783577
 - id: 787372
