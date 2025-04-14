@@ -2,50 +2,50 @@
 - id: 777318
 
 # Slot one
-- id: 000000 # Sponsor 1
-- id: 780909
-- id: 782361
-- id: 796002
-- id: 778454
-
-# Slot two
-- id: 792627
 - id: 792921
-- id: 885884 # Sponsor 2
-- id: 795086
+- id: 782361
+- id: 000000 # Sponsor 1
+- id: 796002
 - id: 786091
 
-# Slot Three
-- id: 778869
+# Slot two
 - id: 795968
-- id: 792186
-- id: 885870 # Sponsor 3
+- id: 885884 # Sponsor 2
+- id: 780909
+- id: 795086
 - id: 787601
 
-# Slot Four
-- id: 795262
+# Slot Three
 - id: 795470
-- id: 907740 # Sponsor 4
+- id: 792186
+- id: 778869
+- id: 885870 # Sponsor 3
 - id: 794722
+
+# Slot Four
+- id: 785347
+- id: 907740
+- id: 795262
+- id: 898116 # Sponsor 5
 - id: 790159
 
 # Slot Five
-- id: 786005
-- id: 785347
+- id: 884956 # Sponsor 6
 - id: 795117
-- id: 898116 # Sponsor 5
+- id: 786005
+- id: 792627
 - id: 796035
 
 # Slot Six
-- id: 785368
-- id: 884956 # Sponsor 6
+- id: 778454
 - id: 790727
+- id: 785368
 - id: 783577
 - id: 787372
 
 # Slot Seven
-- id: 792150
 - id: 795392
 - id: 790459
+- id: 792150
 - id: 794798
 - id: 778169
