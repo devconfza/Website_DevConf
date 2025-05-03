@@ -39,7 +39,7 @@ export default () => {
         return `${avgValue.toFixed(2)} ${symbol}`
     }
 
-    const showData = (data: EventData[], averages) => {
+    const showData = (data: EventData[], averages: string | any[]) => {
         target.innerHTML = ''
         console.dir(data)
         if (data.length === 0) {

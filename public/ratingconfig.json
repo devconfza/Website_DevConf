@@ -425,6 +425,11 @@
             "title": "Demographics",
             "questions": [
                 {
+                    "id": "attended",
+                    "label": "Are you polite (for example saying please) when talking to an AI?",
+                    "type": "yesno"
+                },
+                {
                     "id": "jobTitle",
                     "label": "What is your job title?",
                     "type": "role"

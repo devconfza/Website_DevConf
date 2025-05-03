@@ -7,7 +7,7 @@ declare global {
     var currentSpeaker: ICurrentSpeaker | undefined;
 }
 
-export const feedbackServerUrl = 'https://ratings-2slkxdorza-nw.a.run.app'
+export const feedbackServerUrl = 'https://ratingsapi-849671999028.africa-south1.run.app'
 // export const feedbackServerUrl = 'http://localhost:8080'
 
 export const getTemplate = (templateId: string) => ((document.getElementById(templateId) as HTMLTemplateElement)
