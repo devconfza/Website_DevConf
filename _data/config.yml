@@ -56,7 +56,7 @@ events:
       sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: false
+          totally_sold_out: true
           onsale: true
           has_shuttle: false
           has_waiting_list: false
@@ -125,7 +125,7 @@ events:
       colour: blue
       tickets:
           onsale: true
-          totally_sold_out: false
+          totally_sold_out: true
           has_shuttle: false
           has_waiting_list: false
           waiting_list: ""
