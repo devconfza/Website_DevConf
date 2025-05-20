@@ -53,6 +53,11 @@
   Url: https://www.dvtsoftware.com/
   Logo: dvtdinner.jpg
 
+- Level: Special
+  Name: Microsoft
+  Url: https://build.microsoft.com
+  Logo: microsoftspecial.jpg
+
 - Level: Community
   Name: AWS Community South Africa
   Url: https://www.awscommunity.co.za
