@@ -1,5 +1,6 @@
-@import "variables.scss";
-@import "mixins.scss";
+@use "sass:color";
+@use "variables.scss";
+@use "mixins.scss";
 
 .sponsor {
     a {
@@ -15,7 +16,7 @@
     grid-template-rows: $titleHeight repeat(5, auto);
     margin-bottom: 40px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         margin-bottom: 30px;
     }
 
@@ -31,13 +32,13 @@
     }
 
     &-fake-button {
-        @include button($darkBrandBlue);
+        @include mixins.button(variables.$darkBrandBlue);
     }
 
     &-button {
         margin-top: 10px;
         margin-bottom: 10px;
-        @include button($darkBrandBlue);
+        @include mixins.button(variables.$darkBrandBlue);
         cursor: pointer;
     }
 
@@ -86,7 +87,7 @@
             padding-left: 10px;
             padding-right: 10px;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 font-size: 2.1rem;
                 margin-top: 0;
             }
@@ -112,7 +113,7 @@
                     z-index: 150;
                     margin-bottom: -40px;
 
-                    @media (max-width: $mobileWidth) {
+                    @media (max-width: variables.$mobileWidth) {
                         display: none;
                     }
 
@@ -147,17 +148,17 @@
     }
 
     &-title {
-        @include titleBlock($brandPink);
+        @include titleBlock(variables.$brandPink);
         color: white;
     }
 
     &-title-blue {
-        @include titleBlock($brandBlue);
+        @include titleBlock(variables.$brandBlue);
         color: white;
     }
 
     &-title-third {
-        @include titleBlock($brandThird);
+        @include titleBlock(variables.$brandThird);
         color: white;
     }
 
@@ -183,7 +184,7 @@
             & img {
                 border-style: solid;
                 border-width: 1px;
-                border-color: $darkBrandPink;
+                border-color: variables.$darkBrandPink;
                 padding: 5px;
                 background-color: white;
                 height: 100px;
@@ -202,7 +203,7 @@
             & img {
                 border-style: solid;
                 border-width: 1px;
-                border-color: $darkBrandPink;
+                border-color: variables.$darkBrandPink;
                 padding: 5px;
                 background-color: white;
                 height: 100px;
@@ -305,18 +306,18 @@
                     grid-template-rows: 1fr 1fr;
                 }
 
-                @media (max-width: $mobileWidth) {
+                @media (max-width: variables.$mobileWidth) {
                     grid-template-columns: 1fr;
                     grid-template-rows: min-content min-content min-content min-content;
                 }
 
                 &-price {
-                    color: $brandPink;
+                    color: variables.$brandPink;
                     font-size: 1rem !important;
                     font-weight: 800 !important;
                 }
 
-                @media (max-width: $mobileWidth) {
+                @media (max-width: variables.$mobileWidth) {
                     grid-template-columns: auto;
                 }
 
@@ -332,7 +333,7 @@
 
                     > div {
                         &:nth-child(1) {
-                            color: $brandPink;
+                            color: variables.$brandPink;
                             font-weight: 800;
                         }
 
@@ -374,7 +375,7 @@
                 padding-right: 0;
             }
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: auto;
                 grid-template-rows: auto auto;
             }
@@ -409,7 +410,7 @@
             > img {
                 width: 150px;
 
-                @media (max-width: $mobileWidth) {
+                @media (max-width: variables.$mobileWidth) {
                     display: none;
                 }
             }
@@ -417,7 +418,7 @@
             > div {
                 > div.sponsor-content-detail-package-card-remaining {
                     font-weight: 800;
-                    color: darken($colour, 20%);
+                    color: color.adjust($colour, $lightness: -20%);
                 }
 
                 &:nth-child(1),
@@ -429,18 +430,18 @@
         }
 
         &-package-card {
-            @include themableCard($brandPink);
+            @include themableCard(variables.$brandPink);
         }
 
         &-package-card-blue {
-            @include themableCard($brandBlue);
+            @include themableCard(variables.$brandBlue);
         }
 
         &-sponsors {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, max-content));
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: auto;
             }
 
@@ -454,7 +455,7 @@
         }
 
         &-sponsor {
-            border-color: $brandPink;
+            border-color: variables.$brandPink;
             border-width: 1px;
             border-style: solid;
 
@@ -485,7 +486,7 @@
         }
 
         &-heading {
-            color: $brandBlue;
+            color: variables.$brandBlue;
             text-transform: uppercase;
             padding-top: 10px;
             font-weight: 800;
@@ -499,16 +500,16 @@
 
             &-third {
                 @extend .sponsor-content-detail-heading;
-                color: $brandThird;
+                color: variables.$brandThird;
             }
 
             &-pink {
                 @extend .sponsor-content-detail-heading;
-                color: $brandPink;
+                color: variables.$brandPink;
             }
 
             &-attendees {
-                @media (min-width: $mobileWidth) {
+                @media (min-width: variables.$mobileWidth) {
                     text-align: left;
                 }
             }
@@ -534,14 +535,14 @@
                 grid-template-columns: auto;
 
                 & > img {
-                    @media (max-width: $mobileWidth) {
+                    @media (max-width: variables.$mobileWidth) {
                         display: none;
                         grid-template-rows: 0 auto;
                     }
                 }
             }
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-rows: repeat(4, 1fr);
                 grid-template-columns: 1fr;
                 grid-row-gap: 5px;
@@ -555,7 +556,7 @@
             justify-items: center;
             line-height: 1.5rem;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: auto;
 
                 > img {
@@ -575,7 +576,7 @@
             line-height: 1.5rem;
             margin-bottom: 20px;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-auto-flow: row;
                 grid-template-rows: repeat(6, auto);
                 grid-template-columns: 350px;
@@ -584,17 +585,17 @@
             > div:nth-child(1),
             > div:nth-child(3),
             > div:nth-child(5) {
-                color: $brandBlue;
+                color: variables.$brandBlue;
                 font-weight: 800;
                 margin-bottom: 20px;
             }
 
             > div:nth-child(5) {
-                color: $brandThird;
+                color: variables.$brandThird;
             }
 
             > div:nth-child(3) {
-                color: $brandPink;
+                color: variables.$brandPink;
             }
 
             > div:nth-child(2),
@@ -623,16 +624,16 @@
             }
 
             > div:nth-child(2) {
-                background-color: $brandBlue;
+                background-color: variables.$brandBlue;
                 // color: $darkBrandBlue;
             }
 
             > div:nth-child(6) {
-                background-color: $brandThird;
+                background-color: variables.$brandThird;
             }
 
             > div:nth-child(4) {
-                background-color: $brandPink;
+                background-color: variables.$brandPink;
             }
         }
 
@@ -647,7 +648,7 @@
             line-height: 1.5rem;
             padding-bottom: 20px;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: auto;
                 grid-template-rows: repeat(6, auto);
             }
@@ -678,7 +679,7 @@
             grid-column-gap: 20px;
             line-height: 1.5rem;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-rows: repeat(3, 1fr);
                 grid-template-columns: auto;
                 grid-row-gap: 10px;
@@ -711,7 +712,7 @@
                 content: $bullet;
             }
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: 1fr;
             }
         }
@@ -750,7 +751,7 @@
         }
 
         &:nth-child(odd) {
-            background-color: $darkBrandBlue;
+            background-color: variables.$darkBrandBlue;
             color: white;
         }
 
@@ -768,7 +769,7 @@
 .sponsor-banana {
     height: 100px;
     font-size: 24px !important;
-    background-image: (linear-gradient(to left, $darkBrandPink, $brandBlue));
+    background-image: (linear-gradient(to left, variables.$darkBrandPink, variables.$brandBlue));
     display: grid;
 
     > div {
@@ -779,7 +780,7 @@
 .sponsor-small-banana {
     height: 50px;
     font-size: 24px !important;
-    background-image: (linear-gradient(to left, $darkBrandBlue, $brandBlue));
+    background-image: (linear-gradient(to left, variables.$darkBrandBlue, variables.$brandBlue));
     display: grid;
 
     > div {
@@ -790,7 +791,7 @@
 img.sponsorLogo {
     max-width: unset;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         max-width: 80vw;
     }
 }

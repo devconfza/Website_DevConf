@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .feedbackBase {
     margin: 20px;
     display: grid;
@@ -27,8 +30,8 @@
     border-width: 2px;
     border-radius: 10px;
     border-style: solid;
-    border-color: $darkBrandBlue;
-    color: $darkBrandBlue;
+    border-color: variables.$darkBrandBlue;
+    color: variables.$darkBrandBlue;
     border-width: 4px;
     text-align: center;
     cursor: pointer;
@@ -37,14 +40,14 @@
     row-gap: 10px;
 
     &:hover {
-        background: darken(white, 10);
+        background: color.adjust(white, $lightness: -10);
     }
 }
 
 .feedbackButtonTitle {
     font-size: larger;
     font-weight: bold;
-    color: $darkBrandPink;
+    color: variables.$darkBrandPink;
 }
 
 .feedbackButtonWorkshop {
@@ -54,7 +57,7 @@
 }
 
 .popupRatingClose {
-    color: $darkBrandPink;
+    color: variables.$darkBrandPink;
     background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -78,12 +81,12 @@
     border-bottom-left-radius: 10px;
     overflow-x: hidden;
     grid-area: content;
-    @include scrollbar();
+    @include variables.scrollbar();
 }
 
 .feedbackTitle {
     font-size: x-large;
-    color: $darkBrandPink;
+    color: variables.$darkBrandPink;
 }
 
 .rating {
@@ -124,7 +127,7 @@ input[type="radio"] {
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    accent-color: $darkBrandPink;
+    accent-color: variables.$darkBrandPink;
 }
 
 .radioSet {
@@ -139,22 +142,22 @@ input[type="radio"] {
     justify-self: center;
     font-size: large;
     border-radius: 10px;
-    border-color: $brandPink;
-    background: $darkBrandPink;
+    border-color: variables.$brandPink;
+    background: variables.$darkBrandPink;
     color: white;
     padding: 10px;
     cursor: pointer;
 
     &:hover {
-        background: lighten($darkBrandPink, 10%);
+        background: color.adjust(variables.$darkBrandPink, $lightness: 10%);
     }
 
     &:active {
-        background: darken($darkBrandPink, 10%);
+        background: color.adjust(variables.$darkBrandPink, $lightness: -10%);
     }
 
     &:disabled {
-        background-color: $darkBrandBlue;
+        background-color: variables.$darkBrandBlue;
     }
 }
 
@@ -164,29 +167,29 @@ input[type="radio"] {
     justify-self: center;
     font-size: x-large;
     border-radius: 10px;
-    border-color: $brandPink;
-    background: $darkBrandPink;
+    border-color: variables.$brandPink;
+    background: variables.$darkBrandPink;
     color: white;
     padding: 10px;
     cursor: pointer;
 
     &:hover {
-        background: lighten($darkBrandPink, 10%);
+        background: color.adjust(variables.$darkBrandPink, $lightness: 10%);
     }
 
     &:active {
-        background: darken($darkBrandPink, 10%);
+        background: color.adjust(variables.$darkBrandPink, $lightness: -10%);
     }
 
     &:disabled {
-        background-color: $darkBrandBlue;
+        background-color: variables.$darkBrandBlue;
     }
 }
 
 select {
     font-size: larger;
     width: 90%;
-    border-color: $darkBrandPink;
+    border-color: variables.$darkBrandPink;
     padding: 10px;
     background-color: white;
     border-width: 1px;
@@ -195,21 +198,21 @@ select {
 input[type="text"] {
     font-size: larger;
     width: 90%;
-    border-color: $darkBrandPink;
+    border-color: variables.$darkBrandPink;
     padding: 10px;
 }
 
 input[type="email"] {
     font-size: larger;
     width: 90%;
-    border-color: $darkBrandPink;
+    border-color: variables.$darkBrandPink;
     padding: 10px;
 }
 
 input[type="number"] {
     font-size: larger;
     width: 90%;
-    border-color: $darkBrandPink;
+    border-color: variables.$darkBrandPink;
     padding: 10px;
 }
 
@@ -239,16 +242,16 @@ input[type="number"] {
 
 .feedbackTable tr:nth-child(even) {
     background: #d0e4f5;
-    color: $darkBrandBlue;
+    color: variables.$darkBrandBlue;
 }
 
 .feedbackTable thead {
-    background: $darkBrandPink;
+    background: variables.$darkBrandPink;
     border-bottom: 5px solid #ffffff;
 }
 
 .feedbackTable tfoot {
     color: #ffffff;
-    background: $darkBrandBlue;
-    border-top: 3px solid $brandBlue;
+    background: variables.$darkBrandBlue;
+    border-top: 3px solid variables.$brandBlue;
 }

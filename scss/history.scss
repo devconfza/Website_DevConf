@@ -1,10 +1,12 @@
+@use "variables";
+
 .history {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-auto-flow: row;
     }
 

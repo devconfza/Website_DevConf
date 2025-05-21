@@ -1,4 +1,5 @@
-@import "variables.scss";
+@use "sass:color";
+@use "variables.scss";
 
 #agenda {
     line-height: 1.3em;
@@ -85,7 +86,7 @@
         // "thankyou thankyou"
         // "cocktail cocktail";
 
-    @media (max-width: $workshopMoveBelowWidth) {
+    @media (max-width: variables.$workshopMoveBelowWidth) {
         grid-template-rows: unset;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -139,17 +140,17 @@
 }
 
 .agenda-workshop-sponsor a {
-    color: $darkBrandBlue;
+    color: variables.$darkBrandBlue;
 
     &:hover {
-        color: lighten($darkBrandBlue, 10%);
+        color: color.adjust(variables.$darkBrandBlue, $lightness: 10%);
     }
 }
 
 .agenda-workshop-title {
     display: none;
 
-    @media (max-width: $workshopMoveBelowWidth) {
+    @media (max-width: variables.$workshopMoveBelowWidth) {
         display: grid;
     }
 }
@@ -201,14 +202,14 @@
 }
 
 .agenda-row-style-highlight {
-    @include full-agenda-row($brandPink);
+    @include full-agenda-row(variables.$brandPink);
     font-size: 1rem;
     padding: 10px;
     grid-template-columns: max-content max-content 1fr max-content max-content;
 }
 
 .agenda-row-style-keynote {
-    @include full-agenda-row($brandBlue);
+    @include full-agenda-row(variables.$brandBlue);
     justify-content: unset;
     grid-auto-flow: row;
 }
@@ -221,7 +222,7 @@
     row-gap: 3px;
     column-gap: 5px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-auto-flow: row;
         grid-template-columns: auto;
     }
@@ -236,7 +237,7 @@
     row-gap: 3px;
     column-gap: 5px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-auto-flow: row;
         grid-template-columns: auto;
     }
@@ -256,7 +257,7 @@
     padding-bottom: 10px;
     grid-template-rows: 55px 20px 170px 50px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-template-rows: repeat(3, auto);
         padding-bottom: 0px;
     }
@@ -279,7 +280,7 @@
 }
 
 .agenda-session-time {
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         display: none;
     }
 }
@@ -296,7 +297,7 @@
 }
 
 .agenda-session-image {
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         display: none;
     }
 
@@ -306,19 +307,19 @@
 
 .agenda-session-remote {
     font-size: 0.7rem;
-    color: $brandBlue;
+    color: variables.$brandBlue;
     display: none;
 }
 
 .agenda-keynote-session > .agenda-session-remote {
-    color: $darkBrandBlue;
+    color: variables.$darkBrandBlue;
 }
 
 .speaker-image {
     width: 100%;
     border-radius: 50%;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         display: none;
     }
 }
@@ -339,7 +340,7 @@
 .clickable-session {
     cursor: pointer;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-template-rows: repeat(3, min-content);
     }
 }
@@ -385,9 +386,9 @@
     height: 500px;
     padding: 30px;
     grid-area: content;
-    @include scrollbar();
+    @include variables.scrollbar();
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-template-columns: auto;
         padding: 10px;
         grid-template-rows: repeat(2, auto);
@@ -450,7 +451,7 @@
 .bio-title,
 .bio-speaker-bio-title,
 .bio-speaker {
-    color: $brandPink;
+    color: variables.$brandPink;
     font-weight: 800;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -477,7 +478,7 @@
 .bio-speaker {
     justify-self: center;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
@@ -493,7 +494,7 @@
         height: 35px;
     }
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
@@ -502,14 +503,14 @@
 .bio-tagline {
     justify-self: center;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
 }
 
 .bio-speaker-bio-title {
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
@@ -519,7 +520,7 @@
     margin-top: 5px;
     margin-bottom: 20px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
@@ -528,7 +529,7 @@
 .bio-title {
     justify-self: center;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         margin-top: 5px;
         grid-column: unset;
         grid-row: unset;
@@ -536,7 +537,7 @@
 }
 
 .bio-talk-description {
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
         margin-top: 10px;
@@ -548,7 +549,7 @@
     align-self: center;
     justify-self: end;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
         margin-top: 5px;
@@ -566,7 +567,7 @@
     height: 200px;
     justify-self: center;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
     }
@@ -628,11 +629,11 @@
 
 .agenda-session-underline {
     height: 1px;
-    background-color: $darkBrandPink;
+    background-color: variables.$darkBrandPink;
     width: 80%;
     margin-top: 10px;
 
-    @media (min-width: $mobileWidth) {
+    @media (min-width: variables.$mobileWidth) {
         display: none;
     }
 }

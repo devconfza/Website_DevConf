@@ -1,12 +1,13 @@
-@import "variables.scss";
-@import "choose-contrast-color.scss";
-@import "sponsors.scss";
-@import "agenda.scss";
-@import "feedback.scss";
-@import "range.scss";
-@import "shimmer.scss";
-@import "mixins.scss";
-@import "history.scss";
+@use "sass:color";
+@use "variables.scss";
+@use "choose-contrast-color.scss";
+@use "sponsors.scss";
+@use "agenda.scss";
+@use "feedback.scss";
+@use "range.scss";
+@use "shimmer.scss";
+@use "mixins.scss";
+@use "history.scss";
 
 @font-face {
     font-family: "Armata";
@@ -14,15 +15,15 @@
 }
 
 span.third {
-    color: $brandThird;
+    color: variables.$brandThird;
 }
 
 span.pink {
-    color: $brandPink;
+    color: variables.$brandPink;
 }
 
 span.blue {
-    color: $brandBlue;
+    color: variables.$brandBlue;
 }
 
 span.dark {
@@ -30,17 +31,17 @@ span.dark {
 }
 
 a {
-    color: $brandPink;
+    color: variables.$brandPink;
 
     &:hover {
-        color: lighten($brandPink, 10);
+        color: color.adjust(variables.$brandPink, $lightness: 10);
     }
 }
 
 html {
     position: relative;
     min-height: 100%;
-    scrollbar-color: $darkBrandPink $darkBrandBlue;
+    scrollbar-color: variables.$darkBrandPink variables.$darkBrandBlue;
 }
 
 body {
@@ -55,14 +56,14 @@ body {
     -moz-font-smoothing: antialiased !important;
     text-rendering: optimizelegibility !important;
     letter-spacing: 0.03rem;
-    @include scrollbar();
+    @include variables.scrollbar();
 }
 
 @mixin iframe() {
     width: 560px;
     height: 315px;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         max-width: 80vw;
         height: 168.75px;
     }
@@ -77,7 +78,7 @@ body {
 }
 
 .menu {
-    background-color: $darkBrandBlue;
+    background-color: variables.$darkBrandBlue;
     color: white;
     height: 40px;
     padding: 10px;
@@ -94,7 +95,7 @@ body {
         text-decoration: none;
 
         &:hover {
-            color: $brandPink;
+            color: variables.$brandPink;
         }
     }
 
@@ -109,7 +110,7 @@ body {
         &-mobile-icon {
             display: none;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 display: grid;
                 justify-content: end;
                 cursor: pointer;
@@ -128,7 +129,7 @@ body {
             text-align: center;
             align-items: center;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 display: none;
                 position: relative;
                 z-index: 10001;
@@ -136,9 +137,9 @@ body {
                 &-open {
                     display: grid;
                     grid-auto-flow: row;
-                    background: $darkBrandBlue;
+                    background: variables.$darkBrandBlue;
                     padding: 20px;
-                    border-color: darken($brandPink, 25%);
+                    border-color: color.adjust(variables.$brandPink, $lightness: -25%);
                     border-width: 1px;
                     border-style: solid;
                     margin-top: 5px;
@@ -170,7 +171,7 @@ body {
 
 .hero {
     background-image: url("/public/images/Background_Web.jpg");
-    background-color: $darkBrandBlue;
+    background-color: variables.$darkBrandBlue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +214,7 @@ body {
     padding-left: 20%;
     padding-right: 20%;
 
-    @media (max-width: $mobileWidth) {
+    @media (max-width: variables.$mobileWidth) {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -221,11 +222,11 @@ body {
 
 .highlight {
     font-weight: bold;
-    color: $darkBrandPink;
+    color: variables.$darkBrandPink;
 }
 
 .sponsor-content-detail-content-sponsor-card:not(:last-child) {
-    @media (min-width: $mobileWidth) {
+    @media (min-width: variables.$mobileWidth) {
         margin-right: 10px;
     }
 }
@@ -237,7 +238,7 @@ body {
         justify-items: center;
         grid-row-gap: 50px;
 
-        @media (max-width: $mobileWidth) {
+        @media (max-width: variables.$mobileWidth) {
             grid-template-columns: auto;
         }
 
@@ -248,14 +249,14 @@ body {
             justify-items: center;
 
             &:not(:last-child) {
-                @media (min-width: $mobileWidth) {
+                @media (min-width: variables.$mobileWidth) {
                     margin-right: 50px;
                 }
             }
 
             .location {
                 &-pink {
-                    color: $brandPink;
+                    color: variables.$brandPink;
                     text-transform: uppercase;
                     padding-top: 10px;
                     font-weight: 800;
@@ -264,7 +265,7 @@ body {
                 }
 
                 &-blue {
-                    color: $brandBlue;
+                    color: variables.$brandBlue;
                     text-transform: uppercase;
                     padding-top: 10px;
                     font-weight: 800;
@@ -273,7 +274,7 @@ body {
                 }
 
                 &-third {
-                    color: $brandThird;
+                    color: variables.$brandThird;
                     text-transform: uppercase;
                     padding-top: 10px;
                     font-weight: 800;
@@ -283,7 +284,7 @@ body {
             }
 
             a {
-                background-color: $darkBrandBlue;
+                background-color: variables.$darkBrandBlue;
                 font-size: 0.8rem;
             }
         }
@@ -326,7 +327,7 @@ body {
             grid-template-columns: auto auto;
             margin-top: 30px;
 
-            @media (max-width: $mobileWidth) {
+            @media (max-width: variables.$mobileWidth) {
                 grid-template-columns: auto;
                 grid-template-rows: repeat(2, auto);
             }
@@ -335,7 +336,7 @@ body {
                 height: 250px;
                 padding-bottom: 20px;
 
-                @media (max-width: $mobileWidth) {
+                @media (max-width: variables.$mobileWidth) {
                     height: 200px;
                 }
             }
@@ -353,7 +354,7 @@ body {
             }
         }
 
-        @media (max-width: $mobileWidth) {
+        @media (max-width: variables.$mobileWidth) {
             grid-auto-flow: row;
             grid-template-rows: auto auto auto;
             grid-template-columns: auto auto;
@@ -387,7 +388,7 @@ body {
             font-family: "Armata", Helvetica, "Segoe UI", Verdana, sans-serif;
 
             &::placeholder {
-                color: $brandBlue;
+                color: variables.$brandBlue;
             }
         }
 
@@ -400,10 +401,10 @@ body {
         }
 
         a {
-            color: $brandBlue;
+            color: variables.$brandBlue;
 
             &:hover {
-                color: darken($brandBlue, 10%);
+                color: color.adjust(variables.$brandBlue, $lightness: -10%);
             }
         }
 
@@ -424,7 +425,7 @@ body {
     height: 100px;
     font-size: 24px !important;
     line-height: 3rem !important;
-    background-image: (linear-gradient(to left, $darkBrandPink, $brandBlue));
+    background-image: (linear-gradient(to left, variables.$darkBrandPink, variables.$brandBlue));
 }
 
 .devugblurb {
@@ -434,7 +435,7 @@ body {
 }
 
 @mixin card($dimension) {
-    border: 1px solid lighten($darkBrandBlue, 50);
+    border: 1px solid color.adjust(variables.$darkBrandBlue, $lightness: 50);
     border-radius: 5px;
     height: $dimension;
     width: $dimension;
@@ -443,7 +444,7 @@ body {
     font-weight: bold;
     display: grid;
     align-items: end;
-    background-color: $darkBrandBlue;
+    background-color: variables.$darkBrandBlue;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -475,17 +476,17 @@ body {
         grid-template-columns: repeat(auto-fill, 200px);
 
         a {
-            color: $darkBrandBlue;
+            color: variables.$darkBrandBlue;
 
             &:hover {
-                color: lighten($darkBrandBlue, 10);
+                color: color.adjust(variables.$darkBrandBlue, $lightness: 10);
             }
         }
     }
 }
 
 .footer {
-    background-color: $darkBrandBlue;
+    background-color: variables.$darkBrandBlue;
     color: white;
     width: 100%;
     position: absolute;
@@ -528,24 +529,24 @@ body {
 }
 
 input[type="submit"].button {
-    @include button($brandBlue);
+    @include mixins.button(variables.$brandBlue);
 }
 
 a.button-blue {
-    @include button($brandBlue);
+    @include mixins.button(variables.$brandBlue);
 }
 
 a.button {
-    @include button($darkBrandPink);
+    @include mixins.button(variables.$darkBrandPink);
 }
 
 div.button {
-    @include button($darkBrandBlue);
+    @include mixins.button(variables.$darkBrandBlue);
 }
 
 a.smalllink {
     font-size: 0.7rem;
-    color: $darkBrandBlue;
+    color: variables.$darkBrandBlue;
     text-decoration: underline;
 }
 
@@ -573,5 +574,5 @@ a.smalllink {
 }
 
 .keyboardUserGroup {
-    color: $darkBrandBlue;
+    color: variables.$darkBrandBlue;
 }

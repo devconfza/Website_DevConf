@@ -1,7 +1,8 @@
+@use "sass:color";
 @mixin button($colour) {
     font-family: "Armata", Helvetica, "Segoe UI", Verdana, sans-serif;
     // background-color: $colour;
-    background-image: linear-gradient(to right, lighten($colour, 10%), $colour);
+    background-image: linear-gradient(to right, color.adjust($colour, $lightness: 10%), $colour);
     text-decoration: none;
     min-width: 200px;
     display: grid;
@@ -20,6 +21,6 @@
     cursor: pointer;
 
     &:hover {
-        background-image: linear-gradient(to left, lighten($colour, 10%), $colour) !important;
+        background-image: linear-gradient(to left, color.adjust($colour, $lightness: 10%), $colour) !important;
     }
 }
