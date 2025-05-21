@@ -34,7 +34,7 @@ a {
     color: variables.$brandPink;
 
     &:hover {
-        color: color.adjust(variables.$brandPink, $lightness: 10);
+        color: color.adjust(variables.$brandPink, $lightness: 10%);
     }
 }
 
@@ -435,7 +435,7 @@ body {
 }
 
 @mixin card($dimension) {
-    border: 1px solid color.adjust(variables.$darkBrandBlue, $lightness: 50);
+    border: 1px solid color.adjust(variables.$darkBrandBlue, $lightness: 50%);
     border-radius: 5px;
     height: $dimension;
     width: $dimension;
@@ -479,7 +479,7 @@ body {
             color: variables.$darkBrandBlue;
 
             &:hover {
-                color: color.adjust(variables.$darkBrandBlue, $lightness: 10);
+                color: color.adjust(variables.$darkBrandBlue, $lightness: 10%);
             }
         }
     }

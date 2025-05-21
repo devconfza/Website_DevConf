@@ -301,8 +301,10 @@
         display: none;
     }
 
-    padding: 10px;
-    max-width: 150px;
+    & {
+        padding: 10px;
+        max-width: 150px;
+    }
 }
 
 .agenda-session-remote {
@@ -340,8 +342,10 @@
 .clickable-session {
     cursor: pointer;
 
-    @media (max-width: variables.$mobileWidth) {
-        grid-template-rows: repeat(3, min-content);
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            grid-template-rows: repeat(3, min-content);
+        }
     }
 }
 
@@ -478,9 +482,11 @@
 .bio-speaker {
     justify-self: center;
 
-    @media (max-width: variables.$mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            grid-column: unset;
+            grid-row: unset;
+        }
     }
 }
 
@@ -494,9 +500,11 @@
         height: 35px;
     }
 
-    @media (max-width: variables.$mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            grid-column: unset;
+            grid-row: unset;
+        }
     }
 }
 
@@ -529,10 +537,12 @@
 .bio-title {
     justify-self: center;
 
-    @media (max-width: variables.$mobileWidth) {
-        margin-top: 5px;
-        grid-column: unset;
-        grid-row: unset;
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            margin-top: 5px;
+            grid-column: unset;
+            grid-row: unset;
+        }
     }
 }
 
@@ -567,9 +577,11 @@
     height: 200px;
     justify-self: center;
 
-    @media (max-width: variables.$mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            grid-column: unset;
+            grid-row: unset;
+        }
     }
 }
 

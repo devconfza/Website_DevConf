@@ -55,111 +55,119 @@
         $circleDimensions: $titleHeight * 2;
         $circlePadding: $circleDimensions * 0.1;
 
-        &-ellipse {
-            width: 100vw;
-            height: 100vw;
-            border-radius: 50%;
-            background-color: #000;
-            opacity: 0.08;
-            margin-top: 20px;
-            grid-row: 1 / 1;
-            grid-column: 1 / 1;
-            z-index: 10;
-        }
-
-        &-button {
-            margin-top: 30px;
-        }
-
-        &-content {
-            grid-row: 1 / 1;
-            grid-column: 1 / 1;
-            z-index: 100;
-            justify-self: center;
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 40px;
-            justify-items: center;
-            display: grid;
-            grid-template-rows: repeat(4, minmax(0, min-content));
-            grid-row-gap: 10px;
-            text-transform: uppercase;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            @media (max-width: variables.$mobileWidth) {
-                font-size: 2.1rem;
-                margin-top: 0;
+        & {
+            &-ellipse {
+                width: 100vw;
+                height: 100vw;
+                border-radius: 50%;
+                background-color: #000;
+                opacity: 0.08;
+                margin-top: 20px;
+                grid-row: 1 / 1;
+                grid-column: 1 / 1;
+                z-index: 10;
             }
 
-            &-sponsor {
-                display: grid;
+            &-button {
+                margin-top: 30px;
+            }
+
+            &-content {
+                grid-row: 1 / 1;
+                grid-column: 1 / 1;
+                z-index: 100;
+                justify-self: center;
+                font-size: 3rem;
+                text-align: center;
+                margin-top: 40px;
                 justify-items: center;
-            }
+                display: grid;
+                grid-template-rows: repeat(4, minmax(0, min-content));
+                grid-row-gap: 10px;
+                text-transform: uppercase;
+                padding-left: 10px;
+                padding-right: 10px;
 
-            &-packages-intro {
-                font-size: 1rem;
-                width: 350px;
-            }
+                @media (max-width: variables.$mobileWidth) {
+                    font-size: 2.1rem;
+                    margin-top: 0;
+                }
 
-            &-package {
-                margin-top: 0;
-
-                &-image {
+                &-sponsor {
                     display: grid;
                     justify-items: center;
-                    align-items: start;
-                    margin-top: -130px;
-                    z-index: 150;
-                    margin-bottom: -40px;
+                }
 
-                    @media (max-width: variables.$mobileWidth) {
-                        display: none;
-                    }
+                &-packages-intro {
+                    font-size: 1rem;
+                    width: 350px;
+                }
 
-                    > img {
-                        height: 300px; /* This is a special case, not a sponsor logo */
-                        margin-top: 50px;
+                &-package {
+                    margin-top: 0;
+
+                    &-image {
+                        display: grid;
+                        justify-items: center;
+                        align-items: start;
+                        margin-top: -130px;
+                        z-index: 150;
+                        margin-bottom: -40px;
+
+                        @media (max-width: variables.$mobileWidth) {
+                            display: none;
+                        }
+
+                        > img {
+                            height: 300px; /* This is a special case, not a sponsor logo */
+                            margin-top: 50px;
+                        }
                     }
                 }
-            }
 
-            &-second {
-                width: 100%;
-                font-size: 1.5rem;
-                display: grid;
-                grid-auto-flow: column;
-                grid-template-columns: repeat(5, auto);
-                align-items: center;
-                justify-items: stretch;
-                text-align: center;
+                &-second {
+                    width: 100%;
+                    font-size: 1.5rem;
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: repeat(5, auto);
+                    align-items: center;
+                    justify-items: stretch;
+                    text-align: center;
 
-                @media (max-width: 600px) {
-                    grid-auto-flow: row;
-                    grid-template-columns: unset;
-                    font-size: 1.3rem;
+                    @media (max-width: 600px) {
+                        grid-auto-flow: row;
+                        grid-template-columns: unset;
+                        font-size: 1.3rem;
+                    }
                 }
-            }
 
-            &-third {
-                font-size: 1rem;
+                &-third {
+                    font-size: 1rem;
+                }
             }
         }
     }
 
     &-title {
         @include titleBlock(variables.$brandPink);
-        color: white;
+        & {
+            color: white;
+        }
     }
 
     &-title-blue {
         @include titleBlock(variables.$brandBlue);
-        color: white;
+        & {
+            color: white;
+        }
     }
 
     &-title-third {
         @include titleBlock(variables.$brandThird);
-        color: white;
+        & {
+            color: white;
+        }
     }
 
     &-content-detail {
@@ -259,21 +267,20 @@
             padding: 0 12px;
             display: grid;
             place-items: center;
-            
+
             a {
                 display: grid;
                 place-items: center;
                 height: 100%;
             }
-            
+
             img {
                 display: block;
-                height: 100px;
                 object-fit: contain;
                 transition: transform 0.2s ease-in-out;
                 will-change: transform;
                 transform: translateZ(0);
-                
+
                 &:hover {
                     transform: scale(1.05);
                 }
@@ -459,27 +466,25 @@
             border-width: 1px;
             border-style: solid;
 
-            &-level {
-                display: grid;
-                justify-items: center;
-                margin-bottom: 15px;
+            & {
+                &-level {
+                    display: grid;
+                    justify-items: center;
+                    margin-bottom: 15px;
 
-                img {
-                    border-style: solid;
-                    border-width: 1px;
-                    border-color: #f0638547;
-                    padding: 5px;
-                    height: 100px;
-                    object-fit: contain;
-                    will-change: transform;
-                    transform: translateZ(0);
-                }
+                    img {
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #f0638547;
+                        padding: 5px;
+                    }
 
-                a {
-                    color: transparent !important;
-
-                    &:hover {
+                    a {
                         color: transparent !important;
+
+                        &:hover {
+                            color: transparent !important;
+                        }
                     }
                 }
             }
@@ -772,8 +777,10 @@
     background-image: (linear-gradient(to left, variables.$darkBrandPink, variables.$brandBlue));
     display: grid;
 
-    > div {
-        align-self: center;
+    & {
+        > div {
+            align-self: center;
+        }
     }
 }
 
@@ -783,16 +790,20 @@
     background-image: (linear-gradient(to left, variables.$darkBrandBlue, variables.$brandBlue));
     display: grid;
 
-    > div {
-        align-self: center;
+    & {
+        > div {
+            align-self: center;
+        }
     }
 }
 
 img.sponsorLogo {
     max-width: unset;
 
-    @media (max-width: variables.$mobileWidth) {
-        max-width: 80vw;
+    & {
+        @media (max-width: variables.$mobileWidth) {
+            max-width: 80vw;
+        }
     }
 }
 

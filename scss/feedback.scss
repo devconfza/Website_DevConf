@@ -40,7 +40,7 @@
     row-gap: 10px;
 
     &:hover {
-        background: color.adjust(white, $lightness: -10);
+        background: color.adjust(white, $lightness: -10%);
     }
 }
 
