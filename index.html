@@ -62,21 +62,86 @@ layout: default
 {% if site.data.config.sponsors.banner %}
 <div class="sponsor-content-detail">
     <div class="sponsor-content-detail-heading">DevConf is made possible with support from</div>
-    <div class="sponsor-content-detail-wide-body">
+    <div class="sponsor-content-detail-wide-grid">
+        
         {% assign year = site.data.config.general.year %}
         {% assign sponsorsByLevel = site.data[year]["jhbsponsors"] | concat: site.data[year]["cptsponsors"] | uniq: "Name" | group_by: 'Level' %}
+        
+        {% comment %}Calculate the total number of sponsors and divide into thirds{% endcomment %}
+        {% assign allSponsors = "" | split: "" %}
         {% for level in sponsorsByLevel %}
-
-        {% assign sponsors = level.items | sort: "Name" %}
-        {% for sponsor in sponsors %}
-        <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ level.name }}">
-            <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
-                <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
-            </a>
+            {% assign sponsors = level.items | sort: "Name" %}
+            {% assign allSponsors = allSponsors | concat: sponsors %}
+        {% endfor %}
+        
+        {% assign totalSponsors = allSponsors | size %}
+        {% assign thirdSize = totalSponsors | divided_by: 3 | ceil %}
+        
+        <div class="sponsor-row-1">
+            <div class="sponsor-row-content">
+                {% for sponsor in allSponsors limit: thirdSize %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+                
+                {% comment %}Duplicate the first set of sponsors for seamless scrolling{% endcomment %}
+                {% for sponsor in allSponsors limit: thirdSize %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        {% endfor %}
-
-        {% endfor %}
+        
+        <div class="sponsor-row-2">
+            <div class="sponsor-row-content">
+                {% assign secondThirdStart = thirdSize %}
+                {% assign secondThirdLimit = thirdSize %}
+                {% for sponsor in allSponsors offset: secondThirdStart limit: secondThirdLimit %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+                
+                {% comment %}Duplicate the second set of sponsors for seamless scrolling{% endcomment %}
+                {% for sponsor in allSponsors offset: secondThirdStart limit: secondThirdLimit %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="sponsor-row-3">
+            <div class="sponsor-row-content">
+                {% assign thirdThirdStart = thirdSize | times: 2 %}
+                {% for sponsor in allSponsors offset: thirdThirdStart %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+                
+                {% comment %}Duplicate the third set of sponsors for seamless scrolling{% endcomment %}
+                {% for sponsor in allSponsors offset: thirdThirdStart %}
+                <div class="sponsor-content-detail-content-sponsor-card sponsor-content-detail-sponsor-{{ sponsor.Level }}">
+                    <a href="{{ sponsor.Url }}" target="_blank" rel="noopener noreferrer">
+                        <img alt="The logo for {{ sponsor.Name }}" src="/public/images/sponsorship/{{site.data.config.general.year}}/{{sponsor.Logo }}" />
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
 {% endif %}
