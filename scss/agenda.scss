@@ -51,40 +51,40 @@
         "thankyou"
         "cocktail";
 
-        // "registration registration"
-        // "expo expo"
-        // "welcome welcome"
-        // "keynote keynote"
-        // "loading1 loading1"
-        // "break1 break1"
-        // "timeslot1 workshoptime1"
-        // "session1 workshop10"
-        // "loading2 workshop10"
-        // "movement1 workshop10"
-        // "timeslot2 workshop10"
-        // "session2 workshop10"
-        // "loading3 workshop10"
-        // "movement2 movement2"
-        // "timeslot3 ."
-        // "session3 ."
-        // "loading4 ."
-        // "lunch lunch"
-        // "timeslot4 workshoptime2"
-        // "session4 workshop20"
-        // "loading5 workshop20"
-        // "movement3 workshop20"
-        // "timeslot5 workshop20"
-        // "session5 workshop20"
-        // "loading6 workshop20"
-        // "break2 break2"
-        // "timeslot6 workshoptime3"
-        // "session6 workshop30"
-        // "loading7 workshop30"
-        // "movement4 workshop30"
-        // "timeslot7 workshop30"
-        // "session7 workshop30"
-        // "thankyou thankyou"
-        // "cocktail cocktail";
+    // "registration registration"
+    // "expo expo"
+    // "welcome welcome"
+    // "keynote keynote"
+    // "loading1 loading1"
+    // "break1 break1"
+    // "timeslot1 workshoptime1"
+    // "session1 workshop10"
+    // "loading2 workshop10"
+    // "movement1 workshop10"
+    // "timeslot2 workshop10"
+    // "session2 workshop10"
+    // "loading3 workshop10"
+    // "movement2 movement2"
+    // "timeslot3 ."
+    // "session3 ."
+    // "loading4 ."
+    // "lunch lunch"
+    // "timeslot4 workshoptime2"
+    // "session4 workshop20"
+    // "loading5 workshop20"
+    // "movement3 workshop20"
+    // "timeslot5 workshop20"
+    // "session5 workshop20"
+    // "loading6 workshop20"
+    // "break2 break2"
+    // "timeslot6 workshoptime3"
+    // "session6 workshop30"
+    // "loading7 workshop30"
+    // "movement4 workshop30"
+    // "timeslot7 workshop30"
+    // "session7 workshop30"
+    // "thankyou thankyou"
+    // "cocktail cocktail";
 
     @media (max-width: variables.$workshopMoveBelowWidth) {
         grid-template-rows: unset;
@@ -125,13 +125,13 @@
             "movement5"
             "thankyou"
             "cocktail";
-            // "workshoptitle"
-            // "workshoptime1"
-            // "workshop10"
-            // "workshoptime2"
-            // "workshop20"
-            // "workshoptime3"
-            // "workshop30";
+        // "workshoptitle"
+        // "workshoptime1"
+        // "workshop10"
+        // "workshoptime2"
+        // "workshop20"
+        // "workshoptime3"
+        // "workshop30";
     }
 }
 
@@ -244,22 +244,35 @@
 }
 
 .agenda-session {
-    background-color: #000d28;
+    background-color: variables.$darkBrandBlue;
     border-radius: 5px;
     display: grid;
     justify-self: stretch;
     justify-items: center;
     color: white;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     grid-template-rows: 55px 20px 170px 50px;
 
     @media (max-width: variables.$mobileWidth) {
         grid-template-rows: repeat(3, auto);
         padding-bottom: 0px;
+    }
+}
+
+.agenda-row-timeslot > .agenda-session {
+    border-color: variables.$darkBrandPink;
+    border-width: 1px;
+    border-style: solid;
+    margin: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.676);
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.8s;
     }
 }
 
@@ -359,11 +372,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000000a6;
+    background-color: hsla(0, 0%, 0%, 0.85);
     display: grid;
     justify-items: center;
     align-items: center;
     z-index: 600;
+    backdrop-filter: blur(3px);
 }
 
 .popupBackdropHidden {
@@ -387,9 +401,11 @@
     grid-template-rows: auto;
     grid-column-gap: 10px;
     overflow-y: auto;
-    height: 500px;
+    max-height: 60vh;
+    height: fit-content;
     padding: 30px;
     grid-area: content;
+    border-radius: 5px;
     @include variables.scrollbar();
 
     @media (max-width: variables.$mobileWidth) {
@@ -439,10 +455,8 @@
     display: grid;
     grid-template-rows: auto auto;
     justify-items: center;
-    max-width: 100%;
+    max-width: 90%;
     margin-top: 49px;
-    padding-left: 5%;
-    padding-right: 5%;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr auto auto;
     grid-template-areas:
@@ -450,6 +464,29 @@
         "content content content";
     grid-column-gap: 25px;
     grid-row-gap: 5px;
+}
+
+@mixin popupIcon() {
+    background-color: variables.$darkBrandBlue;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: variables.$darkBrandPink;
+    border-width: 1px;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.popupContent > .popupShare {
+    @include popupIcon();
+}
+
+.popupContent > .popupClose {
+    @include popupIcon();
 }
 
 .bio-title,
@@ -510,6 +547,7 @@
 
 .bio-tagline {
     justify-self: center;
+    text-align: center;
 
     @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
@@ -635,17 +673,6 @@
     margin-right: 5px;
 
     @media (max-width: 600px) {
-        display: none;
-    }
-}
-
-.agenda-session-underline {
-    height: 1px;
-    background-color: variables.$darkBrandPink;
-    width: 80%;
-    margin-top: 10px;
-
-    @media (min-width: variables.$mobileWidth) {
         display: none;
     }
 }
