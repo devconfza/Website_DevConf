@@ -416,4 +416,49 @@ export default async () => {
     addButtons()
     addPopups()
     addSubmit()
+
+    const processUrlParameters = () => {
+        // Parse URL parameters
+        const urlParams = new URLSearchParams(window.location.search)
+        const timeslotParam = urlParams.get('timeslot')
+        const sessionParam = urlParams.get('session')
+
+        // If timeslot parameter doesn't exist, no action needed
+        if (!timeslotParam) {
+            return
+        }
+
+        // Find the timeslot button with the matching data-id
+        const timeslotButton = document.querySelector(`div.feedbackButton[data-id="${timeslotParam}"]`) as HTMLDivElement
+        
+        // If the button exists, trigger a click to open the popup
+        if (timeslotButton) {
+            // Click the button to open the popup
+            timeslotButton.click()
+            
+            // If session parameter exists, set the dropdown to that index
+            if (sessionParam) {
+                // Wait for the popup to be fully opened
+                setTimeout(() => {
+                    const popup = document.querySelector('.feedbackPopupContent')
+                    if (popup) {
+                        // Find the timeslot-selector dropdown in the popup
+                        const dropdown = popup.querySelector('select') as HTMLSelectElement
+                        if (dropdown && dropdown.options.length > 0) {
+                            // Check if the sessionParam is a valid index
+                            const sessionIndex = parseInt(sessionParam, 10)
+                            if (!isNaN(sessionIndex) && sessionIndex >= 0 && sessionIndex < dropdown.options.length) {
+                                dropdown.selectedIndex = sessionIndex
+                                // Trigger the change event to save the selection
+                                dropdown.dispatchEvent(new Event('change'))
+                            }
+                        }
+                    }
+                }, 500) // Give the popup some time to open and render
+            }
+        }
+    }
+
+    // Process URL parameters after all other setup is complete
+    processUrlParameters()
 }
