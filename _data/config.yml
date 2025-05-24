@@ -1,5 +1,5 @@
 banner:
-    show: false
+    show: true
     content: "DevConf 2025 is entirely sold out! We can't wait to see you all soon!"
 sponsors:
     show: false
