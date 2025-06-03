@@ -10,6 +10,8 @@ sponsors:
 callForSpeakers:
     show: false
     link: https://sessionize.com/devconf-2025
+ratings:
+    open: false
 timing:
     reg-start: 07h30
     reg-end: 08h45

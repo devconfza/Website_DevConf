@@ -10,6 +10,7 @@
         </div>
     </div>
 
+    {% if site.data.config.ratings.open %}
     <data style="display:none;" id="timings">
         {% for timing in site.data.config.timing %}
         {{ timing }}
@@ -179,3 +180,8 @@
 </template>
 
 <script src="https://www.google.com/recaptcha/api.js?render=6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j"></script>
+
+    {% else %}
+    <h1>Thanks! Feedback is now closed!</h1>
+</div>
+    {% endif %}
