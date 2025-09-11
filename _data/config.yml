@@ -6,7 +6,7 @@ mailingList:
 sponsors:
     show: false
     proposal: /public/docs/DevConf 2025 Sponsorship Proposal - PHASE 2.pdf
-    banner: true
+    banner: false
 callForSpeakers:
     show: false
     link: https://sessionize.com/devconf-2025
@@ -39,25 +39,25 @@ timing:
     networking-end: 19h00
 
 general:
-    year: "2025"
+    year: "2026"
 events:
     - virtual: false
       show: true
-      showAgenda: true
+      showAgenda: false
       location: "Johannesburg"
       menuTitle: "Joburg"
-      date: "27 May 2025"
+      date: "12 May 2026"
       info: "/joburg"
       infoOn: true
       sessionizeId: "fs0wbo5v"
       logo: devconfjhb.png
-      minattendees: 700
-      venue: "Emperors Palace Conference Centre"
-      website: "https://emperorspalace.com/conferences-overview/"
-      mapLink: "https://goo.gl/maps/eQKGw5XmjA5RjPQa8"
-      lat: "-26.146498178859964"
-      long: "28.223241542328243"
-      sponsorOpen: true
+      minattendees: 500
+      venue: "The Canvas @ Riversands"
+      website: "https://www.thecanvasriversands.co.za/"
+      mapLink: "https://maps.app.goo.gl/R6cmNWZtpxVbAM477"
+      lat: "-25.963033894554854"
+      long: "28.02281384929991"
+      sponsorOpen: false
       colour: pink
       tickets:
           totally_sold_out: true
@@ -111,10 +111,10 @@ events:
 
     - virtual: false
       show: true
-      showAgenda: true
+      showAgenda: false
       location: "Cape Town"
       menuTitle: "Cape Town"
-      date: "29 May 2025"
+      date: "14 May 2026"
       info: "/capetown"
       infoOn: true
       sessionizeId: "fs0wbo5v"
@@ -125,7 +125,7 @@ events:
       mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
       lat: "-33.895519679277136"
       long: "18.504693653133835"
-      sponsorOpen: true
+      sponsorOpen: false
       colour: blue
       tickets:
           onsale: false
