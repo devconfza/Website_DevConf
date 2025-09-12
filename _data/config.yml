@@ -8,8 +8,10 @@ sponsors:
     proposal: /public/docs/DevConf 2025 Sponsorship Proposal - PHASE 2.pdf
     banner: false
 callForSpeakers:
+    prep: true
+    openDate: "1 November 2025"
     show: false
-    link: https://sessionize.com/devconf-2025
+    link: https://sessionize.com/devconf-2026/
 ratings:
     open: false
 timing:

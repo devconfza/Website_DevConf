@@ -40,8 +40,13 @@ layout: default
                     {% if event.tickets.onsale %}
                         {% assign ticketText = 'Tickets, ' %}
                     {% endif %}
+                    {% if site.data.config.sponsors.show %}
+                        {% assign finalText = 'Venue &amp; Sponsors' %}
+                    {% else %}
+                        {% assign finalText = 'More Info' %}
+                    {% endif %}
                     <div class="button" role="button">
-                        {{ agendaText | append: ticketText | append: 'Venue &amp; Sponsors'}}
+                        {{ agendaText | append: ticketText | append: finalText}}
                     </div>
                     {% endif %}
                     {% if event.infoOn %}
@@ -52,6 +57,11 @@ layout: default
         {% endif %}
         {% endfor %}
     </div>
+    {% if site.data.config.callForSpeakers.prep %}
+    <div>
+        <a class="button" href="{{ site.data.config.callForSpeakers.link }}" target="_blank">Speak at DevConf!<br/>Call for speakers will open on {{site.data.config.callForSpeakers.openDate}}<br/>Click here to learn more</a>
+    </div>
+    {% endif %}
     {% if site.data.config.callForSpeakers.show %}
     <div>
         <a class="button callforspeakers shimmer" href="{{ site.data.config.callForSpeakers.link }}" target="_blank">Speak at DevConf!<br/>Send us your talk proposal today!</a>
