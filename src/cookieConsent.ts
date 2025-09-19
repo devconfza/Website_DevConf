@@ -51,6 +51,14 @@ export default () => {
                 enabled: true,
                 readOnly: true,
                 services: {
+                    cc: {
+                        label: "CookieConsent",
+                        cookies: [
+                            {
+                                name: /^(cc_cookie)/
+                            }
+                        ]
+                    },
                     yt: {
                         label: "YouTube embed",
                         cookies: [
@@ -64,6 +72,14 @@ export default () => {
                         cookies: [
                             {
                                 name: /^(__cf_bm)/
+                            }
+                        ]
+                    },
+                    maps: {
+                        label: "Google Maps",
+                        cookies: [
+                            {
+                                name: /^(SIDCC|NID|SID|SAPISID|APISID|CONSENT|1P_JAR|G_AUTHUSER_H)/
                             }
                         ]
                     }
@@ -84,7 +100,7 @@ export default () => {
                         label: 'LinkedIn',
                         cookies: [
                             {
-                                name: /^(bcookie|li_gc|lidc)/
+                                name: /^(bcookie|li_gc|lidc|fd-form.*)/
                             }
                         ]
                     }
@@ -97,7 +113,7 @@ export default () => {
                 en: {
                     consentModal: {
                         title: 'We use cookies',
-                        description: 'We try our best to minimize how many cookies are set, but there are a few and we want you to have control over your experience with them.',
+                        description: 'We try our best to minimize how many cookies are set, but there are a few needed and we want you to have control over your experience with them.',
                         acceptAllBtn: 'Accept all',
                         acceptNecessaryBtn: 'Reject all',
                         showPreferencesBtn: 'Manage Individual preferences'
@@ -112,8 +128,6 @@ export default () => {
                             {
                                 title: 'Strictly Necessary cookies',
                                 description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
-
-                                //this field will generate a toggle linked to the 'necessary' category
                                 linkedCategory: 'necessary'
                             },
                             {
@@ -122,8 +136,8 @@ export default () => {
                                 linkedCategory: 'analytics'
                             },
                             {
-                                title: 'Tracking',
-                                description: 'These cookies collect information about how you use our website for the usage of improving our adverts on other platforms. All of the data is anonymized and cannot be used to identify you.',
+                                title: 'Advert Performance Improvement',
+                                description: 'These cookies collect information about how you use our website for the usage of improving our adverts on other platforms (there are no adverts on DevConf.co.za). All of the data is anonymized and cannot be used to identify you.',
                                 linkedCategory: 'tracking'
                             },
                             {
