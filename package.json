@@ -42,7 +42,7 @@
     "sass": "^1",
     "ts-loader": "^9",
     "typescript": "^5",
-    "uuid": "^11",
+    "uuid": "^13",
     "webpack": "^5",
     "webpack-cli": "^6"
   },
@@ -55,5 +55,8 @@
   "resolutions": {
     "cross-spawn": "^7.0.6",
     "micromatch": "^4.0.8"
+  },
+  "dependencies": {
+    "vanilla-cookieconsent": "^3.1.0"
   }
 }
