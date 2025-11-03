@@ -1,91 +1,91 @@
-- Level: Diamond
-  Name: TTD Consulting
-  Url: https://ttdconsulting.net/
-  Logo: tddplat.jpg
+# - Level: Diamond
+#   Name: TTD Consulting
+#   Url: https://ttdconsulting.net/
+#   Logo: tddplat.jpg
 
-- Level: Gold
-  Name: Agile Bridge
-  Url: https://www.agilebridge.co.za/
-  Logo: agilebridgegold.jpg
+# - Level: Gold
+#   Name: Agile Bridge
+#   Url: https://www.agilebridge.co.za/
+#   Logo: agilebridgegold.jpg
 
-- Level: Silver
-  Name: OfferZen
-  Url: https://www.offerzen.com/?utm_source=email&utm_medium=events&utm_campaign=za_supply_awareness_dev-conf_sponsored-event_email&utm_content=
-  Logo: offerzensilver.jpg
+# - Level: Silver
+#   Name: OfferZen
+#   Url: https://www.offerzen.com/?utm_source=email&utm_medium=events&utm_campaign=za_supply_awareness_dev-conf_sponsored-event_email&utm_content=
+#   Logo: offerzensilver.jpg
 
-- Level: Silver
-  Name: Old Mutual
-  Url: https://www.oldmutual.co.za/
-  Logo: oldmutualsilver.jpg
+# - Level: Silver
+#   Name: Old Mutual
+#   Url: https://www.oldmutual.co.za/
+#   Logo: oldmutualsilver.jpg
 
-- Level: Silver
-  Name: Thinkst Canary
-  Url: https://canary.tools
-  Logo: thinkstsilver.jpg
+# - Level: Silver
+#   Name: Thinkst Canary
+#   Url: https://canary.tools
+#   Logo: thinkstsilver.jpg
 
-- Level: Silver
-  Name: VAT IT Group
-  Url: https://www.vatit.com
-  Logo: vatsilver.jpg
+# - Level: Silver
+#   Name: VAT IT Group
+#   Url: https://www.vatit.com
+#   Logo: vatsilver.jpg
 
-- Level: Cocktail
-  Name: Lula
-  Url: https://lula.co.za/fast-flexible-funding/?utm_source=google_search&utm_medium=cpc&utm_term=lula_em&utm_campaign=gsn_branded&utm_content=funding&code=2hours&gad_source=1&gclid=Cj0KCQiA0--6BhCBARIsADYqyL8YR7kQJvdhvkuWkuC5i6Iqu-MRrDbi-FsJ7Q_GeiBX4upefQrzwG4aAtYJEALw_wcB
-  Logo: lulacocktai.jpg
+# - Level: Cocktail
+#   Name: Lula
+#   Url: https://lula.co.za/fast-flexible-funding/?utm_source=google_search&utm_medium=cpc&utm_term=lula_em&utm_campaign=gsn_branded&utm_content=funding&code=2hours&gad_source=1&gclid=Cj0KCQiA0--6BhCBARIsADYqyL8YR7kQJvdhvkuWkuC5i6Iqu-MRrDbi-FsJ7Q_GeiBX4upefQrzwG4aAtYJEALw_wcB
+#   Logo: lulacocktai.jpg
 
-- Level: Coffee
-  Name: BBD
-  Url: https://bbdsoftware.com/
-  Logo: bbdcoffee.jpg
+# - Level: Coffee
+#   Name: BBD
+#   Url: https://bbdsoftware.com/
+#   Logo: bbdcoffee.jpg
 
-- Level: Coffee
-  Name: eBlocks
-  Url: https://www.eblocks.co.za/
-  Logo: eblockscoffee.jpg
+# - Level: Coffee
+#   Name: eBlocks
+#   Url: https://www.eblocks.co.za/
+#   Logo: eblockscoffee.jpg
 
-- Level: Signage
-  Name: Dijkstrack
-  Url: https://www.dijkstrack.com/
-  Logo: dijkstracksignage.jpg
+# - Level: Signage
+#   Name: Dijkstrack
+#   Url: https://www.dijkstrack.com/
+#   Logo: dijkstracksignage.jpg
 
-- Level: Speakers Dinner
-  Name: DVT
-  Url: https://www.dvtsoftware.com/
-  Logo: dvtdinner.jpg
+# - Level: Speakers Dinner
+#   Name: DVT
+#   Url: https://www.dvtsoftware.com/
+#   Logo: dvtdinner.jpg
 
-- Level: Special
-  Name: Microsoft
-  Url: https://build.microsoft.com
-  Logo: microsoftspecial.jpg
+# - Level: Special
+#   Name: Microsoft
+#   Url: https://build.microsoft.com
+#   Logo: microsoftspecial.jpg
 
-- Level: Community
-  Name: AWS Community South Africa
-  Url: https://www.awscommunity.co.za
-  Logo: awscommunity.jpg
+# - Level: Community
+#   Name: AWS Community South Africa
+#   Url: https://www.awscommunity.co.za
+#   Logo: awscommunity.jpg
 
-- Level: Community
-  Name: BSides Joburg
-  Url: https://www.bsidesjoburg.co.za
-  Logo: bsidesjhbcommunity.jpg
+# - Level: Community
+#   Name: BSides Joburg
+#   Url: https://www.bsidesjoburg.co.za
+#   Logo: bsidesjhbcommunity.jpg
 
-- Level: Community
-  Name: Investec Developer
-  Url: https://developer.investec.com/za/home
-  Logo: investecdevelopercommunity.jpg
+# - Level: Community
+#   Name: Investec Developer
+#   Url: https://developer.investec.com/za/home
+#   Logo: investecdevelopercommunity.jpg
 
-- Level: Community
-  Name: JHBMSDUG - Johannesburg Microsoft Developer User Group
-  Url: https://www.meetup.com/jhbmsdug
-  Logo: msdugjhbcommunity.jpg
+# - Level: Community
+#   Name: JHBMSDUG - Johannesburg Microsoft Developer User Group
+#   Url: https://www.meetup.com/jhbmsdug
+#   Logo: msdugjhbcommunity.jpg
 
-- Level: Community
-  Name: Umuzi
-  Url: https://www.umuzi.org
-  Logo: umuzicommunity.jpg
+# - Level: Community
+#   Name: Umuzi
+#   Url: https://www.umuzi.org
+#   Logo: umuzicommunity.jpg
 
-- Level: Community
-  Name: Virtual Java User Group
-  Url: https://www.meetup.com/virtualjug/
-  Logo: vjugcommunity.jpg
+# - Level: Community
+#   Name: Virtual Java User Group
+#   Url: https://www.meetup.com/virtualjug/
+#   Logo: vjugcommunity.jpg
 
 

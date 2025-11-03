@@ -1,11 +1,11 @@
 banner:
     show: false
-    content: "DevConf 2025 is entirely sold out! We can't wait to see you all soon!"
+    content: "DevConf 2026 is entirely sold out! We can't wait to see you all soon!"
 mailingList:
     show: true
 sponsors:
-    show: false
-    proposal: /public/docs/DevConf 2025 Sponsorship Proposal - PHASE 2.pdf
+    show: true
+    proposal: /public/docs/DevConf%202026%20Sponsorship%20Proposal.pdf
     banner: false
 callForSpeakers:
     prep: false
@@ -59,23 +59,23 @@ events:
       mapLink: "https://maps.app.goo.gl/R6cmNWZtpxVbAM477"
       lat: "-25.963033894554854"
       long: "28.02281384929991"
-      sponsorOpen: false
+      sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: true
-          onsale: false
+          totally_sold_out: false
+          onsale: true
           has_shuttle: false
           has_waiting_list: false
           waiting_list:
-          purchaseSite: "https://www.quicket.co.za/events/286990-devconf-2025-johannesburg/#/"
+          purchaseSite: "https://www.quicket.co.za/events/338615-devconf-2026-johannesburg/"
           merch_link: ""
           fullprice:
-              price: 3985.29
-              bulkPrice: 3622.99
+              price: 4255.00
+              bulkPrice: 3829.50
               sold_out: false
           earlybird:
-              price: 3465.47
-              sold_out: true
+              price: 3616.75
+              sold_out: false
       rooms:
           room_1: "Centre Court"
           room_2: "NCC"
@@ -127,23 +127,23 @@ events:
       mapLink: "https://goo.gl/maps/T8F9LTbNdFHZTEzw9"
       lat: "-33.895519679277136"
       long: "18.504693653133835"
-      sponsorOpen: false
+      sponsorOpen: true
       colour: blue
       tickets:
-          onsale: false
-          totally_sold_out: true
+          onsale: true
+          totally_sold_out: false
           has_shuttle: false
           has_waiting_list: false
           waiting_list: ""
-          purchaseSite: "https://www.quicket.co.za/events/285080-devconf-2025-cape-town/#/"
+          purchaseSite: "https://www.quicket.co.za/events/345686-devconf-2026-cape-town/"
           merch_link:
           fullprice:
-              price: 3985.29
-              bulkPrice: 3622.99
+              price: 4255.00
+              bulkPrice: 3829.50
               sold_out: false
           earlybird:
-              price: 3465.47
-              sold_out: true
+              price: 3616.75
+              sold_out: false
       rooms:
           room_1: "Hall A"
           room_2: "Hall B"
