@@ -82,8 +82,9 @@ layout: default
             {% assign allSponsors = allSponsors | concat: sponsors %}
         {% endfor %}
 
+        {% assign rows = 1 %}
         {% assign totalSponsors = allSponsors | size %}
-        {% assign thirdSize = totalSponsors | divided_by: 3 | ceil %}
+        {% assign thirdSize = totalSponsors | divided_by: rows | ceil %}
 
         <div class="sponsor-row-1">
             <div class="sponsor-row-content">
@@ -106,6 +107,7 @@ layout: default
             </div>
         </div>
 
+        {% if rows >= 2 %}
         <div class="sponsor-row-2">
             <div class="sponsor-row-content">
                 {% assign secondThirdStart = thirdSize %}
@@ -128,7 +130,9 @@ layout: default
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
 
+        {% if rows >= 3 %}
         <div class="sponsor-row-3">
             <div class="sponsor-row-content">
                 {% assign thirdThirdStart = thirdSize | times: 2 %}
@@ -150,6 +154,7 @@ layout: default
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
     </div>
 </div>
 {% endif %}

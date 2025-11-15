@@ -202,7 +202,7 @@
 
         &-wide-grid {
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, minmax(0, auto));
             gap: 24px;
             width: 100%;
             overflow: hidden;

@@ -1,19 +1,27 @@
+general:
+    year: "2026"
+
 banner:
     show: false
     content: "DevConf 2026 is entirely sold out! We can't wait to see you all soon!"
+
 mailingList:
     show: true
+
 sponsors:
     show: true
     proposal: /public/docs/DevConf%202026%20Sponsorship%20Proposal.pdf
-    banner: false
+    banner: true
+
 callForSpeakers:
     prep: false
     openDate: "1 November 2025"
     show: true
     link: https://sessionize.com/devconf-2026/
+
 ratings:
     open: false
+
 timing:
     reg-start: 07h30
     reg-end: 08h45
@@ -40,8 +48,6 @@ timing:
     networking-start: 17h15
     networking-end: 19h00
 
-general:
-    year: "2026"
 events:
     - virtual: false
       show: true
