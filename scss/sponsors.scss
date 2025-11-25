@@ -220,7 +220,9 @@
             }
         }
 
-        .sponsor-row-1, .sponsor-row-2, .sponsor-row-3 {
+        .sponsor-row-1,
+        .sponsor-row-2,
+        .sponsor-row-3 {
             overflow-x: hidden;
             padding: 8px 0;
             scrollbar-width: none; /* Firefox */
@@ -511,6 +513,10 @@
             &-pink {
                 @extend .sponsor-content-detail-heading;
                 color: variables.$brandPink;
+
+                &-smaller {
+                    font-size: 1.6rem;
+                }
             }
 
             &-attendees {
@@ -774,7 +780,9 @@
 .sponsor-banana {
     height: 100px;
     font-size: 24px !important;
-    background-image: (linear-gradient(to left, variables.$darkBrandPink, variables.$brandBlue));
+    background-image: (
+        linear-gradient(to left, variables.$darkBrandPink, variables.$brandBlue)
+    );
     display: grid;
 
     & {
@@ -787,7 +795,9 @@
 .sponsor-small-banana {
     height: 50px;
     font-size: 24px !important;
-    background-image: (linear-gradient(to left, variables.$darkBrandBlue, variables.$brandBlue));
+    background-image: (
+        linear-gradient(to left, variables.$darkBrandBlue, variables.$brandBlue)
+    );
     display: grid;
 
     & {
@@ -811,4 +821,30 @@ img.sponsorLogo {
     height: 0px;
     margin: 0px;
     padding: 0px;
+}
+
+.sponsor-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-gap: 4rem;
+    line-height: 1.8;
+    & div {
+        display: grid;
+        align-content: baseline;
+        grid-template-rows: min-content min-content 1fr;
+
+        & div.sponsor-content-detail-email {
+            margin-top: 2rem;
+            align-self: end;
+            max-width: 300px;
+            justify-self: center;
+        }
+
+        & div.sponsor-content-detail-heading-smaller {
+            color: variables.$brandBlue !important;
+        }
+    }
 }
