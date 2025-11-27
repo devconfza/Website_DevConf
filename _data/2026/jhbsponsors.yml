@@ -13,10 +13,25 @@
   Url: https://bbdsoftware.com/
   Logo: bbdcoffee.jpg
 
+- Level: Coffee
+  Name: Blue Bean Software
+  Url: https://bluebeansoftware.com/
+  Logo: bluebean.jpg
+
+- Level: Lanyard
+  Name: Dijkstrack
+  Url: https://www.dijkstrack.com/
+  Logo: dijkstrack.jpg
+
 - Level: Community
   Name: AWS Community South Africa
   Url: https://www.awscommunity.co.za
   Logo: awscommunity.jpg
+
+- Level: Community
+  Name: BSides Joburg
+  Url: https://www.bsidesjoburg.co.za
+  Logo: bsidesjhb.jpg
 
 - Level: Community
   Name: Investec Developer
