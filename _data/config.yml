@@ -10,7 +10,7 @@ mailingList:
 
 sponsors:
     show: true
-    proposal: /public/docs/DevConf%202026%20Sponsorship%20Proposal.pdf
+    proposal: /sponsorship
     banner: true
 
 callForSpeakers:
