@@ -16,7 +16,7 @@ sponsors:
 callForSpeakers:
     prep: false
     openDate: "1 November 2025"
-    show: true
+    show: false
     link: https://sessionize.com/devconf-2026/
 
 ratings:
