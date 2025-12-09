@@ -34,6 +34,11 @@
   Logo: msdugcptcommunity.jpg
 
 - Level: Community
+  Name: Code&
+  Url: https://www.linkedin.com/company/code-and
+  Logo: codeand.jpg
+
+- Level: Community
   Name: Frontend Engineering and Design South Africa (FEDSA)
   Url: https://www.meetup.com/fedsa-community
   Logo: fedsa.jpg
@@ -42,3 +47,8 @@
   Name: Tech Leadership Meetup
   Url: https://techleadership.co.za
   Logo: techleadershipcommunity.jpg
+
+- Level: Media
+  Name: The Open Letter
+  Url: https://theopenletter.io/
+  Logo: openletter.jpg
