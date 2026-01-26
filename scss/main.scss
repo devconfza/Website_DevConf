@@ -591,3 +591,11 @@ a.smalllink {
 .keyboardUserGroup {
     color: variables.$darkBrandBlue;
 }
+
+.titleChoice {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

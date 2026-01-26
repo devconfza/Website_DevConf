@@ -51,13 +51,13 @@ timing:
 events:
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Johannesburg"
       menuTitle: "Joburg"
       date: "12 May 2026"
       info: "/joburg"
       infoOn: true
-      sessionizeId: "fs0wbo5v"
+      sessionizeId: "6x7s5svg"
       logo: devconfjhb.png
       minattendees: 500
       venue: "The Canvas @ Riversands"
@@ -119,13 +119,13 @@ events:
 
     - virtual: false
       show: true
-      showAgenda: false
+      showAgenda: true
       location: "Cape Town"
       menuTitle: "Cape Town"
       date: "14 May 2026"
       info: "/capetown"
       infoOn: true
-      sessionizeId: "fs0wbo5v"
+      sessionizeId: "6x7s5svg"
       logo: devconfcpt.png
       minattendees: 700
       venue: "Century City Conference Centre"

@@ -276,6 +276,16 @@
     }
 }
 
+.agenda-session-session-theme {
+    margin-bottom: 11px;
+    font-size: small;
+}
+
+.agenda-session-session-level {
+    margin-bottom: 11px;
+    font-size: small;
+}
+
 .agenda-session-subtitle {
     margin-bottom: 11px;
     font-size: small;
@@ -503,6 +513,8 @@
     justify-self: left;
 }
 
+.bio-track,
+.bio-level,
 .bio-subtitle {
     justify-self: center;
     font-size: 0.8rem;
@@ -585,23 +597,11 @@
 }
 
 .bio-talk-description {
+    padding-top: 20px;
     @media (max-width: variables.$mobileWidth) {
         grid-column: unset;
         grid-row: unset;
         margin-top: 10px;
-    }
-}
-
-.bio-track {
-    font-size: 0.8rem;
-    align-self: center;
-    justify-self: end;
-
-    @media (max-width: variables.$mobileWidth) {
-        grid-column: unset;
-        grid-row: unset;
-        margin-top: 5px;
-        justify-self: start;
     }
 }
 
@@ -675,4 +675,11 @@
     @media (max-width: 600px) {
         display: none;
     }
+}
+
+.titlePreference {
+    width: 200px;
+    border-radius: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }

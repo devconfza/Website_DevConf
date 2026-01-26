@@ -135,6 +135,7 @@
     <div class="sponsor-content-detail">
         <div class="sponsor-content-detail-heading">Agenda</div>
         {% if event.showAgenda %}
+        <div class="titleChoice"><span>Select title format</span><select class="titlePreference" id="titlePreference"><option value="preferred">Preferred</option><option value="informative">Informative</option><option value="fun">Fun</option></select></div>
         <div id="agenda" class="agenda" data-event-id="{{ event.sessionizeId }}">
             <div class="agenda-row-style-key" style="grid-area: registration / span 2;">
                 <span class="time-from-time">{{ site.data.config.timing.reg-start }}</span>
@@ -702,6 +703,8 @@
     <div class="agenda-session-name"></div>
     <div class="agenda-session-subtitle"></div>
     <div class="agenda-session-title"></div>
+    <div class="agenda-session-session-theme"></div>
+    <div class="agenda-session-session-level"></div>
     <div class="agenda-session-remote">This will be a remote presentation</div>
     <div class="agenda-session-underline">&nbsp;</div>
 </template>
@@ -719,6 +722,8 @@
         </div>
         <div class="popupBioRight">
             <div class="bio-title"></div>
+            <div class="bio-track"></div>
+            <div class="bio-level"></div>
             <div class="bio-talk-description"></div>
         </div>
     </div>

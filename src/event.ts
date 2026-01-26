@@ -1,5 +1,5 @@
 import { addPopupHandler, getTemplate, setText } from './common'
-import { SessionizeEvent, SessionizeSpeaker, loadSessionizeData } from './sessionize'
+import { SessionizeEvent, SessionizeSession, SessionizeSpeaker, loadSessionizeData } from './sessionize'
 
 export default async () => {
     const agendaPlaceholder = document.getElementById('agenda')
@@ -34,29 +34,132 @@ export default async () => {
 
     const seperatorSet = ["🔹"]
 
+    const title = (sessionInfo: SessionizeSession): string => {
+        const want = (document.getElementById("titlePreference") as HTMLSelectElement).value;
+        const altTitle = sessionInfo.questionAnswers.find(i => i.questionId === 113498)?.answerValue;
+
+        if (!altTitle || want === 'informative' || (want === 'preferred' && sessionInfo.categoryItems.indexOf(408407) >= 0)) {
+            return sessionInfo.title;
+        }
+
+        return altTitle;
+    }
+
+    const level = (sessionInfo: SessionizeSession): string => {
+        if (sessionInfo.categoryItems.indexOf(394910) >= 0) {
+            return "101: No audience prerequisites (Introduction)"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394911) >= 0) {
+            return "201: Audience should already be familiar with the topic"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394909) >= 0) {
+            return "301: Audience expected to have experience and a strong knowledge of the topic (Deep Dives)"
+        }
+
+        return "";
+    }
+
+    const theme = (sessionInfo: SessionizeSession): string => {
+        if (sessionInfo.categoryItems.indexOf(394857) >= 0) {
+            return "AI / LLM / Rag / ML"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394858) >= 0) {
+            return "Accessibility"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394860) >= 0) {
+            return "Architecture / System Design"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394850) >= 0) {
+            return "Blockchain & Crypto"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394851) >= 0) {
+            return "Cloud"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394852) >= 0) {
+            return "Data / Big Data / Databases"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394853) >= 0) {
+            return "DevOps Methodologies / CI / CD / Pipelines / Deployments"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394859) >= 0) {
+            return "Fun / Experiments"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394846) >= 0) {
+            return "IoT / Hardware"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394845) >= 0) {
+            return "Mental Health / Safety @ Work"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394912) >= 0) {
+            return "Personal / Leadership Development"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394847) >= 0) {
+            return "Programming Languages & Frameworks"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394854) >= 0) {
+            return "Security / Hacking / Infosec"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394855) >= 0) {
+            return "Tales from the trenches"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394848) >= 0) {
+            return "Team Culture / Team Leadership / Mentoring"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394861) >= 0) {
+            return "Testing / QA"
+        }
+
+        if (sessionInfo.categoryItems.indexOf(394849) >= 0) {
+            return "UI / UX / Design"
+        }
+
+        return "Other"
+    }
+
     const speakerSubtitle = (sessionSpeakers: Array<string>): string => {
         const speakers = getSpeakerInfo(sessionSpeakers)
 
         if (speakers.length === 1) {
             const speaker = speakers[0]
             let country = ''
-            if (speaker.categoryItems.indexOf(301265) >= 0) {
+            if (speaker.categoryItems.indexOf(394843) >= 0) {
                 country = 'South Africa'
             } else {
-                country = speaker.questionAnswers.find(i => i.questionId === 84729)?.answerValue
+                country = speaker.questionAnswers.find(i => i.questionId === 109821)?.answerValue
             }
 
             let pronoun = ''
-            if (speaker.categoryItems.indexOf(301285) >= 0) {
+            if (speaker.categoryItems.indexOf(394864) >= 0) {
                 pronoun = 'He/Him'
             }
 
-            if (speaker.categoryItems.indexOf(301283) >= 0) {
+            if (speaker.categoryItems.indexOf(394862) >= 0) {
                 pronoun = 'She/Her'
             }
 
-            if (speaker.categoryItems.indexOf(301284) >= 0) {
+            if (speaker.categoryItems.indexOf(394863) >= 0) {
                 pronoun = 'They/Them'
+            }
+
+            if (speaker.categoryItems.indexOf(394865) >= 0) {
+                pronoun = 'Other'
             }
 
             const seperator = seperatorSet[Math.floor(Math.random() * seperatorSet.length)]
@@ -212,7 +315,9 @@ export default async () => {
                     setText(bioContent, 'div.bio-tagline', speakerInfo.tagLine)
                 }
 
-                setText(bioContent, 'div.bio-title', matchedSession.title)
+                setText(bioContent, 'div.bio-title', title(matchedSession))
+                setText(bioContent, 'div.bio-track', theme(matchedSession))
+                setText(bioContent, 'div.bio-level', level(matchedSession))
                 setText(bioContent, 'div.bio-talk-description', matchedSession.description)
                 setText(bioContent, 'div.bio-speaker-bio', bio)
                 return bioContent
@@ -286,6 +391,17 @@ export default async () => {
     const parseEventData = () => {
         document.querySelectorAll('.agenda-session').forEach((element) => {
             const div = element as HTMLDivElement
+
+            div.querySelectorAll('.agenda-session-tba').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-image').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-name').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-subtitle').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-title').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-remote').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-underline').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-session-theme').forEach((child) => child.remove())
+            div.querySelectorAll('.agenda-session-session-level').forEach((child) => child.remove())
+
             const dataSlotId = div.attributes['data-slot-id'].value
             if (dataSlotId === '999999') {
                 const tbaTemplate = getTemplate('noSessionCardTemplate').querySelector('div')
@@ -311,6 +427,14 @@ export default async () => {
 
                                 break
                             }
+                            case 'agenda-session-session-theme': {
+                                templateElement.innerText = theme(matchedSession);
+                                break;
+                            }
+                            case 'agenda-session-session-level': {
+                                templateElement.innerText = level(matchedSession);
+                                break;
+                            }
                             case 'agenda-session-subtitle': {
                                 templateElement.innerText = speakerSubtitle(matchedSession.speakers)
                                 break;
@@ -320,7 +444,7 @@ export default async () => {
                                 break
                             }
                             case 'agenda-session-title': {
-                                templateElement.innerText = matchedSession.title
+                                templateElement.innerText = title(matchedSession)
                                 break
                             }
                         }
@@ -341,11 +465,22 @@ export default async () => {
         return
     }
 
+    const storedTitlePreference = localStorage.getItem("titlePreference");
+    if (storedTitlePreference) {
+        (document.getElementById("titlePreference") as HTMLSelectElement).value = storedTitlePreference;
+    }
+
     parseEventData()
 
     const requestedSpeakerId = new URLSearchParams(window.location.search).get("currentSpeaker")
     if (requestedSpeakerId) {
         const speakerButton = document.querySelector(`div[data-slot-id="${requestedSpeakerId}"]`) as HTMLElement
         speakerButton.click()
+    }
+
+    (document.getElementById("titlePreference") as HTMLSelectElement).onchange = () => {
+        parseEventData()
+
+        localStorage.setItem("titlePreference", (document.getElementById("titlePreference") as HTMLSelectElement).value)
     }
 }

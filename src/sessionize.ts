@@ -1,4 +1,4 @@
-interface SessionizeSession {
+export interface SessionizeSession {
     id: string;
     title: string;
     description: string;
@@ -8,7 +8,10 @@ interface SessionizeSession {
     isPlenumSession: boolean;
     speakers: string[];
     categoryItems: number[];
-    questionAnswers: any[];
+    questionAnswers: {
+        questionId: number,
+        answerValue: string
+    }[];
     roomId: number;
 }
 
