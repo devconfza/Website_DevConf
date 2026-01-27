@@ -57,11 +57,11 @@ events:
               price: 3616.75
               sold_out: false
       rooms:
-          room_1: "Centre Court"
-          room_2: "NCC"
-          room_3: "Senate I"
-          room_4: "Senate II"
-          room_5: "Fabia"
+          room_1: "Auditorium"
+          room_2: "Lecture Hall 1"
+          room_3: "Lecture Hall 2"
+          room_4: "Training Room 2"
+          room_5: "Training Room 4"
       timing:
           reg-start: 07h30
           reg-end: 08h45
