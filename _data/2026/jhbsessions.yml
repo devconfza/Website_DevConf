@@ -17,10 +17,10 @@
 
 # Slot Three
 - id: 1084883 # Debt [arch/team]
-- id: 1073908 # debugging [devops]
+- id: 1086807 # rural medical ux
 - id: 1125209 # agentic in the browser [ai]
 - id: 000000 # Sponsor 3
-- id: 1083156 # local first [cloud]
+- id: 1073908 # debugging [devops]
 
 # Slot Four
 - id: 1072820 # modernising [arch/team]
@@ -41,11 +41,11 @@
 - id: 1086389 # devsecops [infosec]
 - id: 1086045 # mirror [ai]
 - id: 1106857 # ducks [fun]
-- id: 1081382 # api design
+- id: 0000000
 
 # Slot Seven
 - id: 1086458 # measging [dx]
 - id: 1084369 # social grants [infosec]
 - id: 000000
 - id: 1086391 # holograms [fun]
-- id: 1081382 # anticipatory design [ux]
+- id: 1083156 # local first [cloud]
