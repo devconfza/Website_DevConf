@@ -1,0 +1,269 @@
+---
+layout: default
+disable_mailing_list_popup: true
+---
+<style>
+  body {
+    background-color: #000d28 !important;
+  }
+  .fd-modal {
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    background: none !important;
+    width: 100% !important;
+    height: auto !important;
+    pointer-events: auto !important;
+  }
+  .fd-modal__dialog {
+    position: static !important;
+    transform: none !important;
+    margin: 40px auto;
+    max-width: 900px; /* Constrain width */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .fd-modal__content {
+    box-shadow: none !important;
+  }
+  .fd-modal__close {
+    display: none !important;
+  }
+  /* Ensure the wrapper takes space */
+  .ff-66a74f785a5e88aee089a9fc {
+    display: block !important;
+  }
+
+  /* Flex layout for side-by-side image and form */
+  .ff-66a74f785a5e88aee089a9fc__wrapper {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ff-66a74f785a5e88aee089a9fc__left {
+    flex: 1;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .ff-66a74f785a5e88aee089a9fc__right {
+    flex: 1;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .ff-66a74f785a5e88aee089a9fc__image {
+    height: 100%;
+    width: 100%;
+  }
+  .ff-66a74f785a5e88aee089a9fc__image > div {
+    height: 100%;
+  }
+  .ff-66a74f785a5e88aee089a9fc__image svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .ff-66a74f785a5e88aee089a9fc__wrapper {
+      flex-direction: column;
+    }
+    .ff-66a74f785a5e88aee089a9fc__left, .ff-66a74f785a5e88aee089a9fc__right {
+      width: 100%;
+    }
+    .ff-66a74f785a5e88aee089a9fc__left {
+        height: 200px; /* Constrain image height on mobile */
+    }
+  }
+
+  /* Button styling override to match site - Magenta */
+  .ff-66a74f785a5e88aee089a9fc__button {
+    font-family: "Armata", Helvetica, "Segoe UI", Verdana, sans-serif !important;
+    background-image: linear-gradient(to right, rgb(255, 48, 98), #fc003d) !important;
+    border: none !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    padding: 15px 20px !important; /* Increased padding */
+    cursor: pointer !important;
+    width: 100% !important;
+    display: block !important;
+    font-size: 1rem !important;
+    margin-top: 10px !important;
+  }
+  .ff-66a74f785a5e88aee089a9fc__button:hover {
+    background-image: linear-gradient(to left, rgb(255, 48, 98), #fc003d) !important;
+  }
+
+  /* Input fields styling */
+  .ff-66a74f785a5e88aee089a9fc__control {
+    border: 1px solid #19c3fc !important;
+    padding: 15px !important; /* Increased padding */
+    border-radius: 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 20px !important; /* Increased spacing */
+    font-size: 1rem !important;
+  }
+
+  /* Checkbox styling */
+  .fd-form-check {
+      display: grid !important;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 15px; /* Increased gap */
+      cursor: pointer;
+      margin-bottom: 20px !important; /* Increased spacing */
+      margin-top: 10px !important;
+  }
+  .fd-form-check__input {
+      width: 24px !important; /* Larger checkbox */
+      height: 24px !important;
+      accent-color: #19c3fc !important;
+  }
+  .fd-form-check__checkmark {
+      display: none !important; /* Hide custom checkmark span if relying on native input */
+  }
+  .fd-form-check__label {
+      font-size: 1em;
+      line-height: 1.4;
+  }
+
+  /* Title styling */
+  .ff-66a74f785a5e88aee089a9fc__title {
+      margin-bottom: 15px;
+  }
+  .ff-66a74f785a5e88aee089a9fc__title div {
+      font-size: 2.5rem !important; /* H1 size */
+      font-weight: 800 !important;
+      line-height: 1.1 !important;
+      color: #000d28;
+      text-transform: uppercase;
+  }
+  
+  /* Subtitle spacing */
+  .ff-66a74f785a5e88aee089a9fc__subtitle {
+      margin-bottom: 30px !important;
+      font-size: 1.1rem;
+      line-height: 1.5;
+  }
+
+  /* Hide success message container initially */
+  .ff-66a74f785a5e88aee089a9fc__success {
+      display: none !important;
+  }
+</style>
+<div class="ff-66a74f785a5e88aee089a9fc" data-ff-el="root" data-ff-version="3" data-ff-type="inline" data-ff-name="popupImage" data-ff-stage="default">
+
+  <div data-ff-el="config" data-ff-config="eyJ0cmlnZ2VyIjp7Im1vZGUiOiJ3YWl0IiwidmFsdWUiOiIzMCJ9LCJvblN1Y2Nlc3MiOnsibW9kZSI6Im1lc3NhZ2UiLCJtZXNzYWdlIjoiIiwicmVkaXJlY3RVcmwiOiIifSwiY29pIjpmYWxzZSwic2hvd0ZvclJldHVyblZpc2l0b3JzIjpmYWxzZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiZ2RwciI6eyJhY2NlcHRzTWFya2V0aW5nIjpmYWxzZSwicHJpdmFjeVBvbGljeSI6eyJlbmFibGVkIjpmYWxzZSwibWFuZGF0b3J5IjpmYWxzZX19LCJ0cmFja2luZ0NvbmZpZyI6eyJtZXRhUGl4ZWxJZCI6IiIsImNvb2tpZUJhbm5lckVuYWJsZWQiOmZhbHNlLCJnb29nbGVBbmFseXRpY3NJZCI6IiJ9fQ==" style="display: none"></div>
+
+  <div class="ff-66a74f785a5e88aee089a9fc__modal fd-modal" data-ff-el="modal">
+    <div class="ff-66a74f785a5e88aee089a9fc__modal-dialog fd-modal__dialog" data-ff-el="modal-dialog">
+      <div class="ff-66a74f785a5e88aee089a9fc__modal-content fd-modal__content" data-ff-el="modal-content">
+        <div class="ff-66a74f785a5e88aee089a9fc__modal-body fd-modal__body" data-ff-el="modal-body">
+          <div class="ff-66a74f785a5e88aee089a9fc__wrapper">
+            <div class="ff-66a74f785a5e88aee089a9fc__left">
+              <div class="ff-66a74f785a5e88aee089a9fc__image">
+                <div data-draw-element="wrapper"><svg viewBox="0 0 375 487" version="1.1" data-draw-element="svg" style="position: relative" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" width="100%" aria-label="Form image" role="img">
+                    <g>
+                      <image x="-167.9907025286542" y="-63.30999999999997" width="825.6665787545786" height="550.31" preserveAspectRatio="none" href="https://usercontent.flodesk.com/c917d2e9-965e-4ebc-9fa0-a1088dbc6cd9/upload/ha0mwkj3ix/57e66615-bdbf-43c6-8c95-900ab39d83fb.jpeg" xlink:href="https://usercontent.flodesk.com/c917d2e9-965e-4ebc-9fa0-a1088dbc6cd9/upload/ha0mwkj3ix/57e66615-bdbf-43c6-8c95-900ab39d83fb.jpeg" data-handle="image-img" data-width="2048" data-height="1365" data-crop-position-x="0.43054994797642204" data-crop-position-y="0.5575221238938053" data-crop-scale="1.13"></image>
+                    </g>
+                  </svg></div>
+              </div>.
+            </div>
+            <div class="ff-66a74f785a5e88aee089a9fc__right">
+              <form class="ff-66a74f785a5e88aee089a9fc__form" action="https://form.flodesk.com/forms/66a74f785a5e88aee089a9fc/submit" method="post" data-ff-el="form">
+                <div class="ff-66a74f785a5e88aee089a9fc__title">
+                  <div style="word-break:break-word">Join our mailing list.</div>
+                </div>
+                <div class="ff-66a74f785a5e88aee089a9fc__subtitle">
+                  <div style="word-break:break-word">
+                    <div data-paragraph="true">Be the first to know about when sponsorship, call for speakers and ticket sales come out!</div>
+                  </div>
+                </div>
+                <div class="ff-66a74f785a5e88aee089a9fc__content fd-form-content" data-ff-el="content">
+                  <div class="ff-66a74f785a5e88aee089a9fc__fields" data-ff-el="fields">
+
+
+                    <div class="ff-66a74f785a5e88aee089a9fc__field fd-form-group">
+                      <input id="ff-66a74f785a5e88aee089a9fc-email" class="ff-66a74f785a5e88aee089a9fc__control fd-form-control" type="text" maxlength="255" name="email" placeholder="Email address" data-ff-tab="email::option1" required />
+                      <label for="ff-66a74f785a5e88aee089a9fc-email" class="ff-66a74f785a5e88aee089a9fc__label fd-form-label">
+                        <div>
+                          <div>Email address</div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <input type="text" maxlength="255" name="confirm_email_address" style="display: none" />
+
+                  </div>
+
+
+                  <div class="ff-66a74f785a5e88aee089a9fc__preference">
+                    <div class="ff-66a74f785a5e88aee089a9fc__preference-title">
+                      <div style="min-height: 1.4em">
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="ff-66a74f785a5e88aee089a9fc__preference-control">
+                      <div class="ff-66a74f785a5e88aee089a9fc__preference-list">
+
+
+                        <div class="ff-66a74f785a5e88aee089a9fc__preference-item">
+                          <label class="ff-66a74f785a5e88aee089a9fc__form-check fd-form-check">
+                            <input type="checkbox" name="preferences" class="fd-form-check__input" value="option1" data-ff-tab="option1:email:submit" />
+                            <span class="fd-form-check__checkmark"></span>
+                            <span class="fd-form-check__label">
+                              <div>
+                                <div>Also add me to the Developer User Group Mailing List</div>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ff-66a74f785a5e88aee089a9fc__footer" data-ff-el="footer">
+                    <button type="submit" class="ff-66a74f785a5e88aee089a9fc__button fd-btn" data-ff-el="submit" data-ff-tab="submit">
+                      <span>Subscribe</span>
+                    </button>
+                  </div>
+
+
+
+
+
+                </div>
+                <div class="ff-66a74f785a5e88aee089a9fc__success fd-form-success" data-ff-el="success">
+                  <div class="ff-66a74f785a5e88aee089a9fc__success-message">
+                    <div>
+                      <div>
+                        <div data-paragraph="true">Thank you for subscribing!</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ff-66a74f785a5e88aee089a9fc__error fd-form-error" data-ff-el="error"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button class="ff-66a74f785a5e88aee089a9fc__modal-close fd-modal__close" data-ff-el="modal-close">
+
+          <svg style="width: 1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.51 14.51">
+            <line x1="1" y1="1" x2="13.51" y2="13.51" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+            <line x1="13.51" y1="1" x2="1" y2="13.51" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

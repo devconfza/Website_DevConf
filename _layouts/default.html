@@ -85,11 +85,13 @@ layout: compress
           f.parentNode.insertBefore(sn, f);
         })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
       </script>
+      {% if page.disable_mailing_list_popup != true %}
       <script>
         window.fd('form', {
           formId: '66a74f785a5e88aee089a9fc'
         });
       </script>
+      {% endif %}
       {% endif %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
 </head>
@@ -121,6 +123,8 @@ layout: compress
                 {% endif %}
 				<a href="/codeofconduct" alt="Code of Conduct" role="menuitem">Code of Conduct</a>
 				<div class="spacer">|</div>
+                <a href="/mailinglist" alt="Mailing List" role="menuitem">Mailing List</a>
+                <div class="spacer">|</div>
 				<a href="/faq" alt="FAQ" role="menuitem">FAQ</a>
                 <div class="spacer">|</div>
                 <a href="/history" alt="Past Events" role="menuitem">Past Events</a>
