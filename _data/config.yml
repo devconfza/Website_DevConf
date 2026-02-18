@@ -55,7 +55,7 @@ events:
               sold_out: false
           earlybird:
               price: 3616.75
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Auditorium"
           room_2: "Lecture Hall 1"
@@ -148,7 +148,7 @@ events:
               sold_out: false
           earlybird:
               price: 3616.75
-              sold_out: false
+              sold_out: true
       rooms:
           room_1: "Hall A"
           room_2: "Hall B"
