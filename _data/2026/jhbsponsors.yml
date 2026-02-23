@@ -1,4 +1,9 @@
 - Level: Exhibitor
+  Name: ADG (Accelera Digital Group)
+  Url: hhttps://www.adg.io/
+  Logo: adg.jpg
+
+- Level: Exhibitor
   Name: Entelect Software
   Url: https://entelect.co.za/
   Logo: entelect.jpg
@@ -12,6 +17,11 @@
   Name: OfferZen
   Url: https://www.offerzen.com/?utm_source=email&utm_medium=events&utm_campaign=za_supply_awareness_dev-conf_sponsored-event_email&utm_content=
   Logo: offerzensilver.jpg
+
+- Level: Exhibitor
+  Name: Old Mutual
+  Url: https://www.oldmutual.co.za/
+  Logo: oldmutual.jpg
 
 - Level: Exhibitor
   Name: Thinkst Canary
@@ -37,6 +47,11 @@
   Name: Comotion
   Url: https://www.comotion.us
   Logo: comotiondinner.jpg
+
+- Level: Notebooks & Pens
+  Name: Old Mutual
+  Url: https://www.oldmutual.co.za/
+  Logo: oldmutual.jpg
 
 - Level: Lanyard
   Name: Dijkstrack

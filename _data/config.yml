@@ -2,8 +2,8 @@ general:
     year: "2026"
 
 banner:
-    show: false
-    content: "DevConf 2026 is entirely sold out! We can't wait to see you all soon!"
+    show: true
+    content: "Over 50% of DevConf 2026 already sold! Do not delay - book your tickets now!"
 
 mailingList:
     show: true

@@ -9,14 +9,14 @@
 - id: 1086566 # testing software [testing]
 
 # Slot two
-- id: 1081584 # revenue [arch /team]
+- id: 1084883 # Debt [arch/team]
 - id: 1080192 # meetkat [data]
 - id: 000000 # Sponsor 2
 - id: 1086429 # sustainable savings [other]
-- id: 1071160 # digital accessibility [accressibility]
+- id: 1071459 # algorithm which killed me [testing]
 
 # Slot Three
-- id: 1084883 # Debt [arch/team]
+- id: 1081584 # revenue [arch /team]
 - id: 1086807 # rural medical ux
 - id: 1125209 # agentic in the browser [ai]
 - id: 000000 # Sponsor 3
@@ -24,7 +24,7 @@
 
 # Slot Four
 - id: 1072820 # modernising [arch/team]
-- id: 1070409 # github offline [devops]
+- id: 1080966 # software design
 - id: 1083320 # recommenders [ai]
 - id: 1086545 # fuel stack [iod]
 - id: 000000 # Sponsor 5
@@ -38,14 +38,14 @@
 
 # Slot Six
 - id: 1071209 # dependency updates [arch/team]
-- id: 1086389 # devsecops [infosec]
-- id: 1086045 # mirror [ai]
+- id: 1084369 # social grants [infosec]
 - id: 1106857 # ducks [fun]
-- id: 1081382 # api design
+- id: 1070409 # github offline [devops]
+- id: 1071160 # digital accessibility [accressibility]
 
 # Slot Seven
 - id: 1086458 # measging [dx]
-- id: 1084369 # social grants [infosec]
-- id: 000000
+- id: 1086389 # devsecops [infosec]
 - id: 1086391 # holograms [fun]
 - id: 1083156 # local first [cloud]
+- id: 000000
