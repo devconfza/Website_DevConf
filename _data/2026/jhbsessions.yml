@@ -32,16 +32,16 @@
 
 # Slot Five
 - id: 1083741 # aviation
-- id: 1080192 # meetkat [data]
 - id: 1083320 # recommenders [ai]
 - id: 1085533 # secure system design [infosec]
+- id: 1070409 # github offline [devops]
 - id: 1086545 # fuel stack [iot]
 
 # Slot Six
 - id: 1106857 # ducks [fun]
-- id: 1083156 # local first [cloud]
-- id: 1070409 # github offline [devops]
+- id: 1080192 # meetkat [data]
 - id: 1071209 # dependency updates [arch/team]
+- id: 1083156 # local first [cloud]
 - id: 1071160 # digital accessibility [accressibility]
 
 # Slot Seven
