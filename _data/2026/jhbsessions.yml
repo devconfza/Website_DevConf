@@ -3,42 +3,43 @@
 
 # Slot one
 - id: 1086264 # bank migration [arch/team]
-- id: 000000 # Sponsor 1
+- id: 000000 # Sponsor
 - id: 1078720 # Fundermentals [ai]
-- id: 1083608 # burnout as a service [mental health]
+- id: 1128899 # parallal computing [fun]
 - id: 1070584 # data-first [arch]
 
 # Slot two
 - id: 1084883 # Debt [arch/team]
 - id: 1080966 # software design
-- id: 000000 # Sponsor 2
+- id: 1083608 # burnout as a service [mental health]
 - id: 1071459 # algorithm which killed me [testing]
 - id: 1086429 # sustainable savings [other]
 
 # Slot Three
-- id: 1080192 # meetkat [data]
 - id: 1081584 # revenue [arch /team]
 - id: 1125209 # agentic in the browser [ai]
-- id: 000000 # Sponsor 3
+- id: 1084369 # social grants [infosec]
 - id: 1086566 # testing software [testing]
+- id: 0000000
+
 
 # Slot Four
 - id: 1072820 # modernising [arch/team]
-- id: 1083320 # recommenders [ai]
-- id: 1086807 # rural medical ux
 - id: 1073908 # debugging [devops]
+- id: 1076219 # enterprise AI
+- id: 1086807 # rural medical ux
 - id: 000000 # Sponsor 5
 
 # Slot Five
 - id: 1083741 # aviation
-- id: 1128899 # parallal computing [fun]
-- id: 1076219 # enterprise AI
+- id: 1080192 # meetkat [data]
+- id: 1083320 # recommenders [ai]
 - id: 1085533 # secure system design [infosec]
 - id: 1086545 # fuel stack [iot]
 
 # Slot Six
 - id: 1106857 # ducks [fun]
-- id: 1084369 # social grants [infosec]
+- id: 1083156 # local first [cloud]
 - id: 1070409 # github offline [devops]
 - id: 1071209 # dependency updates [arch/team]
 - id: 1071160 # digital accessibility [accressibility]
@@ -46,6 +47,6 @@
 # Slot Seven
 - id: 1086389 # devsecops [infosec]
 - id: 1086391 # holograms [fun]
-- id: 1083156 # local first [cloud]
+- id: 1085704 # debugging humans [leadership]
 - id: 1086442 # rag that works [ai]
 - id: 1086458 # measging [dx]
