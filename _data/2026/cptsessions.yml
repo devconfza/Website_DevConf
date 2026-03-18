@@ -3,10 +3,10 @@
 
 # Slot one
 - id: 1086264 # bank migration [arch/team]
-- id: 000000 # Sponsor 1
 - id: 1078720 # Fundermentals [ai]
 - id: 1128899 # parallal computing [fun]
 - id: 1070584 # data-first [arch]
+- id: 1077918 # team [leadership]
 
 # Slot two
 - id: 1084883 # Debt [arch/team]
