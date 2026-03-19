@@ -4,30 +4,30 @@
 # Slot one
 - id: 1083741 # aviation
 - id: 1187570 # ai firstr deliver [ai]
-- id: 1078720 # Fundermentals [ai]
+- id: 000000
 - id: 1128899 # parallal computing [fun]
 - id: 1070584 # data-first [arch]
 
 # Slot two
 - id: 1084883 # Debt [arch/team]
 - id: 1080966 # software design
-- id: 1083608 # burnout as a service [mental health]
+- id: 1078720 # Fundermentals [ai]
 - id: 1071459 # algorithm which killed me [testing]
 - id: 1086429 # sustainable savings [other]
 
 # Slot Three
 - id: 1081584 # revenue [arch /team]
 - id: 1072820 # modernising [arch/team]
+- id: 1076219 # enterprise AI
 - id: 1084369 # social grants [infosec]
 - id: 1086566 # testing software [testing]
-- id: 0000000
 
 # Slot Four
 - id: 1073908 # debugging [devops]
-- id: 1076219 # enterprise AI
 - id: 1125209 # agentic in the browser [ai]
+- id: 1083608 # burnout as a service [mental health]
 - id: 1086807 # rural medical ux
-- id: 000000 # Sponsor 5
+- id: 000000
 
 # Slot Five
 - id: 1086264 # bank migration [arch/team]
