@@ -1,7 +1,12 @@
 - Level: Exhibitor
   Name: ADG (Accelera Digital Group)
-  Url: hhttps://www.adg.io/
+  Url: https://www.adg.io/
   Logo: adg.jpg
+
+- Level: Exhibitor
+  Name: Cloud On Demand
+  Url: https://www.cloudondemand.co.za/
+  Logo: cloudondemand.jpg
 
 - Level: Exhibitor
   Name: Entelect Software
@@ -12,6 +17,11 @@
   Name: Equal Experts
   Url: https://www.equalexperts.com/
   Logo: equalexpertsgold.jpg
+
+- Level: Exhibitor
+  Name: Lula
+  Url: https://lula.co.za/
+  Logo: lula.jpg
 
 - Level: Exhibitor
   Name: OfferZen

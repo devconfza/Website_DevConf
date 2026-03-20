@@ -20,21 +20,21 @@
 - id: 1125209 # agentic in the browser [ai]
 - id: 1084369 # social grants [infosec]
 - id: 1086566 # testing software [testing]
-- id: 0000000
+- id: 1079481 # ICT [personal]
 
 # Slot Four
 - id: 1072820 # modernising [arch/team]
 - id: 1073908 # debugging [devops]
-- id: 1086807 # rural medical ux
 - id: 1076219 # enterprise AI
-- id: 1077549 # Homology in Motion [data]
+- id: 1070409 # github offline [devops]
+- id: 1086807 # rural medical ux
 
 # Slot Five
 - id: 1083741 # aviation
 - id: 1083320 # recommenders [ai]
 - id: 1085533 # secure system design [infosec]
-- id: 1070409 # github offline [devops]
 - id: 1086545 # fuel stack [iot]
+- id: 1077549 # Homology in Motion [data]
 
 # Slot Six
 - id: 1106857 # ducks [fun]
