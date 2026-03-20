@@ -82,7 +82,7 @@ layout: default
             {% assign allSponsors = allSponsors | concat: sponsors %}
         {% endfor %}
 
-        {% assign rows = 1 %}
+        {% assign rows = 3 %}
         {% assign totalSponsors = allSponsors | size %}
         {% assign thirdSize = totalSponsors | divided_by: rows | ceil %}
 
