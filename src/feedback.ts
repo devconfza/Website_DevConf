@@ -2,6 +2,15 @@ import { addPopupHandler, feedbackServerUrl, getTemplate, setText } from './comm
 import { loadSessionizeData } from './sessionize'
 import { v4 as uuidv4 } from 'uuid'
 
+declare global {
+    interface Window {
+        grecaptcha: {
+            ready: (callback: () => void) => void
+            execute: (siteKey: string, options: { action: string }) => Promise<string>
+        }
+    }
+}
+
 const timeKeyFinder = /\$\$(?<start>.+)\$\$(?<end>.+)\$\$/
 
 interface QuestionStructure {
@@ -344,10 +353,16 @@ export default async () => {
             saveButton.innerText = 'Saving...';
             saveButton.disabled = true
             event.preventDefault()
-            // eslint-disable-next-line no-undef
-            grecaptcha.ready(async () => {
-                // eslint-disable-next-line no-undef
-                const token = await grecaptcha.execute('6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j', { action: 'submit' })
+            const recaptcha = window.grecaptcha
+            if (!recaptcha) {
+                saveButton.innerText = 'Save';
+                saveButton.disabled = false
+                alert('reCAPTCHA failed to load. Please reload your browser and try again.')
+                return
+            }
+
+            recaptcha.ready(async () => {
+                const token = await recaptcha.execute('6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j', { action: 'submit' })
                 ratingData.captcha = token
                 const uploadResult = await fetch(feedbackServerUrl, {
                     method: 'POST',
@@ -430,12 +445,12 @@ export default async () => {
 
         // Find the timeslot button with the matching data-id
         const timeslotButton = document.querySelector(`div.feedbackButton[data-id="${timeslotParam}"]`) as HTMLDivElement
-        
+
         // If the button exists, trigger a click to open the popup
         if (timeslotButton) {
             // Click the button to open the popup
             timeslotButton.click()
-            
+
             // If session parameter exists, set the dropdown to that index
             if (sessionParam) {
                 // Wait for the popup to be fully opened

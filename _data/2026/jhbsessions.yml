@@ -9,9 +9,9 @@
 - id: 1071160 # digital accessibility [accressibility]
 
 # Slot two
-- id: 1084883 # Debt [arch/team]
 - id: 1080966 # software design
-- id: 0000000
+- id: 1188849 # ai teams [ai]
+- id: 1083608 # burnout as a service [mental health]
 - id: 1071459 # algorithm which killed me [testing]
 - id: 1086429 # sustainable savings [other]
 
@@ -30,23 +30,22 @@
 - id: 1079481 # ICT [personal]
 
 # Slot Five
+- id: 1084883 # Debt [arch/team]
+- id: 1086391 # holograms [fun]
 - id: 1086264 # bank migration [arch/team]
 - id: 1083320 # recommenders [ai]
-- id: 1083608 # burnout as a service [mental health]
 - id: 1083156 # local first [cloud]
-- id: 1086545 # fuel stack [iot]
 
 # Slot Six
 - id: 1106857 # ducks [fun]
-- id: 1080192 # meetkat [data]
 - id: 1125209 # agentic in the browser [ai]
 - id: 1071209 # dependency updates [arch/team]
 - id: 1070409 # github offline [devops]
-
+- id: 1086545 # fuel stack [iot]
 
 # Slot Seven
 - id: 1086389 # devsecops [infosec]
-- id: 1086391 # holograms [fun]
+- id: 1080192 # meetkat [data]
 - id: 1085704 # debugging humans [leadership]
 - id: 1086442 # rag that works [ai]
 - id: 1086458 # measging [dx]
