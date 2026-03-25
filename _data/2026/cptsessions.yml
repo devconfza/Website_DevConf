@@ -24,14 +24,14 @@
 
 # Slot Four
 - id: 1072820 # modernising [arch/team]
+- id: 1083320 # recommenders [ai]
 - id: 1073908 # debugging [devops]
-- id: 1076219 # enterprise AI
 - id: 1070409 # github offline [devops]
 - id: 1086807 # rural medical ux
 
 # Slot Five
 - id: 1083741 # aviation
-- id: 1083320 # recommenders [ai]
+- id: 1076219 # enterprise AI
 - id: 1085533 # secure system design [infosec]
 - id: 1086545 # fuel stack [iot]
 - id: 1077549 # Homology in Motion [data]
