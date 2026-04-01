@@ -3,7 +3,7 @@ general:
 
 banner:
     show: true
-    content: "Over 50% of DevConf 2026 already sold! Do not delay - book your tickets now!"
+    content: "Over 70% of DevConf 2026 already sold! Do not delay - book your tickets now!"
 
 mailingList:
     show: true
