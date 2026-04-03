@@ -1,4 +1,6 @@
 ---
 layout: default
 ---
-{% include rating.html offset=0 baseStyle="sponsor-title" sessions=site.data.2025.jhbsessions %}
+{% assign year = site.data.config.general.year %}
+{% assign sessions = site.data[year].jhbsessions %}
+{% include rating.html offset=0 baseStyle="sponsor-title" sessions=sessions %}

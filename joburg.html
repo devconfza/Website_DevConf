@@ -1,4 +1,7 @@
 ---
 layout: default
 ---
-{% include event.html offset=0 baseStyle="sponsor-title" sponsors=site.data.2026.jhbsponsors sessions=site.data.2026.jhbsessions %}
+{% assign year = site.data.config.general.year %}
+{% assign sponsors = site.data[year].jhbsponsors %}
+{% assign sessions = site.data[year].jhbsessions %}
+{% include event.html offset=0 baseStyle="sponsor-title" sponsors=sponsors sessions=sessions %}

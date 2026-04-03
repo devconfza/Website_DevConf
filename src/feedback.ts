@@ -16,9 +16,11 @@ const timeKeyFinder = /\$\$(?<start>.+)\$\$(?<end>.+)\$\$/
 interface QuestionStructure {
     id: string,
     label: string,
-    type: 'rate' | 'text' | 'timeslot-selector' | 'yesno' | 'role' | 'level' | 'years' | 'email' | 'influence'
+    type: 'rate' | 'text' | 'timeslot-selector' | 'yesno' | 'checkbox' | 'company-size' | 'industry' | 'role' | 'level' | 'years' | 'email' | 'influence'
     key: number | undefined,
     needs?: string,
+    defaultValue?: 'yes' | 'no',
+    includeInTotal?: boolean,
 }
 
 interface SectionStructure {
@@ -67,7 +69,25 @@ export default async () => {
 
     const sessionStructure = document.getElementById('sessionData')!.innerText.trim().split(' ')
     const eventData = await loadSessionizeData(eventId)
-    const timings = document.getElementById("timings")?.innerHTML.trim().split(' ');
+    const timingsElement = document.getElementById('timings')
+    if (!timingsElement) {
+        console.error('Unable to load feedback timings: missing timings element')
+        return
+    }
+
+    const timingsText = timingsElement.textContent?.trim()
+    if (!timingsText) {
+        console.error('Unable to load feedback timings: timings data is empty')
+        return
+    }
+
+    let timings: Record<string, string>
+    try {
+        timings = JSON.parse(timingsText) as Record<string, string>
+    } catch (error) {
+        console.error('Unable to load feedback timings: invalid timings JSON', error)
+        return
+    }
     const workshopStructure = document.getElementById('workshopData')!.innerText.trim().split(';;;').map(s => s.trim())
 
     const ratingStoredData = window.localStorage.getItem(`rating${ratingId}`)
@@ -80,6 +100,70 @@ export default async () => {
     } else {
         ratingData = JSON.parse(ratingStoredData)
     }
+
+    const parseStoredBoolean = (value: unknown): boolean | undefined => {
+        if (value === true || value === 'true') {
+            return true
+        }
+
+        if (value === false || value === 'false') {
+            return false
+        }
+
+        return undefined
+    }
+
+    const normalizeYesNoValue = (value: unknown): 'yes' | 'no' | undefined => {
+        const parsedValue = parseStoredBoolean(value)
+        if (parsedValue === undefined) {
+            return undefined
+        }
+
+        return parsedValue ? 'yes' : 'no'
+    }
+
+    const emailValidationInput = document.createElement('input')
+    emailValidationInput.type = 'email'
+
+    const isValidEmailValue = (value: string) => {
+        emailValidationInput.value = value.trim()
+        return emailValidationInput.checkValidity()
+    }
+
+    const ensureDefaultAnswers = () => {
+        let hasChanges = false
+
+        questions.structure.forEach((section, sectionIndex) => {
+            section.questions.forEach((question) => {
+                if (!ratingData[`s${sectionIndex}`]) {
+                    ratingData[`s${sectionIndex}`] = {}
+                }
+
+                const existingValue = ratingData[`s${sectionIndex}`][question.id]
+                const normalizedYesNoValue = normalizeYesNoValue(existingValue)
+                if (question.type === 'yesno' && normalizedYesNoValue !== undefined) {
+                    ratingData[`s${sectionIndex}`][question.id] = normalizedYesNoValue
+                    hasChanges = true
+                    return
+                }
+
+                if (!question.defaultValue) {
+                    return
+                }
+
+                if (existingValue === undefined) {
+                    ratingData[`s${sectionIndex}`][question.id] = question.defaultValue
+                    hasChanges = true
+                }
+            })
+        })
+
+        if (hasChanges) {
+            window.localStorage.setItem(`rating${ratingId}`, JSON.stringify(ratingData))
+        }
+    }
+
+    ensureDefaultAnswers()
 
     const talkTitle = (sessionId: string): string => {
         const session = eventData!.sessions.find((s) => s.id === sessionId)
@@ -96,13 +180,29 @@ export default async () => {
         return `${session.title} by ${speakers}`
     }
 
-    const setValue = (dataSlotId: number, id: string, value: string) => {
+    const setValue = (dataSlotId: number, id: string, value: string | boolean) => {
+        const sectionData = getSectionData(dataSlotId)
+        sectionData[id] = value
+        persistRatingData()
+    }
+
+    const getSectionData = (dataSlotId: number): Record<string, string | boolean> => {
         if (!ratingData[`s${dataSlotId}`]) {
             ratingData[`s${dataSlotId}`] = {}
         }
 
-        ratingData[`s${dataSlotId}`][id] = value
+        return ratingData[`s${dataSlotId}`] as Record<string, string | boolean>
+    }
 
+    const clearValue = (dataSlotId: number, id: string) => {
+        const sectionData = getSectionData(dataSlotId)
+        if (sectionData[id] !== undefined) {
+            delete sectionData[id]
+            persistRatingData()
+        }
+    }
+
+    const persistRatingData = () => {
         window.localStorage.setItem(`rating${ratingId}`, JSON.stringify(ratingData))
     }
 
@@ -158,8 +258,23 @@ export default async () => {
     }
 
     const configureYesNo = (inputElement: HTMLDivElement, question: QuestionStructure, dataSlotId: number) => {
+        const yesInput = inputElement.querySelector('input[value="yes"]') as HTMLInputElement
+        const noInput = inputElement.querySelector('input[value="no"]') as HTMLInputElement
+        const yesLabel = inputElement.querySelector('label[for="yes"]') as HTMLLabelElement
+        const noLabel = inputElement.querySelector('label[for="no"]') as HTMLLabelElement
+        const yesNoGroupName = `yesno-${dataSlotId}-${question.id}`
+        const yesInputId = `${yesNoGroupName}-yes`
+        const noInputId = `${yesNoGroupName}-no`
+
+        yesInput.name = yesNoGroupName
+        noInput.name = yesNoGroupName
+        yesInput.id = yesInputId
+        noInput.id = noInputId
+        yesLabel.setAttribute('for', yesInputId)
+        noLabel.setAttribute('for', noInputId)
+
         const updateTimeSlot = () => {
-            const value = (inputElement.querySelector('input[name="yesno"]:checked') as HTMLInputElement)?.value
+            const value = (inputElement.querySelector(`input[name="${yesNoGroupName}"]:checked`) as HTMLInputElement)?.value
             if (value) {
                 setValue(dataSlotId, question.id, value)
             }
@@ -167,10 +282,29 @@ export default async () => {
 
         const existingValue = ratingData[`s${dataSlotId}`]?.[question.id]
         if (existingValue) {
-            (inputElement.querySelector(`input[name="yesno"][value="${existingValue}"]`) as HTMLInputElement).checked = true
+            (inputElement.querySelector(`input[name="${yesNoGroupName}"][value="${existingValue}"]`) as HTMLInputElement).checked = true
+        } else if (question.defaultValue) {
+            (inputElement.querySelector(`input[name="${yesNoGroupName}"][value="${question.defaultValue}"]`) as HTMLInputElement).checked = true
         }
 
         inputElement.onchange = updateTimeSlot
+    }
+
+    const configureCheckbox = (inputElement: HTMLDivElement, question: QuestionStructure, dataSlotId: number) => {
+        const checkboxElement = inputElement.querySelector('input[type="checkbox"]') as HTMLInputElement
+        checkboxElement.setAttribute('aria-label', question.label)
+
+        const existingValue = ratingData[`s${dataSlotId}`]?.[question.id]
+        const parsedValue = parseStoredBoolean(existingValue)
+        if (parsedValue !== undefined) {
+            checkboxElement.checked = parsedValue
+        } else {
+            checkboxElement.checked = true
+        }
+
+        checkboxElement.onchange = () => {
+            setValue(dataSlotId, question.id, checkboxElement.checked)
+        }
     }
 
     const configureRating = (inputElement: HTMLDivElement, question: QuestionStructure, dataSlotId: number) => {
@@ -192,17 +326,20 @@ export default async () => {
 
     const configureInput = (inputElement: HTMLInputElement, question: QuestionStructure, dataSlotId: number) => {
         const updateValue = () => {
-            const { value } = inputElement
+            const value = inputElement.value.trim()
             if (value) {
                 setValue(dataSlotId, question.id, value)
+            } else {
+                clearValue(dataSlotId, question.id)
             }
         }
 
         const existingValue = ratingData[`s${dataSlotId}`]?.[question.id]
         if (existingValue) {
-            inputElement.value = existingValue
+            inputElement.value = String(existingValue).trim()
         }
 
+        inputElement.oninput = updateValue
         inputElement.onchange = updateValue
     }
 
@@ -231,7 +368,7 @@ export default async () => {
                     valueAsNumber = +value
                 } catch { }
 
-                if (valueAsNumber && valueAsNumber >= 0 && valueAsNumber <= 60) {
+                if (valueAsNumber !== undefined && !Number.isNaN(valueAsNumber) && valueAsNumber >= 0 && valueAsNumber <= 60) {
                     setValue(dataSlotId, question.id, value)
                 }
             }
@@ -252,6 +389,14 @@ export default async () => {
         return Object.keys(answers).filter(key => {
             const questionStructure = questions.structure[id].questions.find(q => q.id === key)
             if (!questionStructure) {
+                return false
+            }
+
+            if (questionStructure.type === 'checkbox') {
+                return false
+            }
+
+            if (questionStructure.includeInTotal === false) {
                 return false
             }
 
@@ -277,7 +422,8 @@ export default async () => {
     const updateCompleted = () => {
         document.querySelectorAll('div.feedbackButton').forEach((button) => {
             const id = +button.attributes['data-id'].value
-            setText(button, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(id)} / ${questions.structure[id].questions.length}`)
+            const totalQuestions = questions.structure[id].questions.filter(question => question.type !== 'checkbox' && question.includeInTotal !== false).length
+            setText(button, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(id)} / ${totalQuestions}`)
         })
     }
 
@@ -286,6 +432,7 @@ export default async () => {
             const dataSlotId = +div.attributes['data-id'].value
             const popupContent = getTemplate('feedbackPopup').firstElementChild!
             const section = questions.structure[dataSlotId]
+            const emailInputs: HTMLInputElement[] = []
             setText(popupContent, 'div.feedbackTitle', `Feedback for ${section.title}`)
             section.questions.forEach((question) => {
                 const questionBaseElement = getTemplate('questionTemplate').firstElementChild!
@@ -296,8 +443,11 @@ export default async () => {
                 switch (question.type) {
                     case 'email': {
                         configureInput(inputElement as HTMLInputElement, question, dataSlotId)
+                        emailInputs.push(inputElement as HTMLInputElement)
                         break
                     }
+                    case 'company-size':
+                    case 'industry':
                     case 'level':
                     case 'role':
                     case 'influence': {
@@ -314,6 +464,10 @@ export default async () => {
                     }
                     case 'yesno': {
                         configureYesNo(inputElement as HTMLDivElement, question, dataSlotId)
+                        break
+                    }
+                    case 'checkbox': {
+                        configureCheckbox(inputElement as HTMLDivElement, question, dataSlotId)
                         break
                     }
                     case 'years': {
@@ -333,6 +487,16 @@ export default async () => {
 
             const doneButton = getTemplate('doneButton').firstElementChild! as HTMLButtonElement
             doneButton.onclick = () => {
+                const invalidEmailInput = emailInputs.find((input) => {
+                    return !isValidEmailValue(input.value)
+                })
+
+                if (invalidEmailInput) {
+                    invalidEmailInput.focus()
+                    alert('Please enter a valid email address or leave it blank.')
+                    return
+                }
+
                 (document.querySelector('div.popupClose')! as HTMLDivElement).dispatchEvent(new Event('click'))
             }
             popupContent.insertAdjacentElement('beforeend', doneButton)
@@ -344,11 +508,29 @@ export default async () => {
                 i.dispatchEvent(new Event('input'))
             })
         },
-        'feedbackPopupContent')
+            'feedbackPopupContent')
     }
 
     const addSubmit = () => {
         const saveButton = (document.getElementById('saveDataButton') as HTMLButtonElement)
+        const ensureCheckboxDefaults = () => {
+            questions.structure.forEach((section, sectionIndex) => {
+                section.questions.forEach((question) => {
+                    if (question.type !== 'checkbox') {
+                        return
+                    }
+
+                    if (!ratingData[`s${sectionIndex}`]) {
+                        ratingData[`s${sectionIndex}`] = {}
+                    }
+
+                    if (ratingData[`s${sectionIndex}`][question.id] === undefined) {
+                        ratingData[`s${sectionIndex}`][question.id] = true
+                    }
+                })
+            })
+        }
+
         saveButton.onclick = (event) => {
             saveButton.innerText = 'Saving...';
             saveButton.disabled = true
@@ -362,6 +544,7 @@ export default async () => {
             }
 
             recaptcha.ready(async () => {
+                ensureCheckboxDefaults()
                 const token = await recaptcha.execute('6LfkPcUlAAAAAHwYs14fkTiEZYsu5hAAq_bLKp-j', { action: 'submit' })
                 ratingData.captcha = token
                 const uploadResult = await fetch(feedbackServerUrl, {
@@ -403,9 +586,11 @@ export default async () => {
                     if (parsedSubtitle) {
                         const start = parsedSubtitle.groups?.["start"] ?? ""
                         const end = parsedSubtitle.groups?.["end"] ?? ""
-                        const startTiming = timings?.find(i => i.startsWith(start))?.substring(start.length)
-                        const endTiming = timings?.find(i => i.startsWith(end))?.substring(end?.length)
-                        subTitle =  `${startTiming} - ${endTiming}`
+                        const startTiming = timings[start]
+                        const endTiming = timings[end]
+                        if (startTiming && endTiming) {
+                            subTitle = `${startTiming} - ${endTiming}`
+                        }
                     } else {
                         subTitle = question.subtitle
                     }
@@ -418,7 +603,8 @@ export default async () => {
                 const questionButton = getTemplate('feedbackButton').querySelector('div')!
                 questionButton.setAttribute('data-id', index.toString())
                 setText(questionButton, '.feedbackButtonTitle', question.title)
-                setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(index)} / ${question.questions.length}`)
+                const totalQuestions = question.questions.filter(question => question.type !== 'checkbox' && question.includeInTotal !== false).length
+                setText(questionButton, '.feedbackButtonProgressBar', `Questions Completed ${countComplete(index)} / ${totalQuestions}`)
                 if (subTitle) {
                     setText(questionButton, '.feedbackButtonWorkshop', subTitle)
                 }

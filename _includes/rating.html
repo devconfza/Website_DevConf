@@ -6,16 +6,12 @@
         <div class="sponsor-title-content">
             <div>DevConf {{ event.location }} {{ site.data.config.general.year }} - Feedback</div>
             <div class="sponsor-title-content-third">This is your event! Tell us how to improve it for you!</div>
-            <div class="sponsor-title-content-third">Want to win a <a style="color: #000d28;" href="https://www.takealot.com/connex-lumen-cp104-series-1080p-projector-with-wifi-connectivity/PLID73610963" target="_blank">Connex Lumen 1080p Projector</a>, a <a href="https://wallabyjs.com/" style="color: #000d28;"  target="_blank">Wallaby.js license</a>, a <a href="https://quokkajs.com/" style="color: #000d28;" target="_blank">Quakka.js license</a>, or a <a href="https://console-ninja.com/" style="color: #000d28;" target="_blank">Console Ninja license</a>? Complete your email in "Demographics"!</div>
+            <div class="sponsor-title-content-third">Want to win a ??? Complete your email in "Demographics"!</div>
         </div>
     </div>
 
     {% if site.data.config.ratings.open %}
-    <data style="display:none;" id="timings">
-        {% for timing in site.data.config.timing %}
-        {{ timing }}
-        {% endfor %}
-    </data>
+    <data style="display:none;" id="timings">{{ event.timing | jsonify }}</data>
 
     <data style="display:none;" id="workshopData">
         {% if event.workshops.workshop1.enabled %}
@@ -170,12 +166,50 @@
     <input type="email" autocomplete="email" />
 </template>
 
+<template id="company-sizeQuestionStyleTemplate">
+    <select>
+        <option>Please select</option>
+        <option value="1-10">1-10</option>
+        <option value="11-50">11-50</option>
+        <option value="51-200">51-200</option>
+        <option value="201-500">201-500</option>
+        <option value="501-1,000">501-1,000</option>
+        <option value="1,001-5,000">1,001-5,000</option>
+        <option value="5,001-10,000">5,001-10,000</option>
+        <option value="10,000+">10,000+</option>
+    </select>
+</template>
+
+<template id="industryQuestionStyleTemplate">
+    <select>
+        <option>Please select</option>
+        <option value="software-technology">Software / Technology</option>
+        <option value="financial-services">Financial Services / Banking</option>
+        <option value="consulting-services">Consulting / Professional Services</option>
+        <option value="government-public-sector">Government / Public Sector</option>
+        <option value="education">Education</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="retail-ecommerce">Retail / E-commerce</option>
+        <option value="telecommunications">Telecommunications</option>
+        <option value="manufacturing">Manufacturing / Industrial</option>
+        <option value="non-profit">Non-profit</option>
+        <option value="media-marketing">Media / Marketing</option>
+        <option value="other">Other</option>
+    </select>
+</template>
+
+<template id="checkboxQuestionStyleTemplate">
+    <div class="checkboxQuestion">
+        <input type="checkbox" checked />
+    </div>
+</template>
+
 <template id="yesnoQuestionStyleTemplate">
     <div class="radioSet">
-        <input type="radio" value="yes" id="yes" name="yesno" />
-        <label for="yes">Yes</label>
-        <input type="radio" value="no" id="no" name="yesno" />
-        <label for="no">No</label>
+        <input type="radio" value="yes" />
+        <label>Yes</label>
+        <input type="radio" value="no" />
+        <label>No</label>
     </div>
 </template>
 

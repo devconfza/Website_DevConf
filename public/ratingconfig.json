@@ -11,20 +11,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -46,20 +58,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -81,20 +105,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -116,20 +152,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -151,20 +199,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -186,20 +246,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -221,20 +293,32 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
@@ -256,127 +340,37 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "How would you rate the content?",
+                    "label": "Did the content inspire you?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
+                    "label": "How would you rate the quality of presentation (slides/demos/communication)?",
                     "type": "rate",
                     "needs": "attended"
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
+                    "label": "How valuable was this presentation to your role?",
                     "type": "rate",
+                    "needs": "attended"
+                },
+                {
+                    "id": "titleDescriptionMatch",
+                    "label": "Did the session match your expectation from the title and description?",
+                    "type": "yesno",
+                    "needs": "attended"
+                },
+                {
+                    "id": "sessionLevelMatch",
+                    "label": "Did the session level match your expectation?",
+                    "type": "yesno",
                     "needs": "attended"
                 },
                 {
                     "id": "feedback",
                     "label": "Any feedback on this session?",
-                    "type": "text"
-                }
-            ]
-        },
-        {
-            "title": "First Master Class",
-            "workshop": 0,
-            "questions": [
-                {
-                    "id": "attended",
-                    "label": "Did you attend the master class?",
-                    "type": "yesno"
-                },
-                {
-                    "id": "ratingContent",
-                    "label": "How would you rate the content?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "feedback",
-                    "label": "Any feedback on this master class?",
-                    "type": "text"
-                }
-            ]
-        },
-        {
-            "title": "Second Master Class",
-            "workshop": 1,
-            "questions": [
-                {
-                    "id": "attended",
-                    "label": "Did you attend the master class?",
-                    "type": "yesno"
-                },
-                {
-                    "id": "ratingContent",
-                    "label": "How would you rate the content?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "feedback",
-                    "label": "Any feedback on this master class?",
-                    "type": "text"
-                }
-            ]
-        },
-        {
-            "title": "Third Master Class",
-            "workshop": 2,
-            "questions": [
-                {
-                    "id": "attended",
-                    "label": "Did you attend the master class?",
-                    "type": "yesno"
-                },
-                {
-                    "id": "ratingContent",
-                    "label": "How would you rate the content?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingPresentation",
-                    "label": "How would you rate the presentation?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "ratingValue",
-                    "label": "How valuable was this presentation to you?",
-                    "type": "rate",
-                    "needs": "attended"
-                },
-                {
-                    "id": "feedback",
-                    "label": "Any feedback on this master class?",
                     "type": "text"
                 }
             ]
@@ -415,6 +409,11 @@
                     "type": "yesno"
                 },
                 {
+                    "id": "bestPart",
+                    "label": "What was the best part of DevConf?",
+                    "type": "text"
+                },
+                {
                     "id": "feedback",
                     "label": "Any feedback about DevConf?",
                     "type": "text"
@@ -425,9 +424,14 @@
             "title": "Demographics",
             "questions": [
                 {
-                    "id": "attended",
-                    "label": "Are you polite (for example saying please) when talking to an AI?",
-                    "type": "yesno"
+                    "id": "companySize",
+                    "label": "How many people work at your company?",
+                    "type": "company-size"
+                },
+                {
+                    "id": "industry",
+                    "label": "What industry does your company operate in?",
+                    "type": "industry"
                 },
                 {
                     "id": "jobTitle",
@@ -453,6 +457,13 @@
                     "id": "email",
                     "label": "What is your email (this is needed to win the competition)?",
                     "type": "email"
+                },
+                {
+                    "id": "shareSponsors",
+                    "label": "Share my details with sponsors",
+                    "type": "yesno",
+                    "defaultValue": "yes",
+                    "includeInTotal": false
                 }
             ]
         }

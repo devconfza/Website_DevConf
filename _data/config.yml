@@ -20,7 +20,7 @@ callForSpeakers:
     link: https://sessionize.com/devconf-2026/
 
 ratings:
-    open: false
+    open: true
 
 events:
     - virtual: false
