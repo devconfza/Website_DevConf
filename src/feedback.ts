@@ -130,32 +130,53 @@ export default async () => {
         return emailValidationInput.checkValidity()
     }
 
-    const ensureDefaultAnswers = () => {
+    const applyQuestionDefaults = (
+        getDefaultValue: (question: QuestionStructure, existingValue: string | boolean | undefined) => string | boolean | undefined,
+    ) => {
         let hasChanges = false
 
         questions.structure.forEach((section, sectionIndex) => {
+            const sectionKey = `s${sectionIndex}`
+            let sectionData = ratingData[sectionKey] as Record<string, string | boolean | undefined> | undefined
+
             section.questions.forEach((question) => {
-                if (!ratingData[`s${sectionIndex}`]) {
-                    ratingData[`s${sectionIndex}`] = {}
-                }
-
-                const existingValue = ratingData[`s${sectionIndex}`][question.id]
-                const normalizedYesNoValue = normalizeYesNoValue(existingValue)
-                if (question.type === 'yesno' && normalizedYesNoValue !== undefined) {
-                    ratingData[`s${sectionIndex}`][question.id] = normalizedYesNoValue
-                    hasChanges = true
+                const existingValue = sectionData?.[question.id]
+                const defaultValue = getDefaultValue(question, existingValue)
+                if (defaultValue === undefined) {
                     return
                 }
 
-                if (!question.defaultValue) {
+                if (!sectionData) {
+                    sectionData = {}
+                    ratingData[sectionKey] = sectionData
+                }
+
+                if (existingValue === defaultValue) {
                     return
                 }
 
-                if (existingValue === undefined) {
-                    ratingData[`s${sectionIndex}`][question.id] = question.defaultValue
-                    hasChanges = true
-                }
+                sectionData[question.id] = defaultValue
+                hasChanges = true
             })
+        })
+
+        return hasChanges
+    }
+
+    const ensureDefaultAnswers = () => {
+        const hasChanges = applyQuestionDefaults((question, existingValue) => {
+            if (question.type === 'yesno') {
+                const normalizedYesNoValue = normalizeYesNoValue(existingValue)
+                if (normalizedYesNoValue !== undefined) {
+                    return normalizedYesNoValue
+                }
+            }
+
+            if (question.defaultValue && existingValue === undefined) {
+                return question.defaultValue
+            }
+
+            return undefined
         })
 
         if (hasChanges) {
@@ -260,8 +281,15 @@ export default async () => {
     const configureYesNo = (inputElement: HTMLDivElement, question: QuestionStructure, dataSlotId: number) => {
         const yesInput = inputElement.querySelector('input[value="yes"]') as HTMLInputElement
         const noInput = inputElement.querySelector('input[value="no"]') as HTMLInputElement
-        const yesLabel = inputElement.querySelector('label[for="yes"]') as HTMLLabelElement
-        const noLabel = inputElement.querySelector('label[for="no"]') as HTMLLabelElement
+        const labelElements = inputElement.querySelectorAll<HTMLLabelElement>('label')
+        const yesLabel = labelElements[0]
+        const noLabel = labelElements[1]
+
+        if (!yesInput || !noInput || !yesLabel || !noLabel) {
+            console.error('Unable to configure yes/no question: missing inputs or labels', question.id)
+            return
+        }
+
         const yesNoGroupName = `yesno-${dataSlotId}-${question.id}`
         const yesInputId = `${yesNoGroupName}-yes`
         const noInputId = `${yesNoGroupName}-no`
@@ -270,8 +298,8 @@ export default async () => {
         noInput.name = yesNoGroupName
         yesInput.id = yesInputId
         noInput.id = noInputId
-        yesLabel.setAttribute('for', yesInputId)
-        noLabel.setAttribute('for', noInputId)
+        yesLabel.htmlFor = yesInputId
+        noLabel.htmlFor = noInputId
 
         const updateTimeSlot = () => {
             const value = (inputElement.querySelector(`input[name="${yesNoGroupName}"]:checked`) as HTMLInputElement)?.value
@@ -514,20 +542,12 @@ export default async () => {
     const addSubmit = () => {
         const saveButton = (document.getElementById('saveDataButton') as HTMLButtonElement)
         const ensureCheckboxDefaults = () => {
-            questions.structure.forEach((section, sectionIndex) => {
-                section.questions.forEach((question) => {
-                    if (question.type !== 'checkbox') {
-                        return
-                    }
+            applyQuestionDefaults((question, existingValue) => {
+                if (question.type !== 'checkbox' || existingValue !== undefined) {
+                    return undefined
+                }
 
-                    if (!ratingData[`s${sectionIndex}`]) {
-                        ratingData[`s${sectionIndex}`] = {}
-                    }
-
-                    if (ratingData[`s${sectionIndex}`][question.id] === undefined) {
-                        ratingData[`s${sectionIndex}`][question.id] = true
-                    }
-                })
+                return true
             })
         }
 
