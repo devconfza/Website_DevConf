@@ -3,7 +3,7 @@ general:
 
 banner:
     show: true
-    content: "Over 90% of DevConf Johannesburg and 77% of DevConf Cape Town already sold! Do not delay - book your tickets now!"
+    content: "DevConf Johannesburg is Sold Out and 86% of DevConf Cape Town already sold! Do not delay - book your tickets now!"
 
 mailingList:
     show: true
@@ -42,7 +42,7 @@ events:
       sponsorOpen: true
       colour: pink
       tickets:
-          totally_sold_out: false
+          totally_sold_out: true
           onsale: true
           has_shuttle: false
           has_waiting_list: false
@@ -52,7 +52,7 @@ events:
           fullprice:
               price: 4255.00
               bulkPrice: 3829.50
-              sold_out: false
+              sold_out: true
           earlybird:
               price: 3616.75
               sold_out: true
