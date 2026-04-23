@@ -42,7 +42,7 @@
     "sass": "^1",
     "ts-loader": "^9",
     "typescript": "^6",
-    "uuid": "^13",
+    "uuid": "^14",
     "webpack": "^5",
     "webpack-cli": "^7"
   },
