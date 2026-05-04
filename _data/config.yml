@@ -9,7 +9,7 @@ mailingList:
     show: true
 
 sponsors:
-    show: true
+    show: false
     proposal: /sponsorship
     banner: true
 
@@ -43,7 +43,7 @@ events:
       colour: pink
       tickets:
           totally_sold_out: true
-          onsale: true
+          onsale: false
           has_shuttle: false
           has_waiting_list: false
           waiting_list:
