@@ -20,10 +20,13 @@ layout: default
     <table class="feedbackTable">
         <thead id="tableHeader" class="feedbackHeader">
             <td>&nbsp;</td>
-            <td>Presentation</td>
-            <td>Content</td>
-            <td>Value</td>
-            <td>Feedback</td>
+            <td>How would you rate the quality of presentation (slides/demos/communication)?</td>
+            <td>Did this session change how you'll approach something at work?</td>
+            <td>How valuable was this presentation to your role?</td>
+            <td>Did the session match your expectation from the title and description?</td>
+            <td>Did the session level match your expectation?</td>
+            <td>Why did you choose to attend this session over the other available sessions?</td>
+            <td>What's one thing you'd tell the speaker, if you could?</td>
         </thead>
 
         <tfoot id="feedbackFooter" class="feedbackFooter">
@@ -32,6 +35,9 @@ layout: default
                 <td id="presAvg"></td>
                 <td id="contentAvg"></td>
                 <td id="valueAvg"></td>
+                <td id="titleDescriptionMatchAvg"></td>
+                <td id="sessionLevelMatchAvg"></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr class="additionalAverageInfo">
@@ -39,6 +45,9 @@ layout: default
                 <td id="timeslotPresAvg"></td>
                 <td id="timeslotContentAvg"></td>
                 <td id="timeslotValueAvg"></td>
+                <td id="timeslotTitleDescriptionMatchAvg"></td>
+                <td id="timeslotSessionLevelMatchAvg"></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr class="additionalAverageInfo">
@@ -46,6 +55,9 @@ layout: default
                 <td id="eventPresAvg"></td>
                 <td id="eventContentAvg"></td>
                 <td id="eventValueAvg"></td>
+                <td id="eventTitleDescriptionMatchAvg"></td>
+                <td id="eventSessionLevelMatchAvg"></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr class="additionalAverageInfo">
@@ -53,6 +65,9 @@ layout: default
                 <td id="globalPresAvg"></td>
                 <td id="globalContentAvg"></td>
                 <td id="globalValueAvg"></td>
+                <td id="globalTitleDescriptionMatchAvg"></td>
+                <td id="globalSessionLevelMatchAvg"></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </tfoot>
@@ -66,6 +81,9 @@ layout: default
         <td class="presValue"></td>
         <td class="contentValue"></td>
         <td class="valueValue"></td>
+        <td class="titleDescriptionMatchValue"></td>
+        <td class="sessionLevelMatchValue"></td>
+        <td class="whythisValue"></td>
         <td class="feedbackValue"></td>
     </tr>
 </template>
