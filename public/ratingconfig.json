@@ -11,7 +11,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -23,7 +23,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -58,7 +58,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -70,7 +70,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -110,7 +110,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -122,7 +122,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -162,7 +162,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -174,7 +174,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -214,7 +214,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -226,7 +226,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -266,7 +266,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -278,7 +278,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -318,7 +318,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -330,7 +330,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -370,7 +370,7 @@
                 },
                 {
                     "id": "ratingContent",
-                    "label": "Did this session change how you'll approach something at work?",
+                    "label": "How much did this session inspire or motivate you?",
                     "type": "rate",
                     "needs": "attended"
                 },
@@ -382,7 +382,7 @@
                 },
                 {
                     "id": "ratingValue",
-                    "label": "How valuable was this presentation to your role?",
+                    "label": "How valuable was this session to your role?",
                     "type": "rate",
                     "needs": "attended"
                 },
