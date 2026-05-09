@@ -2,7 +2,7 @@ general:
     year: "2026"
 
 banner:
-    show: true
+    show: false
     content: "DevConf Johannesburg is Sold Out and 91% of DevConf Cape Town already sold! Sales close FRIDAY! Do not delay - book your tickets now!"
 
 mailingList:
@@ -135,7 +135,7 @@ events:
       sponsorOpen: true
       colour: blue
       tickets:
-          onsale: true
+          onsale: false
           totally_sold_out: false
           has_shuttle: false
           has_waiting_list: false
