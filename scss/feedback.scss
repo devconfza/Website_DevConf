@@ -69,6 +69,9 @@
 .feedbackPopup {
     width: 75vw;
     max-height: 75vh;
+    @supports (height: 100dvh) {
+        max-height: 75dvh;
+    }
     background-color: white;
     display: grid;
     grid-template-rows: auto;
@@ -82,6 +85,10 @@
     overflow-x: hidden;
     grid-area: content;
     @include variables.scrollbar();
+
+    @media (max-width: variables.$mobileWidth) {
+        padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    }
 }
 
 .feedbackTitle {
@@ -158,6 +165,12 @@ input[type="radio"] {
 
     &:disabled {
         background-color: variables.$darkBrandBlue;
+    }
+
+    @media (max-width: variables.$mobileWidth) {
+        position: sticky;
+        bottom: calc(10px + env(safe-area-inset-bottom));
+        z-index: 1;
     }
 }
 
