@@ -461,6 +461,8 @@ export default async () => {
             const popupContent = getTemplate('feedbackPopup').firstElementChild!
             const section = questions.structure[dataSlotId]
             const emailInputs: HTMLInputElement[] = []
+            const questionsContainer = document.createElement('div')
+            questionsContainer.className = 'feedbackQuestions'
             setText(popupContent, 'div.feedbackTitle', `Feedback for ${section.title}`)
             section.questions.forEach((question) => {
                 const questionBaseElement = getTemplate('questionTemplate').firstElementChild!
@@ -510,7 +512,7 @@ export default async () => {
 
                 inputElement.attributes['data-rating-field-id'] = question.id
                 questionBaseElement.insertAdjacentElement('beforeend', inputElement)
-                popupContent.insertAdjacentElement('beforeend', questionBaseElement)
+                questionsContainer.insertAdjacentElement('beforeend', questionBaseElement)
             })
 
             const doneButton = getTemplate('doneButton').firstElementChild! as HTMLButtonElement
@@ -527,6 +529,7 @@ export default async () => {
 
                 (document.querySelector('div.popupClose')! as HTMLDivElement).dispatchEvent(new Event('click'))
             }
+            popupContent.insertAdjacentElement('beforeend', questionsContainer)
             popupContent.insertAdjacentElement('beforeend', doneButton)
             return popupContent
         }, undefined, undefined, () => {

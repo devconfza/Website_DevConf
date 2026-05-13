@@ -74,9 +74,9 @@
     }
     background-color: white;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
     grid-row-gap: 10px;
-    overflow-y: auto;
+    overflow: hidden;
     padding: 30px;
     align-content: start;
     border-top-left-radius: 10px;
@@ -85,10 +85,6 @@
     overflow-x: hidden;
     grid-area: content;
     @include variables.scrollbar();
-
-    @media (max-width: variables.$mobileWidth) {
-        padding-bottom: calc(30px + env(safe-area-inset-bottom));
-    }
 }
 
 .feedbackTitle {
@@ -166,12 +162,19 @@ input[type="radio"] {
     &:disabled {
         background-color: variables.$darkBrandBlue;
     }
+}
 
-    @media (max-width: variables.$mobileWidth) {
-        position: sticky;
-        bottom: calc(10px + env(safe-area-inset-bottom));
-        z-index: 1;
-    }
+.feedbackQuestions {
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+}
+
+.feedbackPopup > .doneButton {
+    margin-bottom: env(safe-area-inset-bottom);
 }
 
 .saveButton {
